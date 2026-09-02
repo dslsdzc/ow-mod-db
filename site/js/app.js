@@ -7,7 +7,7 @@ async function loadMods() {
 function esc(s) {
   const div = document.createElement("div");
   div.textContent = String(s == null ? "" : s);
-  return div.innerHTML;
+  return div.innerHTML.replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
 function thumbUrl(m) {

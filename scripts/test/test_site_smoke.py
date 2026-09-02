@@ -37,7 +37,7 @@ def test_dist_artifacts_and_json_valid(tmp_path):
                      "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",
                      "latestReleaseDescription"}
     for mod in mods:
-        assert required_keys <= set(mod.keys())
+        assert set(mod.keys()) == required_keys
 
 
 def test_mirror_pages_cover_three_views():

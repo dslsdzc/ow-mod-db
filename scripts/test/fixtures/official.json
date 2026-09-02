@@ -14,6 +14,7 @@
       "name": "Test Mod",
       "description": "A test mod description",
       "author": "tester",
+      "version": "v1.5.1",
       "latestReleaseDescription": "Fixed a bug",
       "tags": ["gameplay"]
     }

@@ -4,6 +4,9 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: sync-translate
+
 permissions:
   contents: write
 

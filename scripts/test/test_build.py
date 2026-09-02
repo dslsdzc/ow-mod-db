@@ -63,6 +63,29 @@ def test_build_all_produces_site_data_from_releases():
     assert "authorDisplay" in by_name["Alek.OWML"]
 
 
+def test_site_data_normalizes_version_and_author():
+    database, mods_data = build.build_all(_official(), _translations())
+    by_name = {m["uniqueName"]: m for m in mods_data}
+    # Test.Mod: 无 authorDisplay → 回退 author; version 去除前导 v
+    assert by_name["Test.Mod"]["authorDisplay"] == "tester"
+    assert by_name["Test.Mod"]["version"] == "1.5.1"
+    # database.json 保持官方原样(v 前缀与缺失字段不动)
+    src = next(m for m in _official()["releases"] if m["uniqueName"] == "Test.Mod")
+    out = next(m for m in database["releases"] if m["uniqueName"] == "Test.Mod")
+    assert out["version"] == src["version"] == "v1.5.1"
+    assert "authorDisplay" not in out and "authorDisplay" not in src
+
+
+def test_site_data_has_exact_16_key_set():
+    _, mods_data = build.build_all(_official(), _translations())
+    expected = {"uniqueName", "name", "description", "authorDisplay", "downloadUrl",
+                "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount",
+                "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",
+                "latestReleaseDescription"}
+    for mod in mods_data:
+        assert set(mod.keys()) == expected
+
+
 def test_deploy_site_copies_files(tmp_path):
     site = tmp_path / "site"
     (site / "css").mkdir(parents=True)

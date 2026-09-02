@@ -37,29 +37,45 @@ def _call_with_retries(ai_translate, en_text: str, glossary: dict, max_retries: 
     raise ai_client.AIError(f"failed after {max_retries} retries: {last_error}")
 
 
+class ConsecutiveFailureError(Exception):
+    """Raised when AI translation keeps failing — the API is likely down."""
+
+
 def translate_pending(pending: list[dict], translations: dict, human: dict, glossary: dict,
                       ai_translate, *, at: str, max_retries: int = 3, backoff_s: float = 2.0,
-                      sleep=time.sleep) -> tuple[int, list[str]]:
+                      sleep=time.sleep,
+                      max_consecutive_failures: int = 5) -> tuple[int, list[str]]:
     """Translate each pending item. Returns (translated_count, failure_messages).
 
     Failed items are left untranslated (English kept) and reported, not fatal.
+    When AI failures reach max_consecutive_failures in a row (human overrides
+    reset the counter), raises ConsecutiveFailureError — the API is likely down,
+    so the caller should abort loudly instead of burning hours of retries.
     """
     translated = 0
     failures = []
+    consecutive_failures = 0
     for item in pending:
         unique_name, field, en_text = item["unique_name"], item["field"], item["en"]
         human_zh = _human_get(human, unique_name, field)
         if human_zh is not None:
             set_translation(translations, unique_name, field, en_text, human_zh, at)
             translated += 1
+            consecutive_failures = 0
             continue
         try:
             zh = _call_with_retries(ai_translate, en_text, glossary, max_retries, backoff_s, sleep)
         except ai_client.AIError as e:
+            consecutive_failures += 1
             failures.append(f"{unique_name}.{field}: {e}")
+            if consecutive_failures >= max_consecutive_failures:
+                raise ConsecutiveFailureError(
+                    f"连续 {max_consecutive_failures} 次 AI 翻译失败,API 可能不可用,已中止"
+                ) from e
             continue
         set_translation(translations, unique_name, field, en_text, zh, at)
         translated += 1
+        consecutive_failures = 0
     return translated, failures
 
 
@@ -83,6 +99,13 @@ def main() -> None:
     glossary = load_json(Path(args.glossary))
     at = args.at or _now_iso()
 
+    if not args.dry_run:
+        missing = [k for k in ("OPENAI_BASE_URL", "OPENAI_API_KEY", "OPENAI_MODEL")
+                   if not os.environ.get(k)]
+        if missing:
+            print(f"缺少环境变量: {', '.join(missing)}(dry-run 不需要)")
+            raise SystemExit(1)
+
     if args.dry_run:
         print(f"[dry-run] {len(pending)} 条待翻译,跳过 AI 调用")
         return
@@ -95,9 +118,14 @@ def main() -> None:
             model=os.environ["OPENAI_MODEL"],
         )
 
-    translated, failures = translate_pending(
-        pending, translations, human, glossary, ai_translate, at=at
-    )
+    try:
+        translated, failures = translate_pending(
+            pending, translations, human, glossary, ai_translate, at=at
+        )
+    except ConsecutiveFailureError as e:
+        save_json(Path(args.translations), translations)  # 保留已完成的进度
+        print(e)
+        raise SystemExit(1)
     save_json(Path(args.translations), translations)
     print(f"翻译完成: {translated} 条成功, {len(failures)} 条失败")
     for f in failures:
