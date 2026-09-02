@@ -47,8 +47,10 @@ def patches_to_dict(patches: list) -> dict:
     """[{target, patch}] -> {target: patch};重复 target 后者覆盖."""
     out: dict[str, dict] = {}
     for entry in patches:
-        target = (entry or {}).get("target")
-        patch = (entry or {}).get("patch")
+        if not isinstance(entry, dict):
+            continue
+        target = entry.get("target")
+        patch = entry.get("patch")
         if target and isinstance(patch, dict):
             out[target] = patch
     return out

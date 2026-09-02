@@ -55,6 +55,8 @@ def test_duplicate_target_warns_but_passes():
 def test_scalar_or_none_entries_do_not_crash():
     assert validate_patches([None, "string", 3, {"patch": {}}], OFFICIAL)
     assert any("不是对象" in e for e in validate_patches(["x"], OFFICIAL))
+    # 转换同样不能崩
+    assert patches_to_dict([None, "string", 3, "x"]) == {}
 
 
 def test_patch_non_dict_reports():
