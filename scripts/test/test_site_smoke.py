@@ -64,6 +64,13 @@ def test_patch_block_markers_present():
     assert "中文汉化补丁" in js
 
 
+def test_official_mod_links_rewritten_markers():
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert "rewriteOfficialModLinks" in js
+    assert "__slugMap" in js
+    assert "outerwildsmods.com/mods/" in js
+
+
 def test_patches_payload_shape():
     patches = [
         {"target": "Hawkbar.GhostInTheMachine",

@@ -185,13 +185,37 @@ function renderMermaidBlocks(scope) {
   });
 }
 
-function renderMarkdownInto(el, md, baseUrl) {
+function initSlugMap(mods) {
+  window.__slugMap = {};
+  for (const m of mods) {
+    if (m.slug) window.__slugMap[m.slug] = m.uniqueName;
+  }
+}
+
+// 内容(简介/更新说明/README)里指向官方 mod 详情页的链接 → 改写回本站详情页
+function rewriteOfficialModLinks(scope) {
+  const slugMap = window.__slugMap;
+  if (!slugMap) return;
+  [...(scope || document).querySelectorAll("a[href]")].forEach((a) => {
+    const h = a.getAttribute("href") || "";
+    const m = h.match(/^https?:\/\/outerwildsmods\.com\/mods\/([^/?#]+)/);
+    if (!m) return;
+    const uid = slugMap[m[1]];
+    if (uid) {
+      a.href = "mod.html?uniqueName=" + encodeURIComponent(uid);
+      a.removeAttribute("target");
+    }
+  });
+}
+
+function renderMarkdownInto(el, md, baseUrl, breaks) {
   if (!window.marked || !window.DOMPurify) {
     el.innerHTML = `<p class="placeholder">渲染库未加载(CDN 不可达),<a class="link" href="${esc(baseUrl)}" target="_blank" rel="noopener">打开仓库原文目录</a></p>`;
     return;
   }
-  const raw = marked.parse(md, { gfm: true, breaks: false });
+  const raw = marked.parse(md, { gfm: true, breaks: !!breaks });
   el.innerHTML = DOMPurify.sanitize(raw);
+  rewriteOfficialModLinks(el);
   renderMermaidBlocks(el);
   // 加载失败的图(如国内被墙的徽章图)直接隐藏,不显示 alt 文本噪音
   el.querySelectorAll("img").forEach((img) => {
@@ -506,8 +530,8 @@ function renderDetail(mods) {
       ${mod.slug ? `<div class="buttons-second">
         <a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/" target="_blank" rel="noopener">下载统计</a>
       </div>` : ""}
-      ${mod.description ? `<div class="section"><h3>简介</h3><p>${esc(normLines(mod.description))}</p></div>` : ""}
-      ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><p>${esc(normLines(mod.latestReleaseDescription))}</p></div>` : ""}
+      ${mod.description ? `<div class="section"><h3>简介</h3><div class="readme" id="desc-md"></div></div>` : ""}
+      ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><div class="readme" id="release-md"></div></div>` : ""}
       <div class="section" id="readme-section" hidden>
         <h3>README</h3>
         <div class="readme-actions" id="readme-actions"></div>
@@ -533,6 +557,12 @@ function renderDetail(mods) {
     </div>`;
   const hero = document.getElementById("hero-thumb");
   if (hero) setupThumbBox(hero);
+  const descEl = document.getElementById("desc-md");
+  if (descEl && mod.description) renderMarkdownInto(descEl, normLines(mod.description), "", true);
+  const relEl = document.getElementById("release-md");
+  if (relEl && mod.latestReleaseDescription) {
+    renderMarkdownInto(relEl, normLines(mod.latestReleaseDescription), "", true);
+  }
   initReadme(mod);
   initAddons(mod, mods);
   initReleases(mod);
@@ -544,6 +574,7 @@ loadMods()
   .then((data) => {
     const mods = data.mods || [];
     const meta = data.meta || {};
+    initSlugMap(mods);
     const syncInfo = document.getElementById("sync-info");
     if (syncInfo && meta.generatedAt) {
       const t = String(meta.generatedAt).replace("T", " ").slice(0, 16);
