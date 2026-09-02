@@ -1,0 +1,91 @@
+"""Merge official db + translations into Chinese database.json and site data."""
+
+import argparse
+import shutil
+from pathlib import Path
+
+from translation_store import (
+    TRANSLATABLE_FIELDS,
+    get_translation,
+    load_json,
+    load_translations,
+    save_json,
+)
+
+SITE_SOURCE = Path("site")
+DIST = Path("dist")
+
+
+def translate_mod(mod: dict, translations: dict) -> dict:
+    out = dict(mod)
+    unique_name = mod.get("uniqueName", "")
+    for field in TRANSLATABLE_FIELDS:
+        zh = get_translation(translations, unique_name, field)
+        if zh:
+            out[field] = zh
+    return out
+
+
+def build_all(official: dict, translations: dict) -> tuple[dict, list[dict]]:
+    database_zh = dict(official)
+    mods_data = []
+    for group in ("releases", "alphaReleases"):
+        out_group = []
+        for mod in official.get(group, []):
+            out_mod = translate_mod(mod, translations)
+            out_group.append(out_mod)
+            if group == "releases":
+                mods_data.append({
+                    "uniqueName": out_mod.get("uniqueName", ""),
+                    "name": out_mod.get("name", ""),
+                    "description": out_mod.get("description", ""),
+                    "authorDisplay": out_mod.get("authorDisplay", ""),
+                    "downloadUrl": out_mod.get("downloadUrl", ""),
+                    "repo": out_mod.get("repo", ""),
+                    "tags": out_mod.get("tags", []),
+                    "slug": out_mod.get("slug", ""),
+                    "thumbnail": out_mod.get("thumbnail", {}),
+                    "downloadCount": out_mod.get("downloadCount", 0),
+                    "installCount": out_mod.get("installCount", 0),
+                    "weeklyInstallCount": out_mod.get("weeklyInstallCount", 0),
+                    "version": out_mod.get("version", ""),
+                    "latestReleaseDate": out_mod.get("latestReleaseDate", ""),
+                    "firstReleaseDate": out_mod.get("firstReleaseDate", ""),
+                    "latestReleaseDescription": out_mod.get("latestReleaseDescription", ""),
+                })
+        database_zh[group] = out_group
+    return database_zh, mods_data
+
+
+def deploy_site(site_dir: Path, dist_dir: Path) -> None:
+    dist_dir.mkdir(parents=True, exist_ok=True)
+    for item in site_dir.iterdir():
+        target = dist_dir / item.name
+        if item.is_dir():
+            shutil.copytree(item, target, dirs_exist_ok=True)
+        else:
+            shutil.copy2(item, target)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Build Chinese database.json and website data")
+    parser.add_argument("--official", default="source/official.json")
+    parser.add_argument("--translations", default="source/translations.json")
+    parser.add_argument("--site", default=str(SITE_SOURCE))
+    parser.add_argument("--dist", default=str(DIST))
+    args = parser.parse_args()
+
+    official = load_json(Path(args.official))
+    translations = load_translations(Path(args.translations))
+    database_zh, mods_data = build_all(official, translations)
+
+    dist = Path(args.dist)
+    (dist / "data").mkdir(parents=True, exist_ok=True)
+    save_json(dist / "database.json", database_zh)
+    save_json(dist / "data" / "mods.json", {"mods": mods_data})
+    deploy_site(Path(args.site), dist)
+    print(f"已生成 {dist/'database.json'} 与 {dist/'data'/'mods.json'},MOD 数: {len(mods_data)}")
+
+
+if __name__ == "__main__":
+    main()
