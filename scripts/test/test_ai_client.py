@@ -41,6 +41,41 @@ def test_translate_success(monkeypatch):
     assert "The mod loader for Outer Wilds" in payload["messages"][1]["content"]
 
 
+def test_batch_translate_success(monkeypatch):
+    fake = FakePost(httpx.Response(
+        200, json={"choices": [{"message": {"content": '{"0": "甲", "1": "乙"}'}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    result = ai_client.translate_batch_with_ai(
+        ["a", "b"], {"terms": {}}, base_url="u", api_key="k", model="m")
+    assert result == {0: "甲", 1: "乙"}
+    user = fake.calls[0][1]["messages"][1]["content"]
+    assert "0: a" in user and "1: b" in user and "JSON object" in user
+
+
+def test_batch_translate_handles_code_fence_and_missing(monkeypatch):
+    fake = FakePost(httpx.Response(
+        200, json={"choices": [{"message": {"content": '```json\n{"0": "甲"}\n```'}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    result = ai_client.translate_batch_with_ai(
+        ["a", "b"], {}, base_url="u", api_key="k", model="m")
+    assert result == {0: "甲"}  # 缺失的序号不返回
+
+
+def test_batch_translate_invalid_json_raises(monkeypatch):
+    fake = FakePost(httpx.Response(200, json={"choices": [{"message": {"content": "not json"}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    with pytest.raises(AIError, match="not valid JSON"):
+        ai_client.translate_batch_with_ai(["a"], {}, base_url="u", api_key="k", model="m")
+
+
+def test_batch_translate_empty_texts_no_request(monkeypatch):
+    def boom(*a, **kw):
+        raise AssertionError("不应发起请求")
+
+    monkeypatch.setattr(ai_client.httpx, "post", boom)
+    assert ai_client.translate_batch_with_ai([], {}, base_url="u", api_key="k", model="m") == {}
+
+
 def test_translate_strips_whitespace(monkeypatch):
     fake = FakePost(httpx.Response(200, json={"choices": [{"message": {"content": "译文\n"}}]}))
     monkeypatch.setattr(ai_client.httpx, "post", fake)

@@ -62,7 +62,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
         # DeepSeek 并发上限按余额动态给(余额低时档位很低),8 为低余额安全值
-        run: python scripts/translate.py --concurrency 8 --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python scripts/translate.py --concurrency 8 --batch 30 --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Build artifacts
         if: steps.check.outputs.skip != 'true'

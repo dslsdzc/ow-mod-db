@@ -132,6 +132,75 @@ def translate_pending(pending: list[dict], translations: dict, human: dict, glos
     return state["translated"], failures
 
 
+def translate_pending_batched(pending: list[dict], translations: dict, human: dict,
+                              glossary: dict, ai_batch, *, at: str, batch_size: int = 30,
+                              max_retries: int = 3, backoff_s: float = 2.0,
+                              sleep=time.sleep, max_workers: int = 8,
+                              consecutive_chunk_abort: int = 3) -> tuple[int, list[str]]:
+    """把多条文本合并成批量请求翻译(减少请求数/术语表重复开销/限流压力).
+
+    ai_batch(texts: list[str], glossary) -> {序号: 译文};批次级失败重试;
+    响应里缺失的条目记入失败。连续 consecutive_chunk_abort 个批次整体失败时
+    抛 ConsecutiveFailureError 中止。人工覆盖条目直接落缓存,不进批次。
+    """
+    translated = 0
+    failures: list[str] = []
+    ai_items = []
+    for item in pending:
+        unique_name, field, en_text = item["unique_name"], item["field"], item["en"]
+        if _human_get(human, unique_name, field) is not None:
+            set_translation(translations, unique_name, field, en_text,
+                            _human_get(human, unique_name, field), at)
+            translated += 1
+            continue
+        ai_items.append(item)
+
+    chunks = [ai_items[i:i + batch_size] for i in range(0, len(ai_items), batch_size)]
+    if not chunks:
+        return translated, failures
+
+    lock = threading.Lock()
+    state = {"failed_chunks": 0, "stop": False}
+
+    def work(chunk: list[dict]) -> None:
+        nonlocal translated
+        if state["stop"]:
+            return
+        result = None
+        last_error = None
+        for attempt in range(max_retries):
+            try:
+                result = ai_batch([c["en"] for c in chunk], glossary)
+                break
+            except ai_client.AIError as e:
+                last_error = e
+                sleep(backoff_s * (2 ** attempt))
+        if result is None:
+            with lock:
+                state["failed_chunks"] += 1
+                for c in chunk:
+                    failures.append(f"{c['unique_name']}.{c['field']}: 批次失败: {last_error}")
+                if state["failed_chunks"] >= consecutive_chunk_abort:
+                    state["stop"] = True
+            return
+        with lock:
+            for idx, c in enumerate(chunk):
+                zh = result.get(idx)
+                if not zh:
+                    failures.append(f"{c['unique_name']}.{c['field']}: 批次响应缺该条")
+                    continue
+                set_translation(translations, c["unique_name"], c["field"], c["en"], zh, at)
+                translated += 1
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        list(executor.map(work, chunks))
+    if state["stop"]:
+        raise ConsecutiveFailureError(
+            f"连续 {consecutive_chunk_abort} 个批次翻译失败,API 可能不可用,已中止"
+        )
+    return translated, failures
+
+
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
@@ -225,6 +294,8 @@ def main() -> None:
                         help="并发线程数(1=顺序;DeepSeek 等 API 可用几百上千)")
     parser.add_argument("--limit", type=int, default=0,
                         help="只翻译前 N 条(0=全部;小规模试译用)")
+    parser.add_argument("--batch", type=int, default=1,
+                        help="每次请求合并翻译的条数(>1 走批量模式,省 token 与限流)")
     parser.add_argument("--dry-run", action="store_true", help="只输出统计,不调用 AI")
     parser.add_argument("--at", default=None, help="ISO 时间戳,默认当前 UTC")
     args = parser.parse_args()
@@ -271,11 +342,25 @@ def main() -> None:
             model=os.environ["OPENAI_MODEL"],
         )
 
-    try:
-        translated, failures = translate_pending(
-            pending, translations, human, glossary, ai_translate, at=at,
-            max_workers=args.concurrency,
+    def ai_batch(texts: list, glossary: dict) -> dict:
+        return ai_client.translate_batch_with_ai(
+            texts, glossary,
+            base_url=os.environ["OPENAI_BASE_URL"],
+            api_key=os.environ["OPENAI_API_KEY"],
+            model=os.environ["OPENAI_MODEL"],
         )
+
+    try:
+        if args.batch > 1:
+            translated, failures = translate_pending_batched(
+                pending, translations, human, glossary, ai_batch, at=at,
+                batch_size=args.batch, max_workers=args.concurrency,
+            )
+        else:
+            translated, failures = translate_pending(
+                pending, translations, human, glossary, ai_translate, at=at,
+                max_workers=args.concurrency,
+            )
     except ConsecutiveFailureError as e:
         save_json(Path(args.translations), translations)  # 保留已完成的进度
         print(e)

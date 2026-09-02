@@ -1,5 +1,8 @@
 """OpenAI-compatible chat-completions client for translation."""
 
+import json
+import re
+
 import httpx
 
 SYSTEM_PROMPT = (
@@ -40,20 +43,15 @@ def _glossary_block(glossary: dict) -> str:
     return "\n".join(parts)
 
 
-def translate_with_ai(en_text: str, glossary: dict, *, base_url: str, api_key: str, model: str) -> str:
-    """Translate a single English text via an OpenAI-compatible chat API.
-
-    Returns the translated text (stripped). Raises AIError on any failure.
-    """
+def _chat_completion(user_content: str, glossary: dict, *, base_url: str, api_key: str,
+                     model: str) -> str:
+    """POST one chat completion; returns stripped content. Raises AIError on any failure."""
     headers = {"Authorization": f"Bearer {api_key}"}
     payload = {
         "model": model,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT.format(glossary=_glossary_block(glossary))},
-            {
-                "role": "user",
-                "content": "Translate the following text to Simplified Chinese.\nText:\n" + en_text,
-            },
+            {"role": "user", "content": user_content},
         ],
         "temperature": 0.2,
     }
@@ -71,3 +69,54 @@ def translate_with_ai(en_text: str, glossary: dict, *, base_url: str, api_key: s
     if not isinstance(content, str):
         raise AIError("unexpected API response: content is not a string")
     return content.strip()
+
+
+def translate_with_ai(en_text: str, glossary: dict, *, base_url: str, api_key: str, model: str) -> str:
+    """Translate a single English text via an OpenAI-compatible chat API.
+
+    Returns the translated text (stripped). Raises AIError on any failure.
+    """
+    return _chat_completion(
+        "Translate the following text to Simplified Chinese.\nText:\n" + en_text,
+        glossary, base_url=base_url, api_key=api_key, model=model,
+    )
+
+
+def _parse_json_content(content: str) -> dict:
+    """把模型输出解析成 {int 序号: 译文};失败抛 AIError."""
+    cleaned = re.sub(r"^```(?:json)?\n?", "", content.strip())
+    cleaned = re.sub(r"\n?```$", "", cleaned)
+    try:
+        data = json.loads(cleaned)
+    except ValueError as e:
+        raise AIError(f"batch response not valid JSON: {e}") from e
+    if not isinstance(data, dict):
+        raise AIError("batch response not a JSON object")
+    result = {}
+    for key, value in data.items():
+        try:
+            result[int(key)] = value
+        except (ValueError, TypeError):
+            continue
+    return result
+
+
+def translate_batch_with_ai(texts: list[str], glossary: dict, *, base_url: str, api_key: str,
+                            model: str) -> dict:
+    """把多条文本合并为一次 chat 请求翻译;返回 {序号: 译文}(可能缺部分序号).
+
+    Raises AIError on request-level failure or unparseable response.
+    """
+    if not texts:
+        return {}
+    lines = "\n".join(f"{i}: {t}" for i, t in enumerate(texts))
+    user_content = (
+        "Translate each numbered text below to Simplified Chinese.\n"
+        "Reply with ONLY a JSON object mapping each number to its translation, "
+        'e.g. {"0": "...", "1": "..."}. No other text, no code fences.\n\n'
+        + lines
+    )
+    content = _chat_completion(user_content, glossary,
+                               base_url=base_url, api_key=api_key, model=model)
+    parsed = _parse_json_content(content)
+    return {i: zh for i, zh in parsed.items() if isinstance(zh, str) and zh.strip()}

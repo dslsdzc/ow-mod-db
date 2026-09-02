@@ -203,6 +203,90 @@ def test_concurrent_translate_aborts_on_failure_threshold():
     assert translations == {}
 
 
+class FakeBatchAI:
+    """批量 AI 替身: (texts, glossary) -> {i: zh};fail_calls 指定前 N 次调用抛错."""
+
+    def __init__(self, fail_calls=0):
+        self.fail_calls = fail_calls
+        self.calls = []
+
+    def __call__(self, texts, glossary):
+        self.calls.append(texts)
+        if self.fail_calls > 0:
+            self.fail_calls -= 1
+            raise AIError("transient batch")
+        return {i: "译" + str(i) for i in range(len(texts))}
+
+
+def _batched_pending(n):
+    return [{"unique_name": f"M{i}", "field": "description", "en": f"text {i}"}
+            for i in range(n)]
+
+
+def test_batched_translate_all_succeed():
+    translations = {}
+    fake = FakeBatchAI()
+    no_sleep = lambda _s: None
+    translated, failures = translate.translate_pending_batched(
+        _batched_pending(65), translations, {}, {}, fake, at="t", batch_size=30,
+        sleep=no_sleep, max_workers=4)
+    assert translated == 65
+    assert failures == []
+    assert len(fake.calls) == 3  # 65 条 → 3 个批次请求
+    assert len(translations) == 65
+
+
+def test_batched_translate_missing_items_fail():
+    class Partial(FakeBatchAI):
+        def __call__(self, texts, glossary):
+            self.calls.append(texts)
+            return {i: "译" for i in range(len(texts)) if i != 0}
+
+    translations = {}
+    fake = Partial()
+    translated, failures = translate.translate_pending_batched(
+        _batched_pending(2), translations, {}, {}, fake, at="t", batch_size=30,
+        sleep=lambda _s: None)
+    assert translated == 1
+    assert len(failures) == 1
+    assert "缺该条" in failures[0]
+
+
+def test_batched_retries_then_succeeds():
+    translations = {}
+    fake = FakeBatchAI(fail_calls=1)  # 第一次调用失败 → 重试成功
+    translated, failures = translate.translate_pending_batched(
+        _batched_pending(5), translations, {}, {}, fake, at="t", batch_size=30,
+        sleep=lambda _s: None)
+    assert translated == 5
+    assert failures == []
+    assert len(fake.calls) == 2
+
+
+def test_batched_human_override_skips_ai():
+    translations = {}
+    fake = FakeBatchAI()
+    human = {"M0": {"description": "人工译"}}
+    pending = [{"unique_name": "M0", "field": "description", "en": "manual text"},
+               {"unique_name": "M1", "field": "description", "en": "ai text"}]
+    translated, failures = translate.translate_pending_batched(
+        pending, translations, human, {}, fake, at="t", batch_size=30,
+        sleep=lambda _s: None)
+    assert translated == 2
+    assert translations["M0"]["description"]["zh"] == "人工译"
+    assert fake.calls == [["ai text"]]
+
+
+def test_batched_aborts_after_consecutive_chunk_failures():
+    translations = {}
+    fake = FakeBatchAI(fail_calls=99999)
+    with pytest.raises(translate.ConsecutiveFailureError):
+        translate.translate_pending_batched(
+            _batched_pending(100), translations, {}, {}, fake, at="t", batch_size=10,
+            sleep=lambda _s: None, max_workers=2, consecutive_chunk_abort=3)
+    assert translations == {}
+
+
 def test_main_dry_run_calls_no_ai(tmp_path, monkeypatch):
     out = tmp_path / "translations.json"
     out.write_text("{}", encoding="utf-8")
