@@ -48,8 +48,11 @@ function setupAllThumbs(root) {
 
 function cardHtml(m) {
   const thumb = thumbUrl(m);
+  const visual = thumb
+    ? `<span class="thumb-box"><img src="${esc(thumb)}" alt="" loading="lazy"></span>`
+    : `<span class="thumb-box ph-thumb" style="background-image:url('png/16to9.png')"><span class="ph-text">${esc((m.name || m.uniqueName || "?").trim().charAt(0).toUpperCase())}</span></span>`;
   return `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
-    ${thumb ? `<span class="thumb-box"><img src="${esc(thumb)}" alt="" loading="lazy"></span>` : ""}
+    ${visual}
     <h3>${esc(m.name)}</h3>
     <div class="meta">${esc(m.authorDisplay)} · v${esc(m.version)} · ${esc(m.downloadCount)} 次下载</div>
     <p class="desc">${esc(m.description)}</p>
@@ -518,7 +521,9 @@ function renderDetail(mods) {
   const repoOwner = repoParts.length >= 2 ? (repoParts[repoParts.length - 2] || "") : "";
   main.innerHTML = `
     <div class="detail">
-      ${thumb ? `<span class="thumb-box detail-thumb" id="hero-thumb"><img src="${esc(thumb)}" alt=""></span>` : ""}
+      ${thumb
+        ? `<span class="thumb-box detail-thumb" id="hero-thumb"><img src="${esc(thumb)}" alt=""></span>`
+        : `<span class="thumb-box detail-thumb ph-thumb" style="background-image:url('png/21to9.png')"><span class="ph-text">${esc(mod.name || mod.uniqueName)}</span></span>`}
       <h1>${esc(mod.name)}</h1>
       <div class="meta">${repoOwner ? `<a class="link" href="https://github.com/${esc(repoOwner)}" target="_blank" rel="noopener">@${esc(repoOwner)}</a>` : esc(mod.authorDisplay)} · v${esc(mod.version)} · ${esc(mod.downloadCount)} 次下载 · 更新于 ${esc((mod.latestReleaseDate || "").slice(0, 10))}</div>
       <div>${(mod.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>

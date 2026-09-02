@@ -37,6 +37,11 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
              background-color: rgba(255,255,255,.05); }
 .thumb-box img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .detail-thumb { max-width: 720px; border-radius: 10px; margin-bottom: 1rem; }
+.thumb-box.ph-thumb { display: flex; align-items: center; justify-content: center; }
+.ph-text { color: rgba(255,255,255,.9); font-size: 1.7rem; font-weight: 700;
+           text-shadow: 0 1px 8px rgba(0,0,0,.55); letter-spacing: .06em;
+           text-align: center; line-height: 1.3; padding: 0 .8rem; }
+.detail-thumb .ph-text { font-size: 2.6rem; }
 .mod-card h3 { margin: .6rem 0 .2rem; font-size: 1.05rem; }
 .mod-card .meta { color: rgba(255,255,255,.65); font-size: .85rem; }
 .mod-card .desc { margin: .4rem 0 0; font-size: .9rem; color: rgba(255,255,255,.8);
