@@ -1,30 +1,5 @@
 [
   {
-    "unique_name": "Alek.OWML",
-    "field": "name",
-    "en": "OWML"
-  },
-  {
-    "unique_name": "Alek.OWML",
-    "field": "description",
-    "en": "The mod loader and mod framework for Outer Wilds"
-  },
-  {
-    "unique_name": "Raicuparta.NomaiVR",
-    "field": "name",
-    "en": "NomaiVR"
-  },
-  {
-    "unique_name": "Raicuparta.NomaiVR",
-    "field": "description",
-    "en": "Outer Wilds VR Mod with 6DOF tracking and full motion control support"
-  },
-  {
-    "unique_name": "Raicuparta.NomaiVR",
-    "field": "latestReleaseDescription",
-    "en": "Thank you to [mobiusteapot](https://github.com/mobiusteapot) for this update.\r\n- What year is it?\r\n- Do people still play VR?\r\n- What's even the point.\r\n- This was supposed to be my big break.\r\n- Would she still be alive?\r\n- Added snap turn option. 🕹️\r\n- They called me a coward.\r\n- Could I have made a difference?"
-  },
-  {
     "unique_name": "Raicuparta.QuantumSpaceBuddies",
     "field": "name",
     "en": "Quantum Space Buddies"
