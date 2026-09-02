@@ -154,8 +154,9 @@ function initComments(mod) {
   script.setAttribute("data-category-id", "DIC_kwDOULlpL84DEuQA");
   script.setAttribute("data-mapping", "specific");
   // 与官网同款: 讨论串标题 "mod: <uniqueName>" 预建在仓库 Discussions 里
+  // (GitHub 限制每日预建数;未预建的串由首位评论者自动创建,strict=0 自愈)
   script.setAttribute("data-term", "mod: " + mod.uniqueName);
-  script.setAttribute("data-strict", "1");
+  script.setAttribute("data-strict", "0");
   script.setAttribute("data-reactions-enabled", "0");
   script.setAttribute("data-emit-metadata", "1");
   script.setAttribute("data-input-position", "top");
