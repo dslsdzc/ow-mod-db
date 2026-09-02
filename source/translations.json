@@ -27,5 +27,34 @@
       "zh": "感谢 [mobiusteapot](https://github.com/mobiusteapot) 提供此次更新。\n- 现在是哪一年？\n- 还有人玩VR吗？\n- 这到底有什么意义。\n- 这本该是我翻身的机会。\n- 她还会活着吗？\n- 新增分段转向选项。🕹️\n- 他们骂我是懦夫。\n- 我本可以改变些什么吗？",
       "at": "2026-09-02T05:50:19.466841Z"
     }
+  },
+  "Raicuparta.QuantumSpaceBuddies": {
+    "name": {
+      "en": "Quantum Space Buddies",
+      "zh": "量子空间伙伴",
+      "at": "2026-09-02T06:45:55.434812Z"
+    },
+    "description": {
+      "en": "Quantum Space Buddies ( QSB ) is a multiplayer mod for Outer Wilds.",
+      "zh": "量子空间伙伴 ( QSB ) 是星际拓荒的一个多人模组。",
+      "at": "2026-09-02T06:45:55.434812Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Hotfix to fix qsb/nh bug. Also fixes the gamma menu supposedly, I didn't test that part.",
+      "zh": "修复 qsb/nh 的补丁。据说还修复了伽马菜单，但我没测试那部分。",
+      "at": "2026-09-02T06:45:55.434812Z"
+    }
+  },
+  "Alek.LightBramble": {
+    "name": {
+      "en": "Light Bramble",
+      "zh": "亮棘星",
+      "at": "2026-09-02T06:45:55.434812Z"
+    },
+    "description": {
+      "en": "Dark Bramble without fish or fog.",
+      "zh": "没有鱼或雾气的黑棘星",
+      "at": "2026-09-02T06:45:55.434812Z"
+    }
   }
 }
