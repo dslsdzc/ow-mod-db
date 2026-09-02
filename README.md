@@ -12,10 +12,10 @@
 3. 仓库 Settings → Secrets and variables → Actions,添加:
    - `OPENAI_BASE_URL` — OpenAI 兼容接口地址(如 `https://api.deepseek.com/v1`)
    - `OPENAI_API_KEY` — API Key
-   - `OPENAI_MODEL` — 模型名(如 `deepseek-chat`)
+   - `OPENAI_MODEL` — 模型名(如 `deepseek-v4-flash`;DeepSeek 旧名 `deepseek-chat`/`deepseek-reasoner` 已于 2026-07-24 停用,不能再填)
 4. 手动触发一次 Actions 的 `sync-translate` 工作流验证
 
-之后每天 0/6/12/18 点自动同步翻译。首次运行会全量翻译,之后只翻译新增/变更的字段。
+之后每 6 小时(UTC 0/6/12/18 点,即北京时间 8/14/20/2 点)自动同步翻译。首次运行会全量翻译,之后只翻译新增/变更的字段。
 
 ## 让玩家使用中文数据库
 
