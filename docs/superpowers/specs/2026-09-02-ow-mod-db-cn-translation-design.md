@@ -130,7 +130,8 @@ ow-mod-db/
 
 ### 6. 网站 site/(完整站)
 
-- 纯静态(HTML/CSS/JS 或轻量无构建框架),数据读 `data/` 下的 JSON
+- 纯静态,原生 HTML/CSS/JS,无构建框架,客户端渲染: 页面 fetch `data/` 下的 JSON 动态渲染列表与详情
+- 数据文件由 `build.py` 生成并随网站一起部署
 - 列表页: 全部 MOD,中文名 + 中文简介摘要 + 作者(英文)+ 下载量,支持按名称搜索、按 `tags` 分类筛选
 - 详情页: 完整中文简介、更新说明、作者、下载链接(指向官方 `downloadUrl`)、仓库链接
 - 语言: 界面中文;作者名保持英文(已确认不翻)
@@ -140,7 +141,7 @@ ow-mod-db/
 `sync-translate.yml`(schedule: cron `0 */6 * * *`,workflow_dispatch 手动):
 
 1. checkout main
-2. 安装 Python 依赖
+2. 安装 Python 依赖(Python 3.11+,`requirements.txt`)
 3. 运行单元测试
 4. `sync.py` → `translate.py`(需要 Secret 注入环境变量)→ `build.py`
 5. 有变化: 提交 `translations.json` 等缓存回 main
