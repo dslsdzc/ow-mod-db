@@ -230,5 +230,349 @@
       "zh": "静态相机",
       "at": "2026-09-02T06:53:57.769354Z"
     }
+  },
+  "Titch.OWAtropos": {
+    "name": {
+      "en": "Atropos",
+      "zh": "阿特洛波斯",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Newest Planet in the Outer Wilds Solar System!",
+      "zh": "星际拓荒星系中最新的行星！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "What do you think this means?",
+      "zh": "你想想这意味着什么？",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Ellie3.ElliePlanets": {
+    "name": {
+      "en": "ElliePlanets!",
+      "zh": "艾莉行星！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "A few silly planets",
+      "zh": "几个傻乎乎的行星",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "A new spiky moon and a gas giant!",
+      "zh": "一个新的尖刺卫星和一颗气态巨行星！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Owen013.TeenyHatchling": {
+    "name": {
+      "en": "Smol Hatchling",
+      "zh": "小幼崽",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "A tool for resizing the Player, Anglerfish, Inhabitants, and more in Outer Wilds!",
+      "zh": "一个用于调整星际拓荒中玩家、钓鱼鱼、居民等的尺寸的工具！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "# Smol Hatchling 2.0: Outer Wilds Scale Manipulator\r\nSmol Hatchling has been remade from the ground up! Smol Hatchling can now be used not only by players who want to experience Outer Wilds from many different scales, but by other mod developers who may want to resize the player or other things in their mods.\r\n\r\n## Features\r\n\r\n### Customizable Scale for the Player, Anglerfish, the Stranger's Inhabitants, and more!\r\nWith Smol Hatchling, you can set the player character to any size you want; smaller than a marshmallow, bigger than the solar system, or anywhere in between!\r\n\r\nIt even comes with hotkeys you can use to change your scale on the fly: press the \"<\" key to divide your size by two, \">\" to multiply it by two, and \"/\" to return to normal. Player properties such as their collider size, grounded raycasts, and speed are automatically tweaked to work with the Player being resized.\r\n\r\nSmol Hatchling can be used to resize **any object** in the game. All moving creatures will have their movement speed and other attributes adjusted as well so it makes sense compared to their size! I'm planning to add adjustments for other types of objects in the future so that they will also be fully functional at different sizes!\r\n\r\nNote: Custom Player Scale must be enabled in the config menu prior to use. Otherwise, Smol Hatchling will automatically use the default player scale or the scale set by other mods.\r\n\r\n### API for use by other Mods\r\nSmol Hatchling comes with an API that other mods can use to resize the Player or other objects!",
+      "zh": "Smol Hatchling 2.0: 星际拓荒比例操控器\nSmol Hatchling 已从底层完全重制！Smol Hatchling 现在不仅可用于想要从不同比例体验星际拓荒的玩家，还可用于可能想要调整其模组中玩家或其他内容的其他模组开发者。\n\n## 功能\n\n### 可自定义玩家、钓鱼鱼、陌生人的居民等的比例！\n使用 Smol Hatchling，你可以将玩家角色设置为任何你想要的大小；比棉花糖小，比星系大，或者介于两者之间！\n\n它甚至提供了你可以用来即时调整比例的热键：按“<”键将你的尺寸缩小一半，按“>”键将其放大两倍，按“/”键恢复正常。玩家的属性，如它们的碰撞器大小、接地射线投射和速度，会自动调整以适应玩家尺寸的变化。\n\nSmol Hatchling 可用于调整游戏中的**任何对象**的尺寸。所有移动生物的运动速度和其他属性也会相应调整，以便与它们的尺寸相匹配！我计划在未来添加对其他类型对象的调整，以便它们在不同尺寸下也能完全正常工作！\n\n注意：自定义玩家比例必须在配置菜单中启用后才能使用。否则，Smol Hatchling 将自动使用默认玩家比例或由其他模组设置的比例。\n\n### 其他模组使用的 API\nSmol Hatchling 提供了一个 API，其他模组可以使用它来调整玩家或其他对象的尺寸！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Owen013.MovementMod": {
+    "name": {
+      "en": "Hiker's Mod",
+      "zh": "徒步旅行者模组",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Sprinting, instant jumping, customizable player stats, and other movement features.",
+      "zh": "冲刺、瞬间跳跃、可自定义的玩家属性和其他移动功能。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "### Changes\r\n- There is now a half-second cooldown after Wall Jumping in which you cannot Emergency Boost, which fixes an issue where you could Emergency Boost while trying to Wall Jump.\r\n- You can no longer Wall-Jump while thrusting upwards, which fixes an issue where you would wall jump while trying to boost.\r\n- Removed the ability to disable Wall Jumping while suited because of the above bugfix.\r\n- The player's jump height will now scale properly with Smol Hatchling v2.0.0.",
+      "zh": "### 更改\n- 墙壁跳跃后现在有一个半秒的冷却时间，在此期间你不能紧急加速，这修复了一个你可以在尝试墙壁跳跃时紧急加速的问题。\n- 你在向上推进时不能再墙壁跳跃，这修复了一个你试图加速时墙壁跳跃的问题。\n- 由于上述修复程序，移除了穿着时禁用墙壁跳跃的功能。\n- 玩家的跳跃高度现在会随着 Smol Hatchling v2.0.0 正确缩放。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "xen.SignalsPlus": {
+    "name": {
+      "en": "Signals+",
+      "zh": "Signals+",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Implements unused/removed signals and Signalscope frequencies.",
+      "zh": "实现了未使用/已删除的信号和 Signalscope 频率。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Add Patreon donation link to mod manifest",
+      "zh": "- 在模组清单中添加 Patreon 捐赠链接",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Bwc9876.SaveEditor": {
+    "name": {
+      "en": "Save Editor",
+      "zh": "Save Editor",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "A mod that allows you to edit your save file in Outer Wilds (spoilers for the base game)",
+      "zh": "一个允许你在星际拓荒中编辑你的存档文件（基础游戏剧透）的模组",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Improved checking for DLC\r\n- Made it so toggling \"warped to eye of the universe\" now updates buttons accordingly\r\n\r\nty @MegaPiggy for the changes!",
+      "zh": "- 改进了对 DLC 的检查\n- 使切换“扭曲到宇宙之眼”现在会相应更新按钮",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "12090113.MeteorLaunching": {
+    "name": {
+      "en": "Meteor Launching",
+      "zh": "Meteor Launching",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Allows you to shoot meteors or marshmallows with middle mouse click (or the back button if enabled in the mod settings)",
+      "zh": "允许你用中鼠标点击（或在模组设置中启用后用后退按钮）发射流星或棉花糖",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "More API stuff from @MegaPiggy.",
+      "zh": "来自 @MegaPiggy 的更多 API 内容。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Bwc9876.SlatePOV": {
+    "name": {
+      "en": "Slate Simulator",
+      "zh": "Slate Simulator",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Play as everyone's favorite character!",
+      "zh": "扮演大家最喜欢的角色！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Updated to use Common Camera Util",
+      "zh": "- 更新为使用 Common Camera Util",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "TitchMW.tardisfromdoctorwho": {
+    "name": {
+      "en": "TARDIS from Doctor Who",
+      "zh": "来自《神秘博士》的 TARDIS",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "The Doctor and their TARDIS visit the Outer Wilds Solar System!",
+      "zh": "博士和他们的 TARDIS 访问了星际拓荒星系！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "ErroneousCreationist.solarneighbourhood": {
+    "name": {
+      "en": "Solar Neighbourhood",
+      "zh": "Solar Neighbourhood",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Adds in the local group of star systems as seen in the Echoes Of The Eye ending",
+      "zh": "添加了在《宇宙之眼的回响》结尾中看到的本地星系群",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "artificial.VanillaMainMenu": {
+    "name": {
+      "en": "Vanilla Main Menu",
+      "zh": "Vanilla Main Menu",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Removes the Echoes of the Eye subtitle and restores the main menu to its pre-1.0.8 glory.",
+      "zh": "移除了《宇宙之眼的回响》副标题，并将主菜单恢复到 1.0.8 之前的辉煌状态。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "milesand.OWKT": {
+    "name": {
+      "en": "Outer Wilds Korean Translation",
+      "zh": "星际拓荒韩语翻译",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Korean re-translation for Outer Wilds",
+      "zh": "星际拓荒韩语重译",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "누락된 번역 추가",
+      "zh": "添加缺失的翻译",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "ErroneousCreationist.astroneersolarsystem": {
+    "name": {
+      "en": "Astroneer Solar System",
+      "zh": "宇航员太阳系",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Adds the solar system from Astroneer (check SHIP LOG)",
+      "zh": "添加来自宇航员的太阳系（检查飞船日志）",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Book.BlackHolePortalGun": {
+    "name": {
+      "en": "Black Hole Portal Gun",
+      "zh": "黑洞传送门枪",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "B for Black hole, G for White hole. Use uppercase when changing keybinds.",
+      "zh": "B代表黑洞，G代表白洞。更改键位绑定时使用大写。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Configurable key bindings",
+      "zh": "可配置的键位绑定",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "xen.OuterWario": {
+    "name": {
+      "en": "Outer Wario Echoes of the Waaaaaaaaaaah",
+      "zh": "星际拓荒瓦里奥回响之哇啊啊啊啊",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Oh my god! Waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah! (Lets you play as Wario)",
+      "zh": "哦我的上帝！哇啊啊啊啊啊啊啊啊！（让你扮演瓦里奥）",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Yeah idk",
+      "zh": "Yeah idk",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Gurrenm3.SuicideMod": {
+    "name": {
+      "en": "Suicide Mod",
+      "zh": "自杀模组",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "[QSB Compatible] Press 'K' on your Keyboard to meet Jesus early. Very helpful for when you get stuck.",
+      "zh": "[QSB兼容] 在你的键盘上按'K'键提前遇见耶稣。在你卡住时非常有帮助。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "This issue fixes the issue where you can't download the mod",
+      "zh": "此问题修复了无法下载模组的问题",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Titch.OWMusicPlayer": {
+    "name": {
+      "en": "Outer Wilds Music Player",
+      "zh": "星际拓荒音乐播放器",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Jam to MP3 files in your ship and suit while exploring the Solar System!",
+      "zh": "在探索太阳系时，在你的飞船和宇航服中播放MP3文件！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "um fixing the release so xen is happy :))",
+      "zh": "um 修复发布版本让xen满意 :))",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Locochoco.ColliderVisualizer": {
+    "name": {
+      "en": "Collider Visualizer",
+      "zh": "碰撞体可视化器",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Allows the visualization of diferent colliders and shapes",
+      "zh": "允许可视化不同的碰撞体和形状",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "* Added Hotkey for enabling\r\n* Added the last shapes renderers\r\n* Fixed cone and sphere renders\r\n* Added layer filtering for Volume shapes\r\nSee updated readme for info on the new settings.",
+      "zh": "* 添加了启用热键\n* 添加了最后形状渲染器\n* 修复了圆锥和球体渲染\n* 为体积形状添加了层过滤\n查看更新后的readme以获取有关新设置的详细信息。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "dgarro.ArchaeologistAchievementHelper": {
+    "name": {
+      "en": "Archaeologist Achievement Helper",
+      "zh": "考古学家成就助手",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Marks ship log entries that have missing facts required for the Archaeologist achievement as \"There's more to explore here.\". It also lets you view which facts you haven't revealed!",
+      "zh": "将缺少考古学家成就所需事实的飞船日志条目标记为“这里还有更多可探索的”。它还允许你查看哪些事实尚未揭示！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Added an `Unnamed` option for the \"Show missing entries\" setting to avoid showing the names of the missing entries (the text \"MISSING ENTRY\" would be shown instead), the `Named` option shows the real name as before.",
+      "zh": "为“显示缺失条目”设置添加了`未命名`选项，以避免显示缺失条目的名称（相反，将显示文本“MISSING ENTRY”），`命名`选项按之前的方式显示真实名称。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "Roggsy.enterthewarioverse": {
+    "name": {
+      "en": "Enter the Warioverse",
+      "zh": "进入瓦里奥宇宙",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "A whole system of Wario to explore! Can you solve the mystery of the Warioverse? WAH!",
+      "zh": "一个可以探索的完整瓦里奥系统！你能解开瓦里奥宇宙的谜团吗？哇！",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "mrmeep321.Angler": {
+    "name": {
+      "en": "21st Century Anglerfish",
+      "zh": "21世纪电鳗",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Fixed an issue where the Mod Loader was pulling 2 audio files, one that exists, and one that is in the wrong directory.",
+      "zh": "修复了一个问题，即模组加载器正在拉取2个音频文件，其中一个存在，另一个在错误的目录中。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "smallbug.MedleyOfPlanets": {
+    "name": {
+      "en": "Medley of Planets",
+      "zh": "行星组曲",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "description": {
+      "en": "Adds a medley of  planets and moons to explore.",
+      "zh": "添加了可以探索的行星和卫星组曲。",
+      "at": "2026-09-02T06:56:21.773300Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Improved water colors",
+      "zh": "改进了水的颜色",
+      "at": "2026-09-02T06:56:21.773300Z"
+    }
   }
 }
