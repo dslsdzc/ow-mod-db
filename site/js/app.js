@@ -188,6 +188,31 @@ function renderMarkdownInto(el, md, baseUrl) {
   }
 }
 
+function initPatchBlock(mod) {
+  const section = document.getElementById("patch-section");
+  const box = document.getElementById("patch-box");
+  if (!section || !box) return;
+  fetchJson("data/patches.json")
+    .then((patches) => {
+      const p = patches[mod.uniqueName];
+      if (!p) { section.remove(); return; }
+      section.hidden = false;
+      const installBtn = p.install === "owmm" && p.uniqueName
+        ? `<a class="cta" href="owmods://install-mod/${encodeURIComponent(p.uniqueName)}"
+             title="需已安装 Outer Wilds Mod Manager">一键安装补丁</a>`
+        : (p.url ? `<a class="cta" href="${esc(p.url)}" target="_blank" rel="noopener">下载补丁</a>` : "");
+      const manualNote = p.install === "manual"
+        ? `<p class="foot-note">下载后放入 Mods 文件夹,或用 OWMM 安装 zip。</p>` : "";
+      box.innerHTML =
+        `<div><p style="margin:0 0 .4rem;">${esc(p.name || "中文汉化补丁")}</p>
+         <div class="cta-row">${installBtn}</div>
+         ${p.note ? `<p class="foot-note">${esc(p.note)}</p>` : ""}
+         ${manualNote}
+         <p class="foot-note">补丁为社区作品,版权归作者所有。</p></div>`;
+    })
+    .catch(() => section.remove());
+}
+
 function initReleases(mod) {
   const section = document.getElementById("releases-section");
   const list = document.getElementById("releases-list");
@@ -468,6 +493,10 @@ function renderDetail(mods) {
         <h3>版本历史</h3>
         <div id="releases-list"></div>
       </div>
+      <div class="section" id="patch-section" hidden>
+        <h3>中文汉化补丁</h3>
+        <div id="patch-box"></div>
+      </div>
       <div class="section" id="comments-section" hidden>
         <h3>讨论区</h3>
         <div class="readme-actions"><span class="hint">评论由 GitHub Discussions 驱动 · 英文评论可用浏览器自带翻译阅读</span></div>
@@ -477,6 +506,7 @@ function renderDetail(mods) {
   initReadme(mod);
   initAddons(mod, mods);
   initReleases(mod);
+  initPatchBlock(mod);
   initComments(mod);
 }
 

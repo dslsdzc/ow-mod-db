@@ -56,6 +56,14 @@ def test_mirror_pages_cover_three_views():
     assert "uniqueName" in js    # 详情页从 URL 参数读 uniqueName
 
 
+def test_patch_block_markers_present():
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert "patches.json" in js
+    assert "initPatchBlock" in js
+    assert "owmods://install-mod/" in js
+    assert "中文汉化补丁" in js
+
+
 def test_patches_payload_shape():
     patches = [
         {"target": "Hawkbar.GhostInTheMachine",
