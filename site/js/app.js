@@ -140,6 +140,23 @@ async function msTranslateTexts(texts, to) {
   return data.map((item) => (item.translations || []).map((t) => t.text).join(" "));
 }
 
+function renderMermaidBlocks(scope) {
+  if (!window.mermaid) return;
+  const blocks = [...(scope || document).querySelectorAll("pre > code.language-mermaid")];
+  if (!blocks.length) return;
+  mermaid.initialize({ startOnLoad: false, theme: "dark" });
+  blocks.forEach(async (code) => {
+    try {
+      const id = "mmd-" + Math.random().toString(36).slice(2, 9);
+      const svg = await mermaid.render(id, code.textContent);
+      const pre = code.closest("pre");
+      pre.outerHTML = svg;
+    } catch (e) {
+      // 图语法错误则保留代码原文展示
+    }
+  });
+}
+
 function renderMarkdownInto(el, md, baseUrl) {
   if (!window.marked || !window.DOMPurify) {
     el.innerHTML = `<p class="placeholder">渲染库未加载(CDN 不可达),<a class="link" href="${esc(baseUrl)}" target="_blank" rel="noopener">打开仓库原文目录</a></p>`;
@@ -147,6 +164,7 @@ function renderMarkdownInto(el, md, baseUrl) {
   }
   const raw = marked.parse(md, { gfm: true, breaks: false });
   el.innerHTML = DOMPurify.sanitize(raw);
+  renderMermaidBlocks(el);
   // 加载失败的图(如国内被墙的徽章图)直接隐藏,不显示 alt 文本噪音
   el.querySelectorAll("img").forEach((img) => {
     img.addEventListener("error", () => { img.style.visibility = "hidden"; }, { once: true });
