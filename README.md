@@ -16,18 +16,6 @@
 - 首次全量翻译,之后只翻译新增/变更内容;术语表变更走"确定性替换 + 命中字段定向重译",不整库重翻
 - README 仅翻译**开放许可**(MIT 等白名单)仓库,尊重无许可/传染性许可作者的意愿(即时翻译按钮仅供个人浏览,不保存)
 
-## 复刻部署(给想自建镜像的人)
-
-1. 克隆本仓库并推送到你自己的 GitHub
-2. 仓库 Settings → Pages → Source 选择 `gh-pages` 分支
-3. 仓库 Settings → Secrets and variables → Actions,添加:
-   - `OPENAI_BASE_URL` — OpenAI 兼容接口地址(如 `https://api.deepseek.com/v1`)
-   - `OPENAI_API_KEY` — API Key
-   - `OPENAI_MODEL` — 模型名(如 `deepseek-v4-flash`;DeepSeek 旧名 `deepseek-chat`/`deepseek-reasoner` 已于 2026-07-24 停用,不能再填)
-4. 手动触发一次 Actions 的 `sync-translate` 工作流,或直接推送任意 source/ 下文件
-5. 站点与数据库网址中的用户名换成你自己的 GitHub 用户名即可
-6. (可选)启用仓库 Discussions 并在各详情页评论区生效
-
 ## 维护
 
 详细说明见 [`source/README.md`](source/README.md) —— 里面标注了哪些文件**人工可改**、哪些**自动生成勿动**。
