@@ -50,7 +50,7 @@ function cardHtml(m) {
   const thumb = thumbUrl(m);
   const visual = thumb
     ? `<span class="thumb-box"><img src="${esc(thumb)}" alt="" loading="lazy"></span>`
-    : `<span class="thumb-box ph-thumb" style="background-image:url('png/16to9.png')"><span class="ph-text">${esc((m.name || m.uniqueName || "?").trim().charAt(0).toUpperCase())}</span></span>`;
+    : `<span class="thumb-box ph-thumb" style="background-image:url('png/16to9.png')"><span class="ph-text">${esc(m.name || m.uniqueName || "?")}</span></span>`;
   return `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
     ${visual}
     <h3>${esc(m.name)}</h3>

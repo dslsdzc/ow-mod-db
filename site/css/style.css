@@ -41,6 +41,7 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .ph-text { color: rgba(255,255,255,.9); font-size: 1.7rem; font-weight: 700;
            text-shadow: 0 1px 8px rgba(0,0,0,.55); letter-spacing: .06em;
            text-align: center; line-height: 1.3; padding: 0 .8rem; }
+.mod-card .ph-text { font-size: 1.1rem; font-weight: 600; }  /* 卡片空间小,全名用小字号 */
 .detail-thumb .ph-text { font-size: 2.6rem; }
 .mod-card h3 { margin: .6rem 0 .2rem; font-size: 1.05rem; overflow-wrap: break-word; }
 .mod-card .meta { color: rgba(255,255,255,.65); font-size: .85rem; overflow-wrap: break-word; }
