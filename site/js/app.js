@@ -396,16 +396,26 @@ function initAddons(mod, allMods) {
   if (!wrap) return;
   const children = allMods.filter((m) => m.parent === mod.uniqueName && m.uniqueName !== mod.uniqueName);
   const variations = (mod.repoVariations || []).map((v) => typeof v === "string" ? { uniqueName: v } : v)
-    .filter((v) => v && v.uniqueName);
+    .filter((v) => v && (v.uniqueName || v.repo || v.repoUrl || v.name));
   if (!children.length && !variations.length) { wrap.remove(); return; }
   wrap.hidden = false;
   const list = document.getElementById("addons-list");
-  const card = (m, fallback) => `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
-      <div><h3>${esc(m.name || fallback || m.uniqueName)}</h3>
-      <div class="meta">${esc(m.uniqueName)}</div></div></a>`;
+  const shortLabel = (s) => {
+    if (!s) return "";
+    const t = String(s);
+    const m = t.match(/^https?:\/\/(?:www\.)?github\.com\/([^/]+\/[^/]+?)\/?$/);
+    return m ? m[1] : t;
+  };
+  const card = (m, label) => `<a class="mod-card" href="${m.uniqueName && !/^https?:/.test(m.uniqueName)
+      ? "mod.html?uniqueName=" + encodeURIComponent(m.uniqueName)
+      : (esc(m.repoUrl || m.repo || "#"))}" target="${m.uniqueName && !/^https?:/.test(m.uniqueName) ? "" : "_blank"}" rel="noopener">
+      <div><h3>${esc(label || m.name || shortLabel(m.repo || m.repoUrl || m.uniqueName) || m.uniqueName)}</h3>
+      <div class="meta">${esc(shortLabel(m.repo || m.repoUrl || m.uniqueName) || "")}</div></div></a>`;
   const html = [];
-  for (const c of children) html.push(card(c, ""));
-  for (const v of variations) html.push(card(v, v.uniqueName));
+  for (const c of children) html.push(card(c, c.name || c.uniqueName));
+  for (const v of variations) {
+    html.push(card(v, v.name || shortLabel(v.uniqueName) || shortLabel(v.repo || v.repoUrl)));
+  }
   list.innerHTML = `<div class="grid">${html.join("")}</div>`;
 }
 
@@ -534,7 +544,7 @@ function renderDetail(mods) {
       <div>${(mod.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
       <div class="buttons">
         <a href="owmods://install-mod/${encodeURIComponent(mod.uniqueName)}" title="需要已安装 Outer Wilds Mod Manager">一键安装</a>
-        <a class="secondary" href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">下载 zip</a>
+        <a class="secondary" href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">下载 zip${mod.version ? ` (v${esc(mod.version)})` : ""}</a>
         ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">源代码仓库</a>` : ""}
       </div>
       ${mod.slug ? `<div class="buttons-second">
