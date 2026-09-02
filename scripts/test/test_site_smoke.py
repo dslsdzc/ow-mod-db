@@ -1,0 +1,49 @@
+"""构建产物冒烟测试: 跑 build 后检查 dist 产物结构。"""
+import json
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+
+def _run_build(tmp_path):
+    """用 fixture 官方库 + 手工翻译缓存执行 build.py,产物放到 tmp_path。"""
+    import build
+    official = json.loads((Path(__file__).parent / "fixtures" / "official.json").read_text(encoding="utf-8"))
+    translations = {
+        "Alek.OWML": {
+            "description": {"en": "The mod loader and mod framework for Outer Wilds",
+                            "zh": "OWML 模组加载器", "at": "t"},
+        },
+    }
+    database, mods_data = build.build_all(official, translations)
+    (tmp_path / "data").mkdir(parents=True, exist_ok=True)
+    (tmp_path / "database.json").write_text(json.dumps(database, ensure_ascii=False), encoding="utf-8")
+    (tmp_path / "data" / "mods.json").write_text(json.dumps({"mods": mods_data}, ensure_ascii=False), encoding="utf-8")
+    return database, mods_data
+
+
+def test_site_files_exist():
+    for rel in ("index.html", "mods.html", "mod.html", "css/style.css", "js/app.js"):
+        assert (REPO_ROOT / "site" / rel).exists(), f"缺少 site/{rel}"
+
+
+def test_dist_artifacts_and_json_valid(tmp_path):
+    database, mods_data = _run_build(tmp_path)
+    assert '"releases"' in (tmp_path / "database.json").read_text(encoding="utf-8")
+    mods = json.loads((tmp_path / "data" / "mods.json").read_text(encoding="utf-8"))["mods"]
+    assert len(mods) == len(mods_data) == 2
+    required_keys = {"uniqueName", "name", "description", "authorDisplay", "downloadUrl",
+                     "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount",
+                     "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",
+                     "latestReleaseDescription"}
+    for mod in mods:
+        assert required_keys <= set(mod.keys())
+
+
+def test_mirror_pages_cover_three_views():
+    index = (REPO_ROOT / "site" / "index.html").read_text(encoding="utf-8")
+    mods = (REPO_ROOT / "site" / "mods.html").read_text(encoding="utf-8")
+    assert "featured" in index   # 首页三栏
+    assert "mod-grid" in mods    # 列表页网格
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert "uniqueName" in js    # 详情页从 URL 参数读 uniqueName
