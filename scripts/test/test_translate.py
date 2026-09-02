@@ -286,6 +286,26 @@ def test_batched_human_override_skips_ai():
     assert fake.calls == [["ai text"]]
 
 
+def test_batched_split_retry_isolates_bad_batch():
+    class SplitOnly(FakeBatchAI):
+        """整批调用必然失败;拆分到单条后成功."""
+
+        def __call__(self, texts, glossary):
+            self.calls.append(texts)
+            if len(texts) > 1:
+                raise AIError("batch too big for this model")
+            return {0: "译" + texts[0][:4]}
+
+    translations = {}
+    fake = SplitOnly()
+    translated, failures = translate.translate_pending_batched(
+        _batched_pending(3), translations, {}, {}, fake, at="t", batch_size=10,
+        batch_chars=100000, sleep=lambda _s: None)
+    assert translated == 3   # 3 条都被折半重试后译出
+    assert failures == []
+    assert len(translations) == 3
+
+
 def test_batched_aborts_after_consecutive_chunk_failures():
     translations = {}
     fake = FakeBatchAI(fail_calls=99999)

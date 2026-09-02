@@ -152,7 +152,7 @@ def _make_chunks(items: list[dict], batch_size: int, batch_chars: int) -> list[l
 
 def translate_pending_batched(pending: list[dict], translations: dict, human: dict,
                               glossary: dict, ai_batch, *, at: str, batch_size: int = 30,
-                              batch_chars: int = 4000, max_retries: int = 3,
+                              batch_chars: int = 1200, max_retries: int = 3,
                               backoff_s: float = 2.0, sleep=time.sleep, max_workers: int = 8,
                               consecutive_chunk_abort: int = 3) -> tuple[int, list[str]]:
     """把多条文本合并成批量请求翻译(减少请求数/术语表重复开销/限流压力).
@@ -180,7 +180,7 @@ def translate_pending_batched(pending: list[dict], translations: dict, human: di
     lock = threading.Lock()
     state = {"failed_chunks": 0, "stop": False}
 
-    def work(chunk: list[dict]) -> None:
+    def process(chunk: list[dict], depth: int = 0) -> None:
         nonlocal translated
         if state["stop"]:
             return
@@ -193,22 +193,31 @@ def translate_pending_batched(pending: list[dict], translations: dict, human: di
             except ai_client.AIError as e:
                 last_error = e
                 sleep(backoff_s * (2 ** attempt))
-        if result is None:
+        if result is not None:
             with lock:
-                state["failed_chunks"] += 1
-                for c in chunk:
-                    failures.append(f"{c['unique_name']}.{c['field']}: 批次失败: {last_error}")
-                if state["failed_chunks"] >= consecutive_chunk_abort:
-                    state["stop"] = True
+                for idx, c in enumerate(chunk):
+                    zh = result.get(idx)
+                    if not zh:
+                        failures.append(f"{c['unique_name']}.{c['field']}: 批次响应缺该条")
+                        continue
+                    set_translation(translations, c["unique_name"], c["field"], c["en"], zh, at)
+                    translated += 1
+            return
+        # 批次整体失败 → 折半重试,把截断/坏条隔离到最小粒度(最多 4 层)
+        if len(chunk) > 1 and depth < 4:
+            mid = len(chunk) // 2
+            process(chunk[:mid], depth + 1)
+            process(chunk[mid:], depth + 1)
             return
         with lock:
-            for idx, c in enumerate(chunk):
-                zh = result.get(idx)
-                if not zh:
-                    failures.append(f"{c['unique_name']}.{c['field']}: 批次响应缺该条")
-                    continue
-                set_translation(translations, c["unique_name"], c["field"], c["en"], zh, at)
-                translated += 1
+            state["failed_chunks"] += 1
+            for c in chunk:
+                failures.append(f"{c['unique_name']}.{c['field']}: 批次失败: {last_error}")
+            if state["failed_chunks"] >= consecutive_chunk_abort:
+                state["stop"] = True
+
+    def work(chunk: list[dict]) -> None:
+        process(chunk)
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         list(executor.map(work, chunks))
