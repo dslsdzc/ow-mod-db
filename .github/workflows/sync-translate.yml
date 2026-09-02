@@ -61,8 +61,8 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        # DeepSeek 并发上限按余额档位给(当前账号 ~132),100 为安全值
-        run: python scripts/translate.py --concurrency 100 --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
+        # DeepSeek 并发上限按余额动态给(余额低时档位很低),8 为低余额安全值
+        run: python scripts/translate.py --concurrency 8 --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Build artifacts
         if: steps.check.outputs.skip != 'true'
