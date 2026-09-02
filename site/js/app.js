@@ -260,7 +260,7 @@ function initPatchBlock(mod) {
       const manualNote = p.install === "manual"
         ? `<p class="foot-note">下载后放入 Mods 文件夹,或用 OWMM 安装 zip。</p>` : "";
       box.innerHTML =
-        `<div><p style="margin:0 0 .4rem;">${esc(p.name || "中文汉化补丁")}</p>
+        `<div><p style="margin:0 0 .4rem;">${esc(p.name || "中文支持")}</p>
          <div class="cta-row">${installBtn}</div>
          ${p.note ? `<p class="foot-note">${esc(p.note)}</p>` : ""}
          ${manualNote}
@@ -567,7 +567,7 @@ function renderDetail(mods) {
         <div id="releases-list"></div>
       </div>
       <div class="section" id="patch-section" hidden>
-        <h3>中文汉化补丁</h3>
+        <h3>中文支持</h3>
         <div id="patch-box"></div>
       </div>
       <div class="section" id="comments-section" hidden>

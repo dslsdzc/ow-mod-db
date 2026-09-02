@@ -61,7 +61,7 @@ def test_patch_block_markers_present():
     assert "patches.json" in js
     assert "initPatchBlock" in js
     assert "owmods://install-mod/" in js
-    assert "中文汉化补丁" in js
+    assert "中文支持" in js
 
 
 def test_official_mod_links_rewritten_markers():
