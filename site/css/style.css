@@ -42,3 +42,5 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .tag { display: inline-block; padding: .15rem .6rem; border-radius: 999px;
        background: rgba(255,255,255,.1); color: rgba(255,255,255,.8); font-size: .75rem; margin-right: .35rem; }
 .placeholder { color: rgba(255,255,255,.65); text-align: center; padding: 2rem; }
+.detail .thumb { width: 100%; max-width: 480px; aspect-ratio: 16/9; object-fit: cover;
+                 border-radius: 10px; background: rgba(255,255,255,.06); margin-bottom: 1rem; }
