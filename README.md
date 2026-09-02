@@ -41,7 +41,8 @@
 | 内容 | 许可 | 许可文件 |
 |---|---|---|
 | `scripts/` 流水线代码 | **无许可声明**(按默认规则保留所有权利 © DslsDZC) | 无 |
-| 网站代码(`site/`、CI 配置)| **GPL-3.0** | `LICENSE` |
+| 网站代码 `site/` | **GPL-3.0** | `LICENSE` |
+| CI 配置(`.github/`)| **无许可声明**(保留所有权利 © DslsDZC) | 无 |
 | 数据产物(`source/official.json`、翻译缓存、`database.json` 等)| **MIT** | `source/DATA-LICENSE` |
 | 术语表 `source/glossary.json` 等 | 事实性对照,**无独立版权主张**(译名版权归官方/原作者) | `source/GLOSSARY-LICENSE` |
 | 上游数据 | MIT © ow-mods | 官方仓库 |
