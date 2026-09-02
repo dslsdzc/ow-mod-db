@@ -29,7 +29,7 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .mod-card { display: block; padding: 1rem; border: 1px solid rgba(255,255,255,.12);
             border-radius: 10px; background: rgba(255,255,255,.04); text-decoration: none; color: #fff; }
 .mod-card:hover { border-color: #ff9c86; }
-.mod-card .thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px;
+.mod-card .thumb { width: 100%; aspect-ratio: 16/9; object-fit: contain; /* 完整显示,宽图不裁左右 */
                    background: rgba(255,255,255,.06); }
 .mod-card h3 { margin: .6rem 0 .2rem; font-size: 1.05rem; }
 .mod-card .meta { color: rgba(255,255,255,.65); font-size: .85rem; }
