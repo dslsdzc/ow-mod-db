@@ -10,6 +10,10 @@ function esc(s) {
   return div.innerHTML.replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
+function normLines(s) {
+  return String(s == null ? "" : s).replace(/\r\n?/g, "\n");
+}
+
 function thumbUrl(m) {
   return m.thumbnail && m.thumbnail.main
     ? "https://ow-mods.github.io/ow-mod-db/thumbnails/" + m.thumbnail.main
@@ -341,8 +345,8 @@ function renderDetail(mods) {
         <a href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">下载 MOD</a>
         ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">源代码仓库</a>` : ""}
       </div>
-      ${mod.description ? `<div class="section"><h3>简介</h3><p>${esc(mod.description)}</p></div>` : ""}
-      ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><p>${esc(mod.latestReleaseDescription)}</p></div>` : ""}
+      ${mod.description ? `<div class="section"><h3>简介</h3><p>${esc(normLines(mod.description))}</p></div>` : ""}
+      ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><p>${esc(normLines(mod.latestReleaseDescription))}</p></div>` : ""}
       <div class="section" id="readme-section" hidden>
         <h3>README</h3>
         <div class="readme-actions" id="readme-actions"></div>

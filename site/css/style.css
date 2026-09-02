@@ -55,6 +55,7 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .detail .section { border: 1px solid rgba(255,255,255,.12); border-radius: 10px;
                    padding: 1rem 1.25rem; margin-top: 1.25rem; background: rgba(255,255,255,.04); }
 .detail .section h3 { margin: 0 0 .5rem; font-size: 1rem; }
+.detail .section p { white-space: pre-line; }  /* 保留更新说明里的换行 */
 .tag { display: inline-block; padding: .15rem .6rem; border-radius: 999px;
        background: rgba(255,255,255,.1); color: rgba(255,255,255,.8); font-size: .75rem; margin-right: .35rem; }
 .placeholder { color: rgba(255,255,255,.65); text-align: center; padding: 2rem; }
