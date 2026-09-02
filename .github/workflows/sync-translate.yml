@@ -95,7 +95,8 @@ jobs:
           git add source/translations.json source/pending.json source/official.json \
             source/readmes.json source/license_cache.json source/readme_denylist.json
           git diff --cached --quiet || git commit -m "chore: 更新翻译缓存 [skip ci]"
-          git pull --rebase origin main --quiet   # 运行期间 main 可能被推进(如我们自己的推送)
+          git checkout -- .   # 丢弃未暂存杂散变更(rebase 会拒绝未暂存文件)
+          git pull --rebase origin main --quiet || git rebase --abort
           git push
 
       - name: Deploy to GitHub Pages
