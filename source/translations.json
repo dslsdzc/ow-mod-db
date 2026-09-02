@@ -62,6 +62,16 @@
       "en": "## What's Changed\r\n- Some build updates\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_HardMode/compare/0.5.1...0.5.2",
       "zh": "## 有什么变化\n- 一些构建更新\n**完整变更日志**：https://github.com/PacificEngine/OW_HardMode/compare/0.5.1...0.5.2",
       "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "name": {
+      "en": "Difficulty Mod",
+      "zh": "难度模组",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Allow players to change game difficulty settings",
+      "zh": "允许玩家更改游戏难度设置",
+      "at": "2026-09-02T07:00:20.403614Z"
     }
   },
   "Leadpogrommer.PeacefulGhosts": {
@@ -229,6 +239,16 @@
       "en": "Static Camera",
       "zh": "静态相机",
       "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "Place a camera where you're standing then walk around in front of it.",
+      "zh": "放置一个相机在你站立的位置，然后在你面前走动。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- You'll never guess what this update is",
+      "zh": "- 你永远猜不到这个更新是什么",
+      "at": "2026-09-02T07:00:20.403614Z"
     }
   },
   "Titch.OWAtropos": {
@@ -573,6 +593,840 @@
       "en": "Improved water colors",
       "zh": "改进了水的颜色",
       "at": "2026-09-02T06:56:21.773300Z"
+    }
+  },
+  "misternebula.FreeCam": {
+    "name": {
+      "en": "FreeCam",
+      "zh": "自由相机",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A free-camera mod for Outer Wilds",
+      "zh": "星际拓荒的自由相机模组",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Updated for Patch 15 (thanks MegaPiggy!)",
+      "zh": "- 更新至补丁15（感谢MegaPiggy！)",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Alek.CrouchMod": {
+    "name": {
+      "en": "Crouch Mod",
+      "zh": "蹲伏模组",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Enables crouching in Outer Wilds.",
+      "zh": "启用星际拓荒中的蹲伏功能。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "clubby789.OWClock": {
+    "name": {
+      "en": "Clock",
+      "zh": "时钟",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A clock overlay mod for Outer Wilds, including events",
+      "zh": "星际拓荒时钟覆盖模组，包含事件",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "## What's Changed\r\n- Allow toggling display with `H` (#12)\r\n- Allow displaying only when suit is equipped (#17)\r\n- Fix clock showing up on main menu (#11)\r\n- Fix clock going negative (#16)",
+      "zh": "## 更改内容\n- 允许使用`H`键切换显示 (#12)\n- 允许仅在装备宇航服时显示 (#17)\n- 修复主菜单时钟显示问题 (#11)\n- 修复时钟显示为负数 (#16)",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Alek.Cammie": {
+    "name": {
+      "en": "HD Screenshot",
+      "zh": "高清截图",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Screenshot mod for Outer Wilds.",
+      "zh": "星际拓荒截图模组。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "_nebula.MenuFramework": {
+    "name": {
+      "en": "Menu Framework",
+      "zh": "菜单框架",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Menu manipulation helpers for Outer Wilds, mainly for _nebula's mods.",
+      "zh": "星际拓荒菜单操作辅助工具，主要用于_nebula的模组。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Now using OWML's starting popup system.",
+      "zh": "- 现在使用OWML的启动弹窗系统。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Vesper.ScoutStreaming": {
+    "name": {
+      "en": "ScoutStreaming",
+      "zh": "ScoutStreaming",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Turns the scout's screenshot feature into a live video!",
+      "zh": "将侦察兵的截图功能转换为实时视频！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Fixed NH log bug",
+      "zh": "修复NH日志错误",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Vesper.VespersAssortedOuterWildsShaders": {
+    "name": {
+      "en": "Vesper's Assorted OuterWilds Shaders",
+      "zh": "Vesper's Assorted OuterWilds Shaders",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A mod containing all of the shaders I've created for Outer Wilds! ",
+      "zh": "包含我所有为星际拓荒创建的着色器的模组！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Set each ASCII character to the maximum brightness of that colour, as the brightness should be determined by the density of that character, not the colour itself.",
+      "zh": "将每个ASCII字符设置为该颜色的最大亮度，因为亮度应由该字符的密度决定，而非颜色本身。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Vesper.OuterWildsMMO": {
+    "name": {
+      "en": "Outer Wilds Online",
+      "zh": "Outer Wilds Online",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A deprecated Outer Wilds mmo experience, you probably want QSB instead!",
+      "zh": "一个已弃用的星际拓荒MMO体验，你可能更想用QSB！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Fixed bug where a room wasn't created due to the game libs removing a helper function.\r\n\r\n:bleh:",
+      "zh": "修复因游戏库移除辅助函数而导致房间未创建的错误。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Glitch.AltDebugMenu": {
+    "name": {
+      "en": "Cheat and Debug Menu",
+      "zh": "作弊和调试菜单",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Allows using some commands from Debug Mode and adds other functions as well.",
+      "zh": "允许使用调试模式下的某些命令，并添加其他功能。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "## [0.5.3]\r\n\r\n### Other\r\n- renamed mod to Cheat and Debug Menu from Alt Debug Menu\r\n\r\n## [0.5.2]\r\n\r\n### Other\r\n- version number omitted",
+      "zh": "## [0.5.3]\n\n### 其他\n- 将模组重命名为Cheat and Debug Menu，从Alt Debug Menu\n\n## [0.5.2]\n\n### 其他\n- 版本号已省略",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "PacificEngine.CheatsMod": {
+    "name": {
+      "en": "Cheats Mod",
+      "zh": "作弊模组",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Togglable features and teleportation. Fork of Pacific Engine's Cheats Mod but without Common Resources as a dependency.",
+      "zh": "可切换的功能和传送。太平洋引擎作弊模组的分支，但不依赖Common Resources。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- PacificEngine's Common Resources is no longer a dependency\r\n- You can teleport to the Mapping & Backer Satellites now.\r\n- Added keybinds to change the state of the Quantum Moon\r\n- You can now give yourself the vision torch, every Solanum conversation stone, and every projection stone.\r\n- Lantern/Artifact focus petals no longer go inside of the flames.",
+      "zh": "- PacificEngine的Common Resources不再作为依赖\n- 现在可以传送至Mapping & Backer卫星\n- 添加了按键绑定来改变量子卫星的状态\n- 现在可以给自己提供视野火炬、每块所莱内姆对话石和每块投射石\n- 灯笼/遗物焦点花瓣不再进入火焰中。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.DayDream": {
+    "name": {
+      "en": "Daydream",
+      "zh": "白日梦",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Makes it daytime in the DLC dream world and lets you enter from any campfire.",
+      "zh": "在DLC梦境世界中变为白天，并允许你从任何篝火进入。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Add Patreon donation link to mod manifest",
+      "zh": "- 在模组清单中添加Patreon捐款链接",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Heelio.EotEBrighterDreams": {
+    "name": {
+      "en": "EotE Brighter Dreams",
+      "zh": "EotE更美的梦",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Outer Wilds mod: gives the player night vision on Echoes of the Eye's dream world.",
+      "zh": "星际拓荒模组：在回响之眼的梦境世界中为玩家提供夜视功能。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Vesper.UnityExplorer": {
+    "name": {
+      "en": "Unity Explorer",
+      "zh": "Unity探索器",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Allows you to look at a recreation of the Unity editor during runtime",
+      "zh": "允许你在运行时查看Unity编辑器的复制品。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "use a simpler fork of unity explorer without the extra features because surprise keybinds and etc etc. if you want cinematic unity explorer, use [megapiggy's fork](https://github.com/MegaPiggy/Cinematic-Unity-Explorer-For-Outer-Wilds)",
+      "zh": "使用没有额外功能的 unity explorer 简单分支，因为惊喜按键绑定等等。如果你想要电影般的 unity explorer，使用 [megapiggy 的分支](https://github.com/MegaPiggy/Cinematic-Unity-Explorer-For-Outer-Wilds)",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Vesper.HalfLifeOverhaul": {
+    "name": {
+      "en": "Half-Life Overhaul",
+      "zh": "半生命重制",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Replaces visuals and sound to that of Half-life 1! Why? It's cool!",
+      "zh": "替换视觉效果和声音为半生命 1！为什么？很酷！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "0.7.0\r\n\r\nBunch of new skeleton models and tools",
+      "zh": "0.7.0\n一堆新的骨骼模型和工具",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Vesper.AutoResume": {
+    "name": {
+      "en": "Auto Resume",
+      "zh": "自动恢复",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "On start-up the game automatically resumes and wakes the player up (Reupload of Rai's mod)",
+      "zh": "启动时游戏自动恢复并唤醒玩家（Rai 的模组的重新上传）",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Update thanks to Xen,\r\n- NH compatibility\r\n- Modernisation\r\n- Squashed bugs",
+      "zh": "感谢 Xen 的更新，\n- NH 兼容性\n- 现代化\n- 合并了错误",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.TankEngine": {
+    "name": {
+      "en": "Outer Thomas Echoes of the Tank Engine",
+      "zh": "星际拓荒 托马斯坦克引擎的回声",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Replaces the ship with Thomas the Tank Engine for some reason. Supports Achievements+!",
+      "zh": "不知为何替换了飞船为托马斯坦克引擎。支持 Achievements+！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Russian localization by Tlya",
+      "zh": "- 由 Tlya 提供的俄语本地化",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.MajorasMask": {
+    "name": {
+      "en": "Majora's Mask's Moon",
+      "zh": "Majora's Mask 的月亮",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Replaces the sun with the moon from The Legend of Zelda: Majora's Mask",
+      "zh": "将太阳替换为来自《塞尔达传说：时之笛》Majora's Mask 的月亮",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Initial commit.",
+      "zh": "初始提交",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.NewHorizons": {
+    "name": {
+      "en": "New Horizons",
+      "zh": "新视野",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "The story mod creation framework for Outer Wilds",
+      "zh": "星际拓荒 的故事模组创建框架",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "## Bug fixes\r\n\r\n- Fixed that warping to Timber Hearth has you trapped inside the ship sometimes\r\n- Made fuel tank props scaleable\r\n- Added SearchUtilities.Find to the API\r\n- Fixed a possible NRE in SearchUtilities.Find (caused Astral Codec travel music to break)\r\n- Fixed Title screen shows white square if you do not have the DLC installed #1167\r\n- Maybe fixed player suffocating when startInShip is true\r\n \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1168**",
+      "zh": "## 修复错误\n\n- 修复了有时在传送到木炉星时被困在飞船内的bug\n- 使燃料箱道具可缩放\n- 向API添加了SearchUtilities.Find\n- 修复了SearchUtilities.Find中可能的空指针异常（导致天体编码器旅行音乐失效）\n- 如果未安装DLC，标题屏幕显示白色方块 #1167\n- 可能修复了当startInShip为true时玩家窒息的问题\n\n**生成自PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1168**",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.NewHorizonsExamples": {
+    "name": {
+      "en": "New Horizons Examples",
+      "zh": "新地平线示例",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "An example project showing what planets can be made with New Horizons. (Warning: spoilers inside)",
+      "zh": "一个示例项目，展示可以用新地平线制作哪些行星。（警告：包含剧透）",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "0.30.2 (#68)\n\n- Fixed typo in translation file name, Chinese translation actually\nworks now",
+      "zh": "0.30.2 (#68)\n\n- 修复了翻译文件名中的拼写错误，中文翻译现在可以正常工作",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.RealSolarSystem": {
+    "name": {
+      "en": "Real Solar System",
+      "zh": "真实太阳系",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Adds our solar system to Outer Wilds (check the ship's log)",
+      "zh": "将我们的太阳系添加到星际拓荒（检查飞船日志）",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "piggeywig2000.OuterWildsFlyover": {
+    "name": {
+      "en": "Outer Wilds Flyover",
+      "zh": "星际拓荒飞越",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Recreation of the Island Flyover game from Wii Sports Resort in Outer Wilds",
+      "zh": "在星际拓荒中重现了Wii Sports Resort中的岛屿飞越游戏",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Initial release\r\n- 80 i-points placed around the base game\r\n- Results screen that tracks and saves i-points",
+      "zh": "初始发布\n- 在基础游戏周围放置了80个i点\n- 结果屏幕跟踪并保存i点",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "ErroneousCreationist.incursionfinaldawn": {
+    "name": {
+      "en": "Incursion: Final Dawn",
+      "zh": "入侵：终暮",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "The Incursion Is Upon Us                                                     by Erroneous",
+      "zh": "入侵已降临于我们                                                     by Erroneous",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "smallbug.trappist-1": {
+    "name": {
+      "en": "TRAPPIST-1",
+      "zh": "TRAPPIST-1",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A depiction of the TRAPPIST-1 system, a collection of seven terrestrial planets hugging close to a small ultracool red dwarf star.",
+      "zh": "TRAPPIST-1系统的一个描绘，包括七个类地行星紧密环绕一颗小型超低温红矮星。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Gave planets nicknames",
+      "zh": "为行星起了昵称",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Locochoco.InputDemoRecorder": {
+    "name": {
+      "en": "Input Demo Recorder",
+      "zh": "输入演示录制器",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "* Added seed for random unity events setable.\r\n     * It will save the seed used to record a demo and use the same seed when playing it back\r\n     * You can now set a seed in tas files\r\n\r\n* Re added TAS files!",
+      "zh": "添加了随机统一事件的种子。\n    * 它将保存用于录制演示的种子，并在回放时使用相同的种子\n    * 您现在可以在tas文件中设置种子",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Locochoco.CelesteWilds": {
+    "name": {
+      "en": "Celeste Wilds",
+      "zh": "Celeste Wilds",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A mod which adds Celeste movement features to Outer Wilds",
+      "zh": "一个添加了Celeste移动功能的模组",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "* Changed the Mineshaft collectible hint\r\n* Removed sand a fluid type that would stop the climb",
+      "zh": "更改了矿井通道的收藏品提示\n* 移除了沙子这种会阻止攀爬的流体类型",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Tlya.Grapefruit": {
+    "name": {
+      "en": "Grapefruit",
+      "zh": "葡萄柚",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A mod that adds a new star system. Warning! Lots of food!",
+      "zh": "一个添加了新星系的模组。警告！食物很多！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "# New\r\nAdded achievement about Ernesto",
+      "zh": "新增\n    添加了关于Ernesto的成就",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.Decloaked": {
+    "name": {
+      "en": "Visible Stranger",
+      "zh": "可见的陌生人",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Decloaks the Stranger in Echoes of the Eye.",
+      "zh": "在《宇宙之眼的回响》中解除了陌生人的伪装。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Fixed a conflict with New Horizons where warping from another star system back to the Outer Wilds would cause an infinite loading screen (thank you Yub3l for reporting this).",
+      "zh": "修复了与《新视野号》的冲突，从其他星系传送回星际拓荒时会导致无限加载屏幕（感谢Yub3l报告这个问题）。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Tlya.Hollodjustment": {
+    "name": {
+      "en": "Hollodjustment",
+      "zh": "Hollodjustment",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "An Outer Wilds mod that adjusts Hollow's Lantern's meteors. (Reupload of Trainzack's mod)",
+      "zh": "一个调整空心灯的流星轨迹的星际拓荒模组。（Trainzack的模组的重新上传）",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Fix name in manifest.json",
+      "zh": "修复manifest.json中的名称",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "JohnCorby.VanillaFix": {
+    "name": {
+      "en": "Vanilla Fix",
+      "zh": "Vanilla Fix",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Fixes some vanilla bugs in Outer Wilds",
+      "zh": "修复了星际拓荒中的一些原版漏洞",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "fix an issue with the fix for dialogue nodes. thank you etherpod for finding this and the solution",
+      "zh": "修复了对话节点的修复问题。感谢etherpod发现这个问题和解决方案",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Tlya.OnlyTH": {
+    "name": {
+      "en": "Only Timber Hearth",
+      "zh": "仅木炉星",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A mod that removes all planets except Timber Heath. Yay, no Dark Bramble!",
+      "zh": "一个移除除木炉星之外所有行星的模组。太好了，没有黑棘星！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.CursedTitle": {
+    "name": {
+      "en": "Title Screen Bug Fix",
+      "zh": "标题屏幕错误修复",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Fixes a bug on the title screen which caused the game's logo to be displayed incorrectly.",
+      "zh": "修复标题屏幕上的一个错误，该错误导致游戏标志显示不正确。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Fixes a bug on the title screen which caused the game's logo to be displayed incorrectly.",
+      "zh": " - 修复标题屏幕上的一个错误，该错误导致游戏标志显示不正确。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "MegaPiggy.GhostTranslations": {
+    "name": {
+      "en": "Ghost Translations",
+      "zh": "幽灵翻译",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Adds the ability to translate the unknown language.",
+      "zh": "添加了翻译未知语言的能力。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Update German Translations (#2) \r\n   - Thanks @slipcor\r\n- Changed Dam to Reservoir\r\n- Made keep out sign near prisoner's house in dreamworld translatable\r\n- Support for Ukranian and Basque mods",
+      "zh": " - 更新德语翻译 (#2) \n   - 感谢 @slipcor\n- 将 Dam 改为 Reservoir\n- 使梦境世界囚犯房屋附近的禁止入内标志可翻译\n- 支持乌克兰和巴斯克模组",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Krevace.VoiceMod": {
+    "name": {
+      "en": "Voice Acting Mod",
+      "zh": "配音模组",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "The mod's finished! All characters are fully voiced and every file has been tuned for better quality and effects. Enjoy!",
+      "zh": "模组完成了！所有角色都已完全配音，并且每个文件都已调整以提高质量和效果。享受吧！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "WOOOOOO YEAH BABY\r\n\r\nall lines are mixed!!!!!! trailer should be up soon on evalka's youtube channel!\r\n\r\n**Changelog:** [`0.4.2...1.0.0`](https://github.com/Krevace/ow-voice-mod/compare/0.4.2...1.0.0)",
+      "zh": "哇哦哦哦耶宝贝\n\n所有行都混合了！！！！！！预告片很快就会在 evalka 的 youtube 频道上线！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "CreativeNameTxt.theirhomeworld": {
+    "name": {
+      "en": "Their Homeworld",
+      "zh": "他们的家园",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "a solar system made with new horizons, will probably be updated",
+      "zh": "一个用新视野制作出的星系，可能会更新",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "I am good at github.",
+      "zh": "我擅长 github。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "_nebula.VengefulCannon": {
+    "name": {
+      "en": "Vengeful Cannon",
+      "zh": "复仇大炮",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "You shouldn't have angered that cannon...",
+      "zh": "你不应该惹怒那门大炮...",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "MellowSus.almondsystem": {
+    "name": {
+      "en": "Almond System",
+      "zh": "杏仁星系",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Adds a almond system to the game",
+      "zh": "为游戏添加了一个杏仁星系",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "I forgor to update manifest version",
+      "zh": "我忘记更新清单版本了",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "BUNN1E5.PersistantMarshmallow": {
+    "name": {
+      "en": "Persistant Marshmallow",
+      "zh": "持久的棉花糖",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Makes the Marshmallow's in Outer Wilds never despawn",
+      "zh": "使星际拓荒中的棉花糖永不消失",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "MegaPiggy.EmptyHollow": {
+    "name": {
+      "en": "Empty Hollow",
+      "zh": "空心的空心",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Moves all of Brittle Hollow's crust to the white hole.",
+      "zh": "将碎空星的整个地壳移动到白洞。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Added Gravity Crystals to Crossroads",
+      "zh": "在十字路口添加了重力水晶。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Tandicase.interstellargargantua": {
+    "name": {
+      "en": "Interstellar: Gargantua",
+      "zh": "星际：巨型怪兽",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Explore the Gargantua system from Interstellar (reupload of Tandicase's mod)",
+      "zh": "从星际探索巨型怪兽系统（Tandicase的模组的重新上传）",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Re-uploading mod\r\nView versions before 1.3.1: https://github.com/Tandicase/interstellargargantua/releases",
+      "zh": "- 重新上传模组\n查看1.3.1之前的版本：https://github.com/Tandicase/interstellargargantua/releases",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.GhostBuster": {
+    "name": {
+      "en": "Ghostbuster",
+      "zh": "幽灵捕手",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Allows you to extinguish the lanterns of the inhabitants in Echoes of the Eye.",
+      "zh": "允许你在宇宙之眼的回响中熄灭居民的灯笼。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Adds a GlobalMessenger event for mod compatibility",
+      "zh": "- 添加了一个GlobalMessenger事件以实现模组兼容性",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Skyball.OpenDoors": {
+    "name": {
+      "en": "Open Doors",
+      "zh": "开门",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Open any closed door or pathway in the Outer Wilds using this Mod!",
+      "zh": "使用此模组可以打开星际拓荒中任何关闭的门或通道！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "This is the first version of this mod!\r\nSee the readme for how to use it.",
+      "zh": "这是此模组的第一个版本！\n查看readme了解如何使用它。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "likemauro.sleepmod": {
+    "name": {
+      "en": "Sleep Mod",
+      "zh": "睡眠模组",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A mod that allows you to press \"U\" to meditate without needing to talk to Gabbro twice",
+      "zh": "一个模组，允许你按“U”键进行冥想，而无需与加布罗交谈两次",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Renamed all files to SleepMod instead of ModTemplate",
+      "zh": "将所有文件重命名为SleepMod而不是ModTemplate",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Kentin.GhostMatterNerf": {
+    "name": {
+      "en": "Ghost Matter Nerf",
+      "zh": "幽灵物质削弱",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A mod that makes you invulnerable to Ghost Matter.",
+      "zh": "一个模组，使你对幽灵物质免疫。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "A prettier name.",
+      "zh": "一个更漂亮的名字。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Raicuparta.OwLiv": {
+    "name": {
+      "en": "Add LIV Support",
+      "zh": "添加LIV支持",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Adds LIV to Outer Wilds, allowing for mixed reality capture or avatars in third person. Check the readme for instructions.",
+      "zh": "为星际拓荒添加LIV，允许混合现实捕捉或第三人称化身。查看readme获取说明。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "First release",
+      "zh": "首次发布",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "BUNN1E5.OW360Camera": {
+    "name": {
+      "en": "360 Camera",
+      "zh": "360相机",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Allows the user to take 360 degree screenshots and videos",
+      "zh": "允许用户进行360度截图和视频录制",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Fixed a bug",
+      "zh": "修复了一个bug",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "likemauro.noend": {
+    "name": {
+      "en": "No End",
+      "zh": "无终",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "A mod that allows you to play after supernova. See Readme.md for more info",
+      "zh": "一个模组，允许你在超新星爆发后继续游戏。查看Readme.md获取更多信息",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "added all the things that are described at the readme.md file",
+      "zh": "添加了readme.md文件中描述的所有内容",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "likemauro.nodambreak": {
+    "name": {
+      "en": "No Dam Break",
+      "zh": "无大坝破裂",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "The dam on the stranger will no longer break!!",
+      "zh": "闯入者的水坝将不再崩塌!!",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Changed some of the code, the mod does the same as before",
+      "zh": "修改了一些代码，模组与之前相同",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Spacepiano.AlterTime": {
+    "name": {
+      "en": "Alter Time",
+      "zh": "改变时间",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Speed up time in Outer Wilds!",
+      "zh": "加速星际拓荒的时间！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Restricted controls to numpad to allow for compatibility with other mods.",
+      "zh": "将控制限制为数字小键盘，以允许与其他模组的兼容性。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Joooosh.SurviveTheSupernova": {
+    "name": {
+      "en": "Survive the Supernova",
+      "zh": "生存超新星爆发",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Fly around the post-Supernova Solar System.",
+      "zh": "在超新星爆发后的太阳系周围飞行。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Changes from last release:\r\n\r\n- Added option in config to disable the Supernova rumble, so you can explore the Solar System in peace.\r\n- Added option in config to disable triggering the Supernova on wake",
+      "zh": "自上次发布以来的更改：\n\n- 在配置中添加了禁用超新星震动的选项，以便您可以在和平中探索太阳系。\n- 在唤醒时禁用触发超新星的选项",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "xen.AchievementTracker": {
+    "name": {
+      "en": "Achievements+",
+      "zh": "成就+",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Displays stock, DLC, and custom mod achievements on a menu screen and shows a popup when you earn one.",
+      "zh": "在一个菜单屏幕上显示标准、DLC和自定义模组的成就，并在您获得一个成就时显示弹出窗口。",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Added Chinese translation (thanks SheepCreater2)\r\n- Fixed it being impossible to 100% achievements on a profile (Beginner's Luck was always reset)\r\n- Adds semi-hidden achievements. These are achievements that devs can set up a \"before earned\" description to give a hint to players explicitly stating what needs to be done. (I've updated the tutorial in readme and example project if you want an easier explanation)\r\n- Makes it so that the \"X hidden achievement\" box for fully secret achievements is translatable, rather than always English\r\n- Fixes the queue on the in-game achievement popup\r\n\r\nThank you Stache for creating most of this update!",
+      "zh": "- 添加了中文翻译（感谢 SheepCreater2）\n- 修复了在个人资料中无法100%完成成就的问题（总是重置“新手运气”）\n- 添加了半隐藏成就。这些是开发者可以设置“获得前”描述以向玩家明确说明需要做什么的成就。（我已经更新了readme和示例项目的教程，如果你需要更简单的解释）\n- 使完全秘密成就的“X个隐藏成就”框可翻译，而不是始终为英文\n- 修复了游戏内成就弹窗的队列\n\n感谢 Stache 创建了大部分此更新！",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Kentin.SupernovaOnDemand": {
+    "name": {
+      "en": "Supernova On Demand",
+      "zh": "按需超新星",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Triggers a supernova when you press \"N\".",
+      "zh": "当你按下“N”键时触发超新星",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Initial release\r\n\r\n**Full Changelog**: https://github.com/QuentinGruber/SupernovaOnDemand/commits/1.0.0",
+      "zh": "初始发布",
+      "at": "2026-09-02T07:00:20.403614Z"
+    }
+  },
+  "Joooosh.BigHeads": {
+    "name": {
+      "en": "Big Heads",
+      "zh": "大头",
+      "at": "2026-09-02T07:00:20.403614Z"
+    },
+    "description": {
+      "en": "Gives everyone big heads.",
+      "zh": "让每个人都变大头",
+      "at": "2026-09-02T07:00:20.403614Z"
     }
   }
 }
