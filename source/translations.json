@@ -872,8 +872,8 @@
   "xen.NewHorizons": {
     "name": {
       "en": "New Horizons",
-      "zh": "新视野",
-      "at": "2026-09-02T07:00:20.403614Z"
+      "zh": "新地平线",
+      "at": "2026-09-02T07:56:31.460959Z"
     },
     "description": {
       "en": "The story mod creation framework for Outer Wilds",
@@ -6624,6 +6624,16 @@
       "en": "- Fixed an extremely bad bug that was caused by fixing a moderately bad bug in a rush.\r\n- Better progression\r\n- Placeholder map mode\r\n- Faster movement on two things\r\n- Added some fuel tanks\r\n- Made something smaller to not bump you as easily\r\n- Fix fact reveal volume\r\n- Fix broken trigger volume\r\n- Added a meter for something",
       "zh": "- 修复了一个因匆忙修复一个中等严重程度的bug而导致的极其严重的bug。\n- 更好的进度\n- 占位符地图模式\n- 在两件事上移动更快\n- 添加了一些燃料箱\n- 使某物变小以避免更容易碰到你\n- 修复了事实揭示音量\n- 修复了损坏的触发音量\n- 为某物添加了一个计量器",
       "at": "2026-09-02T07:02:17.685998Z"
+    },
+    "name": {
+      "en": "Borrowed Tomorrows",
+      "zh": "借来的明天",
+      "at": "2026-09-02T07:56:31.460959Z"
+    },
+    "description": {
+      "en": "Jam 6 entry",
+      "zh": "Jam 6 条目",
+      "at": "2026-09-02T07:56:31.460959Z"
     }
   },
   "MegaPiggy.LingeringTranslations": {
