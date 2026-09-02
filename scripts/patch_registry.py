@@ -9,8 +9,14 @@ def validate_patches(patches: list, official_ids: set) -> list[str]:
     seen: dict[str, int] = {}
     for i, entry in enumerate(patches):
         idx = f"条目 {i}"
-        target = (entry or {}).get("target")
-        patch = (entry or {}).get("patch") or {}
+        if not isinstance(entry, dict):
+            errors.append(f"{idx}: 条目不是对象({type(entry).__name__})")
+            continue
+        target = entry.get("target")
+        patch = entry.get("patch") or {}
+        if not isinstance(patch, dict):
+            errors.append(f"{idx}: target {target} 的 patch 不是对象")
+            continue
         if not target:
             errors.append(f"{idx}: 缺少 target")
             continue

@@ -110,13 +110,19 @@ def main() -> None:
     import json as _json
     from patch_registry import patches_to_dict, validate_patches
     _patch_path = Path(args.patches)
+    patches = []
     if _patch_path.exists():
-        patches = _json.loads(_patch_path.read_text(encoding="utf-8"))
+        try:
+            patches = _json.loads(_patch_path.read_text(encoding="utf-8"))
+        except (ValueError, _json.JSONDecodeError) as _e:
+            print(f"  注册表解析失败(按空表处理): {_e}")
+            patches = []
+        if not isinstance(patches, list):
+            print(f"  注册表顶层不是数组(按空表处理): {type(patches).__name__}")
+            patches = []
         _ids = {m.get("uniqueName", "") for m in official.get("releases", [])}
         for _e in validate_patches(patches, _ids):
             print(f"  注册表校验: {_e}")
-    else:
-        patches = []
     save_json(dist / "data" / "patches.json", patches_to_dict(patches))
     # README 中文缓存与许可信息(详情页用;readmes 由 scripts/readmes.py 生成)
     readmes = load_json(Path(args.readmes))

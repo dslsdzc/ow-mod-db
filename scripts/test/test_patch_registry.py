@@ -1,5 +1,3 @@
-import pytest
-
 from patch_registry import patches_to_dict, validate_patches
 
 OFFICIAL = {"Alek.OWML", "Hawkbar.GhostInTheMachine", "SBtT.TheOutsider",
@@ -51,8 +49,17 @@ def test_unknown_install_mode_fails():
 
 def test_duplicate_target_warns_but_passes():
     errs = validate_patches([_patch(), _patch()], OFFICIAL)
-    assert any("重复" in e for e in errs)          # 告警存在
-    assert not any("must" in e for e in errs)       # 无阻塞错误
+    assert errs == ["告警: target Hawkbar.GhostInTheMachine 重复登记 2 次,以最后一条为准"]
+
+
+def test_scalar_or_none_entries_do_not_crash():
+    assert validate_patches([None, "string", 3, {"patch": {}}], OFFICIAL)
+    assert any("不是对象" in e for e in validate_patches(["x"], OFFICIAL))
+
+
+def test_patch_non_dict_reports():
+    errs = validate_patches([{"target": "Hawkbar.GhostInTheMachine", "patch": "oops"}], OFFICIAL)
+    assert any("patch 不是对象" in e for e in errs)
 
 
 def test_patches_to_dict_later_wins():
