@@ -2,6 +2,8 @@
 import json
 from pathlib import Path
 
+from patch_registry import patches_to_dict, validate_patches
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -52,3 +54,16 @@ def test_mirror_pages_cover_three_views():
     assert "mod-grid" in mods    # 列表页网格
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
     assert "uniqueName" in js    # 详情页从 URL 参数读 uniqueName
+
+
+def test_patches_payload_shape():
+    patches = [
+        {"target": "Hawkbar.GhostInTheMachine",
+         "patch": {"uniqueName": "yyy.CN", "name": "补丁", "install": "owmm",
+                   "url": "", "note": "", "addedAt": ""}},
+    ]
+    assert validate_patches(patches, {"Hawkbar.GhostInTheMachine", "yyy.CN"}) == []
+    payload = patches_to_dict(patches)
+    assert payload == {"Hawkbar.GhostInTheMachine": payload["Hawkbar.GhostInTheMachine"]}
+    assert payload["Hawkbar.GhostInTheMachine"]["uniqueName"] == "yyy.CN"
+    assert patches_to_dict([]) == {}

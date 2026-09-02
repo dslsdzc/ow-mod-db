@@ -79,6 +79,8 @@ def main() -> None:
     parser.add_argument("--readmes", default="source/readmes.json")
     parser.add_argument("--licenses", default="source/license_cache.json")
     parser.add_argument("--releases", default="source/releases_cache.json")
+    parser.add_argument("--patches", default="source/translation_patches.json",
+                        help="中文汉化补丁注册表")
     parser.add_argument("--site", default=str(SITE_SOURCE))
     parser.add_argument("--dist", default=str(DIST))
     args = parser.parse_args()
@@ -104,6 +106,18 @@ def main() -> None:
     for unique_name, entry in releases.items():
         if isinstance(entry, dict) and entry.get("releases"):
             save_json(rel_dir / f"{unique_name}.json", entry)
+    # 中文汉化补丁注册表(target -> patch;空表为 {});校验只打印,不阻塞构建
+    import json as _json
+    from patch_registry import patches_to_dict, validate_patches
+    _patch_path = Path(args.patches)
+    if _patch_path.exists():
+        patches = _json.loads(_patch_path.read_text(encoding="utf-8"))
+        _ids = {m.get("uniqueName", "") for m in official.get("releases", [])}
+        for _e in validate_patches(patches, _ids):
+            print(f"  注册表校验: {_e}")
+    else:
+        patches = []
+    save_json(dist / "data" / "patches.json", patches_to_dict(patches))
     # README 中文缓存与许可信息(详情页用;readmes 由 scripts/readmes.py 生成)
     readmes = load_json(Path(args.readmes))
     licenses = load_json(Path(args.licenses))
