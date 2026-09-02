@@ -115,25 +115,6 @@ async function msTranslateTexts(texts, to) {
   return data.map((item) => (item.translations || []).map((t) => t.text).join(" "));
 }
 
-function splitChunks(text, maxChars) {
-  const parts = text.split(/\n{2,}/);
-  const chunks = [];
-  let cur = "";
-  for (const p of parts) {
-    const piece = p.trim();
-    if (!piece) continue;
-    if (piece.length > maxChars) {
-      for (let i = 0; i < piece.length; i += maxChars) chunks.push(piece.slice(i, i + maxChars));
-      continue;
-    }
-    const cand = cur ? cur + "\n\n" + piece : piece;
-    if (cand.length > maxChars) { chunks.push(cur); cur = piece; }
-    else cur = cand;
-  }
-  if (cur) chunks.push(cur);
-  return chunks;
-}
-
 function renderMarkdownInto(el, md, baseUrl) {
   if (!window.marked || !window.DOMPurify) {
     el.innerHTML = `<p class="placeholder">渲染库未加载(CDN 不可达),<a class="link" href="${esc(baseUrl)}" target="_blank" rel="noopener">打开仓库原文目录</a></p>`;
@@ -182,6 +163,38 @@ function initComments(mod) {
   script.setAttribute("crossorigin", "anonymous");
   script.async = true;
   document.getElementById("giscus").appendChild(script);
+}
+
+function collectTextNodes(root) {
+  const out = [];
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    if (!node.nodeValue || !node.nodeValue.trim()) continue;
+    const parent = node.parentElement;
+    if (parent && parent.closest("pre, code")) continue;  // 代码块不翻
+    out.push(node);
+  }
+  return out;
+}
+
+// 先渲染英文 HTML,再只翻译文本节点 —— markdown 结构/链接/图片完全不受影响
+async function translateReadmeDom(root) {
+  const nodes = collectTextNodes(root);
+  const batches = [];
+  let cur = [], curLen = 0;
+  for (const node of nodes) {
+    const len = node.nodeValue.length;
+    if (cur.length && curLen + len > 700) { batches.push(cur); cur = []; curLen = 0; }
+    cur.push(node);
+    curLen += len;
+  }
+  if (cur.length) batches.push(cur);
+  for (const batch of batches) {
+    const texts = batch.map((n) => n.nodeValue);
+    const zh = await msTranslateTexts(texts);
+    batch.forEach((n, i) => { if (zh[i]) n.nodeValue = zh[i]; });
+  }
 }
 
 function initReadme(mod) {
@@ -233,10 +246,9 @@ function initReadme(mod) {
           btn.classList.add("busy");
           btn.textContent = "翻译中…";
           try {
-            const chunks = splitChunks(md, 1200);
-            const out = [];
-            for (const c of chunks) out.push(await msTranslateTexts([c]));
-            showMd(out.join("\n\n"));
+            // 先渲染英文 HTML(链接/图片/代码块保持原样),再只翻译可见文本
+            showMd(md);
+            await translateReadmeDom(content);
             setHint("微软翻译即时结果 · " + hintBase);
           } catch (e) {
             setHint("翻译失败:" + e.message + " (可换用浏览器自带翻译)");
