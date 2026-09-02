@@ -153,10 +153,11 @@ function initComments(mod) {
   script.setAttribute("data-category", "General");
   script.setAttribute("data-category-id", "DIC_kwDOULlpL84DEuQA");
   script.setAttribute("data-mapping", "specific");
-  script.setAttribute("data-term", mod.uniqueName);   // 每个 mod 独立讨论串
-  script.setAttribute("data-strict", "0");
-  script.setAttribute("data-reactions-enabled", "1");
-  script.setAttribute("data-emit-metadata", "0");
+  // 与官网同款: 讨论串标题 "mod: <uniqueName>" 预建在仓库 Discussions 里
+  script.setAttribute("data-term", "mod: " + mod.uniqueName);
+  script.setAttribute("data-strict", "1");
+  script.setAttribute("data-reactions-enabled", "0");
+  script.setAttribute("data-emit-metadata", "1");
   script.setAttribute("data-input-position", "top");
   script.setAttribute("data-theme", "dark");
   script.setAttribute("data-lang", "zh-CN");
