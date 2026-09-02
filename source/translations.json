@@ -1,1 +1,31 @@
-{}
+{
+  "Alek.OWML": {
+    "name": {
+      "en": "OWML",
+      "zh": "OWML",
+      "at": "2026-09-02T05:50:19.466841Z"
+    },
+    "description": {
+      "en": "The mod loader and mod framework for Outer Wilds",
+      "zh": "星际拓荒的模组加载器和模组框架",
+      "at": "2026-09-02T05:50:19.466841Z"
+    }
+  },
+  "Raicuparta.NomaiVR": {
+    "name": {
+      "en": "NomaiVR",
+      "zh": "挪麦VR",
+      "at": "2026-09-02T05:50:19.466841Z"
+    },
+    "description": {
+      "en": "Outer Wilds VR Mod with 6DOF tracking and full motion control support",
+      "zh": "星际拓荒 VR Mod，支持6DOF追踪和完整动作控制",
+      "at": "2026-09-02T05:50:19.466841Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Thank you to [mobiusteapot](https://github.com/mobiusteapot) for this update.\r\n- What year is it?\r\n- Do people still play VR?\r\n- What's even the point.\r\n- This was supposed to be my big break.\r\n- Would she still be alive?\r\n- Added snap turn option. 🕹️\r\n- They called me a coward.\r\n- Could I have made a difference?",
+      "zh": "感谢 [mobiusteapot](https://github.com/mobiusteapot) 提供此次更新。\n- 现在是哪一年？\n- 还有人玩VR吗？\n- 这到底有什么意义。\n- 这本该是我翻身的机会。\n- 她还会活着吗？\n- 新增分段转向选项。🕹️\n- 他们骂我是懦夫。\n- 我本可以改变些什么吗？",
+      "at": "2026-09-02T05:50:19.466841Z"
+    }
+  }
+}
