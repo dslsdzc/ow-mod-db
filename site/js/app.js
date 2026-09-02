@@ -218,7 +218,6 @@ function renderMarkdownInto(el, md, baseUrl, breaks) {
   }
   const raw = marked.parse(md, { gfm: true, breaks: !!breaks });
   el.innerHTML = DOMPurify.sanitize(raw);
-  rewriteOfficialModLinks(el);
   renderMermaidBlocks(el);
   // 加载失败的图(如徽章图无法访问)直接隐藏,不显示 alt 文本噪音
   el.querySelectorAll("img").forEach((img) => {
@@ -241,6 +240,8 @@ function renderMarkdownInto(el, md, baseUrl, breaks) {
       }
     });
   }
+  // 官方 mod 页链接改写必须在 base 补全之后,否则刚生成的本站内部链接会被前缀成 raw 地址
+  rewriteOfficialModLinks(el);
 }
 
 function initPatchBlock(mod) {
