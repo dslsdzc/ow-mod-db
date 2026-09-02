@@ -160,6 +160,30 @@ function renderMarkdownInto(el, md, baseUrl) {
   }
 }
 
+function initComments(mod) {
+  const section = document.getElementById("comments-section");
+  if (!section) return;
+  section.hidden = false;
+  if (document.getElementById("giscus-frame") || document.querySelector("#giscus script")) return;
+  const script = document.createElement("script");
+  script.src = "https://giscus.app/client.js";
+  script.setAttribute("data-repo", "dslsdzc/ow-mod-db");
+  script.setAttribute("data-repo-id", "R_kgDOULlpLw");
+  script.setAttribute("data-category", "General");
+  script.setAttribute("data-category-id", "DIC_kwDOULlpL84DEuQA");
+  script.setAttribute("data-mapping", "specific");
+  script.setAttribute("data-term", mod.uniqueName);   // 每个 mod 独立讨论串
+  script.setAttribute("data-strict", "0");
+  script.setAttribute("data-reactions-enabled", "1");
+  script.setAttribute("data-emit-metadata", "0");
+  script.setAttribute("data-input-position", "top");
+  script.setAttribute("data-theme", "dark");
+  script.setAttribute("data-lang", "zh-CN");
+  script.setAttribute("crossorigin", "anonymous");
+  script.async = true;
+  document.getElementById("giscus").appendChild(script);
+}
+
 function initReadme(mod) {
   const section = document.getElementById("readme-section");
   if (!section || !mod.readmeDownloadUrl) return;
@@ -264,8 +288,14 @@ function renderDetail(mods) {
         <div class="readme-actions" id="readme-actions"></div>
         <div class="readme" id="readme-content"></div>
       </div>
+      <div class="section" id="comments-section" hidden>
+        <h3>讨论区</h3>
+        <div class="readme-actions"><span class="hint">评论由 GitHub Discussions 驱动 · 英文评论可用浏览器自带翻译阅读</span></div>
+        <div id="giscus"></div>
+      </div>
     </div>`;
   initReadme(mod);
+  initComments(mod);
 }
 
 loadMods()
