@@ -3867,8 +3867,8 @@
   "GameWyrm.HearthsNeighbor": {
     "name": {
       "en": "Hearth's Neighbor",
-      "zh": "Hearth's Neighbor",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "zh": "哈斯邻居",
+      "at": "2026-09-02T08:01:08.096082Z"
     },
     "description": {
       "en": "Warp to Hearth's Neighbor, a nearby star system with its own secrets hidden within...",
@@ -4357,8 +4357,8 @@
   "GameWyrm.HearthsNeighbor2": {
     "name": {
       "en": "Hearth's Neighbor 2: Magistarium",
-      "zh": "哈斯人的邻居",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "zh": "哈斯邻居2:大导师馆",
+      "at": "2026-09-02T08:01:08.096082Z"
     },
     "description": {
       "en": "The Magister has called you to his station...",
@@ -4948,8 +4948,8 @@
   "xen.EscapeRoomJam4": {
     "name": {
       "en": "Outer Wilds Escape Room",
-      "zh": "星际拓荒逃脱室",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "zh": "密室逃脱",
+      "at": "2026-09-02T08:01:08.096082Z"
     },
     "description": {
       "en": "Can you escape the mysterious alien space station?",
