@@ -69,7 +69,7 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/translate.py --concurrency ${{ inputs.concurrency }} --batch ${{ inputs.batch }} --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python scripts/translate.py --concurrency ${{ inputs.concurrency || '1' }} --batch ${{ inputs.batch || '30' }} --limit ${{ inputs.limit || '0' }} ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Build artifacts
         if: steps.check.outputs.skip != 'true'
