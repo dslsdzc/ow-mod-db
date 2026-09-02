@@ -1,0 +1,30 @@
+{
+  "modManager": {"version": "v1.18.0"},
+  "releases": [
+    {
+      "uniqueName": "Alek.OWML",
+      "name": "OWML",
+      "description": "The mod loader and mod framework for Outer Wilds",
+      "author": "ow-mods",
+      "latestReleaseDescription": "",
+      "tags": ["library"]
+    },
+    {
+      "uniqueName": "Test.Mod",
+      "name": "Test Mod",
+      "description": "A test mod description",
+      "author": "tester",
+      "latestReleaseDescription": "Fixed a bug",
+      "tags": ["gameplay"]
+    }
+  ],
+  "alphaReleases": [
+    {
+      "uniqueName": "Test.Alpha",
+      "name": "Alpha Mod",
+      "description": "Alpha description",
+      "author": "tester",
+      "latestReleaseDescription": ""
+    }
+  ]
+}
