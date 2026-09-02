@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '0 */6 * * *'
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '只同步与构建,不调用 AI(配好 Secret 前验证用)'
+        type: boolean
+        default: false
 
 concurrency:
   group: sync-translate
@@ -34,7 +39,7 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/translate.py
+        run: python scripts/translate.py ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Build artifacts
         run: python scripts/build.py
