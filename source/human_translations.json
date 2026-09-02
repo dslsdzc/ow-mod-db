@@ -1,11 +1,20 @@
 {
-  "xen.NewHorizons": {
-    "name": "新地平线"
-  },
-  "Raicuparta.QuantumSpaceBuddies": {
-    "name": "量子空间伙伴"
-  },
-  "SBtT.TheOutsider": {
-    "name": "局外人"
-  }
+  "xen.NewHorizons": { "name": "新地平线" },
+  "Raicuparta.QuantumSpaceBuddies": { "name": "量子空间伙伴" },
+  "SBtT.TheOutsider": { "name": "局外人" },
+  "Walker.AstralCodex": { "name": "群星编码" },
+  "cleric.DeepBramble": { "name": "被遗忘的漂泊者" },
+  "2walker2.OWJam5ModProject": { "name": "辉日研究" },
+  "AnonymousStrangerOW.TheStrangerTheyAre": { "name": "鹿人现身" },
+  "CantAffordaName.OnARail": { "name": "沿轨而行" },
+  "hearth1an.TheVision": { "name": "愿景" },
+  "TheSignalJammers.FifthModJam": { "name": "宇宙观察者" },
+  "orclecle.Jam5PingBox": { "name": "微缩忆境" },
+  "Hawkbar.Terrarium": { "name": "伊甸希望" },
+  "2walker2.Evacuation": { "name": "撤离" },
+  "Hawkbar.GreenFlameBlade": { "name": "梦境之缚" },
+  "TheLoweDown256.TLDJam5": { "name": "核心坍缩" },
+  "Known-Mouse.EchoesOfTheObserver": { "name": "观测者回响" },
+  "Hawkbar.GhostInTheMachine": { "name": "机器中的幽灵" },
+  "orclecle.EyeWitness": { "name": "眼之见证者" }
 }
