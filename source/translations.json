@@ -4524,6 +4524,11 @@
       "en": "Adds new dialogue to most Hearthians.",
       "zh": "为大多数哈斯人添加了新的对话。",
       "at": "2026-09-02T07:02:17.685998Z"
+    },
+    "latestReleaseDescription": {
+      "en": "French translation by @\\allseeing on Discord",
+      "zh": "由Discord上的@\\allseeing提供的法语翻译",
+      "at": "2026-09-02T12:59:29.416482Z"
     }
   },
   "VioVayo.SingleBrainCell": {
