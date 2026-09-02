@@ -1094,8 +1094,11 @@ def build_all(official: dict, translations: dict) -> tuple[dict, list[dict]]:
                     "slug": out_mod.get("slug", ""),
                     "thumbnail": out_mod.get("thumbnail", {}),
                     "downloadCount": out_mod.get("downloadCount", 0),
+                    "installCount": out_mod.get("installCount", 0),
+                    "weeklyInstallCount": out_mod.get("weeklyInstallCount", 0),
                     "version": out_mod.get("version", ""),
                     "latestReleaseDate": out_mod.get("latestReleaseDate", ""),
+                    "firstReleaseDate": out_mod.get("firstReleaseDate", ""),
                     "latestReleaseDescription": out_mod.get("latestReleaseDescription", ""),
                 })
         database_zh[group] = out_group
@@ -1150,23 +1153,28 @@ git commit -m "feat: 生成中文 database.json 与网站数据"
 
 ---
 
-### Task 6: 网站(列表 + 详情页)
+### Task 6: 网站(官方站点的翻译镜像: 首页 + 列表页 + 详情页)
+
+**背景:** 官方站点 `ow-mods/outerwildsmods.com` 公开可读(Svelte),但**无 License** → 只能参考其设计,不能复制代码。本站自行实现,做成"翻译过的镜像站": 布局与配色参照官方(深色底 `#0b0d10`、强调色 `#ff9c86`、次级文字 `rgba(255,255,255,.65)`、卡片网格),内容为中文。
 
 **Files:**
-- Create: `site/index.html`
-- Create: `site/mod.html`
+- Create: `site/index.html`(首页: 标题 + 总数 + "热门 MOD/热门新 MOD/最近更新"三栏)
+- Create: `site/mods.html`(全部 MOD 列表页: 搜索 + 分类筛选 + 卡片网格)
+- Create: `site/mod.html`(详情页)
 - Create: `site/css/style.css`
 - Create: `site/js/app.js`
 - Create: `scripts/test/test_site_smoke.py`
 
 **Interfaces:**
-- Consumes: `dist/data/mods.json`(Task 5 产物,格式 `{"mods": [{"uniqueName", "name", "description", "authorDisplay", "downloadUrl", "repo", "tags", "slug", "thumbnail", "downloadCount", "version", "latestReleaseDate", "latestReleaseDescription"}]}`)
+- Consumes: `dist/data/mods.json`(Task 5 产物,格式 `{"mods": [{"uniqueName", "name", "description", "authorDisplay", "downloadUrl", "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount", "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate", "latestReleaseDescription"}]}`)
 - Produces: 网站源文件;冒烟测试验证生成产物结构
 
 **页面约定:**
-- `index.html` — 列表页: 搜索框 + 分类下拉 + MOD 卡片列表(图标/中文名/作者/简介摘要/下载量),详情链接 `mod.html?uniqueName=…`
+- `index.html` — 首页: hero(标题 + 总数说明)+ 三个栏目(热门 MOD / 热门新 MOD / 最近更新,各 3 张卡片)+ 页脚注明"非官方翻译镜像"
+- `mods.html` — 列表页: 搜索框 + 分类下拉 + MOD 卡片网格,详情链接 `mod.html?uniqueName=…`
 - `mod.html` — 详情页: 从 URL 参数取 `uniqueName`,渲染完整简介、更新说明、下载/仓库按钮
-- 客户端渲染: `app.js` fetch `data/mods.json`,同一文件处理两个页面(检测 `#mod-list` 是否存在)
+- 排序规则: 热门=installCount 降序(兜底 downloadCount);热门新=首次发布 60 天内按 installCount 降序;最近更新=latestReleaseDate 降序
+- 客户端渲染: `app.js` fetch `data/mods.json`,同一文件处理三个页面(依次检测 `#featured` / `#mod-grid` / `#detail`)
 
 - [ ] **Step 1: 写失败冒烟测试**
 
@@ -1174,12 +1182,9 @@ git commit -m "feat: 生成中文 database.json 与网站数据"
 ```python
 """构建产物冒烟测试: 跑 build 后检查 dist 产物结构。"""
 import json
-import subprocess
-import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-DIST = REPO_ROOT / "dist"
 
 
 def _run_build(tmp_path):
@@ -1200,7 +1205,7 @@ def _run_build(tmp_path):
 
 
 def test_site_files_exist():
-    for rel in ("index.html", "mod.html", "css/style.css", "js/app.js"):
+    for rel in ("index.html", "mods.html", "mod.html", "css/style.css", "js/app.js"):
         assert (REPO_ROOT / "site" / rel).exists(), f"缺少 site/{rel}"
 
 
@@ -1210,15 +1215,20 @@ def test_dist_artifacts_and_json_valid(tmp_path):
     mods = json.loads((tmp_path / "data" / "mods.json").read_text(encoding="utf-8"))["mods"]
     assert len(mods) == len(mods_data) == 2
     required_keys = {"uniqueName", "name", "description", "authorDisplay", "downloadUrl",
-                     "repo", "tags", "slug", "thumbnail", "downloadCount", "version",
-                     "latestReleaseDate", "latestReleaseDescription"}
+                     "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount",
+                     "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",
+                     "latestReleaseDescription"}
     for mod in mods:
         assert required_keys <= set(mod.keys())
 
 
-def test_detail_logic_reads_unique_name_query():
+def test_mirror_pages_cover_three_views():
+    index = (REPO_ROOT / "site" / "index.html").read_text(encoding="utf-8")
+    mods = (REPO_ROOT / "site" / "mods.html").read_text(encoding="utf-8")
+    assert "featured" in index   # 首页三栏
+    assert "mod-grid" in mods    # 列表页网格
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
-    assert "uniqueName" in js  # app.js 从 URL 参数读 uniqueName
+    assert "uniqueName" in js    # 详情页从 URL 参数读 uniqueName
 ```
 
 - [ ] **Step 2: 运行测试确认失败**
@@ -1228,7 +1238,7 @@ Expected: FAIL — `assert (REPO_ROOT / "site" / "index.html").exists()`
 
 - [ ] **Step 3: 实现网站文件**
 
-`site/index.html`:
+`site/index.html`(首页,参照官方首页结构):
 ```html
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -1239,24 +1249,63 @@ Expected: FAIL — `assert (REPO_ROOT / "site" / "index.html").exists()`
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <h1>星际拓荒 MOD 数据库</h1>
-  <p class="subtitle">自动同步官方数据库 · AI 自动汉化 · 人工精校持续更新</p>
+<header class="site-header">
+  <nav>
+    <a class="brand" href="index.html">星际拓荒 MOD</a>
+    <a href="mods.html">全部 MOD</a>
+  </nav>
 </header>
 <main>
+  <section class="hero">
+    <h1>星际拓荒 MOD</h1>
+    <p class="intro">是《星际拓荒》的非官方修改,可添加新功能、改进与额外内容。使用
+      <a class="link" href="https://outerwildsmods.com/mod-manager" target="_blank" rel="noopener">Mod Manager</a>
+      即可轻松下载安装。<span id="mod-total"></span></p>
+  </section>
+  <section id="featured"></section>
+</main>
+<footer>
+  <p>非官方翻译镜像站 · 数据来自
+    <a class="link" href="https://outerwildsmods.com" target="_blank" rel="noopener">outerwildsmods.com</a>
+    · AI 自动汉化 · 人工精校持续更新</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
+```
+
+`site/mods.html`(全部 MOD 列表页):
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全部 MOD — 星际拓荒 MOD 数据库</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav>
+    <a class="brand" href="index.html">星际拓荒 MOD</a>
+    <a href="mods.html">全部 MOD</a>
+  </nav>
+</header>
+<main>
+  <h1>全部 MOD</h1>
   <div class="controls">
     <input id="search" type="search" placeholder="搜索 MOD 名称 / 简介…">
     <select id="tag-filter"><option value="">全部分类</option></select>
     <span id="count"></span>
   </div>
-  <ul id="mod-list"></ul>
+  <div id="mod-grid" class="grid"></div>
 </main>
 <script src="js/app.js"></script>
 </body>
 </html>
 ```
 
-`site/mod.html`:
+`site/mod.html`(详情页):
 ```html
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -1267,8 +1316,11 @@ Expected: FAIL — `assert (REPO_ROOT / "site" / "index.html").exists()`
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <h1><a href="index.html">星际拓荒 MOD 数据库</a></h1>
+<header class="site-header">
+  <nav>
+    <a class="brand" href="index.html">星际拓荒 MOD</a>
+    <a href="mods.html">全部 MOD</a>
+  </nav>
 </header>
 <main id="detail"></main>
 <script src="js/app.js"></script>
@@ -1276,39 +1328,55 @@ Expected: FAIL — `assert (REPO_ROOT / "site" / "index.html").exists()`
 </html>
 ```
 
-`site/css/style.css`:
+`site/css/style.css`(配色参照官方: 底 `#0b0d10`、强调 `#ff9c86`、次级文字半透明白):
 ```css
 :root { color-scheme: dark; }
 body { font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
-       max-width: 900px; margin: 0 auto; padding: 1rem; background: #121418; color: #e8e6e3; }
-h1 a { color: inherit; text-decoration: none; }
-.subtitle { color: #9aa0a6; margin-top: -0.5rem; }
-.controls { display: flex; gap: 0.5rem; margin: 1rem 0; flex-wrap: wrap; }
-.controls input, .controls select { padding: 0.5rem; border-radius: 6px; border: 1px solid #444; background: #1c1f24; color: inherit; }
-#search { flex: 1; min-width: 200px; }
-#count { align-self: center; color: #9aa0a6; font-size: 0.9rem; }
-#mod-list { list-style: none; padding: 0; display: grid; gap: 0.75rem; }
-.mod-card { display: flex; gap: 0.75rem; padding: 0.75rem; border: 1px solid #2a2e35;
-            border-radius: 8px; background: #1c1f24; text-decoration: none; color: inherit; }
-.mod-card:hover { border-color: #4a9eff; }
-.mod-card img { width: 56px; height: 56px; object-fit: cover; border-radius: 6px; background: #2a2e35; }
-.mod-card h2 { margin: 0; font-size: 1.05rem; }
-.mod-card .meta { color: #9aa0a6; font-size: 0.85rem; }
-.mod-card .desc { margin: 0.35rem 0 0; font-size: 0.9rem; color: #cfd3d8;
+       margin: 0; background: #0b0d10; color: #fff; }
+.site-header { border-bottom: 1px solid rgba(255,255,255,.12); }
+.site-header nav { max-width: 1100px; margin: 0 auto; padding: .9rem 1rem;
+                   display: flex; gap: 1.5rem; align-items: center; }
+.site-header a { color: #fff; text-decoration: none; opacity: .8; }
+.site-header a:hover { opacity: 1; }
+.site-header .brand { font-weight: 700; font-size: 1.1rem; opacity: 1; }
+main { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+footer { max-width: 1100px; margin: 0 auto; padding: 0 1rem 2rem;
+         color: rgba(255,255,255,.5); font-size: .85rem; }
+.hero h1 { font-size: 1.6rem; margin: .5rem 0; }
+.intro { color: rgba(255,255,255,.65); line-height: 1.7; }
+.link { color: #ff9c86; text-decoration: none; }
+.link:hover { text-decoration: underline; }
+section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+.mod-card { display: block; padding: 1rem; border: 1px solid rgba(255,255,255,.12);
+            border-radius: 10px; background: rgba(255,255,255,.04); text-decoration: none; color: #fff; }
+.mod-card:hover { border-color: #ff9c86; }
+.mod-card .thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px;
+                   background: rgba(255,255,255,.06); }
+.mod-card h3 { margin: .6rem 0 .2rem; font-size: 1.05rem; }
+.mod-card .meta { color: rgba(255,255,255,.65); font-size: .85rem; }
+.mod-card .desc { margin: .4rem 0 0; font-size: .9rem; color: rgba(255,255,255,.8);
                   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.detail h2 { margin: 0.25rem 0; }
-.detail .meta { color: #9aa0a6; margin-bottom: 1rem; }
-.detail .buttons { display: flex; gap: 0.75rem; margin: 1rem 0; }
-.detail .buttons a { padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; background: #2b7de9; color: #fff; }
-.detail .buttons a.secondary { background: #2a2e35; color: #e8e6e3; }
-.detail .section { border: 1px solid #2a2e35; border-radius: 8px; padding: 0.75rem 1rem; margin-top: 1rem; background: #1c1f24; }
-.detail .section h3 { margin: 0 0 0.5rem; font-size: 1rem; }
-.tag { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 999px; background: #2a2e35;
-       color: #9aa0a6; font-size: 0.75rem; margin-right: 0.35rem; }
-.placeholder { color: #9aa0a6; text-align: center; padding: 2rem; }
+.controls { display: flex; gap: .5rem; margin: 1rem 0; flex-wrap: wrap; }
+.controls input, .controls select { padding: .5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,.2);
+                                    background: rgba(255,255,255,.06); color: #fff; }
+#search { flex: 1; min-width: 200px; }
+#count { align-self: center; color: rgba(255,255,255,.65); font-size: .9rem; }
+.detail h1 { margin: .25rem 0; }
+.detail .meta { color: rgba(255,255,255,.65); margin-bottom: 1rem; }
+.detail .buttons { display: flex; gap: .75rem; margin: 1rem 0; }
+.detail .buttons a { padding: .55rem 1.2rem; border-radius: 8px; text-decoration: none;
+                     background: #ff9c86; color: #0b0d10; font-weight: 600; }
+.detail .buttons a.secondary { background: rgba(255,255,255,.12); color: #fff; }
+.detail .section { border: 1px solid rgba(255,255,255,.12); border-radius: 10px;
+                   padding: 1rem 1.25rem; margin-top: 1.25rem; background: rgba(255,255,255,.04); }
+.detail .section h3 { margin: 0 0 .5rem; font-size: 1rem; }
+.tag { display: inline-block; padding: .15rem .6rem; border-radius: 999px;
+       background: rgba(255,255,255,.1); color: rgba(255,255,255,.8); font-size: .75rem; margin-right: .35rem; }
+.placeholder { color: rgba(255,255,255,.65); text-align: center; padding: 2rem; }
 ```
 
-`site/js/app.js`:
+`site/js/app.js`(三个页面共用;依次检测 `#featured` 首页 / `#mod-grid` 列表页 / `#detail` 详情页):
 ```js
 async function loadMods() {
   const resp = await fetch("data/mods.json");
@@ -1322,11 +1390,64 @@ function esc(s) {
   return div.innerHTML;
 }
 
+function thumbUrl(m) {
+  return m.thumbnail && m.thumbnail.main
+    ? "https://ow-mods.github.io/ow-mod-db/images/" + m.thumbnail.main
+    : "";
+}
+
+function cardHtml(m) {
+  const thumb = thumbUrl(m);
+  return `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
+    ${thumb ? `<img class="thumb" src="${esc(thumb)}" alt="" loading="lazy">` : ""}
+    <h3>${esc(m.name)}</h3>
+    <div class="meta">${esc(m.authorDisplay)} · v${esc(m.version)} · ${esc(m.downloadCount)} 次下载</div>
+    <p class="desc">${esc(m.description)}</p>
+  </a>`;
+}
+
+function installs(m) {
+  return (m.installCount || 0) || (m.downloadCount || 0);
+}
+
+function sortMods(mods, mode) {
+  const copy = [...mods];
+  if (mode === "installs") {
+    return copy.sort((a, b) => installs(b) - installs(a));
+  }
+  if (mode === "updated") {
+    return copy.sort((a, b) => String(b.latestReleaseDate).localeCompare(String(a.latestReleaseDate)));
+  }
+  if (mode === "popularNew") {
+    const cutoff = Date.now() - 60 * 24 * 3600 * 1000;
+    const recent = copy.filter((m) => m.firstReleaseDate && new Date(m.firstReleaseDate).getTime() >= cutoff);
+    return recent.sort((a, b) => installs(b) - installs(a));
+  }
+  return copy;
+}
+
+function renderHome(mods) {
+  const total = document.getElementById("mod-total");
+  if (total) total.textContent = `目前共有 ${mods.length} 个 MOD、扩展与工具。`;
+  const featured = document.getElementById("featured");
+  if (!featured) return;
+  const sections = [
+    ["热门 MOD", "installs"],
+    ["热门新 MOD", "popularNew"],
+    ["最近更新", "updated"],
+  ];
+  featured.innerHTML = sections.map(([title, mode]) => {
+    const items = sortMods(mods, mode).slice(0, 3);
+    return `<section><h2>${title}</h2><div class="grid">${items.map(cardHtml).join("")}</div></section>`;
+  }).join("");
+}
+
 function renderList(mods) {
-  const list = document.getElementById("mod-list");
+  const grid = document.getElementById("mod-grid");
   const search = document.getElementById("search");
   const tagFilter = document.getElementById("tag-filter");
   const count = document.getElementById("count");
+  if (!grid) return;
 
   const allTags = [...new Set(mods.flatMap((m) => m.tags || []))].sort();
   for (const tag of allTags) {
@@ -1345,19 +1466,7 @@ function renderList(mods) {
       return (m.name + " " + m.description + " " + m.authorDisplay).toLowerCase().includes(q);
     });
     count.textContent = shown.length + " / " + mods.length + " 个 MOD";
-    list.innerHTML = shown.map((m) => {
-      const thumb = m.thumbnail && m.thumbnail.main
-        ? "https://ow-mods.github.io/ow-mod-db/images/" + m.thumbnail.main
-        : "";
-      return `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
-        ${thumb ? `<img src="${esc(thumb)}" alt="">` : ""}
-        <div>
-          <h2>${esc(m.name)}</h2>
-          <div class="meta">${esc(m.authorDisplay)} · v${esc(m.version)} · ${esc(m.downloadCount)} 次下载</div>
-          <p class="desc">${esc(m.description)}</p>
-        </div>
-      </a>`;
-    }).join("") || `<p class="placeholder">没有匹配的 MOD</p>`;
+    grid.innerHTML = shown.map(cardHtml).join("") || `<p class="placeholder">没有匹配的 MOD</p>`;
   }
 
   search.addEventListener("input", draw);
@@ -1370,17 +1479,18 @@ function renderDetail(mods) {
   const uniqueName = params.get("uniqueName");
   const mod = mods.find((m) => m.uniqueName === uniqueName);
   const main = document.getElementById("detail");
+  if (!main) return;
   if (!mod) {
-    main.innerHTML = `<p class="placeholder">未找到该 MOD,<a href="index.html">返回列表</a></p>`;
+    main.innerHTML = `<p class="placeholder">未找到该 MOD,<a class="link" href="mods.html">返回列表</a></p>`;
     document.title = "未找到 — 星际拓荒 MOD 数据库";
     return;
   }
   document.title = mod.name + " — 星际拓荒 MOD 数据库";
-  const thumb = mod.thumbnail && mod.thumbnail.main
-    ? `https://ow-mods.github.io/ow-mod-db/images/${mod.thumbnail.main}` : "";
+  const thumb = thumbUrl(mod);
   main.innerHTML = `
     <div class="detail">
-      <h2>${esc(mod.name)}</h2>
+      ${thumb ? `<img class="thumb" src="${esc(thumb)}" alt="">` : ""}
+      <h1>${esc(mod.name)}</h1>
       <div class="meta">${esc(mod.authorDisplay)} · v${esc(mod.version)} · ${esc(mod.downloadCount)} 次下载 · 更新于 ${esc((mod.latestReleaseDate || "").slice(0, 10))}</div>
       <div>${(mod.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
       <div class="buttons">
@@ -1394,11 +1504,14 @@ function renderDetail(mods) {
 
 loadMods()
   .then((mods) => {
-    if (document.getElementById("mod-list")) renderList(mods);
+    if (document.getElementById("featured")) renderHome(mods);
+    else if (document.getElementById("mod-grid")) renderList(mods);
     else renderDetail(mods);
   })
   .catch((err) => {
-    const target = document.getElementById("detail") || document.getElementById("mod-list");
+    const target = document.getElementById("detail")
+      || document.getElementById("mod-grid")
+      || document.getElementById("featured");
     if (target) target.innerHTML = `<p class="placeholder">加载失败:${esc(err.message)}</p>`;
   });
 ```
@@ -1406,7 +1519,7 @@ loadMods()
 - [ ] **Step 4: 运行测试确认通过**
 
 Run: `python -m pytest scripts/test/test_site_smoke.py -q`
-Expected: 3 passed
+Expected: 4 passed
 
 - [ ] **Step 5: 本地人工验证页面**
 
@@ -1415,13 +1528,17 @@ Run:
 python scripts/build.py
 python -m http.server 8000 --directory dist
 ```
-浏览器打开 `http://localhost:8000/` 检查: 列表渲染、搜索、分类筛选、详情页(点任意卡片)。确认无 console 错误。
+浏览器检查:
+- `http://localhost:8000/` — 首页 hero(含 MOD 总数)+ 三个栏目(热门/热门新/最近更新),各 3 张卡片
+- `http://localhost:8000/mods.html` — 列表渲染、搜索、分类筛选
+- 点任意卡片 → `mod.html?uniqueName=…` 详情页(简介、更新说明、下载按钮)
+确认无 console 错误。
 
 - [ ] **Step 6: 提交**
 
 ```bash
 git add site/ scripts/test/test_site_smoke.py
-git commit -m "feat: 中文 MOD 网站(列表/搜索/筛选/详情页)"
+git commit -m "feat: 中文 MOD 网站(官方翻译镜像: 首页/列表/详情页)"
 ```
 
 ---
@@ -1502,7 +1619,7 @@ jobs:
 
 自动同步 [官方 MOD 数据库](https://ow-mods.github.io/ow-mod-db/database.json),用 AI 将 MOD 名称、简介、更新说明汉化为简体中文,部署为:
 
-- **中文网站**: 列表/搜索/分类筛选/详情页
+- **中文网站**: 官方站点的翻译镜像(首页三栏/全部 MOD 列表/详情页,参照官方布局与配色)
 - **可替换 database.json**: 在 Outer Wilds Mod Manager 中把数据库网址改为本仓库的 GitHub Pages 地址,游戏内即可看到中文简介
 
 ## 部署前准备(一次性)
