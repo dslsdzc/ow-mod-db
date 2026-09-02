@@ -67,7 +67,7 @@ AI 翻译必须遵守的术语表,分两类。团队发现新专有名词直接�
 |---|---|---|
 | 网站与代码(`scripts/`、`site/`、CI 配置)| **GPL-3.0** | `LICENSE` |
 | 数据产物(`source/official.json`、翻译缓存、`database.json` 等)| **MIT** | `source/DATA-LICENSE` |
-| 术语表 `source/glossary.json` 等 | **CC BY 4.0(须署名)** | `source/GLOSSARY-LICENSE` |
+| 术语表 `source/glossary.json` 等 | 事实性对照,**无独立版权主张**(译名版权归官方/原作者) | `source/GLOSSARY-LICENSE` |
 | 上游数据 | MIT © ow-mods | 官方仓库 |
 | MOD 元数据/README | 版权归各自作者 | 按各仓库许可处理,本站仅展示与按许可翻译 |
 

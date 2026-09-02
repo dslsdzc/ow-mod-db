@@ -1,17 +1,15 @@
-术语表许可: Creative Commons Attribution 4.0 (CC BY 4.0)
+术语表说明(无独立版权主张)
 
 本文件覆盖:
 - source/glossary.json             (中英术语对照表)
 - source/last_glossary.json        (术语表快照)
 
-CC BY 4.0 允许复制、修改、再分发(含商用),但必须:
-1. 署名 —— 注明出处: "术语表来自 ow-mod-db 中文镜像站
-   (github.com/dslsdzc/ow-mod-db),词条译名依据《星际拓荒》官方中文
-   及社区通用译名整理";
-2. 附上本许可声明与链接。
+术语对照属于事实性信息: 单个词条(如 Nomai → 挪麦)是"英文专名
+→ 中文译名"的对应关系,不受版权保护;其中游戏专有名词译名源自
+Mobius Digital《星际拓荒》官方简体中文文本与中文社区通用译名,
+版权归各自来源所有。
 
-许可全文(法律文本): https://creativecommons.org/licenses/by/4.0/legalcode.zh-Hans
-简化说明: https://creativecommons.org/licenses/by/4.0/deed.zh-hans
+我们不对此表主张任何版权或署名权。使用时请善意注明译名来源
+(如"译名依据《星际拓荒》官方中文")即可,无强制义务。
 
-说明: 词条中出现的游戏专有名词译名源自 Mobius Digital《星际拓荒》
-官方简体中文文本(其版权归 Mobius Digital / 原发行方),本表仅做对照整理。
+整理维护: ow-mod-db 中文镜像站 (github.com/dslsdzc/ow-mod-db)
