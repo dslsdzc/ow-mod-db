@@ -111,8 +111,10 @@ jobs:
             source/readmes.json source/license_cache.json source/readme_denylist.json \
             source/releases_cache.json
           git diff --cached --quiet || git commit -m "chore: 更新翻译缓存 [skip ci]"
-          git checkout -- .   # 丢弃未暂存杂散变更(rebase 会拒绝未暂存文件)
-          git pull --rebase origin main --quiet || git rebase --abort
+          git checkout -- .   # 丢弃未暂存杂散变更
+          # 并行运行可能同时写过缓存文件: 冲突时保留本地版本(-X ours),
+          # 远端因此少掉的增量下次同步会自动补翻,不丢整轮进度
+          git pull --no-rebase -X ours origin main --quiet || true
           git push
 
       - name: Deploy to GitHub Pages
