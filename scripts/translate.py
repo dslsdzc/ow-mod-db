@@ -3,7 +3,9 @@
 import argparse
 import os
 import re
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -42,17 +44,9 @@ class ConsecutiveFailureError(Exception):
     """Raised when AI translation keeps failing — the API is likely down."""
 
 
-def translate_pending(pending: list[dict], translations: dict, human: dict, glossary: dict,
-                      ai_translate, *, at: str, max_retries: int = 3, backoff_s: float = 2.0,
-                      sleep=time.sleep,
-                      max_consecutive_failures: int = 5) -> tuple[int, list[str]]:
-    """Translate each pending item. Returns (translated_count, failure_messages).
-
-    Failed items are left untranslated (English kept) and reported, not fatal.
-    When AI failures reach max_consecutive_failures in a row (human overrides
-    reset the counter), raises ConsecutiveFailureError — the API is likely down,
-    so the caller should abort loudly instead of burning hours of retries.
-    """
+def _translate_sequential(pending: list[dict], translations: dict, human: dict, glossary: dict,
+                          ai_translate, *, at: str, max_retries: int, backoff_s: float,
+                          sleep, max_consecutive_failures: int) -> tuple[int, list[str]]:
     translated = 0
     failures = []
     consecutive_failures = 0
@@ -78,6 +72,62 @@ def translate_pending(pending: list[dict], translations: dict, human: dict, glos
         translated += 1
         consecutive_failures = 0
     return translated, failures
+
+
+def translate_pending(pending: list[dict], translations: dict, human: dict, glossary: dict,
+                      ai_translate, *, at: str, max_retries: int = 3, backoff_s: float = 2.0,
+                      sleep=time.sleep, max_consecutive_failures: int = 5,
+                      max_workers: int = 1,
+                      abort_failure_threshold: int = 25) -> tuple[int, list[str]]:
+    """Translate each pending item. Returns (translated_count, failure_messages).
+
+    Failed items are left untranslated (English kept) and reported, not fatal.
+    max_workers=1(默认): 顺序执行,连续 max_consecutive_failures 次 AI 失败
+    抛 ConsecutiveFailureError 中止。
+    max_workers>1: 并发执行(线程池);并发下无法定义"连续",改为累计失败达到
+    abort_failure_threshold 时抛 ConsecutiveFailureError 中止。
+    """
+    if max_workers <= 1:
+        return _translate_sequential(
+            pending, translations, human, glossary, ai_translate, at=at,
+            max_retries=max_retries, backoff_s=backoff_s, sleep=sleep,
+            max_consecutive_failures=max_consecutive_failures,
+        )
+
+    lock = threading.Lock()
+    state = {"failed": 0, "stop": False, "translated": 0}
+    failures: list[str] = []
+
+    def work(item: dict) -> None:
+        if state["stop"]:
+            return
+        unique_name, field, en_text = item["unique_name"], item["field"], item["en"]
+        human_zh = _human_get(human, unique_name, field)
+        if human_zh is not None:
+            with lock:
+                set_translation(translations, unique_name, field, en_text, human_zh, at)
+                state["translated"] += 1
+            return
+        try:
+            zh = _call_with_retries(ai_translate, en_text, glossary, max_retries, backoff_s, sleep)
+        except ai_client.AIError as e:
+            with lock:
+                state["failed"] += 1
+                failures.append(f"{unique_name}.{field}: {e}")
+                if state["failed"] >= abort_failure_threshold:
+                    state["stop"] = True
+            return
+        with lock:
+            set_translation(translations, unique_name, field, en_text, zh, at)
+            state["translated"] += 1
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        list(executor.map(work, pending))
+    if state["stop"]:
+        raise ConsecutiveFailureError(
+            f"累计失败已达 {abort_failure_threshold} 次,API 可能不可用,已中止"
+        )
+    return state["translated"], failures
 
 
 def _now_iso() -> str:
@@ -158,6 +208,8 @@ def main() -> None:
     parser.add_argument("--glossary", default="source/glossary.json")
     parser.add_argument("--last-glossary", default="source/last_glossary.json",
                         help="上次应用过的术语表快照(检测术语变更用)")
+    parser.add_argument("--concurrency", type=int, default=1,
+                        help="并发线程数(1=顺序;DeepSeek 等 API 可用几百上千)")
     parser.add_argument("--dry-run", action="store_true", help="只输出统计,不调用 AI")
     parser.add_argument("--at", default=None, help="ISO 时间戳,默认当前 UTC")
     args = parser.parse_args()
@@ -202,7 +254,8 @@ def main() -> None:
 
     try:
         translated, failures = translate_pending(
-            pending, translations, human, glossary, ai_translate, at=at
+            pending, translations, human, glossary, ai_translate, at=at,
+            max_workers=args.concurrency,
         )
     except ConsecutiveFailureError as e:
         save_json(Path(args.translations), translations)  # 保留已完成的进度

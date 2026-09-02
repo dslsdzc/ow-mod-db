@@ -159,6 +159,34 @@ def test_merge_pending_dedupes():
     assert len(pending) == 2
 
 
+def test_concurrent_translate_all_succeed():
+    translations = {}
+    no_sleep = lambda _s: None
+    fake = FakeAI()
+    human = {"M0": {"description": "人工"}}
+    pending = [{"unique_name": f"M{i}", "field": "description", "en": f"text {i}"}
+               for i in range(20)]
+    translated, failures = translate.translate_pending(
+        pending, translations, human, {}, fake, at="t", sleep=no_sleep, max_workers=8)
+    assert translated == 20
+    assert failures == []
+    assert len(translations) == 20
+    assert translations["M0"]["description"]["zh"] == "人工"   # 人工覆盖
+    assert len(fake.calls) == 19                                # 人工条目不调 AI
+
+
+def test_concurrent_translate_aborts_on_failure_threshold():
+    translations = {}
+    fake = FakeAI(failures=99999)  # 永远失败
+    no_sleep = lambda _s: None
+    pending = [{"unique_name": f"M{i}", "field": "description", "en": "x"}
+               for i in range(200)]
+    with pytest.raises(translate.ConsecutiveFailureError):
+        translate.translate_pending(pending, translations, {}, {}, fake, at="t",
+                                    sleep=no_sleep, max_workers=8, abort_failure_threshold=10)
+    assert translations == {}
+
+
 def test_main_dry_run_calls_no_ai(tmp_path, monkeypatch):
     out = tmp_path / "translations.json"
     out.write_text("{}", encoding="utf-8")

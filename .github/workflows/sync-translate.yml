@@ -39,7 +39,7 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/translate.py ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python scripts/translate.py --concurrency 1000 ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Build artifacts
         run: python scripts/build.py
