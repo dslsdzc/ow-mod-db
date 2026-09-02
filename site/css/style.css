@@ -52,6 +52,11 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .detail .buttons a { padding: .55rem 1.2rem; border-radius: 8px; text-decoration: none;
                      background: #ff9c86; color: #0b0d10; font-weight: 600; }
 .detail .buttons a.secondary { background: rgba(255,255,255,.12); color: #fff; }
+.buttons-second { display: flex; margin-top: .5rem; }
+.buttons-second a { padding: .35rem .9rem; border-radius: 6px; text-decoration: none;
+                    background: rgba(255,255,255,.07); color: rgba(255,255,255,.75); font-size: .85rem;
+                    border: 1px solid rgba(255,255,255,.15); }
+.buttons-second a:hover { border-color: #ff9c86; color: #fff; }
 .detail .section { border: 1px solid rgba(255,255,255,.12); border-radius: 10px;
                    padding: 1rem 1.25rem; margin-top: 1.25rem; background: rgba(255,255,255,.04); }
 .detail .section h3 { margin: 0 0 .5rem; font-size: 1rem; }

@@ -449,9 +449,10 @@ function renderDetail(mods) {
         <a href="owmods://install-mod/${encodeURIComponent(mod.uniqueName)}" title="需要已安装 Outer Wilds Mod Manager">一键安装</a>
         <a class="secondary" href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">下载 zip</a>
         ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">源代码仓库</a>` : ""}
-        ${mod.slug ? `<a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/" target="_blank" rel="noopener">下载统计(官方)</a>` : ""}
       </div>
-      <p class="foot-note">没装 Mod Manager?<a class="link" href="mod-manager.html">先下载安装</a>,一键安装按钮才能生效</p>
+      ${mod.slug ? `<div class="buttons-second">
+        <a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/" target="_blank" rel="noopener">下载统计</a>
+      </div>` : ""}
       ${mod.description ? `<div class="section"><h3>简介</h3><p>${esc(normLines(mod.description))}</p></div>` : ""}
       ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><p>${esc(normLines(mod.latestReleaseDescription))}</p></div>` : ""}
       <div class="section" id="readme-section" hidden>
