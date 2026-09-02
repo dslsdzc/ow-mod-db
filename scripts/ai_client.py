@@ -86,14 +86,30 @@ def translate_with_ai(en_text: str, glossary: dict, *, base_url: str, api_key: s
     )
 
 
+def _repair_json_escapes(text: str) -> str:
+    """模型常把文本里的反斜杠(如 C:\\Users)原样写进 JSON → 非法转义;修复之."""
+    out = []
+    i = 0
+    while i < len(text):
+        if text[i] == "\\" and i + 1 < len(text) and text[i + 1] not in '"\\/bfnrtu':
+            out.append("\\\\")
+        else:
+            out.append(text[i])
+        i += 1
+    return "".join(out)
+
+
 def _parse_json_content(content: str) -> dict:
     """把模型输出解析成 {int 序号: 译文};失败抛 AIError."""
     cleaned = re.sub(r"^```(?:json)?\n?", "", content.strip())
     cleaned = re.sub(r"\n?```$", "", cleaned)
     try:
         data = json.loads(cleaned)
-    except ValueError as e:
-        raise AIError(f"batch response not valid JSON: {e}") from e
+    except ValueError as first_error:
+        try:
+            data = json.loads(_repair_json_escapes(cleaned))
+        except ValueError as e:
+            raise AIError(f"batch response not valid JSON: {first_error}") from e
     if not isinstance(data, dict):
         raise AIError("batch response not a JSON object")
     result = {}

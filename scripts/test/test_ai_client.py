@@ -61,6 +61,15 @@ def test_batch_translate_handles_code_fence_and_missing(monkeypatch):
     assert result == {0: "甲"}  # 缺失的序号不返回
 
 
+def test_batch_translate_repairs_bad_escapes(monkeypatch):
+    # 模型把 C:\Users 原样输出(非法 \U 转义)→ 解析器应修复
+    raw = '{"0": "修复 C:\\Users\\game 的 bug"}'   # 实际含单反斜杠
+    fake = FakePost(httpx.Response(200, json={"choices": [{"message": {"content": raw}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    result = ai_client.translate_batch_with_ai(["fix bug"], {}, base_url="u", api_key="k", model="m")
+    assert result == {0: "修复 C:\\Users\\game 的 bug"}
+
+
 def test_batch_translate_invalid_json_raises(monkeypatch):
     fake = FakePost(httpx.Response(200, json={"choices": [{"message": {"content": "not json"}}]}))
     monkeypatch.setattr(ai_client.httpx, "post", fake)

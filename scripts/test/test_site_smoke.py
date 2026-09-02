@@ -16,9 +16,11 @@ def _run_build(tmp_path):
         },
     }
     database, mods_data = build.build_all(official, translations)
+    meta = {"generatedAt": "2026-09-02T00:00:00Z", "mods": len(mods_data), "zhDescriptions": 1}
     (tmp_path / "data").mkdir(parents=True, exist_ok=True)
     (tmp_path / "database.json").write_text(json.dumps(database, ensure_ascii=False), encoding="utf-8")
-    (tmp_path / "data" / "mods.json").write_text(json.dumps({"mods": mods_data}, ensure_ascii=False), encoding="utf-8")
+    (tmp_path / "data" / "mods.json").write_text(
+        json.dumps({"mods": mods_data, "meta": meta}, ensure_ascii=False), encoding="utf-8")
     return database, mods_data
 
 
@@ -30,8 +32,11 @@ def test_site_files_exist():
 def test_dist_artifacts_and_json_valid(tmp_path):
     database, mods_data = _run_build(tmp_path)
     assert '"releases"' in (tmp_path / "database.json").read_text(encoding="utf-8")
-    mods = json.loads((tmp_path / "data" / "mods.json").read_text(encoding="utf-8"))["mods"]
-    assert len(mods) == len(mods_data) == 2
+    payload = json.loads((tmp_path / "data" / "mods.json").read_text(encoding="utf-8"))
+    mods = payload["mods"]
+    meta = payload["meta"]
+    assert meta["mods"] == len(mods_data) == 2
+    assert meta["zhDescriptions"] == 1  # 仅 Alek.OWML 简介有中文
     required_keys = {"uniqueName", "name", "description", "authorDisplay", "downloadUrl",
                      "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount",
                      "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",

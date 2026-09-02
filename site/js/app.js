@@ -1,7 +1,7 @@
 async function loadMods() {
   const resp = await fetch("data/mods.json");
   if (!resp.ok) throw new Error("无法加载数据: " + resp.status);
-  return (await resp.json()).mods;
+  return resp.json();
 }
 
 function esc(s) {
@@ -123,7 +123,14 @@ function renderDetail(mods) {
 }
 
 loadMods()
-  .then((mods) => {
+  .then((data) => {
+    const mods = data.mods || [];
+    const meta = data.meta || {};
+    const syncInfo = document.getElementById("sync-info");
+    if (syncInfo && meta.generatedAt) {
+      const t = String(meta.generatedAt).replace("T", " ").slice(0, 16);
+      syncInfo.textContent = `数据同步于 ${t} UTC · ${meta.zhDescriptions}/${meta.mods} 个简介已汉化`;
+    }
     if (document.getElementById("featured")) renderHome(mods);
     else if (document.getElementById("mod-grid")) renderList(mods);
     else renderDetail(mods);

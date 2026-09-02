@@ -1,7 +1,9 @@
 """Merge official db + translations into Chinese database.json and site data."""
 
 import argparse
+import re
 import shutil
+from datetime import datetime, timezone
 from pathlib import Path
 
 from translation_store import (
@@ -81,8 +83,14 @@ def main() -> None:
 
     dist = Path(args.dist)
     (dist / "data").mkdir(parents=True, exist_ok=True)
+    cjk = re.compile(r"[一-鿿]")
+    meta = {
+        "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "mods": len(mods_data),
+        "zhDescriptions": sum(1 for m in mods_data if cjk.search(m.get("description") or "")),
+    }
     save_json(dist / "database.json", database_zh)
-    save_json(dist / "data" / "mods.json", {"mods": mods_data})
+    save_json(dist / "data" / "mods.json", {"mods": mods_data, "meta": meta})
     deploy_site(Path(args.site), dist)
     print(f"已生成 {dist/'database.json'} 与 {dist/'data'/'mods.json'},MOD 数: {len(mods_data)}")
 
