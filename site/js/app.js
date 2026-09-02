@@ -188,6 +188,51 @@ function renderMarkdownInto(el, md, baseUrl) {
   }
 }
 
+function initReleases(mod) {
+  const section = document.getElementById("releases-section");
+  const list = document.getElementById("releases-list");
+  if (!section || !list) return;
+  fetchJson("data/releases/" + encodeURIComponent(mod.uniqueName) + ".json")
+    .then((data) => {
+      const rels = (data && data.releases) || [];
+      if (!rels.length) { section.remove(); return; }
+      section.hidden = false;
+      const SHOW = 5;
+      const more = rels.length > SHOW;
+      const visible = more ? rels.slice(0, SHOW) : rels;
+      const itemHtml = (r) => `<div class="rel-item">
+          <div class="rel-head">
+            <a class="rel-tag" href="${esc(r.zipUrl || r.releaseUrl || "#")}" target="_blank" rel="noopener">${esc(r.tag)}</a>
+            <span class="rel-meta">${esc(r.name !== r.tag ? r.name : "")} · ${esc(r.date)}</span>
+            ${r.zipUrl ? `<a class="rel-zip" href="${esc(r.zipUrl)}" target="_blank" rel="noopener">zip</a>` : ""}
+          </div>
+          ${r.body ? `<div class="readme rel-body"></div>` : ""}
+        </div>`;
+      list.innerHTML = visible.map(itemHtml).join("");
+      list.querySelectorAll(".rel-item").forEach((el, i) => {
+        const bodyEl = el.querySelector(".rel-body");
+        if (bodyEl && visible[i] && visible[i].body) {
+          renderMarkdownInto(bodyEl, visible[i].body, "");
+        }
+      });
+      if (more) {
+        const btn = document.createElement("button");
+        btn.className = "chip";
+        btn.textContent = `显示全部 ${rels.length} 个版本`;
+        btn.onclick = () => {
+          list.innerHTML = rels.map(itemHtml).join("");
+          list.querySelectorAll(".rel-item").forEach((el, i) => {
+            const bodyEl = el.querySelector(".rel-body");
+            if (bodyEl && rels[i] && rels[i].body) renderMarkdownInto(bodyEl, rels[i].body, "");
+          });
+          btn.remove();
+        };
+        list.appendChild(btn);
+      }
+    })
+    .catch(() => section.remove());
+}
+
 function initComments(mod) {
   const section = document.getElementById("comments-section");
   if (!section) return;
@@ -384,6 +429,7 @@ function renderDetail(mods) {
         <a href="owmods://install-mod/${encodeURIComponent(mod.uniqueName)}" title="需要已安装 Outer Wilds Mod Manager">一键安装</a>
         <a class="secondary" href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">下载 zip</a>
         ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">源代码仓库</a>` : ""}
+        ${mod.slug ? `<a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/" target="_blank" rel="noopener">下载统计(官方)</a>` : ""}
       </div>
       <p class="foot-note">没装 Mod Manager?<a class="link" href="mod-manager.html">先下载安装</a>,一键安装按钮才能生效</p>
       ${mod.description ? `<div class="section"><h3>简介</h3><p>${esc(normLines(mod.description))}</p></div>` : ""}
@@ -397,6 +443,10 @@ function renderDetail(mods) {
         <h3>附属与变体</h3>
         <div id="addons-list"></div>
       </div>
+      <div class="section" id="releases-section" hidden>
+        <h3>版本历史</h3>
+        <div id="releases-list"></div>
+      </div>
       <div class="section" id="comments-section" hidden>
         <h3>讨论区</h3>
         <div class="readme-actions"><span class="hint">评论由 GitHub Discussions 驱动 · 英文评论可用浏览器自带翻译阅读</span></div>
@@ -405,6 +455,7 @@ function renderDetail(mods) {
     </div>`;
   initReadme(mod);
   initAddons(mod, mods);
+  initReleases(mod);
   initComments(mod);
 }
 

@@ -78,6 +78,7 @@ def main() -> None:
     parser.add_argument("--translations", default="source/translations.json")
     parser.add_argument("--readmes", default="source/readmes.json")
     parser.add_argument("--licenses", default="source/license_cache.json")
+    parser.add_argument("--releases", default="source/releases_cache.json")
     parser.add_argument("--site", default=str(SITE_SOURCE))
     parser.add_argument("--dist", default=str(DIST))
     args = parser.parse_args()
@@ -96,6 +97,13 @@ def main() -> None:
     }
     save_json(dist / "database.json", database_zh)
     save_json(dist / "data" / "mods.json", {"mods": mods_data, "meta": meta})
+    # 版本历史: 每 mod 独立小文件,详情页按需加载
+    releases = load_json(Path(args.releases))
+    rel_dir = dist / "data" / "releases"
+    rel_dir.mkdir(parents=True, exist_ok=True)
+    for unique_name, entry in releases.items():
+        if isinstance(entry, dict) and entry.get("releases"):
+            save_json(rel_dir / f"{unique_name}.json", entry)
     # README 中文缓存与许可信息(详情页用;readmes 由 scripts/readmes.py 生成)
     readmes = load_json(Path(args.readmes))
     licenses = load_json(Path(args.licenses))
