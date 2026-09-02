@@ -297,9 +297,24 @@ function initReadme(mod) {
         showMd(zh.zh);
         const btn = document.createElement("button");
         btn.textContent = "查看英文原文";
+        let showingEn = false;
         btn.onclick = async () => {
-          try { showMd(await fetchEn()); setHint("英文原文 · 原文版权归作者所有"); }
-          catch (e) { setHint("加载失败:" + e.message); }
+          if (btn.classList.contains("busy")) return;
+          btn.classList.add("busy");
+          try {
+            if (!showingEn) {
+              showMd(await fetchEn());
+              setHint("英文原文 · 原文版权归作者所有");
+              btn.textContent = "回到中文译文";
+              showingEn = true;
+            } else {
+              showMd(zh.zh);
+              setHint("译文由 AI 生成 · 原文版权归作者所有 · " + lic);
+              btn.textContent = "查看英文原文";
+              showingEn = false;
+            }
+          } catch (e) { setHint("加载失败:" + e.message); }
+          finally { btn.classList.remove("busy"); }
         };
         actions.prepend(btn);
         return;
