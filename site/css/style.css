@@ -31,6 +31,11 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .mod-card:hover { border-color: #ff9c86; }
 .mod-card .thumb { width: 100%; aspect-ratio: 16/9; object-fit: contain; /* 完整显示,宽图不裁左右 */
                    background: rgba(255,255,255,.06); }
+.thumb-box { display: block; overflow: hidden; border-radius: 6px;
+             background-size: cover; background-position: center;
+             background-color: rgba(255,255,255,.05); }
+.thumb-box img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.detail-thumb { max-width: 720px; border-radius: 10px; margin-bottom: 1rem; }
 .mod-card h3 { margin: .6rem 0 .2rem; font-size: 1.05rem; }
 .mod-card .meta { color: rgba(255,255,255,.65); font-size: .85rem; }
 .mod-card .desc { margin: .4rem 0 0; font-size: .9rem; color: rgba(255,255,255,.8);

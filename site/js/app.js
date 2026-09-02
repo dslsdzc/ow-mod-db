@@ -20,10 +20,36 @@ function thumbUrl(m) {
     : "";
 }
 
+const THUMB_BG = { "1/1": "png/1to1.png", "16/9": "png/16to9.png", "21/9": "png/21to9.png" };
+
+function ratioKey(w, h) {
+  const r = w / h;
+  if (r < 1.3) return "1/1";
+  if (r < 2.1) return "16/9";
+  return "21/9";
+}
+
+function setupThumbBox(box) {
+  const img = box.querySelector("img");
+  if (!img) return;
+  const apply = () => {
+    if (!img.naturalWidth) return;
+    const k = ratioKey(img.naturalWidth, img.naturalHeight);
+    box.style.aspectRatio = k;
+    box.style.backgroundImage = `url("${THUMB_BG[k]}")`;
+  };
+  if (img.complete && img.naturalWidth) apply();
+  else img.addEventListener("load", apply);
+}
+
+function setupAllThumbs(root) {
+  [...(root || document).querySelectorAll(".thumb-box")].forEach(setupThumbBox);
+}
+
 function cardHtml(m) {
   const thumb = thumbUrl(m);
   return `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
-    ${thumb ? `<img class="thumb" src="${esc(thumb)}" alt="" loading="lazy">` : ""}
+    ${thumb ? `<span class="thumb-box"><img src="${esc(thumb)}" alt="" loading="lazy"></span>` : ""}
     <h3>${esc(m.name)}</h3>
     <div class="meta">${esc(m.authorDisplay)} · v${esc(m.version)} · ${esc(m.downloadCount)} 次下载</div>
     <p class="desc">${esc(m.description)}</p>
@@ -70,6 +96,7 @@ function renderHome(mods) {
     const items = sortMods(mods, mode).slice(0, 3);
     return `<section><h2>${title}</h2><div class="grid">${items.map(cardHtml).join("")}</div></section>`;
   }).join("");
+  setupAllThumbs(featured);
 }
 
 function renderList(mods) {
@@ -112,6 +139,7 @@ function renderList(mods) {
     shown = sortMods(shown, mode);
     count.textContent = shown.length + " / " + mods.length + " 个 MOD";
     grid.innerHTML = shown.map(cardHtml).join("") || `<p class="placeholder">没有匹配的 MOD</p>`;
+    setupAllThumbs(grid);
   }
 
   search.addEventListener("input", draw);
@@ -466,7 +494,7 @@ function renderDetail(mods) {
   const repoOwner = repoParts.length >= 2 ? (repoParts[repoParts.length - 2] || "") : "";
   main.innerHTML = `
     <div class="detail">
-      ${thumb ? `<img class="thumb" src="${esc(thumb)}" alt="">` : ""}
+      ${thumb ? `<span class="thumb-box detail-thumb" id="hero-thumb"><img src="${esc(thumb)}" alt=""></span>` : ""}
       <h1>${esc(mod.name)}</h1>
       <div class="meta">${repoOwner ? `<a class="link" href="https://github.com/${esc(repoOwner)}" target="_blank" rel="noopener">@${esc(repoOwner)}</a>` : esc(mod.authorDisplay)} · v${esc(mod.version)} · ${esc(mod.downloadCount)} 次下载 · 更新于 ${esc((mod.latestReleaseDate || "").slice(0, 10))}</div>
       <div>${(mod.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
@@ -503,6 +531,8 @@ function renderDetail(mods) {
         <div id="giscus"></div>
       </div>
     </div>`;
+  const hero = document.getElementById("hero-thumb");
+  if (hero) setupThumbBox(hero);
   initReadme(mod);
   initAddons(mod, mods);
   initReleases(mod);
