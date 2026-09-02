@@ -20,6 +20,14 @@ on:
         description: '只翻译前 N 条(0=全部;小规模试译用)'
         type: number
         default: 0
+      concurrency:
+        description: '并发批次数(1=最稳;余额档位允许再调高)'
+        type: number
+        default: 1
+      batch:
+        description: '每请求合并条数(1=逐条)'
+        type: number
+        default: 30
 
 concurrency:
   group: sync-translate
@@ -61,8 +69,7 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        # DeepSeek 并发上限按余额动态给(余额低时档位很低),8 为低余额安全值
-        run: python scripts/translate.py --concurrency 8 --batch 30 --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python scripts/translate.py --concurrency ${{ inputs.concurrency }} --batch ${{ inputs.batch }} --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Build artifacts
         if: steps.check.outputs.skip != 'true'
