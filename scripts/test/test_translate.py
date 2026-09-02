@@ -223,6 +223,15 @@ def _batched_pending(n):
             for i in range(n)]
 
 
+def test_make_chunks_caps_by_chars():
+    long_items = [{"unique_name": f"M{i}", "field": "description", "en": "x" * 250}
+                  for i in range(20)]
+    chunks = translate._make_chunks(long_items, batch_size=100, batch_chars=1000)
+    # 250 字/条 × 4 = 1000 → 每块最多 4 条 → 20/4 = 5 块
+    assert len(chunks) == 5
+    assert all(len(c) == 4 for c in chunks)
+
+
 def test_batched_translate_all_succeed():
     translations = {}
     fake = FakeBatchAI()

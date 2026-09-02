@@ -132,10 +132,28 @@ def translate_pending(pending: list[dict], translations: dict, human: dict, glos
     return state["translated"], failures
 
 
+def _make_chunks(items: list[dict], batch_size: int, batch_chars: int) -> list[list[dict]]:
+    """按条数与字符总量双上限分块(长文本自动少装,防输出截断)."""
+    chunks: list[list[dict]] = []
+    current: list[dict] = []
+    current_chars = 0
+    for item in items:
+        size = len(item.get("en") or "")
+        if current and (len(current) >= batch_size or current_chars + size > batch_chars):
+            chunks.append(current)
+            current = []
+            current_chars = 0
+        current.append(item)
+        current_chars += size
+    if current:
+        chunks.append(current)
+    return chunks
+
+
 def translate_pending_batched(pending: list[dict], translations: dict, human: dict,
                               glossary: dict, ai_batch, *, at: str, batch_size: int = 30,
-                              max_retries: int = 3, backoff_s: float = 2.0,
-                              sleep=time.sleep, max_workers: int = 8,
+                              batch_chars: int = 4000, max_retries: int = 3,
+                              backoff_s: float = 2.0, sleep=time.sleep, max_workers: int = 8,
                               consecutive_chunk_abort: int = 3) -> tuple[int, list[str]]:
     """把多条文本合并成批量请求翻译(减少请求数/术语表重复开销/限流压力).
 
@@ -155,7 +173,7 @@ def translate_pending_batched(pending: list[dict], translations: dict, human: di
             continue
         ai_items.append(item)
 
-    chunks = [ai_items[i:i + batch_size] for i in range(0, len(ai_items), batch_size)]
+    chunks = _make_chunks(ai_items, batch_size, batch_chars)
     if not chunks:
         return translated, failures
 

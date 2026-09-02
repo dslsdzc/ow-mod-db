@@ -54,6 +54,8 @@ def _chat_completion(user_content: str, glossary: dict, *, base_url: str, api_ke
             {"role": "user", "content": user_content},
         ],
         "temperature": 0.2,
+        # 批量翻译输出可能很长,默认输出上限会截断 JSON → 显式给足
+        "max_tokens": 8192,
     }
     base = base_url.rstrip("/")
     # 兼容两种填法: base(自动拼 /chat/completions)或完整地址(不重复拼)
