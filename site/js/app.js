@@ -94,6 +94,146 @@ function renderList(mods) {
   draw();
 }
 
+async function fetchJson(url) {
+  const resp = await fetch(url);
+  if (!resp.ok) throw new Error(url + " " + resp.status);
+  return resp.json();
+}
+
+// ---- 按需翻译: 微软 Edge 免费端点(KISS Translator 同源实现,免鉴权,浏览器直连) ----
+async function msTranslateTexts(texts, to) {
+  if (!texts.length) return [];
+  const url = "https://edge.microsoft.com/translate/translatetext?from=&to="
+    + encodeURIComponent(to || "zh-Hans") + "&isEnterpriseClient=false";
+  const resp = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(texts),
+  });
+  if (!resp.ok) throw new Error("翻译服务 " + resp.status);
+  const data = await resp.json();
+  return data.map((item) => (item.translations || []).map((t) => t.text).join(" "));
+}
+
+function splitChunks(text, maxChars) {
+  const parts = text.split(/\n{2,}/);
+  const chunks = [];
+  let cur = "";
+  for (const p of parts) {
+    const piece = p.trim();
+    if (!piece) continue;
+    if (piece.length > maxChars) {
+      for (let i = 0; i < piece.length; i += maxChars) chunks.push(piece.slice(i, i + maxChars));
+      continue;
+    }
+    const cand = cur ? cur + "\n\n" + piece : piece;
+    if (cand.length > maxChars) { chunks.push(cur); cur = piece; }
+    else cur = cand;
+  }
+  if (cur) chunks.push(cur);
+  return chunks;
+}
+
+function renderMarkdownInto(el, md, baseUrl) {
+  if (!window.marked || !window.DOMPurify) {
+    el.innerHTML = `<p class="placeholder">渲染库未加载(CDN 不可达),<a class="link" href="${esc(baseUrl)}" target="_blank" rel="noopener">打开仓库原文目录</a></p>`;
+    return;
+  }
+  const raw = marked.parse(md, { gfm: true, breaks: false });
+  el.innerHTML = DOMPurify.sanitize(raw);
+  // 相对路径图片/链接补全为 raw 绝对地址
+  if (baseUrl) {
+    el.querySelectorAll("img[src]").forEach((img) => {
+      const s = img.getAttribute("src") || "";
+      if (!/^(https?:|data:)/i.test(s) && !s.startsWith("#")) {
+        img.src = baseUrl + s.replace(/^\.\//, "");
+      }
+    });
+    el.querySelectorAll("a[href]").forEach((a) => {
+      const h = a.getAttribute("href") || "";
+      if (!/^(https?:|mailto:|#)/i.test(h)) {
+        a.href = baseUrl + h.replace(/^\.\//, "");
+        a.target = "_blank";
+        a.rel = "noopener";
+      }
+    });
+  }
+}
+
+function initReadme(mod) {
+  const section = document.getElementById("readme-section");
+  if (!section || !mod.readmeDownloadUrl) return;
+  section.hidden = false;
+  const actions = document.getElementById("readme-actions");
+  const content = document.getElementById("readme-content");
+  const setHint = (text) => { actions.innerHTML = `<span class="hint">${esc(text)}</span>`; };
+  const baseUrl = mod.readmeDownloadUrl.slice(0, mod.readmeDownloadUrl.lastIndexOf("/") + 1);
+
+  async function fetchEn() {
+    const resp = await fetch(mod.readmeDownloadUrl);
+    if (!resp.ok) throw new Error("README 抓取失败 " + resp.status);
+    return resp.text();
+  }
+
+  function showMd(md) { renderMarkdownInto(content, md, baseUrl); }
+
+  (async () => {
+    try {
+      const [readmes, licenses] = await Promise.all([
+        fetchJson("data/readmes.json").catch(() => ({})),
+        fetchJson("data/licenses.json").catch(() => ({})),
+      ]);
+      const zh = readmes[mod.uniqueName];
+      const lic = licenses[mod.uniqueName] || "";
+      const permissive = ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC",
+                          "Unlicense", "0BSD", "MIT-0", "MPL-2.0"].includes(lic);
+
+      if (zh && zh.zh) {
+        setHint("译文由 AI 生成 · 原文版权归作者所有 · " + lic);
+        showMd(zh.zh);
+        const btn = document.createElement("button");
+        btn.textContent = "查看英文原文";
+        btn.onclick = async () => {
+          try { showMd(await fetchEn()); setHint("英文原文 · 原文版权归作者所有"); }
+          catch (e) { setHint("加载失败:" + e.message); }
+        };
+        actions.prepend(btn);
+        return;
+      }
+      // 无预翻译: 拉英文原文展示;许可不允许则不提供本站翻译按钮
+      const md = await fetchEn();
+      if (permissive) {
+        setHint(lic + " 许可 · 译文生成中,可用「微软翻译查看」即时浏览(不保存)");
+        showMd(md);
+        const btn = document.createElement("button");
+        btn.textContent = "微软翻译查看";
+        btn.onclick = async () => {
+          btn.classList.add("busy");
+          btn.textContent = "翻译中…";
+          try {
+            const chunks = splitChunks(md, 1200);
+            const out = [];
+            for (const c of chunks) out.push(await msTranslateTexts([c]));
+            showMd(out.join("\n\n"));
+            setHint("微软翻译即时结果 · 原文版权归作者所有 · 仅本次查看,不保存");
+          } catch (e) {
+            setHint("翻译失败:" + e.message + " (可换用浏览器自带翻译)");
+          } finally {
+            btn.classList.remove("busy");
+            btn.textContent = "微软翻译查看";
+          }
+        };
+        actions.prepend(btn);
+      } else {
+        setHint("该仓库未声明开放许可(" + (lic === "none" ? "无" : lic) + "),为尊重作者未提供译文;可用浏览器自带翻译阅读");
+        showMd(md);
+      }
+    } catch (e) {
+      setHint("README 加载失败:" + e.message);
+    }
+  })();
+}
+
 function renderDetail(mods) {
   const params = new URLSearchParams(location.search);
   const uniqueName = params.get("uniqueName");
@@ -119,7 +259,13 @@ function renderDetail(mods) {
       </div>
       ${mod.description ? `<div class="section"><h3>简介</h3><p>${esc(mod.description)}</p></div>` : ""}
       ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><p>${esc(mod.latestReleaseDescription)}</p></div>` : ""}
+      <div class="section" id="readme-section" hidden>
+        <h3>README</h3>
+        <div class="readme-actions" id="readme-actions"></div>
+        <div class="readme" id="readme-content"></div>
+      </div>
     </div>`;
+  initReadme(mod);
 }
 
 loadMods()

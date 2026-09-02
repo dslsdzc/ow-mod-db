@@ -54,6 +54,7 @@ def build_all(official: dict, translations: dict) -> tuple[dict, list[dict]]:
                     "latestReleaseDate": out_mod.get("latestReleaseDate", ""),
                     "firstReleaseDate": out_mod.get("firstReleaseDate", ""),
                     "latestReleaseDescription": out_mod.get("latestReleaseDescription", ""),
+                    "readmeDownloadUrl": (out_mod.get("readme") or {}).get("downloadUrl", ""),
                 })
         database_zh[group] = out_group
     return database_zh, mods_data
@@ -73,6 +74,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Build Chinese database.json and website data")
     parser.add_argument("--official", default="source/official.json")
     parser.add_argument("--translations", default="source/translations.json")
+    parser.add_argument("--readmes", default="source/readmes.json")
+    parser.add_argument("--licenses", default="source/license_cache.json")
     parser.add_argument("--site", default=str(SITE_SOURCE))
     parser.add_argument("--dist", default=str(DIST))
     args = parser.parse_args()
@@ -91,6 +94,11 @@ def main() -> None:
     }
     save_json(dist / "database.json", database_zh)
     save_json(dist / "data" / "mods.json", {"mods": mods_data, "meta": meta})
+    # README 中文缓存与许可信息(详情页用;readmes 由 scripts/readmes.py 生成)
+    readmes = load_json(Path(args.readmes))
+    licenses = load_json(Path(args.licenses))
+    save_json(dist / "data" / "readmes.json", readmes)
+    save_json(dist / "data" / "licenses.json", licenses)
     deploy_site(Path(args.site), dist)
     print(f"已生成 {dist/'database.json'} 与 {dist/'data'/'mods.json'},MOD 数: {len(mods_data)}")
 

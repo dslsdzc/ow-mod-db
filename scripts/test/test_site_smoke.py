@@ -40,7 +40,7 @@ def test_dist_artifacts_and_json_valid(tmp_path):
     required_keys = {"uniqueName", "name", "description", "authorDisplay", "downloadUrl",
                      "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount",
                      "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",
-                     "latestReleaseDescription"}
+                     "latestReleaseDescription", "readmeDownloadUrl"}
     for mod in mods:
         assert set(mod.keys()) == required_keys
 

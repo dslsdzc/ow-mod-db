@@ -76,12 +76,12 @@ def test_site_data_normalizes_version_and_author():
     assert "authorDisplay" not in out and "authorDisplay" not in src
 
 
-def test_site_data_has_exact_16_key_set():
+def test_site_data_has_exact_key_set():
     _, mods_data = build.build_all(_official(), _translations())
     expected = {"uniqueName", "name", "description", "authorDisplay", "downloadUrl",
                 "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount",
                 "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",
-                "latestReleaseDescription"}
+                "latestReleaseDescription", "readmeDownloadUrl"}
     for mod in mods_data:
         assert set(mod.keys()) == expected
 
