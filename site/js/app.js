@@ -440,28 +440,33 @@ function initReadme(mod) {
       if (zh && zh.zh) {
         setHint("译文由 AI 生成 · 原文版权归作者所有 · " + lic);
         showMd(zh.zh);
-        const btn = document.createElement("button");
-        btn.textContent = "查看英文原文";
-        let showingEn = false;
-        btn.onclick = async () => {
-          if (btn.classList.contains("busy")) return;
-          btn.classList.add("busy");
-          try {
-            if (!showingEn) {
-              showMd(await fetchEn());
-              setHint("英文原文 · 原文版权归作者所有");
-              btn.textContent = "回到中文译文";
-              showingEn = true;
-            } else {
-              showMd(zh.zh);
-              setHint("译文由 AI 生成 · 原文版权归作者所有 · " + lic);
-              btn.textContent = "查看英文原文";
-              showingEn = false;
-            }
-          } catch (e) { setHint("加载失败:" + e.message); }
-          finally { btn.classList.remove("busy"); }
+        // 两个显式按钮互相切换(比单按钮改文字更可靠,无状态残留)
+        const zhBtn = document.createElement("button");
+        zhBtn.textContent = "回到中文译文";
+        zhBtn.hidden = true;
+        const enBtn = document.createElement("button");
+        enBtn.textContent = "查看英文原文";
+        const setActive = (zhActive) => {
+          zhBtn.hidden = !zhActive;
+          enBtn.hidden = zhActive;
         };
-        actions.prepend(btn);
+        zhBtn.onclick = () => {
+          showMd(zh.zh);
+          setHint("译文由 AI 生成 · 原文版权归作者所有 · " + lic);
+          setActive(true);
+        };
+        enBtn.onclick = async () => {
+          if (enBtn.classList.contains("busy")) return;
+          enBtn.classList.add("busy");
+          try {
+            showMd(await fetchEn());
+            setHint("英文原文 · 原文版权归作者所有");
+            setActive(false);
+          } catch (e) { setHint("加载失败:" + e.message); }
+          finally { enBtn.classList.remove("busy"); }
+        };
+        actions.prepend(enBtn);
+        actions.prepend(zhBtn);
         return;
       }
       // 无预翻译: 拉英文原文展示
