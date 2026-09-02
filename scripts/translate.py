@@ -2,6 +2,7 @@
 
 import argparse
 import os
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -83,12 +84,80 @@ def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
 
+def _glossary_flat(glossary: dict) -> dict:
+    """合并 terms/characters 两节为 {EN: 中文}."""
+    flat = {}
+    for section in ("terms", "characters"):
+        flat.update(glossary.get(section) or {})
+    return flat
+
+
+def glossary_changes(old: dict, new: dict) -> dict:
+    """返回 {EN: (旧中文, 新中文)} —— 只在两个表里都存在且值不同时算变更."""
+    changes = {}
+    old_flat, new_flat = _glossary_flat(old), _glossary_flat(new)
+    for en, zh in new_flat.items():
+        if en in old_flat and old_flat[en] != zh:
+            changes[en] = (old_flat[en], zh)
+    return changes
+
+
+def apply_replacements(translations: dict, changes: dict, human: dict) -> int:
+    """旧中文 -> 新中文 确定性替换所有非人工译文;返回替换的字段数.
+
+    人工覆盖的字段(human_translations.json 命中)绝不被动.
+    """
+    replaced = 0
+    for unique_name, fields in translations.items():
+        for field, entry in fields.items():
+            if _human_get(human, unique_name, field) is not None:
+                continue
+            zh = entry.get("zh") or ""
+            new_zh = zh
+            for _, (old, new) in changes.items():
+                if old and old in new_zh:
+                    new_zh = new_zh.replace(old, new)
+            if new_zh != zh:
+                entry["zh"] = new_zh
+                replaced += 1
+    return replaced
+
+
+def find_affected_fields(translations: dict, glossary: dict, human: dict) -> list[dict]:
+    """缓存中 en 原文提到任一术语表词条的字段 —— 术语表/规则变化后需要 AI 重译.
+
+    返回 [{unique_name, field, en}];人工覆盖字段除外.
+    """
+    keys = sorted(_glossary_flat(glossary), key=len, reverse=True)
+    affected = []
+    for unique_name, fields in translations.items():
+        for field, entry in fields.items():
+            if _human_get(human, unique_name, field) is not None:
+                continue
+            en_text = entry.get("en") or ""
+            if any(re.search(rf"(?<![A-Za-z]){re.escape(k)}(?![A-Za-z])", en_text)
+                   for k in keys):
+                affected.append({"unique_name": unique_name, "field": field, "en": en_text})
+    return affected
+
+
+def merge_pending(pending: list[dict], extra: list[dict]) -> None:
+    """把 extra 并入 pending,按 (unique_name, field) 去重."""
+    seen = {(p["unique_name"], p["field"]) for p in pending}
+    for item in extra:
+        if (item["unique_name"], item["field"]) not in seen:
+            pending.append(item)
+            seen.add((item["unique_name"], item["field"]))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Translate pending fields into translations.json")
     parser.add_argument("--pending", default="source/pending.json")
     parser.add_argument("--translations", default="source/translations.json")
     parser.add_argument("--human", default="source/human_translations.json")
     parser.add_argument("--glossary", default="source/glossary.json")
+    parser.add_argument("--last-glossary", default="source/last_glossary.json",
+                        help="上次应用过的术语表快照(检测术语变更用)")
     parser.add_argument("--dry-run", action="store_true", help="只输出统计,不调用 AI")
     parser.add_argument("--at", default=None, help="ISO 时间戳,默认当前 UTC")
     args = parser.parse_args()
@@ -98,6 +167,19 @@ def main() -> None:
     human = load_json(Path(args.human))
     glossary = load_json(Path(args.glossary))
     at = args.at or _now_iso()
+
+    # 术语表变更处理: 值变更走确定性替换(零 API),格式/新增词条只重译命中字段
+    last_path = Path(args.last_glossary)
+    last_glossary = load_json(last_path)
+    glossary_changed = bool(last_glossary) and last_glossary != glossary
+    if glossary_changed:
+        changes = glossary_changes(last_glossary, glossary)
+        replaced = apply_replacements(translations, changes, human) if not args.dry_run else 0
+        affected = find_affected_fields(translations, glossary, human)
+        merge_pending(pending, affected)
+        print(f"术语表变更: {len(changes)} 个词条值变更"
+              f"{f'(替换 {replaced} 个字段)' if not args.dry_run else '(dry-run 不替换)'},"
+              f" {len(affected)} 个命中字段并入待翻译")
 
     if not args.dry_run:
         missing = [k for k in ("OPENAI_BASE_URL", "OPENAI_API_KEY", "OPENAI_MODEL")
@@ -127,6 +209,7 @@ def main() -> None:
         print(e)
         raise SystemExit(1)
     save_json(Path(args.translations), translations)
+    save_json(last_path, glossary)  # 成功后才推进术语表快照
     print(f"翻译完成: {translated} 条成功, {len(failures)} 条失败")
     for f in failures:
         print(f"  FAIL {f}")

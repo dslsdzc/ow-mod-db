@@ -107,6 +107,58 @@ def test_consecutive_failures_reset_by_human_override():
     assert translations["Test.Mod"]["description"]["zh"] == "人工"
 
 
+def test_glossary_changes_detects_value_changes_only():
+    old = {"terms": {"Nomai": "挪麦", "Quantum Moon": "量子之月"},
+           "characters": {"Hornfels": "霍恩费斯"}}
+    new = {"terms": {"Nomai": "挪麦", "Quantum Moon": "量子卫星"},
+           "characters": {"Hornfels": "霍恩费斯", "Feldspar": "费尔德斯巴"}}
+    changes = translate.glossary_changes(old, new)
+    # 值变了才算;未变(Nomai)与新增(Feldspar)不算
+    assert changes == {"Quantum Moon": ("量子之月", "量子卫星")}
+
+
+def test_apply_replacements_skips_human_fields():
+    human = {"Test.Mod": {"description": "人工译文(含量子之月)"}}
+    translations = {
+        "Test.Mod": {"description": {"en": "x", "zh": "人工译文(含量子之月)", "at": "t"}},
+        "Other.Mod": {"name": {"en": "y", "zh": "量子之月真好", "at": "t"}},
+    }
+    changes = {"Quantum Moon": ("量子之月", "量子卫星")}
+    n = translate.apply_replacements(translations, changes, human)
+    assert n == 1
+    assert translations["Test.Mod"]["description"]["zh"] == "人工译文(含量子之月)"  # 人工未动
+    assert translations["Other.Mod"]["name"]["zh"] == "量子卫星真好"
+
+
+def test_find_affected_fields_matches_en_terms():
+    translations = {
+        "Mod.A": {"description": {"en": "Talk to Hornfels about the photo", "zh": "…", "at": "t"}},
+        "Mod.B": {"name": {"en": "Quantum Moon mod", "zh": "…", "at": "t"}},
+        "Mod.C": {"description": {"en": "Adds a ship", "zh": "…", "at": "t"}},
+    }
+    glossary = {"terms": {"Quantum Moon": "量子卫星"},
+                "characters": {"Hornfels": "霍恩费斯"}}
+    affected = translate.find_affected_fields(translations, glossary, {})
+    keys = {(a["unique_name"], a["field"]) for a in affected}
+    assert keys == {("Mod.A", "description"), ("Mod.B", "name")}
+    assert all(a["en"] for a in affected)
+
+
+def test_find_affected_fields_word_boundary():
+    translations = {"Mod.X": {"description": {"en": "Hornfelsian ship part", "zh": "…", "at": "t"}}}
+    glossary = {"characters": {"Hornfels": "霍恩费斯"}}
+    assert translate.find_affected_fields(translations, glossary, {}) == []
+
+
+def test_merge_pending_dedupes():
+    pending = [{"unique_name": "A", "field": "name", "en": "x"}]
+    translate.merge_pending(pending, [
+        {"unique_name": "A", "field": "name", "en": "x"},
+        {"unique_name": "B", "field": "name", "en": "y"},
+    ])
+    assert len(pending) == 2
+
+
 def test_main_dry_run_calls_no_ai(tmp_path, monkeypatch):
     out = tmp_path / "translations.json"
     out.write_text("{}", encoding="utf-8")
