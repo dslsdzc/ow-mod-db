@@ -196,7 +196,8 @@ def translate_pending_batched(pending: list[dict], translations: dict, human: di
         list(executor.map(work, chunks))
     if state["stop"]:
         raise ConsecutiveFailureError(
-            f"连续 {consecutive_chunk_abort} 个批次翻译失败,API 可能不可用,已中止"
+            f"连续 {consecutive_chunk_abort} 个批次翻译失败,API 可能不可用,已中止\n"
+            + "\n".join(f"  FAIL {f}" for f in failures[-3:])
         )
     return translated, failures
 
