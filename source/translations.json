@@ -56,5 +56,179 @@
       "zh": "没有鱼或雾气的黑棘星",
       "at": "2026-09-02T06:45:55.434812Z"
     }
+  },
+  "PacificEngine.OW_HardMode": {
+    "latestReleaseDescription": {
+      "en": "## What's Changed\r\n- Some build updates\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_HardMode/compare/0.5.1...0.5.2",
+      "zh": "## 有什么变化\n- 一些构建更新\n**完整变更日志**：https://github.com/PacificEngine/OW_HardMode/compare/0.5.1...0.5.2",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "Leadpogrommer.PeacefulGhosts": {
+    "name": {
+      "en": "Peaceful Ghosts",
+      "zh": "和平的幽灵",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "OuterWilds mod that makes Stranger inhabitants more peaceful",
+      "zh": "一个使陌生人居民更和平的星际拓荒模组",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "dnlwtsn.SlowTime": {
+    "name": {
+      "en": "SlowTime",
+      "zh": "慢时间",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "Slows time-based events over 1 hour in the game to give you more time to explore!",
+      "zh": "减缓游戏中超过1小时的时间事件，给你更多探索时间！",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Initial release. Sets the loop time to 1 hour.",
+      "zh": "初始发布。将循环时间设置为1小时。",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "TruAI.SmoothThrust": {
+    "name": {
+      "en": "OW Smooth Thrust",
+      "zh": "OW 平滑推进",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "Outer Wilds Keyboard Smooth Thrust",
+      "zh": "星际拓荒键盘平滑推进",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "PacificEngine.OW_Randomizer": {
+    "name": {
+      "en": "PacificEngine's Randomizer",
+      "zh": "PacificEngine 的随机器",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "Randomizes stuff in outer wilds",
+      "zh": "随机化星际拓荒中的东西",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "latestReleaseDescription": {
+      "en": "## What's Changed\r\n- Some build updates\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.7.6...0.7.7",
+      "zh": "## 有什么变化\n- 一些构建更新\n**完整变更日志**：https://github.com/PacificEngine/OW_Randomizer/compare/0.7.6...0.7.7",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "PacificEngine.OW_CommonResources": {
+    "name": {
+      "en": "PacificEngine's Common Resources",
+      "zh": "PacificEngine 的公共资源",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "A Collection of Common Resource to use throughout downstream mods",
+      "zh": "一个公共资源集合，用于下游模组使用",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Fixed by @xen-42",
+      "zh": "由 @xen-42 修复",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "lStewieAl.RunInBackground": {
+    "name": {
+      "en": "No Alt Tab Pause",
+      "zh": "无 Alt Tab 暂停",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "Mod for Outer Wilds allowing the game to continue while in background",
+      "zh": "一个星际拓荒模组，允许游戏在后台继续运行",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Allow the game to continue in background, allowing autopilot while the game isn't focused.",
+      "zh": "允许游戏在后台继续运行，允许在游戏未聚焦时启用自动驾驶。",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "tealhelix.EotE-RideMusic": {
+    "name": {
+      "en": "Echoes of the Caribbean",
+      "zh": "加勒比海的回声",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "Replaces a key bit of music in EotE with something more zesty. Includes Daft Punk light show mode!",
+      "zh": "用更活泼的音乐替换了 EotE 中的一个关键音乐片段。包含 Daft Punk 激光秀模式！",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Correct release number in payload manifest",
+      "zh": "在有效负载清单中修正了发布号",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "xen.ThirdPersonCamera": {
+    "name": {
+      "en": "Third Person Camera",
+      "zh": "第三人称相机",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "A third-person camera for Outer Wilds.",
+      "zh": "一个星际拓荒的第三人称相机。",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Fixed a bug where the ship log splash screen would stay stuck on until a scout photo was taken",
+      "zh": "- 修复了一个问题，即飞船日志的启动屏幕会一直卡住，直到拍摄了一张侦察照片",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "Artum.NomaiVROnlinePatches": {
+    "name": {
+      "en": "NomaiVR Online Patches",
+      "zh": "NomaiVR 在线补丁",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "Patches to adapt some Outer Wilds Online features to NomaiVR",
+      "zh": "补丁以适应星际拓荒在线功能到 NomaiVR",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "latestReleaseDescription": {
+      "en": "* Disabled ability to equip the recording tool by @JustOnesAndZeros",
+      "zh": "* 由 @JustOnesAndZeros 禁用了装备录制工具的功能",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "Artum.NomaiVRFoveated": {
+    "name": {
+      "en": "NomaiVR FFR",
+      "zh": "NomaiVR FFR",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "description": {
+      "en": "Uses HTC's FFR plugin to improve performance in NomaiVR on NVIDIA RTX cards",
+      "zh": "使用 HTC 的 FFR 插件来提高 NVIDIA RTX 卡上 NomaiVR 的性能",
+      "at": "2026-09-02T06:53:57.769354Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Fixed resolution issues with final credits scene",
+      "zh": "修复了最终信用场景的分辨率问题",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
+  },
+  "xen.StaticCamera": {
+    "name": {
+      "en": "Static Camera",
+      "zh": "静态相机",
+      "at": "2026-09-02T06:53:57.769354Z"
+    }
   }
 }
