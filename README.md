@@ -63,12 +63,12 @@ AI 翻译必须遵守的术语表,分两类。团队发现新专有名词直接�
 
 本仓库采用分层许可,使用时请按内容区分:
 
-| 内容 | 许可 | 说明 |
+| 内容 | 许可 | 许可文件 |
 |---|---|---|
-| 网站与代码(`scripts/`、`site/`、CI 配置)| **GPL-3.0** | 见根目录 `LICENSE` |
-| 数据产物(`source/official.json`、翻译缓存、`database.json` 等)| **MIT** | 源自 MIT 许可的上游数据库 ow-mods/ow-mod-db |
-| 术语表 `source/glossary.json` | **CC-BY 4.0(须署名)** | 内含官方游戏中文译名,使用时须注明来源 |
-| 上游数据 | MIT © ow-mods | 详情见官方仓库 |
+| 网站与代码(`scripts/`、`site/`、CI 配置)| **GPL-3.0** | `LICENSE` |
+| 数据产物(`source/official.json`、翻译缓存、`database.json` 等)| **MIT** | `source/DATA-LICENSE` |
+| 术语表 `source/glossary.json` 等 | **CC BY 4.0(须署名)** | `source/GLOSSARY-LICENSE` |
+| 上游数据 | MIT © ow-mods | 官方仓库 |
 | MOD 元数据/README | 版权归各自作者 | 按各仓库许可处理,本站仅展示与按许可翻译 |
 
 ## 本地运行(调试)
