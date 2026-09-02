@@ -217,7 +217,7 @@ function renderMarkdownInto(el, md, baseUrl, breaks) {
   el.innerHTML = DOMPurify.sanitize(raw);
   rewriteOfficialModLinks(el);
   renderMermaidBlocks(el);
-  // 加载失败的图(如国内被墙的徽章图)直接隐藏,不显示 alt 文本噪音
+  // 加载失败的图(如徽章图无法访问)直接隐藏,不显示 alt 文本噪音
   el.querySelectorAll("img").forEach((img) => {
     img.addEventListener("error", () => { img.style.visibility = "hidden"; }, { once: true });
   });
