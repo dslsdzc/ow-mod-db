@@ -12,7 +12,7 @@ function esc(s) {
 
 function thumbUrl(m) {
   return m.thumbnail && m.thumbnail.main
-    ? "https://ow-mods.github.io/ow-mod-db/images/" + m.thumbnail.main
+    ? "https://ow-mods.github.io/ow-mod-db/thumbnails/" + m.thumbnail.main
     : "";
 }
 
