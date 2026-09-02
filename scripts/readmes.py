@@ -199,6 +199,7 @@ def main() -> None:
     parser.add_argument("--official", default="source/official.json")
     parser.add_argument("--licenses", default="source/license_cache.json")
     parser.add_argument("--readmes", default="source/readmes.json")
+    parser.add_argument("--glossary", default="source/glossary.json")
     parser.add_argument("--denylist", default="source/readme_denylist.json")
     parser.add_argument("--concurrency", type=int, default=4)
     parser.add_argument("--limit", type=int, default=0, help="本次最多翻译的 README 数(分批上线用)")
@@ -230,9 +231,12 @@ def main() -> None:
     if args.dry_run:
         return
 
+    glossary = load_json(Path(args.glossary))
+
     def ai_translate(text: str) -> str:
+        # README 也注入术语表(否则专有名词会被随意翻译,如 外星迷航)
         return ai_client.translate_with_ai(
-            text, {},  # README 是自由文本,不注入 mod 术语表
+            text, glossary,
             base_url=os.environ["OPENAI_BASE_URL"],
             api_key=os.environ["OPENAI_API_KEY"],
             model=os.environ["OPENAI_MODEL"],
