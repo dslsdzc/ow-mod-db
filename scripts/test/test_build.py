@@ -81,7 +81,7 @@ def test_site_data_has_exact_key_set():
     expected = {"uniqueName", "name", "description", "authorDisplay", "downloadUrl",
                 "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount",
                 "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",
-                "latestReleaseDescription", "readmeDownloadUrl"}
+                "latestReleaseDescription", "readmeDownloadUrl", "parent", "repoVariations"}
     for mod in mods_data:
         assert set(mod.keys()) == expected
 

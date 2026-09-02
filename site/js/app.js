@@ -38,6 +38,12 @@ function sortMods(mods, mode) {
   if (mode === "updated") {
     return copy.sort((a, b) => String(b.latestReleaseDate).localeCompare(String(a.latestReleaseDate)));
   }
+  if (mode === "newest") {
+    return copy.sort((a, b) => String(b.firstReleaseDate).localeCompare(String(a.firstReleaseDate)));
+  }
+  if (mode === "name") {
+    return copy.sort((a, b) => String(a.name).localeCompare(String(b.name), "zh-Hans-CN"));
+  }
   if (mode === "popularNew") {
     const cutoff = Date.now() - 60 * 24 * 3600 * 1000;
     const recent = copy.filter((m) => m.firstReleaseDate && new Date(m.firstReleaseDate).getTime() >= cutoff);
@@ -65,32 +71,47 @@ function renderHome(mods) {
 function renderList(mods) {
   const grid = document.getElementById("mod-grid");
   const search = document.getElementById("search");
-  const tagFilter = document.getElementById("tag-filter");
+  const sort = document.getElementById("sort");
+  const chipsEl = document.getElementById("tag-chips");
   const count = document.getElementById("count");
   if (!grid) return;
 
+  let tag = "";
+
   const allTags = [...new Set(mods.flatMap((m) => m.tags || []))].sort();
-  for (const tag of allTags) {
-    const opt = document.createElement("option");
-    opt.value = tag;
-    opt.textContent = tag;
-    tagFilter.appendChild(opt);
+  if (chipsEl) {
+    const mk = (label, value) => {
+      const b = document.createElement("button");
+      b.className = "chip";
+      b.textContent = label;
+      b.dataset.tag = value;
+      b.onclick = () => { tag = tag === value ? "" : value; refreshChips(); draw(); };
+      chipsEl.appendChild(b);
+      return b;
+    };
+    mk("全部", "");
+    for (const t of allTags) mk(t, t);
+  }
+  function refreshChips() {
+    if (!chipsEl) return;
+    [...chipsEl.children].forEach((b) => b.classList.toggle("active", b.dataset.tag === tag));
   }
 
   function draw() {
     const q = search.value.trim().toLowerCase();
-    const tag = tagFilter.value;
-    const shown = mods.filter((m) => {
+    const mode = sort ? sort.value : "installs";
+    let shown = mods.filter((m) => {
       if (tag && !(m.tags || []).includes(tag)) return false;
       if (!q) return true;
       return (m.name + " " + m.description + " " + m.authorDisplay).toLowerCase().includes(q);
     });
+    shown = sortMods(shown, mode);
     count.textContent = shown.length + " / " + mods.length + " 个 MOD";
     grid.innerHTML = shown.map(cardHtml).join("") || `<p class="placeholder">没有匹配的 MOD</p>`;
   }
 
   search.addEventListener("input", draw);
-  tagFilter.addEventListener("change", draw);
+  if (sort) sort.addEventListener("change", draw);
   draw();
 }
 
@@ -197,6 +218,24 @@ async function translateReadmeDom(root) {
     const zh = await msTranslateTexts(texts);
     batch.forEach((n, i) => { if (zh[i]) n.nodeValue = zh[i]; });
   }
+}
+
+function initAddons(mod, allMods) {
+  const wrap = document.getElementById("addons-section");
+  if (!wrap) return;
+  const children = allMods.filter((m) => m.parent === mod.uniqueName && m.uniqueName !== mod.uniqueName);
+  const variations = (mod.repoVariations || []).map((v) => typeof v === "string" ? { uniqueName: v } : v)
+    .filter((v) => v && v.uniqueName);
+  if (!children.length && !variations.length) { wrap.remove(); return; }
+  wrap.hidden = false;
+  const list = document.getElementById("addons-list");
+  const card = (m, fallback) => `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
+      <div><h3>${esc(m.name || fallback || m.uniqueName)}</h3>
+      <div class="meta">${esc(m.uniqueName)}</div></div></a>`;
+  const html = [];
+  for (const c of children) html.push(card(c, ""));
+  for (const v of variations) html.push(card(v, v.uniqueName));
+  list.innerHTML = `<div class="grid">${html.join("")}</div>`;
 }
 
 function initReadme(mod) {
@@ -309,6 +348,10 @@ function renderDetail(mods) {
         <div class="readme-actions" id="readme-actions"></div>
         <div class="readme" id="readme-content"></div>
       </div>
+      <div class="section" id="addons-section" hidden>
+        <h3>附属与变体</h3>
+        <div id="addons-list"></div>
+      </div>
       <div class="section" id="comments-section" hidden>
         <h3>讨论区</h3>
         <div class="readme-actions"><span class="hint">评论由 GitHub Discussions 驱动 · 英文评论可用浏览器自带翻译阅读</span></div>
@@ -316,6 +359,7 @@ function renderDetail(mods) {
       </div>
     </div>`;
   initReadme(mod);
+  initAddons(mod, mods);
   initComments(mod);
 }
 

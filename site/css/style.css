@@ -40,6 +40,12 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
                                     background: rgba(255,255,255,.06); color: #fff; }
 #search { flex: 1; min-width: 200px; }
 #count { align-self: center; color: rgba(255,255,255,.65); font-size: .9rem; }
+.chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 .9rem; }
+.chip { padding: .22rem .7rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.22);
+        background: transparent; color: rgba(255,255,255,.75); font-size: .8rem; cursor: pointer; }
+.chip:hover { border-color: rgba(255,255,255,.5); }
+.chip.active { background: rgba(255,156,134,.16); border-color: #ff9c86; color: #ff9c86; }
+.chip.active::before { content: "✓ "; }
 .detail h1 { margin: .25rem 0; }
 .detail .meta { color: rgba(255,255,255,.65); margin-bottom: 1rem; }
 .detail .buttons { display: flex; gap: .75rem; margin: 1rem 0; }

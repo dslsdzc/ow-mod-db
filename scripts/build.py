@@ -55,6 +55,8 @@ def build_all(official: dict, translations: dict) -> tuple[dict, list[dict]]:
                     "firstReleaseDate": out_mod.get("firstReleaseDate", ""),
                     "latestReleaseDescription": out_mod.get("latestReleaseDescription", ""),
                     "readmeDownloadUrl": (out_mod.get("readme") or {}).get("downloadUrl", ""),
+                    "parent": out_mod.get("parent", ""),
+                    "repoVariations": out_mod.get("repoVariations", []),
                 })
         database_zh[group] = out_group
     return database_zh, mods_data
