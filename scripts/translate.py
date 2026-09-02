@@ -65,7 +65,8 @@ def _translate_sequential(pending: list[dict], translations: dict, human: dict, 
             failures.append(f"{unique_name}.{field}: {e}")
             if consecutive_failures >= max_consecutive_failures:
                 raise ConsecutiveFailureError(
-                    f"连续 {max_consecutive_failures} 次 AI 翻译失败,API 可能不可用,已中止"
+                    f"连续 {max_consecutive_failures} 次 AI 翻译失败,API 可能不可用,已中止\n"
+                    + "\n".join(f"  FAIL {f}" for f in failures[-3:])
                 ) from e
             continue
         set_translation(translations, unique_name, field, en_text, zh, at)
@@ -125,7 +126,8 @@ def translate_pending(pending: list[dict], translations: dict, human: dict, glos
         list(executor.map(work, pending))
     if state["stop"]:
         raise ConsecutiveFailureError(
-            f"累计失败已达 {abort_failure_threshold} 次,API 可能不可用,已中止"
+            f"累计失败已达 {abort_failure_threshold} 次,API 可能不可用,已中止\n"
+            + "\n".join(f"  FAIL {f}" for f in failures[-5:])
         )
     return state["translated"], failures
 
