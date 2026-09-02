@@ -16091,58 +16091,59 @@
     ]
   },
   "orclecle.EyeWitness": {
-    "repoUpdatedAt": "2026-09-01T16:52:02Z",
+    "repoUpdatedAt": "2026-09-02T18:19:50Z",
     "releases": [
       {
         "tag": "v1.3.1",
         "name": "Version 1.3.1",
         "date": "2026-08-31",
         "body": "* Updated the Chinese translation by @SanBaiMing",
+        "bodyZh": "* 更新了中文翻译 by @SanBaiMing",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.3.1/orclecle.EyeWitness.zip",
-        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.3.1",
-        "bodyZh": "* 更新了中文翻译 by @SanBaiMing"
+        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.3.1"
       },
       {
         "tag": "v1.3.0",
         "name": "Version 1.3.0",
         "date": "2026-08-30",
         "body": "This is an update after the conclusion of the jam.\r\nChanges:\r\n* Updated the Chinese translation by @SanBaiMing (however, I have added some machine translations of the Chinese text related to the changes listed below, so I would appreciate it if you could check if it is as @SanBaiMing intended.)\r\n* Increased the spacing between some ship log cards to make the unread mark more clearly visible.\r\n* Added a feature to display the remaining time in a certain location on the computer.\r\n* Fixed an issue where a certain mesh-like model was overhanging the stairs (a cylinder will indent inward when twisted unless the number of vertices is increased).\r\n* Corrected some English text to make it more accurate.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
+        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n* 更新了中文翻译由 @SanBaiMing 完成（然而，我添加了一些与下面列出的变更相关的中文文本的机器翻译，所以如果您能检查一下是否与 @SanBaiMing 的意图一致，我将不胜感激。）\n* 增加了某些飞船日志卡片之间的间距，使未读标记更清晰可见。\n* 添加了一个功能，可在电脑上显示某个位置的剩余时间。\n* 修复了一个问题，即某个网格状模型悬垂在楼梯上（当扭曲时，除非增加顶点数量，否则圆柱体会向内凹陷）。\n* 修正了一些英文文本，使其更加准确。\n\n**此外，请不要使用其他模组移除沙子或鱼钩鱼；这样做会导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.3.0/orclecle.EyeWitness.zip",
-        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.3.0",
-        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n* 更新了中文翻译由 @SanBaiMing 完成（然而，我添加了一些与下面列出的变更相关的中文文本的机器翻译，所以如果您能检查这些是否如 @SanBaiMing 所愿，我将不胜感激。）\n* 增加了某些飞船日志卡片之间的间距，使未读标记更清晰可见。\n* 添加了一个功能，可在电脑上显示某个位置的剩余时间。\n* 修复了一个问题，即某个网格状模型悬垂在楼梯上（当扭曲时，除非增加顶点数量，否则圆柱体会向内凹陷）。\n* 修正了一些英文文本，使其更加准确。\n\n**此外，请不要使用其他模组移除沙子或鱼钩鱼；这样做会导致剧情中断。**"
+        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.3.0"
       },
       {
         "tag": "v1.2.0",
         "name": "Version 1.2.0",
         "date": "2026-08-20",
         "body": "This is an update after the conclusion of the jam.\r\nChanges:\r\n\r\n* Add Chinese translation by @GeBlaster and @SanBaiMing (#2).\r\n* Complete Japanese translation.\r\n* While watching Fenna's video, I noticed that there was an instance where the word \"Vessel\" was written as \"ship,\" so I corrected it.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
+        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n\n* 添加了 @GeBlaster 和 @SanBaiMing (#2) 的中文翻译。\n* 完成了日语翻译。\n* 在观看 Fenna 的视频时，我发现有一个地方将“Vessel”写成了“ship”，所以我进行了修正。\n\n**另外，请不要使用其他模组移除沙子或电鳗鱼；这样做会导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.2.0/orclecle.EyeWitness.zip",
-        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.2.0",
-        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n\n* 添加了 @GeBlaster 和 @SanBaiMing (#2) 的中文翻译。\n* 完成了日语翻译。\n* 在观看 Fenna 的视频时，我发现有一个地方将“Vessel”写成了“ship”，所以我进行了修正。\n\n**另外，请不要使用其他模组移除沙子或角鱼；这样做会导致剧情中断。**"
+        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.2.0"
       },
       {
         "tag": "v1.1.0",
         "name": "Version 1.1.0",
         "date": "2026-08-18",
         "body": "This should be the final submission version of this mod. Please let me know if you encounter any critical bugs; I plan to fix them before the deadline.\r\n\r\nChanges:\r\n* Shifted the position of a certain signal and the nearby text further to one side.\r\n* Made clues more explicit in several pieces of text, including the ship log.\r\n* Enhanced the presentation at a specific point.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
+        "bodyZh": "这应该是该模组的最终提交版本。如果您遇到任何严重错误，请告诉我；我计划在截止日期前修复它们。\n\n变更：\n* 将某个信号及其附近文本进一步移向一侧。\n* 在几段文本中，包括飞船日志，使线索更加明确。\n* 在特定点上增强了表现。\n\n**此外，请不要使用其他模组移除沙子或角鱼；这样做会导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.1.0/orclecle.EyeWitness.zip",
-        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.1.0",
-        "bodyZh": "这应该是这个模组的最终提交版本。如果你遇到任何关键错误，请告诉我；我计划在截止日期前修复它们。\n\n变更：\n* 将某个信号及其附近文本进一步移向一侧。\n* 在几段文本中，包括飞船日志，使线索更加明确。\n* 在特定点上增强了表现。\n\n**此外，请不要使用其他模组移除沙子或鱼钩鱼；这样做会导致剧情中断。**"
+        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.1.0"
       },
       {
         "tag": "v1.0.2",
         "name": "Version 1.0.2",
         "date": "2026-08-17",
         "body": "I fixed a critical bug that prevented a certain action from being performed after completing a specific task.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
+        "bodyZh": "我修复了一个关键错误，该错误阻止了在完成特定任务后执行某个操作。\n\n**此外，请不要使用其他模组移除沙子或电鳗鱼；这样做会导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.0.2/orclecle.EyeWitness.zip",
-        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.0.2",
-        "bodyZh": "我修复了一个关键错误，该错误阻止了在完成特定任务后执行某个操作。\n\n**此外，请勿使用其他模组移除沙子或鱼钩鱼；这样做会导致剧情中断。**"
+        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.0.2"
       },
       {
         "tag": "v1.0.1",
         "name": "Version 1.0.1",
         "date": "2026-08-17",
         "body": "* I have also noted in the ship logs that there are two instances of a certain location.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
+        "bodyZh": "",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.0.1/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.0.1"
       },
@@ -16151,6 +16152,7 @@
         "name": "Version 1.0.0",
         "date": "2026-08-17",
         "body": "This is the version submitted for the jam. Please let me know if there are any critical bugs; if it is still within the deadline, I will fix them and submit the updated version.\r\n\r\n(I am trusting that the GitHub outage did not affect the contents of the build.)",
+        "bodyZh": "",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.0.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.0.0"
       },
@@ -16159,6 +16161,7 @@
         "name": "Version 0.2.1",
         "date": "2026-08-16",
         "body": "test version reflecting feedbacks of v0.2.0",
+        "bodyZh": "",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v0.2.1/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v0.2.1"
       }
