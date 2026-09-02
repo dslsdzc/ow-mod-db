@@ -9,6 +9,8 @@ on:
     paths:
       - 'source/**'
       - 'scripts/**'
+      - 'site/**'
+      - 'README.md'
       - '.github/workflows/**'
   workflow_dispatch:
     inputs:
