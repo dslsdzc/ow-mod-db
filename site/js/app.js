@@ -357,16 +357,20 @@ function renderDetail(mods) {
   }
   document.title = mod.name + " — 星际拓荒 MOD 数据库";
   const thumb = thumbUrl(mod);
+  const repoParts = (mod.repo || "").split("/");
+  const repoOwner = repoParts.length >= 2 ? (repoParts[repoParts.length - 2] || "") : "";
   main.innerHTML = `
     <div class="detail">
       ${thumb ? `<img class="thumb" src="${esc(thumb)}" alt="">` : ""}
       <h1>${esc(mod.name)}</h1>
-      <div class="meta">${esc(mod.authorDisplay)} · v${esc(mod.version)} · ${esc(mod.downloadCount)} 次下载 · 更新于 ${esc((mod.latestReleaseDate || "").slice(0, 10))}</div>
+      <div class="meta">${repoOwner ? `<a class="link" href="https://github.com/${esc(repoOwner)}" target="_blank" rel="noopener">@${esc(repoOwner)}</a>` : esc(mod.authorDisplay)} · v${esc(mod.version)} · ${esc(mod.downloadCount)} 次下载 · 更新于 ${esc((mod.latestReleaseDate || "").slice(0, 10))}</div>
       <div>${(mod.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
       <div class="buttons">
-        <a href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">下载 MOD</a>
+        <a href="owmods://install-mod/${encodeURIComponent(mod.uniqueName)}" title="需要已安装 Outer Wilds Mod Manager">一键安装</a>
+        <a class="secondary" href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">下载 zip</a>
         ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">源代码仓库</a>` : ""}
       </div>
+      <p class="foot-note">没装 Mod Manager?<a class="link" href="mod-manager.html">先下载安装</a>,一键安装按钮才能生效</p>
       ${mod.description ? `<div class="section"><h3>简介</h3><p>${esc(normLines(mod.description))}</p></div>` : ""}
       ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><p>${esc(normLines(mod.latestReleaseDescription))}</p></div>` : ""}
       <div class="section" id="readme-section" hidden>
