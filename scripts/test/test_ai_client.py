@@ -68,6 +68,14 @@ def test_batch_translate_invalid_json_raises(monkeypatch):
         ai_client.translate_batch_with_ai(["a"], {}, base_url="u", api_key="k", model="m")
 
 
+def test_base_url_already_ends_with_completions(monkeypatch):
+    fake = FakePost(httpx.Response(200, json={"choices": [{"message": {"content": "译"}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    ai_client.translate_with_ai(
+        "Hi", {}, base_url="https://api.example.com/v4/chat/completions", api_key="k", model="m")
+    assert fake.calls[0][0] == "https://api.example.com/v4/chat/completions"  # 不重复拼接
+
+
 def test_batch_translate_empty_texts_no_request(monkeypatch):
     def boom(*a, **kw):
         raise AssertionError("不应发起请求")

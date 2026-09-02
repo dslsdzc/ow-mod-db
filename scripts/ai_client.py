@@ -55,7 +55,9 @@ def _chat_completion(user_content: str, glossary: dict, *, base_url: str, api_ke
         ],
         "temperature": 0.2,
     }
-    url = base_url.rstrip("/") + "/chat/completions"
+    base = base_url.rstrip("/")
+    # 兼容两种填法: base(自动拼 /chat/completions)或完整地址(不重复拼)
+    url = base if base.endswith("/chat/completions") else base + "/chat/completions"
     try:
         resp = httpx.post(url, json=payload, headers=headers, timeout=60.0)
     except httpx.HTTPError as e:
