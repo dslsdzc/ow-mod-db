@@ -28,6 +28,10 @@ on:
         description: '每请求合并条数(1=逐条)'
         type: number
         default: 30
+      readme_limit:
+        description: '本次最多翻译的 README 数(0=全部;分批上线用)'
+        type: number
+        default: 0
 
 concurrency:
   group: sync-translate
@@ -71,6 +75,14 @@ jobs:
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
         run: python scripts/translate.py --concurrency ${{ inputs.concurrency || '1' }} --batch ${{ inputs.batch || '30' }} --limit ${{ inputs.limit || '0' }} ${{ inputs.dry_run && '--dry-run' || '' }}
 
+      - name: Translate READMEs (licensed only)
+        if: steps.check.outputs.skip != 'true'
+        env:
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+        run: python scripts/readmes.py --concurrency ${{ inputs.concurrency || '4' }} --limit ${{ inputs.readme_limit || '0' }}
+
       - name: Build artifacts
         if: steps.check.outputs.skip != 'true'
         run: python scripts/build.py
@@ -80,7 +92,8 @@ jobs:
         run: |
           git config user.name "ow-mod-db bot"
           git config user.email "ow-mod-db-bot@users.noreply.github.com"
-          git add source/translations.json source/pending.json source/official.json
+          git add source/translations.json source/pending.json source/official.json \
+            source/readmes.json source/license_cache.json source/readme_denylist.json
           git diff --cached --quiet || git commit -m "chore: 更新翻译缓存 [skip ci]"
           git push
 
