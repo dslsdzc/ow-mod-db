@@ -32,6 +32,7 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .mod-card .thumb { width: 100%; aspect-ratio: 16/9; object-fit: contain; /* 完整显示,宽图不裁左右 */
                    background: rgba(255,255,255,.06); }
 .thumb-box { display: block; overflow: hidden; border-radius: 6px;
+             aspect-ratio: 16/9;               /* 加载前默认比例,防跳动;JS 按原图比例覆盖 */
              background-size: cover; background-position: center;
              background-color: rgba(255,255,255,.05); }
 .thumb-box img { display: block; width: 100%; height: 100%; object-fit: contain; }
