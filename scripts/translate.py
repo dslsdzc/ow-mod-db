@@ -290,6 +290,30 @@ def find_affected_fields(translations: dict, glossary: dict, human: dict) -> lis
     return affected
 
 
+def apply_human_overrides(translations: dict, human: dict, at: str) -> int:
+    """把已缓存译文与人工翻译对齐(人工新增/修改后,无需等字段变更即生效).
+
+    只处理缓存里已存在的字段;未缓存的字段下次同步自动进 pending 走人工覆盖.
+    返回被覆盖的字段数.
+    """
+    applied = 0
+    for unique_name, fields in human.items():
+        if not isinstance(fields, dict):
+            continue
+        cached_fields = translations.get(unique_name)
+        if not cached_fields:
+            continue
+        for field, zh in fields.items():
+            if not isinstance(zh, str) or not zh.strip():
+                continue
+            entry = cached_fields.get(field)
+            if entry is not None and entry.get("zh") != zh:
+                entry["zh"] = zh
+                entry["at"] = at
+                applied += 1
+    return applied
+
+
 def _samples(pending: list[dict], translations: dict, at: str, n: int = 3) -> list[tuple[str, str]]:
     """取本次运行成功翻译的最多 n 条 (en, zh) 样例,用于人工核对翻译质量."""
     out = []
@@ -333,6 +357,11 @@ def main() -> None:
     human = load_json(Path(args.human))
     glossary = load_json(Path(args.glossary))
     at = args.at or _now_iso()
+
+    if not args.dry_run:
+        applied = apply_human_overrides(translations, human, at)
+        if applied:
+            print(f"人工翻译覆盖已生效: {applied} 个字段")
 
     # 术语表变更处理: 值变更走确定性替换(零 API),格式/新增词条只重译命中字段
     last_path = Path(args.last_glossary)

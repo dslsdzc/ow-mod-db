@@ -107,6 +107,24 @@ def test_consecutive_failures_reset_by_human_override():
     assert translations["Test.Mod"]["description"]["zh"] == "人工"
 
 
+def test_apply_human_overrides_replaces_cached_ai():
+    translations = {"Mod.A": {"name": {"en": "X", "zh": "AI旧译", "at": "t1"}}}
+    human = {"Mod.A": {"name": "人工正确名"}}
+    n = translate.apply_human_overrides(translations, human, "now")
+    assert n == 1
+    assert translations["Mod.A"]["name"]["zh"] == "人工正确名"
+    assert translations["Mod.A"]["name"]["at"] == "now"
+    assert translations["Mod.A"]["name"]["en"] == "X"  # en 保留
+
+
+def test_apply_human_overrides_skips_absent_and_identical():
+    translations = {"Mod.A": {"name": {"en": "X", "zh": "相同", "at": "t"}}}
+    human = {"Mod.A": {"name": "相同", "description": "缓存里没有的字段"}}
+    n = translate.apply_human_overrides(translations, human, "now")
+    assert n == 0
+    assert translations["Mod.A"]["name"]["zh"] == "相同"  # 未变
+
+
 def test_glossary_changes_detects_value_changes_only():
     old = {"terms": {"Nomai": "挪麦", "Quantum Moon": "量子之月"},
            "characters": {"Hornfels": "霍恩费斯"}}

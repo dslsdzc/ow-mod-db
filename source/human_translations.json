@@ -1,1 +1,11 @@
-{}
+{
+  "xen.NewHorizons": {
+    "name": "新地平线"
+  },
+  "Raicuparta.QuantumSpaceBuddies": {
+    "name": "量子空间伙伴"
+  },
+  "SBtT.TheOutsider": {
+    "name": "局外人"
+  }
+}
