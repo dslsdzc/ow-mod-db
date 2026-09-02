@@ -21,7 +21,7 @@ def test_translate_success(monkeypatch):
 
     result = ai_client.translate_with_ai(
         "The mod loader for Outer Wilds",
-        {"Nomai": "挪麦"},
+        {"terms": {"Nomai": "挪麦"}, "characters": {"Hornfels": "霍恩费斯"}},
         base_url="https://api.example.com/",
         api_key="secret-key",
         model="deepseek-chat",
@@ -35,6 +35,9 @@ def test_translate_success(monkeypatch):
     assert payload["temperature"] == 0.2
     system = payload["messages"][0]["content"]
     assert "Nomai -> 挪麦" in system
+    assert "Hornfels -> 霍恩费斯" in system
+    assert "[专有名词,直接译为中文]" in system
+    assert "[角色名,首次出现用 原名(中文) 格式]" in system
     assert "The mod loader for Outer Wilds" in payload["messages"][1]["content"]
 
 

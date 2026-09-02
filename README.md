@@ -25,11 +25,23 @@ Mod Manager 设置 → Advanced → Database URL 改为:
 ## 维护
 
 ### 专有名词表 `source/glossary.json`
-AI 翻译必须遵守的术语表。团队发现新专有名词直接加条目,提交后下次同步自动生效:
+AI 翻译必须遵守的术语表,分两类。团队发现新专有名词直接加条目,提交后下次同步自动生效:
 
 ```json
-{ "Nomai": "挪麦" }
+{
+  "terms": {
+    "Nomai": "挪麦",
+    "Quantum Moon": "量子卫星"
+  },
+  "characters": {
+    "Hornfels": "霍恩费斯",
+    "Solanum": "所莱内姆"
+  }
+}
 ```
+
+- `terms`: 地点/概念等,**直接译为中文**(如 "Quantum Moon" → "量子卫星")
+- `characters`: 角色名,**首次出现用「原名(中文名)」格式**(如 "Hornfels(霍恩费斯)"),同段之后只写中文
 
 ### 人工翻译覆盖 `source/human_translations.json`
 人工精校优先于 AI,格式:

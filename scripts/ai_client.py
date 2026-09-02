@@ -6,10 +6,14 @@ SYSTEM_PROMPT = (
     "You are a professional game mod localization translator. "
     "Translate English Outer Wilds mod metadata to Simplified Chinese.\n"
     "Rules:\n"
-    "1. Proper nouns must use the glossary mapping exactly. "
-    "Proper nouns not in the glossary stay in English.\n"
-    "2. Keep Markdown formatting, line breaks, URLs, and angle brackets intact.\n"
-    "3. Output only the translation, no quotes, no explanation.\n"
+    "1. Glossary terms must be translated to exactly the given Chinese "
+    "(e.g. Quantum Moon -> 量子卫星).\n"
+    "2. Character names on their FIRST mention in the text must appear as "
+    "\"EnglishName(中文名)\" (e.g. \"Hornfels(霍恩费斯)\"); later mentions "
+    "in the same text use only the Chinese name.\n"
+    "3. Proper nouns not in either list stay in English.\n"
+    "4. Keep Markdown formatting, line breaks, URLs, and angle brackets intact.\n"
+    "5. Output only the translation, no quotes, no explanation.\n"
     "Glossary:\n{glossary}"
 )
 
@@ -19,9 +23,21 @@ class AIError(Exception):
 
 
 def _glossary_block(glossary: dict) -> str:
+    """Build the prompt glossary section from {"terms": {...}, "characters": {...}}."""
     if not glossary:
         return "(empty)"
-    return "\n".join(f"{en} -> {zh}" for en, zh in glossary.items())
+    terms = glossary.get("terms") or {}
+    characters = glossary.get("characters") or {}
+    if not terms and not characters:
+        return "(empty)"
+    parts = []
+    if terms:
+        parts.append("[专有名词,直接译为中文]")
+        parts.extend(f"{en} -> {zh}" for en, zh in terms.items())
+    if characters:
+        parts.append("[角色名,首次出现用 原名(中文) 格式]")
+        parts.extend(f"{en} -> {zh}" for en, zh in characters.items())
+    return "\n".join(parts)
 
 
 def translate_with_ai(en_text: str, glossary: dict, *, base_url: str, api_key: str, model: str) -> str:
