@@ -153,6 +153,8 @@ GitHub Secrets:
 - `OPENAI_API_KEY`
 - `OPENAI_MODEL`(模型名,如 deepseek-chat)
 
+说明: Secrets 由 GitHub 加密存储,仅在工作流运行时可通过 `${{ secrets.XXX }}` 注入环境变量,外部(包括 gh-pages 网站)不可读取。密钥只在 CI 运行期间存在于工作流环境,所有部署产物(网站、database.json)均不含任何密钥。
+
 ## 错误处理汇总
 
 | 场景 | 处理 |
