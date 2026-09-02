@@ -15782,34 +15782,61 @@
     ]
   },
   "Solec.GaleGuy": {
-    "repoUpdatedAt": "2026-08-23T16:37:20Z",
+    "repoUpdatedAt": "2026-09-02T21:16:32Z",
     "releases": [
+      {
+        "tag": "2.0.2",
+        "name": "2.0.2",
+        "date": "2026-09-02",
+        "body": "i put a letter in",
+        "bodyZh": "我放了一封信",
+        "zipUrl": "https://github.com/SolecAnimations/GaleGiant/releases/download/2.0.2/Solec.GaleDeep.zip",
+        "releaseUrl": "https://github.com/SolecAnimations/GaleGiant/releases/tag/2.0.2"
+      },
+      {
+        "tag": "2.0.1",
+        "name": "2.0.1",
+        "date": "2026-09-02",
+        "body": "i forgot to add a comma",
+        "bodyZh": "我忘记加逗号了",
+        "zipUrl": "https://github.com/SolecAnimations/GaleGiant/releases/download/2.0.1/Solec.GaleDeep.zip",
+        "releaseUrl": "https://github.com/SolecAnimations/GaleGiant/releases/tag/2.0.1"
+      },
+      {
+        "tag": "2.0.0",
+        "name": "2.0.0",
+        "date": "2026-09-02",
+        "body": "Miniaturized the planet",
+        "bodyZh": "将行星小型化",
+        "zipUrl": "https://github.com/SolecAnimations/GaleGiant/releases/download/2.0.0/Solec.GaleDeep.zip",
+        "releaseUrl": "https://github.com/SolecAnimations/GaleGiant/releases/tag/2.0.0"
+      },
       {
         "tag": "1.1.0",
         "name": "1.1.0",
         "date": "2026-08-23",
         "body": "nope nope nope nope nope nope nope nope nope\r\nwhoever's downloading this mod wants a pretty giant's deep with rings not a weird ice circle thing\r\nthey're volumetric now\r\nhave a good time, ignore that last release",
+        "bodyZh": "不行不行不行不行不行不行不行不行不行\n下载这个模组的玩家想要一个带环的深巨星，而不是一个奇怪的冰圈东西\n它们现在是体积的了\n好好享受，忽略那个最后的发布",
         "zipUrl": "https://github.com/SolecAnimations/GaleGiant/releases/download/1.1.0/Solec.GaleDeep.zip",
-        "releaseUrl": "https://github.com/SolecAnimations/GaleGiant/releases/tag/1.1.0",
-        "bodyZh": "不行不行不行不行不行不行不行不行不行\n下载这个模组的玩家想要一个带环的深巨星，而不是一个奇怪的冰圈东西\n它们现在是体积的了\n好好享受，忽略那个最后的发布"
+        "releaseUrl": "https://github.com/SolecAnimations/GaleGiant/releases/tag/1.1.0"
       },
       {
         "tag": "1.0.0",
         "name": "1.0.0",
         "date": "2026-08-23",
         "body": "Fixed the atmospheric discoloration, and replaced the rings",
+        "bodyZh": "修复了大气层染色问题，并替换了光环",
         "zipUrl": "https://github.com/SolecAnimations/GaleGiant/releases/download/1.0.0/Solec.GaleDeep.zip",
-        "releaseUrl": "https://github.com/SolecAnimations/GaleGiant/releases/tag/1.0.0",
-        "bodyZh": "修复了大气层染色问题，并替换了光环"
+        "releaseUrl": "https://github.com/SolecAnimations/GaleGiant/releases/tag/1.0.0"
       },
       {
         "tag": "0.1.0",
         "name": "0.1.0",
         "date": "2026-08-05",
         "body": "First Release, might be a bit iffy. The ambientlight looks a bit weird inside the cloud cover but i don't think _too_ much is broken.",
+        "bodyZh": "",
         "zipUrl": "https://github.com/SolecAnimations/GaleGiant/releases/download/0.1.0/Solec.GaleDeep.zip",
-        "releaseUrl": "https://github.com/SolecAnimations/GaleGiant/releases/tag/0.1.0",
-        "bodyZh": "首次发布，可能有点小问题。云层内部的环境光看起来有点奇怪，但我觉得并没有什么大问题。"
+        "releaseUrl": "https://github.com/SolecAnimations/GaleGiant/releases/tag/0.1.0"
       }
     ]
   },
