@@ -193,6 +193,17 @@ def find_affected_fields(translations: dict, glossary: dict, human: dict) -> lis
     return affected
 
 
+def _samples(pending: list[dict], translations: dict, at: str, n: int = 3) -> list[tuple[str, str]]:
+    """取本次运行成功翻译的最多 n 条 (en, zh) 样例,用于人工核对翻译质量."""
+    out = []
+    for item in pending:
+        unique_name, field = item["unique_name"], item["field"]
+        entry = translations.get(unique_name, {}).get(field)
+        if entry and entry.get("at") == at and len(out) < n:
+            out.append((item["en"], entry["zh"]))
+    return out
+
+
 def merge_pending(pending: list[dict], extra: list[dict]) -> None:
     """把 extra 并入 pending,按 (unique_name, field) 去重."""
     seen = {(p["unique_name"], p["field"]) for p in pending}
@@ -212,6 +223,8 @@ def main() -> None:
                         help="上次应用过的术语表快照(检测术语变更用)")
     parser.add_argument("--concurrency", type=int, default=1,
                         help="并发线程数(1=顺序;DeepSeek 等 API 可用几百上千)")
+    parser.add_argument("--limit", type=int, default=0,
+                        help="只翻译前 N 条(0=全部;小规模试译用)")
     parser.add_argument("--dry-run", action="store_true", help="只输出统计,不调用 AI")
     parser.add_argument("--at", default=None, help="ISO 时间戳,默认当前 UTC")
     args = parser.parse_args()
@@ -234,6 +247,10 @@ def main() -> None:
         print(f"术语表变更: {len(changes)} 个词条值变更"
               f"{f'(替换 {replaced} 个字段)' if not args.dry_run else '(dry-run 不替换)'},"
               f" {len(affected)} 个命中字段并入待翻译")
+
+    if args.limit > 0 and len(pending) > args.limit:
+        print(f"--limit {args.limit}: 只翻译前 {args.limit} 条(共 {len(pending)} 条)")
+        pending = pending[:args.limit]
 
     if not args.dry_run:
         missing = [k for k in ("OPENAI_BASE_URL", "OPENAI_API_KEY", "OPENAI_MODEL")
@@ -268,6 +285,8 @@ def main() -> None:
     print(f"翻译完成: {translated} 条成功, {len(failures)} 条失败")
     for f in failures:
         print(f"  FAIL {f}")
+    for en, zh in _samples(pending, translations, at):
+        print(f"  样例: {en[:80]} -> {zh[:80]}")
 
 
 if __name__ == "__main__":

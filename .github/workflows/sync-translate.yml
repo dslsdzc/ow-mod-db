@@ -8,6 +8,10 @@ on:
         description: '只同步与构建,不调用 AI(配好 Secret 前验证用)'
         type: boolean
         default: false
+      limit:
+        description: '只翻译前 N 条(0=全部;小规模试译用)'
+        type: number
+        default: 0
 
 concurrency:
   group: sync-translate
@@ -39,7 +43,7 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/translate.py --concurrency 1000 ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python scripts/translate.py --concurrency 1000 --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Build artifacts
         run: python scripts/build.py

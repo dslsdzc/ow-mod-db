@@ -150,6 +150,22 @@ def test_find_affected_fields_word_boundary():
     assert translate.find_affected_fields(translations, glossary, {}) == []
 
 
+def test_samples_returns_recent_successes_only():
+    pending = [
+        {"unique_name": "M0", "field": "description", "en": "a"},
+        {"unique_name": "M1", "field": "description", "en": "b"},
+        {"unique_name": "M2", "field": "description", "en": "c"},
+        {"unique_name": "M3", "field": "description", "en": "d"},
+    ]
+    translations = {
+        "M0": {"description": {"en": "a", "zh": "甲", "at": "old"}},   # 旧时间戳,不算
+        "M1": {"description": {"en": "b", "zh": "乙", "at": "now"}},
+        "M3": {"description": {"en": "d", "zh": "丁", "at": "now"}},   # M2 无缓存(失败)
+    }
+    samples = translate._samples(pending, translations, "now", n=2)
+    assert samples == [("b", "乙"), ("d", "丁")]
+
+
 def test_merge_pending_dedupes():
     pending = [{"unique_name": "A", "field": "name", "en": "x"}]
     translate.merge_pending(pending, [
