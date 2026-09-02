@@ -147,6 +147,10 @@ function renderMarkdownInto(el, md, baseUrl) {
   }
   const raw = marked.parse(md, { gfm: true, breaks: false });
   el.innerHTML = DOMPurify.sanitize(raw);
+  // 加载失败的图(如国内被墙的徽章图)直接隐藏,不显示 alt 文本噪音
+  el.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("error", () => { img.style.visibility = "hidden"; }, { once: true });
+  });
   // 相对路径图片/链接补全为 raw 绝对地址
   if (baseUrl) {
     el.querySelectorAll("img[src]").forEach((img) => {

@@ -34,6 +34,10 @@ on:
         description: '本次最多翻译的 README 数(0=全部;分批上线用)'
         type: number
         default: 0
+      readme_force:
+        description: '忽略内容哈希全量重翻 README(翻译策略升级后使用)'
+        type: boolean
+        default: false
 
 concurrency:
   group: sync-translate
@@ -83,7 +87,7 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/readmes.py --concurrency ${{ inputs.concurrency || '4' }} --limit ${{ inputs.readme_limit || '0' }}
+        run: python scripts/readmes.py --concurrency ${{ inputs.concurrency || '4' }} --limit ${{ inputs.readme_limit || '0' }} ${{ inputs.readme_force && '--force' || '' }}
 
       - name: Build artifacts
         if: steps.check.outputs.skip != 'true'

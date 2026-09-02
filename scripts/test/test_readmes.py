@@ -44,6 +44,29 @@ def test_chunk_oversized_single_paragraph_hard_split():
     assert sum(len(c) for c in chunks) == 3000
 
 
+def test_protect_keeps_tables_code_and_links():
+    md = ("# Title\n\n"
+          "| 键 | 说明 |\n|---|---|\n| a | b |\n\n"
+          "```js\nconst x = 1;\n```\n\n"
+          "点[这里](https://example.com)看 ![logo](logo.png)")
+    protected, holders = readmes.protect_markdown(md)
+    # 表格/代码块/链接/图片都被占位
+    assert "|" not in protected
+    assert "```" not in protected
+    assert "https://example.com" not in protected
+    assert protected.count("⟦") == 4
+    # 还原后与原文一致
+    assert readmes.restore_markdown(protected, holders) == md
+
+
+def test_protect_roundtrip_through_translation():
+    md = "文字一\n\n表格:\n| a | b |\n|---|---|\n| 1 | 2 |"
+    protected, holders = readmes.protect_markdown(md)
+    fake_zh = protected.replace("文字一", "译文一")   # 模拟 AI 只翻文本
+    assert "| a | b |" in readmes.restore_markdown(fake_zh, holders)
+    assert "译文一" in readmes.restore_markdown(fake_zh, holders)
+
+
 def test_sha256_stable():
     assert sha256_text("abc") == sha256_text("abc")
     assert sha256_text("abc") != sha256_text("abd")

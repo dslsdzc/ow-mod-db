@@ -10,6 +10,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -66,6 +67,55 @@ def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+_PLACEHOLDER = "⟦{}⟧"
+
+
+def protect_markdown(text: str) -> tuple[str, list[str]]:
+    """把代码块/表格/行内代码/图片/链接抽成占位符,翻译时结构不被破坏.
+
+    返回 (保护后的文本, 占位符对应原文列表). 翻译后按序还原.
+    """
+    holders: list[str] = []
+
+    def stash(block: str) -> str:
+        idx = len(holders)
+        holders.append(block)
+        return _PLACEHOLDER.format(idx)
+
+    out = text
+
+    # 1) 围栏代码块(整体占位,含 ``` 行)
+    parts = out.split("```")
+    rebuilt = []
+    for i, seg in enumerate(parts):
+        if i % 2 == 1:                      # 代码块内容
+            rebuilt.append(stash("```" + seg + "```"))
+        else:
+            rebuilt.append(seg)
+    out = "".join(rebuilt)
+
+    # 2) 表格块(连续以 | 开头的行整体占位)
+    def table_keep(m: "re.Match") -> str:
+        return stash(m.group(0).rstrip())
+
+    out = re.sub(r"(?m)^\|.*(?:\n\|.*)+", table_keep, out)
+
+    # 3) 行内代码 / 图片 / 链接(先 code 后 image/link)
+    def inline_keep(m: "re.Match") -> str:
+        return stash(m.group(0))
+
+    out = re.sub(r"`[^`\n]+`", inline_keep, out)
+    out = re.sub(r"!?\[[^\]\n]*\]\([^)\n]*\)", inline_keep, out)
+
+    return out, holders
+
+
+def restore_markdown(translated: str, holders: list[str]) -> str:
+    for idx, original in enumerate(holders):
+        translated = translated.replace(_PLACEHOLDER.format(idx), original)
+    return translated
+
+
 def is_translatable(unique_name: str, license_spdx: str, denylist: list) -> tuple[bool, str]:
     """返回 (是否翻, 原因)."""
     if unique_name in denylist:
@@ -79,7 +129,8 @@ def is_translatable(unique_name: str, license_spdx: str, denylist: list) -> tupl
 
 def translate_readmes(official: dict, licenses: dict, cache: dict, denylist: list,
                       ai_translate, *, at: str, max_workers: int = 4,
-                      limit: int = 0, sleep=time.sleep) -> tuple[int, int, list[str]]:
+                      limit: int = 0, force: bool = False,
+                      sleep=time.sleep) -> tuple[int, int, list[str]]:
     """返回 (新翻译数, 跳过数, 错误列表)."""
     candidates = []
     for mod in official.get("releases", []):
@@ -91,7 +142,9 @@ def translate_readmes(official: dict, licenses: dict, cache: dict, denylist: lis
         ok, reason = is_translatable(un, licenses.get(un, "none"), denylist)
         if not ok:
             continue
-        candidates.append((un, url))
+        # 按安装量降序,热门先翻(便于分批抽查)
+        candidates.append((un, url, mod.get("installCount") or mod.get("downloadCount") or 0))
+    candidates.sort(key=lambda c: c[2], reverse=True)
     if limit > 0:
         candidates = candidates[:limit]
 
@@ -100,7 +153,7 @@ def translate_readmes(official: dict, licenses: dict, cache: dict, denylist: lis
     errors: list[str] = []
 
     def work(un_url):
-        un, url = un_url
+        un, url = un_url[:2]
         try:
             en = fetch_readme(url)
         except Exception as e:
@@ -109,11 +162,12 @@ def translate_readmes(official: dict, licenses: dict, cache: dict, denylist: lis
             return
         digest = sha256_text(en)
         entry = cache.get(un)
-        if entry and entry.get("sha") == digest:
+        if not force and entry and entry.get("sha") == digest:
             with lock:
                 state["skipped"] += 1
             return
-        chunks = chunk_markdown(en)
+        protected, holders = protect_markdown(en)   # 代码/表格/链接先抽离防翻坏
+        chunks = chunk_markdown(protected)
         translated = []
         for chunk in chunks:
             for attempt in range(3):
@@ -126,8 +180,9 @@ def translate_readmes(official: dict, licenses: dict, cache: dict, denylist: lis
                             errors.append(f"{un}: 翻译失败 {e}")
                         return
                     sleep(2 * (2 ** attempt))
+        zh = restore_markdown("\n\n".join(translated), holders)
         with lock:
-            cache[un] = {"sha": digest, "zh": "\n\n".join(translated), "at": at}
+            cache[un] = {"sha": digest, "zh": zh, "at": at}
             state["new"] += 1
 
     with ThreadPoolExecutor(max_workers=max_workers) as ex:
@@ -147,6 +202,8 @@ def main() -> None:
     parser.add_argument("--denylist", default="source/readme_denylist.json")
     parser.add_argument("--concurrency", type=int, default=4)
     parser.add_argument("--limit", type=int, default=0, help="本次最多翻译的 README 数(分批上线用)")
+    parser.add_argument("--force", action="store_true",
+                        help="忽略内容哈希,全部重翻(翻译策略升级后使用)")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -183,7 +240,7 @@ def main() -> None:
 
     new, skipped, errors = translate_readmes(
         official, licenses, cache, denylist, ai_translate,
-        at=_now_iso(), max_workers=args.concurrency, limit=args.limit,
+        at=_now_iso(), max_workers=args.concurrency, limit=args.limit, force=args.force,
     )
     save_json(Path(args.readmes), cache)
     print(f"README 翻译完成: 新翻 {new}, 未变跳过 {skipped}, 失败 {len(errors)}")
