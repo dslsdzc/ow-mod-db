@@ -1,7 +1,15 @@
 name: sync-translate
 on:
+  # 每 30 分钟轮询上游官方数据库;无变化时提前退出(见 Upstream change check)
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0,30 * * * *'
+  # 术语表/人工翻译/脚本改动推送后自动全流程(缓存提交用 [skip ci] 避免自触发)
+  push:
+    branches: [main]
+    paths:
+      - 'source/**'
+      - 'scripts/**'
+      - '.github/workflows/**'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -38,17 +46,30 @@ jobs:
       - name: Sync official database
         run: python scripts/sync.py
 
+      # 定时轮询专用: 官方库与快照一致且待翻译清单无变化 → 提前退出,不部署
+      - name: Upstream change check
+        id: check
+        if: github.event_name == 'schedule'
+        run: |
+          git diff --exit-code --quiet -- source/official.json source/pending.json \
+            && echo "skip=true" >> "$GITHUB_OUTPUT" \
+            || echo "skip=false" >> "$GITHUB_OUTPUT"
+
       - name: Translate with AI
+        if: steps.check.outputs.skip != 'true'
         env:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/translate.py --concurrency 1000 --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
+        # DeepSeek 并发上限按余额档位给(当前账号 ~132),100 为安全值
+        run: python scripts/translate.py --concurrency 100 --limit ${{ inputs.limit }} ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Build artifacts
+        if: steps.check.outputs.skip != 'true'
         run: python scripts/build.py
 
       - name: Commit translation cache back to main
+        if: steps.check.outputs.skip != 'true'
         run: |
           git config user.name "ow-mod-db bot"
           git config user.email "ow-mod-db-bot@users.noreply.github.com"
@@ -57,6 +78,7 @@ jobs:
           git push
 
       - name: Deploy to GitHub Pages
+        if: steps.check.outputs.skip != 'true'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
