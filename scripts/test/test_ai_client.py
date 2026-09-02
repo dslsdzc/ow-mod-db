@@ -65,3 +65,17 @@ def test_translate_bad_shape_raises(monkeypatch):
     monkeypatch.setattr(ai_client.httpx, "post", fake)
     with pytest.raises(AIError, match="unexpected API response"):
         ai_client.translate_with_ai("Hi", {}, base_url="u", api_key="k", model="m")
+
+
+def test_translate_null_content_raises(monkeypatch):
+    fake = FakePost(httpx.Response(200, json={"choices": [{"message": {"content": None}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    with pytest.raises(AIError, match="not a string"):
+        ai_client.translate_with_ai("Hi", {}, base_url="u", api_key="k", model="m")
+
+
+def test_translate_non_dict_json_raises(monkeypatch):
+    fake = FakePost(httpx.Response(200, json=["not", "a", "dict"]))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    with pytest.raises(AIError, match="unexpected API response"):
+        ai_client.translate_with_ai("Hi", {}, base_url="u", api_key="k", model="m")

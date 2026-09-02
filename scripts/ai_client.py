@@ -49,6 +49,9 @@ def translate_with_ai(en_text: str, glossary: dict, *, base_url: str, api_key: s
     if resp.status_code != 200:
         raise AIError(f"API returned {resp.status_code}: {resp.text[:200]}")
     try:
-        return resp.json()["choices"][0]["message"]["content"].strip()
-    except (KeyError, IndexError, ValueError) as e:
+        content = resp.json()["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, TypeError, ValueError) as e:
         raise AIError(f"unexpected API response: {e}") from e
+    if not isinstance(content, str):
+        raise AIError("unexpected API response: content is not a string")
+    return content.strip()
