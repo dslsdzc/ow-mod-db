@@ -10,11 +10,15 @@
 import argparse
 import json
 import os
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import httpx
 
+import ai_client
+import readmes
 from translation_store import load_json, save_json
 
 MAX_RELEASES = 10
@@ -31,6 +35,9 @@ def pick_zip_asset(assets: list) -> str:
     return ""
 
 
+TRANSLATE_BODIES_PER_MOD = 5   # 每个 mod 预翻最近几个版本的说明
+
+
 def normalize_releases(payload: list, repo: str) -> list:
     out = []
     for rel in payload[:MAX_RELEASES]:
@@ -41,6 +48,7 @@ def normalize_releases(payload: list, repo: str) -> list:
             "name": rel.get("name") or tag,
             "date": (rel.get("published_at") or "")[:10],
             "body": body,
+            "bodyZh": "",          # 翻译后填充(许可白名单内)
             "zipUrl": pick_zip_asset(rel.get("assets") or []),
             "releaseUrl": f"https://github.com/{repo}/releases/tag/{tag}",
         })
@@ -96,11 +104,68 @@ def refresh_cache(official: dict, cache: dict, token: str, max_workers: int = 1,
     return state["n"], len(changed) - state["n"], errors
 
 
+def translate_bodies(cache: dict, licenses: dict, denylist: list, glossary: dict,
+                     ai_translate, *, max_new: int = 0,
+                     sleep=time.sleep) -> tuple[int, list[str]]:
+    """为许可白名单内 mod 的最近 TRANSLATE_BODIES_PER_MOD 个版本补译 body.
+
+    已有 bodyZh 的跳过;max_new=0 表示不限. 返回 (新译数, 错误).
+    """
+    lock = threading.Lock()
+    state = {"n": 0}
+    errors: list[str] = []
+
+    def work(un_rels):
+        un, rels = un_rels
+        for rel in rels[:TRANSLATE_BODIES_PER_MOD]:
+            body = rel.get("body") or ""
+            if not body or rel.get("bodyZh"):
+                continue
+            protected, holders = readmes.protect_markdown(body)
+            zh = ""
+            for attempt in range(3):
+                try:
+                    zh = ai_translate(protected)
+                    break
+                except ai_client.AIError as e:
+                    if attempt == 2:
+                        with lock:
+                            errors.append(f"{un} {rel.get('tag')}: {e}")
+                        break
+                    sleep(2 * (2 ** attempt))
+            if not zh:
+                continue
+            zh = readmes.restore_markdown(zh, holders)
+            with lock:
+                rel["bodyZh"] = zh
+                state["n"] += 1
+
+    tasks = []
+    for un, entry in cache.items():
+        if un in denylist:
+            continue
+        if (licenses.get(un) or "none") not in readmes.PERMISSIVE_LICENSES:
+            continue
+        rels = (entry or {}).get("releases") or []
+        if any(r.get("body") and not r.get("bodyZh") for r in rels[:TRANSLATE_BODIES_PER_MOD]):
+            tasks.append((un, rels))
+    if tasks:
+        with ThreadPoolExecutor(max_workers=1) as ex:
+            list(ex.map(work, tasks))
+    return state["n"], errors
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--official", default="source/official.json")
     parser.add_argument("--cache", default="source/releases_cache.json")
+    parser.add_argument("--licenses", default="source/license_cache.json")
+    parser.add_argument("--denylist", default="source/readme_denylist.json")
+    parser.add_argument("--glossary", default="source/glossary.json")
     parser.add_argument("--concurrency", type=int, default=4)
+    parser.add_argument("--translate-bodies", action="store_true",
+                        help="补译版本说明(许可白名单内,需 OPENAI_* 环境变量)")
+    parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
     official = load_json(Path(args.official))
@@ -108,6 +173,31 @@ def main() -> None:
     token = os.environ.get("GITHUB_TOKEN", "")
     updated, skipped, errors = refresh_cache(official, cache, token,
                                              max_workers=args.concurrency)
+
+    if args.translate_bodies and not args.dry_run:
+        missing = [k for k in ("OPENAI_BASE_URL", "OPENAI_API_KEY", "OPENAI_MODEL")
+                   if not os.environ.get(k)]
+        if missing:
+            print(f"缺少环境变量: {', '.join(missing)}")
+            raise SystemExit(1)
+        licenses = load_json(Path(args.licenses))
+        denylist = json.loads(Path(args.denylist).read_text(encoding="utf-8")) \
+            if Path(args.denylist).exists() else []
+        glossary = load_json(Path(args.glossary))
+
+        def ai_translate(text: str) -> str:
+            return ai_client.translate_with_ai(
+                text, glossary,
+                base_url=os.environ["OPENAI_BASE_URL"],
+                api_key=os.environ["OPENAI_API_KEY"],
+                model=os.environ["OPENAI_MODEL"],
+            )
+
+        new_bodies, body_errors = translate_bodies(cache, licenses, denylist, glossary,
+                                                   ai_translate)
+        print(f"版本说明翻译: 新译 {new_bodies}, 失败 {len(body_errors)}")
+        errors += body_errors
+
     save_json(Path(args.cache), cache)
     print(f"版本缓存: 更新 {updated}, 跳过 {skipped}, 失败 {len(errors)}")
     for e in errors[:10]:

@@ -198,35 +198,55 @@ function initReleases(mod) {
       if (!rels.length) { section.remove(); return; }
       section.hidden = false;
       const SHOW = 5;
-      const more = rels.length > SHOW;
-      const visible = more ? rels.slice(0, SHOW) : rels;
-      const itemHtml = (r) => `<div class="rel-item">
+
+      function renderItems(items) {
+        const itemHtml = (r) => `<div class="rel-item">
           <div class="rel-head">
             <a class="rel-tag" href="${esc(r.zipUrl || r.releaseUrl || "#")}" target="_blank" rel="noopener">${esc(r.tag)}</a>
             <span class="rel-meta">${esc(r.name !== r.tag ? r.name : "")} · ${esc(r.date)}</span>
             ${r.zipUrl ? `<a class="rel-zip" href="${esc(r.zipUrl)}" target="_blank" rel="noopener">zip</a>` : ""}
+            ${r.body ? `<button class="chip rel-tr">${r.bodyZh ? "原文" : "微软翻译"}</button>` : ""}
           </div>
           ${r.body ? `<div class="readme rel-body"></div>` : ""}
         </div>`;
-      list.innerHTML = visible.map(itemHtml).join("");
-      list.querySelectorAll(".rel-item").forEach((el, i) => {
-        const bodyEl = el.querySelector(".rel-body");
-        if (bodyEl && visible[i] && visible[i].body) {
-          renderMarkdownInto(bodyEl, visible[i].body, "");
-        }
-      });
+        list.innerHTML = items.map(itemHtml).join("");
+        [...list.querySelectorAll(".rel-item")].forEach((el, i) => {
+          const r = items[i];
+          const bodyEl = el.querySelector(".rel-body");
+          const btn = el.querySelector(".rel-tr");
+          if (!r || !r.body) return;
+          renderMarkdownInto(bodyEl, r.bodyZh || r.body, "");
+          if (btn) {
+            btn.onclick = async () => {
+              if (btn.classList.contains("busy")) return;
+              if (btn.textContent === "原文") {
+                renderMarkdownInto(bodyEl, r.body, "");
+                btn.textContent = r.bodyZh ? "中文译文" : "微软翻译";
+                return;
+              }
+              btn.classList.add("busy");
+              btn.textContent = "翻译中…";
+              try {
+                const zh = await msTranslateTexts([r.body]);
+                renderMarkdownInto(bodyEl, zh[0] || r.body, "");
+                btn.textContent = "原文";
+              } catch (e) {
+                btn.textContent = "翻译失败";
+              } finally {
+                btn.classList.remove("busy");
+              }
+            };
+          }
+        });
+      }
+
+      const more = rels.length > SHOW;
+      renderItems(more ? rels.slice(0, SHOW) : rels);
       if (more) {
         const btn = document.createElement("button");
         btn.className = "chip";
         btn.textContent = `显示全部 ${rels.length} 个版本`;
-        btn.onclick = () => {
-          list.innerHTML = rels.map(itemHtml).join("");
-          list.querySelectorAll(".rel-item").forEach((el, i) => {
-            const bodyEl = el.querySelector(".rel-body");
-            if (bodyEl && rels[i] && rels[i].body) renderMarkdownInto(bodyEl, rels[i].body, "");
-          });
-          btn.remove();
-        };
+        btn.onclick = () => { renderItems(rels); btn.remove(); };
         list.appendChild(btn);
       }
     })

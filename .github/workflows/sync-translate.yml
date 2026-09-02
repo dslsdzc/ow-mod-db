@@ -89,11 +89,14 @@ jobs:
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
         run: python scripts/readmes.py --concurrency ${{ inputs.concurrency || '4' }} --limit ${{ inputs.readme_limit || '0' }} ${{ inputs.readme_force && '--force' || '' }}
 
-      - name: Refresh releases cache (GitHub API)
+      - name: Refresh releases cache + translate notes (GitHub API)
         if: steps.check.outputs.skip != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/releases.py
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+        run: python scripts/releases.py --translate-bodies
 
       - name: Build artifacts
         if: steps.check.outputs.skip != 'true'
