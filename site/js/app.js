@@ -224,11 +224,9 @@ function initReadme(mod) {
         actions.prepend(btn);
         return;
       }
-      // 无预翻译: 拉英文原文展示;许可不允许则不提供本站翻译按钮
+      // 无预翻译: 拉英文原文展示
       const md = await fetchEn();
-      if (permissive) {
-        setHint(lic + " 许可 · 译文生成中,可用「微软翻译查看」即时浏览(不保存)");
-        showMd(md);
+      const addMsButton = (hintBase) => {
         const btn = document.createElement("button");
         btn.textContent = "微软翻译查看";
         btn.onclick = async () => {
@@ -239,7 +237,7 @@ function initReadme(mod) {
             const out = [];
             for (const c of chunks) out.push(await msTranslateTexts([c]));
             showMd(out.join("\n\n"));
-            setHint("微软翻译即时结果 · 原文版权归作者所有 · 仅本次查看,不保存");
+            setHint("微软翻译即时结果 · " + hintBase);
           } catch (e) {
             setHint("翻译失败:" + e.message + " (可换用浏览器自带翻译)");
           } finally {
@@ -248,9 +246,18 @@ function initReadme(mod) {
           }
         };
         actions.prepend(btn);
-      } else {
-        setHint("该仓库未声明开放许可(" + (lic === "none" ? "无" : lic) + "),为尊重作者未提供译文;可用浏览器自带翻译阅读");
+      };
+      if (permissive) {
+        setHint(lic + " 许可 · 译文生成中,可用「微软翻译查看」即时浏览(不保存)");
         showMd(md);
+        addMsButton("仅本次查看,不保存");
+      } else {
+        // 非开放许可(AGPL/GPL/无): 尊重版权不预翻不保存;
+        // 但用户即时浏览性翻译等同于浏览器翻译,仍提供按钮
+        setHint("仓库许可为 " + (lic === "none" ? "未声明(保留所有权利)" : lic)
+                + ",未保存译文;下方按钮为即时翻译,仅供本次阅读、不保存");
+        showMd(md);
+        addMsButton("原文版权归作者所有 · 仅本次阅读,不保存");
       }
     } catch (e) {
       setHint("README 加载失败:" + e.message);
