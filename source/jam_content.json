@@ -1,5 +1,21 @@
 {
   "pages": {
+    "jul-2023": {
+      "titleZh": "第二届星际拓荒 Mod Jam(2023 年 7 月)",
+      "introZh": "Jam 已结束!评委试玩、讨论并投票完毕,第二届星际拓荒 Mod Jam 落幕。\n\n🏆 结果:\n🥇 第一名(团队获 $100):哈斯邻居 Hearth's Neighbor(跃迁到近邻恒星系,其中藏着秘密…)\n🥈 第二名($66):Tesseract's Secret(短篇剧情 mod,查看飞船日志开始!)\n🥉 第三名($34):Mindscapes(走进他人的内心,劝说他们在迫近的毁灭前撤离)\n\n本届共 7 个投稿。",
+      "url": "https://outerwildsmods.com/jam/jul-2023",
+      "urlLabelZh": "官方届次页面",
+      "sections": [
+        { "h": "主题", "md": "第二届的主题是「内里乾坤」(Bigger on the Inside)与「明处暗藏」(Hidden in Plain Sight)。\n\n本届与上届不同,没有额外限制。可以读 OWML 文档做 mod;不会编程也可以只用 New Horizons 做内容 mod,甚至两者都做。\n\n如何诠释主题由你决定,可二选一或两者兼顾;若作品未体现主题,将无法进入评审。" },
+        { "h": "时长", "md": "🟢 开始:7 月 2 日(周日)01:00\n🔴 结束:7 月 17 日(周一)02:00\n(时区:Asia/Tokyo)" },
+        { "h": "奖项", "md": "🥇 第一名:$100\n🥈 第二名:$66\n🥉 第三名:$34\n\n金额为美元。获奖者还将获得 Discord 特殊身份。\n\n奖金仅通过 PayPal 发放;参赛免费。" },
+        { "h": "规则", "md": "🛤️ 依赖只能是工具类 mod(如 New Horizons、Slate's Shipyard、VanillaFix 等)。\n\n⏱️ 截止前须在 GitHub 上传至少一个 release;截止外的 release 不计;不要覆盖旧 release。\n\n🙋 每人只能参与一个投稿。\n\n👮 所有投稿须遵守 Mobius Digital 粉丝内容政策。\n\n🛠️ 只能使用你有许可的素材;并须符合粉丝内容政策。" },
+        { "h": "评审标准", "md": "💭 主题契合度如何?\n\n💅 打磨程度:重质不重量。\n\n👤 综合观感:评审主要由个人观感驱动;标准只是参考。通常评委各自排序后汇总;前三名接近时可能宣布并列。\n\n指南可能随 Jam 进展调整;投稿足够时也可能尝试社区投票。" },
+        { "h": "如何参与", "md": "TL;DR:在 Jam 期间上传一个 mod,并在提交到 mod 数据库时打上 jam 标签。\n\n向星际拓荒 mod 数据库提交作品;先读 OWML 文档,用 NH 则再读 New Horizons 文档。\n\n**截止前上传 release**(截止内有效 release 即可,投稿数据库可晚于截止)。⚠️ 不要覆盖旧 release,单独上传新 release;截止后的 release 会被忽略。\n\n**提交数据库时使用 jam 标签**,再附其他合适标签。" },
+        { "h": "组队", "md": "可自由组队,建议 2-3 人。奖金在所有队员间平分,没有例外。想找队友可去官方 Discord 询问。" },
+        { "h": "联系我们", "md": "有更多问题或想讨论 Jam、modding,加入官方 Discord(#jam-chat),并领取 Jam 身份以接收更新。" }
+      ]
+    },
     "game-jam-2026": {
       "titleZh": "星际拓荒 Game Jam 2026",
       "introZh": "2026 年 2 月至 3 月,主办方尝试了点不一样的形式:不再是常规的 mod jam,而是在星际拓荒 mod 社区成员之间组织了一场 Game Jam。所有投稿须围绕以星际拓荒为中心的不同主题,但投稿本身不一定与星际拓荒相关。\n\n整场活动在另一个网站上举行,规则也与多数 game jam 略有不同。想了解更多、或查看全部游戏,可访问该网站的存档快照:",
@@ -16,10 +32,10 @@
   "index": [
     { "key": "jam6", "label": "进行中:时间循环 Mod Jam", "url": "https://outerwildsmods.com/jam/aug-2026", "now": true },
     { "key": null, "label": "2026 年 2 月:Game Jam", "url": "https://outerwildsmods.com/jam/game-jam-2026" },
-    { "key": null, "label": "2025 年 7 月:迷你恒星系 Mod Jam", "url": "https://outerwildsmods.com/jam/jul-2025" },
-    { "key": null, "label": "2024 年 10 月:极简文本 Mod Jam", "url": "https://outerwildsmods.com/jam/oct-2024" },
-    { "key": null, "label": "2024 年 3 月:单行星 Mod Jam", "url": "https://outerwildsmods.com/jam/mar-2024" },
-    { "key": null, "label": "2023 年 7 月:星际拓荒 Mod Jam", "url": "https://outerwildsmods.com/jam/jul-2023" },
+    { "key": "jam5", "label": "2025 年 7 月:迷你恒星系 Mod Jam", "url": "https://outerwildsmods.com/jam/jul-2025" },
+    { "key": "jam4", "label": "2024 年 10 月:极简文本 Mod Jam", "url": "https://outerwildsmods.com/jam/oct-2024" },
+    { "key": "jam3", "label": "2024 年 3 月:单行星 Mod Jam", "url": "https://outerwildsmods.com/jam/mar-2024" },
+    { "key": null, "label": "2023 年 7 月:星际拓荒 Mod Jam(第二届)", "url": "https://outerwildsmods.com/jam/jul-2023" },
     { "key": null, "label": "2023 年 1 月:新地平线 Jam", "url": "https://outerwildsmods.com/jam/jan-2023" }
   ],
   "jam3": {
