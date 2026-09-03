@@ -1,4 +1,12 @@
 {
+  "pages": {
+    "game-jam-2026": {
+      "titleZh": "星际拓荒 Game Jam 2026",
+      "introZh": "2026 年 2 月至 3 月,主办方尝试了点不一样的形式:不再是常规的 mod jam,而是在星际拓荒 mod 社区成员之间组织了一场 Game Jam。所有投稿须围绕以星际拓荒为中心的不同主题,但投稿本身不一定与星际拓荒相关。\n\n整场活动在另一个网站上举行,规则也与多数 game jam 略有不同。想了解更多、或查看全部游戏,可访问该网站的存档快照:",
+      "url": "https://outerwildsmods.com/jam/game-jam-2026",
+      "urlLabelZh": "前往星际拓荒 Game Jam(存档快照)"
+    }
+  },
   "index": [
     { "key": "jam6", "label": "进行中:时间循环 Mod Jam", "url": "https://outerwildsmods.com/jam/aug-2026", "now": true },
     { "key": null, "label": "2026 年 2 月:Game Jam", "url": "https://outerwildsmods.com/jam/game-jam-2026" },
