@@ -1,7 +1,7 @@
 """版本历史缓存: 按 repoUpdatedAt 增量抓取各 mod 仓库的 GitHub Releases.
 
 数据源为 GitHub 公开 Releases API(与 ow-mods 服务无关).
-缓存格式 source/releases_cache.json:
+缓存格式(语言目录下,默认 zh_cn) releases_cache.json:
   { uniqueName: { "repoUpdatedAt": ..., "releases": [ {tag, name, date, body, zipUrl} ] } }
 
 每仓库最多保留 MAX_RELEASES 条; body 超长截断.
@@ -19,7 +19,7 @@ import httpx
 
 import ai_client
 import readmes
-from translation_store import load_json, save_json
+from translation_store import lang_file, load_json, save_json
 
 MAX_RELEASES = 10
 MAX_BODY_CHARS = 2500
@@ -157,19 +157,23 @@ def translate_bodies(cache: dict, licenses: dict, denylist: list, glossary: dict
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--lang", default="zh_cn", help="语言目录代码,如 zh_cn/ja")
     parser.add_argument("--official", default="source/official.json")
-    parser.add_argument("--cache", default="source/releases_cache.json")
+    parser.add_argument("--cache", default=None)
     parser.add_argument("--licenses", default="source/license_cache.json")
     parser.add_argument("--denylist", default="source/readme_denylist.json")
-    parser.add_argument("--glossary", default="source/glossary.json")
+    parser.add_argument("--glossary", default=None)
     parser.add_argument("--concurrency", type=int, default=4)
     parser.add_argument("--translate-bodies", action="store_true",
                         help="补译版本说明(许可白名单内,需 OPENAI_* 环境变量)")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
+    lang = args.lang
+    cache_path = Path(args.cache) if args.cache else lang_file("releases_cache", lang)
+    glossary_path = Path(args.glossary) if args.glossary else lang_file("glossary", lang)
     official = load_json(Path(args.official))
-    cache = load_json(Path(args.cache))
+    cache = load_json(cache_path)
     token = os.environ.get("GITHUB_TOKEN", "")
     updated, skipped, errors = refresh_cache(official, cache, token,
                                              max_workers=args.concurrency)
@@ -183,7 +187,7 @@ def main() -> None:
         licenses = load_json(Path(args.licenses))
         denylist = json.loads(Path(args.denylist).read_text(encoding="utf-8")) \
             if Path(args.denylist).exists() else []
-        glossary = load_json(Path(args.glossary))
+        glossary = load_json(glossary_path)
 
         def ai_translate(text: str) -> str:
             return ai_client.translate_with_ai(
@@ -198,7 +202,7 @@ def main() -> None:
         print(f"版本说明翻译: 新译 {new_bodies}, 失败 {len(body_errors)}")
         errors += body_errors
 
-    save_json(Path(args.cache), cache)
+    save_json(cache_path, cache)
     print(f"版本缓存: 更新 {updated}, 跳过 {skipped}, 失败 {len(errors)}")
     for e in errors[:10]:
         print(f"  ERR {e}")

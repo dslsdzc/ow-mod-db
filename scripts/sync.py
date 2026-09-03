@@ -7,6 +7,7 @@ import httpx
 
 from translation_store import (
     TRANSLATABLE_FIELDS,
+    lang_file,
     load_json,
     load_translations,
     needs_translation,
@@ -43,20 +44,25 @@ def diff_database(official: dict, translations: dict) -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Sync official db and write pending translations")
+    parser.add_argument("--lang", default="zh_cn", help="语言目录代码,如 zh_cn/ja")
     parser.add_argument("--official", default=OFFICIAL_DB_URL, help="official database.json URL or local path")
-    parser.add_argument("--translations", default="source/translations.json")
-    parser.add_argument("--out", default="source/pending.json")
+    parser.add_argument("--translations", default=None)
+    parser.add_argument("--out", default=None)
     parser.add_argument("--save-official", default="source/official.json", help="snapshot for build.py")
     args = parser.parse_args()
+
+    lang = args.lang
+    translations_path = Path(args.translations) if args.translations else lang_file("translations", lang)
+    pending_path = Path(args.out) if args.out else lang_file("pending", lang)
 
     if args.official.startswith("http"):
         official = fetch_official(args.official)
     else:
         official = load_json(Path(args.official))
 
-    translations = load_translations(Path(args.translations))
+    translations = load_translations(translations_path)
     pending = diff_database(official, translations)
-    save_list(Path(args.out), pending)
+    save_list(pending_path, pending)
     save_json(Path(args.save_official), official)
     print(f"{len(pending)} pending translations")
     for item in pending[:5]:

@@ -4,15 +4,18 @@ from pathlib import Path
 import pytest
 
 from translation_store import (
+    LANG_DEFAULT,
     TRANSLATABLE_FIELDS,
     StoreError,
     get_translation,
+    lang_file,
     load_json,
     load_list,
     needs_translation,
     save_json,
     save_list,
     set_translation,
+    site_data_dir,
 )
 
 
@@ -80,3 +83,14 @@ def test_set_and_get_translation():
     assert get_translation(translations, "Mod.A", "description") == "中译"
     assert get_translation(translations, "Mod.A", "name") is None
     assert get_translation(translations, "NoSuch", "description") is None
+
+
+def test_lang_file_paths():
+    assert str(lang_file("glossary")) == "source/zh_cn/glossary.json"
+    assert str(lang_file("translations", "ja")) == "source/ja/translations.json"
+    assert LANG_DEFAULT == "zh_cn"
+
+
+def test_site_data_dir():
+    assert site_data_dir("zh_cn") == "data"
+    assert site_data_dir("ja") == "data/ja"

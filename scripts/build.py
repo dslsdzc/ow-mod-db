@@ -9,9 +9,11 @@ from pathlib import Path
 from translation_store import (
     TRANSLATABLE_FIELDS,
     get_translation,
+    lang_file,
     load_json,
     load_translations,
     save_json,
+    site_data_dir,
 )
 
 SITE_SOURCE = Path("site")
@@ -74,25 +76,34 @@ def deploy_site(site_dir: Path, dist_dir: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build Chinese database.json and website data")
+    parser.add_argument("--lang", default="zh_cn", help="语言目录代码,如 zh_cn/ja")
     parser.add_argument("--official", default="source/official.json")
-    parser.add_argument("--translations", default="source/translations.json")
-    parser.add_argument("--readmes", default="source/readmes.json")
+    parser.add_argument("--translations", default=None)
+    parser.add_argument("--readmes", default=None)
     parser.add_argument("--licenses", default="source/license_cache.json")
-    parser.add_argument("--jams", default="source/jams.json")
-    parser.add_argument("--jam-content", default="source/jam_content.json")
-    parser.add_argument("--releases", default="source/releases_cache.json")
+    parser.add_argument("--jams", default=None)
+    parser.add_argument("--jam-content", default=None)
+    parser.add_argument("--releases", default=None)
     parser.add_argument("--patches", default="source/translation_patches.json",
-                        help="中文汉化补丁注册表")
+                        help="中文汉化补丁注册表(语言无关,根目录)")
     parser.add_argument("--site", default=str(SITE_SOURCE))
     parser.add_argument("--dist", default=str(DIST))
     args = parser.parse_args()
 
+    lang = args.lang
+    translations_path = Path(args.translations) if args.translations else lang_file("translations", lang)
+    readmes_path = Path(args.readmes) if args.readmes else lang_file("readmes", lang)
+    releases_path = Path(args.releases) if args.releases else lang_file("releases_cache", lang)
+    jams_path = Path(args.jams) if args.jams else lang_file("jams", lang)
+    jam_content_path = Path(args.jam_content) if args.jam_content else lang_file("jam_content", lang)
+
     official = load_json(Path(args.official))
-    translations = load_translations(Path(args.translations))
+    translations = load_translations(translations_path)
     database_zh, mods_data = build_all(official, translations)
 
     dist = Path(args.dist)
-    (dist / "data").mkdir(parents=True, exist_ok=True)
+    data_dir = dist / site_data_dir(lang)
+    data_dir.mkdir(parents=True, exist_ok=True)
     cjk = re.compile(r"[一-鿿]")
     meta = {
         "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
@@ -100,10 +111,10 @@ def main() -> None:
         "zhDescriptions": sum(1 for m in mods_data if cjk.search(m.get("description") or "")),
     }
     save_json(dist / "database.json", database_zh)
-    save_json(dist / "data" / "mods.json", {"mods": mods_data, "meta": meta})
+    save_json(data_dir / "mods.json", {"mods": mods_data, "meta": meta})
     # 版本历史: 每 mod 独立小文件,详情页按需加载
-    releases = load_json(Path(args.releases))
-    rel_dir = dist / "data" / "releases"
+    releases = load_json(releases_path)
+    rel_dir = data_dir / "releases"
     rel_dir.mkdir(parents=True, exist_ok=True)
     for unique_name, entry in releases.items():
         if isinstance(entry, dict) and entry.get("releases"):
@@ -125,16 +136,16 @@ def main() -> None:
         _ids = {m.get("uniqueName", "") for m in official.get("releases", [])}
         for _e in validate_patches(patches, _ids):
             print(f"  注册表校验: {_e}")
-    save_json(dist / "data" / "patches.json", patches_to_dict(patches))
+    save_json(data_dir / "patches.json", patches_to_dict(patches))
     # README 中文缓存与许可信息(详情页用;readmes 由 scripts/readmes.py 生成)
-    readmes = load_json(Path(args.readmes))
+    readmes = load_json(readmes_path)
     licenses = load_json(Path(args.licenses))
-    save_json(dist / "data" / "readmes.json", readmes)
-    save_json(dist / "data" / "licenses.json", licenses)
-    jams = load_json(Path(args.jams)) if Path(args.jams).exists() else {}
-    save_json(dist / "data" / "jams.json", jams)
-    jam_content = load_json(Path(args.jam_content)) if Path(args.jam_content).exists() else {}
-    save_json(dist / "data" / "jam_content.json", jam_content)
+    save_json(data_dir / "readmes.json", readmes)
+    save_json(data_dir / "licenses.json", licenses)
+    jams = load_json(jams_path) if jams_path.exists() else {}
+    save_json(data_dir / "jams.json", jams)
+    jam_content = load_json(jam_content_path) if jam_content_path.exists() else {}
+    save_json(data_dir / "jam_content.json", jam_content)
     deploy_site(Path(args.site), dist)
     # 静态资源与数据接口加版本号: 界面不缓存,图片(不在此列)可缓存
     stamp = meta["generatedAt"].replace(":", "").replace("-", "").replace(".", "Z")[:17]

@@ -1,7 +1,7 @@
 """README 预翻译流水线(仅开放许可白名单仓库).
 
 抓取 readme.downloadUrl 的 markdown → sha256 内容哈希 → 变化才重翻 →
-长文按段落拆块 → AI 逐块翻译 → 写 source/readmes.json 缓存.
+长文按段落拆块 → AI 逐块翻译 → 写语言目录下 readmes.json 缓存(默认 zh_cn).
 
 尊重版权: 许可不在白名单、作者列入 denylist 的 README 一律不翻.
 """
@@ -20,7 +20,7 @@ from pathlib import Path
 import httpx
 
 import ai_client
-from translation_store import load_json, save_json
+from translation_store import lang_file, load_json, save_json
 
 # 允许预翻译的开放许可(演绎作品合法,署原作者即可)
 PERMISSIVE_LICENSES = {
@@ -196,10 +196,11 @@ def _now_iso() -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Translate licensed mods' READMEs")
+    parser.add_argument("--lang", default="zh_cn", help="语言目录代码,如 zh_cn/ja")
     parser.add_argument("--official", default="source/official.json")
     parser.add_argument("--licenses", default="source/license_cache.json")
-    parser.add_argument("--readmes", default="source/readmes.json")
-    parser.add_argument("--glossary", default="source/glossary.json")
+    parser.add_argument("--readmes", default=None)
+    parser.add_argument("--glossary", default=None)
     parser.add_argument("--denylist", default="source/readme_denylist.json")
     parser.add_argument("--concurrency", type=int, default=4)
     parser.add_argument("--limit", type=int, default=0, help="本次最多翻译的 README 数(分批上线用)")
@@ -215,9 +216,12 @@ def main() -> None:
             print(f"缺少环境变量: {', '.join(missing)}")
             raise SystemExit(1)
 
+    lang = args.lang
+    readmes_path = Path(args.readmes) if args.readmes else lang_file("readmes", lang)
+    glossary_path = Path(args.glossary) if args.glossary else lang_file("glossary", lang)
     official = load_json(Path(args.official))
     licenses = load_json(Path(args.licenses))
-    cache = load_json(Path(args.readmes))
+    cache = load_json(readmes_path)
     denylist = json.loads(Path(args.denylist).read_text(encoding="utf-8")) \
         if Path(args.denylist).exists() else []
 
@@ -231,7 +235,7 @@ def main() -> None:
     if args.dry_run:
         return
 
-    glossary = load_json(Path(args.glossary))
+    glossary = load_json(glossary_path)
 
     def ai_translate(text: str) -> str:
         # README 也注入术语表(否则专有名词会被随意翻译,如 外星迷航)
@@ -246,7 +250,7 @@ def main() -> None:
         official, licenses, cache, denylist, ai_translate,
         at=_now_iso(), max_workers=args.concurrency, limit=args.limit, force=args.force,
     )
-    save_json(Path(args.readmes), cache)
+    save_json(readmes_path, cache)
     print(f"README 翻译完成: 新翻 {new}, 未变跳过 {skipped}, 失败 {len(errors)}")
     for e in errors[:10]:
         print(f"  ERR {e}")

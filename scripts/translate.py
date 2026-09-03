@@ -11,6 +11,7 @@ from pathlib import Path
 
 import ai_client
 from translation_store import (
+    lang_file,
     load_json,
     load_list,
     load_translations,
@@ -336,11 +337,12 @@ def merge_pending(pending: list[dict], extra: list[dict]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Translate pending fields into translations.json")
-    parser.add_argument("--pending", default="source/pending.json")
-    parser.add_argument("--translations", default="source/translations.json")
-    parser.add_argument("--human", default="source/human_translations.json")
-    parser.add_argument("--glossary", default="source/glossary.json")
-    parser.add_argument("--last-glossary", default="source/last_glossary.json",
+    parser.add_argument("--lang", default="zh_cn", help="语言目录代码,如 zh_cn/ja")
+    parser.add_argument("--pending", default=None)
+    parser.add_argument("--translations", default=None)
+    parser.add_argument("--human", default=None)
+    parser.add_argument("--glossary", default=None)
+    parser.add_argument("--last-glossary", default=None,
                         help="上次应用过的术语表快照(检测术语变更用)")
     parser.add_argument("--concurrency", type=int, default=1,
                         help="并发线程数(1=顺序;DeepSeek 等 API 可用几百上千)")
@@ -352,10 +354,17 @@ def main() -> None:
     parser.add_argument("--at", default=None, help="ISO 时间戳,默认当前 UTC")
     args = parser.parse_args()
 
-    pending = load_list(Path(args.pending))
-    translations = load_translations(Path(args.translations))
-    human = load_json(Path(args.human))
-    glossary = load_json(Path(args.glossary))
+    lang = args.lang
+    pending_path = Path(args.pending) if args.pending else lang_file("pending", lang)
+    translations_path = Path(args.translations) if args.translations else lang_file("translations", lang)
+    human_path = Path(args.human) if args.human else lang_file("human_translations", lang)
+    glossary_path = Path(args.glossary) if args.glossary else lang_file("glossary", lang)
+    last_glossary_path = Path(args.last_glossary) if args.last_glossary else lang_file("last_glossary", lang)
+
+    pending = load_list(pending_path)
+    translations = load_translations(translations_path)
+    human = load_json(human_path)
+    glossary = load_json(glossary_path)
     at = args.at or _now_iso()
 
     if not args.dry_run:
@@ -364,8 +373,7 @@ def main() -> None:
             print(f"人工翻译覆盖已生效: {applied} 个字段")
 
     # 术语表变更处理: 值变更走确定性替换(零 API),格式/新增词条只重译命中字段
-    last_path = Path(args.last_glossary)
-    last_glossary = load_json(last_path)
+    last_glossary = load_json(last_glossary_path)
     glossary_changed = bool(last_glossary) and last_glossary != glossary
     if glossary_changed:
         changes = glossary_changes(last_glossary, glossary)
@@ -419,11 +427,11 @@ def main() -> None:
                 max_workers=args.concurrency,
             )
     except ConsecutiveFailureError as e:
-        save_json(Path(args.translations), translations)  # 保留已完成的进度
+        save_json(translations_path, translations)  # 保留已完成的进度
         print(e)
         raise SystemExit(1)
-    save_json(Path(args.translations), translations)
-    save_json(last_path, glossary)  # 成功后才推进术语表快照
+    save_json(translations_path, translations)
+    save_json(last_glossary_path, glossary)  # 成功后才推进术语表快照
     print(f"翻译完成: {translated} 条成功, {len(failures)} 条失败")
     for f in failures:
         print(f"  FAIL {f}")

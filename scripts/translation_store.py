@@ -77,3 +77,16 @@ def get_translation(translations: dict, unique_name: str, field: str) -> str | N
     if cached is None:
         return None
     return cached.get("zh")
+
+
+LANG_DEFAULT = "zh_cn"
+
+
+def lang_file(kind: str, lang: str = LANG_DEFAULT) -> Path:
+    """语言化 JSON 的路径: source/<lang>/<kind>.json"""
+    return Path("source") / lang / f"{kind}.json"
+
+
+def site_data_dir(lang: str) -> str:
+    """网站数据目录: zh_cn 用根 data/,其它语言 data/<code>/"""
+    return "data" if lang == "zh_cn" else f"data/{lang}"
