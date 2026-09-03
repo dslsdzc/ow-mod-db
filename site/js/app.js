@@ -181,7 +181,7 @@ function renderJams(mods) {
       if (!parts) return;
       const c = content[parts[1]];
       const sec = c && c.sections && c.sections[Number(parts[2])];
-      if (sec && sec.md) renderMarkdownInto(el, sec.md, "", false);
+      if (sec && sec.md) renderMarkdownInto(el, sec.md, "", true);
     });
     // 独立信息页(如 2026 Game Jam,无本地参赛分组)
     const pagesHtml = Object.entries(content.pages || {}).map(([pk, p]) => `
@@ -203,7 +203,7 @@ function renderJams(mods) {
       if (mdBox && p.introZh) renderMarkdownInto(mdBox, p.introZh, "", true);
       (p.sections || []).forEach((s, i) => {
         const box = sec.querySelector(`[data-page-sec="${pk}-${i}"]`);
-        if (box && s.md) renderMarkdownInto(box, s.md, "", false);
+        if (box && s.md) renderMarkdownInto(box, s.md, "", true);
       });
     });
   }).catch((err) => {
