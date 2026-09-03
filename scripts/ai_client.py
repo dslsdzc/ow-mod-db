@@ -20,37 +20,77 @@ SYSTEM_PROMPT = (
     "Glossary:\n{glossary}"
 )
 
+# 简体中文之外的目标语言(如日本語)用的中性模板:结构/规则数与 SYSTEM_PROMPT 一致,
+# 但规则 1-2 与头部措辞不绑定具体语言,目标语言名由 {target_lang} 注入。
+_NEUTRAL_SYSTEM_PROMPT = (
+    "You are a professional game mod localization translator. "
+    "Translate English Outer Wilds mod metadata to {target_lang}.\n"
+    "Rules:\n"
+    "1. Glossary terms must be translated to exactly the given target-language term.\n"
+    "2. Character names on their FIRST mention in the text must appear as "
+    "\"EnglishName(NameInTargetLanguage)\"; later mentions in the same text use "
+    "only the target-language name.\n"
+    "3. Proper nouns not in either list stay in English.\n"
+    "4. Keep Markdown formatting, line breaks, URLs, and angle brackets intact.\n"
+    "5. Output only the translation, no quotes, no explanation.\n"
+    "Glossary:\n{glossary}"
+)
+
+
+def system_prompt(target_lang: str = "简体中文") -> str:
+    """Build the system prompt template for a target language (still contains {glossary}).
+
+    target_lang == "简体中文" 时返回历史 SYSTEM_PROMPT 原文(逐字节不变,zh 零回归);
+    其余语言用 _NEUTRAL_SYSTEM_PROMPT 并注入目标语言名,不残留中文专属指令。
+    """
+    if target_lang == "简体中文":
+        return SYSTEM_PROMPT
+    # {glossary} 留给调用处按实际词表填充
+    return _NEUTRAL_SYSTEM_PROMPT.format(target_lang=target_lang, glossary="{glossary}")
+
 
 class AIError(Exception):
     pass
 
 
-def _glossary_block(glossary: dict) -> str:
-    """Build the prompt glossary section from {"terms": {...}, "characters": {...}}."""
+def _glossary_block(glossary: dict, target_lang: str = "简体中文") -> str:
+    """Build the prompt glossary section from {"terms": {...}, "characters": {...}}.
+
+    target_lang == "简体中文" 时区块标签与历史一致(逐字节不变);
+    其余语言用中性英文标签,避免向模型下达中文指令。
+    """
     if not glossary:
         return "(empty)"
     terms = glossary.get("terms") or {}
     characters = glossary.get("characters") or {}
     if not terms and not characters:
         return "(empty)"
+    if target_lang == "简体中文":
+        terms_label = "[专有名词,直接译为中文]"
+        characters_label = "[角色名,首次出现用 原名(中文) 格式]"
+    else:
+        terms_label = "[Proper nouns, translate to exactly the given term]"
+        characters_label = "[Character names, first mention as EnglishName(translated name)]"
     parts = []
     if terms:
-        parts.append("[专有名词,直接译为中文]")
+        parts.append(terms_label)
         parts.extend(f"{en} -> {zh}" for en, zh in terms.items())
     if characters:
-        parts.append("[角色名,首次出现用 原名(中文) 格式]")
+        parts.append(characters_label)
         parts.extend(f"{en} -> {zh}" for en, zh in characters.items())
     return "\n".join(parts)
 
 
 def _chat_completion(user_content: str, glossary: dict, *, base_url: str, api_key: str,
-                     model: str) -> str:
+                     model: str, target_lang: str = "简体中文") -> str:
     """POST one chat completion; returns stripped content. Raises AIError on any failure."""
     headers = {"Authorization": f"Bearer {api_key}"}
+    system_content = system_prompt(target_lang).format(
+        glossary=_glossary_block(glossary, target_lang))
     payload = {
         "model": model,
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT.format(glossary=_glossary_block(glossary))},
+            {"role": "system", "content": system_content},
             {"role": "user", "content": user_content},
         ],
         "temperature": 0.2,
@@ -84,6 +124,7 @@ def translate_with_ai(en_text: str, glossary: dict, *, base_url: str, api_key: s
     return _chat_completion(
         f"Translate the following text to {target_lang}.\nText:\n" + en_text,
         glossary, base_url=base_url, api_key=api_key, model=model,
+        target_lang=target_lang,
     )
 
 
@@ -138,6 +179,7 @@ def translate_batch_with_ai(texts: list[str], glossary: dict, *, base_url: str, 
         + lines
     )
     content = _chat_completion(user_content, glossary,
-                               base_url=base_url, api_key=api_key, model=model)
+                               base_url=base_url, api_key=api_key, model=model,
+                               target_lang=target_lang)
     parsed = _parse_json_content(content)
     return {i: zh for i, zh in parsed.items() if isinstance(zh, str) and zh.strip()}

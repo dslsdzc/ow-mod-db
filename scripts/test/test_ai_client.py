@@ -4,6 +4,28 @@ import pytest
 import ai_client
 from ai_client import AIError
 
+# 参数化前 SYSTEM_PROMPT 的历史全文(target_lang="简体中文" 时输出必须与之逐字节一致)
+_LEGACY_SYSTEM_PROMPT = (
+    "You are a professional game mod localization translator. "
+    "Translate English Outer Wilds mod metadata to Simplified Chinese.\n"
+    "Rules:\n"
+    "1. Glossary terms must be translated to exactly the given Chinese "
+    "(e.g. Quantum Moon -> 量子卫星).\n"
+    "2. Character names on their FIRST mention in the text must appear as "
+    "\"EnglishName(中文名)\" (e.g. \"Hornfels(霍恩费斯)\"); later mentions "
+    "in the same text use only the Chinese name.\n"
+    "3. Proper nouns not in either list stay in English.\n"
+    "4. Keep Markdown formatting, line breaks, URLs, and angle brackets intact.\n"
+    "5. Output only the translation, no quotes, no explanation.\n"
+    "Glossary:\n{glossary}"
+)
+
+
+def _rules(prompt: str) -> list[str]:
+    """提取 "Rules:" 下、"Glossary:" 前的编号规则行(1.~5.),用于比对规则条数/结构。"""
+    rules = prompt.split("Rules:\n", 1)[1].split("\nGlossary:", 1)[0]
+    return [line for line in rules.split("\n") if line[:2] in {"1.", "2.", "3.", "4.", "5."}]
+
 
 class FakePost:
     def __init__(self, response: httpx.Response):
@@ -151,4 +173,83 @@ def test_target_lang_in_batch_user_prompt(monkeypatch):
     ai_client.translate_batch_with_ai(
         ["Hello"], {}, base_url="u", api_key="k", model="m", target_lang="日本語")
     user = fake.calls[0][1]["messages"][1]["content"]
+    assert "日本語" in user
+
+
+def test_default_system_prompt_matches_legacy_text():
+    """默认(简体中文)系统提示必须与参数化前逐字节一致:默认值与显式 简体中文 都走历史文本。"""
+    assert ai_client.system_prompt() == _LEGACY_SYSTEM_PROMPT
+    assert ai_client.system_prompt("简体中文") == _LEGACY_SYSTEM_PROMPT
+
+
+def test_japanese_system_prompt_is_language_neutral():
+    """日本語 路径:语言名注入头部,且不残留 "Simplified Chinese"/"中文" 等中文专属措辞;
+    规则条数/结构(规则 1.~5. + Glossary 行)与 zh 历史版一致。"""
+    prompt = ai_client.system_prompt("日本語")
+    assert "日本語" in prompt
+    assert "Simplified Chinese" not in prompt
+    assert "中文" not in prompt
+    assert prompt.endswith("Glossary:\n{glossary}")
+    assert len(_rules(prompt)) == len(_rules(_LEGACY_SYSTEM_PROMPT)) == 5
+
+
+def test_glossary_block_zh_labels_unchanged_and_ja_labels_neutral():
+    """术语表区块:zh 标签逐字不变;日本語 用中性标签且不含中文指令措辞。"""
+    glossary = {"terms": {"Quantum Moon": "量子の月"}, "characters": {"Hornfels": "ホーンフェルス"}}
+    zh_block = ai_client._glossary_block(glossary, "简体中文")
+    assert zh_block == (
+        "[专有名词,直接译为中文]\n"
+        "Quantum Moon -> 量子の月\n"
+        "[角色名,首次出现用 原名(中文) 格式]\n"
+        "Hornfels -> ホーンフェルス"
+    )
+    ja_block = ai_client._glossary_block(glossary, "日本語")
+    assert "Quantum Moon -> 量子の月" in ja_block and "Hornfels -> ホーンフェルス" in ja_block
+    assert "[专有名词,直接译为中文]" not in ja_block
+    assert "[角色名,首次出现用 原名(中文) 格式]" not in ja_block
+    assert "Simplified Chinese" not in ja_block and "中文" not in ja_block
+
+
+def test_default_translate_sends_byte_identical_system_message(monkeypatch):
+    """默认 target_lang 的单条翻译:发出去的 system 消息与参数化前逐字节一致。"""
+    fake = FakePost(httpx.Response(200, json={"choices": [{"message": {"content": "译"}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    glossary = {"terms": {"Nomai": "挪麦"}, "characters": {"Hornfels": "霍恩费斯"}}
+    ai_client.translate_with_ai("Hi", glossary, base_url="u", api_key="k", model="m")
+    system = fake.calls[0][1]["messages"][0]["content"]
+    expected_block = (
+        "[专有名词,直接译为中文]\n"
+        "Nomai -> 挪麦\n"
+        "[角色名,首次出现用 原名(中文) 格式]\n"
+        "Hornfels -> 霍恩费斯"
+    )
+    assert system == _LEGACY_SYSTEM_PROMPT.format(glossary=expected_block)
+
+
+def test_japanese_translate_system_message_is_language_neutral(monkeypatch):
+    """日本語 单条翻译:system 与 user 消息都含 日本語;system 不含中文专属措辞。"""
+    fake = FakePost(httpx.Response(200, json={"choices": [{"message": {"content": "こんにちは"}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    glossary = {"terms": {"Quantum Moon": "量子の月"}, "characters": {"Hornfels": "ホーンフェルス"}}
+    ai_client.translate_with_ai(
+        "Hello", glossary, base_url="u", api_key="k", model="m", target_lang="日本語")
+    messages = fake.calls[0][1]["messages"]
+    system, user = messages[0]["content"], messages[1]["content"]
+    assert "日本語" in system
+    assert "Simplified Chinese" not in system and "中文" not in system
+    assert "日本語" in user
+
+
+def test_japanese_batch_system_message_is_language_neutral(monkeypatch):
+    """日本語 批量翻译:system 与 user 消息都含 日本語;system 不含中文专属措辞。"""
+    fake = FakePost(httpx.Response(
+        200, json={"choices": [{"message": {"content": '{"0": "こんにちは"}'}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    glossary = {"terms": {"Quantum Moon": "量子の月"}, "characters": {"Hornfels": "ホーンフェルス"}}
+    ai_client.translate_batch_with_ai(
+        ["Hello"], glossary, base_url="u", api_key="k", model="m", target_lang="日本語")
+    messages = fake.calls[0][1]["messages"]
+    system, user = messages[0]["content"], messages[1]["content"]
+    assert "日本語" in system
+    assert "Simplified Chinese" not in system and "中文" not in system
     assert "日本語" in user
