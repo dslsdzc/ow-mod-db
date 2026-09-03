@@ -13,27 +13,28 @@
 <body>
 <header class="site-header">
   <nav>
-    <a class="brand" href="index.html">星际拓荒 MOD</a>
-    <a href="mods.html">全部 MOD</a>
-    <a href="jams.html">历届 Jam</a>
-    <a href="mod-manager.html">Mod Manager</a>
+    <a class="brand" href="index.html" data-i18n="brand">星际拓荒 MOD</a>
+    <a href="mods.html" data-i18n="nav.mods">全部 MOD</a>
+    <a href="jams.html" data-i18n="nav.jams">历届 Jam</a>
+    <a href="mod-manager.html" data-i18n="nav.manager">Mod Manager</a>
   </nav>
 </header>
 <main>
-  <h1>全部 MOD</h1>
+  <h1 data-i18n="mods.title">全部 MOD</h1>
   <div class="controls">
-    <input id="search" type="search" placeholder="搜索 MOD 名称 / 简介…">
+    <input id="search" type="search" data-i18n-placeholder="mods.search" placeholder="搜索 MOD 名称 / 简介…">
     <select id="sort">
-      <option value="installs">按热门排序</option>
-      <option value="newest">按最新发布</option>
-      <option value="updated">按最近更新</option>
-      <option value="name">按名称</option>
+      <option value="installs" data-i18n="mods.sort.installs">按热门排序</option>
+      <option value="newest" data-i18n="mods.sort.newest">按最新发布</option>
+      <option value="updated" data-i18n="mods.sort.updated">按最近更新</option>
+      <option value="name" data-i18n="mods.sort.name">按名称</option>
     </select>
     <span id="count"></span>
   </div>
   <div id="tag-chips" class="chips"></div>
   <div id="mod-grid" class="grid"></div>
 </main>
+<script src="js/i18n.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

@@ -13,14 +13,14 @@
 <body>
 <header class="site-header">
   <nav>
-    <a class="brand" href="index.html">星际拓荒 MOD</a>
-    <a href="mods.html">全部 MOD</a>
-    <a href="jams.html">历届 Jam</a>
-    <a href="mod-manager.html">Mod Manager</a>
+    <a class="brand" href="index.html" data-i18n="brand">星际拓荒 MOD</a>
+    <a href="mods.html" data-i18n="nav.mods">全部 MOD</a>
+    <a href="jams.html" data-i18n="nav.jams">历届 Jam</a>
+    <a href="mod-manager.html" data-i18n="nav.manager">Mod Manager</a>
   </nav>
 </header>
 <main>
-  <h1>历届 Game Jam</h1>
+  <h1 data-i18n="jams.title">历届 Game Jam</h1>
   <p class="intro">星际拓荒社区定期举办模组制作 Jam。这里按届自动聚合参赛 MOD(按官方库标签与命名识别),
   排序按热门度;届次的中文规则与说明见各分组(维护入口:<code>source/jam_content.json</code>)。</p>
   <div id="jams"></div>
@@ -30,6 +30,7 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

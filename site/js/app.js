@@ -59,7 +59,7 @@ function cardHtml(m) {
   return `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
     ${visual}
     <h3>${esc(m.name)}</h3>
-    <div class="meta">${esc(m.authorDisplay)} · v${esc(m.version)} · ${esc(m.downloadCount)} 次下载</div>
+    <div class="meta">${esc(m.authorDisplay)} · v${esc(m.version)} · ${window.t ? t("meta.downloads", { n: m.downloadCount }) : (m.downloadCount + " 次下载")}</div>
     <p class="desc">${esc(m.description)}</p>
   </a>`;
 }
@@ -129,7 +129,7 @@ function renderJams(mods) {
     const entries = [...buckets.entries()]
       .sort((a, b) => (parseInt(b[0].replace("jam", "")) || 0) - (parseInt(a[0].replace("jam", "")) || 0));
     if (!entries.length) {
-      root.innerHTML = `<p class="placeholder">暂未识别到 Jam 参赛 mod</p>`;
+      root.innerHTML = `<p class="placeholder">${window.t ? t("jams.placeholder") : "暂未识别到 Jam 参赛 mod"}</p>`;
       return;
     }
     // 历届索引:每个大赛一个跳转 chip(分组锚点或信息页锚点)
@@ -158,7 +158,7 @@ function renderJams(mods) {
       const sections = (c.sections || []).map((s, i) =>
         `<div class="jam-sec"><h3>${esc(s.h)}</h3><div class="readme jam-md-${k}-${i}"></div></div>`).join("");
       return `<section class="home-section" data-jam="${esc(k)}">
-        <h2>${esc(titleOf(k))} <span class="meta">· ${list.length} 个作品</span></h2>
+        <h2>${esc(titleOf(k))} <span class="meta">· ${window.t ? t("jams.works", { n: list.length }) : (list.length + " 个作品")}</span></h2>
         ${c.introZh ? `<div class="readme" data-bucket-md="${esc(k)}"></div>` : ""}
         ${(c.officialUrl || o.officialUrl) ? `<p><a class="link" href="${esc(c.officialUrl || o.officialUrl)}" target="_blank" rel="noopener">官方届次页面</a></p>` : ""}
         ${sections}
@@ -232,13 +232,13 @@ function renderHome(mods) {
   const featured = document.getElementById("featured");
   if (!featured) return;
   const sections = [
-    ["热门 MOD", "installs"],
-    ["热门新 MOD", "popularNew"],
-    ["最近更新", "updated"],
+    ["home.popular", "installs"],
+    ["home.popularNew", "popularNew"],
+    ["home.updated", "updated"],
   ];
   featured.innerHTML = sections.map(([title, mode]) => {
     const items = sortMods(mods, mode).slice(0, 3);
-    return `<section><h2>${title}</h2><div class="grid">${items.map(cardHtml).join("")}</div></section>`;
+    return `<section><h2>${window.t ? t(title) : title}</h2><div class="grid">${items.map(cardHtml).join("")}</div></section>`;
   }).join("");
   setupAllThumbs(featured);
 }
@@ -264,7 +264,7 @@ function renderList(mods) {
       chipsEl.appendChild(b);
       return b;
     };
-    mk("全部", "");
+    mk(window.t ? t("mods.allTag") : "全部", "");
     for (const t of allTags) mk(t, t);
   }
   function refreshChips() {
@@ -281,8 +281,8 @@ function renderList(mods) {
       return (m.name + " " + m.description + " " + m.authorDisplay).toLowerCase().includes(q);
     });
     shown = sortMods(shown, mode);
-    count.textContent = shown.length + " / " + mods.length + " 个 MOD";
-    grid.innerHTML = shown.map(cardHtml).join("") || `<p class="placeholder">没有匹配的 MOD</p>`;
+    count.textContent = (window.t ? t("mods.count", { n: shown.length, m: mods.length }) : (shown.length + " / " + mods.length + " 个 MOD"));
+    grid.innerHTML = shown.map(cardHtml).join("") || `<p class="placeholder">${window.t ? t("mods.none") : "没有匹配的 MOD"}</p>`;
     setupAllThumbs(grid);
   }
 

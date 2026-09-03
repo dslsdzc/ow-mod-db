@@ -64,6 +64,16 @@ def test_patch_block_markers_present():
     assert "中文支持" in js
 
 
+def test_i18n_framework_markers():
+    i18n = (REPO_ROOT / "site" / "js" / "i18n.js").read_text(encoding="utf-8")
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    index = (REPO_ROOT / "site" / "index.html").read_text(encoding="utf-8")
+    assert '"zh-CN"' in i18n and '"ja"' in i18n
+    assert 'lang-switch' in i18n
+    assert 'window.t' in js or 't(' in js
+    assert 'js/i18n.js' in index
+
+
 def test_jams_page_markers():
     html = (REPO_ROOT / "site" / "jams.html").read_text(encoding="utf-8")
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
