@@ -134,3 +134,21 @@ def test_translate_non_dict_json_raises(monkeypatch):
     monkeypatch.setattr(ai_client.httpx, "post", fake)
     with pytest.raises(AIError, match="unexpected API response"):
         ai_client.translate_with_ai("Hi", {}, base_url="u", api_key="k", model="m")
+
+
+def test_target_lang_in_user_prompt(monkeypatch):
+    fake = FakePost(httpx.Response(200, json={"choices": [{"message": {"content": "こんにちは"}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    ai_client.translate_with_ai("Hello", {}, base_url="u", api_key="k", model="m", target_lang="日本語")
+    user = fake.calls[0][1]["messages"][1]["content"]
+    assert "日本語" in user
+
+
+def test_target_lang_in_batch_user_prompt(monkeypatch):
+    fake = FakePost(httpx.Response(
+        200, json={"choices": [{"message": {"content": '{"0": "こんにちは"}'}}]}))
+    monkeypatch.setattr(ai_client.httpx, "post", fake)
+    ai_client.translate_batch_with_ai(
+        ["Hello"], {}, base_url="u", api_key="k", model="m", target_lang="日本語")
+    user = fake.calls[0][1]["messages"][1]["content"]
+    assert "日本語" in user

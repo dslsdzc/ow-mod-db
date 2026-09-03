@@ -21,6 +21,8 @@ import ai_client
 import readmes
 from translation_store import lang_file, load_json, save_json
 
+LANG_NAME = {"zh_cn": "简体中文", "ja": "日本語"}
+
 MAX_RELEASES = 10
 MAX_BODY_CHARS = 2500
 API = "https://api.github.com"
@@ -195,6 +197,7 @@ def main() -> None:
                 base_url=os.environ["OPENAI_BASE_URL"],
                 api_key=os.environ["OPENAI_API_KEY"],
                 model=os.environ["OPENAI_MODEL"],
+                target_lang=LANG_NAME.get(lang, "简体中文"),
             )
 
         new_bodies, body_errors = translate_bodies(cache, licenses, denylist, glossary,

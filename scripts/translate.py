@@ -19,6 +19,8 @@ from translation_store import (
     set_translation,
 )
 
+LANG_NAME = {"zh_cn": "简体中文", "ja": "日本語"}
+
 
 def _human_get(human: dict, unique_name: str, field: str) -> str | None:
     entry = human.get(unique_name)
@@ -405,6 +407,7 @@ def main() -> None:
             base_url=os.environ["OPENAI_BASE_URL"],
             api_key=os.environ["OPENAI_API_KEY"],
             model=os.environ["OPENAI_MODEL"],
+            target_lang=LANG_NAME.get(lang, "简体中文"),
         )
 
     def ai_batch(texts: list, glossary: dict) -> dict:
@@ -413,6 +416,7 @@ def main() -> None:
             base_url=os.environ["OPENAI_BASE_URL"],
             api_key=os.environ["OPENAI_API_KEY"],
             model=os.environ["OPENAI_MODEL"],
+            target_lang=LANG_NAME.get(lang, "简体中文"),
         )
 
     try:

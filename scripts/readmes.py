@@ -22,6 +22,8 @@ import httpx
 import ai_client
 from translation_store import lang_file, load_json, save_json
 
+LANG_NAME = {"zh_cn": "简体中文", "ja": "日本語"}
+
 # 允许预翻译的开放许可(演绎作品合法,署原作者即可)
 PERMISSIVE_LICENSES = {
     "MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC",
@@ -244,6 +246,7 @@ def main() -> None:
             base_url=os.environ["OPENAI_BASE_URL"],
             api_key=os.environ["OPENAI_API_KEY"],
             model=os.environ["OPENAI_MODEL"],
+            target_lang=LANG_NAME.get(lang, "简体中文"),
         )
 
     new, skipped, errors = translate_readmes(

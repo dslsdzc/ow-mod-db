@@ -75,13 +75,14 @@ def _chat_completion(user_content: str, glossary: dict, *, base_url: str, api_ke
     return content.strip()
 
 
-def translate_with_ai(en_text: str, glossary: dict, *, base_url: str, api_key: str, model: str) -> str:
+def translate_with_ai(en_text: str, glossary: dict, *, base_url: str, api_key: str,
+                      model: str, target_lang: str = "简体中文") -> str:
     """Translate a single English text via an OpenAI-compatible chat API.
 
     Returns the translated text (stripped). Raises AIError on any failure.
     """
     return _chat_completion(
-        "Translate the following text to Simplified Chinese.\nText:\n" + en_text,
+        f"Translate the following text to {target_lang}.\nText:\n" + en_text,
         glossary, base_url=base_url, api_key=api_key, model=model,
     )
 
@@ -122,7 +123,7 @@ def _parse_json_content(content: str) -> dict:
 
 
 def translate_batch_with_ai(texts: list[str], glossary: dict, *, base_url: str, api_key: str,
-                            model: str) -> dict:
+                            model: str, target_lang: str = "简体中文") -> dict:
     """把多条文本合并为一次 chat 请求翻译;返回 {序号: 译文}(可能缺部分序号).
 
     Raises AIError on request-level failure or unparseable response.
@@ -131,7 +132,7 @@ def translate_batch_with_ai(texts: list[str], glossary: dict, *, base_url: str, 
         return {}
     lines = "\n".join(f"{i}: {t}" for i, t in enumerate(texts))
     user_content = (
-        "Translate each numbered text below to Simplified Chinese.\n"
+        f"Translate each numbered text below to {target_lang}.\n"
         "Reply with ONLY a JSON object mapping each number to its translation, "
         'e.g. {"0": "...", "1": "..."}. No other text, no code fences.\n\n'
         + lines
