@@ -114,6 +114,26 @@ function renderJams(mods) {
       root.innerHTML = `<p class="placeholder">暂未识别到 Jam 参赛 mod</p>`;
       return;
     }
+    // 历届索引(类官方列表;有本站分组则锚点跳转,否则外链官方)
+    const indexNav = (content.index || []).map((it) => {
+      const local = it.key && entries.some(([k]) => k === it.key);
+      const label = (it.now ? "▶ " : "") + it.label;
+      return local
+        ? `<button class="chip" data-jump="${esc(it.key)}">${esc(label)}</button>`
+        : `<a class="chip" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+    }).join("") || "";
+    if (indexNav) {
+      const nav = document.createElement("div");
+      nav.className = "chips";
+      nav.innerHTML = indexNav;
+      nav.addEventListener("click", (e) => {
+        const b = e.target.closest("[data-jump]");
+        if (!b) return;
+        const sec = root.querySelector(`section[data-jam="${b.dataset.jump}"]`);
+        if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      root.prepend(nav);
+    }
     const titleOf = (k) => {
       if (content[k] && content[k].name) return content[k].name;
       if (overrides[k] && overrides[k].name) return overrides[k].name;

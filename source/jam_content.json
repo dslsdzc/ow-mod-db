@@ -1,4 +1,13 @@
 {
+  "index": [
+    { "key": "jam6", "label": "进行中:时间循环 Mod Jam", "url": "https://outerwildsmods.com/jam/aug-2026", "now": true },
+    { "key": null, "label": "2026 年 2 月:Game Jam", "url": "https://outerwildsmods.com/jam/game-jam-2026" },
+    { "key": null, "label": "2025 年 7 月:迷你恒星系 Mod Jam", "url": "https://outerwildsmods.com/jam/jul-2025" },
+    { "key": null, "label": "2024 年 10 月:极简文本 Mod Jam", "url": "https://outerwildsmods.com/jam/oct-2024" },
+    { "key": null, "label": "2024 年 3 月:单行星 Mod Jam", "url": "https://outerwildsmods.com/jam/mar-2024" },
+    { "key": null, "label": "2023 年 7 月:星际拓荒 Mod Jam", "url": "https://outerwildsmods.com/jam/jul-2023" },
+    { "key": null, "label": "2023 年 1 月:新地平线 Jam", "url": "https://outerwildsmods.com/jam/jan-2023" }
+  ],
   "jam6": {
     "name": "第六届星际拓荒模组节:时间循环",
     "officialUrl": "https://outerwildsmods.com/jam/aug-2026",
