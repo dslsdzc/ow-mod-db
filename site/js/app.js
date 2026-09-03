@@ -726,10 +726,23 @@ function renderDetail(mods) {
   btn.id = "to-top";
   btn.className = "to-top";
   btn.title = "回到顶部";
-  btn.textContent = "\u2227";  // 圆形按钮内的 ∧
-  btn.hidden = true;
-  btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-  window.addEventListener("scroll", () => { btn.hidden = window.scrollY < 400; }, { passive: true });
+  btn.type = "button";
+  btn.setAttribute("aria-label", "回到顶部");
+  btn.innerHTML =
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/></svg>';
+  const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" });
+    btn.blur();
+  });
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    btn.classList.toggle("show", window.scrollY > 320);
+  };
+  window.addEventListener("scroll", () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
   document.body.appendChild(btn);
 })();
 
