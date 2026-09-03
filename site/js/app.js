@@ -94,6 +94,7 @@ function jamKey(m) {
 function renderJams(mods) {
   const root = document.getElementById("jams");
   if (!root) return;
+  try {
   Promise.all([
     fetchJson("data/jams.json").catch(() => ({})),
     fetchJson("data/jam_content.json").catch(() => ({})),
@@ -186,7 +187,12 @@ function renderJams(mods) {
       const sec = p && p.sections && p.sections[Number(si)];
       if (sec && sec.md) renderMarkdownInto(el, sec.md, "", false);
     });
+  }).catch((err) => {
+    root.innerHTML = `<p class="placeholder">Jam 页渲染失败:${esc(err && err.message ? err.message : String(err))}</p>`;
   });
+  } catch (e) {
+    root.innerHTML = `<p class="placeholder">Jam 页渲染失败:${esc(e && e.message ? e.message : String(e))}</p>`;
+  }
 }
 
 function renderHome(mods) {
