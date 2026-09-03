@@ -115,22 +115,30 @@ function renderJams(mods) {
       root.innerHTML = `<p class="placeholder">暂未识别到 Jam 参赛 mod</p>`;
       return;
     }
-    // 历届索引(类官方列表;有本站分组则锚点跳转,否则外链官方)
+    // 历届索引:每个大赛一个跳转 chip(分组锚点或信息页锚点)
     const indexNav = (content.index || []).map((it) => {
-      const local = it.key && entries.some(([k]) => k === it.key);
+      const hasPage = it.page && (content.pages || {})[it.page];
+      const hasBucket = it.key && entries.some(([k]) => k === it.key);
       const label = (it.now ? "▶ " : "") + it.label;
-      return local
-        ? `<button class="chip" data-jump="${esc(it.key)}">${esc(label)}</button>`
-        : `<a class="chip" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+      if (hasPage) {
+        return `<button class="chip" data-scroll="sec-${esc(it.page)}">${esc(label)}</button>`;
+      }
+      if (hasBucket) {
+        return `<button class="chip" data-scroll="${esc(it.key)}">${esc(label)}</button>`;
+      }
+      return `<a class="chip" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(label)}</a>`;
     }).join("") || "";
     if (indexNav) {
       const nav = document.createElement("div");
       nav.className = "chips";
       nav.innerHTML = indexNav;
       nav.addEventListener("click", (e) => {
-        const b = e.target.closest("[data-jump]");
+        const b = e.target.closest("[data-scroll]");
         if (!b) return;
-        const sec = root.querySelector(`section[data-jam="${b.dataset.jump}"]`);
+        const key = b.dataset.scroll;
+        const sec = key.startsWith("sec-")
+          ? root.querySelector(`[data-page="${key.slice(4)}"]`)
+          : root.querySelector(`section[data-jam="${key}"]`);
         if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
       });
       root.prepend(nav);
@@ -138,8 +146,7 @@ function renderJams(mods) {
     const titleOf = (k) => {
       if (content[k] && content[k].name) return content[k].name;
       if (overrides[k] && overrides[k].name) return overrides[k].name;
-      const n = parseInt(k.replace("jam", ""), 10);
-      return n ? `Game Jam ${n}` : (cfg.fallbackTitle || "其他 Jam 作品");
+      return (cfg.fallbackTitle || "其他 Jam 作品");   // 不做数字编号,保持可扩展
     };
     root.innerHTML = entries.map(([k, list]) => {
       list.sort((a, b) => installs(b) - installs(a));
@@ -148,7 +155,7 @@ function renderJams(mods) {
       const sections = (c.sections || []).map((s, i) =>
         `<div class="jam-sec"><h3>${esc(s.h)}</h3><div class="readme jam-md-${k}-${i}"></div></div>`).join("");
       return `<section class="home-section" data-jam="${esc(k)}">
-        <h2>${esc(titleOf(k))} <span class="meta">(${list.length})</span></h2>
+        <h2>${esc(titleOf(k))} <span class="meta">· ${list.length} 个作品</span></h2>
         ${c.introZh ? `<p>${esc(c.introZh)}</p>` : ""}
         ${c.officialUrl ? `<p><a class="link" href="${esc(c.officialUrl)}" target="_blank" rel="noopener">官方届次页面</a></p>` : ""}
         ${o.note && !c.introZh ? `<p>${esc(o.note)}</p>` : ""}
@@ -700,6 +707,19 @@ function renderDetail(mods) {
   initPatchBlock(mod);
   initComments(mod);
 }
+
+(function initToTop() {
+  if (document.getElementById("to-top")) return;
+  const btn = document.createElement("button");
+  btn.id = "to-top";
+  btn.className = "to-top";
+  btn.title = "回到顶部";
+  btn.textContent = "↑";
+  btn.hidden = true;
+  btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  window.addEventListener("scroll", () => { btn.hidden = window.scrollY < 400; }, { passive: true });
+  document.body.appendChild(btn);
+})();
 
 loadMods()
   .then((data) => {
