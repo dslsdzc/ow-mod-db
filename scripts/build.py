@@ -78,6 +78,7 @@ def main() -> None:
     parser.add_argument("--translations", default="source/translations.json")
     parser.add_argument("--readmes", default="source/readmes.json")
     parser.add_argument("--licenses", default="source/license_cache.json")
+    parser.add_argument("--jams", default="source/jams.json")
     parser.add_argument("--releases", default="source/releases_cache.json")
     parser.add_argument("--patches", default="source/translation_patches.json",
                         help="中文汉化补丁注册表")
@@ -129,6 +130,8 @@ def main() -> None:
     licenses = load_json(Path(args.licenses))
     save_json(dist / "data" / "readmes.json", readmes)
     save_json(dist / "data" / "licenses.json", licenses)
+    jams = load_json(Path(args.jams)) if Path(args.jams).exists() else {}
+    save_json(dist / "data" / "jams.json", jams)
     deploy_site(Path(args.site), dist)
     print(f"已生成 {dist/'database.json'} 与 {dist/'data'/'mods.json'},MOD 数: {len(mods_data)}")
 

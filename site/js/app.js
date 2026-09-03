@@ -85,6 +85,50 @@ function sortMods(mods, mode) {
   return copy;
 }
 
+function jamKey(m) {
+  const u = (m.uniqueName || "") + " " + (m.name || "");
+  const hit = u.match(/(?:^|[._\sA-Za-z])(?:OW)?(?:Mod)?Jam\s*(\d+)/i);
+  return hit ? "jam" + hit[1] : (/jam/i.test(u) ? "other" : "");
+}
+
+function renderJams(mods) {
+  const root = document.getElementById("jams");
+  if (!root) return;
+  fetchJson("data/jams.json").catch(() => ({})).then((cfg) => {
+    cfg = cfg || {};
+    const overrides = cfg.overrides || {};
+    const buckets = new Map();
+    for (const m of mods) {
+      const k = jamKey(m);
+      if (!k) continue;
+      if (!buckets.has(k)) buckets.set(k, []);
+      buckets.get(k).push(m);
+    }
+    const entries = [...buckets.entries()]
+      .sort((a, b) => (parseInt(b[0].replace("jam", "")) || 0) - (parseInt(a[0].replace("jam", "")) || 0));
+    if (!entries.length) {
+      root.innerHTML = `<p class="placeholder">暂未识别到 Jam 参赛 mod</p>`;
+      return;
+    }
+    const titleOf = (k) => {
+      if (overrides[k] && overrides[k].name) return overrides[k].name;
+      const n = parseInt(k.replace("jam", ""), 10);
+      return n ? `Game Jam ${n}` : (cfg.fallbackTitle || "其他 Jam 作品");
+    };
+    root.innerHTML = entries.map(([k, list]) => {
+      list.sort((a, b) => installs(b) - installs(a));
+      const o = overrides[k] || {};
+      return `<section class="home-section">
+        <h2>${esc(titleOf(k))} <span class="meta">(${list.length})</span></h2>
+        ${o.note ? `<p>${esc(o.note)}</p>` : ""}
+        ${o.officialUrl ? `<p><a class="link" href="${esc(o.officialUrl)}" target="_blank" rel="noopener">官方届次页面</a></p>` : ""}
+        <div class="grid">${list.map(cardHtml).join("")}</div>
+      </section>`;
+    }).join("");
+    setupAllThumbs(root);
+  });
+}
+
 function renderHome(mods) {
   const total = document.getElementById("mod-total");
   if (total) total.textContent = `目前共有 ${mods.length} 个 MOD、扩展与工具。`;
@@ -602,6 +646,7 @@ loadMods()
       syncInfo.textContent = `数据同步于 ${t} UTC · ${meta.zhDescriptions}/${meta.mods} 个简介已汉化`;
     }
     if (document.getElementById("featured")) renderHome(mods);
+    else if (document.getElementById("jams")) renderJams(mods);
     else if (document.getElementById("mod-grid")) renderList(mods);
     else renderDetail(mods);
   })

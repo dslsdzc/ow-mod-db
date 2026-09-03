@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="全部 MOD — 星际拓荒 MOD 数据库">
+<meta property="og:title" content="历届 Game Jam — 星际拓荒 MOD 数据库">
 <meta property="og:image" content="https://dslsdzc.github.io/ow-mod-db/og.png">
 <meta property="og:type" content="website">
-<title>全部 MOD — 星际拓荒 MOD 数据库</title>
+<title>历届 Game Jam — 星际拓荒 MOD 数据库</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,20 +20,14 @@
   </nav>
 </header>
 <main>
-  <h1>全部 MOD</h1>
-  <div class="controls">
-    <input id="search" type="search" placeholder="搜索 MOD 名称 / 简介…">
-    <select id="sort">
-      <option value="installs">按热门排序</option>
-      <option value="newest">按最新发布</option>
-      <option value="updated">按最近更新</option>
-      <option value="name">按名称</option>
-    </select>
-    <span id="count"></span>
-  </div>
-  <div id="tag-chips" class="chips"></div>
-  <div id="mod-grid" class="grid"></div>
+  <h1>历届 Game Jam</h1>
+  <p class="intro">星际拓荒社区定期举办模组制作 Jam。这里按届自动聚合参赛 MOD(按官方库标签与命名识别),
+  排序按热门度;分组说明与评语可在 <code>source/jams.json</code> 中人工补充。</p>
+  <div id="jams"></div>
 </main>
+<footer>
+  <p>非官方翻译镜像站 · <a class="link" href="https://outerwildsmods.com/jam" target="_blank" rel="noopener">官方 Jam 页面</a></p>
+</footer>
 <script src="js/app.js"></script>
 </body>
 </html>
