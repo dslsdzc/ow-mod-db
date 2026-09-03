@@ -64,6 +64,14 @@ def test_patch_block_markers_present():
     assert "中文支持" in js
 
 
+def test_jams_page_markers():
+    html = (REPO_ROOT / "site" / "jams.html").read_text(encoding="utf-8")
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert 'id="jams"' in html
+    assert "jamKey" in js and "renderJams" in js
+    assert "jam_content.json" in js
+
+
 def test_official_mod_links_rewritten_markers():
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
     assert "rewriteOfficialModLinks" in js

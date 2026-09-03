@@ -94,8 +94,12 @@ function jamKey(m) {
 function renderJams(mods) {
   const root = document.getElementById("jams");
   if (!root) return;
-  fetchJson("data/jams.json").catch(() => ({})).then((cfg) => {
+  Promise.all([
+    fetchJson("data/jams.json").catch(() => ({})),
+    fetchJson("data/jam_content.json").catch(() => ({})),
+  ]).then(([cfg, content]) => {
     cfg = cfg || {};
+    content = content || {};
     const overrides = cfg.overrides || {};
     const buckets = new Map();
     for (const m of mods) {
@@ -111,6 +115,7 @@ function renderJams(mods) {
       return;
     }
     const titleOf = (k) => {
+      if (content[k] && content[k].name) return content[k].name;
       if (overrides[k] && overrides[k].name) return overrides[k].name;
       const n = parseInt(k.replace("jam", ""), 10);
       return n ? `Game Jam ${n}` : (cfg.fallbackTitle || "其他 Jam 作品");
@@ -118,14 +123,27 @@ function renderJams(mods) {
     root.innerHTML = entries.map(([k, list]) => {
       list.sort((a, b) => installs(b) - installs(a));
       const o = overrides[k] || {};
-      return `<section class="home-section">
+      const c = content[k] || {};
+      const sections = (c.sections || []).map((s, i) =>
+        `<div class="jam-sec"><h3>${esc(s.h)}</h3><div class="readme jam-md-${k}-${i}"></div></div>`).join("");
+      return `<section class="home-section" data-jam="${esc(k)}">
         <h2>${esc(titleOf(k))} <span class="meta">(${list.length})</span></h2>
-        ${o.note ? `<p>${esc(o.note)}</p>` : ""}
-        ${o.officialUrl ? `<p><a class="link" href="${esc(o.officialUrl)}" target="_blank" rel="noopener">官方届次页面</a></p>` : ""}
+        ${c.introZh ? `<p>${esc(c.introZh)}</p>` : ""}
+        ${c.officialUrl ? `<p><a class="link" href="${esc(c.officialUrl)}" target="_blank" rel="noopener">官方届次页面</a></p>` : ""}
+        ${o.note && !c.introZh ? `<p>${esc(o.note)}</p>` : ""}
+        ${sections}
+        ${c.sections && c.sections.length ? `<p class="foot-note">译文依据官方 Jam 页面撰写,版权归主办方;参赛作品列表为本站自动聚合。</p>` : ""}
         <div class="grid">${list.map(cardHtml).join("")}</div>
       </section>`;
     }).join("");
     setupAllThumbs(root);
+    root.querySelectorAll(".jam-sec .readme").forEach((el) => {
+      const parts = el.className.match(/jam-md-(.+)-(\d+)$/);
+      if (!parts) return;
+      const c = content[parts[1]];
+      const sec = c && c.sections && c.sections[Number(parts[2])];
+      if (sec && sec.md) renderMarkdownInto(el, sec.md, "", false);
+    });
   });
 }
 
