@@ -95,3 +95,15 @@ def test_deploy_site_copies_files(tmp_path):
     build.deploy_site(site, dist)
     assert (dist / "index.html").exists()
     assert (dist / "css" / "style.css").read_text(encoding="utf-8") == "body {}"
+
+
+def test_meta_with_lang_marks_language_and_counts_cjk():
+    _, zh_mods = build.build_all(_official(), _translations())
+    zh_meta = build.meta_with_lang("zh_cn", zh_mods, "2026-09-03T00:00:00Z")
+    assert zh_meta["lang"] == "zh_cn"
+    assert zh_meta["mods"] == 2
+    assert zh_meta["zhDescriptions"] == 2          # 两个 mod 简介均有译文
+    _, en_mods = build.build_all(_official(), {})  # en = 无翻译
+    en_meta = build.meta_with_lang("en", en_mods, "2026-09-03T00:00:00Z")
+    assert en_meta["lang"] == "en"
+    assert en_meta["zhDescriptions"] == 0          # 官方原文不含中文

@@ -1,6 +1,14 @@
-"""Merge official db + translations into Chinese database.json and site data."""
+"""Merge official db + translations into per-language website data and database.json.
+
+Output layout (multi-language):
+- zh_cn: 根路径不变 — dist/database.json(OWMM URL)+ dist/data/…(中文)
+- ja:    dist/data/ja/…(source/ja 翻译缓存;缺失时回退官方原文)
+- en:    dist/data/en/…(官方原文,翻译恒为空)
+site 静态资源只部署一次到 dist 根。
+"""
 
 import argparse
+import json
 import re
 import shutil
 from datetime import datetime, timezone
@@ -18,6 +26,8 @@ from translation_store import (
 
 SITE_SOURCE = Path("site")
 DIST = Path("dist")
+LANGS = ["zh_cn", "ja", "en"]  # en 为回退用的官方原文(翻译为空)
+_CJK = re.compile(r"[一-鿿]")
 
 
 def translate_mod(mod: dict, translations: dict) -> dict:
@@ -31,7 +41,7 @@ def translate_mod(mod: dict, translations: dict) -> dict:
 
 
 def build_all(official: dict, translations: dict) -> tuple[dict, list[dict]]:
-    database_zh = dict(official)
+    database_lang = dict(official)
     mods_data = []
     for group in ("releases", "alphaReleases"):
         out_group = []
@@ -60,8 +70,38 @@ def build_all(official: dict, translations: dict) -> tuple[dict, list[dict]]:
                     "parent": out_mod.get("parent", ""),
                     "repoVariations": out_mod.get("repoVariations", []),
                 })
-        database_zh[group] = out_group
-    return database_zh, mods_data
+        database_lang[group] = out_group
+    return database_lang, mods_data
+
+
+def meta_with_lang(lang: str, mods: list[dict], generated_at: str) -> dict:
+    """单语言 mods.json 的 meta;zhDescriptions 统计该语言下含中文的简介数。"""
+    return {
+        "generatedAt": generated_at,
+        "mods": len(mods),
+        "zhDescriptions": sum(1 for m in mods if _CJK.search(m.get("description") or "")),
+        "lang": lang,
+    }
+
+
+def patches_payload(path: Path, official: dict) -> dict:
+    """解析并校验汉化补丁注册表(target -> patch);失败只打印不阻塞,返回 {}。"""
+    from patch_registry import patches_to_dict, validate_patches
+
+    if not path.exists():
+        return {}
+    try:
+        patches = json.loads(path.read_text(encoding="utf-8"))
+    except (ValueError, json.JSONDecodeError) as e:
+        print(f"  注册表解析失败(按空表处理): {e}")
+        patches = []
+    if not isinstance(patches, list):
+        print(f"  注册表顶层不是数组(按空表处理): {type(patches).__name__}")
+        patches = []
+    ids = {m.get("uniqueName", "") for m in official.get("releases", [])}
+    for e in validate_patches(patches, ids):
+        print(f"  注册表校验: {e}")
+    return patches_to_dict(patches)
 
 
 def deploy_site(site_dir: Path, dist_dir: Path) -> None:
@@ -75,80 +115,53 @@ def deploy_site(site_dir: Path, dist_dir: Path) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build Chinese database.json and website data")
-    parser.add_argument("--lang", default="zh_cn", help="语言目录代码,如 zh_cn/ja")
+    parser = argparse.ArgumentParser(description="Generate per-language site data and zh database.json")
+    parser.add_argument("--lang", default="zh_cn",
+                        help="语言目录代码(兼容保留;构建固定输出 zh_cn/ja/en 全部语言目录)")
     parser.add_argument("--official", default="source/official.json")
-    parser.add_argument("--translations", default=None)
-    parser.add_argument("--readmes", default=None)
     parser.add_argument("--licenses", default="source/license_cache.json")
-    parser.add_argument("--jams", default=None)
-    parser.add_argument("--jam-content", default=None)
-    parser.add_argument("--releases", default=None)
     parser.add_argument("--patches", default="source/translation_patches.json",
-                        help="中文汉化补丁注册表(语言无关,根目录)")
+                        help="中文汉化补丁注册表(语言无关,各语言目录均写入)")
     parser.add_argument("--site", default=str(SITE_SOURCE))
     parser.add_argument("--dist", default=str(DIST))
     args = parser.parse_args()
 
-    lang = args.lang
-    translations_path = Path(args.translations) if args.translations else lang_file("translations", lang)
-    readmes_path = Path(args.readmes) if args.readmes else lang_file("readmes", lang)
-    releases_path = Path(args.releases) if args.releases else lang_file("releases_cache", lang)
-    jams_path = Path(args.jams) if args.jams else lang_file("jams", lang)
-    jam_content_path = Path(args.jam_content) if args.jam_content else lang_file("jam_content", lang)
-
     official = load_json(Path(args.official))
-    translations = load_translations(translations_path)
-    database_zh, mods_data = build_all(official, translations)
-
     dist = Path(args.dist)
-    data_dir = dist / site_data_dir(lang)
-    data_dir.mkdir(parents=True, exist_ok=True)
-    cjk = re.compile(r"[一-鿿]")
-    meta = {
-        "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "mods": len(mods_data),
-        "zhDescriptions": sum(1 for m in mods_data if cjk.search(m.get("description") or "")),
-    }
-    save_json(dist / "database.json", database_zh)
-    save_json(data_dir / "mods.json", {"mods": mods_data, "meta": meta})
-    # 版本历史: 每 mod 独立小文件,详情页按需加载
-    releases = load_json(releases_path)
-    rel_dir = data_dir / "releases"
-    rel_dir.mkdir(parents=True, exist_ok=True)
-    for unique_name, entry in releases.items():
-        if isinstance(entry, dict) and entry.get("releases"):
-            save_json(rel_dir / f"{unique_name}.json", entry)
-    # 中文汉化补丁注册表(target -> patch;空表为 {});校验只打印,不阻塞构建
-    import json as _json
-    from patch_registry import patches_to_dict, validate_patches
-    _patch_path = Path(args.patches)
-    patches = []
-    if _patch_path.exists():
-        try:
-            patches = _json.loads(_patch_path.read_text(encoding="utf-8"))
-        except (ValueError, _json.JSONDecodeError) as _e:
-            print(f"  注册表解析失败(按空表处理): {_e}")
-            patches = []
-        if not isinstance(patches, list):
-            print(f"  注册表顶层不是数组(按空表处理): {type(patches).__name__}")
-            patches = []
-        _ids = {m.get("uniqueName", "") for m in official.get("releases", [])}
-        for _e in validate_patches(patches, _ids):
-            print(f"  注册表校验: {_e}")
-    save_json(data_dir / "patches.json", patches_to_dict(patches))
-    # README 中文缓存与许可信息(详情页用;readmes 由 scripts/readmes.py 生成)
-    readmes = load_json(readmes_path)
-    licenses = load_json(Path(args.licenses))
-    save_json(data_dir / "readmes.json", readmes)
-    save_json(data_dir / "licenses.json", licenses)
-    jams = load_json(jams_path) if jams_path.exists() else {}
-    save_json(data_dir / "jams.json", jams)
-    jam_content = load_json(jam_content_path) if jam_content_path.exists() else {}
-    save_json(data_dir / "jam_content.json", jam_content)
+    generated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    zh_mod_count = 0
+
+    for lang in LANGS:
+        translations = {}
+        if lang != "en":
+            translations = load_translations(lang_file("translations", lang)) \
+                if lang_file("translations", lang).exists() else {}
+        database_lang, mods_lang = build_all(official, translations)
+        if lang == "zh_cn":
+            zh_mod_count = len(mods_lang)
+        data_dir = dist / site_data_dir(lang)
+        (data_dir / "releases").mkdir(parents=True, exist_ok=True)
+        save_json(data_dir / "mods.json", {"mods": mods_lang, "meta": meta_with_lang(lang, mods_lang, generated_at)})
+        if lang == "zh_cn":
+            save_json(dist / "database.json", database_lang)  # 保持 OWMM URL(仅中文版)
+        # 版本历史: 每 mod 独立小文件,详情页按需加载(各语言缓存各自成目录)
+        releases = load_json(lang_file("releases_cache", lang))
+        rel_dir = data_dir / "releases"
+        for unique_name, entry in releases.items():
+            if isinstance(entry, dict) and entry.get("releases"):
+                save_json(rel_dir / f"{unique_name}.json", entry)
+        # 汉化补丁注册表(target -> patch);校验只打印,不阻塞构建
+        save_json(data_dir / "patches.json", patches_payload(Path(args.patches), official))
+        # README 缓存与许可信息、Jam 数据(详情页/活动页用;无对应语言文件则为空表)
+        readmes = load_json(lang_file("readmes", lang))
+        save_json(data_dir / "readmes.json", readmes)
+        save_json(data_dir / "licenses.json", load_json(Path(args.licenses)))
+        save_json(data_dir / "jams.json", load_json(lang_file("jams", lang)))
+        save_json(data_dir / "jam_content.json", load_json(lang_file("jam_content", lang)))
+
     deploy_site(Path(args.site), dist)
     # 静态资源与数据接口加版本号: 界面不缓存,图片(不在此列)可缓存
-    stamp = meta["generatedAt"].replace(":", "").replace("-", "").replace(".", "Z")[:17]
+    stamp = generated_at.replace(":", "").replace("-", "").replace(".", "Z")[:17]
     for html in dist.glob("*.html"):
         text = html.read_text(encoding="utf-8")
         text = text.replace('src="js/app.js"', f'src="js/app.js?v={stamp}"')
@@ -156,7 +169,8 @@ def main() -> None:
         if 'window.DATA_V' not in text:
             text = text.replace("<head>", f'<head>\n<script>window.DATA_V = "{stamp}";</script>', 1)
         html.write_text(text, encoding="utf-8")
-    print(f"已生成 {dist/'database.json'} 与 {dist/'data'/'mods.json'},MOD 数: {len(mods_data)}")
+    print(f"已生成 {dist/'database.json'}(zh_cn)与站点数据 {', '.join(site_data_dir(l) for l in LANGS)},"
+          f"MOD 数: {zh_mod_count}")
 
 
 if __name__ == "__main__":

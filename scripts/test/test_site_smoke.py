@@ -18,7 +18,8 @@ def _run_build(tmp_path):
         },
     }
     database, mods_data = build.build_all(official, translations)
-    meta = {"generatedAt": "2026-09-02T00:00:00Z", "mods": len(mods_data), "zhDescriptions": 1}
+    meta = build.meta_with_lang("zh_cn", mods_data, "2026-09-02T00:00:00Z")
+    assert meta["lang"] == "zh_cn"  # main() 经同一 helper 生成 meta
     (tmp_path / "data").mkdir(parents=True, exist_ok=True)
     (tmp_path / "database.json").write_text(json.dumps(database, ensure_ascii=False), encoding="utf-8")
     (tmp_path / "data" / "mods.json").write_text(
@@ -100,3 +101,34 @@ def test_patches_payload_shape():
     assert payload == {"Hawkbar.GhostInTheMachine": payload["Hawkbar.GhostInTheMachine"]}
     assert payload["Hawkbar.GhostInTheMachine"]["uniqueName"] == "yyy.CN"
     assert patches_to_dict([]) == {}
+
+
+def test_site_data_dir_drives_outputs(tmp_path, monkeypatch):
+    import build
+    official = json.loads((Path(__file__).parent / "fixtures" / "official.json").read_text(encoding="utf-8"))
+    en_db, en_mods = build.build_all(official, {})          # en = 无翻译
+    assert en_db["releases"][0]["description"].startswith("The mod loader")
+    assert en_mods[0]["description"].startswith("The mod loader")
+
+
+def test_patches_payload_missing_or_broken_is_empty(tmp_path, capsys):
+    import build
+    assert build.patches_payload(tmp_path / "nope.json", {"releases": []}) == {}
+    broken = tmp_path / "broken.json"
+    broken.write_text("{not json", encoding="utf-8")
+    assert build.patches_payload(broken, {"releases": []}) == {}
+    assert "解析失败" in capsys.readouterr().out
+
+
+def test_patches_payload_valid_registry_maps_targets(tmp_path):
+    import build
+    registry = tmp_path / "patches.json"
+    registry.write_text(json.dumps([
+        {"target": "Hawkbar.GhostInTheMachine",
+         "patch": {"uniqueName": "yyy.CN", "name": "补丁", "install": "owmm",
+                   "url": "", "note": "", "addedAt": ""}},
+    ]), encoding="utf-8")
+    official = {"releases": [{"uniqueName": "Hawkbar.GhostInTheMachine"}]}
+    payload = build.patches_payload(registry, official)
+    assert list(payload) == ["Hawkbar.GhostInTheMachine"]
+    assert payload["Hawkbar.GhostInTheMachine"]["uniqueName"] == "yyy.CN"
