@@ -22,6 +22,10 @@ on:
         description: '只翻译前 N 条(0=全部;小规模试译用)'
         type: number
         default: 0
+      lang:
+        description: '语言目录代码(zh_cn=默认;ja 等增量)'
+        type: string
+        default: 'zh_cn'
       concurrency:
         description: '并发批次数(1=最稳;余额档位允许再调高)'
         type: number
@@ -62,7 +66,7 @@ jobs:
         run: python -m pytest scripts/test -q
 
       - name: Sync official database
-        run: python scripts/sync.py
+        run: python scripts/sync.py --lang ${{ inputs.lang || 'zh_cn' }}
 
       # 定时轮询专用: 官方库与快照一致且待翻译清单无变化 → 提前退出,不部署
       - name: Upstream change check
@@ -79,7 +83,7 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/translate.py --concurrency ${{ inputs.concurrency || '1' }} --batch ${{ inputs.batch || '30' }} --limit ${{ inputs.limit || '0' }} ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python scripts/translate.py --lang ${{ inputs.lang || 'zh_cn' }} --concurrency ${{ inputs.concurrency || '1' }} --batch ${{ inputs.batch || '30' }} --limit ${{ inputs.limit || '0' }} ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Translate READMEs (licensed only)
         if: steps.check.outputs.skip != 'true'
@@ -87,7 +91,7 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/readmes.py --concurrency ${{ inputs.concurrency || '4' }} --limit ${{ inputs.readme_limit || '0' }} ${{ inputs.readme_force && '--force' || '' }}
+        run: python scripts/readmes.py --lang ${{ inputs.lang || 'zh_cn' }} --concurrency ${{ inputs.concurrency || '4' }} --limit ${{ inputs.readme_limit || '0' }} ${{ inputs.readme_force && '--force' || '' }}
 
       - name: Refresh releases cache + translate notes (GitHub API)
         if: steps.check.outputs.skip != 'true'
@@ -96,11 +100,12 @@ jobs:
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/releases.py --translate-bodies
+        run: python scripts/releases.py --lang ${{ inputs.lang || 'zh_cn' }} --translate-bodies
 
       - name: Build artifacts
         if: steps.check.outputs.skip != 'true'
-        run: python scripts/build.py
+        # 恒 zh_cn: build 循环固定输出全部语言目录(zh_cn 根路径不变;ja/en 数据由循环统一产出)
+        run: python scripts/build.py --lang zh_cn
 
       - name: Commit translation cache back to main
         if: steps.check.outputs.skip != 'true'
