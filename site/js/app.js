@@ -1,5 +1,10 @@
+function withV(url) {
+  const v = window.DATA_V || "";
+  return v ? url + (url.includes("?") ? "&" : "?") + "v=" + v : url;
+}
+
 async function loadMods() {
-  const resp = await fetch("data/mods.json");
+  const resp = await fetch(withV("data/mods.json"));
   if (!resp.ok) throw new Error("无法加载数据: " + resp.status);
   return resp.json();
 }
@@ -268,7 +273,7 @@ function renderList(mods) {
 }
 
 async function fetchJson(url) {
-  const resp = await fetch(url);
+  const resp = await fetch(withV(url));
   if (!resp.ok) throw new Error(url + " " + resp.status);
   return resp.json();
 }

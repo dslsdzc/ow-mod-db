@@ -136,6 +136,15 @@ def main() -> None:
     jam_content = load_json(Path(args.jam_content)) if Path(args.jam_content).exists() else {}
     save_json(dist / "data" / "jam_content.json", jam_content)
     deploy_site(Path(args.site), dist)
+    # 静态资源与数据接口加版本号: 界面不缓存,图片(不在此列)可缓存
+    stamp = meta["generatedAt"].replace(":", "").replace("-", "").replace(".", "Z")[:17]
+    for html in dist.glob("*.html"):
+        text = html.read_text(encoding="utf-8")
+        text = text.replace('src="js/app.js"', f'src="js/app.js?v={stamp}"')
+        text = text.replace('href="css/style.css"', f'href="css/style.css?v={stamp}"')
+        if 'window.DATA_V' not in text:
+            text = text.replace("<head>", f'<head>\n<script>window.DATA_V = "{stamp}";</script>', 1)
+        html.write_text(text, encoding="utf-8")
     print(f"已生成 {dist/'database.json'} 与 {dist/'data'/'mods.json'},MOD 数: {len(mods_data)}")
 
 
