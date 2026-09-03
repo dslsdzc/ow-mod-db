@@ -714,7 +714,7 @@ function renderDetail(mods) {
   btn.id = "to-top";
   btn.className = "to-top";
   btn.title = "回到顶部";
-  btn.textContent = "↑";
+  btn.textContent = "\u2227";  // 圆形按钮内的 ∧
   btn.hidden = true;
   btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
   window.addEventListener("scroll", () => { btn.hidden = window.scrollY < 400; }, { passive: true });
