@@ -341,6 +341,7 @@ def test_main_dry_run_calls_no_ai(tmp_path, monkeypatch):
         "translate.py", "--pending", "NONEXISTENT", "--dry-run",
         "--translations", str(out), "--human", str(tmp_path / "h.json"),
         "--glossary", str(tmp_path / "g.json"),
+        "--last-glossary", str(tmp_path / "last_glossary.json"),
     ])
 
     def boom(*a, **kw):
