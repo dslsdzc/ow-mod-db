@@ -104,6 +104,8 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
            margin: .7rem 0; background: rgba(255,255,255,.03); }
 .jam-sec h3 { margin: 0 0 .45rem; font-size: 1rem; }
 .jam-sec .readme { font-size: .92rem; }
+.jam-sec ul { columns: 3 240px; column-gap: 1.4rem; padding-left: 1.2rem; }  /* 主题库等长列表多列展示 */
+.jam-sec li { break-inside: avoid; margin-bottom: .12rem; }
 .readme { line-height: 1.8; font-size: .95rem; overflow-wrap: break-word; }
 .readme img { max-width: 100%; height: auto; border-radius: 8px; }
 .readme pre { background: rgba(255,255,255,.06); padding: .8rem 1rem; border-radius: 8px; overflow-x: auto; }
