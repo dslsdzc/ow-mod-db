@@ -165,19 +165,26 @@ function renderJams(mods) {
       if (sec && sec.md) renderMarkdownInto(el, sec.md, "", false);
     });
     // 独立信息页(如 2026 Game Jam,无本地参赛分组)
-    const pagesHtml = Object.entries(content.pages || {}).map(([, p]) => `
-      <section class="home-section jam-sec">
+    const pagesHtml = Object.entries(content.pages || {}).map(([pk, p]) => `
+      <section class="home-section jam-sec" data-page="${esc(pk)}">
         <h2>${esc(p.titleZh || "")}</h2>
         <div class="readme" data-page-md></div>
         <div class="cta-row" style="margin-top:.6rem;">
           <a class="cta" href="${esc(p.url || "#")}" target="_blank" rel="noopener">${esc(p.urlLabelZh || "前往官方页面")}</a>
         </div>
+        ${(p.sections || []).map((s, i) => `<div class="jam-sec"><h3>${esc(s.h)}</h3><div class="readme" data-page-sec="${pk}-${i}"></div></div>`).join("")}
         <p class="foot-note">译文依据官方 Jam 页面撰写,版权归主办方。</p>
       </section>`).join("");
     if (pagesHtml) root.insertAdjacentHTML("beforeend", pagesHtml);
     root.querySelectorAll("[data-page-md]").forEach((el, i) => {
       const p = Object.entries(content.pages || {})[i];
       if (p && p[1].introZh) renderMarkdownInto(el, p[1].introZh, "", false);
+    });
+    root.querySelectorAll("[data-page-sec]").forEach((el) => {
+      const [pk, si] = el.dataset.pageSec.split("-");
+      const p = (content.pages || {})[pk];
+      const sec = p && p.sections && p.sections[Number(si)];
+      if (sec && sec.md) renderMarkdownInto(el, sec.md, "", false);
     });
   });
 }

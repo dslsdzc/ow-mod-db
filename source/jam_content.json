@@ -4,7 +4,13 @@
       "titleZh": "星际拓荒 Game Jam 2026",
       "introZh": "2026 年 2 月至 3 月,主办方尝试了点不一样的形式:不再是常规的 mod jam,而是在星际拓荒 mod 社区成员之间组织了一场 Game Jam。所有投稿须围绕以星际拓荒为中心的不同主题,但投稿本身不一定与星际拓荒相关。\n\n整场活动在另一个网站上举行,规则也与多数 game jam 略有不同。想了解更多、或查看全部游戏,可访问该网站的存档快照:",
       "url": "https://outerwildsmods.com/jam/game-jam-2026",
-      "urlLabelZh": "前往星际拓荒 Game Jam(存档快照)"
+      "urlLabelZh": "前往星际拓荒 Game Jam(存档快照)",
+      "sections": [
+        { "h": "获奖名单", "md": "🥇 第一名:ChronoGreaser(by hawkbar、insmoshable)\n🥈 第二名:glongoboy(by raicuparta)\n🥉 第三名:THRUSTSPARK SCANCAM-22(by thelowedown)" },
+        { "h": "这是什么?", "md": "这是 Game Jam(不是 Mod Jam),与多数 game jam 有几处不同:\n\n- **纯社区投票**:没有做最终决定的评委——这样组织者也能参赛。\n- **一切公开**:活动完全由社区驱动,所有过程记录公开,评分同样公开,社区可监督防止不公。在这里的言行等同于在 Discord 服务器里的言行,违规会牵连你在那边的信誉。\n- **队伍自定开赛时间**:在 jam 进行阶段,队伍准备好即可自行开赛——更容易找到全员合适的时间,同时保持实际制作期很短(2-3 天)。\n- **每队主题不同**:开赛时队伍会随机获得组合主题,这是上一点的必然结果——否则在开赛前就能猜到主题了。" },
+        { "h": "活动阶段", "md": "等待 → 提交主题 → 主题整理 → **Jam 进行中**(选定开赛时间 / 弃用某主题 / 开工!)→ 你的 Jam 结束 → 结算(Jam 收尾)→ **评分与结果**(给作品打分 / 等待结果 / 结果公布)→ 再见!" },
+        { "h": "主题库(73 个,由 18 人提交)", "md": "建设未来(vlad_is_slav)· 选择的幻觉(vambok)· 牺牲(thelowedown)· 不放手(thelowedown)· 模拟(thelowedown)· 记忆(thelowedown)· 学习(.boook)· 必然(.boook)· 直面恐惧(vlad_is_slav)· 放手(vlad_is_slav)· 虚无主义(vlad_is_slav)· 营火(codercleric)· 沙漏(spatialx)· 剧情反转(vambok)· 探测器/侦察(mdj287)· 关灯(mdj287)· 真相藏于黑暗(mdj287)· 命运的幻觉(vambok)· 口袋次元(tertutrocina)· 废弃(spacecornet)· 安康鱼(xen42)· 龙卷风(xen42)· 流星(xen42)· 旅人(xen42)· 终末之时(xen42)· 超新星(xen42)· 143 亿年(xen42)· 喷气背包(xen42)· 跃迁(xen42)· 热寂(xen42)· 垂死恒星(xen42)· 揭示(xen42)· 隐藏(xen42)· 速通(rokevicius)· 朝圣(rokevicius)· 误导信号(rokevicius)· 不可靠的翻译(rokevicius)· 埃内斯托(xen42)· 迷你行星(xen42)· 考古学(xen42)· 动态物理模拟(xen42)· 失明(leespork)· 不祥的环境(thelowedown)· 牛顿壳层定理(leespork)· 数千年后(leespork)· 低太阳轨道(leespork)· 生命循环(etherpod)· 对知识的恐惧(etherpod)· 不确定性(etherpod)· 无语言的交流(_ditzy_)· 翻译(_ditzy_)· 异星语言(_ditzy_)· 远古科技(_ditzy_)· 宇宙飞船(_ditzy_)· 驾驶(_ditzy_)· 宇宙恐怖(_ditzy_)· 非人类物种(_ditzy_)· 揭开过去(_ditzy_)· 探索(_ditzy_)· 孤立(_ditzy_、tertutrocina)· 时间循环(_ditzy_、locochoco)· 时间逆转(locochoco)· 露营(jim2)· 视觉小说(jim2)· 物理定律(locochoco)· 远征(locochoco)· 轨道(_.vesper)· 太空(locochoco)· 相互作用系统(locochoco)· 乐器(_.vesper)· 棉花糖(raicuparta)" }
+      ]
     }
   },
   "index": [
@@ -16,6 +22,21 @@
     { "key": null, "label": "2023 年 7 月:星际拓荒 Mod Jam", "url": "https://outerwildsmods.com/jam/jul-2023" },
     { "key": null, "label": "2023 年 1 月:新地平线 Jam", "url": "https://outerwildsmods.com/jam/jan-2023" }
   ],
+  "jam5": {
+    "name": "第五届星际拓荒模组节:迷你恒星系",
+    "officialUrl": "https://outerwildsmods.com/jam/jul-2025",
+    "introZh": "第五届星际拓荒 Mod Jam:所有作品必须发生在由 Jam 5 基础 mod 提供的共享太阳系内。\n\nJam 已结束,评委试玩、讨论并投票完毕。本届共 16 个投稿,可用 Jam 5 整合包(A-Side / B-Side)一次性试玩全部作品。\n\n🏆 结果:\n🥇 第一名(团队获 $270):辉日研究 Heliostudy(EN,CN,KO,FR,RU)\n🥈 第二名($180):伊甸希望 Eden's Hope\n🥉 第三名($90):宇宙观察者 The Cosmic Curators\n\n(另:微缩忆境 Diorama 获 2025 最佳谜题奖)",
+    "sections": [
+      { "h": "主题", "md": "主题是「微型」(miniature)。\n\n与第三届一样,本届有明确限制:必须使用 New Horizons,把故事限制在半径 2500 米的球体内。空间怎么用没有限制——迷你恒星系、一颗巨型行星或空间站、小行星群、隐藏的梦境世界都可以,只要装得进这个范围!此外,你的作品必须提供一个起始平台,位于所有作品玩家出生地的中央枢纽站内。\n\n照旧这不是 NH 独占 Jam;欢迎用自定义代码为星球添加新玩法机制。最后,所有作品都处于同一个太阳系,因此必须依赖 Jam 5 基础 mod。\n\n如何诠释主题由你决定;请务必阅读规则与评审标准(尤其是限制)。若作品未体现主题或未遵守限制,将无法进入评审。" },
+      { "h": "时长", "md": "🟢 开始:7 月 7 日(周一)01:00\n🔴 结束:7 月 23 日(周三)09:00\n(时区:Asia/Tokyo)\n\n若与其他帖文冲突,以上述时间为准!7 月 20 日在官方 Discord 宣布了延期。" },
+      { "h": "奖项", "md": "奖池由社区捐赠构成。\n\n🥇 第一名:$270\n🥈 第二名:$180\n🥉 第三名:$90\n\n金额为美元。获奖者还将获得 Discord 特殊身份。\n\n奖金仅通过 PayPal 发放,不支持其他方式;参赛免费。" },
+      { "h": "规则", "md": "❔ 作品必须依赖 Jam 5 基础 mod 以保证兼容;基础 mod 会处理大部分问题,但实现功能时仍需注意兼容性(例如不能改变时间循环长度)。作品必须定义中央枢纽的起始平台与迷你恒星系中心,否则视为无效。\n\n🛤️ 依赖只能是工具类 mod(如 New Horizons、Slate's Shipyard、VanillaFix 等)。\n\n⏱️ 截止前须在 GitHub 上传至少一个 release;截止外的 release 不计;不要覆盖旧 release(会改变上传时间)。\n\n🙋 每人只能参与一个投稿:不能投多个 mod、不能既单人又组队、不能加入多队。\n\n👮 所有投稿须遵守 Mobius Digital 粉丝内容政策。\n\n🛠️ 只能使用你有许可的素材;游戏内素材之外,可用有许可的模型/贴图/声音等,须理解并遵守其许可,同样须符合粉丝内容政策。" },
+      { "h": "评审标准", "md": "💭 主题契合度如何?\n\n💅 打磨程度:重质不重量。\n\n👤 综合观感:评委(据称)也是人,评审主要由个人观感驱动;标准只是参考指南。\n\n🚢 请尽量使用飞船日志,尤其是通关后给予的那条!评委迷路时,日志能让他们快速回到正轨而不受挫——迷路会负面影响得分。\n\n❔ 所有作品都在同一恒星系添加行星,你的作品应能与其他所有作品同时启用共存!\n\n指南可能随 Jam 进展调整;投稿足够时也可能尝试社区投票;通常评委各自排序后汇总,前三名接近时可能宣布并列。" },
+      { "h": "如何参与", "md": "TL;DR:在 Jam 期间上传一个 mod,并在提交到 mod 数据库时打上 jam 标签。\n\n向星际拓荒 mod 数据库提交作品;先读 OWML 文档,用 NH 则再读 New Horizons 文档。\n\n**截止前上传 release**:GitHub release 资产必须在截止前上传;投稿数据库可以晚于截止,只要截止内已上传有效 release。⚠️ 不要覆盖旧 release(会改变上传时间),请单独上传新 release;截止后上传的 release 会被忽略,以截止内最新者为准。\n\n**提交数据库时使用 jam 标签**,再附上其他合适标签。" },
+      { "h": "组队", "md": "可自由组队,建议 2-3 人(否则投稿数可能不足以让 Jam 有趣)。奖金在所有队员间平分,没有例外。想找队友可去官方 Discord 询问。" },
+      { "h": "联系我们", "md": "有更多问题或想讨论 Jam、modding,加入官方 Discord(#jam-chat),并到 Channels & Roles 领取 Jam 身份以接收更新。" }
+    ]
+  },
   "jam6": {
     "name": "第六届星际拓荒模组节:时间循环",
     "officialUrl": "https://outerwildsmods.com/jam/aug-2026",
