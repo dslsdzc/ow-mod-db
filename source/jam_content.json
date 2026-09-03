@@ -1,5 +1,21 @@
 {
   "pages": {
+    "jan-2023": {
+      "titleZh": "新地平线 Jam(2023 年 1 月,第一届)",
+      "introZh": "Jam 已结束!评委试玩全部作品后投票,结果出现了并列——主办方临时调整:不再分一二三名,而是扩充奖池,改设四位获奖者:两个并列第一、两个并列第二!\n\n🏆 结果:\n🥇 第一名(每队 $100):撤离 Evacuation、Arcanum Adrift\n🥈 第二名(每队 $75):The Machine、Archipelago\n\n本届共 14 个投稿。",
+      "url": "https://outerwildsmods.com/jam/jan-2023",
+      "urlLabelZh": "官方届次页面",
+      "sections": [
+        { "h": "主题", "md": "第一届新地平线 Jam:一周时间为星际拓荒制作自定义内容,主题在开赛后公布。\n\n用 New Horizons 添加内容即可,形式自定:改造原太阳系的行星、加几颗新行星、做一整个新星系、甚至加入自定义模型/贴图/声音/对话——NH 文档会说明一切可能。\n\n**不需要任何编程知识!**\n\n主题为「发条」(CLOCKWORK)与「层叠」(LAYERS)。可二选一或两者兼顾,只跟一个主题不会被扣分。" },
+        { "h": "时长", "md": "🟢 开始:1 月 15 日(周日)02:00\n🔴 结束:1 月 24 日(周二)02:00\n(时区:Asia/Tokyo)" },
+        { "h": "奖项", "md": "🥇 第一名:$100\n🥈 第二名:$75\n🥉 第三名:$50\n\n金额为美元。获奖者还将获得 Discord 特殊身份;另有若干 Steam key 会发给获奖者或其他参与者(待定)。\n\n奖金仅通过 PayPal 发放;参赛免费。" },
+        { "h": "规则", "md": "🌑 投稿必须是 New Horizons 的开源 addon。\n\n📜 无自定义代码:只能使用 NH 基础 config dll,即 NH JSON 配置、XML 文本资源与 Unity 制作的 asset bundle(可含自定义贴图/模型/声音等)——即 NH 支持的一切,唯独不能写代码。\n\n🛤️ 无额外依赖:作品只能依赖 New Horizons 一个 mod。\n\n⏱️ 截止前须在 GitHub 上传至少一个 release;截止外的 release 不计;不要覆盖旧 release。\n\n🙋 每人只能参与一个投稿。\n\n👮 所有投稿须遵守 Mobius Digital 粉丝内容政策。\n\n🛠️ 只能使用你有许可的素材;并须符合粉丝内容政策。" },
+        { "h": "评审标准", "md": "💭 主题契合度(有两个主题,可只跟一个,不会被扣分;单主题做到极致可以与双主题都做到尚可相提并论)。\n\n💅 打磨程度:一颗打磨完善的行星胜过 20 颗空壳行星。\n\n🌑 对 New Horizons 的运用:本届目的在于把 NH 用到极限,创造性地充分利用 NH 的作品更受青睐;但仍是质量优先——把几个特性用得出彩,好过无意义地堆砌全部特性。\n\n🖼️ 素材运用:无论自建素材还是复用游戏内素材,都应贴合所在世界;整体视音频质感与协调性会被纳入考量——高模高贴图并不代表什么,如果周围一切没达到同样标准。\n\n👤 综合观感:评审主要由个人观感驱动;标准只是参考。指南可能随 Jam 进展调整;通常评委各自排序后汇总;前三名接近时可能宣布并列。" },
+        { "h": "如何参与", "md": "TL;DR:在 Jam 期间上传一个无自定义代码的 New Horizons addon,并在提交到 mod 数据库时打上 jam 标签。\n\n向星际拓荒 mod 数据库提交 NH addon;先读 New Horizons 文档。作品不能有自定义代码:mod 里唯一的 dll 应是 New Horizons Addon 模板自带的 NewHorizonsConfig.dll;可用 asset bundle 添加自定义内容(模型/贴图/声音等)。\n\n工具:NH 文档说明如何用 VS Code 等编辑 JSON;也可以使用 New Horizons Config Editor App(图形界面)。\n\n**截止前上传 release**:用官方 Addon 模板(推荐)的话,在 manifest.json 升版本号即可自动生成 release。投稿数据库可晚于截止,只要截止内已上传有效 release。⚠️ 不要覆盖旧 release;用模板自动发版则无需担心。截止后的 release 会被忽略。\n\n**提交数据库时使用 jam 标签**,再附其他合适标签(如 content)。" },
+        { "h": "组队", "md": "可自由组队,建议 2-3 人。奖金在所有队员间平分,没有例外。想找队友可去官方 Discord 询问。" },
+        { "h": "联系我们", "md": "有疑问或想讨论,加入官方 Discord(#nh-jam 频道),并到 #get-roles 领取 Jam 身份以接收更新。" }
+      ]
+    },
     "jul-2023": {
       "titleZh": "第二届星际拓荒 Mod Jam(2023 年 7 月)",
       "introZh": "Jam 已结束!评委试玩、讨论并投票完毕,第二届星际拓荒 Mod Jam 落幕。\n\n🏆 结果:\n🥇 第一名(团队获 $100):哈斯邻居 Hearth's Neighbor(跃迁到近邻恒星系,其中藏着秘密…)\n🥈 第二名($66):Tesseract's Secret(短篇剧情 mod,查看飞船日志开始!)\n🥉 第三名($34):Mindscapes(走进他人的内心,劝说他们在迫近的毁灭前撤离)\n\n本届共 7 个投稿。",
