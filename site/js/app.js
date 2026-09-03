@@ -151,7 +151,8 @@ function renderJams(mods) {
     const titleOf = (k) => {
       if (content[k] && content[k].name) return content[k].name;
       if (overrides[k] && overrides[k].name) return overrides[k].name;
-      return (cfg.fallbackTitle || "其他 Jam 作品");   // 不做数字编号,保持可扩展
+      if (k === "other") return (cfg.fallbackTitle || "其他 Jam 作品");
+      return "历届 Jam 届次(待补充)";   // 不做数字编号,保持可扩展
     };
     root.innerHTML = entries.map(([k, list]) => {
       list.sort((a, b) => installs(b) - installs(a));
@@ -161,15 +162,19 @@ function renderJams(mods) {
         `<div class="jam-sec"><h3>${esc(s.h)}</h3><div class="readme jam-md-${k}-${i}"></div></div>`).join("");
       return `<section class="home-section" data-jam="${esc(k)}">
         <h2>${esc(titleOf(k))} <span class="meta">· ${list.length} 个作品</span></h2>
-        ${c.introZh ? `<p>${esc(c.introZh)}</p>` : ""}
-        ${c.officialUrl ? `<p><a class="link" href="${esc(c.officialUrl)}" target="_blank" rel="noopener">官方届次页面</a></p>` : ""}
-        ${o.note && !c.introZh ? `<p>${esc(o.note)}</p>` : ""}
+        ${c.introZh ? `<div class="readme" data-bucket-md="${esc(k)}"></div>` : ""}
+        ${(c.officialUrl || o.officialUrl) ? `<p><a class="link" href="${esc(c.officialUrl || o.officialUrl)}" target="_blank" rel="noopener">官方届次页面</a></p>` : ""}
         ${sections}
         ${c.sections && c.sections.length ? `<p class="foot-note">译文依据官方 Jam 页面撰写,版权归主办方;参赛作品列表为本站自动聚合。</p>` : ""}
         <div class="grid">${list.map(cardHtml).join("")}</div>
       </section>`;
     }).join("");
     setupAllThumbs(root);
+    // 分组简介与章节正文: 统一走 markdown(保列表/换行),按组作用域查找
+    root.querySelectorAll("[data-bucket-md]").forEach((el) => {
+      const c = content[el.dataset.bucketMd];
+      if (c && c.introZh) renderMarkdownInto(el, c.introZh, "", true);
+    });
     root.querySelectorAll(".jam-sec .readme").forEach((el) => {
       const parts = el.className.match(/jam-md-(.+)-(\d+)$/);
       if (!parts) return;
@@ -189,15 +194,16 @@ function renderJams(mods) {
         <p class="foot-note">译文依据官方 Jam 页面撰写,版权归主办方。</p>
       </section>`).join("");
     if (pagesHtml) root.insertAdjacentHTML("beforeend", pagesHtml);
-    root.querySelectorAll("[data-page-md]").forEach((el, i) => {
-      const p = Object.entries(content.pages || {})[i];
-      if (p && p[1].introZh) renderMarkdownInto(el, p[1].introZh, "", false);
-    });
-    root.querySelectorAll("[data-page-sec]").forEach((el) => {
-      const [pk, si] = el.dataset.pageSec.split("-");
-      const p = (content.pages || {})[pk];
-      const sec = p && p.sections && p.sections[Number(si)];
-      if (sec && sec.md) renderMarkdownInto(el, sec.md, "", false);
+    // 信息页正文:按页作用域填充,避免全局选择器错位
+    Object.entries(content.pages || {}).forEach(([pk, p]) => {
+      const sec = root.querySelector(`[data-page="${pk}"]`);
+      if (!sec) return;
+      const mdBox = sec.querySelector("[data-page-md]");
+      if (mdBox && p.introZh) renderMarkdownInto(mdBox, p.introZh, "", true);
+      (p.sections || []).forEach((s, i) => {
+        const box = sec.querySelector(`[data-page-sec="${pk}-${i}"]`);
+        if (box && s.md) renderMarkdownInto(box, s.md, "", false);
+      });
     });
   }).catch((err) => {
     root.innerHTML = `<p class="placeholder">Jam 页渲染失败:${esc(err && err.message ? err.message : String(err))}</p>`;

@@ -1,5 +1,8 @@
 {
   "_说明": "历届 Jam 分组的人工补充(可选)。键为识别出的届次(如 jam5),name 覆盖默认标题,officialUrl 附官方页,note 自由评语(方案2预留)。留空则全自动。",
-  "overrides": {},
+  "overrides": {
+    "jam1": { "name": "第一届:新地平线 Jam(2023-01)" },
+    "jam2": { "name": "第二届:星际拓荒 Mod Jam(2023-07)" }
+  },
   "fallbackTitle": "其他 Jam 作品"
 }
