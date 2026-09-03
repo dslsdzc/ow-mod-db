@@ -108,11 +108,23 @@ function renderJams(mods) {
     content = content || {};
     const overrides = cfg.overrides || {};
     const buckets = new Map();
+    const byId = new Map(mods.map((m) => [m.uniqueName, m]));
+    const add = (k, m) => {
+      if (!buckets.has(k)) buckets.set(k, []);
+      buckets.get(k).push(m);
+    };
+    // 无人工成员表(key 无 members)的才用自动识别,保证届次计数与官方一致
     for (const m of mods) {
       const k = jamKey(m);
       if (!k) continue;
-      if (!buckets.has(k)) buckets.set(k, []);
-      buckets.get(k).push(m);
+      const curated = content[k] && content[k].members;
+      if (!curated) add(k, m);
+    }
+    for (const [k, c] of Object.entries(content)) {
+      for (const uid of (c && c.members) || []) {
+        const m = byId.get(uid);
+        if (m) add(k, m);
+      }
     }
     const entries = [...buckets.entries()]
       .sort((a, b) => (parseInt(b[0].replace("jam", "")) || 0) - (parseInt(a[0].replace("jam", "")) || 0));

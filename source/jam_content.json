@@ -183,6 +183,19 @@
     "h": "联系我们",
     "md": "有更多问题或想讨论 Jam、modding,加入官方 Discord(#jam-chat),并到 Channels & Roles 领取 Jam 身份以接收更新。"
    }
+  ],
+  "members": [
+   "xen.UnofficialJam3Entry",
+   "Echatsum.CallisThesis",
+   "MegaPiggy.Axiom",
+   "CrypticBird.Jam3",
+   "coderCleric.JamHub",
+   "Hawkbar.SolarRangers",
+   "orclecle.Finis",
+   "TeamErnesto.OWJam3ModProject",
+   "Trifid.TrifidJam3",
+   "pikpik_carrot.BandTogether",
+   "GameWyrm.HearthsNeighbor2"
   ]
  },
  "jam4": {
@@ -226,6 +239,18 @@
     "h": "联系我们",
     "md": "有更多问题或想讨论 Jam、modding,加入官方 Discord(#jam-chat),并到 Channels & Roles 领取 Jam 身份以接收更新。"
    }
+  ],
+  "members": [
+   "MegaPiggy.Jam4JokeEntry",
+   "TeamMitis.Liaison",
+   "pikpik_carrot,shoe,TextureTurtle.2024FallJam",
+   "AsymmetricalCavern.LonesomeLake",
+   "Echatsum.MisfiredJump",
+   "orclecle.Guardian",
+   "2walker2.OWJam4ModProject",
+   "Etherpod.LuminaTerra",
+   "xen.EscapeRoomJam4",
+   "Hawkbar.GreenFlameBlade"
   ]
  },
  "jam5": {
@@ -265,6 +290,24 @@
     "h": "联系我们",
     "md": "有更多问题或想讨论 Jam、modding,加入官方 Discord(#jam-chat),并到 Channels & Roles 领取 Jam 身份以接收更新。"
    }
+  ],
+  "members": [
+   "Boreas.Jam5CakeCapere",
+   "APOLLO.939sPlanetdotSTRUCTURE",
+   "Ender.Beryl.BrightSpark",
+   "Onbvb.catastrophe",
+   "Trifid.TrifidJam5",
+   "Etherpod.T0187",
+   "MegaPiggy.AnomalyResearchAndContainment",
+   "LeeSpork.ModJam5",
+   "Vambok.HearthianParable",
+   "Hawkbar.Terrarium",
+   "TeamGeswaldo.Jam5",
+   "orclecle.Jam5PingBox",
+   "CantAffordaName.OnARail",
+   "TheLoweDown256.TLDJam5",
+   "TheSignalJammers.FifthModJam",
+   "2walker2.OWJam5ModProject"
   ]
  },
  "jam6": {
@@ -308,6 +351,16 @@
     "h": "联系我们",
     "md": "有更多问题或想讨论 Jam、modding 相关话题,欢迎加入官方 Discord(#jam-chat 频道)。也请到服务器顶部的 Channels & Roles 领取 Jam 身份,以便收到 Jam 更新通知。"
    }
+  ],
+  "members": [
+   "Olallieberry.BorrowedTomorrows",
+   "LeeSpork.Jam6",
+   "TeamFred.ThroughTheAges",
+   "GameWyrm.HotelPenumbra",
+   "RiddleMajor.No_Time_To_Waste",
+   "Known-Mouse.EchoesOfTheObserver",
+   "orclecle.EyeWitness",
+   "Hawkbar.GhostInTheMachine"
   ]
  }
 }
