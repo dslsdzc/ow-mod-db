@@ -65,8 +65,10 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .detail h1 { margin: .25rem 0; }
 .detail .meta { color: rgba(255,255,255,.65); margin-bottom: 1rem; }
 .detail .buttons { display: flex; gap: .75rem; margin: 1rem 0; }
+.detail .buttons { flex-wrap: wrap; row-gap: .5rem; }
 .detail .buttons a { padding: .55rem 1.2rem; border-radius: 8px; text-decoration: none;
-                     background: #ff9c86; color: #0b0d10; font-weight: 600; }
+                     background: #ff9c86; color: #0b0d10; font-weight: 600;
+                     white-space: nowrap; }   /* 按钮文字不折行,整体换行 */
 .detail .buttons a.secondary { background: rgba(255,255,255,.12); color: #fff; }
 .buttons-second { display: flex; margin-top: .5rem; }
 .buttons-second a { padding: .35rem .9rem; border-radius: 6px; text-decoration: none;
