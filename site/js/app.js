@@ -121,7 +121,7 @@ function renderJams(mods) {
       return;
     }
     // 历届索引:每个大赛一个跳转 chip(分组锚点或信息页锚点)
-    const indexNav = (content.index || []).map((it) => {
+    const navHtml = (content.index || []).map((it) => {
       const hasPage = it.page && (content.pages || {})[it.page];
       const hasBucket = it.key && entries.some(([k]) => k === it.key);
       const label = (it.now ? "▶ " : "") + it.label;
@@ -133,21 +133,6 @@ function renderJams(mods) {
       }
       return `<a class="chip" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(label)}</a>`;
     }).join("") || "";
-    if (indexNav) {
-      const nav = document.createElement("div");
-      nav.className = "chips";
-      nav.innerHTML = indexNav;
-      nav.addEventListener("click", (e) => {
-        const b = e.target.closest("[data-scroll]");
-        if (!b) return;
-        const key = b.dataset.scroll;
-        const sec = key.startsWith("sec-")
-          ? root.querySelector(`[data-page="${key.slice(4)}"]`)
-          : root.querySelector(`section[data-jam="${key}"]`);
-        if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-      root.prepend(nav);
-    }
     const titleOf = (k) => {
       if (content[k] && content[k].name) return content[k].name;
       if (overrides[k] && overrides[k].name) return overrides[k].name;
@@ -169,6 +154,22 @@ function renderJams(mods) {
         <div class="grid">${list.map(cardHtml).join("")}</div>
       </section>`;
     }).join("");
+    // 跳转条必须在 innerHTML 之后插入(否则会被覆盖)
+    if (navHtml) {
+      const nav = document.createElement("div");
+      nav.className = "chips";
+      nav.innerHTML = navHtml;
+      nav.addEventListener("click", (e) => {
+        const b = e.target.closest("[data-scroll]");
+        if (!b) return;
+        const key = b.dataset.scroll;
+        const sec = key.startsWith("sec-")
+          ? root.querySelector(`[data-page="${key.slice(4)}"]`)
+          : root.querySelector(`section[data-jam="${key}"]`);
+        if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      root.prepend(nav);
+    }
     setupAllThumbs(root);
     // 分组简介与章节正文: 统一走 markdown(保列表/换行),按组作用域查找
     root.querySelectorAll("[data-bucket-md]").forEach((el) => {
