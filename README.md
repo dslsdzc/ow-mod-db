@@ -51,10 +51,11 @@
 
 ### 新增语言
 
-1. 建 `source/<code>/` 目录,放入与 zh_cn 同构的空种子(translations/readmes/releases_cache/human_translations/glossary 等为 `{}`;`pending.json` 不用手建,`sync.py --lang <code>` 会生成)
+1. 建 `source/<code>/` 目录,放入与 zh_cn 同构的空种子(translations/readmes/releases_cache/human_translations/glossary 等为 `{}`;`pending.json` 不用手建,`sync.py --lang <code>` 会生成);`jams.json` 与 `jam_content.json`(Jam 届次与页面内容,**每语言一份、人工策展**,可先复制 zh_cn 再译;缺失时站点按默认渲染)
 2. 填充该语言术语词典 `source/<code>/glossary.json`(空词典 = 全部交给 AI 直译)
 3. 翻译缓存映射表 `source/<code>/translations.json` 由流水线自动生成;人工精校走 `source/<code>/human_translations.json`,优先级高于 AI
-4. 站点侧登记显示语言与数据目录代码(见 site/js/i18n.js),并在 CI 的 `workflow_dispatch` 选该 `lang` 跑通一轮验证
+4. 代码侧登记两处,漏一处则新语言不生效:`scripts/build.py` 的 `LANGS`(现 `["zh_cn","ja","en"]`;末位 `en` 为官方原文回退数据,勿删)追加该目录代码;站点侧登记显示语言与数据目录代码及切换器选项(见 site/js/i18n.js 的词典、语言切换器与 `LANG_DIR` 映射)——否则 `dist/` 不产出新语言目录、切换器也不可选
+5. 在 CI 的 `workflow_dispatch` 选该 `lang` 跑通一轮验证
 
 ### ja 术语取证要求
 

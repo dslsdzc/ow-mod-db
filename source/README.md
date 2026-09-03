@@ -49,6 +49,15 @@ AI 翻译必须遵守的术语对照,分两节:
 | `<lang>/releases_cache.json` | 版本发布说明缓存 | 版本抓取时 |
 | `<lang>/last_glossary.json` | 上次生效的术语表快照(变更检测用) | 每次成功翻译后 |
 
+另有一组**人工策展**文件(每语言一份,勿由脚本生成;`build.py` 与站点只读取,缺失时按默认渲染):
+
+| 文件 | 内容 |
+|---|---|
+| `<lang>/jams.json` | Jam 届次人工补充(名称覆盖、官方页链接、评语等) |
+| `<lang>/jam_content.json` | Jam 页面届次介绍文案(规则与说明) |
+
+新增语言时随种子一起放入,先复制 zh_cn 再翻译改写。
+
 根目录共享(语言无关,由 CI 生成):
 
 | 文件 | 内容 | 何时重写 |
@@ -59,7 +68,7 @@ AI 翻译必须遵守的术语对照,分两节:
 ## 多语言
 
 - **目录代码与显示语言映射**: `zh_cn` ↔ 简体中文(默认)、`ja` ↔ 日本語。站点侧 zh_cn 数据在根 `data/`,其余语言在 `data/<lang>/`;ja 数据缺失/未翻译时回退官方英文原文,不空白。
-- **新增语言**: ① 建 `source/<code>/` 目录,种子与 zh_cn 同构(空表即可;`pending.json` 不用手建,`sync.py --lang <code>` 自动生成);② 填该语言术语词典 `<code>/glossary.json`(空词典 = 全部交给 AI 直译);③ 译文映射表 `<code>/translations.json` 由流水线自动生成,人工精校走 `<code>/human_translations.json`;④ 站点侧登记显示语言与数据目录代码(site/js/i18n.js),并在 CI 的 workflow_dispatch 选该 `lang` 试跑验证。
+- **新增语言**: ① 建 `source/<code>/` 目录,种子与 zh_cn 同构(空表即可;`pending.json` 不用手建,`sync.py --lang <code>` 自动生成;`jams.json`/`jam_content.json` 属人工策展,见上表,复制 zh_cn 后改);② 填该语言术语词典 `<code>/glossary.json`(空词典 = 全部交给 AI 直译);③ 译文映射表 `<code>/translations.json` 由流水线自动生成,人工精校走 `<code>/human_translations.json`;④ 代码侧登记 `scripts/build.py` 的 `LANGS`(现 `["zh_cn","ja","en"]`)与站点侧 `site/js/i18n.js`(词典、语言切换器选项与 `LANG_DIR` 映射)各一处——漏掉则 `dist` 不产出新语言目录或切换器不可选;⑤ 在 CI 的 workflow_dispatch 选该 `lang` 试跑验证。
 - **ja 术语取证要求**: 日本語术语词典必须**人工从游戏官方日文版逐条取证后填充**,官方日文译名常与字面翻译不同,勿凭 AI/机翻猜测(如 Nomai → ノマイ)。
 
 ## 许可说明
