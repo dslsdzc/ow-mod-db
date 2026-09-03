@@ -82,6 +82,9 @@ window.I18N = {
   let lang = FALLBACK;
   try { lang = localStorage.getItem(LANG_KEY) || FALLBACK; } catch (e) { /* ignore */ }
   if (!DICT[lang]) lang = FALLBACK;
+  // 当前界面语言对应的数据目录代码(zh_cn 数据在根 data/ 下,其余在 data/<code>/ 下)
+  const LANG_DIR = { "zh-CN": "zh_cn", ja: "ja" };
+  window.LANG_DIR_CODE = LANG_DIR[lang] || "zh_cn";
 
   window.t = function t(key, params) {
     const table = DICT[lang] || DICT[FALLBACK] || {};

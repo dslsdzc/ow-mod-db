@@ -132,3 +132,10 @@ def test_patches_payload_valid_registry_maps_targets(tmp_path):
     payload = build.patches_payload(registry, official)
     assert list(payload) == ["Hawkbar.GhostInTheMachine"]
     assert payload["Hawkbar.GhostInTheMachine"]["uniqueName"] == "yyy.CN"
+
+
+def test_site_data_lang_routing_markers():
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    i18n = (REPO_ROOT / "site" / "js" / "i18n.js").read_text(encoding="utf-8")
+    assert "contentUrl" in js and "fetchContent" in js
+    assert "zh_cn" in i18n and "LANG_DIR_CODE" in i18n

@@ -1,12 +1,11 @@
-function withV(url) {
-  const v = window.DATA_V || "";
-  return v ? url + (url.includes("?") ? "&" : "?") + "v=" + v : url;
+// zh_cn 数据在根 data/ 下,其余语言在 data/<lang_dir>/ 下;统一带 DATA_V 缓存戳
+function contentUrl(name) {
+  const base = (window.LANG_DIR_CODE === "zh_cn") ? "data/" : "data/" + window.LANG_DIR_CODE + "/";
+  return base + name + "?v=" + (window.DATA_V || "");
 }
 
 async function loadMods() {
-  const resp = await fetch(withV("data/mods.json"));
-  if (!resp.ok) throw new Error("无法加载数据: " + resp.status);
-  return resp.json();
+  return fetchContent("mods.json");
 }
 
 function esc(s) {
@@ -101,8 +100,8 @@ function renderJams(mods) {
   if (!root) return;
   try {
   Promise.all([
-    fetchJson("data/jams.json").catch(() => ({})),
-    fetchJson("data/jam_content.json").catch(() => ({})),
+    fetchContent("jams.json").catch(() => ({})),
+    fetchContent("jam_content.json").catch(() => ({})),
   ]).then(([cfg, content]) => {
     cfg = cfg || {};
     content = content || {};
@@ -292,9 +291,18 @@ function renderList(mods) {
 }
 
 async function fetchJson(url) {
-  const resp = await fetch(withV(url));
+  const resp = await fetch(url);
   if (!resp.ok) throw new Error(url + " " + resp.status);
   return resp.json();
+}
+
+// 先所选语言目录,404/缺失时回退官方英文(data/en/)——zh_cn 根目录即中文,无需第二跳
+async function fetchContent(name) {
+  const resp = await fetch(contentUrl(name));
+  if (resp.ok) return resp.json();
+  const respEn = await fetch("data/en/" + name + "?v=" + (window.DATA_V || ""));
+  if (respEn.ok) return respEn.json();
+  throw new Error("content 加载失败: " + name);
 }
 
 // ---- 按需翻译: 微软 Edge 免费端点(KISS Translator 同源实现,免鉴权,浏览器直连) ----
@@ -389,7 +397,7 @@ function initPatchBlock(mod) {
   const section = document.getElementById("patch-section");
   const box = document.getElementById("patch-box");
   if (!section || !box) return;
-  fetchJson("data/patches.json")
+  fetchContent("patches.json")
     .then((patches) => {
       const p = patches[mod.uniqueName];
       if (!p) { section.remove(); return; }
@@ -414,7 +422,7 @@ function initReleases(mod) {
   const section = document.getElementById("releases-section");
   const list = document.getElementById("releases-list");
   if (!section || !list) return;
-  fetchJson("data/releases/" + encodeURIComponent(mod.uniqueName) + ".json")
+  fetchContent("releases/" + encodeURIComponent(mod.uniqueName) + ".json")
     .then((data) => {
       const rels = (data && data.releases) || [];
       if (!rels.length) { section.remove(); return; }
@@ -581,8 +589,8 @@ function initReadme(mod) {
   (async () => {
     try {
       const [readmes, licenses] = await Promise.all([
-        fetchJson("data/readmes.json").catch(() => ({})),
-        fetchJson("data/licenses.json").catch(() => ({})),
+        fetchContent("readmes.json").catch(() => ({})),
+        fetchContent("licenses.json").catch(() => ({})),
       ]);
       const zh = readmes[mod.uniqueName];
       const lic = licenses[mod.uniqueName] || "";
