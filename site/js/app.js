@@ -678,7 +678,7 @@ function renderDetail(mods) {
         ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">源代码仓库</a>` : ""}
       </div>
       ${mod.slug ? `<div class="buttons-second">
-        <a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/" target="_blank" rel="noopener">下载统计</a>
+        <a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/#downloads" target="_blank" rel="noopener">下载统计</a>
       </div>` : ""}
       ${mod.description ? `<div class="section"><h3>简介</h3><div class="readme" id="desc-md"></div></div>` : ""}
       ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><div class="readme" id="release-md"></div></div>` : ""}
