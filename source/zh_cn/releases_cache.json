@@ -16123,14 +16123,14 @@
     ]
   },
   "orclecle.EyeWitness": {
-    "repoUpdatedAt": "2026-09-03T23:09:26Z",
+    "repoUpdatedAt": "2026-09-03T23:39:57Z",
     "releases": [
       {
         "tag": "v1.4.0",
         "name": "Version 1.4.0",
         "date": "2026-09-03",
         "body": "Finally, I have added a specific session to a certain location. (Regarding the accompanying text: I used machine translation for the Chinese version, so I would appreciate it if you could review it when you have the time, @SanBaiMing and @GeBlaster )\r\n\r\nTo be honest, I think that drawing was enough to convey the essence, but I just really wanted to give this a try as well ;;)",
-        "bodyZh": "最后，我在某个特定位置添加了一个特定会话。（关于附加文本：我使用了机器翻译来制作中文版本，所以如果您有时间，我会很感激您能进行审阅，@SanBaiMing 和 @GeBlaster ）\n\n说实话，我认为那张图已经足够传达其精髓了，但我真的只是想也尝试一下 ;;)",
+        "bodyZh": "最后，我在某个特定位置添加了一个特定会话。（关于附加文本：我使用了机器翻译来制作中文版本，所以如果你有时间的话，我会很感激你能审阅一下，@SanBaiMing 和 @GeBlaster ）\n\n说实话，我认为那张图已经足够传达其精髓了，但我真的只是想也尝试一下 ;;)",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.0"
       },
@@ -16157,7 +16157,7 @@
         "name": "Version 1.2.0",
         "date": "2026-08-20",
         "body": "This is an update after the conclusion of the jam.\r\nChanges:\r\n\r\n* Add Chinese translation by @GeBlaster and @SanBaiMing (#2).\r\n* Complete Japanese translation.\r\n* While watching Fenna's video, I noticed that there was an instance where the word \"Vessel\" was written as \"ship,\" so I corrected it.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
-        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n\n* 添加了 @GeBlaster 和 @SanBaiMing (#2) 的中文翻译。\n* 完成了日语翻译。\n* 在观看 Fenna 的视频时，我发现有一个地方将“Vessel”写成了“ship”，所以我进行了修正。\n\n**另外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
+        "bodyZh": "这是一个在游戏 jams 结束后的更新。\n变更：\n\n* 添加了 @GeBlaster 和 @SanBaiMing (#2) 的中文翻译。\n* 完成了日语翻译。\n* 在观看 Fenna 的视频时，我发现有一个地方将“Vessel”写成了“ship”，所以我进行了修正。\n\n**另外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.2.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.2.0"
       },
@@ -16166,7 +16166,7 @@
         "name": "Version 1.1.0",
         "date": "2026-08-18",
         "body": "This should be the final submission version of this mod. Please let me know if you encounter any critical bugs; I plan to fix them before the deadline.\r\n\r\nChanges:\r\n* Shifted the position of a certain signal and the nearby text further to one side.\r\n* Made clues more explicit in several pieces of text, including the ship log.\r\n* Enhanced the presentation at a specific point.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
-        "bodyZh": "这应该是该模组的最终提交版本。如果您遇到任何严重错误，请告知我；我计划在截止日期前修复它们。\n\n变更：\n* 将某个信号及其附近文本进一步移向一侧。\n* 在包括飞船日志在内的多处文本中使线索更加明确。\n* 在特定点增强了呈现效果。\n\n**此外，请勿使用其他模组移除沙子或鮟鱇鱼；这样做将导致剧情中断。**",
+        "bodyZh": "这应该是该模组的最终提交版本。如果您遇到任何严重错误，请告知我；我计划在截止日期前修复它们。\n\n变更：\n* 将某个信号及其附近文本进一步移向一侧。\n* 在多处文本中，包括飞船日志，使线索更加明确。\n* 在特定点增强了呈现效果。\n\n**此外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.1.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.1.0"
       },
