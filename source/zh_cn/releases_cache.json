@@ -1843,58 +1843,59 @@
     ]
   },
   "xen.NewHorizons": {
-    "repoUpdatedAt": "2026-08-26T12:42:57Z",
+    "repoUpdatedAt": "2026-09-04T13:18:10Z",
     "releases": [
       {
         "tag": "v1.29.9",
         "name": "Version 1.29.9",
         "date": "2026-08-24",
         "body": "## Bug fixes\r\n\r\n- Fixed that warping to Timber Hearth has you trapped inside the ship sometimes\r\n- Made fuel tank props scaleable\r\n- Added SearchUtilities.Find to the API\r\n- Fixed a possible NRE in SearchUtilities.Find (caused Astral Codec travel music to break)\r\n- Fixed Title screen shows white square if you do not have the DLC installed #1167\r\n- Maybe fixed player suffocating when startInShip is true\r\n \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1168**",
+        "bodyZh": "## 修复问题\r\n\r\n- 修复了有时传送至木炉星会困在飞船内的bug\r\n- 使燃料箱道具可缩放\r\n- 向API添加了SearchUtilities.Find功能\r\n- 修复了SearchUtilities.Find中可能的空引用异常（导致天体编解码器旅行音乐失效）\r\n- 修复了若未安装DLC，标题屏幕显示白色方块的bug #1167\r\n- 可能修复了当startInShip为true时玩家窒息的问题\r\n\r\n**由PR生成：https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1168**",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.9/xen.NewHorizons.zip",
-        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.9",
-        "bodyZh": "## 修复问题\r\n\r\n- 修复了有时传送至木炉星会困在船舱内的问题\r\n- 使燃料箱道具可缩放\r\n- 向API添加了SearchUtilities.Find功能\r\n- 修复了SearchUtilities.Find中可能的空引用异常（导致天体编解码器旅行音乐失效）\r\n- 修复了若未安装DLC，标题屏幕显示白色方块的问题 #1167\r\n- 可能修复了当startInShip为true时玩家窒息的问题\r\n\r\n**来自PR：https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1168**"
+        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.9"
       },
       {
         "tag": "v1.29.8",
         "name": "Version 1.29.8",
         "date": "2026-08-04",
         "body": "## Minor features\r\n\r\n- Added `spawnInShip` setting to player spawn points.\r\n\r\n## Improvements\r\n\r\n- Debug raycaster now supports rebinds and turns off when the game is paused.\r\n\r\n \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1160**",
+        "bodyZh": "## 小功能\n\n- 为玩家出生点添加了`spawnInShip`设置。\n\n## 改进\n\n- 调试射线投射器现在支持重新绑定，并在游戏暂停时关闭。\n\n \n\n**由 PR 生成：https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1160**",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.8/xen.NewHorizons.zip",
-        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.8",
-        "bodyZh": "## 小功能\n\n- 为玩家出生点添加了`spawnInShip`设置。\n\n## 改进\n\n- 调试射线投射器现在支持重新绑定，并在游戏暂停时关闭。\n\n \n\n**来自PR的生成：https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1160**"
+        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.8"
       },
       {
         "tag": "v1.29.7",
         "name": "Version 1.29.7",
         "date": "2026-08-02",
         "body": "## Bug fixes\r\n\r\n- Log errors and prevent users from creating NHItems with the WarpCore type, as those must extend the WarpCoreItem class and should be done with custom code. #1121 \r\n- Fixed an issue when reloading configs while having preloaded bundles. #1101 and #1130.\r\n- Fixed an issue where the wrong GhostBird prefab could be taken by a detail. When failing to find an object by path, SearchUtilities now checks for an object with the correct name and correct parent name. Fixes #1136.\r\n- Fixed the AWC in the Vessel vanishing sometimes when warping back from DB. Fixes #1057.\r\n- Fix supernova scaling improperly depending on chosen speed. Fixes #1150.\r\n\r\n## Documentation\r\n- Recommended prefixing ship log fact/entry IDs and dialogue condition IDs with the name of your mod to prevent possible incompatibility issues. #1087\r\n- Documented recommended cloak sizes (at least x6 the size of the planet) #1089\r\n \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1159**",
+        "bodyZh": "## 错误修复\r\n\r\n- 记录错误并阻止用户创建类型为WarpCore的NHItems，因为这些必须扩展WarpCoreItem类，并且应该使用自定义代码完成。 #1121 \r\n- 修复了在加载预加载包时重新加载配置时的问题。 #1101 和 #1130。\r\n- 修复了一个问题，即当通过路径查找对象失败时，某个细节可能会获取到错误的GhostBird预制体。现在SearchUtilities在查找对象失败时会检查具有正确名称和正确父名称的对象。修复 #1136。\r\n- 修复了在从DB传送回船体时AWC有时会消失的问题。修复 #1057。\r\n- 修复超新星缩放不正确的问题，取决于选择的速度。修复 #1150。\r\n\r\n## 文档说明\r\n- 建议在飞船日志事实/条目ID和对话条件ID前加上你的模组的名称，以防止可能的不兼容问题。 #1087\r\n- 记录了推荐的隐形衣尺寸（至少是行星大小的6倍） #1089\r\n \r\n\r\n**来自PR：https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1159**",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.7/xen.NewHorizons.zip",
-        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.7",
-        "bodyZh": "## 错误修复\n\n- 记录错误并阻止用户创建类型为WarpCore的NHItems，因为这些必须扩展WarpCoreItem类，并且应该使用自定义代码完成。 #1121 \n- 修复了在加载预加载包时重新加载配置时的问题。 #1101 和 #1130。\n- 修复了一个问题，即细节可能会获取错误的GhostBird预制件。当通过路径找不到对象时，SearchUtilities现在会检查具有正确名称和正确父名称的对象。修复 #1136。\n- 修复了在从DB传送回时，Vessel中的AWC有时会消失的问题。修复 #1057。\n- 修复超新星缩放不正确，取决于选择的速度。修复 #1150。\n\n## 文档\n- 建议在飞船日志事实/条目ID和对话条件ID前加上模组的名称，以防止可能的不兼容问题。 #1087\n- 记录了推荐的隐形衣尺寸（至少是行星大小的6倍） #1089\n \n\n**生成自PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1159**"
+        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.7"
       },
       {
         "tag": "v1.29.6",
         "name": "Version 1.29.6",
         "date": "2026-08-01",
         "body": "## Improvements\r\n\r\n- Nomai text made in Unity and loaded through an asset bundle will now be properly translated as if NH had made it itself.\r\n- Removed \"Failed to locate ship log fact\" error spam when loading custom systems\r\n- Nomai shuttle return warp rotation now faces the walkway (Fixes #1153)\r\n\r\n## Bug fixes\r\n\r\n- Debug raycast now prints with decimal points regardless of PC language (Fixes #1155, #1154)\r\n \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1157**",
+        "bodyZh": "## 改进\n\n- 通过资源包加载的Unity制作的挪麦文本现在将像NH自己制作的那样正确翻译。\n- 加载自定义系统时已移除\"Failed to locate ship log fact\"错误信息轰炸。\n- 挪麦穿梭机返回跃迁旋转现在面向人行道（修复 #1153）\n\n## 错误修复\n\n- 调试射线投射现在无论PC语言如何都会打印小数点（修复 #1155, #1154）\n\n**来自PR：https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1157**",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.6/xen.NewHorizons.zip",
-        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.6",
-        "bodyZh": "## 改进\n\n- 使用Unity制作并通过资源包加载的挪麦文本现在将像NH自己制作的那样正确翻译。\n- 移除了加载自定义系统时出现的\"Failed to locate ship log fact\"错误信息轰炸。\n- 挪麦穿梭机返回跃迁旋转现在面向人行道（修复 #1153）\n\n## 错误修复\n\n- 调试射线投射现在无论PC语言如何都会打印小数点（修复 #1155, #1154）\n\n**来自PR：https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1157**"
+        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.6"
       },
       {
         "tag": "v1.29.5",
         "name": "Version 1.29.5",
         "date": "2026-07-03",
         "body": "## Minor features\r\n\r\n- Updated Chinese Translation (thanks @SanBaiMing)\r\n- Added `QueryAddonManifest` to API and `extras` to addon manifest\r\n- Added `gravityVolumeLayer` to `Base`\r\n- Added `quantumToggleVolume` to `Volumes`. Toggles the ability for specified quantum objects to change their quantum state when entering the volume.\r\n- Added an \"airborne\" mode to the debug raycast. Lets you pick a point in front of your camera and get its position and rotation.\r\n- Added `SurfaceTypeLookup` component. An alternative to vanilla's `BatchedMaterialLookup`.\r\n\r\n## Improvements\r\n\r\n- `activationCondition` and `deactivationCondition` now check for persistent conditions too\r\n\r\n## Bug fixes\r\n\r\n- Fixed a bug where switching profiles with a controller would make it impossible to leave the menu\r\n- Fixed an issue where splash colours don't get initialized properly for other planets if you spawn on a planet with clouds/water \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1143**",
+        "bodyZh": "## 小功能\n\n- 更新中文翻译 (感谢 @SanBaiMing)\n- 在 API 中添加 `QueryAddonManifest`，在模组清单中添加 `extras`\n- 在 `Base` 中添加 `gravityVolumeLayer`\n- 在 `Volumes` 中添加 `quantumToggleVolume`。切换指定量子物体在进入体积时改变其量子状态的能力。\n- 为调试射线投射添加了 \"空中\" 模式。让你能在相机前方选择一个点并获取其位置和旋转。\n- 添加 `SurfaceTypeLookup` 组件。范希尔的 `BatchedMaterialLookup` 的替代方案。\n\n## 改进\n\n- `activationCondition` 和 `deactivationCondition` 现在也会检查持久条件\n\n## 错误修复\n\n- 修复了使用控制器切换配置文件时会导致无法离开菜单的 bug\n- 修复了如果你在多云/水域行星上生成，其他行星的启动颜色无法正确初始化的问题\n\n**来自 PR：https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1143**",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.5/xen.NewHorizons.zip",
-        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.5",
-        "bodyZh": "## 小功能\n\n- 更新中文翻译 (感谢 @SanBaiMing)\n- 在API中添加`QueryAddonManifest`，在模组清单中添加`extras`\n- 在`Base`中添加`gravityVolumeLayer`\n- 在`Volumes`中添加`quantumToggleVolume`。切换指定量子物体在进入体积时改变其量子状态的能力。\n- 为调试射线投射添加了\"空中\"模式。让你能在摄像头前方选择一个点，并获取其位置和旋转。\n- 添加`SurfaceTypeLookup`组件。范希尔的`BatchedMaterialLookup`的替代方案。\n\n## 改进\n\n- `activationCondition`和`deactivationCondition`现在也会检查持久条件\n\n## 错误修复\n\n- 修复了使用控制器切换配置文件时会导致无法离开菜单的bug\n- 修复了如果你在多云/水域行星上生成，其他行星的启动颜色无法正确初始化的问题\n\n**来自PR：https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1143**"
+        "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.5"
       },
       {
         "tag": "v1.29.4",
         "name": "Version 1.29.4",
         "date": "2026-04-12",
         "body": "## Bug fixes\r\n\r\n- Fixed a bug where translation text API was broken by the custom language update (affected Eden's Hope)\r\n \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1144**",
+        "bodyZh": "",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.4/xen.NewHorizons.zip",
         "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.4"
       },
@@ -1903,6 +1904,7 @@
         "name": "Version 1.29.3",
         "date": "2026-03-14",
         "body": "## Bug fixes\r\n\r\n- Reverted patch that made translator tool not appear in dream world. If anyone ever puts translator text in dream world I will rapidly approach your location.\r\n- Fixed star system `conditionalChecks` not giving you persistent conditions when a check is met.\r\n- Setting title screen music or ambience to `None` no longer breaks. \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1139**",
+        "bodyZh": "",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.3/xen.NewHorizons.zip",
         "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.3"
       },
@@ -1911,6 +1913,7 @@
         "name": "Version 1.29.2",
         "date": "2026-03-13",
         "body": "## Minor features\r\n\r\n- Can now implement custom translatable alien languages. This is done on each arc by\r\nsetting `customTextImage` to an image path, `legiblePersistentCondition`\r\nfor learning the new language, and optionally `customLanguageName` to\r\ngive it a name.\r\n- Can now override the color translation text for an arc with `overrideUnreadColor` and optionally `overrideTranslatedColor`\r\n- Can now have a separate ship spawn point for warping into the system with the ship's warp drive with `warpDriveSpawnPointID` in system config. Resolves #1133\r\n- Added `musicFadeInTime`, `musicVolume`, and `ambienceVolume` to title screen configs.\r\n- Added `IsWarpingBackToEye`, `GetCenterOfStarSystem`, `GetPlayerSpawnPoint`, `GetShipSpawnPoint` to API.\r\n- Added `showDescriptionNotAchieved` to achievement info and `DescriptionNotAchieved` to achievement translations.\r\n- Added `campfires` to `Props`. Can set the state to be lit, smoldering, or unlit.\r\n- Added `fuelTanks` to `Props`. Can change type to be the Hearthian tanks or DLC torchs.\r\n- Added `alarmBells` to `Props`. Resolves #1118\r\n- Added `alarmBellPath` to `dreamCampfires`.\r\n- Added `playerRecoveryVolumes` to `Volumes`. Interacting can refuel or heal the player.\r\n- Reveal volumes can now use different shapes.\r\n\r\n## Improvements\r\n\r\n- Moved `solarSystemVolume` to a better name `starSystemVolumes`.\r\n- `IsWarpingBackToEye` now stops `OnCompleteSceneLoad` from running.\r\n- Now logs if it fails to load your credits.\r\n\r\n## Bug fixes\r\n\r\n- Somewhat fix ghost birds having broken arms in mods like Examples and Granite's Invitation but Escape Room is still broken ahhhhh why why why why!!!!! Mobius why did you slightly adjust ghost birds in a patch!!!!! No it's okay you're allowed I forgive you.\r\n- Translator tool no longer appears in dream world.\r\n- Fix fonts for different languages on star chart mode. Fixes #1137\r\n- Fix rich presence on quantum planets.\r\n- Fix speed limiter volume exception.\r\n- Fix credits button on title screen not working.\r\n- Fix warping to the Outer Wilds killing you instantly.\r\n- Fix DLC required popup not appearing for some DLC props. \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1135**",
+        "bodyZh": "",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.2/xen.NewHorizons.zip",
         "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.2"
       },
@@ -1919,6 +1922,7 @@
         "name": "Version 1.29.1",
         "date": "2026-01-26",
         "body": "## Minor features\r\n\r\n- Added `optOutWarpDriveModel` to star system config. Allows you to disable the warp drive model in your system and exclude it from the visibility logic for other systems.\r\n- New mod setting to turn off warp drive model.\r\n\r\n## Improvements\r\n\r\n- Added a zoom button prompt to interstellar mode\r\n- Reworked how the warp drive model gets enabled. Now it will only show up if there is two distinct systems that you can enter and exit.\r\n\r\n## Bug fixes\r\n\r\n- Fixed the disappearance time on the Hearthian Sun in interstellar mode.\r\n- Fixed the broken ambient lights on planets \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1132**",
+        "bodyZh": "",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.1/xen.NewHorizons.zip",
         "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.1"
       },
@@ -1927,6 +1931,7 @@
         "name": "Version 1.29.0",
         "date": "2026-01-20",
         "body": "## Major features\r\n\r\n- Overhauled the visuals of New Horizons' interstellar mode in the ship\r\nlog! Additionally, if your ship is equipped with a warp drive functionally,\r\nthere will be a new visual 3D model representing the warp drive on your\r\nship! Thanks @lezzlebit for implementing this!\r\n- Ability to specify a sector path for things to use, instead of just the planet's top-level sector. Can also automatically find the innermost sector\r\n\r\n# Minor features\r\n\r\n- Added `sectorPath` to most props to allow specifying a sector other\r\nthan the planet's root sector for the purposes of culling and other\r\nsector behavior. The special value `\"auto\"` finds the first sector in\r\nthe prop's parent hierarchy.\r\n- Particle fields\r\n\t- No more arbitrary particle limit (slightly breaks back compat since any too large input that was being capped now isn't, but that behavior was pointless and not worth preserving)\r\n\t- Override field radius\r\n\r\n## Improvements\r\n\r\n- Particle fields:\r\n\t- More depth in documentation\r\n\t- Default rain is now the correct higher density, and snow is equivalent without needing duplicates\r\n\r\n## Bug fixes\r\n\r\n- Added a security check to ScatterBuilder.\r\n- CurrentStarSystem now prevents invalid values properly. Fixes #1128\r\n- Stranger type translator texts are now colored properly. Fixes #1125\r\n- Star ambient lights are no longer always orange. Fixes #1102 \r\n\r\n**Generated From PR: https://github.com/Outer-Wilds-New-Horizons/new-horizons/pull/1127**",
+        "bodyZh": "",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/download/v1.29.0/xen.NewHorizons.zip",
         "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/new-horizons/releases/tag/v1.29.0"
       }
@@ -16123,14 +16128,14 @@
     ]
   },
   "orclecle.EyeWitness": {
-    "repoUpdatedAt": "2026-09-03T23:39:57Z",
+    "repoUpdatedAt": "2026-09-04T14:56:28Z",
     "releases": [
       {
         "tag": "v1.4.0",
         "name": "Version 1.4.0",
         "date": "2026-09-03",
         "body": "Finally, I have added a specific session to a certain location. (Regarding the accompanying text: I used machine translation for the Chinese version, so I would appreciate it if you could review it when you have the time, @SanBaiMing and @GeBlaster )\r\n\r\nTo be honest, I think that drawing was enough to convey the essence, but I just really wanted to give this a try as well ;;)",
-        "bodyZh": "最后，我在某个特定位置添加了一个特定会话。（关于附加文本：我使用了机器翻译来制作中文版本，所以如果你有时间的话，我会很感激你能审阅一下，@SanBaiMing 和 @GeBlaster ）\n\n说实话，我认为那张图已经足够传达其精髓了，但我真的只是想也尝试一下 ;;)",
+        "bodyZh": "最后，我在某个特定位置添加了一个特定会话。（关于附加文本：我使用了机器翻译来制作中文版本，所以如果您有时间，我会很感激您能进行审阅，@SanBaiMing 和 @GeBlaster ）\n\n说实话，我认为那张图已经足够传达其精髓了，但我真的只是想也尝试一下 ;;)",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.0"
       },
@@ -16148,7 +16153,7 @@
         "name": "Version 1.3.0",
         "date": "2026-08-30",
         "body": "This is an update after the conclusion of the jam.\r\nChanges:\r\n* Updated the Chinese translation by @SanBaiMing (however, I have added some machine translations of the Chinese text related to the changes listed below, so I would appreciate it if you could check if it is as @SanBaiMing intended.)\r\n* Increased the spacing between some ship log cards to make the unread mark more clearly visible.\r\n* Added a feature to display the remaining time in a certain location on the computer.\r\n* Fixed an issue where a certain mesh-like model was overhanging the stairs (a cylinder will indent inward when twisted unless the number of vertices is increased).\r\n* Corrected some English text to make it more accurate.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
-        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n* 更新了中文翻译由 @SanBaiMing (然而，我添加了一些与下面列出的变更相关的中文文本的机器翻译，所以如果您能检查它是否如 @SanBaiMing 所愿，我将不胜感激。)\n* 增加了某些飞船日志卡之间的间距，使未读标记更清晰可见。\n* 添加了一个功能，在电脑上显示某个位置的剩余时间。\n* 修复了一个问题，即某个网格状模型突出在楼梯上（当扭曲时，除非增加顶点数量，否则圆柱体会向内凹陷）。\n* 修正了一些英文文本，使其更准确。\n\n**此外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
+        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n* 更新了中文翻译由 @SanBaiMing (然而，我添加了一些与下面列出的变更相关的中文文本的机器翻译，所以如果您能检查是否如 @SanBaiMing 所愿，我将不胜感激。)\n* 增加了某些飞船日志卡之间的间距，使未读标记更清晰可见。\n* 添加了一个功能，在电脑上显示某个位置的剩余时间。\n* 修复了一个问题，即某个网格状模型突出在楼梯上（当扭曲时，除非增加顶点数量，否则圆柱体会向内凹陷）。\n* 修正了一些英文文本，使其更加准确。\n\n**此外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.3.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.3.0"
       },
@@ -16157,7 +16162,7 @@
         "name": "Version 1.2.0",
         "date": "2026-08-20",
         "body": "This is an update after the conclusion of the jam.\r\nChanges:\r\n\r\n* Add Chinese translation by @GeBlaster and @SanBaiMing (#2).\r\n* Complete Japanese translation.\r\n* While watching Fenna's video, I noticed that there was an instance where the word \"Vessel\" was written as \"ship,\" so I corrected it.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
-        "bodyZh": "这是一个在游戏 jams 结束后的更新。\n变更：\n\n* 添加了 @GeBlaster 和 @SanBaiMing (#2) 的中文翻译。\n* 完成了日语翻译。\n* 在观看 Fenna 的视频时，我发现有一个地方将“Vessel”写成了“ship”，所以我进行了修正。\n\n**另外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
+        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n\n* 添加了 @GeBlaster 和 @SanBaiMing (#2) 的中文翻译。\n* 完成了日语翻译。\n* 在观看 Fenna 的视频时，我发现有一个地方将“Vessel”写成了“ship”，所以我进行了修正。\n\n**另外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.2.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.2.0"
       },
@@ -16166,7 +16171,7 @@
         "name": "Version 1.1.0",
         "date": "2026-08-18",
         "body": "This should be the final submission version of this mod. Please let me know if you encounter any critical bugs; I plan to fix them before the deadline.\r\n\r\nChanges:\r\n* Shifted the position of a certain signal and the nearby text further to one side.\r\n* Made clues more explicit in several pieces of text, including the ship log.\r\n* Enhanced the presentation at a specific point.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
-        "bodyZh": "这应该是该模组的最终提交版本。如果您遇到任何严重错误，请告知我；我计划在截止日期前修复它们。\n\n变更：\n* 将某个信号及其附近文本进一步移向一侧。\n* 在多处文本中，包括飞船日志，使线索更加明确。\n* 在特定点增强了呈现效果。\n\n**此外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
+        "bodyZh": "这应该是该模组的最终提交版本。如果您遇到任何严重错误，请告知我；我计划在截止日期前修复它们。\n\n变更：\n* 将某个信号及其附近文本进一步向一侧移动。\n* 在多处文本中，包括飞船日志，使线索更加明确。\n* 在特定点上增强了呈现效果。\n\n**此外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做将导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.1.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.1.0"
       },
