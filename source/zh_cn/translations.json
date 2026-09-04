@@ -6568,9 +6568,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "Finally, I have added a specific session to a certain location. (Regarding the accompanying text: I used machine translation for the Chinese version, so I would appreciate it if you could review it when you have the time, @SanBaiMing and @GeBlaster )\r\n\r\nTo be honest, I think that drawing was enough to convey the essence, but I just really wanted to give this a try as well ;;)",
-      "zh": "最后，我向某个特定位置添加了一个特定会话。（关于随附的文本：我使用了机器翻译来制作中文版本，所以如果您有时间，我会感谢您进行审查，@SanBaiMing 和 @GeBlaster ）\n说实话，我认为那幅画足以传达其精髓，但我真的只是想也尝试一下 ;;)",
-      "at": "2026-09-04T05:37:47.571273Z"
+      "en": "* Update Chinese translation. Thank you, @SanBaiMing !\r\n* Fix audio volume issue in the final sequence in the specific place.\r\n* Fix gravity issue in the final sequence in the specific place.",
+      "zh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列中特定位置的音量问题。\n* 修复最终序列中特定位置的引力问题。",
+      "at": "2026-09-04T20:56:34.737501Z"
     }
   },
   "RiddleMajor.No_Time_To_Waste": {

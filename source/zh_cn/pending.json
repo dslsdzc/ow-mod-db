@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "unique_name": "orclecle.EyeWitness",
+    "field": "latestReleaseDescription",
+    "en": "* Update Chinese translation. Thank you, @SanBaiMing !\r\n* Fix audio volume issue in the final sequence in the specific place.\r\n* Fix gravity issue in the final sequence in the specific place."
+  }
+]
