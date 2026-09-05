@@ -1,7 +1,1 @@
-[
-  {
-    "unique_name": "orclecle.EyeWitness",
-    "field": "latestReleaseDescription",
-    "en": "* Fix unidentified signal notification in the final sequence in the specific place.\r\n* Fix the latest building collision in the final sequence in the specific place."
-  }
-]
+[]
