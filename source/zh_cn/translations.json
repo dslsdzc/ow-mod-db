@@ -6568,9 +6568,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "* Update Chinese translation. Thank you, @SanBaiMing !\r\n* Fix audio volume issue in the final sequence in the specific place.\r\n* Fix gravity issue in the final sequence in the specific place.",
-      "zh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列中特定位置的音量问题。\n* 修复最终序列中特定位置的引力问题。",
-      "at": "2026-09-04T20:56:34.737501Z"
+      "en": "* Fix unidentified signal notification in the final sequence in the specific place.\r\n* Fix the latest building collision in the final sequence in the specific place.",
+      "zh": "* 修复最终序列中特定位置的未识别信号通知。\n* 修复最终序列中特定位置的最新建筑碰撞。",
+      "at": "2026-09-05T17:59:29.356646Z"
     }
   },
   "RiddleMajor.No_Time_To_Waste": {

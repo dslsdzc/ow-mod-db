@@ -16128,14 +16128,23 @@
     ]
   },
   "orclecle.EyeWitness": {
-    "repoUpdatedAt": "2026-09-04T19:00:35Z",
+    "repoUpdatedAt": "2026-09-05T16:55:17Z",
     "releases": [
+      {
+        "tag": "v1.4.3",
+        "name": "Version 1.4.3",
+        "date": "2026-09-05",
+        "body": "* Fix unidentified signal notification in the final sequence in the specific place.\r\n* Fix the latest building collision in the final sequence in the specific place.",
+        "bodyZh": "* 修复最终序列特定位置的未识别信号提示。\n* 修复最终序列特定位置的最新建筑碰撞。",
+        "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.3/orclecle.EyeWitness.zip",
+        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.3"
+      },
       {
         "tag": "v1.4.1",
         "name": "Version 1.4.1",
         "date": "2026-09-04",
         "body": "* Update Chinese translation. Thank you, @SanBaiMing !\r\n* Fix audio volume issue in the final sequence in the specific place.\r\n* Fix gravity issue in the final sequence in the specific place.",
-        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列特定位置的音量问题。\n* 修复最终序列特定位置的引力问题。",
+        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列中特定位置的音量问题。\n* 修复最终序列中特定位置的重力问题。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.1/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.1"
       },
@@ -16144,7 +16153,7 @@
         "name": "Version 1.4.0",
         "date": "2026-09-03",
         "body": "Finally, I have added a specific session to a certain location. (Regarding the accompanying text: I used machine translation for the Chinese version, so I would appreciate it if you could review it when you have the time, @SanBaiMing and @GeBlaster )\r\n\r\nTo be honest, I think that drawing was enough to convey the essence, but I just really wanted to give this a try as well ;;)",
-        "bodyZh": "最后，我在某个特定位置添加了一个特定会话。（关于附加文本：我使用了机器翻译来制作中文版本，所以如果您有时间，我会很感激您能进行审阅，@SanBaiMing 和 @GeBlaster ）\n\n说实话，我认为那张图已经足够传达其精髓了，但我真的只是想也尝试一下 ;;)",
+        "bodyZh": "最后，我在某个特定位置添加了一个特定会话。（关于附加文本：我使用了机器翻译来制作中文版本，所以如果您有时间，我会非常感谢您进行审阅，@SanBaiMing 和 @GeBlaster ）\n\n说实话，我认为那张图已经足够传达其精髓了，但我真的只是想也尝试一下 ;;)",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.0"
       },
@@ -16162,7 +16171,7 @@
         "name": "Version 1.3.0",
         "date": "2026-08-30",
         "body": "This is an update after the conclusion of the jam.\r\nChanges:\r\n* Updated the Chinese translation by @SanBaiMing (however, I have added some machine translations of the Chinese text related to the changes listed below, so I would appreciate it if you could check if it is as @SanBaiMing intended.)\r\n* Increased the spacing between some ship log cards to make the unread mark more clearly visible.\r\n* Added a feature to display the remaining time in a certain location on the computer.\r\n* Fixed an issue where a certain mesh-like model was overhanging the stairs (a cylinder will indent inward when twisted unless the number of vertices is increased).\r\n* Corrected some English text to make it more accurate.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
-        "bodyZh": "这是一个在游戏 Jam 结束后的更新。\n变更：\n* 更新了中文翻译由 @SanBaiMing 提供（然而，我添加了一些与下面列出的变更相关的中文文本的机器翻译，所以如果您能检查这些是否如 @SanBaiMing 所愿，我将不胜感激。）\n* 增加了某些飞船日志卡之间的间距，使未读标记更清晰可见。\n* 添加了一个功能，可在电脑上显示某个位置的剩余时间。\n* 修复了一个问题，即某个网格状模型会悬停在楼梯上（当扭曲时，除非增加顶点数量，否则圆柱体会向内凹陷）。\n* 修正了一些英文文本，使其更准确。\n\n**此外，请勿使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
+        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n* 更新了中文翻译由 @SanBaiMing 提供（然而，我添加了一些与下面列出的变更相关的中文文本的机器翻译，所以如果您能检查这些是否如 @SanBaiMing 所愿，我将不胜感激。）\n* 增加了某些飞船日志卡之间的间距，使未读标记更清晰可见。\n* 添加了一个功能，可在电脑上显示某个位置的剩余时间。\n* 修复了一个问题，即某个网格状模型会悬垂在楼梯上（当扭曲时，除非增加顶点数量，否则圆柱体会向内凹陷）。\n* 修正了一些英文文本，使其更加准确。\n\n**此外，请勿使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.3.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.3.0"
       },
@@ -16171,7 +16180,7 @@
         "name": "Version 1.2.0",
         "date": "2026-08-20",
         "body": "This is an update after the conclusion of the jam.\r\nChanges:\r\n\r\n* Add Chinese translation by @GeBlaster and @SanBaiMing (#2).\r\n* Complete Japanese translation.\r\n* While watching Fenna's video, I noticed that there was an instance where the word \"Vessel\" was written as \"ship,\" so I corrected it.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
-        "bodyZh": "这是一个在 jams 结束后的更新。\n变更：\n\n* 添加了 @GeBlaster 和 @SanBaiMing (#2) 的中文翻译。\n* 完成了日语翻译。\n* 在观看 Fenna 的视频时，我发现有一个地方将“Vessel”写成了“ship”，所以我进行了修正。\n\n**另外，请不要使用其他模组移除沙子或鮟鱇鱼；这样做会导致剧情中断。**",
+        "bodyZh": "",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.2.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.2.0"
       },
@@ -16210,15 +16219,6 @@
         "bodyZh": "",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.0.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.0.0"
-      },
-      {
-        "tag": "v0.2.1",
-        "name": "Version 0.2.1",
-        "date": "2026-08-16",
-        "body": "test version reflecting feedbacks of v0.2.0",
-        "bodyZh": "",
-        "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v0.2.1/orclecle.EyeWitness.zip",
-        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v0.2.1"
       }
     ]
   },
