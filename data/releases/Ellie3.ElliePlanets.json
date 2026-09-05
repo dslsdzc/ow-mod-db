@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2022-01-08T21:25:50Z",
+  "releases": [
+    {
+      "tag": "1.2.0",
+      "name": "ElliePlanets! 1.2.0",
+      "date": "2021-12-20",
+      "body": "A new spiky moon and a gas giant!",
+      "zipUrl": "https://github.com/ellie3-OW/ElliePlanets/releases/download/1.2.0/ElliePlanets-1.2.0.zip",
+      "releaseUrl": "https://github.com/ellie3-OW/ElliePlanets/releases/tag/1.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "ElliePlanets! 0.1.0",
+      "date": "2021-12-19",
+      "body": "we're just starting! have fun!",
+      "zipUrl": "https://github.com/ellie3-OW/ElliePlanets/releases/download/0.1.0/ElliePlanets.zip",
+      "releaseUrl": "https://github.com/ellie3-OW/ElliePlanets/releases/tag/0.1.0"
+    }
+  ]
+}

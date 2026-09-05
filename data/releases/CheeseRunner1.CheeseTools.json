@@ -1,0 +1,58 @@
+{
+  "repoUpdatedAt": "2026-06-13T06:35:40Z",
+  "releases": [
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2026-06-08",
+      "body": "- Added learn quantum frequency setting\r\n- Added original quit menu button position setting\r\n- Added bonks: Ship, Shuttle, Stranger, HEL, 0g Cave\r\n- Added freeze supernova setting\r\n- Added no alt tab pause setting\r\n- Fixed menu storage overwriting Solanum & Prisoner settings\r\n- Dark Bramble now gets automatically locked on in the Feldsparring practice state\r\n- Warp timer no longer starts on vessel clip practice state\r\n- Feldsparring timer no longer starts on vessel practice state\r\n- Renamed timers: Museum -> Observe Flight, Observe -> Observatory, Museum+Observe -> Observe",
+      "zipUrl": "https://github.com/CheeseDev0010/CheeseTools/releases/download/v1.2.0/CheeseRunner1.CheeseTools.zip",
+      "releaseUrl": "https://github.com/CheeseDabber/CheeseTools/releases/tag/v1.2.0",
+      "bodyZh": "- 添加了学习量子频率设置\n- 添加了原始退出菜单按钮位置设置\n- 添加了撞击：飞船、穿梭机、陌生人、HEL、0g洞穴\n- 添加了冻结超新星设置\n- 添加了无Alt Tab暂停设置\n- 修复了菜单存储覆盖所莱内姆 & 囚犯设置\n- 黑棘星现在在费尔德斯巴练习状态下会自动锁定\n- 跃迁计时器不再在飞船剪辑练习状态下开始\n- 费尔德斯巴计时器不再在飞船练习状态下开始\n- 重命名计时器：博物馆 -> 观察飞行，观察 -> 天文台，博物馆+观察 -> 观察"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2026-05-19",
+      "body": "- Toggle speedup keybind now works when sleeping at a campfire\r\n- Practice states now start with full jetpack boost\r\n- Fixed inputfade not being set to 1 when loading in eye scene",
+      "zipUrl": "https://github.com/CheeseDev0010/CheeseTools/releases/download/v1.1.1/CheeseRunner1.CheeseTools.zip",
+      "releaseUrl": "https://github.com/CheeseDabber/CheeseTools/releases/tag/v1.1.1",
+      "bodyZh": "- 在篝火旁睡觉时，加速键绑定现在可以正常工作\r\n- 练习状态现在以满喷射推进器加成开始\r\n- 修复了在加载宇宙之眼场景时inputfade未设置为1的问题"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2026-05-17",
+      "body": "## New Features\r\n- Added village practice state\r\n- Added fill in eye coordinates setting for vessel clip practice state\r\n- Added solanum & prisoner settings for instrument hunt practice state\r\n- Added menu storage setting for instrument hunt practice state\r\n- Added suitless practice states setting\r\n- Added give warpcore and give dream lantern keybinds\r\n- Added village, museum, museum+observe and coordinates timer\r\n- Added 7 more custom practice states (10 total now)",
+      "zipUrl": "https://github.com/CheeseDev0010/CheeseTools/releases/download/v1.1.0/CheeseRunner1.CheeseTools.zip",
+      "releaseUrl": "https://github.com/CheeseDabber/CheeseTools/releases/tag/v1.1.0",
+      "bodyZh": "## 新功能\n- 新增村庄练习状态\n- 新增飞船剪辑练习状态的填写坐标设置\n- 新增所莱内姆(索莱内姆)与囚犯的设置用于仪器狩猎练习状态\n- 新增仪器狩猎练习状态的菜单存储设置\n- 新增无宇航服练习状态设置\n- 新增给予跃迁核心和给予梦境灯笼的按键绑定\n- 新增村庄、博物馆、博物馆+观察和坐标计时器\n- 新增7个自定义练习状态（现在共有10个）"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2026-05-15",
+      "body": "## Bug Fixes\r\n- Fixed custom practice state position/rotation format being localized. And added error message if format is wrong",
+      "zipUrl": "https://github.com/CheeseDev0010/CheeseTools/releases/download/v1.0.2/CheeseRunner1.CheeseTools.zip",
+      "releaseUrl": "https://github.com/CheeseDabber/CheeseTools/releases/tag/v1.0.2",
+      "bodyZh": "## 修复问题\n- 修复了自定义练习状态位置/旋转格式本地化的问题。如果格式错误，则添加了错误信息"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2026-05-14",
+      "body": "## Bug fixes\r\n- Practice states no longer reset playerdata on default\r\n- Fixed signalscope UI not loading in on first zoom\r\n- Fixed custom practice states not working in different languages",
+      "zipUrl": "https://github.com/CheeseDev0010/CheeseTools/releases/download/v1.0.1/CheeseRunner1.CheeseTools.zip",
+      "releaseUrl": "https://github.com/CheeseDabber/CheeseTools/releases/tag/v1.0.1",
+      "bodyZh": "## 错误修复\n- 练习状态不再在默认情况下重置玩家数据\n- 修复了信号镜UI在第一次缩放时无法加载的问题\n- 修复了自定义练习状态在不同语言中无法工作的问题"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2026-05-13",
+      "body": "The initial release of CheeseTools!!",
+      "zipUrl": "https://github.com/CheeseDev0010/CheeseTools/releases/download/v1.0.0/CheeseRunner1.CheeseTools.zip",
+      "releaseUrl": "https://github.com/CheeseDabber/CheeseTools/releases/tag/v1.0.0"
+    }
+  ]
+}

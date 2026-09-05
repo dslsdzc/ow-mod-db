@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2023-10-08T23:40:32Z",
+  "releases": [
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2022-11-03",
+      "body": "i have somehow had 3 seprate veirsons in 1 go i have no idea how i'm messing up this horiblby",
+      "zipUrl": "https://github.com/FunkyShoeMan/Ernesto-Takeover/releases/download/1.0.1/Ernesto-Takeover-main.zip",
+      "releaseUrl": "https://github.com/FunkyShoeMan/Ernesto-Takeover/releases/tag/1.0.1"
+    },
+    {
+      "tag": "Release",
+      "name": "1.0.0",
+      "date": "2022-11-03",
+      "body": "Ernesto has been empowered by all his NH addons, he has escape Dark bramble",
+      "zipUrl": "https://github.com/FunkyShoeMan/Ernesto-Takeover/releases/download/Release/FunkyShoeMan.ErnestoTakeover.zip",
+      "releaseUrl": "https://github.com/FunkyShoeMan/Ernesto-Takeover/releases/tag/Release"
+    }
+  ]
+}

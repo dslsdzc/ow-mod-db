@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2023-09-01T04:49:18Z",
+  "releases": [
+    {
+      "tag": "v0.3.0",
+      "name": "v0.3.0",
+      "date": "2023-01-05",
+      "body": "Configurable key bindings",
+      "zipUrl": "https://github.com/Nageld/Outer-Wilds-Black-Hole-Portal-Gun/releases/download/v0.3.0/Book.BlackHolePortalGun.zip",
+      "releaseUrl": "https://github.com/Nageld/Outer-Wilds-Black-Hole-Portal-Gun/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2022-01-14",
+      "body": "Configurable range and slightly less log spew",
+      "zipUrl": "https://github.com/Nageld/Outer-Wilds-Black-Hole-Portal-Gun/releases/download/v0.2.0/Book.BlackHolePortalGun.zip",
+      "releaseUrl": "https://github.com/Nageld/Outer-Wilds-Black-Hole-Portal-Gun/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": " v0.1.0",
+      "date": "2022-01-12",
+      "body": "B for Black hole, G for White hole. Only supports keyboard at the moment.",
+      "zipUrl": "https://github.com/Nageld/Outer-Wilds-Black-Hole-Portal-Gun/releases/download/v0.1.0/Book.BlackHolePortalGun.zip",
+      "releaseUrl": "https://github.com/Nageld/Outer-Wilds-Black-Hole-Portal-Gun/releases/tag/v0.1.0"
+    }
+  ]
+}

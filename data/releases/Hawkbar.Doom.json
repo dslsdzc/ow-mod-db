@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2025-06-13T12:57:30Z",
+  "releases": [
+    {
+      "tag": "0.1.2",
+      "name": "0.1.2",
+      "date": "2022-12-03",
+      "body": "- Use custom ship log utility mod by dgarro (Thanks for the PR!)\r\n- Added option to mute DOOM while not actively playing it; defaults to on",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-doom/releases/download/0.1.2/Hawkbar.Doom.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-doom/releases/tag/0.1.2",
+      "bodyZh": "- 使用 dgarro 的自定义飞船日志工具模组（感谢 PR！）\r\n- 添加了在非主动游玩时静音 DOOM 的选项；默认开启"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "0.1.1",
+      "date": "2022-09-17",
+      "body": "**Full Changelog**: https://github.com/Hawkbat/ow-mod-doom/compare/0.1.0...0.1.1",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-doom/releases/download/0.1.1/Hawkbar.Doom.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-doom/releases/tag/0.1.1",
+      "bodyZh": "**完整变更日志**: https://github.com/Hawkbat/ow-mod-doom/compare/0.1.0...0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "0.1.0",
+      "date": "2022-09-09",
+      "body": "**Full Changelog**: https://github.com/Hawkbat/ow-mod-doom/commits/0.1.0",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-doom/releases/download/0.1.0/Hawkbar.Doom.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-doom/releases/tag/0.1.0",
+      "bodyZh": "**完整变更日志**: https://github.com/Hawkbat/ow-mod-doom/commits/0.1.0"
+    }
+  ]
+}

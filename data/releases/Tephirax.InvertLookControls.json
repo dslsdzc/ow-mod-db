@@ -1,0 +1,22 @@
+{
+  "repoUpdatedAt": "2023-04-07T09:14:55Z",
+  "releases": [
+    {
+      "tag": "0.1.1",
+      "name": "Release v0.1.1",
+      "date": "2023-04-07",
+      "body": "Added mod options for flexibility",
+      "zipUrl": "https://github.com/Tephirax/Invert-Look-Controls/releases/download/0.1.1/Tephirax.InvertLookControls.zip",
+      "releaseUrl": "https://github.com/Tephirax/Invert-Look-Controls/releases/tag/0.1.1",
+      "bodyZh": "添加了模组选项以增加灵活性"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Initial Release",
+      "date": "2023-04-06",
+      "body": "",
+      "zipUrl": "https://github.com/Tephirax/Invert-Look-Controls/releases/download/0.1.0/InvertLookControls.zip",
+      "releaseUrl": "https://github.com/Tephirax/Invert-Look-Controls/releases/tag/0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-01-22T23:34:45Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Wacky Rotations 1.0.0",
+      "date": "2023-01-22",
+      "body": "-Fixed that bug about quaternion rotations not being unit length (I think).\r\n-Massive setting overhaul, reorganized the setting page & added general settings.",
+      "zipUrl": "https://github.com/coderCleric/WackyRotations/releases/download/v1.0.0/Cleric.WackyRotations.zip",
+      "releaseUrl": "https://github.com/coderCleric/WackyRotations/releases/tag/v1.0.0",
+      "bodyZh": "- 修复了四元数旋转不是单位长度的错误（我认为）。\n- 大规模设置重制，重新组织了设置页面并添加了通用设置。"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Wacky Rotations 0.1.0",
+      "date": "2022-09-03",
+      "body": "First release of Wacky Rotations. Kinda buggy, not too pretty, but it's fun!",
+      "zipUrl": "https://github.com/coderCleric/WackyRotations/releases/download/v0.1.0/Cleric.WackyRotations.zip",
+      "releaseUrl": "https://github.com/coderCleric/WackyRotations/releases/tag/v0.1.0",
+      "bodyZh": "Wacky Rotations的首次发布。有点bug，不太好看，但很有趣！"
+    }
+  ]
+}

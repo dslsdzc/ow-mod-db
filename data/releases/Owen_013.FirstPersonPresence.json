@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-08-29T20:08:01Z",
+  "releases": [
+    {
+      "tag": "v1.5.7",
+      "name": "v1.5.7: Viewmodel Sway Tweaks and More",
+      "date": "2026-03-06",
+      "body": "### Viewmodel Sway\r\n- Now moves in a hemispherical motion.\r\n- Should now be more consistent from item to item.\r\n\r\n### Other Changes\r\n- Added Viewmodel Arm Data for the Compass item from Dreambound.\r\n- Conversation Stones are now further from the camera when Viewmodel Arms are enabled.\r\n\r\n### Bugfixes\r\n- Viewmodel Arms will no longer briefly disappear when using Lantern Grapple Points.\r\n- Viewmodel Arms will no longer be created for items that have no Arm Data associated with them.\r\n- Viewmodel Arms will no longer be added to certain items if their `OWItem` type doesn't match its `ItemType`.",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.5.7/Owen013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.5.7",
+      "bodyZh": "### 视角模型摇摆\n- 现在以半球形运动。\n- 现在在不同物品之间应该更加一致。\n\n### 其他变更\n- 为来自Dreambound的指南针物品添加了视角模型手臂数据。\n- 当视角模型手臂启用时，对话石现在距离相机更远。\n\n### 错误修复\n- 使用灯笼抓点时，视角模型手臂不再短暂消失。\n- 没有与之关联的手臂数据的物品不再创建视角模型手臂。\n- 如果物品的`OWItem`类型与其`ItemType`不匹配，则不再向某些物品添加视角模型手臂。"
+    },
+    {
+      "tag": "v1.5.6",
+      "name": "v1.5.6: Landing Animation Updates, Time Freeze Improvements, and Bug Fixes",
+      "date": "2026-03-01",
+      "body": "### Changes\r\n- Various Landing Animation Improvements:\r\n  - The held item/tool now also has an animation for landing.\r\n    - The Camera and Viewmodel Landing Animations can be individually enabled/disabled in the config.\r\n  - Landing Animation is slightly more impactful, with a faster recovery time.\r\n  - Added options to customize the maximum distance, recovery speed, and smoothness of the Landing Animation in the config.\r\n- Camera and viewmodel animations will no longer freeze in place when time is frozen while the player is reading text, viewing the ship log, or talking to others. These animations will now either finish playing or, for continuous animations, smoothly transition into an idle state.\r\n\r\n### Fixes\r\n- Fixed a bug when using Hide Stowed Items that caused the item to skip to the end of its stowing animation early.\r\n- Fixed a bug where Viewmodel Arms on items would disappear when the player sat down at the ship cockpit and would stay invisible until the player dropped the item and picked it up again.",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.5.6/Owen_013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.5.6",
+      "bodyZh": "### 更改\n- 各种着陆动画改进：\n  - 现在手持物品/工具也有着陆动画。\n    - 相机和视图模型着陆动画可以在配置中单独启用/禁用。\n  - 着陆动画影响稍大，恢复时间更快。\n  - 在配置中添加了选项，用于自定义着陆动画的最大距离、恢复速度和平滑度。\n- 当玩家阅读文本、查看飞船日志或与他人交谈时，时间冻结时相机和视图模型动画将不再原地冻结。这些动画现在将要么完成播放，要么对于连续动画，将平滑过渡到空闲状态。\n\n### 修复\n- 修复了使用隐藏存放物品时导致物品提前跳到存放动画末尾的bug。\n- 修复了当玩家坐在飞船驾驶舱时，物品上的视图模型手臂会消失，并且直到玩家放下物品并再次拾起之前都会保持不可见的问题。"
+    },
+    {
+      "tag": "v1.5.5",
+      "name": "v1.5.5: The Stranger They Are Bugfixes (thanks MegaPiggy!)",
+      "date": "2026-02-24",
+      "body": "### Changes\r\n- Fixed Viewmodel Arm poses for items from **The Stranger They Are**.\r\n\r\n### Fixes by MegaPiggy\r\n- Changed how items from **The Stranger They Are** are detected now that they use custom item types.\r\n- Fixed a bug where picking up an item with no arm data would make the item not droppable or useable.\r\n- Fixed a bug where it would freeze the game for a second when picking up an item or switching to a tool for the first time.\r\n\r\nThank you MegaPiggy for these fixes!",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.5.5/Owen_013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.5.5",
+      "bodyZh": "### 更改\n- 修复了来自 **闯入者(The Stranger They Are)** 的物品的视模型手臂姿势。\n\n### MegaPiggy 的修复\n- 更改了来自 **闯入者(The Stranger They Are)** 的物品的检测方式，因为它们现在使用自定义物品类型。\n- 修复了一个错误，即在拾取没有手臂数据的物品时，物品将无法丢弃或使用。\n- 修复了一个错误，即在首次拾取物品或切换到工具时，游戏会冻结一秒钟。\n\n感谢 MegaPiggy 提供这些修复！"
+    },
+    {
+      "tag": "v1.5.4",
+      "name": "v1.5.4: Viewmodel Arms for The Stranger They Are",
+      "date": "2026-02-18",
+      "body": "### Changes\r\n- Now includes Viewmodel Arms for items from The Stranger They Are!\r\n- The camera now rotates about its own axis instead of around the player's center during the Scout Launcher Animation.\r\n- Horizontal Hand Sway is no longer immediately canceled out when looking straight up/down.\r\n- The Viewmodel Arm pose for the Translator tool has been tweaked.",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.5.4/Owen_013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.5.4",
+      "bodyZh": "### 更改\n- 现在包含来自《他们是谁的陌生人！》的物品的Viewmodel Arms。\n- 在侦察发射器动画期间，相机现在围绕其自己的轴旋转，而不是围绕玩家的中心旋转。\n- 水平手摇摆在直视上下时不再立即被取消。\n- 翻译器的Viewmodel Arm姿势已被调整。"
+    },
+    {
+      "tag": "v1.5.3",
+      "name": "v1.5.3: Various Tweaks & API Overhaul",
+      "date": "2026-02-14",
+      "body": "### Changes\r\n- Viewmodel Arm poses have been tweaked for all tools/items.\r\n- Viewmodel Arms for certain items will no longer partially/completely disappear when too close to a wall.\r\n- Viewmodel Arm Data now uses a better JSON structure.\r\n- The API has been updated to allow for easier creation of custom Viewmodel Arms by other mods.\r\n- Hide Stowed Items now moves the held item off-screen more naturally.",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.5.3/Owen_013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.5.3",
+      "bodyZh": "### 更改\n- 所有工具/物品的视模型手臂姿势已调整。\n- 某些物品的视模型手臂在靠近墙壁时将不再部分/完全消失。\n- 视模型手臂数据现在使用更好的JSON结构。\n- API已更新，以允许其他模组更轻松地创建自定义视模型手臂。\n- 隐藏随身物品现在更自然地将持有的物品移出屏幕。"
+    },
+    {
+      "tag": "v1.5.2",
+      "name": "v1.5.2: Bugfixing",
+      "date": "2026-02-06",
+      "body": "### Fixes\r\n- Viewmodel Arms will no longer sometimes be in the wrong place.\r\n- Fixed various visual bugs that could occur at scene load.",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.5.2/Owen_013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.5.2"
+    },
+    {
+      "tag": "v1.5.1",
+      "name": "v1.5.1: Bugfixing",
+      "date": "2026-02-05",
+      "body": "#### Fixes\r\n- Viewmodel arms will no longer appear while piloting the ship.\r\n- Viewmodel Arms should no longer appear on most modded OWItems.\r\n- Fixed a crash that could occur when a scene was loaded in an unconventional way (i.e. after the statue sync).",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.5.1/Owen_013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.5.1"
+    },
+    {
+      "tag": "v1.5.0",
+      "name": "v1.5.0: New Viewmodel Arms, Landing Animation, and More",
+      "date": "2026-02-02",
+      "body": "### New Viewmodel Arms\r\n- Viewmodel arms now have posable joints.\r\n- All tools/items have a new viewmodel arm that utilizes these posable joints.\r\n\r\n### New Landing Animation\r\n- Added a new and improved **Landing Animation**.\r\n\r\n### Sprinting Animation\r\n- Added a **Sprinting Animation** for held tools/items (requires **Hiker's Mod**).\r\n\r\n### Other Changes\r\n- View Bobbing, Hand Height Offset (Dynamic Tool Position), and Hand Sway (Tool Sway) look slightly different (less nauseating).\r\n- Added **Fix Hand Clipping**, which fixes some items / viewmodel hands clipping through the camera.\r\n- **Mod no longer reparents the camera or tools!**\r\n- Removed Lefty Mode.\r\n  - I removed this feature because I'm not sure how many people actually use it, and it was a bit of a pain to keep supporting as I added more features and worked on the technical side of the mod. If anyone really misses Lefty Mode, let me know and I'll add it back.",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.5.0/Owen_013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.5.0"
+    },
+    {
+      "tag": "v1.4.4",
+      "name": "v1.4.4: Bugfixing",
+      "date": "2025-07-18",
+      "body": "**This version has been tested with and works on Astral Codec and the Outsider. It should also work with any other story mods. Please submit an issue if you encounter bugs.**\r\n\r\n### Fixes\r\n- Viewmodel Arms no longer break the game when picking up certain items placed by other mods.\r\n- Fixed the Viewmodel Arm position for the Jeff Scroll.\r\n- Fixed an issue where the Spacesuit Viewmodel Arm would have weird shading or appear fully dark in certain areas.\r\n- Viewmodel sway is now frame-independent (I think).",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.4.4/Owen_013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.4.4"
+    },
+    {
+      "tag": "v1.4.3",
+      "name": "v1.4.3: Bugfixing and Performance",
+      "date": "2025-07-15",
+      "body": "### Bugfixes\r\n- Viewmodel Arms will no longer appear on dropped items placed by other mods such as Astral Codec.\r\n- Viewmodel Arms will no longer throw NullReferenceExceptions every frame when The Outsider is installed.\r\n- View Bobbing will now scale properly when resizing the Player with Smol Hatchling.\r\n\r\n### Changes\r\n- Performance improvements\r\n  - Viewmodel Arms are now only created when an item/tool is equipped for the first time, and are deactivated when the item is dropped. This means there are no longer 100+ Viewmodel Arms all calling LateUpdate() (or, worse, throwing NREs) every frame.\r\n- Tweaked default settings to be less vomit-inducing.",
+      "zipUrl": "https://github.com/Owen013/FirstPersonPresence/releases/download/v1.4.3/Owen_013.FirstPersonPresence.zip",
+      "releaseUrl": "https://github.com/Owen013/FirstPersonPresence/releases/tag/v1.4.3"
+    }
+  ]
+}

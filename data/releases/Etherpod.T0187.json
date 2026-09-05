@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2025-09-08T22:33:37Z",
+  "releases": [
+    {
+      "tag": "1.0.2",
+      "name": "Release v1.0.2",
+      "date": "2025-08-06",
+      "body": "- Fixed the ship logs\r\n- Added a crush volume somewhere\r\n- Added a light to a doorway that was hard to find\r\n- Prevented opening the map in certain places\r\n- Reworded a couple lines of text\r\n\r\n(If this is too many changes, consider judging version 1.0.1 or docking points)",
+      "zipUrl": "https://github.com/Etherpod/under-a-radio-moon/releases/download/1.0.2/Etherpod.T0187.zip",
+      "releaseUrl": "https://github.com/Etherpod/under-a-radio-moon/releases/tag/1.0.2",
+      "bodyZh": "- 修复了飞船日志\n- 某处添加了粉碎体积\n- 为一个难以找到的门添加了光源\n- 防止在某些地方打开地图\n- 重写了几行文本\n\n（如果这些改动太多，可以考虑判断版本 1.0.1 或对接点）"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "Release v1.0.1",
+      "date": "2025-07-23",
+      "body": "- Fixed some musical cues\r\n- Your eyes close now during a specific sequence\r\n- Added ship log photos\r\n- Fixed a bug where you couldn't complete the mod\r\n- Fixed a bug where you could accidentally complete the mod",
+      "zipUrl": "https://github.com/Etherpod/under-a-radio-moon/releases/download/1.0.1/Etherpod.T0187.zip",
+      "releaseUrl": "https://github.com/Etherpod/under-a-radio-moon/releases/tag/1.0.1",
+      "bodyZh": "- 修复了一些音乐提示\r\n- 在特定序列中，你的眼睛现在会闭上\r\n- 添加了飞船日志照片\r\n- 修复了一个导致你无法完成模组的错误\r\n- 修复了一个导致你意外完成模组的错误"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Under a Radio Moon v1.0.0",
+      "date": "2025-07-23",
+      "body": "Initial release of the mod!",
+      "zipUrl": "https://github.com/Etherpod/under-a-radio-moon/releases/download/1.0.0/Etherpod.T0187.zip",
+      "releaseUrl": "https://github.com/Etherpod/under-a-radio-moon/releases/tag/1.0.0",
+      "bodyZh": "模组初次发布！"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "repoUpdatedAt": "2024-07-26T15:47:08Z",
+  "releases": [
+    {
+      "tag": "v0.1.3",
+      "name": "Version 0.1.3",
+      "date": "2024-07-26",
+      "body": "- Fixed an opacity issue",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-green-screen/releases/download/v0.1.3/xen.GreenScreenMod.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-green-screen/releases/tag/v0.1.3",
+      "bodyZh": "- 修复了不透明度问题"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-green-screen/releases/download/v0.1.2/xen.GreenScreenMod.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-green-screen/releases/tag/v0.1.2",
+      "bodyZh": "- 在模组清单中添加Patreon捐款链接"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "0.1.1",
+      "date": "2023-03-17",
+      "body": "- Add colour and keybind options\r\n- Make green screen double-sided\r\n- Clear markers if the user goes to another planet\r\n- Use active camera for creating markers instead of exclusively the player camera",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-green-screen/releases/download/0.1.1/xen.GreenScreenMod.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-green-screen/releases/tag/0.1.1",
+      "bodyZh": "- 添加颜色和按键绑定选项\r\n- 将绿幕变为双面\r\n- 当用户前往其他星球时清除标记\r\n- 使用活动相机创建标记，而不是仅使用玩家相机"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "0.1.0",
+      "date": "2023-03-16",
+      "body": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-green-screen/releases/download/0.1.0/xen.GreenScreenMod.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-green-screen/releases/tag/0.1.0"
+    }
+  ]
+}

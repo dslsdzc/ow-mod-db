@@ -1,0 +1,45 @@
+{
+  "repoUpdatedAt": "2022-10-23T02:14:38Z",
+  "releases": [
+    {
+      "tag": "v0.2.0",
+      "name": "Input Demo Recorder v0.2.0",
+      "date": "2022-10-23",
+      "body": "* Added seed for random unity events setable.\r\n     * It will save the seed used to record a demo and use the same seed when playing it back\r\n     * You can now set a seed in tas files\r\n\r\n* Re added TAS files!",
+      "zipUrl": "https://github.com/loco-choco/InputDemoRecorder/releases/download/v0.2.0/Locochoco.InputDemoRecorder.zip",
+      "releaseUrl": "https://github.com/loco-choco/InputDemoRecorder/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Input Demo Recorder v.0.1.0",
+      "date": "2022-02-17",
+      "body": "* Reworked the recording/playback system when compared to the previous version\r\n* Added key shortcuts to use the buttons\r\n* W.I.P Rework of the demo system",
+      "zipUrl": "https://github.com/loco-choco/InputDemoRecorder/releases/download/0.1.0/Locochoco.InputDemoRecorder.zip",
+      "releaseUrl": "https://github.com/loco-choco/InputDemoRecorder/releases/tag/0.1.0"
+    },
+    {
+      "tag": "0.0.2",
+      "name": "Input Demo Recorder v0.0.2",
+      "date": "2021-10-21",
+      "body": "* Added a way to see colliders bounding boxes and some primitive colliders\r\n     *  Red = Bounding Box\r\n     * Blue = Physics Collider\r\n     * Green = Trigger Volume",
+      "zipUrl": "https://github.com/loco-choco/InputDemoRecorder/releases/download/0.0.2/InputDemoRecorder-v1.0.2.zip",
+      "releaseUrl": "https://github.com/loco-choco/InputDemoRecorder/releases/tag/0.0.2"
+    },
+    {
+      "tag": "v0.0.1",
+      "name": "Input Demo Recorder v0.0.1",
+      "date": "2021-10-16",
+      "body": "* Adds the support for \"TAS Files\" (.txt)\r\n* Adds a \"TAS File\" example with the plugin files\r\n* Adds more buttons when playing demos/TAS's\r\n* Makes the mod window dragdable\r\n### Release Zip is broken",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/loco-choco/InputDemoRecorder/releases/tag/v0.0.1"
+    },
+    {
+      "tag": "v.1.0",
+      "name": "Input Demo Recorder v.1.0",
+      "date": "2021-10-12",
+      "body": "* Adds the capability to record inputs, save them in a file and play them:\r\n\r\n* Press the button `Record` to record your inputs\r\n    * A timer will appear showing how long have you been recording\r\n    * The button `Stop Recording` will appear, and pressing it stops the recording to it to be saved or replayed\r\n\r\n* Press the button `Play Recorded Demo` to play the demo that you recorded when you hit the `Record` button\r\n    * A timer will appear showing the time of the recording that is being played\r\n    * The button `Stop Playingback` will appear, and pressing it stops the playback\r\n\r\n* Press the button `Save Demo` to save the recorded demo from when you hit the  `Record` button, use the text box that defaults to *OuterWilds_Demo* to choose the name of the file, it will be saved in the same folder as the mod's folder\r\n\r\n* Press the button `Play Saved Demo` to play a demo saved into a file, use the text box that defaults to *OuterWilds_Demo* to choose the name of the file, it needs to be in the same folder as the mod's folder\r\n\r\n* When loading or saving demos you don't need to specify the file extension as they will always use the extension `.owdemo`\r\n\r\n* This is a BepInEx plugin which works with the 1.0.10 version of Outer Wilds",
+      "zipUrl": "https://github.com/loco-choco/InputDemoRecorder/releases/download/v.1.0/InputDemoRecorderPlugin.zip",
+      "releaseUrl": "https://github.com/loco-choco/InputDemoRecorder/releases/tag/v.1.0"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "repoUpdatedAt": "2024-12-30T05:46:22Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2024-12-30",
+      "body": "- By popular demand, now with EXTRA FREEDOM MODE (enable it in the mod settings)",
+      "zipUrl": "https://github.com/Hawkbat/FreedomUnits/releases/download/v1.1.0/Hawkbar.FreedomUnits.zip",
+      "releaseUrl": "https://github.com/Hawkbat/FreedomUnits/releases/tag/v1.1.0",
+      "bodyZh": "- 应广大玩家要求，现提供额外自由模式（请在模组设置中启用）"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-12-30",
+      "body": "",
+      "zipUrl": "https://github.com/Hawkbat/FreedomUnits/releases/download/v1.0.0/Hawkbar.FreedomUnits.zip",
+      "releaseUrl": "https://github.com/Hawkbat/FreedomUnits/releases/tag/v1.0.0"
+    }
+  ]
+}

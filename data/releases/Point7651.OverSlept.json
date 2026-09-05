@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2025-06-14T11:57:36Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-06-14",
+      "body": "is a reles",
+      "zipUrl": "https://github.com/Point7651/OverSlept/releases/download/v0.1.0/Point7651.OverSlept.zip",
+      "releaseUrl": "https://github.com/Point7651/OverSlept/releases/tag/v0.1.0",
+      "bodyZh": "是一个重新发布的模组"
+    }
+  ]
+}

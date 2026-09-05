@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2023-04-02T18:54:23Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2023-04-02",
+      "body": "Fixed computers not appearing",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-ss-ascension/releases/download/v0.1.2/ow-nh-ss-ascension.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-ss-ascension/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-08-18",
+      "body": "Fixed the warp tower computer saying the station is offline",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-ss-ascension/releases/download/v0.1.1/ow-nh-ss-ascension.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-ss-ascension/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-08-17",
+      "body": "Release",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-ss-ascension/releases/download/v0.1.0/ow-nh-ss-ascension.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-ss-ascension/releases/tag/v0.1.0"
+    }
+  ]
+}

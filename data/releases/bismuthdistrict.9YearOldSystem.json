@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-04-22T02:46:02Z",
+  "releases": [
+    {
+      "tag": "publish",
+      "name": "v0.1.0",
+      "date": "2023-04-22",
+      "body": "exist",
+      "zipUrl": "https://github.com/bismuthdistrict/bismuthdistrict.9YearOldSystem/releases/download/publish/bismuthdistrict.9YearOldSystem.zip",
+      "releaseUrl": "https://github.com/bismuthdistrict/bismuthdistrict.9YearOldSystem/releases/tag/publish",
+      "bodyZh": "存在"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2023-05-31T19:48:05Z",
+  "releases": [
+    {
+      "tag": "v2.0.0",
+      "name": "Carson has been revamped once again, welcome version 2.0!",
+      "date": "2022-09-20",
+      "body": "# Another revamp after the release of `1.0`. Here's what's changed:\r\n\r\n- New `README.md` and logo (ooh, shiny). Go check it out!\r\n- Music has been temporarily replaced until I can compose something better. I feel it wasn't polished enough.\r\n- Skybox has been changed.\r\n- Urath, Alpinia, Dester, and Mirtha have been given pretty clouds (they even cast shadows and go dark at night!). Should make it feel just a little more immersive.\r\n- Optimization and bugfixing.\r\n- Urath has had a terrain overhaul.\r\n- New icons added to the ship log.\r\n- **A strange new planet has appeared in the system through unknown means...**",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v2.0.0/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v2.0.0"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-07-28",
+      "body": "*Carson* has received its `1.0` update!\r\n\r\n# What's new?\r\n### Ah jeez, what *hasn't* changed since release 0.4?\r\n\r\n- The *Carson* star itself has been given tweaks and a fresh coat of paint.\r\n- Added new nebular skybox.\r\n- All planets have been completely rebuilt and revamped with new terrain as well as given proper generated heightmaps. No more taking the standard terrain texture and grayscaling it, save a few tweaks here and there.\r\n-  Increased heightmap resolution to 1024 at the equator thanks to the introduction of LODs allowing for higher resolution while keeping frames stable. It allows for mountains, cracks, craters, and shorelines to be much more defined, and helps to keep things detailed when on the surface.\r\n- Added another new planet named *Dester*.\r\n- Added props such as trees and cacti to some planets, further helping to keep things detailed when on the surface.\r\n- Added rain to Pyer.\r\n- Tweaked gas giants.\r\n- **New original flight music composed by yours truly (will likely post it on my YouTube music channel soon)!**\r\n\r\n# What now?\r\n### Well, a couple things...\r\nThe original idea behind *Carson* was that I wanted to create a star system that felt immersive.  The celestial bodies showcased in *Outer Wilds* as well as the beautiful star systems made by other talented people are rather tiny; you can walk across the circumference of a planet in about a minute give or take, which isn't big at all.\r\n\r\nI figured the best thing to do was make a much bigger star system, but also without being *too* big. It's a very sensitive scale to balance, mind you, because if you make it too big then it'll just become boring and likely frustrating. But too small and it breaks immersion.\r\n\r\n*Carson* was inspired by the *Kerbol* system (as well as modded solar systems via *Kopernicus*) as shown in the famous spacecraft simulator *Kerbal Space Program*, as seen by *Carson*'s overall planetary designs.\r\n\r\nWhat I wanted to figure out was just *how big* to make my objects. I settled around the size they are now. I estimated it to be the sweet spot for size. Again, I wanted my system to be big enough to be immersive, but not too big to be frustrating for people or boring. I had to take into consideration that the ship, vanilla-wise anyways, is pretty slow too.\r\n\r\nObviously, this mod has its flaws; a lot of them, mind you. But I've had fun developing this mod and some of the wonderful people like Trifid on the [*Outer Wilds Modding* Discord server](https://discord.gg/RUD",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v1.0.1/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v0.4.1",
+      "name": "v0.4.1",
+      "date": "2022-07-14",
+      "body": "Optimizations, bugfixes and tweaks.\r\n\r\n- Fixed bug with Pyer's fog size.\r\n- Tweaked rotation of Scarlet Storm's ring.\r\n- Added volcanic activity to Volcus. Now there's actual lava!\r\n- Gave Alpinia and Scarlet Storm's rings the \"sand\" fluid type.\r\n- Removed unneeded music files and replaced the one that's left with a much smaller file, drastically reducing mod size.",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v0.4.1/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v0.4.1"
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "v0.4.0",
+      "date": "2022-07-14",
+      "body": "Remade Urath, added another new planet.",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v0.4.0/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v0.4.0"
+    },
+    {
+      "tag": "v0.3.1",
+      "name": "v0.3.1",
+      "date": "2022-07-13",
+      "body": "Fixed the path to Scarlet Storm's ring.",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v0.3.1/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v0.3.1"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "v0.3.0",
+      "date": "2022-07-13",
+      "body": "Added even more celestial bodies, and once again improved existing ones!",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v0.3.0/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "v0.2.1",
+      "date": "2022-07-13",
+      "body": "Added 5 new celestial bodies and improved existing ones. Also, whoops! Quick README fix!",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v0.2.1/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2022-07-13",
+      "body": "Added several celestial bodies and improved existing ones.",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v0.2.0/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-07-12",
+      "body": "Update manifest.json",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v0.1.1/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-07-12",
+      "body": "Merge branch 'main' of https://github.com/mrwallace888/OWNH-Carson-System",
+      "zipUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/download/v0.1.0/OWNH-Carson-System.zip",
+      "releaseUrl": "https://github.com/mrwallace888/OWNH-Carson-System/releases/tag/v0.1.0"
+    }
+  ]
+}

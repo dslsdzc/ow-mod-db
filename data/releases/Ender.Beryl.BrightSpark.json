@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2025-07-23T00:51:19Z",
+  "releases": [
+    {
+      "tag": "v0.5.2",
+      "name": "Version 0.5.2",
+      "date": "2025-07-23",
+      "body": "Should be the actual release without immediate breaking issues this go around!\r\n\r\n(...and as a zip, too!)",
+      "zipUrl": "https://github.com/ImBeryl/OW-Miniature/releases/download/v0.5.2/Ender.OW-Miniature.zip",
+      "releaseUrl": "https://github.com/SebasCapo/OW-Miniature/releases/tag/v0.5.2",
+      "bodyZh": "应该是这次实际发布，没有立即出现破坏问题！\r\n\r\n(...而且还是一个压缩文件！)"
+    },
+    {
+      "tag": "v0.5.1",
+      "name": "Version 0.5.1",
+      "date": "2025-07-23",
+      "body": "Added the missing assets folder (quite important!)\r\n\r\nSome other shenanigans were also ruined by the workflow. Fixed those as well!",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/SebasCapo/OW-Miniature/releases/tag/v0.5.1",
+      "bodyZh": "添加了缺失的资源文件夹（非常重要！）\r\n\r\n一些其他的恶作剧也被工作流程破坏了。同样修复了这些问题！"
+    },
+    {
+      "tag": "v0.5.0",
+      "name": "Version 0.5.0",
+      "date": "2025-07-23",
+      "body": "Release V0.5",
+      "zipUrl": "https://github.com/ImBeryl/OW-Miniature/releases/download/v0.5.0/Ender.OW-Miniature.zip",
+      "releaseUrl": "https://github.com/SebasCapo/OW-Miniature/releases/tag/v0.5.0",
+      "bodyZh": "版本 V0.5"
+    }
+  ]
+}

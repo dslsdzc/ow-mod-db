@@ -1,0 +1,66 @@
+{
+  "repoUpdatedAt": "2023-10-08T23:39:45Z",
+  "releases": [
+    {
+      "tag": "0.7.0",
+      "name": "Version 0.7.0",
+      "date": "2022-09-22",
+      "body": "- Improved checking for DLC\r\n- Made it so toggling \"warped to eye of the universe\" now updates buttons accordingly\r\n\r\nty @MegaPiggy for the changes!",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.7.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.7.0",
+      "bodyZh": "- 改进了DLC的检查\n- 使切换“跃迁至宇宙之眼”现在会相应更新按钮\n\n谢谢 @MegaPiggy 的修改！"
+    },
+    {
+      "tag": "0.6.0",
+      "name": "Version 0.6.0",
+      "date": "2022-09-15",
+      "body": "- Added the paradox flag for easily talking to self",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.6.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.6.0",
+      "bodyZh": "- 添加了悖论标记，以便轻松与自身交谈"
+    },
+    {
+      "tag": "0.5.0",
+      "name": "Version 0.5.0",
+      "date": "2022-03-27",
+      "body": "- Added Earning All Achievements\r\n- Added options to ward off slate, the unholy",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.5.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.5.0",
+      "bodyZh": "- 添加了获得所有成就的奖励\n- 添加了抵御石板、邪恶的选项"
+    },
+    {
+      "tag": "0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2022-02-12",
+      "body": "Improved Ship Log and Signal Editing\r\n\r\n- You can now learn a specific ship log fact instead of all of them\r\n- You can now learn *only* base-game signals/frequencies\r\n- You can now learn *only* base-game ship log facts\r\n\r\n**Full Changelog**: https://github.com/Bwc9876/OW-SaveEditor/compare/0.3.0...0.4.0",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.4.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.4.0",
+      "bodyZh": "改进飞船日志和信号编辑\n\n- 你现在可以学习特定的飞船日志事实，而不是全部\n- 你现在可以学习*仅*基础游戏的信号/频率\n- 你现在可以学习*仅*基础游戏的飞船日志事实\n\n**完整变更日志**: https://github.com/Bwc9876/OW-SaveEditor/compare/0.3.0...0.4.0"
+    },
+    {
+      "tag": "0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2022-01-07",
+      "body": "- Made the ship log actually work\r\n- Made the save and cancel buttons just a Close button now",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.3.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.3.0",
+      "bodyZh": "- 使飞船日志真正可用\n- 将保存和取消按钮改为一个关闭按钮"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2022-01-05",
+      "body": "- Added The Ability To Update The Ship Log\r\n- Fixed Signal Scope Forget All Button\r\n- Added A Button To The Pause Menu\r\n- Close Menu On Scene Change\r\n- General Performance\r\n- Made The Cancel Button Actually Work",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.2.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2022-01-02",
+      "body": "Still want to add ship log, but since ShipLogManager isn't in the TitleScreen scene, I can't really do that.",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.1.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.1.0"
+    }
+  ]
+}

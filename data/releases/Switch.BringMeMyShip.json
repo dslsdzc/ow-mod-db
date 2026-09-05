@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2023-07-15T11:46:55Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "0.1.0",
+      "date": "2022-05-02",
+      "body": "Initial Release",
+      "zipUrl": "https://github.com/Switch-9867/BringMeMyShip/releases/download/v0.1.0/Switch.BringMeMyShip.zip",
+      "releaseUrl": "https://github.com/Switch-9867/BringMeMyShip/releases/tag/v0.1.0"
+    }
+  ]
+}

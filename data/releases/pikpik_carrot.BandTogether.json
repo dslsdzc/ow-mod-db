@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2026-06-08T18:52:30Z",
+  "releases": [
+    {
+      "tag": "v2.1.5",
+      "name": "Release v2.1.5",
+      "date": "2025-12-27",
+      "body": "Added translation for Russian. Thank you @KOTvZephire for providing the translation!",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/v2.1.5/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/v2.1.5"
+    },
+    {
+      "tag": "v2.1.4",
+      "name": "Release v2.1.4",
+      "date": "2025-08-04",
+      "body": "Added translation for Simplified Chinese. Thank you @AaaGss for providing the translation!",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/v2.1.4/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/v2.1.4"
+    },
+    {
+      "tag": "v2.1.3",
+      "name": "Release v2.1.3",
+      "date": "2025-02-07",
+      "body": "Fixes a bug where you can't warp back into the system if you warp out",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/v2.1.3/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/v2.1.3"
+    },
+    {
+      "tag": "v2.1.2",
+      "name": "Release v2.1.2",
+      "date": "2024-10-09",
+      "body": "- Fixed an error introduced by a New Horizons update\r\n- Stopped the mod from self destructing if you loaded a different system\r\n- Fixed a dialogue bug with a certain worshipper\r\n- Changed a certain Nomai's final words\r\n- Changed the color description of a certain rock from \"white\" to \"silver and gold\"",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/v2.1.2/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/v2.1.2"
+    },
+    {
+      "tag": "v2.1.1",
+      "name": "Release v2.1.1",
+      "date": "2024-05-15",
+      "body": "- Fixed a bug where instances of SingleLightSensor on other planets (namely Magistarium) stopped working",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/v2.1.1/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/v2.1.1"
+    },
+    {
+      "tag": "v2.1.0",
+      "name": "Release v2.1.0",
+      "date": "2024-05-11",
+      "body": "- Added sectors\r\n- Ensured a certain worship place was completely dark on low shadow graphics\r\n- Added more dialogue\r\n- Made slight changes to worshipper behavior\r\n- Initial signal can now be tracked from spawn",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/v2.1.0/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/v2.1.0"
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "Release v2.0.0",
+      "date": "2024-04-19",
+      "body": "This is the first update to bring this mod into a playable state, also adding some extra content on the side.\r\n\r\n### Bug Fixes\r\n- Fixed a multitude of bugs in the end sequence\r\n- Fixed a bug where a greedy guy wouldn't accept a bush\r\n- Fixed a bug where a bush wouldn't stay put\r\n- Fixed a bug with certain objects not appearing in a door\r\n- Removed unnecessary scroll walls that were misleading\r\n- Fixed a bug with audio being too loud\r\n- Renamed all of the ship log IDs and dialogue conditions to start with `BT_`\r\n  - Incompatible with previous versions of the mod\r\n\r\n### Performance / QOL\r\n- Added LOD to the rest of the trees\r\n- Added more to the ship log for guidance\r\n- Added physical ship log locations\r\n- Made it less annoying to die in a worship area\r\n\r\n### Content\r\n- Added a planet icon to the ship log\r\n- Added more dialogue including hidden dialogue\r\n- Improved a certain logic puzzle\r\n- Reworked the layout of a certain worship area\r\n- Added a couple short music tracks\r\n- Added a Nomai scroll\r\n- Added a secret Ernesto",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/v2.0.0/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/v2.0.0"
+    },
+    {
+      "tag": "1.0.6",
+      "name": "Release 1.0.6",
+      "date": "2024-03-29",
+      "body": "changelog:\r\n* key shards are actually inserted into the door.\r\n* all clans move to the door when recruited.",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/1.0.6/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/1.0.6"
+    },
+    {
+      "tag": "1.0.5",
+      "name": "Release 1.0.5",
+      "date": "2024-03-29",
+      "body": "",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/1.0.5/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/1.0.5"
+    },
+    {
+      "tag": "1.0.4",
+      "name": "Patch 1.0.4",
+      "date": "2024-03-27",
+      "body": "* Fix a bug breaking everyone's shiplog >_<.",
+      "zipUrl": "https://github.com/Etherpod/Band-Together/releases/download/1.0.4/pikpik_carrot.BandTogether.zip",
+      "releaseUrl": "https://github.com/Etherpod/Band-Together/releases/tag/1.0.4"
+    }
+  ]
+}

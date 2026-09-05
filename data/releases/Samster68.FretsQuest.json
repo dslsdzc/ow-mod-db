@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-04-27T19:06:50Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0",
+      "date": "2025-04-27",
+      "body": "v1.1.0\r\n\r\nChanges:\r\n- New music by Smuffy! Every important location in the mod now has its own custom music. It’s incredible!\r\n- Finished the secret puzzle. Now players that follow the clues will get the newest achievement!\r\n\r\nOther small tweaks:\r\n- Bumped OWML version (2.13.0 -> 2.15.1)\r\n- New mod thumbnail.\r\n- Removed Achievements+ as a dependency. (It still works, of course!)\r\n- Fixed a typo in the most important line in the mod.\r\n- Fixed the Hearthian OCs’ pronouns.\r\n- Ernesto has been reborn.\r\n- Lots of text, dialogue, and README improvements.\r\n- Removed Herobrine.",
+      "zipUrl": "https://github.com/Samster68OW/fretsquest/releases/download/v1.1.0/fretsquest.zip",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v1.1.0",
+      "bodyZh": "v1.1.0\n\n变更：\n- Smuffy！的新音乐！模组中每个重要位置现在都有专属定制音乐。太棒了！\n- 完成了秘密谜题。现在玩家跟随线索将获得最新成就！\n\n其他小调整：\n- OWML版本更新 (2.13.0 -> 2.15.1)\n- 新的模组缩略图。\n- 移除Achievements+作为依赖。（当然仍然可以工作！）\n- 修正了模组中最重要一行中的拼写错误。\n- 修正了哈斯人OC的代词。\n- Ernesto复活了。\n- 大量的文本、对话和README改进。\n- 移除了Herobrine。"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2024-10-09",
+      "body": "Pre-Hurricane Patch!\r\n- Increased lifespan of White Sun.\r\n- Moved props on Lost Strings.\r\n- Cleaned up planets in Map Mode.\r\n- Other minor tweaks.",
+      "zipUrl": "https://github.com/Samster68OW/fretsquest/releases/download/v1.0.1/fretsquest.zip",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v1.0.1",
+      "bodyZh": "飓风前补丁！\n- 增加了白阳的寿命。\n- 移动了失落弦上的道具。\n- 清理了地图模式中的行星。\n- 其他一些小调整。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-10-01",
+      "body": "v1.0.0\r\n\r\n2nd Anniversary Edition!\r\n\r\nNew Features\r\n- A new short mystery with new dialogue, ship logs, and more!\r\n- The mod finally has a proper ending!\r\n- Integration with the Achievements+ mod!\r\n- Lots of improvements to the Ship Log!\r\n- Kept the vibe low-budget for that “baby’s first mod” feel.\r\n\r\nGeneral Polishing\r\n- Bumped mod’s OWML version (2.11.1 -> 2.13.0).\r\n- Updated json files for newer schemas.\r\n- Updated the README and credits.\r\n- Added ‘known-issues’ document to ‘developer’ folder to track known errors and bugs.\r\n- Rewrote code in a lot of documents solely to confuse people.\r\n\r\nCustom System Changes\r\n- Lost Strings: Rearranged some props and adjusted spawning.\r\n- Green Base: New texture, props, logs, and more.\r\n- Bracket’s Rest: New texture, new props, and is now the moon of Green Base.\r\n- Dried Tears: Now has an asteroid belt and an inclined orbit.\r\n\r\nOther Tweaks\r\n- New popup when launching the game.\r\n- Added planets to the title screen.\r\n- Adjusted ship log images in stock solar system.\r\n- Fixed some English typos and inconsistencies.",
+      "zipUrl": "https://github.com/Samster68OW/fretsquest/releases/download/v1.0.0/fretsquest.zip",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v1.0.0",
+      "bodyZh": "v1.0.0\n\n第二周年纪念版！\r\n\r\n新功能\r\n- 新增一个短篇谜题，包含新的对话、飞船日志和更多内容！\r\n- 模组终于有了正式的结局！\r\n- 与 Achievements+ 模组集成！\r\n- 对飞船日志进行了大量改进！\r\n- 保持了低成本的氛围，带来“新手第一模组”的感觉。\r\n\r\n整体优化\r\n- 将模组的 OWML 版本更新至 2.13.0 (从 2.11.1)。\r\n- 更新了 json 文件以支持新版本架构。\r\n- 更新了 README 和致谢信息。\r\n- 在“开发者”文件夹中添加了“已知问题”文档，用于跟踪已知错误和漏洞。\r\n- 在大量文档中重写了代码，纯粹是为了让人困惑。\r\n\r\n自定义系统变更\r\n- Lost Strings: 调整了部分道具和生成机制。\r\n- Green Base: 新纹理、道具、日志和更多内容。\r\n- Bracket’s Rest: 新纹理、新道具，现已成为 Green Base 的卫星。\r\n- Dried Tears: 现在拥有小行星带和倾斜的轨道。\r\n\r\n其他调整\r\n- 启动游戏时新增弹窗提示。\r\n- 在标题屏幕中添加了行星图示。\r\n- 调整了标准太阳系中的飞船日志图片。\r\n- 修复了一些英文拼写错误和不一致之处。"
+    },
+    {
+      "tag": "v0.5.3",
+      "name": "v0.5.3",
+      "date": "2024-05-30",
+      "body": "- Made corrections that I forgot about.",
+      "zipUrl": "https://github.com/Samster68OW/fretsquest/releases/download/v0.5.3/fretsquest.zip",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v0.5.3",
+      "bodyZh": "- 修正了一些我忘记的。"
+    },
+    {
+      "tag": "v0.5.2",
+      "name": "v0.5.2",
+      "date": "2023-09-24",
+      "body": "Added Japanese translation (Thanks, yakamoto!)",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v0.5.2",
+      "bodyZh": "已添加日语翻译（感谢，yakamoto！）"
+    },
+    {
+      "tag": "v0.5.1",
+      "name": "v0.5.1",
+      "date": "2023-02-21",
+      "body": "0.5.1\n\n- Added Russian translation",
+      "zipUrl": "https://github.com/Samster68OW/fretsquest/releases/download/v0.5.1/fretsquest.zip",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v0.5.1"
+    },
+    {
+      "tag": "v0.5.0",
+      "name": "v0.5.0",
+      "date": "2022-10-27",
+      "body": "0.5.0\n\n- Soundtrack is now available on YouTube! (Check readme)\n- Working on translations\n- Other minor tweaks",
+      "zipUrl": "https://github.com/Samster68OW/fretsquest/releases/download/v0.5.0/fretsquest.zip",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v0.5.0"
+    },
+    {
+      "tag": "v0.4.4",
+      "name": "v0.4.4",
+      "date": "2022-10-18",
+      "body": "Updated version in manifest",
+      "zipUrl": "https://github.com/Samster68OW/fretsquest/releases/download/v0.4.4/fretsquest.zip",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v0.4.4"
+    },
+    {
+      "tag": "v0.4.3",
+      "name": "v0.4.3",
+      "date": "2022-10-15",
+      "body": "0.4.3\n\n- Compatible with The Vision (Thanks, hearth1an!)",
+      "zipUrl": "https://github.com/Samster68OW/fretsquest/releases/download/v0.4.3/fretsquest.zip",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v0.4.3"
+    },
+    {
+      "tag": "v0.4.2",
+      "name": "v0.4.2",
+      "date": "2022-10-15",
+      "body": "Merge branch 'main' of https://github.com/Samster68OW/fretsquest",
+      "zipUrl": "https://github.com/Samster68OW/fretsquest/releases/download/v0.4.2/fretsquest.zip",
+      "releaseUrl": "https://github.com/Samster68OW/fretsquest/releases/tag/v0.4.2"
+    }
+  ]
+}

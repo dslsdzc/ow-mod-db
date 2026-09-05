@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2026-05-06T13:32:41Z",
+  "releases": [
+    {
+      "tag": "v2.9.0",
+      "name": "Version 2.9.0",
+      "date": "2024-06-11",
+      "body": "- Updated for Patch 15 (thanks MegaPiggy!)",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v2.9.0/misternebula.FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v2.9.0"
+    },
+    {
+      "tag": "v2.8.0",
+      "name": "Version 2.8.0",
+      "date": "2024-04-25",
+      "body": "- Default move speed is now faster, move speed now also affects rotation speed\r\n- Can move the camera up and down now\r\n\r\nThanks MegaPiggy and zhuyifei1999 for the PRs",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v2.8.0/misternebula.FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v2.8.0"
+    },
+    {
+      "tag": "v2.7.0",
+      "name": "Version 2.7.0",
+      "date": "2023-09-27",
+      "body": "- Fixed issues caused by Patch 14",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v2.7.0/misternebula.FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v2.7.0"
+    },
+    {
+      "tag": "v2.6.0",
+      "name": "2.6.0",
+      "date": "2022-10-04",
+      "body": "## Features:\r\n- Added on-screen prompts for all controls (can be hidden in the options menu)\r\n- Added new key (\") to toggle hiding the HUD (good for screenshots!)\r\n\r\n## Fixes:\r\n- Removed helmet toggle key since it does nothing now (CCU handles this).\r\n- Fixed a bug which locked your controls if you used FreeCam while in a projection pool.",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v2.6.0/misternebula.FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v2.6.0"
+    },
+    {
+      "tag": "v2.5.0",
+      "name": "2.5.0",
+      "date": "2022-09-17",
+      "body": "- Updated for Patch 13.\r\n- Fixed input bug when entering the map.\r\n- Now using CCU, and not using my stinky input manager.",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v2.5.0/misternebula.FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v2.5.0"
+    },
+    {
+      "tag": "v2.4.0",
+      "name": "Add togglable flashlight + refactor",
+      "date": "2022-04-23",
+      "body": "- Added togglable flashlight.\r\n- Allowed switching FOV, enabling/disabling launcher without having to restart the scene.\r\n- Parent to player by default (NH compatibility)\r\n- Refactored project set-up to reflect the current template.\r\n- Stopped using flashlight event to initialize the camera.",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v2.4.0/misternebula.FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v2.4.0"
+    },
+    {
+      "tag": "v2.3.0",
+      "name": "Add variable movement speed and keyboard controls.",
+      "date": "2022-03-05",
+      "body": "",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v2.3.0/misternebula.FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v2.3.0"
+    },
+    {
+      "tag": "v2.2.0",
+      "name": "OWML 2.0.0 support",
+      "date": "2021-10-12",
+      "body": "Added support for OWML 2.0.0 (and Outer Wilds 1.1.10)",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v2.2.0/FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v2.2.0"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Added postprocessing effects to camera",
+      "date": "2020-07-16",
+      "body": "",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v1.2.0/FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Added dependency tag for input handler",
+      "date": "2020-07-02",
+      "body": "- Added dependency tag for input handler",
+      "zipUrl": "https://github.com/misternebula/FreeCam/releases/download/v1.1.1/FreeCam.zip",
+      "releaseUrl": "https://github.com/misternebula/FreeCam/releases/tag/v1.1.1"
+    }
+  ]
+}

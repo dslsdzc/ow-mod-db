@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-06-18T19:39:30Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "OW Voice Acting Mod v1.0.0 - Full Release",
+      "date": "2023-12-31",
+      "body": "WOOOOOO YEAH BABY\r\n\r\nall lines are mixed!!!!!! trailer should be up soon on evalka's youtube channel!\r\n\r\n**Changelog:** [`0.4.2...1.0.0`](https://github.com/Krevace/ow-voice-mod/compare/0.4.2...1.0.0)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/1.0.0/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/1.0.0",
+      "bodyZh": "WOOOOOO 太棒了宝贝\n\n所有行都混合了!!!!!! 预告片很快就会在evalka的youtube频道上发布！\n\n**更新日志：** [⟦0⟧](https://github.com/Krevace/ow-voice-mod/compare/0.4.2...1.0.0)"
+    },
+    {
+      "tag": "0.4.2",
+      "name": "OW Voice Acting Mod v0.4.2 - The Corby Appreciation Update",
+      "date": "2022-12-08",
+      "body": "It's about time for him to show up in the author's field. \r\n\r\n**Changelog:** [`0.4.1...0.4.2`](https://github.com/Krevace/ow-voice-mod/compare/0.4.1...0.4.2)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.4.2/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.4.2",
+      "bodyZh": "该是他出现在作者领域的时候了。\n\n**更新日志：** [⟦0⟧](https://github.com/Krevace/ow-voice-mod/compare/0.4.1...0.4.2)"
+    },
+    {
+      "tag": "0.4.1",
+      "name": "OW Voice Acting Mod v0.4.1 - Google Drive Did a Stupid",
+      "date": "2022-08-17",
+      "body": "Apparently, downloading a zip from google drive replaces & with _ in file names, so this update manually fixed that.\r\n\r\n**Changelog:** [`0.4.0...0.4.1`](https://github.com/Krevace/ow-voice-mod/compare/0.4.0...0.4.1)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.4.1/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.4.1",
+      "bodyZh": "显然，从谷歌驱动下载zip文件会在文件名中把&替换成_，所以这次更新手动修复了这个问题。\n\n**更新日志：** [⟦0⟧](https://github.com/Krevace/ow-voice-mod/compare/0.4.0...0.4.1)"
+    },
+    {
+      "tag": "0.4.0",
+      "name": "OW Voice Acting Mod v0.4.0 - Premix",
+      "date": "2022-08-17",
+      "body": "All unedited audio files are included in this version, normalized and converted to mono.\r\n\r\nOutstanding Issues:\r\n- Museum-chorus only uses Lexi's voice. The other's are there, they just aren't all mixed together yet.\r\n- Some of the new-computer lines don't play because they're organized wrong. That'll be fixed with the actual release.\r\n\r\n**Changelog:** [`0.3.12...0.4.0`](https://github.com/Krevace/ow-voice-mod/compare/0.3.12...0.4.0)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.4.0/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.4.0",
+      "bodyZh": "所有未编辑的音频文件均包含在此版本中，已进行标准化并转换为单声道。\n\n**待解决问题：**\n- 博物馆合唱部分仅使用了莱克斯(莱克斯)的音轨。其他的音轨都在那里，只是尚未全部混合在一起。\n- 部分新电脑相关台词无法播放，因为它们组织方式不正确。这将在正式发布时修复。\n\n**更新日志：** [⟦0⟧](https://github.com/Krevace/ow-voice-mod/compare/0.3.12...0.4.0)"
+    },
+    {
+      "tag": "0.3.12",
+      "name": "OW Voice Acting Mod v0.3.12 - The REAL Lore Explorer Update Latest",
+      "date": "2022-08-07",
+      "body": "- Actually added lore files to mod!!\r\n- Fixed silly credit mistake I made\r\n- Converted all the files to ogg so mod is smaller\r\n\r\n**Changelog:** [`0.3.11...0.3.12`](https://github.com/Krevace/ow-voice-mod/compare/0.3.11...0.3.12)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.3.12/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.3.12",
+      "bodyZh": "- 实际添加了模组的背景故事文件！！\r\n- 修复了我犯的愚蠢的致谢错误\r\n- 将所有文件转换为ogg格式，因此模组更小\r\n\r\n**变更日志：** [⟦0⟧](https://github.com/Krevace/ow-voice-mod/compare/0.3.11...0.3.12)"
+    },
+    {
+      "tag": "0.3.11",
+      "name": "OW Voice Acting Mod v0.3.11 - The Lore Explorer Update",
+      "date": "2022-08-07",
+      "body": "The Lore Explorer voices the signs in the Museum!!!!!!!\r\n(Only added to the credits for now, but you can find the drive link to his and everyone else's unedited files on the discord server in #announcements)\r\n\r\n**Changelog:** [`0.3.10...0.3.11`](https://github.com/Krevace/ow-voice-mod/compare/0.3.10...0.3.11)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.3.11/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.3.11"
+    },
+    {
+      "tag": "0.3.10",
+      "name": "OW Voice Acting Mod v0.3.10 - The Return of Splash Skip",
+      "date": "2022-07-31",
+      "body": "Added it back, but it's now disabled by default for those who don't want it.\r\n\r\n**Changelog:** [`0.3.9...0.3.10`](https://github.com/Krevace/ow-voice-mod/compare/0.3.9...0.3.10)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.3.10/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.3.10"
+    },
+    {
+      "tag": "0.3.9",
+      "name": "OW Voice Acting Mod v0.3.9 - No Splash Screen Skip",
+      "date": "2022-07-29",
+      "body": "unneeded debug feature, just use autoresume or smth lmao\r\n\r\n**Changelog:** [`0.3.8...0.3.9`](https://github.com/Krevace/ow-voice-mod/compare/0.3.8...0.3.9)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.3.9/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.3.9"
+    },
+    {
+      "tag": "0.3.8",
+      "name": "OW Voice Acting Mod v0.3.8 - The Nolram Test Space",
+      "date": "2022-07-10",
+      "body": "This release removes all of the environmental effects and normalization to give Nolram a nice testing space.\r\n\r\n**Changelog:** [`0.3.7...0.3.8`](https://github.com/Krevace/ow-voice-mod/compare/0.3.7...0.3.8)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.3.8/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.3.8"
+    },
+    {
+      "tag": "0.3.7",
+      "name": "OW Voice Acting Mod v0.3.7 - Uppercase Assets",
+      "date": "2022-07-08",
+      "body": "Uppercase, whoops.\r\n\r\n**Changelog:** [`0.3.6...0.3.7`](https://github.com/Krevace/ow-voice-mod/compare/0.3.6...0.3.7)",
+      "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.3.7/Krevace.VoiceMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.3.7"
+    }
+  ]
+}

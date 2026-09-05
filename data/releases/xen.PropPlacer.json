@@ -1,0 +1,22 @@
+{
+  "repoUpdatedAt": "2025-03-13T03:05:32Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-03-13",
+      "body": "I forgot to push stuff before making the last release oops my bad!",
+      "zipUrl": "https://github.com/xen-42/ow-prop-placer/releases/download/v1.0.1/xen.PropPlacer.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-prop-placer/releases/tag/v1.0.1",
+      "bodyZh": "我忘记在最后一次发布前推送东西了哎呀我的错！"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-03-11",
+      "body": "",
+      "zipUrl": "https://github.com/xen-42/ow-prop-placer/releases/download/v1.0.0/xen.PropPlacer.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-prop-placer/releases/tag/v1.0.0"
+    }
+  ]
+}

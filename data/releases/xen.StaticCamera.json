@@ -1,0 +1,82 @@
+{
+  "repoUpdatedAt": "2024-03-15T01:35:25Z",
+  "releases": [
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2024-01-02",
+      "body": "- You'll never guess what this update is",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.4/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.4",
+      "bodyZh": "- 你永远猜不到这次更新是什么"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "v1.0.3",
+      "date": "2022-09-17",
+      "body": "- Update to patch 13\r\n- Update to use new Common Camera API",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.3/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.3",
+      "bodyZh": "- 更新至补丁13\r\n- 更新以使用新的Common Camera API"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "v1.0.2",
+      "date": "2022-05-26",
+      "body": "- Improved input handling (pre-emptive OWO recorder writing compatibility)",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.2/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.2",
+      "bodyZh": "- 改进了输入处理（预占用的OWO记录器写入兼容性）"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-05-25",
+      "body": "- Prevent an issue where you'd get locked out of first person",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.1/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.1",
+      "bodyZh": "- 防止一个让你被锁出第一人称的问题"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-05-25",
+      "body": "- Updated to use Common Camera Utility\r\n- Now has all the same third person effects as Third Person Camera\r\n- Fixes issue where camera always had the same FOV as at the start (issue #1)\r\n- Added button prompt\r\n- Hides HUD when using camera",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.0/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.0",
+      "bodyZh": "- 更新为使用通用相机工具\r\n- 现在具有与第三人称相机完全相同的第三人称效果\r\n- 修复了相机始终具有与初始相同的FOV的问题（问题 #1）\r\n- 添加了按钮提示\r\n- 使用相机时隐藏HUD"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "v0.1.3",
+      "date": "2021-12-05",
+      "body": "Improved controls and added in better 3rd person compatibility",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v0.1.3/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2021-11-28",
+      "body": "Daydream mod compatibility",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v0.1.2/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2021-11-26",
+      "body": "Improved initialization (now compatible with Outer Wilds Online).",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v0.1.1/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2021-11-26",
+      "body": "It just works.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v0.1.0/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v0.1.0"
+    }
+  ]
+}

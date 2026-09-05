@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-06-13T01:05:45Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-06-07",
+      "body": "First release",
+      "zipUrl": "https://github.com/MegaPiggy/QuantumMoonEquatorOrbit/releases/download/1.0.0/MegaPiggy.QuantumMoonEquatorOrbit.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/QuantumMoonEquatorOrbit/releases/tag/1.0.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2023-07-15T11:49:22Z",
+  "releases": [
+    {
+      "tag": "v1.0.2",
+      "name": "hearth1an.ScoutTeleporter",
+      "date": "2022-10-28",
+      "body": "- Screen promt added\r\n- Recharge delay added (with sound)\r\n- Teleporting to other planet/node fixed",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ScoutTeleporter/releases/download/v1.0.2/hearth1an.ScoutTeleporter.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ScoutTeleporter/releases/tag/v1.0.2",
+      "bodyZh": "- 添加了屏幕提示\n- 添加了充能延迟（带声音）\n- 修复了传送至其他星球/节点的功能"
+    },
+    {
+      "tag": "v.1.0.4",
+      "name": "hearth1an.ScoutTeleporter",
+      "date": "2022-10-28",
+      "body": "idk",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ScoutTeleporter/releases/download/v.1.0.4/hearth1an.ScoutTeleporter.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ScoutTeleporter/releases/tag/v.1.0.4",
+      "bodyZh": "idk"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "hearth1an.ProbeTeleporter",
+      "date": "2022-10-02",
+      "body": "- Now you can't use warp in ship\r\n- Warping to other planet doesn't kill you (at least)",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ScoutTeleporter/releases/download/v1.0.1/hearth1an.ProbeTeleporter.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ScoutTeleporter/releases/tag/v1.0.1",
+      "bodyZh": "- 现在不能在飞船中使用跃迁\n- 跃迁到其他星球不会杀死你（至少）"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "hearth1an.ProbeTeleporter",
+      "date": "2022-10-02",
+      "body": "Release!",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ScoutTeleporter/releases/download/v1.0.0/hearth1an.ProbeTeleporter.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ScoutTeleporter/releases/tag/v1.0.0",
+      "bodyZh": "发布！"
+    }
+  ]
+}

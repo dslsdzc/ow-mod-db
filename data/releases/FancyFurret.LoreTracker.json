@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2025-07-24T04:46:24Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2025-07-24",
+      "body": "- Thanks to @TripleWhy - added support for steam cloud",
+      "zipUrl": "https://github.com/FancyFurret/outer-wilds-lore-tracker/releases/download/v0.1.2/FancyFurret.LoreTracker.zip",
+      "releaseUrl": "https://github.com/osum4est/outer-wilds-lore-tracker/releases/tag/v0.1.2",
+      "bodyZh": "- 感谢 @TripleWhy - 添加了对 Steam 云的支持"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2023-08-24",
+      "body": "* Improve efficiency by reusing materials instead of making a whole bunch of instances",
+      "zipUrl": "https://github.com/FancyFurret/outer-wilds-lore-tracker/releases/download/v0.1.1/FancyFurret.LoreTracker.zip",
+      "releaseUrl": "https://github.com/osum4est/outer-wilds-lore-tracker/releases/tag/v0.1.1",
+      "bodyZh": "* 通过重复使用材料而不是创建大量实例来提高效率"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-08-22",
+      "body": "Initial release!",
+      "zipUrl": "https://github.com/FancyFurret/outer-wilds-lore-tracker/releases/download/v0.1.0/FancyFurret.LoreTracker.zip",
+      "releaseUrl": "https://github.com/osum4est/outer-wilds-lore-tracker/releases/tag/v0.1.0",
+      "bodyZh": "初始发布！"
+    }
+  ]
+}

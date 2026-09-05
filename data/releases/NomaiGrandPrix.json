@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2023-07-13T18:02:34Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2023-07-13",
+      "body": "Synced up all the version numbers",
+      "zipUrl": "https://github.com/bucketon/OWRandomSpeedrun/releases/download/1.1.0/NomaiGrandPrix.zip",
+      "releaseUrl": "https://github.com/bucketon/OWRandomSpeedrun/releases/tag/1.1.0",
+      "bodyZh": "所有版本号已同步"
+    },
+    {
+      "tag": "release-v1.1.0",
+      "name": "v1.1.0",
+      "date": "2023-07-13",
+      "body": "fixed version mismatch, removed extra comma from default-config",
+      "zipUrl": "https://github.com/bucketon/OWRandomSpeedrun/releases/download/release-v1.1.0/NomaiGrandPrix.zip",
+      "releaseUrl": "https://github.com/bucketon/OWRandomSpeedrun/releases/tag/release-v1.1.0",
+      "bodyZh": "修复版本不匹配问题，移除了默认配置中的多余逗号"
+    },
+    {
+      "tag": "release-v1.0",
+      "name": "v1.0",
+      "date": "2023-07-12",
+      "body": "First Release",
+      "zipUrl": "https://github.com/bucketon/OWRandomSpeedrun/releases/download/release-v1.0/NomaiGrandPrix.zip",
+      "releaseUrl": "https://github.com/bucketon/OWRandomSpeedrun/releases/tag/release-v1.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

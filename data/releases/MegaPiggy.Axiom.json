@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2024-07-06T03:32:38Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "v1.1.0",
+      "date": "2024-03-28",
+      "body": "- Fixed ship log position compat with other mods\r\n- Included the system folder this time cause apparently in every other release I did, the build didn't have it\r\n- Disabled alpha SFX by default to not impact other jam mods",
+      "zipUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/download/1.1.0/MegaPiggy.Axiom.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/tag/1.1.0",
+      "bodyZh": "- 修复了飞船日志位置与其他模组的兼容性\n- 这次包含了系统文件夹，因为在之前的每个发布版本中，构建都没有包含它\n- 默认禁用了alpha SFX，以不影响其他Jam模组"
+    },
+    {
+      "tag": "1.0.2",
+      "name": "v1.0.2",
+      "date": "2024-03-27",
+      "body": "- Fix moon warden softlock. Who knew writing dialogue would be so complicated. Sometimes I just forget to add a \"goodbye\" to a character.",
+      "zipUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/download/1.0.2/MegaPiggy.Axiom.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/tag/1.0.2",
+      "bodyZh": "- 修复卫星守卫软锁。谁能想到写对话会这么复杂。有时候我甚至会忘记给某个角色加上“再见”。"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2024-03-27",
+      "body": "- New config to disable alpha SFX (you're welcome xen)\r\n- Added some culling\r\n- Removed some details to keep it less laggy\r\n- Finished ship logs\r\n- No more dialogue softlocking (as far as I know lol)\r\n- Some more dialogue\r\n- New subtitle\r\n- File size is only a little bit smaller. I'll optimize in future.\r\n\r\nEverything in this mod is just as non-critical as before but actually works",
+      "zipUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/download/1.0.1/MegaPiggy.Axiom.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/tag/1.0.1",
+      "bodyZh": "- 新配置以禁用alpha音效（欢迎xen）\n- 添加了一些剔除\n- 移除了一些细节以减少卡顿\n- 完成了飞船日志\n- 没有更多对话卡死（据我所知lol）\n- 添加了一些更多对话\n- 新字幕\n- 文件大小只小了一点点。我会在未来进行优化。\n\n这个模组中的所有内容和之前一样都是非关键的，但实际上是可用的"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-03-27",
+      "body": "Jam release",
+      "zipUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/download/1.0.0/MegaPiggy.Axiom.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/tag/1.0.0",
+      "bodyZh": "Jam发布"
+    }
+  ]
+}

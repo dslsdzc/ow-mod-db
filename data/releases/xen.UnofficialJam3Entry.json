@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2026-01-12T15:47:33Z",
+  "releases": [
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2026-01-12",
+      "body": "- Fixed a file name typo",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-entry/releases/download/v1.0.3/xen.UnofficialJam3Entry.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-entry/releases/tag/v1.0.3",
+      "bodyZh": "- 修复了一个文件名拼写错误"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2026-01-12",
+      "body": "- Added Chinese localization (thank you SanBaiMing!)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-entry/releases/download/v1.0.2/xen.UnofficialJam3Entry.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-entry/releases/tag/v1.0.2",
+      "bodyZh": "- 添加了中文本地化（感谢三百万！）"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2024-03-24",
+      "body": "- Randomize audio clips to avoid eardrum death\r\n- Disable signals after invitation has been given",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-entry/releases/download/v1.0.1/xen.UnofficialJam3Entry.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-entry/releases/tag/v1.0.1",
+      "bodyZh": "- 随机化音频片段以避免耳膜损伤\r\n- 邀请后禁用信号"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-03-23",
+      "body": "- Jam 3 entry, made in a day and not valid for judging because I'm a judge!\r\n- Go to a birthday party and stuff, that's the mod.",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-entry/releases/download/v1.0.0/xen.UnofficialJam3Entry.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-entry/releases/tag/v1.0.0",
+      "bodyZh": "- 星际拓荒模组加载器 3 版本，一天内完成，因我是评委所以无效。\n- 去参加生日派对之类的，这就是模组。"
+    }
+  ]
+}

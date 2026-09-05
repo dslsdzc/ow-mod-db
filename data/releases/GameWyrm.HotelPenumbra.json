@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-08-22T15:36:21Z",
+  "releases": [
+    {
+      "tag": "1.0.2",
+      "name": "1.0.2",
+      "date": "2026-08-21",
+      "body": "- Made some hints clearer\r\n- Made a certain puzzle harder as the solution kept being stumbled upon\r\n- You will no longer be stuck in the pit\r\n- A certain echo no longer spies on Feldspar\r\n- Text in the environment is now translatable\r\n- Interactables no longer require you to look away from them to reuse them\r\n- Once you start the mod, you no longer have to re-perform the sequence to start it on future sessions. This is unfortunately not retroactive and you will need to start the mod at least once with this update.\r\n- Added incompatibilities:\r\n  - Time Saver: Skips the very important splash and a certain cutscene\r\n  - Alter Time: Somehow causes a bug that causes the player to become giant\r\n  - Global Screen Space Reflections: Causes a shader issue\r\n- Marshmallows are now timeless",
+      "zipUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/download/1.0.2/GameWyrm.HotelPenumbra.zip",
+      "releaseUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/tag/1.0.2",
+      "bodyZh": "- 使一些提示更清晰\n- 将某个谜题变得更难，因为解决方案一直在被偶然发现\n- 你将不再被困在坑里\n- 某个回声不再监视费尔德斯巴\n- 环境中的文本现在可以翻译\n- 可交互物品不再需要你移开视线才能重复使用\n- 一旦你启动了模组，在未来的会话中就不再需要重新执行序列来启动它。不幸的是，这是不可逆的，并且你至少需要使用此更新启动一次模组。\n- 添加了不兼容性：\n  - 时间节省器：跳过非常重要的启动画面和某个过场动画\n  - 改变时间：以某种方式导致一个bug，使玩家变成巨人\n  - 全局屏幕空间反射：导致一个着色器问题\n- 软糖现在永恒"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2026-08-18",
+      "body": "Fixed certain ship logs becoming permanently missable.",
+      "zipUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/download/1.0.1/GameWyrm.HotelPenumbra.zip",
+      "releaseUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/tag/1.0.1",
+      "bodyZh": "修复了某些飞船日志永久错过的bug。"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2026-08-18",
+      "body": "Initial Release",
+      "zipUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/download/1.0.0/GameWyrm.HotelPenumbra.zip",
+      "releaseUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/tag/1.0.0",
+      "bodyZh": "初始发布"
+    }
+  ]
+}

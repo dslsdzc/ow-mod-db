@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2024-07-19T15:59:02Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2024-07-19",
+      "body": "- Fix logged sand level times being incorrect",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-sand-control/releases/download/v1.0.1/xen-42.SandControl.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-sand-control/releases/tag/v1.0.1",
+      "bodyZh": "- 修复记录的沙层时间不正确"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-07-17",
+      "body": "Change sand level in mod options or using Numpad +/-\r\n\r\nToggle sand funnel in mod options or by pressing 0",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-sand-control/releases/download/v1.0.0/xen-42.SandControl.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-sand-control/releases/tag/v1.0.0",
+      "bodyZh": "修改模组选项中的沙粒等级或使用数字键盘 +/- 键\r\n\r\n在模组选项中切换沙漏或按0键"
+    }
+  ]
+}

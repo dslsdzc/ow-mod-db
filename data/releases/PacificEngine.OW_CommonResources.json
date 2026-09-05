@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2024-12-03T14:11:46Z",
+  "releases": [
+    {
+      "tag": "v0.6.0",
+      "name": "Version 0.6.0",
+      "date": "2024-12-03",
+      "body": "Fixed by @xen-42",
+      "zipUrl": "https://github.com/dgarroDC/OW_CommonResources/releases/download/v0.6.0/PacificEngine.OW_CommonResources.zip",
+      "releaseUrl": "https://github.com/dgarroDC/OW_CommonResources/releases/tag/v0.6.0"
+    },
+    {
+      "tag": "0.5.15",
+      "name": "v0.5.15",
+      "date": "2022-09-29",
+      "body": "## What's Changed\r\n- Updated `OuterWildsGameLibs` to fix bugs with OW Patch 13, particularly in  Cheats Mod with resources like health and fuel cheats not working.\r\n\r\n**Full Changelog**: https://github.com/dgarroDC/OW_CommonResources/compare/0.5.14...0.5.15\r\n\r\n**Note:** This release is in the @dgarroDC fork of Common Resources as a temporal workaround until the main repository is also updated with this fix. Until then, the Outer Wilds Mod Database will use this fork.",
+      "zipUrl": "https://github.com/dgarroDC/OW_CommonResources/releases/download/0.5.15/PacificEngine.OW_CommonResources.zip",
+      "releaseUrl": "https://github.com/dgarroDC/OW_CommonResources/releases/tag/0.5.15"
+    }
+  ]
+}

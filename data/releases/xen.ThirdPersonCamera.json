@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-09-14T16:40:46Z",
+  "releases": [
+    {
+      "tag": "v2.2.1",
+      "name": "Version 2.2.1",
+      "date": "2025-09-14",
+      "body": "- Fixed a bug where the ship log splash screen would stay stuck on until a scout photo was taken",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v2.2.1/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v2.2.1",
+      "bodyZh": "- 修复了一个问题，即飞船日志的启动画面会一直卡住，直到拍摄了一张侦察照片"
+    },
+    {
+      "tag": "v2.2.0",
+      "name": "Version 2.2.0",
+      "date": "2025-05-10",
+      "body": "- Fixed a bug where quitting to main menu while in 3rd person makes you levitate on the ground unable to move when you reload.\r\n- Added translation support for options and button prompts\r\n- Added French translations (probably bad)\r\n- Added option to hide/show button prompts and also checks the base game button prompt setting (thanks Owen for the PR that I forgot about for 1 year)",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v2.2.0/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v2.2.0",
+      "bodyZh": "- 修复了一个在第三人称模式下退出到主菜单，然后重新加载时会导致玩家悬浮在地面上无法移动的bug。\n- 添加了对选项和按钮提示的翻译支持\n- 添加了法语翻译（可能不太好）\n- 添加了隐藏/显示按钮提示的选项，并且会检查基础游戏的按钮提示设置（感谢 Owen 提交的 PR，我竟然忘了长达一年之久）"
+    },
+    {
+      "tag": "v2.1.1",
+      "name": "Version 2.1.1",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v2.1.1/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v2.1.1",
+      "bodyZh": "- 在模组清单中添加Patreon捐赠链接"
+    },
+    {
+      "tag": "v2.1.0",
+      "name": "Version 2.1.0",
+      "date": "2023-09-27",
+      "body": "- Fixed errors due to patch 14\r\n- Using the ship log no longer kicks your out of third person\r\n- Fixed notifications overlapping on-screen text",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v2.1.0/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v2.1.0",
+      "bodyZh": "- 修复了补丁14导致的错误\n- 使用飞船日志不再将你踢出第三人称视角\n- 修复了屏幕上的通知与文字重叠的问题"
+    },
+    {
+      "tag": "v2.0.3",
+      "name": "v2.0.3",
+      "date": "2022-09-17",
+      "body": "- Update to patch 13\r\n- Update to use new Common Camera API",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v2.0.3/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v2.0.3",
+      "bodyZh": "- 更新至补丁13\r\n- 更新以使用新的Common Camera API"
+    },
+    {
+      "tag": "v2.0.2",
+      "name": "v2.0.2",
+      "date": "2022-09-14",
+      "body": "- Added log level option\r\n- Updated packages\r\n- Fix SwitchActiveCamera event not firing (was stopping CCU from fixing stuff when using other camera mods)",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v2.0.2/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v2.0.2"
+    },
+    {
+      "tag": "v2.0.1",
+      "name": "v2.0.1",
+      "date": "2022-05-26",
+      "body": "- Improved input handling (pre-emptive OWO recorder writing compatibility)",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v2.0.1/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v2.0.1"
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "v2.0.0",
+      "date": "2022-05-25",
+      "body": "- Updated to use Common Camera Utility\r\n- Added button prompts\r\n- Fixed an issue where you'd go into third person when using the probe launcher.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v2.0.0/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v2.0.0"
+    },
+    {
+      "tag": "v1.2.4",
+      "name": "v1.2.4",
+      "date": "2022-01-14",
+      "body": "Removed unneeded option",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v1.2.4/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v1.2.4"
+    },
+    {
+      "tag": "v1.2.3",
+      "name": "v1.2.3",
+      "date": "2022-01-08",
+      "body": "Bug fixes",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/download/v1.2.3/xen.ThirdPersonCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-third-person-camera/releases/tag/v1.2.3"
+    }
+  ]
+}

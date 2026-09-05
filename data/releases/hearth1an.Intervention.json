@@ -1,0 +1,66 @@
+{
+  "repoUpdatedAt": "2024-11-04T16:35:08Z",
+  "releases": [
+    {
+      "tag": "v1.0.7",
+      "name": "hearth1an.Intervention",
+      "date": "2023-10-03",
+      "body": "- Russian localisation added by wantapples & hearth1an",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.7/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.7",
+      "bodyZh": "- 由wantapples和hearth1an添加的俄语本地化"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "hearth1an.Intervention",
+      "date": "2023-08-27",
+      "body": "- All bugs fixed\r\n- Now you can't reach the end randomly\r\n- Typos fixed\r\n- Translation base added\r\n\r\nNow mod feels completed (thanks to wonderful NH features)",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.5/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.5",
+      "bodyZh": "- 所有错误已修复\n- 现在无法随机到达终点\n- 拼写错误已修复\n- 已添加翻译基础\n\n现在模组感觉已完成（感谢NH的精彩特性）"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "v1.0.4",
+      "date": "2023-01-24",
+      "body": "Hotfix\n\n- Fixed credits trigger radius (thx Acamaeda)",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.4/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.4",
+      "bodyZh": "热补丁\n\n- 修复了信用触发半径 (感谢 Acamaeda)"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "v1.0.3",
+      "date": "2023-01-24",
+      "body": "v1.0.3\n\n- Fixed randomly playing guitar\n- Credits added\n- Ending should be more obvious now\n- Destroying stock planets again (based)\n- Other minor fixes",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.3/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.3",
+      "bodyZh": "v1.0.3\n\n- 修复随机弹奏吉他\n- 添加了鸣谢\n- 结局现在更明显\n- 再次摧毁库存星球（基于）\n- 其他小修复"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "hearth1an.Intervention",
+      "date": "2023-01-24",
+      "body": "- Loading faster!\r\n- Ending working in a proper way\r\n- Fixed some errors on loading",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.2/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.2",
+      "bodyZh": "- 加载更快！\n- 以正确方式结束工作\n- 修复了一些加载错误"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "hearth1an.Intervention",
+      "date": "2023-01-23",
+      "body": "- Subtitle changed\r\n- Orbit fix",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.1/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Release",
+      "date": "2023-01-23",
+      "body": "",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.0/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.0"
+    }
+  ]
+}

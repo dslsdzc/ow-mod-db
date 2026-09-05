@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-12-27T22:00:46Z",
+  "releases": [
+    {
+      "tag": "1.2.1",
+      "name": "SpeedTools v1.2.1",
+      "date": "2025-12-27",
+      "body": "- Fix to angler fish locations when using save states (thanks to MDJ287)",
+      "zipUrl": "https://github.com/GrimLala/SpeedTools/releases/download/1.2.1/SpeedTools.zip",
+      "releaseUrl": "https://github.com/GrimLala/SpeedTools/releases/tag/1.2.1",
+      "bodyZh": "- 修复使用存档状态时鱼钩鱼的位置 (感谢 MDJ287)"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "SpeedTools v1.2.0",
+      "date": "2023-04-29",
+      "body": "- New menu format that separates the basics from the more advanced settings\r\n- Better error reporting now outputs some frequent config issues to the console\r\n- Sate is reset on death so unlimited fuel and supernova freeze no longer persist\r\n- Tree locator updated to remove collision and disappear once forest goes dark\r\n- New **Experimental** Bramble Navigation state to practice outrunning anglers\r\n- Fixed float parsing to no longer be dependent on system settings",
+      "zipUrl": "https://github.com/GrimLala/SpeedTools/releases/download/v1.2.0/GrimLala.SpeedTools.zip",
+      "releaseUrl": "https://github.com/GrimLala/SpeedTools/releases/tag/v1.2.0",
+      "bodyZh": "- 新菜单格式，将基础设置与更高级的设置分开\n- 现在更好的错误报告会将一些常见的配置问题输出到控制台\n- 死亡时状态会重置，因此无限燃料和超新星冻结不再持续\n- 树木定位器已更新，移除碰撞并在森林变暗时消失\n- 新的 **实验性** 黑棘星导航状态，用于练习躲避捕鱼者\n- 修复了浮点数解析，不再依赖于系统设置"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "SpeedTools v1.1.0",
+      "date": "2022-12-27",
+      "body": "- Ship now reliably wedged in archway for Bramble Entry practice\r\n- Changed default keybind for Statue Skip so it doesn't use a key that is also used with the scout\r\n- Added experimental Stranger practice state",
+      "zipUrl": "https://github.com/GrimLala/SpeedTools/releases/download/v1.1.0/GrimLala.SpeedTools.zip",
+      "releaseUrl": "https://github.com/GrimLala/SpeedTools/releases/tag/v1.1.0",
+      "bodyZh": "- 舰船现在可靠地卡在拱门中，用于黑棘星入口练习\r\n- 更改了默认的雕像跳过键位绑定，使其不使用与侦察兵也使用的键位\r\n- 添加了实验性的陌生人练习状态"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "SpeedTools v1.0.0",
+      "date": "2022-12-20",
+      "body": "The initial release of our speedrun helper mod ✨",
+      "zipUrl": "https://github.com/GrimLala/SpeedTools/releases/download/v1.0.0/GrimLala.SpeedTools.zip",
+      "releaseUrl": "https://github.com/GrimLala/SpeedTools/releases/tag/v1.0.0",
+      "bodyZh": "我们速度辅助模组的初始发布 ✨"
+    }
+  ]
+}

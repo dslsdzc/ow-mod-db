@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2024-10-28T18:30:31Z",
+  "releases": [
+    {
+      "tag": "0.5.2",
+      "name": "v0.5.2",
+      "date": "2022-01-25",
+      "body": "## What's Changed\r\n- Some build updates\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_HardMode/compare/0.5.1...0.5.2",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.5.2/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.5.2"
+    },
+    {
+      "tag": "0.5.1",
+      "name": "v0.5.1",
+      "date": "2022-01-04",
+      "body": "## What's Changed\r\n* DDL requires rebuilding due to common changes\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_HardMode/compare/0.5.0...0.5.1",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.5.1/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.5.1"
+    },
+    {
+      "tag": "0.5.0",
+      "name": "v0.5.0",
+      "date": "2021-12-27",
+      "body": "## What's Changed\r\n* Added support for Common v0.5.0\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_HardMode/compare/0.4.0...0.5.0",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.5.0/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.5.0"
+    },
+    {
+      "tag": "0.4.0",
+      "name": "v0.4.0",
+      "date": "2021-12-22",
+      "body": "## What's Changed\r\n* Fixed a minor bug when selecting `Standard` as your gameplay level\r\n* Update to support latest Common Resources\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_HardMode/compare/0.3.0...0.4.0",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.4.0/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.4.0"
+    },
+    {
+      "tag": "0.3.0",
+      "name": "v0.3.0",
+      "date": "2021-11-17",
+      "body": "- Changes to support changes to  Common Resources\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_HardMode/compare/0.2.4...0.3.0",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.3.0/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.3.0"
+    },
+    {
+      "tag": "0.2.4",
+      "name": "v0.2.4",
+      "date": "2021-11-14",
+      "body": "- Looks like separators break the pause menu. So removing them until the issue can be resolved.",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.2.4/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.2.4"
+    },
+    {
+      "tag": "0.2.3",
+      "name": "v0.2.3",
+      "date": "2021-11-14",
+      "body": "- Added some default difficulty configurations, with \"Hard\" enabled by default.",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.2.3/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.2.3"
+    },
+    {
+      "tag": "0.2.2",
+      "name": "v0.2.2",
+      "date": "2021-11-11",
+      "body": "- Refactoring changes to handle the rework of common",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.2.2/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.2.2"
+    },
+    {
+      "tag": "0.2.1",
+      "name": "v0.2.1",
+      "date": "2021-11-04",
+      "body": "- Fix issue with oxygen percentage",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.2.1/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.2.1"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "v0.2.0",
+      "date": "2021-11-04",
+      "body": "- Now uses Common Resources",
+      "zipUrl": "https://github.com/PacificEngine/OW_HardMode/releases/download/0.2.0/PacificEngine.OW_HardMode.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_HardMode/releases/tag/0.2.0"
+    }
+  ]
+}

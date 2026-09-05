@@ -1,0 +1,22 @@
+{
+  "repoUpdatedAt": "2024-02-18T21:06:53Z",
+  "releases": [
+    {
+      "tag": "1.0.1",
+      "name": "Fixed downloading issue",
+      "date": "2022-01-21",
+      "body": "This issue fixes the issue where you can't download the mod",
+      "zipUrl": "https://github.com/gurrenm3/OuterWilds_SuicideMod/releases/download/1.0.1/Gurrenm3.SuicideMod.zip",
+      "releaseUrl": "https://github.com/gurrenm3/OuterWilds_SuicideMod/releases/tag/1.0.1",
+      "bodyZh": "这个问题修复了您无法下载模组的问题"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Initial Release",
+      "date": "2022-01-12",
+      "body": "",
+      "zipUrl": "https://github.com/gurrenm3/OuterWilds_SuicideMod/releases/download/1.0.0/Gurrenm3.SuicideMod.zip",
+      "releaseUrl": "https://github.com/gurrenm3/OuterWilds_SuicideMod/releases/tag/1.0.0"
+    }
+  ]
+}

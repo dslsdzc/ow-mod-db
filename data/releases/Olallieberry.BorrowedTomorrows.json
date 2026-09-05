@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-09-03T05:23:12Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2026-08-19",
+      "body": "- Fixed an extremely bad bug that was caused by fixing a moderately bad bug in a rush.\r\n- Better progression\r\n- Placeholder map mode\r\n- Faster movement on two things\r\n- Added some fuel tanks\r\n- Made something smaller to not bump you as easily\r\n- Fix fact reveal volume\r\n- Fix broken trigger volume\r\n- Added a meter for something",
+      "bodyZh": "- 修复了一个因匆忙修复一个中等严重程度的bug而引发的极其严重的bug。\n- 改进了进度体验\n- 添加了占位符地图模式\n- 在两件事上加快了移动速度\n- 添加了一些燃料箱\n- 使某物变小以避免更容易碰撞\n- 修复了事实揭示音量\n- 修复了损坏的触发音量\n- 为某物添加了一个计量器",
+      "zipUrl": "https://github.com/Etherpod/Olallieberry/releases/download/1.1.0/Olallieberry.BorrowedTomorrows.zip",
+      "releaseUrl": "https://github.com/Etherpod/Olallieberry/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2026-08-18",
+      "body": "first release",
+      "bodyZh": "首次发布",
+      "zipUrl": "https://github.com/Etherpod/Olallieberry/releases/download/1.0.0/Olallieberry.BorrowedTomorrows.zip",
+      "releaseUrl": "https://github.com/Etherpod/Olallieberry/releases/tag/1.0.0"
+    }
+  ]
+}

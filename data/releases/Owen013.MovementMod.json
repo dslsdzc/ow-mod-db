@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2026-08-28T18:19:15Z",
+  "releases": [
+    {
+      "tag": "v1.6.8",
+      "name": "v1.6.8",
+      "date": "2024-10-21",
+      "body": "### Changes\r\n- There is now a half-second cooldown after Wall Jumping in which you cannot Emergency Boost, which fixes an issue where you could Emergency Boost while trying to Wall Jump.\r\n- You can no longer Wall-Jump while thrusting upwards, which fixes an issue where you would wall jump while trying to boost.\r\n- Removed the ability to disable Wall Jumping while suited because of the above bugfix.\r\n- The player's jump height will now scale properly with Smol Hatchling v2.0.0.",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.8/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.8"
+    },
+    {
+      "tag": "v1.6.7",
+      "name": "v1.6.7",
+      "date": "2024-04-09",
+      "body": "Quick patch for compatibility with Smol Hatchling v1.5.1.",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.7/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.7"
+    },
+    {
+      "tag": "v1.6.6",
+      "name": "v1.6.6: Sprinting Tweaks",
+      "date": "2024-04-06",
+      "body": "- Reverted some very strange features that snuck into the last release.\r\n- Sprinting is now enabled by default *everywhere.*\r\n  - Pursuers will now pursue faster when you're sprinting.\r\n- Made sprinting slightly slower to prevent stinky cheese.\r\n- Emergency Boost and Floaty Physics are now experimental features that are disabled by default.\r\n- Emergency Boosting now costs 30% of your fuel by default.\r\n- Added an option to change the jetpack's maximum fuel capacity.",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.6/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.6"
+    },
+    {
+      "tag": "v1.6.5",
+      "name": "v1.6.5: The Incredibly Super Update",
+      "date": "2024-04-01",
+      "body": "",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.5/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.5"
+    },
+    {
+      "tag": "v1.6.4",
+      "name": "v1.6.4: Bugfixes",
+      "date": "2024-03-14",
+      "body": "- MonoBehaviors now properly unsubscribe from events, preventing config errors after the first loop.\r\n- Fixed a bug that made the climbing animation not play.",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.4/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.4"
+    },
+    {
+      "tag": "v1.6.3",
+      "name": "v1.6.3: Bugfixing and Tweaks",
+      "date": "2024-01-28",
+      "body": "- Jetpack thruster flame no longer appears while sprinting if the jetpack is off or invisible.\r\n- You can now configure how quickly you have to double-tap the jump button to do an emergency boost.\r\n- Fixed a bug where setting the Jump Power in config wouldn't do anything\r\n- Added an option to set your minimum jump power (how high you will jump if you don't charge your jump)\r\n- Removed API (temporarily? lemme know if anyone actually needs it)\r\n- You can now set the minimum acceleration you will move when using Floaty Physics and the gravity at which you will reach this acceleration.",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.3/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.3"
+    },
+    {
+      "tag": "v1.6.2",
+      "name": "v1.6.2: Camera Shake Compatibility, Config Updates, and Bugfixes",
+      "date": "2023-12-27",
+      "body": "# Hiker's Mod v1.6.2\r\n**Changes:**\r\n- Added compatibility with the Camera Shake mod by Streetlights Behind the Trees! Performing an Emergency Boost with the Camera Shake mod enabled will now cause the screen to shake.\r\n  - The intensity of the camera shake can be adjusted in the config menu.\r\n- The volume of the sound that plays when you do an Emergency Boost is now slightly quieter by default and can be changed in the config menu.\r\n- The jetpack flame that appears when you do an Emergency Boost is just a teensy bit smaller.\r\n\r\n**Bugfixes:**\r\n- The ship's left thruster will no longer create a huge downward flame when you do an Emergency Boost. Thank you to Hotklou for reporting this bug!\r\n\r\n**Behind the Scenes:**\r\n- Added a very basic API that can be used by other mods to know when the player is sprinting or Emergency Boosting. This API is a work in progress, so if you want anything to be added to it you can let me know by opening an issue to request a feature.\r\n- Code cleaned up for efficiency and readability.",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.2/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.2"
+    },
+    {
+      "tag": "v1.6.2-pr2",
+      "name": "v1.6.2 Prerelease 2",
+      "date": "2023-12-26",
+      "body": "**This is a prerelease, hopefully the last one for this version.**\r\n\r\nHopefully fixed a bug where the ship thrusters would emergency boost too.",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.2-pr2/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.2-pr2"
+    },
+    {
+      "tag": "v1.6.2-pr1",
+      "name": "v1.6.2 Prerelease 1",
+      "date": "2023-12-23",
+      "body": "**This is a prerelease.**\r\n\r\nAdds camera shaker compatibility, the option to set emergency boost volume, and probably some other stuff that I don't remember.",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.2-pr1/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.2-pr1"
+    },
+    {
+      "tag": "v1.6.1",
+      "name": "v1.6.1: Bugfixing",
+      "date": "2023-12-14",
+      "body": "Changes:\r\n- Default **Sprint Strafe Speed** is now 8.\r\n- Sprinting will now use the oxygen thrust sound when out of fuel and the underwater thrust sound when underwater.\r\n- The jetpack thruster flame will no longer appear when underwater.\r\n\r\nBugfixes:\r\n- The jetpack will no longer be silent when used normally.\r\n- The thrust sound will no longer be too quiet after using the jetpack and landing.",
+      "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.1/Owen013.MovementMod.zip",
+      "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.1"
+    }
+  ]
+}

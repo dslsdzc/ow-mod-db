@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2024-11-04T16:34:47Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-07-26",
+      "body": "Update manifest.json",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-ngc1087/releases/download/v0.1.0/ow-nh-ngc1087.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-ngc1087/releases/tag/v0.1.0"
+    }
+  ]
+}

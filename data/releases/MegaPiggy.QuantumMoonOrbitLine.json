@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-10-08T23:40:02Z",
+  "releases": [
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-07-27",
+      "body": "- Fix visible outside of map bug\r\n- Add color to orbit line\r\n- Better fade distances",
+      "zipUrl": "https://github.com/MegaPiggy/QuantumMoonOrbitLine/releases/download/1.0.1/MegaPiggy.QuantumMoonOrbitLine.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/QuantumMoonOrbitLine/releases/tag/1.0.1",
+      "bodyZh": "- 修复地图外的可见性bug\r\n- 为轨道线添加颜色\r\n- 改进淡出距离"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-07-27",
+      "body": "First release",
+      "zipUrl": "https://github.com/MegaPiggy/QuantumMoonOrbitLine/releases/download/1.0.0/MegaPiggy.QuantumMoonOrbitLine.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/QuantumMoonOrbitLine/releases/tag/1.0.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

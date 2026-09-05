@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-07-13T11:00:03Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2026-04-20",
+      "body": "Release v0.1.2",
+      "zipUrl": "https://github.com/SanBaiMing/Outer-Wilds-Quantum-Rocks/releases/download/v0.1.2/SanBaiMing.QuantumRocks.zip",
+      "releaseUrl": "https://github.com/SanBaiMing/Outer-Wilds-Quantum-Rocks/releases/tag/v0.1.2",
+      "bodyZh": "版本 v0.1.2"
+    }
+  ]
+}

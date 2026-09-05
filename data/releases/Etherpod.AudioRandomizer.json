@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2026-05-09T07:27:09Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Release v1.0.0",
+      "date": "2026-05-09",
+      "body": "",
+      "zipUrl": "https://github.com/Etherpod/Audio-Randomizer/releases/download/v1.0.0/Etherpod.AudioRandomizer.zip",
+      "releaseUrl": "https://github.com/Etherpod/Audio-Randomizer/releases/tag/v1.0.0"
+    }
+  ]
+}

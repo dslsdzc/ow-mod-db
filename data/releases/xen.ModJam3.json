@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-03-14T03:45:51Z",
+  "releases": [
+    {
+      "tag": "v1.2.5",
+      "name": "Version 1.2.5",
+      "date": "2026-03-14",
+      "body": "- Added Russian translation (thanks KOTvZephire!)\r\n- Added Chinese translation (thanks SanBaiMing!)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v1.2.5/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v1.2.5",
+      "bodyZh": "- 添加了俄语翻译（感谢 KOTvZephire！）\r\n- 添加了中文翻译（感谢 SanBaiMing！）"
+    },
+    {
+      "tag": "v1.2.4",
+      "name": "Version 1.2.4",
+      "date": "2025-03-02",
+      "body": "- Added Korean translation (thanks Barirn!)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v1.2.4/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v1.2.4",
+      "bodyZh": "- 添加了韩语翻译（感谢 Barirn！）"
+    },
+    {
+      "tag": "v1.2.3",
+      "name": "Version 1.2.3",
+      "date": "2025-02-23",
+      "body": "- Added the Starship Community to the title screen (thanks MegaPiggy!)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v1.2.3/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v1.2.3",
+      "bodyZh": "- 在标题屏幕中添加了星际飞船社区（感谢MegaPiggy！）"
+    },
+    {
+      "tag": "v1.2.2",
+      "name": "Version 1.2.2",
+      "date": "2025-02-18",
+      "body": "- Fixed a bug introduced by NH 1.27.0 (a private method was renamed)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v1.2.2/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v1.2.2",
+      "bodyZh": "- 修复了NH 1.27.0引入的bug（一个私有方法被重命名）"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "Version 1.2.1",
+      "date": "2024-12-02",
+      "body": "- Updated the preview image for Finis to reflect its new updates (thanks orclecle for the PR)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v1.2.1/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v1.2.1",
+      "bodyZh": "- 更新了Finis的预览图像以反映其新更新（感谢orclecle的PR）"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2024-06-03",
+      "body": "- Added support for the ending of Symbiosis if the Symbiosis Ship Logs addon is installed (thanks GameWyrm!)\r\n- The plaques describing each mod will now say what mod they are referring to if it is not installed.\r\n- Placed a recipe for soup on a table instead of the floor",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v1.2.0/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2024-04-26",
+      "body": "- Added support for the ending of Band Together now that it is fully playable.\r\n- Updated the preview image used for Magistarium.",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v1.1.0/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-04-13",
+      "body": "The jam has now been judged!\r\n- Ping now has dialogue specific to each jam entry\r\n- Talking to Ping after completing a jam entry will reveal new objects around the Starship Community\r\n- The downstairs whiteboards now list the winners\r\n- Upstairs now has short preview text for each entry\r\n\r\nCongrats to all entrants! Symbiosis and Band Together currently lack extra content here but it will be added once they are complete.",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v1.0.0/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.5.6",
+      "name": "Version 0.5.6",
+      "date": "2024-03-28",
+      "body": "- Ping can now teach you how to meditate if you don't know how.",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v0.5.6/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v0.5.6"
+    },
+    {
+      "tag": "v0.5.5",
+      "name": "Version 0.5.5",
+      "date": "2024-03-28",
+      "body": "- I forgot a comma and broke the mod",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/download/v0.5.5/xen.ModJam3.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-3-base/releases/tag/v0.5.5"
+    }
+  ]
+}

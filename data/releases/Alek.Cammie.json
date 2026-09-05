@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2021-11-26T09:40:01Z",
+  "releases": [
+    {
+      "tag": "v0.3",
+      "name": "v0.3",
+      "date": "2021-10-14",
+      "body": "",
+      "zipUrl": "https://github.com/amazingalek/owml-cammie/releases/download/v0.3/HDScreenshot.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml-cammie/releases/tag/v0.3"
+    },
+    {
+      "tag": "v0.2",
+      "name": "v0.2",
+      "date": "2020-12-29",
+      "body": "* renamed mod\r\n* added readme",
+      "zipUrl": "https://github.com/amazingalek/owml-cammie/releases/download/v0.2/HDScreenshot.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml-cammie/releases/tag/v0.2"
+    },
+    {
+      "tag": "v0.1",
+      "name": "v0.1",
+      "date": "2020-11-23",
+      "body": "",
+      "zipUrl": "https://github.com/amazingalek/owml-cammie/releases/download/v0.1/OWML.Cammie.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml-cammie/releases/tag/v0.1"
+    }
+  ]
+}

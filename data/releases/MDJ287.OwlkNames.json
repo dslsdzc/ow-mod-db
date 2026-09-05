@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2026-03-18T20:41:05Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2026-03-18",
+      "body": "",
+      "zipUrl": "https://github.com/MDJ287/OwlkNames/releases/download/v0.1.1/MDJ287.OwlkNames.zip",
+      "releaseUrl": "https://github.com/MDJ287/OwlkNames/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-03-18",
+      "body": "",
+      "zipUrl": "https://github.com/MDJ287/OwlkNames/releases/download/v0.1.0/MDJ287.OwlkNames.zip",
+      "releaseUrl": "https://github.com/MDJ287/OwlkNames/releases/tag/v0.1.0"
+    }
+  ]
+}

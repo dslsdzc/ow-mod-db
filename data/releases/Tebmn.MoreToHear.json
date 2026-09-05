@@ -1,0 +1,66 @@
+{
+  "repoUpdatedAt": "2025-11-19T15:20:59Z",
+  "releases": [
+    {
+      "tag": "v2.1.0",
+      "name": "Version 2.1.0",
+      "date": "2025-11-19",
+      "body": "V2.1.0\r\n\r\nAdded new Signal (Eye Signal) and Frequency (The Vessel) to the Eye Signal Hologram\r\n\r\nBug Fixes",
+      "zipUrl": "https://github.com/Tebmn/Tebmn.MoreToHear/releases/download/v2.1.0/Tebmn.MoreToHear.zip",
+      "releaseUrl": "https://github.com/Tebmn/MoreToHear/releases/tag/v2.1.0",
+      "bodyZh": "V2.1.0\r\n\r\n新增信号（宇宙之眼信号）和频率（飞船）至宇宙之眼全息图\r\n\r\n修复了错误"
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "Version 2.0.0",
+      "date": "2025-11-18",
+      "body": "V2.0.0\r\n\r\nModified the detection and identification radiuses for various signals\r\n\r\nRemoved all \"Absorption\" signals\r\n\r\nRenamed \"LOOP_ERROR\" signal (Advanced Core)(bonus: This sound can now be heard without the signalscope...)\r\n\r\nRenamed \"Emission\" signal (White Core)\r\n\r\nAdded new signals (Ash Twin Mask) to each of the active masks within the ATP\r\n\r\nAdded a new signal to the  Major White Hole (White Hole)",
+      "zipUrl": "https://github.com/Tebmn/Tebmn.MoreToHear/releases/download/v2.0.0/Tebmn.MoreToHear.zip",
+      "releaseUrl": "https://github.com/Tebmn/MoreToHear/releases/tag/v2.0.0",
+      "bodyZh": "V2.0.0\n\n修改了各种信号的检测和识别半径\n\n移除了所有\"吸收\"信号\n\n重命名了\"LOOP_ERROR\"信号（高级核心）（奖励：现在可以在没有信号镜的情况下听到这个声音...）\n\n重命名了\"Emission\"信号（白洞核心）\n\n为ATP内的每个活跃面具添加了新的信号（灰烬双星面具）\n\n为主要的白洞（白洞）添加了一个新信号"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2025-11-12",
+      "body": "Fixed Elsinore signal",
+      "zipUrl": "https://github.com/Tebmn/Tebmn.MoreToHear/releases/download/v1.1.1/Tebmn.MoreToHear.zip",
+      "releaseUrl": "https://github.com/Tebmn/MoreToHear/releases/tag/v1.1.1",
+      "bodyZh": "修复了埃尔斯诺尔信号"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2025-11-12",
+      "body": "V1.1.0\r\n\r\nAdded a new signal (???) and frequency (???) to the FIG Backer Satellite\r\n\r\nAdded a new Signal (unknown) and frequency (unknown) to the Elsinore Bramble Seed (though, it cannot be identified)",
+      "zipUrl": "https://github.com/Tebmn/Tebmn.MoreToHear/releases/download/v1.1.0/Tebmn.MoreToHear.zip",
+      "releaseUrl": "https://github.com/Tebmn/MoreToHear/releases/tag/v1.1.0",
+      "bodyZh": "V1.1.0\r\n\r\n为FIG Backer Satellite添加了一个新的信号(???)和频率(???)\r\n\r\n为Elsinore Bramble Seed添加了一个新的信号(未知)和频率(未知)(尽管，它无法被识别)"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-11-12",
+      "body": "Final zip added to release assets for use in the Mod Database (sorry guys ::P)",
+      "zipUrl": "https://github.com/Tebmn/Tebmn.MoreToHear/releases/download/v1.0.1/Tebmn.MoreToHear.zip",
+      "releaseUrl": "https://github.com/Tebmn/MoreToHear/releases/tag/v1.0.1",
+      "bodyZh": "最终压缩文件已添加到发布资源中，用于模组数据库（抱歉各位 ::P）"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Content Release",
+      "date": "2025-11-11",
+      "body": "This release coincides with the Repository rework\r\n\r\nV1.0.0 Added a new signal (LOOP_ERROR) and frequency (Anti-Graviton Flux) to the Advanced Warp Core, Added a new signal (Emission) to all White Hole cores (Anti-Graviton Flux), Added a new signal (Absorption) to all Black Hole cores (Anti-Graviton Flux), Added a new signal (Sun Station) to the Sun Station (Nomai Radio), Added new signals (Moon & Comet Shuttle) to the Nomai Shuttles (Nomai Radio), Added new signals (Museusm, Island, & Probe Statue) and frequency (Nomai Statue) to the Activated Nomai Statues",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/Tebmn/MoreToHear/releases/tag/1.0.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Initial Release",
+      "date": "2025-11-09",
+      "body": "initial release",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/Tebmn/MoreToHear/releases/tag/v0.1.0"
+    }
+  ]
+}

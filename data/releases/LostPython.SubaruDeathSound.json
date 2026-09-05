@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-01-28T23:18:03Z",
+  "releases": [
+    {
+      "tag": "v0.1.5",
+      "name": "ACTUAL Subaru Death Sound Mod Release",
+      "date": "2026-01-28",
+      "body": "I hope this works.",
+      "zipUrl": "https://github.com/LostPython1192/SubaruDeathSound/releases/download/v0.1.5/LostPython.SubaruDeathSound.zip",
+      "releaseUrl": "https://github.com/LostPython1192/SubaruDeathSound/releases/tag/v0.1.5",
+      "bodyZh": "我希望这能行。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Subaru Death Sound Mod Release",
+      "date": "2026-01-28",
+      "body": "Finished the first part of the Subaru Death Sound mod.",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/LostPython1192/SubaruDeathSound/releases/tag/v1.0.0",
+      "bodyZh": "完成了所莱内姆死亡之音模组的第一个部分。"
+    }
+  ]
+}

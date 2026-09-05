@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-06-13T02:10:14Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-06-13",
+      "body": "First release",
+      "zipUrl": "https://github.com/MegaPiggy/OWLineNumbers/releases/download/1.0.0/MegaPiggy.LineNumbers.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWLineNumbers/releases/tag/1.0.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

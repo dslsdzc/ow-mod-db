@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2025-07-25T02:35:13Z",
+  "releases": [
+    {
+      "tag": "v0.5.2",
+      "name": "0.5.2",
+      "date": "2022-09-27",
+      "body": "# New\r\nAdded achievement about Ernesto",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.5.2/Grapefruit-main.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.5.2"
+    },
+    {
+      "tag": "v0.5.1",
+      "name": "0.5.1",
+      "date": "2022-09-10",
+      "body": "# New\r\n-   Added Nomai computer to the escape pod\r\n# Small changes\r\n- Changed the location of the Nomai voice recorder in the escape pod",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.5.1/Grapefruit051.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.5.1"
+    },
+    {
+      "tag": "v0.5.0",
+      "name": "0.5.0",
+      "date": "2022-09-09",
+      "body": "# New\r\n- Added 5 new nomai recorders\r\n- Added escape pod\r\n- Added  2 new shiplog facts\r\n- Added Ernesto\r\n# Small changes\r\n- Dragonfruit is reduced by half(400m->200m)",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.5.0/Grapefruit050.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.5.0"
+    },
+    {
+      "tag": "v0.4.5",
+      "name": "0.4.5",
+      "date": "2022-06-26",
+      "body": "stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid 2: The return of stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.4.5/Grapefruit045.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.4.5"
+    },
+    {
+      "tag": "v0.4.4",
+      "name": "0.4.4",
+      "date": "2022-06-26",
+      "body": "stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruitstupid dumb tlya.Grapefruit stupid dumb tlya.Grapefruitstupid dumb tlya.Grapefruit",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.4.4/grapefruit.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.4.4"
+    },
+    {
+      "tag": "v0.4.3",
+      "name": "0.4.3",
+      "date": "2022-06-26",
+      "body": "stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid stupid dumb manifest dumb dumb stupid manifest dumb stupid stupid stupid dumb manifest manifest dumb stupid",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.4.3/grapefruit.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.4.3"
+    },
+    {
+      "tag": "v0.4.2",
+      "name": "0.4.2",
+      "date": "2022-06-26",
+      "body": "# New\r\n- Added coordinates for Vessel\r\n# Small changes\r\n- Many different changes to make the addon work on new versions of New Horizons",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.4.2/grapefruit.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.4.2"
+    },
+    {
+      "tag": "v0.4.1",
+      "name": "0.4.1",
+      "date": "2022-05-31",
+      "body": "# New features\r\n- Added subtitle\r\n# Small changes\r\n- Replaced hasAtmosphere to useAtmosphereShader(cuz new nh version)",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.4.1/Release.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.4.1"
+    },
+    {
+      "tag": "v0.4.001",
+      "name": "0.4.0-notraft",
+      "date": "2022-05-06",
+      "body": "The version for people who don't have DLC. It removes the raft so that the addon can work properly(only on NH 0.13.0)",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.4.001/release.2.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.4.001"
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "0.4.0",
+      "date": "2022-05-06",
+      "body": "- Add raft to Dragonfruit\r\n- Cut down the shiplog pictures a bit to make them display better (Still a bit broken)",
+      "zipUrl": "https://github.com/Tllya/Grapefruit/releases/download/v0.4.0/release.zip",
+      "releaseUrl": "https://github.com/Tllya/Grapefruit/releases/tag/v0.4.0"
+    }
+  ]
+}

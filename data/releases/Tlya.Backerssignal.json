@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2022-05-17T16:54:14Z",
+  "releases": [
+    {
+      "tag": "v1.0.2",
+      "name": "1.0.2",
+      "date": "2022-05-17",
+      "body": "- Fix all",
+      "zipUrl": "https://github.com/Tllya/backers-satellite-signal/releases/download/v1.0.2/BSS102.zip",
+      "releaseUrl": "https://github.com/Tllya/backers-satellite-signal/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "1.0.1",
+      "date": "2022-05-17",
+      "body": "- Add idea's author",
+      "zipUrl": "https://github.com/Tllya/backers-satellite-signal/releases/download/v1.0.1/BSS.1.0.1.zip",
+      "releaseUrl": "https://github.com/Tllya/backers-satellite-signal/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "1.0.0",
+      "date": "2022-05-17",
+      "body": "- Add signal to the Backer's sattelite\r\n- Add russian translation",
+      "zipUrl": "https://github.com/Tllya/backers-satellite-signal/releases/download/v1.0.0/BSS.0.1.0.zip",
+      "releaseUrl": "https://github.com/Tllya/backers-satellite-signal/releases/tag/v1.0.0"
+    }
+  ]
+}

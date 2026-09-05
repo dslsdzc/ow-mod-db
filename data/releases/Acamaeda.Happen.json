@@ -1,0 +1,49 @@
+{
+  "repoUpdatedAt": "2022-12-15T01:02:53Z",
+  "releases": [
+    {
+      "tag": "v0.3.3",
+      "name": "Version 0.3.3",
+      "date": "2022-12-12",
+      "body": "This is released now!\r\n\r\n(Also, some text was tweaked)",
+      "zipUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/download/v0.3.3/OuterWildsExperiment.zip",
+      "releaseUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/tag/v0.3.3",
+      "bodyZh": "这现在发布了！\r\n\r\n（此外，一些文字被调整了）"
+    },
+    {
+      "tag": "v0.3.2",
+      "name": "Version 0.3.2",
+      "date": "2022-12-12",
+      "body": "Release",
+      "zipUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/download/v0.3.2/OuterWildsExperiment.zip",
+      "releaseUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/tag/v0.3.2",
+      "bodyZh": "发布"
+    },
+    {
+      "tag": "v0.3.1",
+      "name": "Version 0.3.1",
+      "date": "2022-11-23",
+      "body": "Dialogue tweaks.",
+      "zipUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/download/v0.3.1/OuterWildsExperiment.zip",
+      "releaseUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/tag/v0.3.1",
+      "bodyZh": "对话调整。"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2022-11-23",
+      "body": "Changes alongside NH fix.\r\n\r\n**Full Changelog**: https://github.com/Acamaeda/OuterWildsExperiment/compare/v0.2.0...v0.3.0",
+      "zipUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/download/v0.3.0/OuterWildsExperiment.zip",
+      "releaseUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/tag/v0.3.0",
+      "bodyZh": "与NH修复一同进行的变更。\n\n**完整变更日志**: https://github.com/Acamaeda/OuterWildsExperiment/compare/v0.2.0...v0.3.0"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2022-11-22",
+      "body": "",
+      "zipUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/download/v0.2.0/OuterWildsExperiment.zip",
+      "releaseUrl": "https://github.com/Acamaeda/OuterWildsExperiment/releases/tag/v0.2.0"
+    }
+  ]
+}

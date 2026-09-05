@@ -1,0 +1,30 @@
+{
+  "repoUpdatedAt": "2023-04-08T12:29:26Z",
+  "releases": [
+    {
+      "tag": "1.1.1",
+      "name": "Updated ASCII Shader",
+      "date": "2023-04-10",
+      "body": "Set each ASCII character to the maximum brightness of that colour, as the brightness should be determined by the density of that character, not the colour itself.",
+      "zipUrl": "https://github.com/Vesper-Works/Vesper-s-Assorted-OuterWilds-Shaders/releases/download/1.1.1/Release.1.1.1.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Vesper-s-Assorted-OuterWilds-Shaders/releases/tag/1.1.1",
+      "bodyZh": "将每个ASCII字符设置为该颜色的最大亮度，因为亮度应由该字符的密度决定，而不是颜色本身。"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "v1.1 release! Added edge detect, invert and synthwave shaders!",
+      "date": "2021-10-29",
+      "body": "",
+      "zipUrl": "https://github.com/Vesper-Works/Vesper-s-Assorted-OuterWilds-Shaders/releases/download/1.1.0/Release.1.1.0.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Vesper-s-Assorted-OuterWilds-Shaders/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Full first release!",
+      "date": "2021-10-25",
+      "body": "",
+      "zipUrl": "https://github.com/Vesper-Works/Vesper-s-Assorted-OuterWilds-Shaders/releases/download/1.0.0/Release.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Vesper-s-Assorted-OuterWilds-Shaders/releases/tag/1.0.0"
+    }
+  ]
+}

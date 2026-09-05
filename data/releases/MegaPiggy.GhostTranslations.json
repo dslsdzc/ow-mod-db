@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2026-01-16T14:54:18Z",
+  "releases": [
+    {
+      "tag": "1.2.0",
+      "name": "v1.2.0",
+      "date": "2025-04-26",
+      "body": "- Update German Translations (#2) \r\n   - Thanks @slipcor\r\n- Changed Dam to Reservoir\r\n- Made keep out sign near prisoner's house in dreamworld translatable\r\n- Support for Ukranian and Basque mods",
+      "zipUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/download/1.2.0/MegaPiggy.GhostTranslations.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/tag/1.2.0",
+      "bodyZh": "- 更新德语翻译 (#2) \r\n   - 感谢 @slipcor\r\n- 将 Dam 改为 Reservoir\r\n- 使梦境世界囚犯房屋附近的 keep out sign 可翻译\r\n- 支持乌克兰语和巴斯克语模组"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "v1.1.0",
+      "date": "2024-05-14",
+      "body": "- Added Translations (#1) \r\n   - Thanks @omega-fallon\r\n- Changed Owelk to Inhabitants",
+      "zipUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/download/1.1.0/MegaPiggy.GhostTranslations.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/tag/1.1.0",
+      "bodyZh": "- 添加了翻译 (#1) \n   - 感谢 @omega-fallon\n- 将 Owelk 改为 Inhabitants"
+    },
+    {
+      "tag": "1.0.2",
+      "name": "v1.0.2",
+      "date": "2022-09-18",
+      "body": "Updated for patch 13\r\n\r\nEdit: fixed zip file on non-windows systems",
+      "zipUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/download/1.0.2/MegaPiggy.GhostTranslations.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/tag/1.0.2",
+      "bodyZh": "更新至补丁13\r\n\r\n编辑：修复了非Windows系统上的zip文件"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-04-08",
+      "body": "Made location names orange",
+      "zipUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/download/1.0.1/MegaPiggy.GhostTranslations.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/tag/1.0.1",
+      "bodyZh": "将位置名称设置为橙色"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-04-03",
+      "body": "First release",
+      "zipUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/download/1.0.0/MegaPiggy.GhostTranslations.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/GhostTranslations/releases/tag/1.0.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

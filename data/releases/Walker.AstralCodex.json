@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2026-08-02T22:16:10Z",
+  "releases": [
+    {
+      "tag": "1.9.1",
+      "name": "Patch 9.1",
+      "date": "2025-07-29",
+      "body": "- French translation updates by LaraNanuq\r\n- Russian translation update by Groove619",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.9.1/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.9.1"
+    },
+    {
+      "tag": "1.9.0",
+      "name": "Patch 9",
+      "date": "2025-05-21",
+      "body": "- Added Italian translation by simozmp\r\n- Updated Russian translation by Carol",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.9.0/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.9.0"
+    },
+    {
+      "tag": "1.8.0",
+      "name": "Patch 8",
+      "date": "2025-03-17",
+      "body": "Added Korean translation by Barirn.",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.8.0/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.8.0"
+    },
+    {
+      "tag": "1.7.0",
+      "name": "Patch 7.0",
+      "date": "2024-09-05",
+      "body": "A translation update.\r\n- Added French translation (courtesy of Yokuen)\r\n- Updated Russian translation (courtesy of Carol)\r\n- Added Yokuen to credits for assistance with the Japanese translation\r\n- The languages the mod is translated into are now listed in the description (EN,JP,CH,RU,FR)\r\n\r\nI'm amazed at how many languages the mod has been translated into at this point. Thank you so much to all the translators.",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.7.0/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.7.0"
+    },
+    {
+      "tag": "1.6.0",
+      "name": "Patch 6.0",
+      "date": "2024-08-17",
+      "body": "A small patch mostly focusing on translations.\r\n\r\n- Added a Russian translation (thanks Carol!)\r\n- Updated Chinese translation (thanks NanF and AstridOrange!)\r\n- Added several Scholars of Ernesto\r\n- Some rocks now look more like the rock they're supposed to look like\r\n- An arc of text has been moved to be easier to translate",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.6.0/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.6.0"
+    },
+    {
+      "tag": "1.5.2",
+      "name": "Patch 5.2",
+      "date": "2024-06-18",
+      "body": "- Japanese translation brought up to date with new text (thanks orclecle!)\r\n- A certain hearthian is no longer named after their love of grabbing things",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.5.2/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.5.2"
+    },
+    {
+      "tag": "1.5.1",
+      "name": "Patch 5.1",
+      "date": "2024-06-18",
+      "body": "A minor patch to fix an invalid parentPath and move one text change into english.json.",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.5.1/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.5.1"
+    },
+    {
+      "tag": "1.5.0",
+      "name": "Patch 5.0",
+      "date": "2024-06-17",
+      "body": "Still got more fixes planned but I wanted to get the main change from this patch out early.\r\n\r\n- An early puzzle now has a simpler alternate solution\r\n- Various text tweaks to clarify some common points of confusion with the story",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.5.0/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.5.0"
+    },
+    {
+      "tag": "1.4.0",
+      "name": "Patch 4.0",
+      "date": "2024-06-04",
+      "body": "A few fixes and something new. I'm still working on more fixes but there's no real reason to wait to release this one.\r\n\r\n- A certain quantum Nomai now has more to say (not translated yet but hopefully soon)\r\n- Minor text tweaks\r\n- A certain ending instrument is now in sync\r\n- Paradox can no longer occur at the Eye when the stabilizer is active (also fixes paradox after uninstalling mod)\r\n- Re-calibrated some tractor beams to appropriate strengths (yes the skip is still possible)\r\n- Dozing off with an egg-shaped friend no longer brings the game to a crawl\r\n- A certain probe is no longer present in a certain ending sequence\r\n- Nomai shuttles now have a lower chance of bouncing off a certain planet\r\n- You can now lock on to a central area in the mod as soon as you've arrived\r\n- A certain white hole now renders its interior properly\r\n- A miniature cannon is no longer completely silent",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.4.0/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.4.0"
+    },
+    {
+      "tag": "1.3.0",
+      "name": "Patch 3.0",
+      "date": "2024-04-23",
+      "body": "- Chinese translation added courtesy of Nan and OrangeAstrid\r\n- Added orclecle to the credits (sorry for forgetting that last patch)\r\n- Fixed error spam in other star systems\r\n- Fixed the final ship log image appearing early",
+      "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.3.0/Walker.AstralCodex.zip",
+      "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.3.0"
+    }
+  ]
+}

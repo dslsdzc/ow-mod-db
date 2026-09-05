@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-06-10T01:36:38Z",
+  "releases": [
+    {
+      "tag": "v0.2.6",
+      "name": "Version 0.2.6",
+      "date": "2025-06-10",
+      "body": "- Added Polish translation (thanks Haishi!)",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.2.6/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.2.6",
+      "bodyZh": "- 添加了波兰语翻译（感谢Haishi！）"
+    },
+    {
+      "tag": "v0.2.5",
+      "name": "Version 0.2.5",
+      "date": "2025-02-28",
+      "body": "- Added Korean translation (thanks Barim!)",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.2.5/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.2.5",
+      "bodyZh": "- 添加了韩语翻译（感谢 Barim！）"
+    },
+    {
+      "tag": "v0.2.4",
+      "name": "Version 0.2.4",
+      "date": "2025-02-17",
+      "body": "- Added Russian translation (thanks OrWest!)",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.2.4/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.2.4",
+      "bodyZh": "- 添加了俄语翻译（感谢OrWest！）"
+    },
+    {
+      "tag": "v0.2.3",
+      "name": "Version 0.2.3",
+      "date": "2025-02-13",
+      "body": "- Added Japanese translation (thanks orclecle!)",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.2.3/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.2.3",
+      "bodyZh": "- 添加了日语翻译（感谢orclecle！）"
+    },
+    {
+      "tag": "v0.2.2",
+      "name": "Version 0.2.2",
+      "date": "2024-12-01",
+      "body": "- Added French translation (Thanks Lumine0409!)",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.2.2/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.2.2",
+      "bodyZh": "- 添加了法语翻译（感谢 Lumine0409！）"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "Version 0.2.1",
+      "date": "2024-11-30",
+      "body": "- 1st Place Jam Winner!\r\n- Added Chinese (Simplified) translation (thanks redsu721!)\r\n- Flipped the `keepLoaded` status of some objects to prevent them from being visible outside of the dimension they belong to",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.2.1/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2024-11-07",
+      "body": "- Added additional gameplay objects to Slate's campsite\r\n- Added a small additional story beat to an early sequence\r\n- Added visual feedback when returning to a location after completing objectives\r\n- Added a gravity field to a precarious location to prevent accidentally being flung away\r\n- Changed the visuals for some clues in a central location for better clarity\r\n- Fixed certain objects not interacting with the new tool while socketed\r\n- Fixed an issue with 3D-positioned audio falling out of sync with the player\r\n- Fixed several softlocks related to holding the new tool while flying the ship\r\n- Fixed an important location being visible (and accessible!) without entering the surrounding area first\r\n- Fixed a softlock when being kicked out of the dream world while looking through a peephole\r\n- Partially fixed an issue with the pictures taken by the new tool being displayed incorrectly",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.2.0/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2024-11-05",
+      "body": "- Tweaks to two frequently misunderstood ship logs.",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.1.2/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2024-11-04",
+      "body": "- Updated the visual effects in a green location.",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.1.1/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-11-04",
+      "body": "- Jam release candidate version.",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/download/v0.1.0/Hawkbar.GreenFlameBlade.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam4/releases/tag/v0.1.0"
+    }
+  ]
+}
