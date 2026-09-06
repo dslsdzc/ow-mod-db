@@ -6534,9 +6534,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "* Achievements now have Chinese translations by @SanBaiMing in https://github.com/LeeSpork/Bruce-Saves-the-Worlds/pull/10\r\n",
-      "zh": "* 成就现在有中文翻译，由@SanBaiMing在https://github.com/LeeSpork/Bruce-Saves-the-Worlds/pull/10中提供",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "Added Russian translation by @HanSoloCh",
+      "zh": "添加了俄语翻译由 @HanSoloCh",
+      "at": "2026-09-06T09:18:15.840137Z"
     }
   },
   "dokaloop.SunProofHotshotReadout": {

@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "unique_name": "LeeSpork.Jam6",
+    "field": "latestReleaseDescription",
+    "en": "Added Russian translation by @HanSoloCh"
+  }
+]
