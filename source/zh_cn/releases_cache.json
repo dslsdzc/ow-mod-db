@@ -16435,5 +16435,19 @@
         "bodyZh": "这完全就是你认为的那样"
       }
     ]
+  },
+  "Hamstry.TheLongerTheyLoad": {
+    "repoUpdatedAt": "2026-09-06T19:57:58Z",
+    "releases": [
+      {
+        "tag": "v1.0.0",
+        "name": "Version 1.0.0",
+        "date": "2026-09-06",
+        "body": "Discriminating against .rars smh",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/Hamstryk/The-Longer-They-Load/releases/download/v1.0.0/Hamstry.TheLongerTheyLoad.zip",
+        "releaseUrl": "https://github.com/Hamstryk/The-Longer-They-Load/releases/tag/v1.0.0"
+      }
+    ]
   }
 }

@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "unique_name": "Hamstry.TheLongerTheyLoad",
+    "field": "name",
+    "en": "The Longer They Load"
+  },
+  {
+    "unique_name": "Hamstry.TheLongerTheyLoad",
+    "field": "description",
+    "en": "A somewhat large addon that adds onto the story of The Stranger They Are. "
+  },
+  {
+    "unique_name": "Hamstry.TheLongerTheyLoad",
+    "field": "latestReleaseDescription",
+    "en": "Discriminating against .rars smh"
+  }
+]

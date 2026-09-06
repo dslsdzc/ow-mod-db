@@ -6895,5 +6895,22 @@
       "zh": "首次发布",
       "at": "2026-09-02T07:02:17.685998Z"
     }
+  },
+  "Hamstry.TheLongerTheyLoad": {
+    "name": {
+      "en": "The Longer They Load",
+      "zh": "加载时间越长",
+      "at": "2026-09-06T21:08:10.264269Z"
+    },
+    "description": {
+      "en": "A somewhat large addon that adds onto the story of The Stranger They Are. ",
+      "zh": "一个稍大的模组，增加了《他们有多陌生》的故事内容",
+      "at": "2026-09-06T21:08:10.264269Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Discriminating against .rars smh",
+      "zh": "歧视.rars，唉",
+      "at": "2026-09-06T21:08:10.264269Z"
+    }
   }
 }
