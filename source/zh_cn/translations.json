@@ -6903,14 +6903,14 @@
       "at": "2026-09-06T21:08:10.264269Z"
     },
     "description": {
-      "en": "A somewhat large addon that adds onto the story of The Stranger They Are. ",
-      "zh": "一个稍大的模组，增加了《他们有多陌生》的故事内容",
-      "at": "2026-09-06T21:08:10.264269Z"
+      "en": "A somewhat large addon that adds onto The Stranger They Are. ",
+      "zh": "一个稍大的附加组件，增加了对《他们是谁的陌生人》的扩展。",
+      "at": "2026-09-07T21:42:51.394483Z"
     },
     "latestReleaseDescription": {
-      "en": "Discriminating against .rars smh",
-      "zh": "歧视.rars，唉",
-      "at": "2026-09-06T21:08:10.264269Z"
+      "en": "Removed the dependency",
+      "zh": "移除了依赖关系",
+      "at": "2026-09-07T21:42:51.394483Z"
     }
   }
 }

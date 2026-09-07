@@ -16437,8 +16437,17 @@
     ]
   },
   "Hamstry.TheLongerTheyLoad": {
-    "repoUpdatedAt": "2026-09-06T19:57:58Z",
+    "repoUpdatedAt": "2026-09-07T18:01:53Z",
     "releases": [
+      {
+        "tag": "v1.1.0",
+        "name": "Version 1.1.0",
+        "date": "2026-09-07",
+        "body": "Removed the dependency",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/Hamstryk/The-Longer-They-Load/releases/download/v1.1.0/Hamstry.TheLongerTheyLoad.zip",
+        "releaseUrl": "https://github.com/Hamstryk/The-Longer-They-Load/releases/tag/v1.1.0"
+      },
       {
         "tag": "v1.0.0",
         "name": "Version 1.0.0",
