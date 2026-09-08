@@ -6912,5 +6912,22 @@
       "zh": "移除了依赖关系",
       "at": "2026-09-07T21:42:51.394483Z"
     }
+  },
+  "LaStringa.SbekuMod": {
+    "name": {
+      "en": "Echoes Of The Desert",
+      "zh": "沙漠回响",
+      "at": "2026-09-08T23:33:36.149261Z"
+    },
+    "description": {
+      "en": "Italian-language Outer Wilds mod that turns Echoes of the Eye into a guided completionist run, with custom slide reels, dialogue and ship log entries.",
+      "zh": "一款意大利语星际拓荒模组，将宇宙之眼的回响变为引导式完成主义者的游戏，具有自定义的滑轨、对话和飞船日志条目",
+      "at": "2026-09-08T23:33:36.149261Z"
+    },
+    "latestReleaseDescription": {
+      "en": "**Full Changelog**: https://github.com/SbekuMod/Mod-V2/compare/v2.5.4...v2.5.5",
+      "zh": "**完整变更日志**：https://github.com/SbekuMod/Mod-V2/compare/v2.5.4...v2.5.5",
+      "at": "2026-09-08T23:33:36.149261Z"
+    }
   }
 }

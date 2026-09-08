@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "unique_name": "LaStringa.SbekuMod",
+    "field": "name",
+    "en": "Echoes Of The Desert"
+  },
+  {
+    "unique_name": "LaStringa.SbekuMod",
+    "field": "description",
+    "en": "Italian-language Outer Wilds mod that turns Echoes of the Eye into a guided completionist run, with custom slide reels, dialogue and ship log entries."
+  },
+  {
+    "unique_name": "LaStringa.SbekuMod",
+    "field": "latestReleaseDescription",
+    "en": "**Full Changelog**: https://github.com/SbekuMod/Mod-V2/compare/v2.5.4...v2.5.5"
+  }
+]
