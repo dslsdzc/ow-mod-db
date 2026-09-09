@@ -6925,9 +6925,9 @@
       "at": "2026-09-08T23:33:36.149261Z"
     },
     "latestReleaseDescription": {
-      "en": "**Full Changelog**: https://github.com/SbekuMod/Mod-V2/compare/v2.5.4...v2.5.5",
-      "zh": "**完整变更日志**：https://github.com/SbekuMod/Mod-V2/compare/v2.5.4...v2.5.5",
-      "at": "2026-09-08T23:33:36.149261Z"
+      "en": "Removes the debug settings that were used while developing the mod: the ship log and dialogue tree dumps, along with the hotkeys to unlock all reels, reveal all events, unlock all achievements and reload dialogue.\n\nThe mod manager now shows a single option, *Carica eventi nel registro della nave*.\n\n**Full Changelog**: https://github.com/SbekuMod/Mod-V2/compare/v2.5.5...v2.5.6\n",
+      "zh": "移除了在模组开发过程中使用的调试设置：飞船日志和对话树转储，以及解锁所有卷轴、显示所有事件、解锁所有成就和重新加载对话的热键。\n\n模组管理器现在显示一个选项，*Carica eventi nel registro della nave*。\n\n**完整变更日志**：https://github.com/SbekuMod/Mod-V2/compare/v2.5.5...v2.5.6",
+      "at": "2026-09-09T03:45:12.311136Z"
     }
   }
 }
