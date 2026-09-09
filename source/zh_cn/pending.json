@@ -1,7 +1,1 @@
-[
-  {
-    "unique_name": "LaStringa.SbekuMod",
-    "field": "latestReleaseDescription",
-    "en": "Removes the debug settings that were used while developing the mod: the ship log and dialogue tree dumps, along with the hotkeys to unlock all reels, reveal all events, unlock all achievements and reload dialogue.\n\nThe mod manager now shows a single option, *Carica eventi nel registro della nave*.\n\n**Full Changelog**: https://github.com/SbekuMod/Mod-V2/compare/v2.5.5...v2.5.6\n"
-  }
-]
+[]
