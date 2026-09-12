@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-02-10T04:45:09Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-02-10",
+      "body": "- Added an option to warp straight to the Ancient Glade from the pause menu.\r\n- Fixed controls breaking if you warped to the Eye during the wake-up sequence.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-eye-helper/releases/download/v1.0.1/xen.EyeHelper.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-eye-helper/releases/tag/v1.0.1",
+      "bodyZh": "- 在暂停菜单中添加了一个直接跃迁至远古林间的选项。\r\n- 修复了在唤醒序列中跃迁至宇宙之眼时控制失效的问题。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-06-19",
+      "body": "- Adds pause menu options to instantly go to and from the Eye of the Universe. Useful if you're making a mod set at the Eye.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-eye-helper/releases/download/v1.0.0/xen.EyeHelper.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-eye-helper/releases/tag/v1.0.0",
+      "bodyZh": "- 添加了暂停菜单选项，可立即前往和返回宇宙之眼。如果你正在制作以宇宙之眼为背景的模组，这会很有用。"
+    }
+  ]
+}

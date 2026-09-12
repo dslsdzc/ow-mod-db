@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-07-14T21:01:55Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2026-07-14",
+      "body": "initial release",
+      "zipUrl": "https://github.com/Leeefy/owSubtitleMod/releases/download/v0.1.0/Ki_ii.owSubtitlesMod.zip",
+      "releaseUrl": "https://github.com/Leeefy/owSubtitleMod/releases/tag/v0.1.0",
+      "bodyZh": "初始发布"
+    }
+  ]
+}

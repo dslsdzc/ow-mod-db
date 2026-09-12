@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-05-04T22:14:40Z",
+  "releases": [
+    {
+      "tag": "v0.18.0",
+      "name": "Version 0.18.0",
+      "date": "2025-04-03",
+      "body": "fix an issue with the fix for dialogue nodes. thank you etherpod for finding this and the solution",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/v0.18.0/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/v0.18.0",
+      "bodyZh": "修复对话节点的修复问题。感谢etherpod发现此问题和解决方案。"
+    },
+    {
+      "tag": "v0.17.0",
+      "name": "Version 0.17.0",
+      "date": "2025-03-15",
+      "body": "Fix noise sensor using the wrong position for the object making the noise (credit to Etherpod)",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/v0.17.0/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/v0.17.0",
+      "bodyZh": "修复噪声传感器使用错误的位置来检测发出噪声的物体（致谢 Etherpod）"
+    },
+    {
+      "tag": "v0.16.0",
+      "name": "Version 0.16.0",
+      "date": "2025-01-23",
+      "body": "- Fix signalscope ui bug (thanks spacemike)\r\n- Fix CJK language wrapping (thanks orclecle)",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/v0.16.0/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/v0.16.0",
+      "bodyZh": "- 修复信号仪UI错误（感谢spacemike）\n- 修复CJK语言换行问题（感谢orclecle）"
+    },
+    {
+      "tag": "v0.15.0",
+      "name": "Version 0.15.0",
+      "date": "2024-10-27",
+      "body": "Fix funny bug where bramble fog stays on forever when teleporting\r\n\r\nreally silly fix tho, its so cool",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/v0.15.0/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/v0.15.0",
+      "bodyZh": "修复一个有趣的bug，在传送时黑棘星雾会一直停留\n\n不过这个修复真的有点傻，太酷了"
+    },
+    {
+      "tag": "v0.14.0",
+      "name": "Version 0.14.0",
+      "date": "2023-08-12",
+      "body": "Fix the stretchy probe bug as much as possible.",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/v0.14.0/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/v0.14.0",
+      "bodyZh": "尽可能修复伸缩探测器的bug。"
+    },
+    {
+      "tag": "v0.13.2",
+      "name": "Version 0.13.2",
+      "date": "2023-08-11",
+      "body": "Fix softlock with ship: you no longer have to have vanillafix installed all the time for it to work",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/v0.13.2/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/v0.13.2"
+    },
+    {
+      "tag": "0.13.1",
+      "name": "0.13.1",
+      "date": "2023-06-05",
+      "body": "fix ANOTHER projection pool vanilla bug, caused by a small typo",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/0.13.1/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/0.13.1"
+    },
+    {
+      "tag": "0.13.0",
+      "name": "0.13.0",
+      "date": "2023-06-05",
+      "body": "Fixes a hard-to-find visual bug with projection pools",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/0.13.0/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/0.13.0"
+    },
+    {
+      "tag": "0.12.0",
+      "name": "0.12.0",
+      "date": "2023-05-07",
+      "body": "Fix Outsider ship log bug :P",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/0.12.0/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/0.12.0"
+    },
+    {
+      "tag": "0.11.0",
+      "name": "0.11.0",
+      "date": "2023-04-23",
+      "body": "Fixes log spam from going near a warp pad when the probe is destroyed.",
+      "zipUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/download/0.11.0/JohnCorby.VanillaFix.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-vanilla-fix/releases/tag/0.11.0"
+    }
+  ]
+}

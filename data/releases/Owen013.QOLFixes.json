@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2026-02-17T20:35:38Z",
+  "releases": [
+    {
+      "tag": "v1.3.6",
+      "name": "v1.3.6: Better Helmet Toggling + Tweaks",
+      "date": "2026-02-17",
+      "body": "### Changes\r\n- Added a \"When Safe\" option to the Helmet Toggling feature, which prevents you from removing the space helmet when it is unsafe to do so and automatically puts on your space helmet when the environment becomes unsafe.\r\n- The Helmet Toggling feature will now prevent the game from automatically putting the helmet back on in certain situations (i.e. when you stop roasting marshmallows or exit the pilot seat) if you've manually taken it off.\r\n- Manual Translator Equipping key now toggles whether or not the translator is equipped, like the base game's Signalscope button.\r\n- Renamed a few of the features (look at the config menu you DOLT).",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.3.6/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.3.6"
+    },
+    {
+      "tag": "v1.3.5",
+      "name": "v1.3.5: New Name, Helmet Toggling, and Manual Translator Equipping",
+      "date": "2024-03-16",
+      "body": "- Renamed mod to QOL Features\r\n- You can now toggle the space helmet with H, if you've enabled this feature in the config.\r\n- You can now manually equip the translator tool with T, if you've enabled this feature in the config.",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.3.5/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.3.5"
+    },
+    {
+      "tag": "v1.3.4",
+      "name": "v1.3.4",
+      "date": "2024-01-21",
+      "body": "You can now set the reticle to appear only when using a tool, rather than only when using the scout launcher. This makes the reticle appear when using the scout launcher OR the translator tool.",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.3.4/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.3.4"
+    },
+    {
+      "tag": "v1.3.3",
+      "name": "v1.3.3: Well that was embarrassing.",
+      "date": "2023-04-10",
+      "body": "Made it so that the reticule disappearer doesn't only work at a certain location.",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.3.3/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.3.3"
+    },
+    {
+      "tag": "v1.3.2",
+      "name": "v1.3.2: Disable Reticule",
+      "date": "2023-04-06",
+      "body": "Adds an option in the config menu to disable the reticule (dot in the middle of the screen). The reticule can be (1) not disabled, (2) disabled unless the scout is being used, or (3) always disabled.",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.3.2/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.3.2"
+    },
+    {
+      "tag": "v1.3.1",
+      "name": "v1.3.1",
+      "date": "2022-10-19",
+      "body": "Changelog:\r\n- Labeled some options as \"Not Vanilla-Friendly\" if they change some aspect of gameplay significantly.\r\n- Reordered options, placing vanilla-friendly ones at the top.\r\n- Made 'Don't Freeze Time at a Certain End-Game Location' enabled by default",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.3.1/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.3.1"
+    },
+    {
+      "tag": "v1.3.0",
+      "name": "v1.3.0: Eyes Always Glow",
+      "date": "2022-10-19",
+      "body": "Added an option to make certain eyes always glow.",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.3.0/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.3.0"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "v1.2.0: Disable Automatic Scout Equipping/Unequipping",
+      "date": "2022-10-17",
+      "body": "I've always found it weird that you can disable automatic translator equipping in settings, but you can't do the same for automatic scout equipping. So I added it!",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.2.0/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0: New feature",
+      "date": "2022-10-02",
+      "body": "A new feature (which can be enabled in the config) disables the freezing of time when talking to characters at a certain location.",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.1.0/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Bugfix",
+      "date": "2022-05-26",
+      "body": "Leave it to me to have bugs in a mod so tiny. Fixed a bug where pressing Q when not in dialogue would freeze the player.",
+      "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.0.1/Owen013.QOLFixes.zip",
+      "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.0.1"
+    }
+  ]
+}

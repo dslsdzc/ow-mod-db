@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-08-16T06:38:43Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "First Release!",
+      "date": "2022-05-08",
+      "body": "Aligning velocity is now a toggle.\r\nYou remaining aligned until you either move or press the align button again.",
+      "zipUrl": "https://github.com/Vesper-Works/Toggle-Velocity-Matching/releases/download/1.0.0/Release.1.0.0.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Toggle-Velocity-Matching/releases/tag/1.0.0",
+      "bodyZh": "对齐速度现在是一个切换开关。\n你将保持对齐状态，直到你移动或再次按下对齐按钮。"
+    }
+  ]
+}

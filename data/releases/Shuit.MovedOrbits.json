@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2022-07-06T18:44:10Z",
+  "releases": [
+    {
+      "tag": "v0.0.1",
+      "name": "v0.0.1",
+      "date": "2022-07-06",
+      "body": "Create create-release.yml",
+      "zipUrl": "https://github.com/ShuitOnDiscord/MovedOrbits/releases/download/v0.0.1/MovedOrbits.zip",
+      "releaseUrl": "https://github.com/ShuitOnDiscord/MovedOrbits/releases/tag/v0.0.1"
+    }
+  ]
+}

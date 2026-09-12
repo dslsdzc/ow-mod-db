@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2023-08-26T17:55:03Z",
+  "releases": [
+    {
+      "tag": "1.0.4",
+      "name": "NomaiVRFFR-v1.0.4",
+      "date": "2022-04-21",
+      "body": "Fixed resolution issues with final credits scene",
+      "zipUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/download/1.0.4/Artum.NomaiVRFoveated.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/tag/1.0.4",
+      "bodyZh": "修复了最终信用场景的分辨率问题"
+    },
+    {
+      "tag": "1.0.3",
+      "name": "NomaiVRFFR-v1.0.3",
+      "date": "2022-01-12",
+      "body": "- Fixed settings being ignored",
+      "zipUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/download/1.0.3/Artum.NomaiVRFoveated.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/tag/1.0.3",
+      "bodyZh": "- 修复了设置被忽略的问题"
+    },
+    {
+      "tag": "1.0.2",
+      "name": "NomaiVRFFR-v1.0.2",
+      "date": "2022-01-06",
+      "body": "- Added support to gamepass version",
+      "zipUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/download/1.0.2/Artum.NomaiVRFoveated.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/tag/1.0.2",
+      "bodyZh": "- 添加了对游戏通行证版本的支持"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "NomaiVRFFR-v1.0.1",
+      "date": "2021-11-27",
+      "body": "- Prevent foveated rendering of transparent objects (HUD, translator, etc.)",
+      "zipUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/download/1.0.1/Artum.NomaiVRFoveated.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/tag/1.0.1",
+      "bodyZh": "- 防止对透明物体（HUD、翻译器等）进行foveated rendering"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "NomaiVRFFR-v1.0.0",
+      "date": "2021-11-25",
+      "body": "Initial Release\r\n- Enables HTC Vive FFR Plugin for SteamVR devices\r\n- It currently changes resolution for the in-game UI so it becomes difficult to read the hud and translator notes",
+      "zipUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/download/1.0.0/Artum.NomaiVRFoveated.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVR-FixedFoveatedRendering/releases/tag/1.0.0",
+      "bodyZh": "初始发布\n- 启用SteamVR设备上的HTC Vive FFR插件\n- 目前它会改变游戏内UI的分辨率，导致难以阅读HUD和翻译笔记"
+    }
+  ]
+}

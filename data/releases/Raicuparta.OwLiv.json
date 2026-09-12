@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-05-04T13:46:37Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "0.1.0",
+      "date": "2022-04-22",
+      "body": "First release",
+      "zipUrl": "https://github.com/LIV/ow-liv/releases/download/v0.1.0/Raicuparta.OwLiv.zip",
+      "releaseUrl": "https://github.com/Raicuparta/ow-liv/releases/tag/v0.1.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-11-26T03:39:21Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-11-26",
+      "body": "release",
+      "zipUrl": "https://github.com/RealOrbital32/Owlystem/releases/download/1.0.0/O32.Owlystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Owlystem/releases/tag/1.0.0",
+      "bodyZh": "发布"
+    }
+  ]
+}

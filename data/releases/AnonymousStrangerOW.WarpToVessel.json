@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2025-05-02T21:35:07Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2025-03-08",
+      "body": "- you can no longer warp your ship with you to the vessel. now you are required to get out of your ship first before warping!\r\n- the pause menu actually enables/disables itself in real time according to whether you talked to gabbro or not, allowing it to be even more lore friendly.",
+      "zipUrl": "https://github.com/MegaPiggy/WarpToVessel/releases/download/v1.1.0/AnonymousStrangerOW.WarpToVessel.zip",
+      "releaseUrl": "https://github.com/AnonymousStrangerOW/WarpToVessel/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Initial Release! V1.0.0",
+      "date": "2024-10-13",
+      "body": "Uploads Warp to Vessel Mod to Github",
+      "zipUrl": "https://github.com/MegaPiggy/WarpToVessel/releases/download/1.0.0/AnonymousStrangerOW.WarpToVessel.zip",
+      "releaseUrl": "https://github.com/AnonymousStrangerOW/WarpToVessel/releases/tag/1.0.0"
+    }
+  ]
+}

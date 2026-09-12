@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-08-14T02:06:53Z",
+  "releases": [
+    {
+      "tag": "v1.2.8",
+      "name": "Version 1.2.8",
+      "date": "2026-04-08",
+      "body": "- Fix: it is now easier to exit a certain dimension.\r\n- Grounded a recorder.",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.2.8/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.2.8",
+      "bodyZh": "- 修复：现在更容易退出某个维度。\n- 将一个记录仪接地。"
+    },
+    {
+      "tag": "v1.2.7",
+      "name": "Version 1.2.7",
+      "date": "2026-03-14",
+      "body": "Added Chinese translation, courtesy of SanBaiMing and GeBlaster",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.2.7/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.2.7",
+      "bodyZh": "已添加中文翻译，由SanBaiMing和GeBlaster提供"
+    },
+    {
+      "tag": "v1.2.6",
+      "name": "Version 1.2.6",
+      "date": "2026-02-22",
+      "body": "* **Major bug fix:** the floor is no longer lava (Better late than never).\r\n* Fine-tuned lava curve so it more nicely evolves over the 22 minute time loop.\r\n\r\n---\r\n\r\n2.0 update coming \"\"\"soon\"\"\"",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.2.6/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.2.6",
+      "bodyZh": "* **重大bug修复：** 地板不再是岩浆（迟到总比不到好）。\r\n* 微调岩浆曲线，使其在22分钟时间循环中更流畅地演变。\r\n\r\n---\r\n\r\n2.0更新即将\"\"\"很快\"\"\"到来"
+    },
+    {
+      "tag": "v1.2.5",
+      "name": "Version 1.2.5",
+      "date": "2025-08-09",
+      "body": "- Renamed an achievement and rewrote its description\r\n- Adjustment to the part of the developer commentary with dialogue options\r\n- Added support for potential future inter-mod easter eggs/continuity nods via persistent conditions\r\n- Fixed some conditions not being prefixed to guarantee uniqueness",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.2.5/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.2.5",
+      "bodyZh": "- 重命名了一个成就并重写了它的描述\n- 对开发者评论中关于对话选项的部分进行了调整\n- 通过持久条件添加了对未来可能的跨模组彩蛋/连续性提示的支持\n- 修复了一些条件没有被前缀导致无法保证唯一性的问题"
+    },
+    {
+      "tag": "v1.2.4",
+      "name": "Version 1.2.4",
+      "date": "2025-07-22",
+      "body": "More last-minute dialogue tweaks.",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.2.4/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.2.4",
+      "bodyZh": "更多临时的对话调整。"
+    },
+    {
+      "tag": "v1.2.3",
+      "name": "Version 1.2.3",
+      "date": "2025-07-22",
+      "body": "Tweaked one dialogue option to make the intention more clear. Edited credits. Added dev notes that I forgot earlier.",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.2.3/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.2.3"
+    },
+    {
+      "tag": "v1.2.2",
+      "name": "Version 1.2.2",
+      "date": "2025-07-22",
+      "body": "- Made Dwarf's Shallow 25% more shallow\r\n- Tweaked a notification message\r\n- Updated developer commentary again\r\n- Removed thing that was problematic in the ship log",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.2.2/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.2.2"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "Version 1.2.1",
+      "date": "2025-07-21",
+      "body": "- Used a spellchecker",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.2.1/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2025-07-21",
+      "body": "- More dev commentary\r\n- Made an achievement harder to get\r\n- The lava height now changes over time, going dark at the end of the time loop.",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.2.0/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2025-07-21",
+      "body": "- Moved Dwarf's Shallow a little closer to the sun\r\n- Added a slight sidereal rotation to Dwarf's Shallow to better frame the sun over its entire lifespan from a certain vista\r\n- Re-ordered achievements",
+      "zipUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/download/v1.1.1/LeeSpork.ModJam5.zip",
+      "releaseUrl": "https://github.com/LeeSpork/ow-mod-jam-5-entry/releases/tag/v1.1.1"
+    }
+  ]
+}

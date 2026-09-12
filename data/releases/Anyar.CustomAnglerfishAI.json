@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2024-10-28T18:55:31Z",
+  "releases": [
+    {
+      "tag": "v0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2023-03-27",
+      "body": "**Includes: Distance (%) and Rainbow Lights.**\r\n\r\nAlso:\r\n* Reworked turn speed into a single multiplicative stat which affects turn speed (moving) and quick turn speed (in place).\r\n* Fixed incorrect default values for some anglerfish attributes (chase speed, acceleration, and turn speed). Previously, this mod would make anglerfish significantly slower on default settings; that should be restored to vanilla speed now.\r\n* Fixed muting looping sound even when Mute option was disabled.\r\n* Minor performance optimizations.",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.4.0/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.4.0",
+      "bodyZh": "**包含：距离（百分比）和彩虹光。**\n\n此外：\n* 将转向速度重构成单一乘法属性，该属性影响转向速度（移动）和快速转向速度（原地）。\n* 修复了某些灯笼鱼属性（追击速度、加速度和转向速度）的默认值错误。此前，此模组在默认设置下会使灯笼鱼显著变慢；现在应恢复到原版速度。\n* 修复了即使禁用静音选项时，静音循环声音的问题。\n* 进行了微小的性能优化。"
+    },
+    {
+      "tag": "v0.3.1",
+      "name": "Version 0.3.1",
+      "date": "2023-03-27",
+      "body": "Reworked speed into a single multiplicative stat which affects chase speed, investigate speed, and acceleration speed.",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.3.1/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.3.1",
+      "bodyZh": "将速度重新设计为一个单一的多倍数属性，该属性影响追击速度、调查速度和加速速度。"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2023-03-27",
+      "body": "Includes: Size (%) and Afraid.",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.3.0/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.3.0",
+      "bodyZh": "包含：大小(%)和恐惧。"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2023-03-25",
+      "body": "Includes: Spin Axis.\r\nFixed a bug that prevented meteor launching mod integration from working.",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.2.0/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.2.0",
+      "bodyZh": "包含：自旋轴。\n修复了一个导致流星发射模组集成无法工作的错误。"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-03-25",
+      "body": "Includes: Chase Speed, Investigate Speed, Turn Speed, Quick Turn Speed, Deaf, Mute, and Meteor Launching Mod Integration.",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.1.0/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.1.0",
+      "bodyZh": "包含：追逐速度、调查速度、转向速度、快速转向速度、失聪、失声以及流星发射模组整合。"
+    }
+  ]
+}

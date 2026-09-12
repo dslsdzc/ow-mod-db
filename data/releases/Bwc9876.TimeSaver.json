@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2026-02-01T06:25:26Z",
+  "releases": [
+    {
+      "tag": "1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2023-04-27",
+      "body": "add ability to skip credits and post credits",
+      "zipUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/download/1.2.0/Bwc9876.TimeSaver.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/tag/1.2.0",
+      "bodyZh": "添加跳过片尾和片尾后的字幕的能力"
+    },
+    {
+      "tag": "1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2022-09-07",
+      "body": "Gorp",
+      "zipUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/download/1.1.1/Bwc9876.TimeSaver.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/tag/1.1.1",
+      "bodyZh": "Gorp(格普)"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2022-09-04",
+      "body": "Disables flashback skip with QSB installed bc John **HATES** TimeSaver!!!!!!!",
+      "zipUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/download/1.0.0/Bwc9876.TimeSaver.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/tag/1.0.0",
+      "bodyZh": "禁用QSB安装后的闪回跳过功能，因为John **讨厌** TimeSaver!!!!!!!"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2022-08-12",
+      "body": "Disables start with suit when QSB is enabled :(",
+      "zipUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/download/0.2.0/Bwc9876.TimeSaver.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/tag/0.2.0",
+      "bodyZh": "禁用启用QSB时穿着宇航服开始游戏 :("
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2022-05-09",
+      "body": "First Release",
+      "zipUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/download/0.1.0/Bwc9876.TimeSaver.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-TimeSaver/releases/tag/0.1.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

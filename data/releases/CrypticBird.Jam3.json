@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2024-03-27T05:39:05Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "Symbiosis compat fixed (1.0.0)",
+      "date": "2024-03-27",
+      "body": "Symbiosis if it were good\r\n(Fixed compatibility issues due to asset bundle names, alongside bloated file size)",
+      "zipUrl": "https://github.com/CrypticBird/Outer-Wilds-Symbiosis/releases/download/1.0.0/CrypticBird.Jam3.zip",
+      "releaseUrl": "https://github.com/CrypticBird/Outer-Wilds-Symbiosis/releases/tag/1.0.0"
+    },
+    {
+      "tag": "0.0.1",
+      "name": "RELEASE",
+      "date": "2024-03-26",
+      "body": "",
+      "zipUrl": "https://github.com/CrypticBird/Outer-Wilds-Symbiosis/releases/download/0.0.1/CrypticBird.Jam3.2.zip",
+      "releaseUrl": "https://github.com/CrypticBird/Outer-Wilds-Symbiosis/releases/tag/0.0.1"
+    }
+  ]
+}

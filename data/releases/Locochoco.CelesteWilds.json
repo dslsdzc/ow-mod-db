@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2022-11-03T15:45:12Z",
+  "releases": [
+    {
+      "tag": "0.1.2",
+      "name": "Celeste Wilds v.0.1.2",
+      "date": "2022-02-23",
+      "body": "* Changed the Mineshaft collectible hint\r\n* Removed sand a fluid type that would stop the climb",
+      "zipUrl": "https://github.com/loco-choco/CelesteWilds/releases/download/0.1.2/Locochoco.CelesteWilds.zip",
+      "releaseUrl": "https://github.com/loco-choco/CelesteWilds/releases/tag/0.1.2"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "Celeste Wilds v.0.1.1 ",
+      "date": "2022-02-23",
+      "body": "* Added Dash Recharge when inside certain fluids\r\n* Removed the ability to Climb while inside certain fluids",
+      "zipUrl": "https://github.com/loco-choco/CelesteWilds/releases/download/0.1.1/Locochoco.CelesteWilds.zip",
+      "releaseUrl": "https://github.com/loco-choco/CelesteWilds/releases/tag/0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Celeste Wilds v.0.1.0",
+      "date": "2022-02-23",
+      "body": "First Release of Celeste Wilds",
+      "zipUrl": "https://github.com/loco-choco/CelesteWilds/releases/download/0.1.0/Locochoco.CelesteWilds.zip",
+      "releaseUrl": "https://github.com/loco-choco/CelesteWilds/releases/tag/0.1.0"
+    }
+  ]
+}

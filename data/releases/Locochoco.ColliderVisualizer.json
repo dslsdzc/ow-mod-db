@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2022-11-05T00:46:07Z",
+  "releases": [
+    {
+      "tag": "0.1.2",
+      "name": "Collider Visualizer v0.1.2",
+      "date": "2022-08-30",
+      "body": "* Added Hotkey for enabling\r\n* Added the last shapes renderers\r\n* Fixed cone and sphere renders\r\n* Added layer filtering for Volume shapes\r\nSee updated readme for info on the new settings.",
+      "zipUrl": "https://github.com/loco-choco/ColliderVisualizer/releases/download/0.1.2/Locochoco.ColliderVisualizer.zip",
+      "releaseUrl": "https://github.com/loco-choco/ColliderVisualizer/releases/tag/0.1.2",
+      "bodyZh": "* 添加了启用热键\n* 添加了最后形状的渲染器\n* 修复了锥体和球体的渲染\n* 为体积形状添加了层过滤\n请查看更新后的readme以获取有关新设置的说明。"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "Collider Visualizer v0.1.1",
+      "date": "2022-08-28",
+      "body": "* Added Shape visualization (WIP)\r\n    * Shape Bounds - Magenta\r\n    * Detector Shapes - White\r\n    * Volume Shapes - Cyan\r\n \r\nShapes that use the cone or the cylinder format are a little broken, and box, hemisphere and hemicapsule aren't yet rendered.\r\n\r\nThanks Xen for the idea!",
+      "zipUrl": "https://github.com/loco-choco/ColliderVisualizer/releases/download/0.1.1/Locochoco.ColliderVisualizer.zip",
+      "releaseUrl": "https://github.com/loco-choco/ColliderVisualizer/releases/tag/0.1.1",
+      "bodyZh": "* 添加了形状可视化（进行中）\n    * 形状边界 - 紫色\n    * 检测器形状 - 白色\n    * 体积形状 - 青色\n\n使用锥形或圆柱形格式的形状有点损坏，而立方体、半球和半球帽尚未渲染。\n\n感谢 Xen 的想法！"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Collider Visualizer v0.1.0",
+      "date": "2022-01-16",
+      "body": "### First Release!\r\n\r\nSome known issues:\r\n\r\n* The visualization of capsule colliders are quite broken, with the capsule being rotated compared to the actual capsule\r\n* Some colliders don't seem to appear (like the ones from the geysers in TH) but this issue might be related to the first one",
+      "zipUrl": "https://github.com/loco-choco/ColliderVisualizer/releases/download/0.1.0/Locochoco.ColliderVisualizer.zip",
+      "releaseUrl": "https://github.com/loco-choco/ColliderVisualizer/releases/tag/0.1.0",
+      "bodyZh": "### 首次发布！\r\n\r\n已知问题：\r\n\r\n* 胶囊碰撞器的可视化效果相当破败，胶囊的旋转与实际胶囊不一致\r\n* 一些碰撞器似乎没有出现（例如 TH 中的间歇泉碰撞器），但这个问题可能与第一个问题有关"
+    }
+  ]
+}

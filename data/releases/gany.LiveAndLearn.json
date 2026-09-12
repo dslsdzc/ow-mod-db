@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-10-12T11:27:14Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "Yay! Mod released",
+      "date": "2024-10-12",
+      "body": "Everything the mod has to offer",
+      "zipUrl": "https://github.com/Minecraft633/outer-adventure-2/releases/download/1.0.0/gany.LiveAndLearn.zip",
+      "releaseUrl": "https://github.com/Minecraft633/outer-adventure-2/releases/tag/1.0.0",
+      "bodyZh": "该模组所能提供的所有内容"
+    }
+  ]
+}

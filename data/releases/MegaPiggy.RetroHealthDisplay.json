@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2024-06-14T14:58:18Z",
+  "releases": [
+    {
+      "tag": "2.1.0",
+      "name": "v2.1.0",
+      "date": "2024-06-14",
+      "body": "Set value to zero on death",
+      "zipUrl": "https://github.com/MegaPiggy/RetroHealthDisplay/releases/download/2.1.0/MegaPiggy.RetroHealthDisplay.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/RetroHealthDisplay/releases/tag/2.1.0",
+      "bodyZh": "在死亡时将值设置为零"
+    },
+    {
+      "tag": "2.0.0",
+      "name": "v2.0.0",
+      "date": "2024-06-14",
+      "body": "Added a little percentage symbol to better match the 2016 one",
+      "zipUrl": "https://github.com/MegaPiggy/RetroHealthDisplay/releases/download/2.0.0/MegaPiggy.RetroHealthDisplay.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/RetroHealthDisplay/releases/tag/2.0.0",
+      "bodyZh": "添加了一个小百分比符号，以更好地匹配2016年的版本"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-06-13",
+      "body": "First release",
+      "zipUrl": "https://github.com/MegaPiggy/RetroHealthDisplay/releases/download/1.0.0/MegaPiggy.RetroHealthDisplay.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/RetroHealthDisplay/releases/tag/1.0.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

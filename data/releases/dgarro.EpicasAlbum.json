@@ -1,0 +1,58 @@
+{
+  "repoUpdatedAt": "2024-06-12T03:26:33Z",
+  "releases": [
+    {
+      "tag": "1.1.3",
+      "name": "1.1.3",
+      "date": "2024-06-12",
+      "body": "Fixed to work with Outer Wilds Patch 15 (updated game libs).",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.1.3/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.1.3",
+      "bodyZh": "修复以支持星际拓荒补丁15（更新了游戏库）。"
+    },
+    {
+      "tag": "1.1.2",
+      "name": "1.1.2",
+      "date": "2023-12-14",
+      "body": "Fix issues with shutdown situations (ship electrical systems damaged) when the snapshot deletion confirmation is open (it's now closed canceling the deletion) or the snapshot chooser dialog is open (it's now closed without making a selection).",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.1.2/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.1.2",
+      "bodyZh": "修复在快照删除确认打开时（现已关闭取消删除）或快照选择对话框打开时（现已关闭且未进行选择）的关机情况（飞船电力系统损坏）的问题。"
+    },
+    {
+      "tag": "1.1.1",
+      "name": "1.1.1",
+      "date": "2023-09-28",
+      "body": "Fix bottom prompts not showing after Outer Wilds Patch 14 (upper right prompts are already visible after the last Custom Ship Log Modes update)",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.1.1/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.1.1",
+      "bodyZh": "修复在星际拓荒补丁14之后底部提示不显示的问题（在最近的定制飞船日志模式更新后右上角的提示已经可见）"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2023-06-03",
+      "body": "Adds an API with tho methods: `OpenSnapshotChooserDialog` and `GetSnapshotSprite`, more info about them in the [README](https://github.com/dgarroDC/EpicasAlbum#the-api).",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.1.0/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.1.0",
+      "bodyZh": "添加了一个包含两个方法：`OpenSnapshotChooserDialog`和`GetSnapshotSprite`的API，更多关于它们的信息在[README](https://github.com/dgarroDC/EpicasAlbum#the-api)。"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2023-05-17",
+      "body": "Adds a vertical scrollbar to the UI for better visual feedback when navigating the photos. Also a slight color adjustment.",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.0.1/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.0.1",
+      "bodyZh": "为UI添加垂直滚动条，以便在浏览照片时提供更好的视觉反馈。同时进行了一些轻微的颜色调整。"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2023-05-15",
+      "body": "Initial release!",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.0.0/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-05-20T04:13:46Z",
+  "releases": [
+    {
+      "tag": "v0.30.2",
+      "name": "v0.30.2",
+      "date": "2026-03-29",
+      "body": "0.30.2 (#68)\n\n- Fixed typo in translation file name, Chinese translation actually\nworks now",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.30.2/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.30.2",
+      "bodyZh": "0.30.2 (#68)\n\n- 修复了翻译文件名中的拼写错误，中文翻译现在可以正常工作了"
+    },
+    {
+      "tag": "v0.30.1",
+      "name": "v0.30.1",
+      "date": "2026-03-28",
+      "body": "0.30.1 (#66)\n\n- Added Chinese translation (thanks SanBaiMing!)\n- MegaPiggy added a quantum planet to the other system or something idk",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.30.1/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.30.1",
+      "bodyZh": "0.30.1 (#66)\n\n- 添加了中文翻译（感谢SanBaiMing！）\n- MegaPiggy给其他星系添加了一个量子行星或类似的东西 我不知道"
+    },
+    {
+      "tag": "v0.30.0",
+      "name": "v0.30.0",
+      "date": "2026-03-13",
+      "body": "- Added gorp language\r\n- Added alarm bells above dream campfires",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.30.0/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.30.0",
+      "bodyZh": "- 添加了gorp语言\n- 在梦境篝火上方添加了警报铃"
+    },
+    {
+      "tag": "v0.29.0",
+      "name": "v0.29.0",
+      "date": "2026-01-20",
+      "body": "0.29.0 (#62)\r\n\r\n- Fixed Sequestered Luminary's map mode\r\n- Improved the Lava Twins",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.29.0/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.29.0",
+      "bodyZh": "0.29.0 (#62)\r\n\r\n- 修复了隔离光灵的地图模式\r\n- 改进了熔岩双星"
+    },
+    {
+      "tag": "v0.28.0",
+      "name": "v0.28.0",
+      "date": "2025-07-21",
+      "body": "0.28.0 (#61)\n\n- Fixed gravity on the cubes orbiting Timber Hearth\n- Added a standing vision torch in the Dreamworld\n- Repairable broken door example\n- Condition trigger volume example\n- Projection totem condition example\n- Interaction volumes example",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.28.0/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.28.0",
+      "bodyZh": "0.28.0 (#61)\n\n- 修复了环绕木炉星的立方体上的重力问题\n- 在梦境世界中添加了一个站立式视野火炬\n- 可修复的破损门示例\n- 条件触发体积示例\n- 投影图腾条件示例\n- 交互体积示例"
+    },
+    {
+      "tag": "v0.27.0",
+      "name": "v0.27.0",
+      "date": "2025-04-19",
+      "body": "0.27.0\r\n\r\n- Better Snowball comet tail\r\n- Made the artificial gravity squares orbit\r\n- Added custom credits examples (thanks Smuffy @josshmot!)\r\n- Docked raft and clean raft examples\r\n- Thunderdome example of force volumes and shapes",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.27.0/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.27.0"
+    },
+    {
+      "tag": "v0.26.0",
+      "name": "v0.26.0",
+      "date": "2025-02-18",
+      "body": "0.26.0\n\n- Fixed Lure Twins\n- Tweaked some prop positions\n- Added a working raft dock to Wetrock\n- Added Ernesto and Slate to the final jam session\n- Added basic conditional check example\n- Added custom title screen examples",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.26.0/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.26.0"
+    },
+    {
+      "tag": "v0.25.0",
+      "name": "v0.25.0",
+      "date": "2025-01-14",
+      "body": "0.25.0\n\n- Added example of extended vanilla ship log entry\r\n- Added quantum lightning, socket, and shuffle examples to Frigid Pygmy\r\n- Made Sequestered Luminary no longer selectable on ship log map mode\r\n- Added ship log entry location example to Frigid Pygmy",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.25.0/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.25.0"
+    },
+    {
+      "tag": "v0.24.0",
+      "name": "v0.24.0",
+      "date": "2024-10-31",
+      "body": "v0.24.0\n\n- Added explanatory readme files to the project\r\n- Moved more assets into the example system so that the Outer Wilds isn't so cluttered\r\n- Added examples of using persistent conditions and black holes to go to specific spawn points\r\n- Added reusing dialogue example with Slate\r\n- Tested more Eye of the Universe scene features\r\n- Added custom Dreamworld examples",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.24.0/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.24.0"
+    },
+    {
+      "tag": "v0.23.0",
+      "name": "v0.23.0",
+      "date": "2024-09-26",
+      "body": "- Added examples of dialogue attention points to Frigid Pigmy",
+      "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.23.0/nh-examples.zip",
+      "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.23.0"
+    }
+  ]
+}

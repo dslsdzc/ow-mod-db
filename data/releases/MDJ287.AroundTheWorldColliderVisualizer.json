@@ -1,0 +1,38 @@
+{
+  "repoUpdatedAt": "2026-03-11T20:55:16Z",
+  "releases": [
+    {
+      "tag": "v0.1.4",
+      "name": "Version 0.1.4",
+      "date": "2026-03-11",
+      "body": "",
+      "zipUrl": "https://github.com/MDJ287/AroundTheWorldColliderVisualizer/releases/download/v0.1.4/MDJ287.AroundTheWorldColliderVisualizer.zip",
+      "releaseUrl": "https://github.com/MDJ287/AroundTheWorldColliderVisualizer/releases/tag/v0.1.4"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "Version 0.1.3",
+      "date": "2026-02-09",
+      "body": "",
+      "zipUrl": "https://github.com/MDJ287/AroundTheWorldColliderVisualizer/releases/download/v0.1.3/MDJ287.AroundTheWorldColliderVisualizer.zip",
+      "releaseUrl": "https://github.com/MDJ287/AroundTheWorldColliderVisualizer/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2025-12-06",
+      "body": "Added cylinders",
+      "zipUrl": "https://github.com/MDJ287/AroundTheWorldColliderVisualizer/releases/download/v0.1.2/MDJ287.AroundTheWorldColliderVisualizer.zip",
+      "releaseUrl": "https://github.com/MDJ287/AroundTheWorldColliderVisualizer/releases/tag/v0.1.2",
+      "bodyZh": "添加了圆柱体"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-11-24",
+      "body": "",
+      "zipUrl": "https://github.com/MDJ287/AroundTheWorldColliderVisualizer/releases/download/v0.1.0/MDJ287.AroundTheWorldColliderVisualizer.zip",
+      "releaseUrl": "https://github.com/MDJ287/AroundTheWorldColliderVisualizer/releases/tag/v0.1.0"
+    }
+  ]
+}

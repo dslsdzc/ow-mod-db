@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-01-17T06:01:05Z",
+  "releases": [
+    {
+      "tag": "0.1.0",
+      "name": "No Alt Tab Pausing",
+      "date": "2021-11-11",
+      "body": "Allow the game to continue in background, allowing autopilot while the game isn't focused.",
+      "zipUrl": "https://github.com/lStewieAl/OuterWilds-NoAltTabPause/releases/download/0.1.0/lStewieAl.RunInBackground.zip",
+      "releaseUrl": "https://github.com/lStewieAl/OuterWilds-NoAltTabPause/releases/tag/0.1.0",
+      "bodyZh": "允许游戏在后台继续运行，在游戏未获得焦点时启用自动驾驶。"
+    }
+  ]
+}

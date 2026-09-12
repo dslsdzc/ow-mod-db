@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-08-20T15:32:43Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2026-01-31",
+      "body": "- Added Chinese translation (thanks SheepCreater2)\r\n- Fixed it being impossible to 100% achievements on a profile (Beginner's Luck was always reset)\r\n- Adds semi-hidden achievements. These are achievements that devs can set up a \"before earned\" description to give a hint to players explicitly stating what needs to be done. (I've updated the tutorial in readme and example project if you want an easier explanation)\r\n- Makes it so that the \"X hidden achievement\" box for fully secret achievements is translatable, rather than always English\r\n- Fixes the queue on the in-game achievement popup\r\n\r\nThank you Stache for creating most of this update!",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v1.0.1/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v1.0.1",
+      "bodyZh": "- 添加了中文翻译（感谢 SheepCreater2）\n- 修复了无法在个人资料中100%完成成就的问题（总是重置“新手运气”）\n- 添加了半隐藏成就。这些是开发者可以设置“获得前”描述的成就，以明确提示玩家需要做什么。（我已在readme和示例项目中更新了教程，如果你需要更简单的解释）\n- 使完全隐藏成就的“X个隐藏成就”框可翻译，而不是始终为英文\n- 修复了游戏内成就弹窗的队列问题\n\n感谢 Stache 创建了大部分更新！"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-10-15",
+      "body": "- Add sfx on achievement unlock (thanks pikpik)\r\n- Add option for enabling debug logs (off by default)\r\n- Make saving more reliable\r\n- Got rid of popup queue because it looked bad\r\n- Popups don't stick around when the game is paused\r\n- Fixed some button highlights, only show page buttons when relevant\r\n- Cleaned up stuff",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v1.0.0/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v1.0.0",
+      "bodyZh": "- 在成就解锁时添加音效（感谢 pikpik）\n- 添加启用调试日志的选项（默认关闭）\n- 使保存更可靠\n- 移除了弹出队列因为它看起来很糟糕\n- 游戏暂停时弹出窗口不会持续显示\n- 修复了一些按钮高亮，仅在相关时显示页面按钮\n- 整理了一些内容"
+    },
+    {
+      "tag": "v0.4.1",
+      "name": "Version 0.4.1",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.4.1/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.4.1",
+      "bodyZh": "- 在模组清单中添加Patreon捐赠链接"
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "v0.4.0",
+      "date": "2022-08-23",
+      "body": "- Added progress tracking to pop-ups (displays each time you complete one out of however many objectives)\r\n- Fixed greyscale image quality\r\n- Some code improvements\r\n\r\nThanks nebula",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.4.0/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.4.0",
+      "bodyZh": "- 为弹窗添加了进度跟踪（每次完成目标时都会显示进度，无论有多少个目标）\r\n- 修复了灰度图像质量\n- 一些代码改进\n\n感谢星云"
+    },
+    {
+      "tag": "v0.3.1",
+      "name": "v0.3.1",
+      "date": "2022-06-19",
+      "body": "- Stop icons getting blurry at low texture quality (don't generate mipmaps)\r\n- Updated OWML and OWGL versions",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.3.1/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.3.1",
+      "bodyZh": "- 停止低纹理质量下图标变得模糊（不生成mipmap）\n- 更新了OWML和OWGL版本"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "v0.3.0",
+      "date": "2022-06-19",
+      "body": "- Add `HasAchievement` method to the API.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.3.0/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.3",
+      "name": "v0.2.3",
+      "date": "2022-04-28",
+      "body": "- Fixes menu achievement button disappearing when changing language.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.2.3/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.2.3"
+    },
+    {
+      "tag": "v0.2.2",
+      "name": "v0.2.2",
+      "date": "2022-04-27",
+      "body": "- Show pop-up only if they didn't have the achievement (togglable in options) thanks dgarroDC\r\n- Fix achievements not refreshing when switching profiles",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.2.2/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.2.2"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "v0.2.1",
+      "date": "2022-04-27",
+      "body": "- Support png for icons",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.2.1/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2022-04-27",
+      "body": "- Add Russian, French, Spanish, and German translations of vanilla achievements and UI.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.2.0/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.2.0"
+    }
+  ]
+}

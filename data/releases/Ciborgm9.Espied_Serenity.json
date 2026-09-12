@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2024-02-29T14:20:06Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2023-05-14",
+      "body": "Update manifest.json\n\nAdds tags to the mod",
+      "zipUrl": "https://github.com/Ciborgm9/Rogue-Planet/releases/download/v0.1.2/Rogue-Planet.zip",
+      "releaseUrl": "https://github.com/Ciborgm9/Rogue-Planet/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-09-23",
+      "body": "Update manifest.json",
+      "zipUrl": "https://github.com/Ciborgm9/Rogue-Planet/releases/download/v0.1.1/Rogue-Planet.zip",
+      "releaseUrl": "https://github.com/Ciborgm9/Rogue-Planet/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Espied Serenity v0.1.0",
+      "date": "2022-09-14",
+      "body": "First unfinished release of Espied Serenity.",
+      "zipUrl": "https://github.com/Ciborgm9/Rogue-Planet/releases/download/v0.1.0/Rogue-Planet.zip",
+      "releaseUrl": "https://github.com/Ciborgm9/Rogue-Planet/releases/tag/v0.1.0"
+    }
+  ]
+}

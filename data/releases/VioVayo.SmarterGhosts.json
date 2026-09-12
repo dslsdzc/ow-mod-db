@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-08-09T18:51:15Z",
+  "releases": [
+    {
+      "tag": "v0.2.2",
+      "name": "Version 0.2.2",
+      "date": "2025-08-09",
+      "body": "After being interrupted, movie night will no longer inexplicably resume without an audience.",
+      "zipUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/download/v0.2.2/VioVayo.SmarterGhosts.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/tag/v0.2.2",
+      "bodyZh": "被中断后，电影之夜将不再无故地没有观众地恢复。"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "Version 0.2.1",
+      "date": "2023-04-22",
+      "body": "- More Ghosts will start hunting the player early if given reason to\r\n- Tweaks to noise radii",
+      "zipUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/download/v0.2.1/VioVayo.SmarterGhosts.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/tag/v0.2.1",
+      "bodyZh": "- 如果给予理由，更多的幽灵会从早期开始追捕玩家\n- 对噪音半径进行调整"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2023-04-10",
+      "body": "- Fixed several problems with the calling for help behaviour\r\n- Ghosts now react to sounds caused by the player moving around\r\n- Made tweaks to lists and arrays and restructured code for readability",
+      "zipUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/download/v0.2.0/VioVayo.SmarterGhosts.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/tag/v0.2.0",
+      "bodyZh": "- 修复了求助行为的几个问题\r\n- 幽灵现在会对玩家移动产生的声音做出反应\r\n- 对列表和数组进行了微调，并重构代码以提高可读性"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-03-26",
+      "body": "First Release!",
+      "zipUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/download/v0.1.0/VioVayo.SmarterGhosts.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/tag/v0.1.0",
+      "bodyZh": "首次发布！"
+    }
+  ]
+}

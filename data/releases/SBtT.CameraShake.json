@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2024-06-13T01:08:27Z",
+  "releases": [
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2023-10-02",
+      "body": "- New API for other modders to use\r\n- Added more detail to the flood impact shakes (different shake will play depending on what the dam wave hits)\r\n- Fixed a bug where supernova shake didn't reset properly on loop",
+      "zipUrl": "https://github.com/MegaPiggy/SBtT.CameraShake/releases/download/1.0.1/SBtT.CameraShake.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/SBtT.CameraShake/releases/tag/1.0.1",
+      "bodyZh": "- 为其他模组制作者提供了新的API接口\n- 增加了洪水影响震动细节（根据大坝波浪击中的不同，将播放不同的震动效果）\n- 修复了超新星震动在循环中未能正确重置的bug"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2023-09-28",
+      "body": "first release",
+      "zipUrl": "https://github.com/MegaPiggy/SBtT.CameraShake/releases/download/1.0.0/SBtT.CameraShake.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/SBtT.CameraShake/releases/tag/1.0.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2026-05-04T15:14:16Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "owd.OuterWilds.UncapFps_1.0.1",
+      "date": "2026-05-03",
+      "body": "",
+      "zipUrl": "https://github.com/orthwade/owd.OuterWilds.UncapFps/releases/download/v1.0.1/owd.OuterWilds.UncapFps.zip",
+      "releaseUrl": "https://github.com/orthwade/owd.OuterWilds.UncapFps/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "owd.OuterWilds.UncapFps_1.0.0",
+      "date": "2026-05-03",
+      "body": "",
+      "zipUrl": "https://github.com/orthwade/owd.OuterWilds.UncapFps/releases/download/v1.0.0/owd.OuterWilds.UncapFps.zip",
+      "releaseUrl": "https://github.com/orthwade/owd.OuterWilds.UncapFps/releases/tag/v1.0.0"
+    }
+  ]
+}

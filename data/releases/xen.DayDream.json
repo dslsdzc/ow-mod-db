@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2024-01-02T22:00:42Z",
+  "releases": [
+    {
+      "tag": "v1.2.2",
+      "name": "Version 1.2.2",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v1.2.2/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v1.2.2",
+      "bodyZh": "- 在模组清单中添加Patreon捐赠链接"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "Version 1.2.1",
+      "date": "2023-06-28",
+      "body": "- Fixed fog being broken since patch 13 (thanks Vio!)\r\n- Fixed fog and atmosphere not being updated properly when changing settings\r\n- Adjusted fog and atmosphere colours",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v1.2.1/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v1.2.1",
+      "bodyZh": "- 修复了自13号补丁以来雾效被破坏的问题（感谢Vio！）\r\n- 修复了在更改设置时雾效和大气层未能正确更新的问题\n- 调整了雾效和大气层的颜色"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "v1.2.0",
+      "date": "2022-10-22",
+      "body": "- Update code stuff to not be super outdated\r\n- Added an API for registering new cameras for [CommonCameraUtility](https://github.com/xen-42/ow-common-camera-util)\r\n- Fix the \"See Sun\" option not working with the atmospheric shader",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v1.2.0/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v1.2.0",
+      "bodyZh": "- 更新代码部分，使其不再非常过时\r\n- 添加了一个用于注册[CommonCameraUtility](https://github.com/xen-42/ow-common-camera-util)新摄像头的API\r\n- 修复了\"See Sun\"选项与大气着色器不兼容的问题"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "v1.1.1 Fog",
+      "date": "2022-06-30",
+      "body": "- Adds some fog when using the atmosphere option\r\n- Changed the default settings to look best",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v1.1.1/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v1.1.1",
+      "bodyZh": "- 在使用大气选项时添加一些雾气\r\n- 将默认设置更改为最佳外观"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0 Atmosphere",
+      "date": "2022-06-30",
+      "body": "- Adds a blue sky to the dream world. Can be toggled in the options.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v1.1.0/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v1.1.0",
+      "bodyZh": "- 为梦境世界添加了蓝色天空。可在选项中切换。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2021-12-14",
+      "body": "Made dreaming at any campfire make you wake up at that same campfire.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v1.0.0/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.1.4",
+      "name": "v0.1.4",
+      "date": "2021-11-28",
+      "body": "Fixed raft movement",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v0.1.4/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v0.1.4"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "v0.1.3",
+      "date": "2021-11-28",
+      "body": "Dream rafts appear properly now and don't throw a billion errors",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v0.1.3/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2021-11-28",
+      "body": "Was changing the wrong rafts",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v0.1.2/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2021-11-28",
+      "body": "Improved ambient lighting",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/download/v0.1.1/xen.DayDream.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-day-dream/releases/tag/v0.1.1"
+    }
+  ]
+}

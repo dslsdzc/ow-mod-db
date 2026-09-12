@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-06-27T20:27:12Z",
+  "releases": [
+    {
+      "tag": "v1.2.0",
+      "name": "hearth1an.TheVision",
+      "date": "2025-03-07",
+      "body": "- fixed Ember Twin spawn bug\r\n- korean translation added by [Barirn](https://github.com/Barirn)",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.2.0/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.2.0",
+      "bodyZh": "- 修复了余烬双星生成错误\r\n- 韩语翻译由[Barirn](https://github.com/Barirn)添加"
+    },
+    {
+      "tag": "v1.1.9",
+      "name": "hearth1an.TheVision",
+      "date": "2024-06-16",
+      "body": "- soft log fix and infinite loading fix (thx MegaPiggy)",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.9/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.9",
+      "bodyZh": "- 软日志修复和无限加载修复（感谢MegaPiggy）"
+    },
+    {
+      "tag": "v1.1.8",
+      "name": "hearth1an.TheVision",
+      "date": "2023-10-03",
+      "body": "- Japanese translation fixes\r\n- French translation fixes",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.8/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.8",
+      "bodyZh": "- 日文翻译修复\n- 法文翻译修复"
+    },
+    {
+      "tag": "v1.1.7",
+      "name": "hearth1an.TheVision",
+      "date": "2023-08-14",
+      "body": "- fixed infinite loadig bug\r\n- fixed ATP error",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.7/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.7",
+      "bodyZh": "- 修复了无限加载的bug\r\n- 修复了ATP错误"
+    },
+    {
+      "tag": "v1.1.6",
+      "name": "hearth1an.TheVision",
+      "date": "2023-06-24",
+      "body": "- fixed MenuFramework dependency",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.6/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.6",
+      "bodyZh": "- 修复了MenuFramework依赖问题"
+    },
+    {
+      "tag": "v1.1.5",
+      "name": "hearth1an.TheVision",
+      "date": "2023-06-05",
+      "body": "- Italian translation fixes",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.5/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.5"
+    },
+    {
+      "tag": "v1.1.4",
+      "name": "hearth1an.TheVision",
+      "date": "2023-04-10",
+      "body": "- Bug fixes for last New Horizons update\r\n- Dialogue fixes\r\n- More Ernesto\r\n- Italian localisation added by ilyNerY",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.4/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.4"
+    },
+    {
+      "tag": "v1.1.3",
+      "name": "hearth1an.TheVision",
+      "date": "2023-03-25",
+      "body": "Last New Horizons update compability fix",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.3/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.3"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "hearth1an.TheVision",
+      "date": "2022-12-14",
+      "body": "- Last New Horizons update fix (white hole colors)\r\n- You will never skip the most important quest now",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.2/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.2"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "hearth1an.TheVision",
+      "date": "2022-10-25",
+      "body": "Minor fixes",
+      "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.1/hearth1an.TheVision.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.1"
+    }
+  ]
+}

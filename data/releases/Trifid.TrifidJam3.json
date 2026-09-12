@@ -1,0 +1,58 @@
+{
+  "repoUpdatedAt": "2026-04-28T07:15:37Z",
+  "releases": [
+    {
+      "tag": "v1.2.2",
+      "name": "Version 1.2.2",
+      "date": "2026-03-12",
+      "body": "- Added Chinese translation by SanBaiMing",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.2.2/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.2.2",
+      "bodyZh": "- 添加了SanBaiMing的中文翻译"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "Version 1.2.1",
+      "date": "2026-01-21",
+      "body": "- Fixed death not working when holding the threader",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.2.1/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.2.1",
+      "bodyZh": "- 修复了在持有线轴时死亡不工作的问题"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2026-01-20",
+      "body": "- Threader improvements!\r\n  - Reeling is a lot stronger and snappier\r\n  - Dragging objects is more responsive and stable\r\n  - The beam visually flexes with tension\r\n  - Fixed some issues with using your personal tools while holding it\r\n- Added french translation by Omega Fallon\r\n- Adjusted the music volume\r\n- Added snow and fog particles\r\n- Added a lantern next to the easter egg ;3",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.2.0/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.2.0",
+      "bodyZh": "- 线轴改进！\n  - 收线更强力且更灵敏\n  - 拖拽物体更响应且更稳定\n  - 光束会随着张力在视觉上弯曲\n  - 修复了在持有时使用个人工具的一些问题\n- 添加了Omega Fallon提供的法语翻译\n- 调整了音乐音量\n- 添加了雪和雾粒子\n- 在彩蛋旁边添加了一盏灯笼；3"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2024-04-05",
+      "body": "- Improved VR compatibility\r\n- Somewhat fixed dragging objects\r\n- Reverted April Fools ending to an option",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.1.0/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.1.0",
+      "bodyZh": "- 提高了VR兼容性\r\n- 一定程度上修复了拖拽物体的问题\r\n- 将愚人节结局恢复为选项"
+    },
+    {
+      "tag": "v1.1.A",
+      "name": "Version 1.1.A",
+      "date": "2024-04-01",
+      "body": "Tis that time of year :3",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.1.A/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.1.A",
+      "bodyZh": "那是时候了：3"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-03-26",
+      "body": "Find solace in a forgotten cavern, with a device left behind.\r\n\r\nAn entry for the [third mod jam](https://outerwildsmods.com/mods/modjam3/), created by Trifid and composed by chatti. (and epic playtested by Wonky Panda the epic playtester)",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.0.0/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.0.0"
+    }
+  ]
+}

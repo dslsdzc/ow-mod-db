@@ -1,0 +1,30 @@
+{
+  "repoUpdatedAt": "2025-03-28T06:05:43Z",
+  "releases": [
+    {
+      "tag": "0.2.1",
+      "name": "v0.2.1",
+      "date": "2024-02-19",
+      "body": "um fixing the release so xen is happy :))",
+      "zipUrl": "https://github.com/sherwoodw28/outerwildsmusicplayer/releases/download/0.2.1/Titch.OWMusicPlayer.zip",
+      "releaseUrl": "https://github.com/TitchMW/outerwildsmusicplayer/releases/tag/0.2.1",
+      "bodyZh": "在修复发布版本，让Xen满意：))"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "v0.2.0",
+      "date": "2022-06-28",
+      "body": "",
+      "zipUrl": "https://github.com/sherwoodw28/outerwildsmusicplayer/releases/download/0.2.0/Titch.OWMusicPlayer.zip",
+      "releaseUrl": "https://github.com/TitchMW/outerwildsmusicplayer/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "First Release!",
+      "date": "2022-01-16",
+      "body": "",
+      "zipUrl": "https://github.com/sherwoodw28/outerwildsmusicplayer/releases/download/0.1.0/Titch.OWMusicPlayer.zip",
+      "releaseUrl": "https://github.com/TitchMW/outerwildsmusicplayer/releases/tag/0.1.0"
+    }
+  ]
+}

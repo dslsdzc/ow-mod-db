@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2022-11-02T20:16:28Z",
+  "releases": [
+    {
+      "tag": "1.2.0",
+      "name": "1.2.0",
+      "date": "2022-11-02",
+      "body": "This time versioning should work....maybe",
+      "zipUrl": "https://github.com/TheLoreExplorer/SelfDestructButton/releases/download/1.2.0/TheLoreExplorer.SelfDestructButton.zip",
+      "releaseUrl": "https://github.com/TheLoreExplorer/SelfDestructButton/releases/tag/1.2.0",
+      "bodyZh": "这次版本控制应该有效……也许"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "Self Destruct Button",
+      "date": "2022-10-31",
+      "body": "Updates The versioning so downloads arent local or something idk",
+      "zipUrl": "https://github.com/TheLoreExplorer/SelfDestructButton/releases/download/1.1.0/TheLoreExplorer.SelfDestructButton.zip",
+      "releaseUrl": "https://github.com/TheLoreExplorer/SelfDestructButton/releases/tag/1.1.0",
+      "bodyZh": "更新 版本管理，以便下载不是本地的或什么的，我不知道"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Ship Self Destruct",
+      "date": "2022-10-27",
+      "body": "Allows you to use the keyboard key \"U\" to immediately blow up your ship.",
+      "zipUrl": "https://github.com/TheLoreExplorer/SelfDestructButton/releases/download/1.0.0/The.Lore.Explorer.SelfDestructButton.zip",
+      "releaseUrl": "https://github.com/TheLoreExplorer/SelfDestructButton/releases/tag/1.0.0",
+      "bodyZh": "允许您使用键盘按键“U”立即炸毁您的飞船。"
+    }
+  ]
+}

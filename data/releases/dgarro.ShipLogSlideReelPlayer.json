@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-03-10T00:20:41Z",
+  "releases": [
+    {
+      "tag": "2.4.1",
+      "name": "2.4.1",
+      "date": "2024-06-12",
+      "body": "Fixed to work with Outer Wilds Patch 15 (updated game libs).",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/2.4.1/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/2.4.1",
+      "bodyZh": "修复以支持星际拓荒补丁15（更新了游戏库）。"
+    },
+    {
+      "tag": "2.4.0",
+      "name": "2.4.0",
+      "date": "2024-02-28",
+      "body": "**Suit Log Slide Reel Player Plus**\r\n\r\nThe mod integration with [Suit Log](https://outerwildsmods.com/mods/suitlog/) is back, this time as a separate \"Slide Reel Player\" Suit Log mode, allowing you to watch all the reels anywhere. This mode has all the features of the custom mode in the Ship Log, including the fullscreen!",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/2.4.0/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/2.4.0",
+      "bodyZh": "**Suit Log Slide Reel Player Plus**\r\n\r\n与[Suit Log](https://outerwildsmods.com/mods/suitlog/)的模组集成回归，这次作为一个独立的“Slide Reel Player”Suit Log模式，让你可以在任何地方观看所有卷轴。此模式具有飞船日志自定义模式的所有功能，包括全屏！"
+    },
+    {
+      "tag": "2.3.1",
+      "name": "2.3.1",
+      "date": "2023-09-27",
+      "body": "The mod now works with Outer Wilds Patch 14. It used a method to set up some prompts that was removed in the last patch, making the mod fail. Now it works, but the prompts aren't visible because of a fix still pending for Custom Ship Log Modes.",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/2.3.1/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/2.3.1",
+      "bodyZh": "该模组现在与星际拓荒补丁14兼容。它使用了一种在上一补丁中被移除的方法来设置一些提示，导致模组失效。现在它正常工作了，但由于自定义飞船日志模式的相关修复尚未完成，提示不可见。"
+    },
+    {
+      "tag": "2.3.0",
+      "name": "2.3.0",
+      "date": "2023-05-05",
+      "body": "**Fullscreen mode**\r\nAdds a feature to toggle fullscreen. Note that this a non-diegetic feature: it isn't fullscreen on the in-game computer, it's fullscreen on your monitor (or game window), allowing you to appreciate the reels in all their glory and without being affected by lights from the game world, offering a more CINEMATIC experience.",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/2.3.0/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/2.3.0",
+      "bodyZh": "**全屏模式**\n添加了一个切换全屏的功能。请注意这是一个非游戏内功能：它不是在游戏电脑上全屏，而是在您的显示器（或游戏窗口）上全屏，让您能够欣赏到卷轴的完整魅力，而不受游戏世界灯光的影响，提供更电影般的体验。"
+    },
+    {
+      "tag": "2.2.0",
+      "name": "2.2.0",
+      "date": "2023-05-02",
+      "body": "Adds an indicator of the current slide and how many slides there are for the selected reel, using a text bar and numbers, for example:\r\n `[===¤========] 4/12`",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/2.2.0/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/2.2.0",
+      "bodyZh": "添加一个指示当前幻灯片以及所选轮盘中有多少幻灯片的指标，使用文本条和数字，例如：\n`[===¤========] 4/12`"
+    },
+    {
+      "tag": "2.1.0",
+      "name": "2.1.0",
+      "date": "2023-04-26",
+      "body": "**\"Slide Reel Player\" Custom Mode**\r\nMoves reel entries out of Map Mode to new custom ship log mode. Map Mode still has the vanilla reel player.",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/2.1.0/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/2.1.0"
+    },
+    {
+      "tag": "2.0.1",
+      "name": "2.0.1",
+      "date": "2022-10-14",
+      "body": "Fix increased loading times (#6) by removing a lot of expensive operations (many of them since release 1.2.0) during mod setup",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/2.0.1/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/2.0.1"
+    },
+    {
+      "tag": "2.0.0",
+      "name": "2.0.0",
+      "date": "2022-10-07",
+      "body": "Relaunch of the mod, rebranded as **Ship Log Slide Reel Player Plus** because [Outer Wilds Patch 13](https://www.mobiusdigitalgames.com/news/patch-13-is-now-available) officially implemented watching slide reels and visions in the Ship Log, so the purpose of the mod is now adding the previous  **Ship Log Slide Reel Player** as an enhanced alternative to the vanilla one (and more features will be implemented in the future).\r\n\r\nMain changes since the last release:\r\n- The mod now works with Outer Wilds 1.1.13!\r\n- Most of the reels and visions aren't required to watch them again to make the mod know that you already watched them, using the new functionality of the official implementation that links reels/vision with known Ship Log facts (although this was previously possible by me in the past by manually specifying the facts, the new feature makes it easier for me).\r\n- Removed the API used by [Suit Log](https://github.com/dgarroDC/SuitLog) to show the reels/visions in it. I could have kept it and the Suit Log would have the Reel Player again, but I have a plan for a major redesign of Ship Log Slide Reel Player Plus that would need to completely change the way these mods communicate.",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/2.0.0/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/2.0.0"
+    },
+    {
+      "tag": "1.2.0",
+      "name": "1.2.0",
+      "date": "2022-06-20",
+      "body": "Added the feature to play reels/visions automatically as an alternative to manually changing the slide.\r\n_Note:_ This feature is also added to the [Suit Log](https://outerwildsmods.com/mods/suitlog/) mod if you already have the [\"Suit Log Slide Reel Player\" Update (1.2.0)](https://github.com/dgarroDC/SuitLog/releases/tag/1.2.0).",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/1.2.0/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/1.2.0"
+    },
+    {
+      "tag": "1.1.2",
+      "name": "1.1.2",
+      "date": "2022-06-12",
+      "body": "Fix some bugs when watching real reels/visions: music not playing, visions going fast and locking, not being marked as read in ship log, probably more... Thanks @likemauro for the report!",
+      "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/1.1.2/dgarro.ShipLogSlideReelPlayer.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/1.1.2"
+    }
+  ]
+}

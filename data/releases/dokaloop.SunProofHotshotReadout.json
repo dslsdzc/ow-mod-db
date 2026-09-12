@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-08-18T09:28:16Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2026-08-18",
+      "body": "- Added: outline toolip",
+      "zipUrl": "https://github.com/dokaloop/SunProofHotshotReadout/releases/download/v0.1.1/dokaloop.SunProofHotshotReadout.zip",
+      "releaseUrl": "https://github.com/dokaloop/SunProofHotshotReadout/releases/tag/v0.1.1",
+      "bodyZh": "- 新增：轮廓工具提示"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-08-16",
+      "body": "First release! Customize lock-on readout colors & outlines, with a bloom toggle.",
+      "zipUrl": "https://github.com/dokaloop/SunProofHotshotReadout/releases/download/v0.1.0/dokaloop.SunProofHotshotReadout.zip",
+      "releaseUrl": "https://github.com/dokaloop/SunProofHotshotReadout/releases/tag/v0.1.0",
+      "bodyZh": "首次发布！可自定义锁定读数颜色和轮廓，并带有 bloom 开关。"
+    }
+  ]
+}

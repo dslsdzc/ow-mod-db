@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-08-04T07:08:38Z",
+  "releases": [
+    {
+      "tag": "0.6.4",
+      "name": "OwO Lives!!",
+      "date": "2024-08-03",
+      "body": "Fixed bug where a room wasn't created due to the game libs removing a helper function.\r\n\r\n:bleh:",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.6.4/0.6.4_OWO_Release.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.6.4",
+      "bodyZh": "修复了由于游戏库移除辅助函数导致房间未创建的bug。\n\n:bleh:"
+    },
+    {
+      "tag": "0.6.3",
+      "name": "Changed server",
+      "date": "2023-01-12",
+      "body": "I've migrated the server to a cloud-hosted didgeridoo courtesy of Book.\r\nIf you're reading this ping him with a heart he deserves it",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.6.3/Release.0.6.3.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.6.3",
+      "bodyZh": "我已将服务器迁移到由Book提供的云端拨浪鼓上。\n如果你在读这段话，请用爱心@他，他值得它。"
+    },
+    {
+      "tag": "0.6.2",
+      "name": "VR Fix ",
+      "date": "2022-11-16",
+      "body": "Disables chat in prerelease for VR incompatibility",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.6.2/Prerelease0.6.2.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.6.2",
+      "bodyZh": "禁用预发布版本中的聊天功能，以解决VR兼容性问题"
+    },
+    {
+      "tag": "0.6.1",
+      "name": "Polishing patch",
+      "date": "2022-10-04",
+      "body": "Mod settings now clearer, default colours are white,\r\nPlayer markers now despawn when the player leaves,\r\nUpdated bot consistency.",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.6.1/0.6.1.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.6.1",
+      "bodyZh": "模组设置现在更清晰，默认颜色为白色，\n玩家标记在玩家离开时会消失，\n更新了机器人的稳定性。"
+    },
+    {
+      "tag": "0.6.0",
+      "name": "Bug fixes",
+      "date": "2022-10-04",
+      "body": "Fixed: \r\nDiscord webhook,\r\nPrompts overloading the screen,\r\nRecordings being deleted before their time,\r\nRecordings not parenting correctly,\r\nChanged recording place key,\r\nOther fixes I've forgotten about maybe.",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.6.0/0.6.0.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.6.0",
+      "bodyZh": "修复：\nDiscord webhook,\n屏幕过载的提示，\n录制在预定时间前被删除，\n录制没有正确设置父级，\n更改了录制位置键，\n可能还有我忘记的其他修复。"
+    },
+    {
+      "tag": "0.5.6.1",
+      "name": "0.5.6.1",
+      "date": "2022-05-26",
+      "body": "AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.5.6.1/Release.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.5.6.1"
+    },
+    {
+      "tag": "0.5.6",
+      "name": "Messages",
+      "date": "2022-05-26",
+      "body": "Create recorded messages for other players, even when you have left the game!\r\nThese messages will last for one week.\r\nPlayers can appraise your message, increasing its lifespan by a week.\r\nHave fun!\r\n\r\nBugfixes:\r\nI can't even remember",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.5.6/Release.0.5.6.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.5.6"
+    },
+    {
+      "tag": "0.5.5",
+      "name": "Custom skins",
+      "date": "2022-05-11",
+      "body": "Custom skins are now a config option!\r\nSkins currently available:\r\nProtagonist,\r\nGabbro,\r\nChert,\r\nFeldspar.\r\nFor custom skins the only colour option is clothesColour, which changes the entire model, due to varying meshes.",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.5.5/Release.0.5.5.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.5.5"
+    },
+    {
+      "tag": "0.5.4",
+      "name": "Syncing fixes",
+      "date": "2022-05-09",
+      "body": "Increased the area around the player to be syncing by 100x.\r\nPlayers away from all astral bodies will now be indicated as unstable.\r\nFixed unreliable sector system.",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.5.4/Release.0.5.4.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.5.4"
+    },
+    {
+      "tag": "0.5.3",
+      "name": "General Improvements",
+      "date": "2022-05-08",
+      "body": "Smarter player colour hash generation using analogous colours.\r\nEach mesh on the player (Head, Arms, Clothes Jetpack) can be assigned a different colour.\r\nYou can now lock onto other player's ships, allowing for velocity alignment and autopilot.\r\nFixed chat !1 bug.",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/download/0.5.3/Release.0.5.3.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsOnline/releases/tag/0.5.3"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2026-03-16T06:03:43Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2026-03-16",
+      "body": "",
+      "zipUrl": "https://github.com/MDJ287/AnglerfishNames/releases/download/v0.1.1/MDJ287.AnglerfishNames.zip",
+      "releaseUrl": "https://github.com/MDJ287/AnglerfishNames/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-03-14",
+      "body": "",
+      "zipUrl": "https://github.com/MDJ287/AnglerfishNames/releases/download/v0.1.0/MDJ287.AnglerfishNames.zip",
+      "releaseUrl": "https://github.com/MDJ287/AnglerfishNames/releases/tag/v0.1.0"
+    }
+  ]
+}

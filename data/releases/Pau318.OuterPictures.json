@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2022-12-23T12:58:17Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2022-12-23",
+      "body": "Heopefully this on will work ^^'",
+      "zipUrl": "https://github.com/Pau318/OuterPictures/releases/download/v0.1.1/Pau318.OuterPictures.zip",
+      "releaseUrl": "https://github.com/Pau318/OuterPictures/releases/tag/v0.1.1",
+      "bodyZh": "希望这个能行^^'"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2022-12-19",
+      "body": "First release :D",
+      "zipUrl": "https://github.com/Pau318/OuterPictures/releases/download/v0.1.0/Pau318.OuterPictures.zip",
+      "releaseUrl": "https://github.com/Pau318/OuterPictures/releases/tag/v0.1.0",
+      "bodyZh": "首次发布：）"
+    }
+  ]
+}

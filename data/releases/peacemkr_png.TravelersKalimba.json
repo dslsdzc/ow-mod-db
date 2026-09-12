@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-04-28T07:15:29Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2026-01-20",
+      "body": "release version",
+      "zipUrl": "https://github.com/PeaceMaker0451/Travelers-Kalimba/releases/download/1.0.0/peacemkr_png.TravelersKalimba.zip",
+      "releaseUrl": "https://github.com/PeaceMaker0451/Travelers-Kalimba/releases/tag/1.0.0",
+      "bodyZh": "发布版本"
+    }
+  ]
+}

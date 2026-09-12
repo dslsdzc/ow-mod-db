@@ -1,0 +1,47 @@
+{
+  "repoUpdatedAt": "2024-03-16T12:25:25Z",
+  "releases": [
+    {
+      "tag": "v2.1.2",
+      "name": "Version 2.1.2",
+      "date": "2023-07-31",
+      "body": "",
+      "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/v2.1.2/2walker2.Evacuation.zip",
+      "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/v2.1.2"
+    },
+    {
+      "tag": "v2.1.0",
+      "name": "Version 2.1.0",
+      "date": "2023-07-26",
+      "body": "",
+      "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/v2.1.0/2walker2.Evacuation.zip",
+      "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/v2.1.0"
+    },
+    {
+      "tag": "2.0.2",
+      "name": "Okay that works now I think",
+      "date": "2023-05-07",
+      "body": "",
+      "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/2.0.2/planets.zip",
+      "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/2.0.2"
+    },
+    {
+      "tag": "2.0.0",
+      "name": "NEW UPDATE YEAH ITS SO AWESOME",
+      "date": "2023-05-07",
+      "body": "coolio",
+      "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/2.0.0/RAHHHHHH.zip",
+      "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/2.0.0",
+      "bodyZh": "酷毙了"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Jam Submission",
+      "date": "2023-01-23",
+      "body": "The final submission for the jam (probably).",
+      "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/1.0.0/Evacuation.Jam.Submission.zip",
+      "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/1.0.0",
+      "bodyZh": "本次活动的最终提交（大概吧）。"
+    }
+  ]
+}

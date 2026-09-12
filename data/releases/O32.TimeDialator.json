@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-01-22T20:49:16Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2023-01-22",
+      "body": "- two ship logs are clearer, to reduce confusion 📝\r\n- added a box to a thing that you're not supposed to bring the ship 📦\r\n- \"sussy amogus\"? 🤔",
+      "zipUrl": "https://github.com/RealOrbital32/Time-Dialator/releases/download/1.1.0/O32.TimeDialator.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Time-Dialator/releases/tag/1.1.0",
+      "bodyZh": "- 两份飞船日志更清晰，以减少混淆 📝\n- 在你不该带飞船的东西上添加了一个箱子 📦\n- “可疑的冒名顶替者”？ 🤔"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2023-01-21",
+      "body": "Story mod about a strange solar system with a strange property...",
+      "zipUrl": "https://github.com/RealOrbital32/Time-Dialator/releases/download/1.0.0/O32.TimeDialator.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Time-Dialator/releases/tag/1.0.0",
+      "bodyZh": "故事模组，关于一个具有奇异特性的奇怪星系..."
+    }
+  ]
+}

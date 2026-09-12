@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2023-06-29T16:28:54Z",
+  "releases": [
+    {
+      "tag": "v0.4.1",
+      "name": "Version 0.4.1",
+      "date": "2023-06-29",
+      "body": "",
+      "zipUrl": "https://github.com/kksteini/OuterWildsIcelandic/releases/download/v0.4.1/Steini.IcelandicTranslation.zip",
+      "releaseUrl": "https://github.com/kksteini/OuterWildsIcelandic/releases/tag/v0.4.1"
+    },
+    {
+      "tag": "v0.4",
+      "name": "Version 0.4",
+      "date": "2023-06-27",
+      "body": "",
+      "zipUrl": "https://github.com/kksteini/OuterWildsIcelandic/releases/download/v0.4/Steini.IcelandicTranslation.zip",
+      "releaseUrl": "https://github.com/kksteini/OuterWildsIcelandic/releases/tag/v0.4"
+    }
+  ]
+}

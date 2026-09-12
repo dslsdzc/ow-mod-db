@@ -1,0 +1,22 @@
+{
+  "repoUpdatedAt": "2023-06-02T04:40:07Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0",
+      "date": "2022-01-21",
+      "body": "Fixed an issue where the Mod Loader was pulling 2 audio files, one that exists, and one that is in the wrong directory.",
+      "zipUrl": "https://github.com/mrmeep321/21stCenturyAnglerfish/releases/download/v1.1.0/21stCenturyAnglerfish.zip",
+      "releaseUrl": "https://github.com/mrmeep321/21stCenturyAnglerfish/releases/tag/v1.1.0",
+      "bodyZh": "修复了模组加载器同时拉取两个音频文件的问题，其中一个存在，另一个在错误目录中。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-01-20",
+      "body": "",
+      "zipUrl": "https://github.com/mrmeep321/21stCenturyAnglerfish/releases/download/v1.0.0/21stCenturyAngler.zip",
+      "releaseUrl": "https://github.com/mrmeep321/21stCenturyAnglerfish/releases/tag/v1.0.0"
+    }
+  ]
+}

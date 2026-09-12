@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2026-01-15T23:37:26Z",
+  "releases": [
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2026-01-15",
+      "body": "- Restored the missing rooms\r\n- Removed dependency on OWFixPluginTypesSerialization\r\n- Fixed portals flickering and post processing",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-quasar-project/releases/download/v0.3.0/Trifid.QuasarProject.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-quasar-project/releases/tag/v0.3.0",
+      "bodyZh": "- 恢复了缺失的房间\n- 移除了对 OWFixPluginTypesSerialization 的依赖\n- 修复了传送门闪烁和后期处理问题"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2023-08-09",
+      "body": "- Added the main mechanic and its intro content!\r\n- Added more structures and details at the ending.\r\n- Various improvements and bug fixes.",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-quasar-project/releases/download/v0.2.0/Trifid.QuasarProject.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-quasar-project/releases/tag/v0.2.0",
+      "bodyZh": "- 添加了主要机制及其介绍内容！\n- 在结尾处添加了更多结构和细节。\n- 各种改进和错误修复。"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "v0.1.1",
+      "date": "2023-07-18",
+      "body": "- Fixed ending timer\r\n- Minor visual and internal tweaks",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-quasar-project/releases/download/0.1.1/Trifid.QuasarProject.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-quasar-project/releases/tag/0.1.1",
+      "bodyZh": "- 修复了结束计时器\r\n- 对视觉效果和内部进行了微调"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "The Quasar Project",
+      "date": "2023-07-16",
+      "body": "A mysterious object has crashed near the village...",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-quasar-project/releases/download/0.1.0/Trifid.QuasarProject.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-quasar-project/releases/tag/0.1.0",
+      "bodyZh": "一个神秘物体坠落在村庄附近..."
+    }
+  ]
+}

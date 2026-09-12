@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-01-30T02:14:08Z",
+  "releases": [
+    {
+      "tag": "1.0.2",
+      "name": "1.0.2",
+      "date": "2026-01-30",
+      "body": "Added Chinese translation by (you'll never guess) SanBaiMing",
+      "zipUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/download/1.0.2/GameWyrm.SymbiosisShipLogs.zip",
+      "releaseUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/tag/1.0.2",
+      "bodyZh": "添加了中文翻译由（猜猜看）三百万提供"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2024-06-03",
+      "body": "nvm I lied, turns out there were tweaks to make\r\n* Slightly adjusted the color of the ship log cards to be more visible (by xen)\r\n* Bird's unskippable crime has been pardoned and he will no longer be sent to unskippable hell (credits can now be skipped)\r\n* Added credits",
+      "zipUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/download/1.0.1/GameWyrm.SymbiosisShipLogs.zip",
+      "releaseUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/tag/1.0.1",
+      "bodyZh": "nvm 我撒谎了，结果发现有一些调整要做\n* 稍微调整了飞船日志卡片的颜色，使其更明显（由 xen 完成）\n* 鸟的不可跳过的罪行已被赦免，他不再会被送往不可跳过的地狱（现在可以跳过信用）\n* 添加了信用"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-06-02",
+      "body": "First release. Probably only release unless Bird updates their mod.",
+      "zipUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/download/1.0.0/GameWyrm.SymbiosisShipLogs.zip",
+      "releaseUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/tag/1.0.0",
+      "bodyZh": "首次发布。可能只有这次发布，除非 Bird 更新他们的模组。"
+    }
+  ]
+}

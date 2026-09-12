@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-12-31T10:18:02Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2022-12-31",
+      "body": "Initial release.",
+      "zipUrl": "https://github.com/Komodo5197/StrangerNightCycle/releases/download/v1.0.0/Komodo.StrangerNightCycle.zip",
+      "releaseUrl": "https://github.com/Komodo5197/StrangerNightCycle/releases/tag/v1.0.0",
+      "bodyZh": "初始发布。"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-05-15T22:53:05Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2025-04-10",
+      "body": "* Added Ernesto Chase as an incompatible mod as it breaks a critical part. Thanks, Ixrec for bringing this to my attention.\r\n* Since I didn't want to push an update just to say, \"Screw you Etherpod,\" I've also updated some visuals.\r\n* Various materials now have actual textures.\r\n* Most models have received tweaks, primarily added beveling. You're welcome, Streetlights.\r\n* Some minor text adjustments",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.1.0/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.1.0",
+      "bodyZh": "* 将Ernesto Chase添加为不兼容模组，因为它破坏了关键部分。感谢 Ixrec 提醒我这一点。\n* 因为我不想仅仅为了说“去你的 Etherpod”就发布更新，我也更新了一些视觉效果。\n* 各种材料现在有了真实的纹理。\n* 大多数模型都进行了微调，主要是增加了倒角。感谢 Streetlights。\n* 一些微小的文本调整。"
+    },
+    {
+      "tag": "v1.0.9",
+      "name": "Version 1.0.9",
+      "date": "2024-05-04",
+      "body": "* Added Simplified Chinese translation by Mashroom",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.9/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.9",
+      "bodyZh": "* 添加了Mashroom提供的简体中文翻译"
+    },
+    {
+      "tag": "v1.0.8",
+      "name": "Version 1.0.8",
+      "date": "2024-04-26",
+      "body": "* Added a new ship log to make it more obvious where the ending is\r\n* Added a new sequence to the ending to tie this mod to Magistarium\r\n* Added (jank) QSB support. Only some things are synced (spoilers below)\r\n\r\nSynced:\r\n* Lake Core lever\r\n* All Lava Core Shrine buttons\r\n* Derelict Ship keypad\r\n* The Final Button\r\n\r\nNot Synced:\r\n* Lava Core pressure plates (a pain to rewrite and would completely nullify the puzzles)\r\n* Elevators (could require new animations and potentially tedious for play)\r\n* Final music\r\nCertain elements that you are intended to activate from a distance will look weird for another player that is close to and looking at the element, but it will not have any negative affect on gameplay.",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.8/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.8",
+      "bodyZh": "* 新增了飞船日志，使其更明显地显示结局位置\n* 在结局中新增了一个序列，以将此模组与 Magistarium 相关联\n* 新增了（不太稳定）QSB 支持。只有某些事物是同步的（Spoiler 在下方）\n\n同步的：\n* 湖核杠杆\n* 所有熔岩核祭坛按钮\n* 废弃飞船键盘\n* 最终按钮\n\n不同步的：\n* 熔岩核压力板（重写会很麻烦，并且会完全使谜题失效）\n* 电梯（可能需要新的动画，并且可能对游戏体验很繁琐）\n* 最终音乐\n\n某些你打算从远处激活的元素，对于靠近并看着该元素的其他玩家来说看起来会很奇怪，但这不会对游戏有任何负面影响。"
+    },
+    {
+      "tag": "v1.0.7",
+      "name": "Version 1.0.7",
+      "date": "2023-11-21",
+      "body": "* Updated Russian translation by Metrocop12",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.7/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.7",
+      "bodyZh": "* Metrocop12 更新了俄语翻译"
+    },
+    {
+      "tag": "v1.0.6",
+      "name": "Version 1.0.6",
+      "date": "2023-11-16",
+      "body": "* Added Japanese translation by Orclecle\r\n* Implemented a Curiosity and colors in the Ship Log\r\n* Disabled the debug spam in the log",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.6/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.6",
+      "bodyZh": "* 添加了Orclecle提供的日语翻译\n* 在飞船日志中实现了好奇心和颜色\n* 禁用了日志中的调试信息"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "Version 1.0.5",
+      "date": "2023-09-23",
+      "body": "Final update for the foreseeable future (barring bug fixes and translations). This update does not add any significant content, but makes some slight updates to existing puzzles and adds a French translation. Also, check the final room for a lot of new stuff :)",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.5/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.5"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2023-08-28",
+      "body": "* Improved the button feedback on Lava Core\r\n* Made the final puzzle of the Lake Core a little clearer\r\n* You now start much closer to the main planet when loading in",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.4/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2023-08-20",
+      "body": "* Added partial Russian translation by Metrocop12\r\n* Implemented English translation file for easier translating\r\n* Added some cool new shaders to a couple of areas",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.3/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2023-08-18",
+      "body": "* Proxies of disabled planets no longer show up\r\n* Lava core has been greatly improved. It has gone from outright garbage to mildly tedious. Changes: (spoilers)\r\n* Buttons have sounds and glow when pressed\r\n* Gravity has been greatly reduced outside the Lava Shrine\r\n* Friction has been increased, reducing the likelihood of falling into the lava\r\n* The Structure With Pillars button is *much* easier to open and a lot less risky\r\n\r\nThe Lava Core will get a much larger overhaul eventually, but now you should hopefully not pull out your hair or feel you need cheats to beat it.",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.2/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2023-07-19",
+      "body": "Fixed a bug where you do not properly respawn in your ship after a respawn due to a new feature in NH",
+      "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.1/GameWyrm.HearthsNeighbor.zip",
+      "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.1"
+    }
+  ]
+}

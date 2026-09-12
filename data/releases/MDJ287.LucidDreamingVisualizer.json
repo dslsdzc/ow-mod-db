@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-09-11T17:08:50Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-09-11",
+      "body": "first release",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/MDJ287/LucidDreamingVisualizer/releases/download/v0.1.0/MDJ287.LucidDreamingVisualizer.zip",
+      "releaseUrl": "https://github.com/MDJ287/LucidDreamingVisualizer/releases/tag/v0.1.0"
+    }
+  ]
+}

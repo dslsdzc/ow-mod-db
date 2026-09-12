@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-09-10T02:10:20Z",
+  "releases": [
+    {
+      "tag": "0.2.2",
+      "name": "0.2.2",
+      "date": "2026-09-10",
+      "body": "- Removed \"(Beta)\" from the mod name.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.2/ProbeRoulette-0.2.2.zip",
+      "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.2"
+    },
+    {
+      "tag": "0.2.1",
+      "name": "0.2.1 Public Beta",
+      "date": "2026-09-10",
+      "body": "- Replaces the slider, which had no numeric readout and only allowed 10% steps",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.1/ProbeRoulette-0.2.1.zip",
+      "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.1"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "0.2.0 Public Beta",
+      "date": "2026-09-10",
+      "body": "First public beta of Probe Roulette.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.0/ProbeRoulette-0.2.0.zip",
+      "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.0"
+    }
+  ]
+}

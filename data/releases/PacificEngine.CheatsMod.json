@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2026-06-08T05:14:45Z",
+  "releases": [
+    {
+      "tag": "0.7.6",
+      "name": "0.7.6",
+      "date": "2024-11-03",
+      "body": "- PacificEngine's Common Resources is no longer a dependency\r\n- You can teleport to the Mapping & Backer Satellites now.\r\n- Added keybinds to change the state of the Quantum Moon\r\n- You can now give yourself the vision torch, every Solanum conversation stone, and every projection stone.\r\n- Lantern/Artifact focus petals no longer go inside of the flames.",
+      "zipUrl": "https://github.com/MegaPiggy/CheatsMod_NoCommonResources/releases/download/0.7.6/MegaPiggy.CheatsMod.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/CheatsMod_NoCommonResources/releases/tag/0.7.6"
+    },
+    {
+      "tag": "0.7.5",
+      "name": "0.7.5",
+      "date": "2024-11-03",
+      "body": "release before switching to replace original mod",
+      "zipUrl": "https://github.com/MegaPiggy/CheatsMod_NoCommonResources/releases/download/0.7.5/MegaPiggy.CheatsModNoCR.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/CheatsMod_NoCommonResources/releases/tag/0.7.5"
+    }
+  ]
+}

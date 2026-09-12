@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-02-07T15:31:22Z",
+  "releases": [
+    {
+      "tag": "v0.7.0",
+      "name": "Version 0.7.0",
+      "date": "2026-02-07",
+      "body": "# v0.7.0\r\n## Improvements\r\n\r\n* [Add Chinese Translation #1](https://github.com/TRSasasusu/Jam5PingBox/pull/1) by @SanBaiMing ! Thank you!",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.7.0/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.7.0",
+      "bodyZh": "# v0.7.0\n## 改进\n\n* [Add Chinese Translation #1](https://github.com/TRSasasusu/Jam5PingBox/pull/1) by @SanBaiMing ! 谢谢！"
+    },
+    {
+      "tag": "v0.6.0",
+      "name": "Version 0.6.0",
+      "date": "2025-11-19",
+      "body": "# v0.6.0\r\n## Improvements\r\n\r\n* Around the certain Nomai structure, you can easily shoot the scout through windows now.\r\n* Add a Nomai text about observing inside the structure by the scout.\r\n* Certain floors more dynamically open now to easily understand what happens in the structure when pushing the panels.\r\n\r\n* Add a rumor from the symbol about the final ship log.\r\n* Add sound when removing some water.\r\n* A certain Nomai in the central station speaks something after completing this mod.",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.6.0/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.6.0",
+      "bodyZh": "# v0.6.0\n## 改进\n\n* 在某个挪麦结构周围，现在可以轻松从窗户射击侦察兵。\n* 添加一条挪麦文本，描述侦察兵在结构内部进行观察。\n* 某些楼层现在更动态地打开，以便更容易理解在推动面板时结构中发生了什么。\n\n* 从符号中添加一条关于最终飞船日志的传闻。\n* 移除一些水时添加声音。\n* 中央站台的某个挪麦在完成此模组后会说些什么。"
+    },
+    {
+      "tag": "v0.5.3",
+      "name": "Version 0.5.3",
+      "date": "2025-08-10",
+      "body": "# v0.5.3\r\n## Improvements\r\n* Make the brightness setting 3-level: low brightness, mid brightness, and high brightness. The default is the mid brightness. The high brightness is the jam submission version.\r\n\r\n## Fixes\r\n* Fix the Japanese translation to correctly display some missing characters.\r\n    * Notes: The Japanese texts are original texts, and the English texts are made by translation from the Japanese texts, so the initial versions had wrong translations like Dark Rock system, which is Blackrock system in correct.\r\n\r\n## Notes for judges\r\n**The jam submission version is Diorama v0.4.1 and Mod Jam 5 v1.0.3.**",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.5.3/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.5.3",
+      "bodyZh": "# v0.5.3\n## 改进\n* 使亮度设置三级：低亮度、中等亮度和高亮度。默认为中等亮度。高亮度为Jam提交版本。\n\n## 修复\n* 修复日语翻译以正确显示一些缺失的字符。\n    * 备注：日语文本是原始文本，英语文本是从日语文本翻译而来，因此初始版本存在错误翻译，如Dark Rock system，正确的应为Blackrock system。\n\n## 给评委的备注\n**Jam提交版本是Diorama v0.4.1和Mod Jam 5 v1.0.3。**"
+    },
+    {
+      "tag": "v0.5.2",
+      "name": "Version 0.5.2",
+      "date": "2025-08-05",
+      "body": "# v0.5.2\r\n## Improvements\r\n\r\n* **Add photosensitivity settings as \"Super Bright Mode\". The default is `false`, so no more migraines.**\r\n\r\n## Notes for judges\r\n\r\n**The jam submission version is Diorama v0.4.1 and Mod Jam 5 v1.0.3.**",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.5.2/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.5.2",
+      "bodyZh": "# v0.5.2\n## 改进\n\n* **添加了感光性设置，称为“超级明亮模式”。默认值为`false`，因此不再有偏头痛。**\n\n## 评委须知\n\n**比赛提交版本为 Diorama v0.4.1 和 Mod Jam 5 v1.0.3。**"
+    },
+    {
+      "tag": "v0.5.1",
+      "name": "Version 0.5.1",
+      "date": "2025-08-03",
+      "body": "# v0.5.1\r\n## Fixes\r\n\r\n* **Randomly occurring broken initialization is fixed by SearchUtilities.Find instead of GameObject.Find.**\r\n\r\n## Improvements\r\n\r\n* Add some effects in the ending scene.\r\n\r\n## Notes for judges\r\n\r\n**The jam submission version is Diorama v0.4.1 and Mod Jam 5 v1.0.3.**",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.5.1/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.5.1",
+      "bodyZh": "# v0.5.1\n## 修复\n\n* **通过 SearchUtilities.Find 而不是 GameObject.Find 修复了随机发生的初始化失败。**\n\n## 改进\n\n* 在结束场景中添加了一些特效。\n\n## 评委须知\n\n**比赛提交版本是 Diorama v0.4.1 和 Mod Jam 5 v1.0.3。**"
+    },
+    {
+      "tag": "v0.5.0",
+      "name": "Version 0.5.0",
+      "date": "2025-08-02",
+      "body": "## Improvements\r\n\r\n* Add a singularity for the end of each miniature. You can escape without the meditation now.\r\n* Add a clock in a specific place. You are no longer trapped in that small room!\r\n* Some singularities always exist to avoid trapping you in the Vessel.\r\n* What is Dark Rock system?! Some English translation is fixed.\r\n* The position of the specific text is tuned. It is now clearly noticeable.\r\n\r\n## Notes for judges\r\n\r\n**The jam submission version is Diorama v0.4.1 and Mod Jam 5 v1.0.3.**",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.5.0/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.5.0"
+    },
+    {
+      "tag": "v0.4.2",
+      "name": "Version 0.4.2",
+      "date": "2025-07-23",
+      "body": "# v0.4.2\r\n## Compatibility fix with Mod Jam 5 v1.0.4\r\n\r\n* **Now, Diorama has compatibility with Mod Jam 5 both v1.0.3 and v1.0.4.**\r\n\r\n## Notes for judges\r\n\r\n**The jam submission version is Diorama v0.4.1 and Mod Jam 5 v1.0.3.**",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.4.2/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.4.2"
+    },
+    {
+      "tag": "v0.4.1",
+      "name": "Version 0.4.1",
+      "date": "2025-07-22",
+      "body": "# v0.4.1\r\n## Ernesto\r\n\r\n* Add Ernesto, who loves the location to display the coordinate.",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.4.1/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.4.1"
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2025-07-22",
+      "body": "# v0.4.0\r\n## Improvements\r\n\r\n* Add missing thing into the ending scene.\r\n* Add some dialogues and ship logs.\r\n\r\n## Fixes\r\n\r\n* **Fix the weird collider issue**!! Thank you for giving me the vessel model, pikpik\\_carrot!!",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.4.0/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.4.0"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2025-07-22",
+      "body": "# v0.3.0\r\n## Improvements\r\n\r\n* **In many situations, you no longer need meditation.** You can quickly find some novel interactive objects in miniatures. Thank you for giving me a great idea, Ixrec.\r\n* Add tractor beams in the specific Nomai construction.\r\n* Items have a larger interaction sphere.\r\n* The specific tree has only small colliders. It cannot explode your ship anymore!\r\n\r\n## Fixes\r\n\r\n* **Fix the lagging issue!!!** Thank you for telling me how to use unity profiler in outer wilds, JohnCorby.\r\n\r\n## Remaining Issues\r\n\r\n* Weird collider of the specific Vessel. I NEED ITS REAL COLLIDER!!!\r\n* Probe cannot be revived without meditation. It was tooooooooo difficult...",
+      "zipUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/download/v0.3.0/orclecle.Jam5PingBox.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Jam5PingBox/releases/tag/v0.3.0"
+    }
+  ]
+}

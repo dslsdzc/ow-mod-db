@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2026-01-14T21:52:50Z",
+  "releases": [
+    {
+      "tag": "v1.1.2",
+      "name": "v1.1.2",
+      "date": "2026-01-14",
+      "body": "- Added Chinese translation (thanks SanBaiMing!)",
+      "zipUrl": "https://github.com/Hawkbat/SolarRangers/releases/download/v1.1.2/Hawkbar.SolarRangers.zip",
+      "releaseUrl": "https://github.com/Hawkbat/SolarRangers/releases/tag/v1.1.2",
+      "bodyZh": "- 添加了中文翻译（感谢三百万！）"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "v1.1.1",
+      "date": "2025-12-30",
+      "body": "- Added Russian translation (thanks KOTvZephire!)",
+      "zipUrl": "https://github.com/Hawkbat/SolarRangers/releases/download/v1.1.1/Hawkbar.SolarRangers.zip",
+      "releaseUrl": "https://github.com/Hawkbat/SolarRangers/releases/tag/v1.1.1",
+      "bodyZh": "- 添加了俄语翻译（感谢 KOTvZephire！）"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0",
+      "date": "2024-04-13",
+      "body": "First post-Jam update.\r\n- Slightly reworked ending to make some previously inaccessible epilogue dialogue accessible again.\r\n- Added a map mode icon for the Egg Star.\r\n- Fixed a shader issue preventing certain egg-shaped characters from being visible.\r\n- Other minor fixes and tweaks.",
+      "zipUrl": "https://github.com/Hawkbat/SolarRangers/releases/download/v1.1.0/Hawkbar.SolarRangers.zip",
+      "releaseUrl": "https://github.com/Hawkbat/SolarRangers/releases/tag/v1.1.0",
+      "bodyZh": "首个Jam更新后帖子。\n- 稍微重新设计了结局，使一些之前无法访问的尾声对话再次可访问。\n- 为蛋星添加了地图模式图标。\n- 修复了一个着色器问题，导致某些蛋形角色无法显示。\n- 其他一些小的修复和调整。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-03-26",
+      "body": "- Official Jam release candidate!\r\n- Rebalancing and many quality-of-life and functionality tweaks\r\n- Expanded NPC cast and extended ending cutscene\r\n- New Ernesto hiding spot",
+      "zipUrl": "https://github.com/Hawkbat/SolarRangers/releases/download/v1.0.0/Hawkbar.SolarRangers.zip",
+      "releaseUrl": "https://github.com/Hawkbat/SolarRangers/releases/tag/v1.0.0",
+      "bodyZh": "- 官方Jam发布候选版本！\n- 平衡性调整及多项品质生活和功能微调\n- 扩展NPC阵容和延长结局过场动画\n- 新的Ernesto藏身地点"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2024-03-24",
+      "body": "Initial release for the March 2024 Mod Jam.",
+      "zipUrl": "https://github.com/Hawkbat/SolarRangers/releases/download/v0.1.0/Hawkbar.SolarRangers.zip",
+      "releaseUrl": "https://github.com/Hawkbat/SolarRangers/releases/tag/v0.1.0",
+      "bodyZh": "2024年3月模组节初版发布。"
+    }
+  ]
+}

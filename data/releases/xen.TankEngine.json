@@ -1,0 +1,49 @@
+{
+  "repoUpdatedAt": "2022-05-20T07:08:12Z",
+  "releases": [
+    {
+      "tag": "v1.1.3",
+      "name": "v1.1.3",
+      "date": "2022-05-03",
+      "body": "- Russian localization by Tlya",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/download/v1.1.3/xen.TankEngine.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/tag/v1.1.3",
+      "bodyZh": "- 俄语本地化由Tlya提供"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "v1.1.2",
+      "date": "2022-04-27",
+      "body": "- Wrong asset bundle",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/download/v1.1.2/xen.TankEngine.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/tag/v1.1.2",
+      "bodyZh": "- 错误的资源包"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "v1.1.1",
+      "date": "2022-04-27",
+      "body": "- Fixed wrong path to asset bundle",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/download/v1.1.1/xen.TankEngine.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/tag/v1.1.1",
+      "bodyZh": "- 修复了资源包路径错误"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0",
+      "date": "2022-04-27",
+      "body": "- Adds achievements",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/download/v1.1.0/xen.TankEngine.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/tag/v1.1.0",
+      "bodyZh": "- 添加成就"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2021-12-11",
+      "body": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/download/v1.0.0/xen.TankEngine.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-tank-engine/releases/tag/v1.0.0"
+    }
+  ]
+}

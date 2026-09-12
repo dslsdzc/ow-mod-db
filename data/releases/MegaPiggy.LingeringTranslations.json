@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-08-23T05:18:13Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2026-08-23",
+      "body": "First release",
+      "zipUrl": "https://github.com/MegaPiggy/LingeringTranslations/releases/download/1.0.0/MegaPiggy.LingeringTranslations.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/LingeringTranslations/releases/tag/1.0.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

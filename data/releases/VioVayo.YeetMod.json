@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2025-10-16T07:08:10Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2025-10-16",
+      "body": "Getting yote should no longer stop coroutines running on items",
+      "zipUrl": "https://github.com/VioVayo/OWThrowableItems/releases/download/v0.1.2/VioVayo.YeetMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWThrowableItems/releases/tag/v0.1.2",
+      "bodyZh": "获取yote不再会阻止在物品上运行的协程"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2024-06-14",
+      "body": "(knock on wood) no more Locator-related NREs",
+      "zipUrl": "https://github.com/VioVayo/OWThrowableItems/releases/download/v0.1.1/VioVayo.YeetMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWThrowableItems/releases/tag/v0.1.1",
+      "bodyZh": "(拍拍木头) 再也没有定位器相关的内存不足错误了"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-05-16",
+      "body": "First Release!",
+      "zipUrl": "https://github.com/VioVayo/OWThrowableItems/releases/download/v0.1.0/VioVayo.YeetMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWThrowableItems/releases/tag/v0.1.0",
+      "bodyZh": "首次发布！"
+    }
+  ]
+}

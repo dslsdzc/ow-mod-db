@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2025-02-21T01:54:09Z",
+  "releases": [
+    {
+      "tag": "0.2.0",
+      "name": "v0.2.0",
+      "date": "2023-04-25",
+      "body": "- Significant refactoring; compatibility broken with previous versions!\r\n- Prop support!\r\n- Various editor improvements and fixes.\r\n\r\n**Full Changelog**: https://github.com/Hawkbat/ow-mod-data-tools/compare/0.1.1...0.2.0",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-data-tools/releases/download/0.2.0/Hawkbar.ModDataTools.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-data-tools/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "v0.1.1",
+      "date": "2023-03-14",
+      "body": "- Fixed null reference exceptions when editing dialogues and texts\r\n- Fixed incorrect file paths in dialogue export\r\n- Fixed errors from accidental imports\r\n\r\n**Full Changelog**: https://github.com/Hawkbat/ow-mod-data-tools/compare/0.1.0...0.1.1",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-data-tools/releases/download/0.1.1/Hawkbar.ModDataTools.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-data-tools/releases/tag/0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "v0.1.0",
+      "date": "2023-03-13",
+      "body": "**Full Changelog**: https://github.com/Hawkbat/ow-mod-data-tools/commits/0.1.0",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-data-tools/releases/download/0.1.0/Hawkbar.ModDataTools.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-data-tools/releases/tag/0.1.0"
+    }
+  ]
+}
