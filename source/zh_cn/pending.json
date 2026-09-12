@@ -1,17 +1,1 @@
-[
-  {
-    "unique_name": "orclecle.EyeWitness",
-    "field": "latestReleaseDescription",
-    "en": "* Disable the item if the player heads straight to the cannon without filling in the initial ship log.\r\n* Fixed an issue where the player could get trapped inside a specific building in the final sequence at the specific place (though doing so required a deliberate effort).\r\n* Fixed a missing character of Japanese translation."
-  },
-  {
-    "unique_name": "Hamstry.TheLongerTheyLoad",
-    "field": "description",
-    "en": "A silly mod that stops the game from loading."
-  },
-  {
-    "unique_name": "Hamstry.TheLongerTheyLoad",
-    "field": "latestReleaseDescription",
-    "en": "Here you go Darky.\r\nAre you happy now?"
-  }
-]
+[]
