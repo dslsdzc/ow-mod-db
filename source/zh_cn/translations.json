@@ -6568,9 +6568,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "* Fix unidentified signal notification in the final sequence in the specific place.\r\n* Fix the latest building collision in the final sequence in the specific place.",
-      "zh": "* 修复最终序列中特定位置的未识别信号通知。\n* 修复最终序列中特定位置的最新建筑碰撞。",
-      "at": "2026-09-05T17:59:29.356646Z"
+      "en": "* Disable the item if the player heads straight to the cannon without filling in the initial ship log.\r\n* Fixed an issue where the player could get trapped inside a specific building in the final sequence at the specific place (though doing so required a deliberate effort).\r\n* Fixed a missing character of Japanese translation.",
+      "zh": "如果玩家直接前往炮台而没有填写初始飞船日志，则禁用该物品。\n* 修复了一个问题，即玩家在最终序列的特定地点被困在特定建筑物内（尽管这样做需要刻意努力）。\n* 修复了日语翻译中缺失的字符。",
+      "at": "2026-09-12T16:26:52.447520Z"
     }
   },
   "RiddleMajor.No_Time_To_Waste": {
@@ -6903,14 +6903,14 @@
       "at": "2026-09-06T21:08:10.264269Z"
     },
     "description": {
-      "en": "A somewhat large addon that adds onto The Stranger They Are. ",
-      "zh": "一个稍大的附加组件，增加了对《他们是谁的陌生人》的扩展。",
-      "at": "2026-09-07T21:42:51.394483Z"
+      "en": "A silly mod that stops the game from loading.",
+      "zh": "一个愚蠢的模组，阻止游戏加载。",
+      "at": "2026-09-12T16:26:52.447520Z"
     },
     "latestReleaseDescription": {
-      "en": "Removed the dependency",
-      "zh": "移除了依赖关系",
-      "at": "2026-09-07T21:42:51.394483Z"
+      "en": "Here you go Darky.\r\nAre you happy now?",
+      "zh": "给你，Darky。\n你现在快乐了吗？",
+      "at": "2026-09-12T16:26:52.447520Z"
     }
   },
   "LaStringa.SbekuMod": {
