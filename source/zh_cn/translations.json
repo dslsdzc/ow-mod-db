@@ -6992,5 +6992,17 @@
       "zh": "初始发布",
       "at": "2026-09-12T00:29:39.775613Z"
     }
+  },
+  "MegaPiggy.ExclusiveFullscreen": {
+    "name": {
+      "en": "Exclusive Fullscreen",
+      "zh": "独占全屏",
+      "at": "2026-09-12T04:56:28.270861Z"
+    },
+    "description": {
+      "en": "Forces Outer Wilds to use exclusive fullscreen instead of borderless fullscreen.",
+      "zh": "强制星际拓荒使用独占全屏而非无边框全屏",
+      "at": "2026-09-12T04:56:28.270861Z"
+    }
   }
 }

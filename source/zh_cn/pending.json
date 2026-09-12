@@ -1,57 +1,12 @@
 [
   {
-    "unique_name": "Depthbomb.ProbeRoulette",
+    "unique_name": "MegaPiggy.ExclusiveFullscreen",
     "field": "name",
-    "en": "Probe Roulette"
+    "en": "Exclusive Fullscreen"
   },
   {
-    "unique_name": "Depthbomb.ProbeRoulette",
+    "unique_name": "MegaPiggy.ExclusiveFullscreen",
     "field": "description",
-    "en": "It seems the Nomai like to play pranks. Adds a configurable chance for the orbital probe cannon to fire at you or your ship."
-  },
-  {
-    "unique_name": "Depthbomb.ProbeRoulette",
-    "field": "latestReleaseDescription",
-    "en": "- Removed \"(Beta)\" from the mod name."
-  },
-  {
-    "unique_name": "Dimitrios.GreekTranslation",
-    "field": "name",
-    "en": "Outer Wilds Greek Translation"
-  },
-  {
-    "unique_name": "Dimitrios.GreekTranslation",
-    "field": "description",
-    "en": "Complete Greek translation for Outer Wilds - Πλήρης ελληνική μετάφραση του Outer Wilds"
-  },
-  {
-    "unique_name": "MDJ287.LucidDreamingVisualizer",
-    "field": "name",
-    "en": "Lucid Dreaming Visualizer"
-  },
-  {
-    "unique_name": "MDJ287.LucidDreamingVisualizer",
-    "field": "description",
-    "en": "Outer Wilds mod for testing Lucid Dreaming setups"
-  },
-  {
-    "unique_name": "MDJ287.LucidDreamingVisualizer",
-    "field": "latestReleaseDescription",
-    "en": "first release"
-  },
-  {
-    "unique_name": "WannaCry.ScoutStreamingRevamp",
-    "field": "name",
-    "en": "Scout Streaming Revamp"
-  },
-  {
-    "unique_name": "WannaCry.ScoutStreamingRevamp",
-    "field": "description",
-    "en": "Turns the scout snapshot into a live video feed. Rewrite of Scout Streaming by Vesper-Works."
-  },
-  {
-    "unique_name": "WannaCry.ScoutStreamingRevamp",
-    "field": "latestReleaseDescription",
-    "en": "Initial Release"
+    "en": "Forces Outer Wilds to use exclusive fullscreen instead of borderless fullscreen."
   }
 ]
