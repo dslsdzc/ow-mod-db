@@ -16505,5 +16505,79 @@
         "releaseUrl": "https://github.com/SbekuMod/Mod-V2/releases/tag/v2.5.4"
       }
     ]
+  },
+  "Depthbomb.ProbeRoulette": {
+    "repoUpdatedAt": "2026-09-10T02:10:20Z",
+    "releases": [
+      {
+        "tag": "0.2.2",
+        "name": "0.2.2",
+        "date": "2026-09-10",
+        "body": "- Removed \"(Beta)\" from the mod name.",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.2/ProbeRoulette-0.2.2.zip",
+        "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.2"
+      },
+      {
+        "tag": "0.2.1",
+        "name": "0.2.1 Public Beta",
+        "date": "2026-09-10",
+        "body": "- Replaces the slider, which had no numeric readout and only allowed 10% steps",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.1/ProbeRoulette-0.2.1.zip",
+        "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.1"
+      },
+      {
+        "tag": "0.2.0",
+        "name": "0.2.0 Public Beta",
+        "date": "2026-09-10",
+        "body": "First public beta of Probe Roulette.",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.0/ProbeRoulette-0.2.0.zip",
+        "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.0"
+      }
+    ]
+  },
+  "Dimitrios.GreekTranslation": {
+    "repoUpdatedAt": "2026-09-11T11:02:35Z",
+    "releases": [
+      {
+        "tag": "0.9.0",
+        "name": "Outer Wilds Greek Translation v0.9.0",
+        "date": "2026-09-11",
+        "body": "",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/download/0.9.0/GreekTranslation.zip",
+        "releaseUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/tag/0.9.0"
+      }
+    ]
+  },
+  "MDJ287.LucidDreamingVisualizer": {
+    "repoUpdatedAt": "2026-09-11T17:08:50Z",
+    "releases": [
+      {
+        "tag": "v0.1.0",
+        "name": "Version 0.1.0",
+        "date": "2026-09-11",
+        "body": "first release",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/MDJ287/LucidDreamingVisualizer/releases/download/v0.1.0/MDJ287.LucidDreamingVisualizer.zip",
+        "releaseUrl": "https://github.com/MDJ287/LucidDreamingVisualizer/releases/tag/v0.1.0"
+      }
+    ]
+  },
+  "WannaCry.ScoutStreamingRevamp": {
+    "repoUpdatedAt": "2026-09-11T20:23:52Z",
+    "releases": [
+      {
+        "tag": "v1.0.0",
+        "name": "Version 1.0.0",
+        "date": "2026-09-11",
+        "body": "Initial Release",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/WannaCry1LoL/ScoutStreamingRevamp/releases/download/v1.0.0/WannaCry.ScoutStreamingRevamp.zip",
+        "releaseUrl": "https://github.com/WannaCry1LoL/ScoutStreamingRevamp/releases/tag/v1.0.0"
+      }
+    ]
   }
 }

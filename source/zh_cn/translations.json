@@ -6929,5 +6929,68 @@
       "zh": "移除了在模组开发过程中使用的调试设置：飞船日志和对话树转储，以及解锁所有卷轴、显示所有事件、解锁所有成就和重新加载对话的热键。\n\n模组管理器现在显示一个选项，*Carica eventi nel registro della nave*。\n\n**完整变更日志**：https://github.com/SbekuMod/Mod-V2/compare/v2.5.5...v2.5.6",
       "at": "2026-09-09T03:45:12.311136Z"
     }
+  },
+  "Depthbomb.ProbeRoulette": {
+    "name": {
+      "en": "Probe Roulette",
+      "zh": "探测器轮盘",
+      "at": "2026-09-12T00:29:39.775613Z"
+    },
+    "description": {
+      "en": "It seems the Nomai like to play pranks. Adds a configurable chance for the orbital probe cannon to fire at you or your ship.",
+      "zh": "看来挪麦喜欢恶作剧。为轨道探测炮向你的飞船或你发射提供可配置的几率。",
+      "at": "2026-09-12T00:29:39.775613Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Removed \"(Beta)\" from the mod name.",
+      "zh": "- 从模组名称中移除了'(Beta)'。",
+      "at": "2026-09-12T00:29:39.775613Z"
+    }
+  },
+  "Dimitrios.GreekTranslation": {
+    "name": {
+      "en": "Outer Wilds Greek Translation",
+      "zh": "星际拓荒希腊语翻译",
+      "at": "2026-09-12T00:29:39.775613Z"
+    },
+    "description": {
+      "en": "Complete Greek translation for Outer Wilds - Πλήρης ελληνική μετάφραση του Outer Wilds",
+      "zh": "星际拓荒完整希腊语翻译 - Πλήρης ελληνική μετάφραση του Outer Wilds",
+      "at": "2026-09-12T00:29:39.775613Z"
+    }
+  },
+  "MDJ287.LucidDreamingVisualizer": {
+    "name": {
+      "en": "Lucid Dreaming Visualizer",
+      "zh": "清晰梦可视化器",
+      "at": "2026-09-12T00:29:39.775613Z"
+    },
+    "description": {
+      "en": "Outer Wilds mod for testing Lucid Dreaming setups",
+      "zh": "用于测试清晰梦设置的星际拓荒模组",
+      "at": "2026-09-12T00:29:39.775613Z"
+    },
+    "latestReleaseDescription": {
+      "en": "first release",
+      "zh": "首次发布",
+      "at": "2026-09-12T00:29:39.775613Z"
+    }
+  },
+  "WannaCry.ScoutStreamingRevamp": {
+    "name": {
+      "en": "Scout Streaming Revamp",
+      "zh": "侦察流媒体改造",
+      "at": "2026-09-12T00:29:39.775613Z"
+    },
+    "description": {
+      "en": "Turns the scout snapshot into a live video feed. Rewrite of Scout Streaming by Vesper-Works.",
+      "zh": "将侦察快照转换为实时视频流。由Vesper-Works重新编写的侦察流媒体。",
+      "at": "2026-09-12T00:29:39.775613Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Initial Release",
+      "zh": "初始发布",
+      "at": "2026-09-12T00:29:39.775613Z"
+    }
   }
 }
