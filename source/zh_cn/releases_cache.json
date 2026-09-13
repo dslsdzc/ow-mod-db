@@ -16526,8 +16526,17 @@
     ]
   },
   "Depthbomb.ProbeRoulette": {
-    "repoUpdatedAt": "2026-09-10T02:10:20Z",
+    "repoUpdatedAt": "2026-09-13T21:42:24Z",
     "releases": [
+      {
+        "tag": "0.2.3",
+        "name": "0.2.3",
+        "date": "2026-09-13",
+        "body": "- Don't check for player collision if aiming normally",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.3/ProbeRoulette-0.2.3.zip",
+        "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.3"
+      },
       {
         "tag": "0.2.2",
         "name": "0.2.2",

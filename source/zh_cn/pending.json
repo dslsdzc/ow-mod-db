@@ -1,7 +1,7 @@
 [
   {
-    "unique_name": "cleric.DeepBramble",
+    "unique_name": "Depthbomb.ProbeRoulette",
     "field": "latestReleaseDescription",
-    "en": "Added a Russian translation (thanks Bubalex01!)"
+    "en": "- Don't check for player collision if aiming normally"
   }
 ]

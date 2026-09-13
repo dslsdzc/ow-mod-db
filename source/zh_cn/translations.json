@@ -6942,9 +6942,9 @@
       "at": "2026-09-12T00:29:39.775613Z"
     },
     "latestReleaseDescription": {
-      "en": "- Removed \"(Beta)\" from the mod name.",
-      "zh": "- 从模组名称中移除了'(Beta)'。",
-      "at": "2026-09-12T00:29:39.775613Z"
+      "en": "- Don't check for player collision if aiming normally",
+      "zh": "- 正常瞄准时不检测玩家碰撞",
+      "at": "2026-09-13T23:56:30.415819Z"
     }
   },
   "Dimitrios.GreekTranslation": {
