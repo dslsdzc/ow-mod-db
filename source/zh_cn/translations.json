@@ -5285,9 +5285,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "- Updated Portuguese translation.\r\n- Added simplified Chinese translation for achievements (thanks SheepCreator2!)",
-      "zh": "- 更新葡萄牙语翻译。\n- 为成就添加了简体中文翻译 (感谢 SheepCreator2!)",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "Added a Russian translation (thanks Bubalex01!)",
+      "zh": "添加了俄语翻译（感谢Bubalex01！）",
+      "at": "2026-09-13T21:35:01.909368Z"
     }
   },
   "CrystalENVT.TransRightsMod": {

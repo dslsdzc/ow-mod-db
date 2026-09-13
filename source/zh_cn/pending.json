@@ -1,7 +1,7 @@
 [
   {
-    "unique_name": "Dimitrios.GreekTranslation",
+    "unique_name": "cleric.DeepBramble",
     "field": "latestReleaseDescription",
-    "en": "Fixes:\r\n- Some texts were not in the correct format, which left them untranslated\r\n- Corrected phrasing so actions make sense in Greek (Πιάσε, Τοποθέτησε, Άναψε φωτιά)\r\n- Some menu texts were shortened so they fit on screen\r\n- New font, closer to the game's original style\r\n\r\nKnown issues:\r\n- Text on the cockpit computer screen appears very small and is unreadable\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Κάποια κείμενα δεν είχαν τη σωστή διάταξη κι έτσι παρέμεναν στα αγγλικά — διορθώθηκε\r\n- Αλλαγή εκφράσεων σε προστακτική για να βγάζουν μεγαλύτερο νόημα οι ενέργειες μέσα στο παιχνίδι (Πιάσε, Τοποθέτησε, Άναψε φωτιά)\r\n- Συντομεύτηκαν κείμενα του μενού που δε χωρούσαν\r\n- Νέα γραμματοσειρά, πιο κοντά στην αρχική γραμματοσειρά του παιχνιδιού\r\n\r\nΓνωστά ζητήματα:\r\n- Το κείμενο στην οθόνη του υπολογιστή του σκάφους εμφανίζεται πολύ μικρό και δεν μπορεί να διαβαστεί"
+    "en": "Added a Russian translation (thanks Bubalex01!)"
   }
 ]
