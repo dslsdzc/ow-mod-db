@@ -6957,6 +6957,11 @@
       "en": "Complete Greek translation for Outer Wilds - Πλήρης ελληνική μετάφραση του Outer Wilds",
       "zh": "星际拓荒完整希腊语翻译 - Πλήρης ελληνική μετάφραση του Outer Wilds",
       "at": "2026-09-12T00:29:39.775613Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Fixes:\r\n- Some texts were not in the correct format, which left them untranslated\r\n- Corrected phrasing so actions make sense in Greek (Πιάσε, Τοποθέτησε, Άναψε φωτιά)\r\n- Some menu texts were shortened so they fit on screen\r\n- New font, closer to the game's original style\r\n\r\nKnown issues:\r\n- Text on the cockpit computer screen appears very small and is unreadable\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Κάποια κείμενα δεν είχαν τη σωστή διάταξη κι έτσι παρέμεναν στα αγγλικά — διορθώθηκε\r\n- Αλλαγή εκφράσεων σε προστακτική για να βγάζουν μεγαλύτερο νόημα οι ενέργειες μέσα στο παιχνίδι (Πιάσε, Τοποθέτησε, Άναψε φωτιά)\r\n- Συντομεύτηκαν κείμενα του μενού που δε χωρούσαν\r\n- Νέα γραμματοσειρά, πιο κοντά στην αρχική γραμματοσειρά του παιχνιδιού\r\n\r\nΓνωστά ζητήματα:\r\n- Το κείμενο στην οθόνη του υπολογιστή του σκάφους εμφανίζεται πολύ μικρό και δεν μπορεί να διαβαστεί",
+      "zh": "修复：\n- 部分文本格式不正确，导致未翻译\n- 调整了措辞，使动作在希腊语中更合理（Πιάσε, Τοποθέτησε, Άναψε φωτιά）\n- 部分菜单文本被缩短以适应屏幕\n- 新字体，更接近游戏原始风格\n\n已知问题：\n- 飞船计算机屏幕上的文本显示非常小且难以阅读",
+      "at": "2026-09-13T19:13:55.840885Z"
     }
   },
   "MDJ287.LucidDreamingVisualizer": {
