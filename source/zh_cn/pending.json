@@ -1,7 +1,1 @@
-[
-  {
-    "unique_name": "Dimitrios.GreekTranslation",
-    "field": "latestReleaseDescription",
-    "en": "Fixes:\r\n- The cockpit console now renders Greek correctly\r\n- \"Time loop\" is now \"λούπα\" instead of \"βρόχος\" throughout\r\n- Grammar corrections\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Η οθόνη του υπολογιστή στο πιλοτήριο εμφανίζει πλέον σωστά τα ελληνικά\r\n- Ο «χρονικός βρόχος» έγινε «χρονική λούπα» σε όλο το παιχνίδι\r\n- Μικροδιορθώσεις γραμματικής"
-  }
-]
+[]
