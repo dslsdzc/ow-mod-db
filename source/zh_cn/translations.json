@@ -3677,9 +3677,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "yea! :3\r\n\r\n- slightly adjusted spawn location (after several months)\r\n- nudged planet orbit positions (hopefully electrum no longer eats things)\r\n\r\ndid I test this? absolutely not! bweh...",
-      "zh": "耶！：3\n\n- 稍微调整了生成位置（经过几个月后）\n- 推动了行星轨道位置（希望电子矿不再吞噬东西）\n\n我测试过吗？绝对没有！bweh...",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "So uh... it's been 13 months since v1.5.0 (or maybe longer?), and somehow I didn't notice that a VERY important endgame recorder was BROKEN and MISPLACED.\r\nso yeah it's **FIXED** now. and sorry to the like ~1-2k individuals who did a playthrough without knowing they missed extremely important lore.\r\n\r\nAnyway! apart from that I also fixed the lighting of a certain interior space (thanks solec for pointing this out)\r\n\r\nkinda thinking about making a retro system pack for older UM versions ngl ~w~",
+      "zh": "嗯... 自从v1.5.0版本以来已经过去了13个月（或许更久？），我竟然没有注意到一个非常重要的终局记录器被破坏和放置错误了。所以是的，现在**已经修复**了。对于那些大约1-2千人不知道他们错过了极其重要的背景故事而进行了游戏通关，我表示抱歉。无论如何！除了这一点，我还修复了一个特定室内空间的光照（感谢solec指出这一点）。有点想为旧版UM版本制作一个复古系统包，嗯~w~",
+      "at": "2026-09-14T10:05:00.380913Z"
     }
   },
   "dgarro.Journal": {
