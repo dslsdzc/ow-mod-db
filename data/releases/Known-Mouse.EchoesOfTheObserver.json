@@ -1,0 +1,74 @@
+{
+  "repoUpdatedAt": "2026-08-22T10:18:27Z",
+  "releases": [
+    {
+      "tag": "v0.1.8",
+      "name": "Version 0.1.8",
+      "date": "2026-08-22",
+      "body": "1.Fixed Interloper orbit issues.\r\n2.Fixed an issue where no endings could be reached after 17 minutes.\r\n3.Fixed various issues after sending the singularity.\r\n4.Improved Ship Log.\r\n5.Performance improvements",
+      "zipUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/download/v0.1.8/Known-Mouse.EchoesOfTheObserver.zip",
+      "releaseUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/tag/v0.1.8",
+      "bodyZh": "1. 修复闯入者轨道问题。\n2. 修复17分钟后无法达到结局的问题。\n3. 修复发送奇点后的各种问题。\n4. 改进飞船日志。\n5. 性能提升。"
+    },
+    {
+      "tag": "v0.1.7",
+      "name": "Version 0.1.7",
+      "date": "2026-08-17",
+      "body": "Refined figure",
+      "zipUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/download/v0.1.7/Known-Mouse.EchoesOfTheObserver.zip",
+      "releaseUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/tag/v0.1.7",
+      "bodyZh": "精雕细琢的身形"
+    },
+    {
+      "tag": "v0.1.6",
+      "name": "Version 0.1.6",
+      "date": "2026-08-17",
+      "body": "Refined text",
+      "zipUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/download/v0.1.6/Known-Mouse.EchoesOfTheObserver.zip",
+      "releaseUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/tag/v0.1.6",
+      "bodyZh": "Refined text"
+    },
+    {
+      "tag": "v0.1.5",
+      "name": "Version 0.1.5",
+      "date": "2026-08-17",
+      "body": "Update Log:\r\n\r\nRefined in-game text and dialogue.\r\n\r\nAdded Ship Log entries.\r\n\r\nAdded [Revive at Brittle Hollow] and [Meditate to End] options to the in-game pause menu.\r\n\r\nAdded a \"Revive at Ship\" function to the Singularity Controller.\r\n\r\nFixed an issue where the Singularity Controller behaved abnormally if the Little Scout was not recalled.\r\n\r\nFixed clipping issues in the opening scene.\r\n\r\nFixed underwater rendering issues for black and white holes.\r\n\r\nAdded a dynamic display for planetary gravitational acceleration.\r\n\r\nFixed a bug where the suffocation sound effect would persist when reloading a save after completing the game.",
+      "zipUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/download/v0.1.5/Known-Mouse.EchoesOfTheObserver.zip",
+      "releaseUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/tag/v0.1.5",
+      "bodyZh": "更新日志：\n\n优化了游戏内文本和对话。\n\n添加了飞船日志条目。\n\n在游戏暂停菜单中添加了[在碎空星复活]和[冥想结束]选项。\n\n在奇点控制器中添加了“在飞船复活”功能。\n\n修复了如果小侦察兵未被召回，奇点控制器行为异常的问题。\n\n修复了开场场景中的穿模问题。\n\n修复了黑白洞的水下渲染问题。\n\n添加了行星重力加速度的动态显示。\n\n修复了在完成游戏后重新加载存档时，窒息音效会持续存在的问题。"
+    },
+    {
+      "tag": "v0.1.4",
+      "name": "Version 0.1.4",
+      "date": "2026-08-15",
+      "body": "Supports recalling launched black and white holes.",
+      "zipUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/download/v0.1.4/Known-Mouse.EchoesOfTheObserver.zip",
+      "releaseUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/tag/v0.1.4",
+      "bodyZh": "支持召回已发射的黑洞和白洞。"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "Version 0.1.3",
+      "date": "2026-08-14",
+      "body": "V0.1.3",
+      "zipUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/download/v0.1.3/Known-Mouse.EchoesOfTheObserver.zip",
+      "releaseUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2026-08-14",
+      "body": "Update Version 0.1.2",
+      "zipUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/download/v0.1.2/Known-Mouse.EchoesOfTheObserver.zip",
+      "releaseUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2026-08-14",
+      "body": "First Jam 6 release.",
+      "zipUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/download/v0.1.1/Known-Mouse.EchoesOfTheObserver.zip",
+      "releaseUrl": "https://github.com/TropicWiden/OuterWilds-Summer2026ModJam-EchoesOfTheObserver/releases/tag/v0.1.1"
+    }
+  ]
+}

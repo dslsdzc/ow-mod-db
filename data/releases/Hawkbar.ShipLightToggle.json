@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2025-12-08T00:29:38Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Initial Release",
+      "date": "2024-04-15",
+      "body": "Allows you to toggle the major cabin lights in the ship by interacting with them, and toggle all interior lights using a switch on the left of the cockpit dashboard.",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModShipLightToggle/releases/download/v0.1.0/Hawkbar.ShipLightToggle.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModShipLightToggle/releases/tag/v0.1.0",
+      "bodyZh": "允许您通过与之交互来切换飞船主舱室灯光，并使用驾驶舱仪表盘左侧的开关切换所有内部灯光。"
+    }
+  ]
+}

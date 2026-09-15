@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-07-07T19:47:29Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2023-07-07",
+      "body": "Outer Wilds Kazoo: Now with actual Kazoo sound files. Whoops.",
+      "zipUrl": "https://github.com/GoldenCrepe/OuterWildsKazoo/releases/download/v0.1.1/GoldenCrepe.OuterWildsKazoo.zip",
+      "releaseUrl": "https://github.com/GoldenCrepe/OuterWildsKazoo/releases/tag/v0.1.1",
+      "bodyZh": "星际拓荒啄木鸟：现在包含真实的啄木鸟音效文件。哎呀。"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-07-02",
+      "body": "the first release. hopefully no bugs need to be fixed.",
+      "zipUrl": "https://github.com/GoldenCrepe/OuterWildsKazoo/releases/download/v0.1.0/GoldenCrepe.OuterWildsKazoo.zip",
+      "releaseUrl": "https://github.com/GoldenCrepe/OuterWildsKazoo/releases/tag/v0.1.0",
+      "bodyZh": "首次发布。希望不需要修复任何bug。"
+    }
+  ]
+}

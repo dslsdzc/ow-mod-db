@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-04-23T23:10:50Z",
+  "releases": [
+    {
+      "tag": "0.2.0",
+      "name": "No End Mod",
+      "date": "2022-04-22",
+      "body": "added all the things that are described at the readme.md file",
+      "zipUrl": "https://github.com/LikeMauro/NoEnd-Mod/releases/download/0.2.0/likemauro.noend.zip",
+      "releaseUrl": "https://github.com/LikeMauro/NoEnd-Mod/releases/tag/0.2.0",
+      "bodyZh": "添加了readme.md文件中描述的所有内容"
+    }
+  ]
+}

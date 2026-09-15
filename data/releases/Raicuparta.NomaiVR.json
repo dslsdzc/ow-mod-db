@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-08-21T10:57:52Z",
+  "releases": [
+    {
+      "tag": "2.10.1-pre",
+      "name": "NomaiVR-2.10.1-pre",
+      "date": "2025-03-02",
+      "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.10.1-pre/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.10.1-pre",
+      "bodyZh": "这次更新不会禁用键盘输入，就像正常的挪麦VR一样。你需要在安装这次更新之前修复游戏。\n\n这次变更的一个副作用是游戏结局（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这个。"
+    },
+    {
+      "tag": "2.10.0",
+      "name": "NomaiVR-2.10.0",
+      "date": "2025-03-02",
+      "body": "Thank you to [mobiusteapot](https://github.com/mobiusteapot) for this update.\r\n- What year is it?\r\n- Do people still play VR?\r\n- What's even the point.\r\n- This was supposed to be my big break.\r\n- Would she still be alive?\r\n- Added snap turn option. 🕹️\r\n- They called me a coward.\r\n- Could I have made a difference?",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.10.0/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.10.0",
+      "bodyZh": "感谢[mobiusteapot](https://github.com/mobiusteapot)提供此次更新。\n- 现在是哪一年？\n- 人们还在玩VR吗？\n- 这还有什么意义。\n- 这本该是我的大突破。\n- 她还会活着吗？\n- 增加了瞬移转向选项。 🕹️\n- 他们称我为懦夫。\n- 我能有所改变吗？"
+    },
+    {
+      "tag": "2.9.4-pre",
+      "name": "NomaiVR-2.9.4-pre",
+      "date": "2024-03-08",
+      "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.4-pre/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.4-pre",
+      "bodyZh": "这次更新不会禁用键盘输入，就像正常的挪麦VR一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结局（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这个。"
+    },
+    {
+      "tag": "2.9.3-pre",
+      "name": "NomaiVR-2.9.3-pre",
+      "date": "2023-01-23",
+      "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.3-pre/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.3-pre",
+      "bodyZh": "这次更新不会禁用键盘输入，就像正常的挪麦VR一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结局（片尾之后）性能非常差。所以如果你打算完成游戏，不要使用这个。"
+    },
+    {
+      "tag": "2.9.2",
+      "name": "NomaiVR-2.9.2",
+      "date": "2023-01-23",
+      "body": "- Changed toolbelt hiding logic to support more mods",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.2/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.2",
+      "bodyZh": "- 将工具带隐藏逻辑修改为支持更多模组"
+    },
+    {
+      "tag": "2.9.1-pre",
+      "name": "NomaiVR-2.9.1-pre",
+      "date": "2022-10-28",
+      "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.1-pre/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.1-pre"
+    },
+    {
+      "tag": "2.9.0",
+      "name": "NomaiVR-2.9.0",
+      "date": "2022-10-28",
+      "body": "Disables some camera fixes if xen's Escape the Dreamstalker mod is detected. Maybe this breaks some minor things but should mostly work with that spooky mod now. Happy Halloween.\r\n\r\nAlso DESTROYS all bepinex-related stuff from the codebase, since that wasn't working anymore and was just getting in the way.",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.0/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.0"
+    },
+    {
+      "tag": "2.8.7-pre",
+      "name": "NomaiVR-2.8.7-pre",
+      "date": "2022-10-27",
+      "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.8.7-pre/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.8.7-pre"
+    },
+    {
+      "tag": "2.8.6",
+      "name": "NomaiVR-2.8.6",
+      "date": "2022-10-27",
+      "body": "Fix an error in a patch, for compatibility with Escape the Dreamstalker. Still not fully compatible though (maybe unless you never die).",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.8.6/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.8.6"
+    },
+    {
+      "tag": "2.8.5-pre",
+      "name": "NomaiVR-2.8.5-pre",
+      "date": "2022-09-18",
+      "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
+      "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.8.5-pre/Raicuparta.NomaiVR.zip",
+      "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.8.5-pre"
+    }
+  ]
+}

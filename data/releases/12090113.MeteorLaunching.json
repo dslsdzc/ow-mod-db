@@ -1,0 +1,82 @@
+{
+  "repoUpdatedAt": "2023-09-01T04:48:42Z",
+  "releases": [
+    {
+      "tag": "v0.2.2",
+      "name": "v0.2.2",
+      "date": "2022-05-28",
+      "body": "More API stuff from @MegaPiggy.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/download/v0.2.2/MeteorLaunching.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/tag/v0.2.2",
+      "bodyZh": "来自 @MegaPiggy 的更多 API 相关内容。"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "v0.2.1",
+      "date": "2022-05-01",
+      "body": "Added @MegaPiggy's changes to add an API and stuff.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/download/v0.2.1/MeteorLaunching.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/tag/v0.2.1",
+      "bodyZh": "添加了 @MegaPiggy 的更改，以添加 API 和其他东西。"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2022-01-16",
+      "body": "Added a list of projectiles to cycle through and text in the suit HUD to show the selected projectile.\r\nThe list currently only consists of meteors and marshmallows.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/download/v0.2.0/MeteorLaunching.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/tag/v0.2.0",
+      "bodyZh": "新增了一个投射物列表用于循环切换，并在宇航服HUD界面显示所选投射物。\n该列表目前仅包含流星和棉花糖。"
+    },
+    {
+      "tag": "v0.1.5",
+      "name": "v0.1.5",
+      "date": "2022-01-11",
+      "body": "Made meteors actually go in the direction you shoot them.\r\nPreviously they flew off in a weird direction; now they don't.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/download/v0.1.5/MeteorLaunching.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/tag/v0.1.5",
+      "bodyZh": "使陨石确实按照你射击的方向飞行。\n之前它们会飞向奇怪的方向；现在不会了。"
+    },
+    {
+      "tag": "v0.1.4",
+      "name": "v0.1.4",
+      "date": "2022-01-09",
+      "body": "Meteors are now launched from the player's hand when using NomaiVR.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/download/v0.1.4/MeteorLaunching.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/tag/v0.1.4",
+      "bodyZh": "使用NomaiVR时，流星现在从玩家的手中发射。"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "v0.1.3",
+      "date": "2022-01-09",
+      "body": "Added NomaiVR support. You must enable \"Use back button\" in the mod options menu to launch meteors in VR.\r\nIt currently uses the head rotation, but in the future I hope to make it use the hand rotation.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/download/v0.1.3/MeteorLaunching.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2022-01-08",
+      "body": "Added option to change the size of the meteors you launch.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/download/v0.1.2/MeteorLaunching.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-01-06",
+      "body": "Added an option in the mod settings to use the back button to fire meteors, allowing support for controllers.\r\nThat, along with using the `FirstPersonManipulator` instead of the camera for the launch rotation, will hopefully allow for future NomaiVR support.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/download/v0.1.1/MeteorLaunching.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-01-03",
+      "body": "Middle mouse click to shoot. It doesn't work on controller or in VR yet.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/download/v0.1.0/MeteorLaunching.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-meteor-launching/releases/tag/v0.1.0"
+    }
+  ]
+}

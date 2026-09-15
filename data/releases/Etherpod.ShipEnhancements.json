@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-06-30T23:16:15Z",
+  "releases": [
+    {
+      "tag": "v2.3.2",
+      "name": "Release v2.3.2",
+      "date": "2026-05-16",
+      "body": "- Fixed a bug where the mod couldn't be played without the DLC enabled",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.3.2/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.3.2",
+      "bodyZh": "- 修复了在未启用DLC的情况下无法游玩模组的错误"
+    },
+    {
+      "tag": "v2.3.1",
+      "name": "Release v2.3.1",
+      "date": "2026-04-22",
+      "body": "- The **Ship Signal**  is now labeled \"SHIP\" instead of \"UNKNOWN\"\r\n- Viewing the ship using the **Ship Signal** will now properly load the terrain around the ship\r\n- Updates no longer erase your save data (but still reset the extra settings)\r\n- Fixed a bug where opening the map while piloting the ship and pressing the cancel button would softlock you\r\n- Fixed a bug in a couple features where enabling **Split Ship Lock-on** would continue using the player's target instead of the ship's target\r\n- Fixed a bug where the targeting commands from the **Ship Signal** wouldn't play the lock-on sounds while **Split Ship Lock-on** was enabled\r\n- Turning off the power on the **Radio** now prevents you from tuning it or changing the volume\r\n- Added some dialogue to Ernesto\r\n- Fixed some errors that were appearing in the console after changing certain settings in the settings menu",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.3.1/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.3.1",
+      "bodyZh": "- **飞船信号** 现在标记为 \"SHIP\" 而不是 \"UNKNOWN\"  \n- 使用 **飞船信号** 查看飞船现在可以正确加载飞船周围的地形  \n- 更新不再删除您的存档数据（但仍然会重置额外设置）  \n- 修复了一个在驾驶飞船时打开地图并按下取消按钮会导致软锁定的错误  \n- 修复了几个功能中的一个错误，启用 **分体飞船锁定** 后会继续使用玩家的目标而不是飞船的目标  \n- 修复了在启用 **分体飞船锁定** 时，**飞船信号** 的锁定指令不会播放锁定声音的错误  \n- 关闭 **无线电** 的电源现在会阻止您调整频率或改变音量  \n- 为 Ernesto 添加了一些对话  \n- 修复了在设置菜单中更改某些设置后控制台出现的错误"
+    },
+    {
+      "tag": "v2.3.0",
+      "name": "Release v2.3.0",
+      "date": "2026-04-20",
+      "body": "I've decided to switch to a new style of updates, which will usually be smaller and will focus on a specific theme. This update is the first of that new style, and the main focus is the ship's signalscope!\r\n\r\n\r\n# New Settings\r\n\r\n- **Enable Ship Signalscope Zoom** - Lets you zoom in while using the ship's signalscope\r\n- **Disable Signalscope Brackets** - Makes finding signals more difficult by turning off the guiding brackets\r\n- **Mod Changelog** - Brings up a list of all the release notes for previous updates so you can see what changed (copied over from GitHub)\r\n\r\n\r\n# Signalscope Commands\r\n\r\nIn previous updates, enabling the **Ship Signal** would allow you to cycle through a list of commands while the signal was in focus on your signalscope. That feature received a big upgrade in this update, including a new UI and many more commands to mess around with!\r\n\r\nTo make finding them easier, the commands are also separated into different groups now, which are listed below. (head to the modding website page for a full list of commands)\r\n\r\n- **Component Commands** - Controls specific parts of the ship, like the reactor and cockpit buttons\r\n- **Module Commands** - Ejects different parts of the ship\r\n- **Autopilot Commands** - Lets you toggle any of the autopilot functions (except **Input Hold**)\r\n- **Targeting Commands** - Sets the ship's lock-on target without needing to be in the ship\r\n- **Other Commands** - Miscellaneous commands that didn't fit in any of the other groups\r\n\r\n\r\n# Feature Changes\r\n\r\n- Renamed the **Add Ship Signal** setting to **Ship Signal Type** to allow for using a regular signal\r\n- Signals will now be visible on the ship's signalscope when it is damaged, but will be much more difficult to track\r\n- The **Portable Fuel Tank** will now react to collisions when placed on moving objects (shuttles, rafts, etc)\r\n- The scout can now blow up the **Portable Fuel Tank**\r\n\r\n\r\n# Bug Fixes\r\n\r\n- Going offline no longer breaks the mod\r\n- The signal dish on the outside of the ship no longer freezes in place after being repaired\r\n- Enabling **Auto Align** and blowing up the ship no longer causes the ship's carcass to spiral away into deep space\r\n- Reeling the **Tether** in/out is now disabled when player movement is disabled\r\n- The sound of the cockpit being ejected can't be heard across the universe anymore\r\n- Fixed a bug where the ship explosion would only appear for one person in multiplayer\r\n- Fixed a bug where **Position Hold** would turn itself off in mu",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.3.0/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.3.0",
+      "bodyZh": "我决定切换到一种新的更新风格，通常会更小，并专注于一个特定主题。这次更新是那种新风格的第一次，主要重点是飞船的信号扫描仪！\n\n\n# 新设置\n\n- **启用飞船信号扫描仪缩放** - 允许你在使用飞船信号扫描仪时进行缩放\n- **禁用信号扫描仪括号** - 通过关闭引导括号，使寻找信号变得更加困难\n- **模组变更日志** - 显示所有先前更新的发布说明列表，以便你可以看到发生了什么变化（从GitHub复制过来）\n\n\n# 信号扫描仪命令\n\n在之前的更新中，启用**飞船信号**将允许你在信号聚焦在信号扫描仪上时循环浏览一系列命令。该功能在这个更新中得到了重大升级，包括一个新的UI和许多更多可以用来玩的命令！\n\n为了更容易找到它们，命令现在也被分为不同的组，如下所示。（前往模组网站页面以获取完整的命令列表）\n\n- **组件命令** - 控制飞船的特定部分，如反应堆和驾驶舱按钮\n- **模块命令** - 排出飞船的不同部分\n- **自动驾驶命令** - 允许你切换任何自动驾驶功能（除了**输入保持**）\n- **目标锁定命令** - 设置飞船的锁定目标，而无需进入飞船\n- **其他命令** - 不属于任何其他组的杂项命令\n\n\n# 功能变更\n\n- 将**添加飞船信号**设置重命名为**飞船信号类型**，以允许使用普通信号\n- 当飞船受损时，信号现在会在飞船的信号扫描仪上可见，但将很难跟踪\n- **便携式燃料箱**现在在放置在移动物体上时（穿梭机、筏子等）会对碰撞做出反应\n- 探测器现在可以引爆**便携式燃料箱**\n\n\n# 错误修复\n\n- 离线不再会破坏模组\n- 飞船外部的信号盘在修复后不再会冻结在原地\n- 启用**自动对齐**并引爆飞船不再会导致飞船的残骸螺旋飞入深空\n- 当玩家移动被禁用时，收放**系绳**的功能现在已被禁用\n- 驾驶舱被弹出时的声音现在无法在宇宙中听到\n- 修复了一个多人游戏中飞船爆炸只对一个人可见的bug\n- 修复了一个**位置保持**会自己在多人游戏中关闭的bug"
+    },
+    {
+      "tag": "v2.2.2",
+      "name": "Release v2.2.2",
+      "date": "2026-03-07",
+      "body": "More bug fixes! (among other minor changes)\r\n\r\n- The lock-on UI will no longer be cut off on the edges of the screen (thank you @dit-zy!)\r\n- Items that detect water will now properly detect the river inside The Stranger\r\n- Parking the ship in the docking bay of The Stranger and being inside when the dam breaks will no longer place the ship underwater\r\n- Enabling the **Gravity Landing Gear** no longer lets the ship touch lava wirelessly\r\n- Enabling **Reactor Overload** and repairing the reactor no longer automatically overloads it\r\n- Added a code that was missing from the **Radio**\r\n- The **Interactable Ship Curtain** is no longer imbued with divine light\r\n- Placing the **Portable Fuel Canister** inside the ship will now use the temperature of the ship instead of the outside temperature\r\n- The **Remember Ship State** setting will now remember when the ship is destroyed and will leave behind items that are not inside the ship\r\n- Added a new setting to **ExperimentalSettings.json**\r\n- Gave Ernesto a new question system\r\n- Made some slight changes to Slate's dialogue\r\n- Improved the logic for the Random preset",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.2.2/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.2.2",
+      "bodyZh": "更多修复！(包含其他小改动)\n\n- 锁定UI不再被屏幕边缘裁剪 (感谢 @dit-zy!)\n- 检测水的物品现在可以正确检测陌生人内部的河流\n- 在陌生人停泊港停船并在大坝破裂时在船内，船不再被置于水下\n- 启用 **重力着陆装置** 不再允许飞船无线接触岩浆\n- 启用 **反应堆过载** 并修复反应堆不再自动过载\n- 添加了 **无线电** 中遗漏的代码\n- **可交互飞船窗帘** 不再被神圣之光加持\n- 将 **便携燃料罐** 放入船内现在使用飞船的温度而非外部温度\n- **记住飞船状态** 设置现在会记住飞船被摧毁的时间，并留下不在船内的物品\n- 添加了新的设置到 **ExperimentalSettings.json**\n- 给Ernesto添加了新的问答系统\n- 对Slate的对话进行了一些细微的修改\n- 改进了随机预设的逻辑"
+    },
+    {
+      "tag": "v2.2.1",
+      "name": "Release v2.2.1",
+      "date": "2026-01-23",
+      "body": "This update is just some hotfixes, but there's a much bigger update on it's way. Stay tuned!\r\n\r\n\r\n# Feature Changes\r\n\r\n- **Dirt Accumulation Time** can now be made negative, which adds dirt instead of clearing and clears dirt instead of adding\r\n- If the **Engine Switch** is enabled, the ship will now be turned on by default at the start of the loop (can be changed in **ExperimentalSettings.json**)\r\n- Added **ResetSettings()** to the API, which just sets every config setting to their default values\r\n\r\n\r\n# Bug Fixes\r\n\r\n- Fixed a bug where going to the Eye would break the game\r\n- Fixed a bug where enabling Nomai VR would break the game\r\n- Fixed a bug where ice would form on the cockpit when it wasn't cold outside\r\n- Fixed a bug where enabling water cooling and overloading the reactor would have no effect on **Passive Temperature Gain**\r\n- Fixed a bug where rust and dirt would have the opposite effect from the settings\r\n- Fixed a bug where disabling **Remember Ship State** and warping to a new system would still remember the settings\r\n- Fixed a bug where **Disable Rotation Speed Limit** would also increase the ship's look sensitivity\r\n- Fixed a bug where the reactor could be overloaded while repairing it\r\n- Fixed a bug where holding the roll button when the ship takes stun damage would prevent roll mode from disabling\r\n- Fixed a bug where the tether could be accidentally detached while piloting the ship and using free look\r\n- Fixed a bug where the cockpit ice would sometimes become desynced while in multiplayer\r\n- Fixed a bug where the ship would desync when the engine sputtered while in multiplayer\r\n- Fixed a bug where the preset setting could not be made hidden using the API\r\n- Fixed a bug where the **AddTemperatureZone()** function in the API was broken",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.2.1/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.2.1",
+      "bodyZh": "这个更新只是一些补丁，但还有一个更大的更新即将到来。敬请期待！\n\n\n# 功能变更\n\n- **泥土积累时间**现在可以设为负值，这样会添加泥土而不是清除，清除泥土而不是添加\n- 如果启用了**引擎开关**，飞船现在默认在循环开始时开启（可以在**ExperimentalSettings.json**中更改）\n- 向API添加了**ResetSettings()**，它只是将每个配置设置重置为默认值\n\n\n# 错误修复\n\n- 修复了前往**宇宙之眼**会崩溃的游戏错误\n- 修复了启用**挪麦VR**会崩溃的游戏错误\n- 修复了在室外不冷时驾驶舱结冰的错误\n- 修复了启用水冷并过载反应堆对**被动温度增益**没有效果的错误\n- 修复了锈迹和泥土与设置效果相反的错误\n- 修复了禁用**记住飞船状态**并传送到一个新系统时仍然记住设置的错误\n- 修复了启用**禁用旋转速度限制**也会增加飞船的视角敏感度的错误\n- 修复了在修理反应堆时反应堆过载的错误\n- 修复了在飞船受到眩晕伤害时按住翻滚按钮会阻止翻滚模式禁用的错误\n- 修复了在驾驶飞船并使用自由视角时意外断开系绳的错误\n- 修复了在多人游戏中驾驶舱冰有时会不同步的错误\n- 修复了在多人游戏中引擎突突时飞船会不同步的错误\n- 修复了无法使用API将预设设置隐藏的错误\n- 修复了API中的**AddTemperatureZone()**函数损坏的错误"
+    },
+    {
+      "tag": "v2.2.0",
+      "name": "Release v2.2.0",
+      "date": "2025-11-15",
+      "body": "Read the changelog on the GitHub releases page if the full version isn't displayed!\r\n\r\n# New Settings\r\n- **Enable Quantum Ship** - Makes the ship quantum while on the Quantum Moon\r\n- **Add Resource Pump** - Adds a pump to the back of your ship that allows you to refill your ship's resources (fuel, oxygen, water) or fire them out of the pump in a very wasteful manner\r\n- **Use Water Tank** - Makes water one of your ship's resources and adds a gauge for it in the cockpit, other features will need to consume water to function\r\n- **Water Drain Multiplier** - Adjusts how quickly devices drain your water reserves\r\n- **Add Water Cooling** - Adds a lever next to the ship log that turns on water cooling, which consumes water to prevent your ship from getting hot\r\n- **Allow Reactor Overload** - Lets you interact with the reactor component to overload it, which prevents your ship from getting cold but makes the reactor explode faster\r\n- **Temperature Difficulty** - Controls how dangerous the side effects of high/low temperature are\r\n- **Buttons Require Flight Chair** - Prevents you from interacting with buttons in the cockpit unless you're piloting the ship\r\n- **Remember Ship State** - Preserves the currently selected settings and the state of the ship (resource levels, damage, etc) while warping between solar systems, when you die the ship will reset and the settings will update\r\n- **Enable Gas Leak** - Not recommended\r\n- Added **ExperimentalSettings.json** to the mod folder\r\n\r\n# Feature Changes\r\n- The ship gravity crystal can now be duplicated with the **Unlimited Items** setting\r\n- Split the **Enable Repair Wrench** setting into Disabled/Enabled/Required, where Enabled speeds up repairs while holding the wrench and Required requires you to be holding the wrench\r\n- Replaced the **Faulty Heat Regulators** setting with **Passive Temperature Gain**, which lets you gain \"passive cold-ness\" as well\r\n- Higher values of **Cyclone Chaos** will now make cyclones deal damage to the ship\r\n- Renamed **Disable Automatic Lights** to **Keep Power On**\r\n\r\n# Temperature Rework\r\n- Cold areas no longer apply passive damage to the ship\r\n- Cold areas now make the ship more vurnerable to impact damage\r\n- The ship engine will now start like usual after stalling at the cost of damage to the ship\r\n- The inside glass of the cockpit will now freeze over if the reactor heats up and the outside temperature is low\r\n- Hot areas now increase the strength of the ship thrusters\r\n- Hot areas now pass",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.2.0/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.2.0"
+    },
+    {
+      "tag": "v2.1.3",
+      "name": "Release v2.1.3",
+      "date": "2025-07-29",
+      "body": "- Made the tether less springy and harder to snap\r\n- Removed debug messages that were added in a previous hotfix",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.1.3/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.1.3"
+    },
+    {
+      "tag": "v2.1.2",
+      "name": "Release v2.1.2",
+      "date": "2025-07-25",
+      "body": "- Fix a memory leak caused by enabling color blending for the ship thruster color",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.1.2/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.1.2"
+    },
+    {
+      "tag": "v2.1.1",
+      "name": "Release v2.1.1",
+      "date": "2025-06-28",
+      "body": "# Feature Changes\r\n\r\n- Added a file named **RandomizerSettings.json** to the mod folder that lets you customize the Random preset\r\n- Removed the **Remove Masi Sicker** setting because the devs fixed it\r\n\r\n# Bug Fixes\r\n\r\n- Fixed a bug where ending the loop while locked onto something with Split Ship Lock-on enabled would cause errors\r\n- Fixed a bug where the Default Settings button in the settings menu would sometimes not work properly\r\n- Fixed some bugs with the moving parts on the radio\r\n- Added a tooltip to the selected preset explaining what it does",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.1.1/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.1.1"
+    },
+    {
+      "tag": "v2.1.0",
+      "name": "Release v2.1.0",
+      "date": "2025-05-26",
+      "body": "# New Settings\r\n\r\n- Split Ship Lock-On - Makes the ship lock-on target independent from the player lock-on target (QOL setting, disabled by default)\r\n- Enable Color Blending - Overcomplicates the ship decoration\r\n- Remove Masi Sticker - Restores the ship to its former glory (QOL setting)\r\n\r\n# Feature Changes\r\n\r\n- Overhauled the SFX for larger ship explosions\r\n- Overhauled the ship decoration settings\r\n\r\n# Bug Fixes + Minor Changes\r\n\r\n- Fixed a bug where enabling auto alignment and locking onto the ship would crash the game\r\n- Fixed a bug where the Portable Campfire would have no temperature zone when temperature zones were set to \"Hot\"\r\n- Fixed a bug where setting a thruster color would turn on thruster flame damage\r\n- Fixed a bug where the ship warp core wouldn't work in the vanilla solar system when New Horizons was enabled\r\n- Fixed a vanilla bug where the light above the ship log wouldn't update the emission scale correctly\r\n- Fixed a bug where some buttons on the extendable panel couldn't be reached while in the cockpit chair\r\n- Made decoration and QOL settings independent from presets\r\n- Changed the radio volume keybinds to left/right instead of up/down\r\n- Added damage icons to the ship damage screen for the scout launcher and warp core",
+      "zipUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/download/v2.1.0/Etherpod.ShipEnhancements.zip",
+      "releaseUrl": "https://github.com/Etherpod/Ship-Enhancements/releases/tag/v2.1.0"
+    }
+  ]
+}

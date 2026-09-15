@@ -1,0 +1,58 @@
+{
+  "repoUpdatedAt": "2023-07-15T11:52:12Z",
+  "releases": [
+    {
+      "tag": "1.3.1",
+      "name": "1.3.1",
+      "date": "2022-10-23",
+      "body": "Added an `Unnamed` option for the \"Show missing entries\" setting to avoid showing the names of the missing entries (the text \"MISSING ENTRY\" would be shown instead), the `Named` option shows the real name as before.",
+      "zipUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/download/1.3.1/dgarro.ArchaeologistAchievementHelper.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/tag/1.3.1",
+      "bodyZh": "添加了`Unnamed`选项用于\"显示缺失条目\"设置以避免显示缺失条目的名称（将显示文本\"MISSING ENTRY\"而不是名称），`Named`选项像之前一样显示真实名称。"
+    },
+    {
+      "tag": "1.3.0",
+      "name": "1.3.0",
+      "date": "2022-10-21",
+      "body": "Added \"Show missing entries\" setting to show entries that aren't revealed but have facts required for the achievement, useful when the ship log looks complete but there are still entire entries missing.",
+      "zipUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/download/1.3.0/dgarro.ArchaeologistAchievementHelper.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/tag/1.3.0",
+      "bodyZh": "添加了“显示缺失条目”设置，用于显示尚未揭示但需要成就事实的条目，当飞船日志看起来完整但仍有整个条目缺失时很有用。"
+    },
+    {
+      "tag": "1.2.1",
+      "name": "1.2.1",
+      "date": "2022-04-23",
+      "body": "Add Russian translation. Thanks @Tllya!",
+      "zipUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/download/1.2.1/dgarro.ArchaeologistAchievementHelper.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/tag/1.2.1",
+      "bodyZh": "添加俄语翻译。谢谢 @Tllya！"
+    },
+    {
+      "tag": "1.2.0",
+      "name": "1.2.0",
+      "date": "2022-04-23",
+      "body": "Agregada traducción al español. \r\nAdd Spanish translation.",
+      "zipUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/download/1.2.0/dgarro.ArchaeologistAchievementHelper.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/tag/1.2.0",
+      "bodyZh": "已添加西班牙语翻译。\n添加西班牙语翻译。"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2022-01-23",
+      "body": "The mod now works with missing subentries!",
+      "zipUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/download/1.1.0/dgarro.ArchaeologistAchievementHelper.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/tag/1.1.0",
+      "bodyZh": "该模组现在支持缺失的子条目！"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-01-16",
+      "body": "Initial release!",
+      "zipUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/download/1.0.0/dgarro.ArchaeologistAchievementHelper.zip",
+      "releaseUrl": "https://github.com/dgarroDC/ArchaeologistAchievementHelper/releases/tag/1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2024-11-05T02:50:19Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2024-11-05",
+      "body": "Still an early release",
+      "zipUrl": "https://github.com/Acamaeda/TeamMitisJam/releases/download/v0.1.1/TeamMitis.JamminPlaceholder.zip",
+      "releaseUrl": "https://github.com/Acamaeda/TeamMitisJam/releases/tag/v0.1.1",
+      "bodyZh": "仍然是一个早期版本"
+    },
+    {
+      "tag": "preview",
+      "name": "Preview",
+      "date": "2024-11-05",
+      "body": "This is an early preview",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/Acamaeda/TeamMitisJam/releases/tag/preview",
+      "bodyZh": "这是一个早期预览"
+    }
+  ]
+}

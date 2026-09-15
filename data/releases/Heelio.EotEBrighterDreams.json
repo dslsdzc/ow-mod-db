@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2025-10-03T11:10:32Z",
+  "releases": [
+    {
+      "tag": "0.1.1",
+      "name": "EotE Brighter Dreams v0.1.1",
+      "date": "2021-11-28",
+      "body": "",
+      "zipUrl": "https://github.com/Heelio/EotE-Brighter-Dreams/releases/download/0.1.1/Heelio.EotEBrighterDreams.zip",
+      "releaseUrl": "https://github.com/Heelio/EotE-Brighter-Dreams/releases/tag/0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "EotE Brighter Dreams v0.1.0",
+      "date": "2021-11-28",
+      "body": "",
+      "zipUrl": "https://github.com/Heelio/EotE-Brighter-Dreams/releases/download/0.1.0/Heelio.EotEBrighterDreams.zip",
+      "releaseUrl": "https://github.com/Heelio/EotE-Brighter-Dreams/releases/tag/0.1.0"
+    }
+  ]
+}

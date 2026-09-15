@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-05-14T13:42:22Z",
+  "releases": [
+    {
+      "tag": "1.2.0",
+      "name": "v1.2.0",
+      "date": "2026-05-14",
+      "body": "تحديث كامل للترجمة العربية مع تحسينات في الجودة والتناسق.\n\nFull translation update with improved quality and consistency.",
+      "zipUrl": "https://github.com/7akeem0/Arabic_Hesham-OuterWilds/releases/download/1.2.0/Hesham.OuterWildsArabic.zip",
+      "releaseUrl": "https://github.com/7akeem0/OuterWildsArabic/releases/tag/1.2.0",
+      "bodyZh": "完整的阿拉伯语翻译更新，包括质量和一致性的改进。"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0 - Arabic Logo / الشعار العربي",
+      "date": "2026-04-29",
+      "body": "**العربية:**\r\n- استبدال شعار اللعبة \"Outer Wilds\" بنسخة عربية (\"أوتر وايلدز\")\r\n- استبدال شعار DLC \"Echoes of the Eye\" بنسخة عربية (\"أصداء العين\")\r\n- معالجة CommandBuffer لإزالة العرض ثلاثي الأبعاد للحروف الإنجليزية\r\n- ظهور تلقائي عند اختيار اللغة العربية من قائمة الإعدادات\r\n\r\n---\r\n\r\n**English:**\r\n- Replaced the main \"Outer Wilds\" logo with an Arabic version (\"أوتر وايلدز\")\r\n- Replaced the DLC \"Echoes of the Eye\" logo with an Arabic version (\"أصداء العين\")\r\n- CommandBuffer manipulation to remove the 3D rendering of English letters\r\n- Automatically appears when Arabic is selected from the language menu",
+      "zipUrl": "https://github.com/7akeem0/Arabic_Hesham-OuterWilds/releases/download/v1.1.0/Hesham.OuterWildsArabic.zip",
+      "releaseUrl": "https://github.com/7akeem0/OuterWildsArabic/releases/tag/v1.1.0",
+      "bodyZh": "**阿拉伯语：**\n- 将游戏“Outer Wilds”的标志替换为阿拉伯语版本（“أوتر وايلدز”）\n- 将DLC“Echoes of the Eye”的标志替换为阿拉伯语版本（“أصداء العين”）\n- 使用CommandBuffer处理以移除英文字符的三维渲染\n- 当从设置菜单选择阿拉伯语时自动显示\n\n---\n\n**英语：**\n- 将主标志“Outer Wilds”替换为阿拉伯语版本（“أوتر وايلدز”）\n- 将DLC“Echoes of the Eye”的标志替换为阿拉伯语版本（“أصداء العين”）\n- 使用CommandBuffer处理以移除英文字符的三维渲染\n- 当从设置菜单选择阿拉伯语时自动显示"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Outer Wilds Arabic Translation v1.0.0",
+      "date": "2026-04-14",
+      "body": "First release — full Arabic translation for Outer Wilds + Echoes of the Eye DLC",
+      "zipUrl": "https://github.com/7akeem0/Arabic_Hesham-OuterWilds/releases/download/1.0.0/Hesham.OuterWildsArabic.zip",
+      "releaseUrl": "https://github.com/7akeem0/OuterWildsArabic/releases/tag/1.0.0",
+      "bodyZh": "首次发布 — 星际拓荒 + 宇宙之眼回响DLC的完整阿拉伯语翻译"
+    }
+  ]
+}

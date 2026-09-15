@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-08-09T01:06:50Z",
+  "releases": [
+    {
+      "tag": "v1.1.3",
+      "name": "Version 1.1.3",
+      "date": "2024-06-13",
+      "body": "Fixed incompatibility with the new update",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v1.1.3/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v1.1.3",
+      "bodyZh": "已修复与新更新不兼容的问题"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "Version 1.1.2",
+      "date": "2024-04-28",
+      "body": "Forgot to fix an issue with ReturnAction falsely striking entries off the waypoints list in the last update (sorry)",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v1.1.2/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v1.1.2",
+      "bodyZh": "忘记在上次更新中修复一个问题，导致 ReturnAction 错误地移除了路点列表中的条目（抱歉）"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2024-04-27",
+      "body": "- reworked the failsafes meant to prevent player getting stuck in a hug sequence to be more versatile\r\n- improved out-of-bounds navigation for the friends you can make with Friendmaker Mode\r\n- fixed eye scene dialogue animation bug and other minor tweaks",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v1.1.1/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v1.1.1",
+      "bodyZh": "- 重新设计了旨在防止玩家陷入紧抱序列的保险机制，使其更具多功能性\n- 改进了使用友伴模式可以结交的朋友的越界导航\n- 修复了眼睛场景对话动画错误以及其他微小调整"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2024-04-19",
+      "body": "- Added new API method that returns an array of huggable GOs\r\n- (Don't overuse this)",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v1.1.0/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v1.1.0",
+      "bodyZh": "- 新增API方法，返回一个可拥抱的游戏对象数组（不要过度使用）"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2023-09-29",
+      "body": "DLC owners can now take their time and carefully consider a certain choice without it breaking the game (I am so sorry)\r\n\r\nplus some minor code fixes",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v1.0.3/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v1.0.3",
+      "bodyZh": "DLC拥有者现在可以慢慢来，仔细考虑某个选择，而不会导致游戏崩溃（我对此深感抱歉）\n\n此外还有一些小的代码修复"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2023-06-25",
+      "body": "Made things marginally less annoying for controller users",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v1.0.2/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2023-04-22",
+      "body": "- Got rid of a bunch of annoying error logs and addressed possible issues involving objects getting deactivated mid-sequence\r\n- The Friendmaker Mode toggle is now properly tied to the menu actions and works with a controller without resetting on close\r\n- Friendmaker Mode scripts start and end on more appropriate conditions",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v1.0.1/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2023-03-25",
+      "body": "- Fixed some minor graphical bugs and annoyances, along with overall adding more polish\r\n- Fixed some nasty NREs that would happen if hug script got destroyed too early, added null checks to prevent more potential NREs\r\n- Made massive structural changes to the code with the goal of enabling better interactions with other mods\r\n   - Changes to HugComponent initialisation and proxy component functionality\r\n   - Changes to the API to reflect the above\r\n   - Completely overhauled patches and made them more accessible\r\n   - Made the way HugMod affects concrete characters more accessible\r\n- The README is useful now\r\n\r\nDLC owners who had Friendmaker Mode enabled might have to reenable it.",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v1.0.0/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "Version 0.2.1",
+      "date": "2023-03-13",
+      "body": "(Hopefully) fixed several bugs where inconveniently timed hugs cause interactions with certain characters to become stuck",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v0.2.1/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2023-03-11",
+      "body": "Improvements and additions to DLC-specific parts of the mod",
+      "zipUrl": "https://github.com/VioVayo/OWHugMod/releases/download/v0.2.0/VioVayo.HugMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWHugMod/releases/tag/v0.2.0"
+    }
+  ]
+}

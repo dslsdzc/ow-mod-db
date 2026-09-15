@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-09-08T23:47:42Z",
+  "releases": [
+    {
+      "tag": "v2.5.6",
+      "name": "v2.5.6",
+      "date": "2026-09-08",
+      "body": "Removes the debug settings that were used while developing the mod: the ship log and dialogue tree dumps, along with the hotkeys to unlock all reels, reveal all events, unlock all achievements and reload dialogue.\n\nThe mod manager now shows a single option, *Carica eventi nel registro della nave*.\n\n**Full Changelog**: https://github.com/SbekuMod/Mod-V2/compare/v2.5.5...v2.5.6",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/SbekuMod/Mod-V2/releases/download/v2.5.6/LaStringa.SbekuMod.zip",
+      "releaseUrl": "https://github.com/SbekuMod/Mod-V2/releases/tag/v2.5.6"
+    },
+    {
+      "tag": "v2.5.5",
+      "name": "v2.5.5",
+      "date": "2026-09-08",
+      "body": "**Full Changelog**: https://github.com/SbekuMod/Mod-V2/compare/v2.5.4...v2.5.5",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/SbekuMod/Mod-V2/releases/download/v2.5.5/LaStringa.SbekuMod.zip",
+      "releaseUrl": "https://github.com/SbekuMod/Mod-V2/releases/tag/v2.5.5"
+    },
+    {
+      "tag": "v2.5.4",
+      "name": "v2.5.4",
+      "date": "2026-09-08",
+      "body": "Public Release",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/SbekuMod/Mod-V2/releases/download/v2.5.4/LaStringa.SbekuMod.zip",
+      "releaseUrl": "https://github.com/SbekuMod/Mod-V2/releases/tag/v2.5.4"
+    }
+  ]
+}

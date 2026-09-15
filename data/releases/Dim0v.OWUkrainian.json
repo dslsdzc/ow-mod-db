@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-08-29T16:12:25Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-08-14",
+      "body": "**Full Changelog**: https://github.com/dim0v/OWUkrainian/commits/v0.1.0",
+      "zipUrl": "https://github.com/dim0v/OWUkrainian/releases/download/v0.1.0/Dim0v.OWUkrainian.zip",
+      "releaseUrl": "https://github.com/dim0v/OWUkrainian/releases/tag/v0.1.0",
+      "bodyZh": "**完整变更日志**: https://github.com/dim0v/OWUkrainian/commits/v0.1.0"
+    }
+  ]
+}

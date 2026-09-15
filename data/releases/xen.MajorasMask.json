@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-01-17T15:12:52Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2021-12-13",
+      "body": "Initial commit.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-majoras-mask/releases/download/v1.0.0/xen.MajorasMask.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-majoras-mask/releases/tag/v1.0.0",
+      "bodyZh": "初始提交。"
+    }
+  ]
+}

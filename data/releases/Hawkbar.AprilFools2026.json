@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-04-01T18:39:16Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2026-04-01",
+      "body": "Outer Wilds is a game loosely based on real-world astronomy and orbital physics, but as anyone who has taken a high school physics class could tell you, the game is clearly not scientifically accurate at all. A black hole that doesn't spaghettify you? Trees that produce infinite oxygen? Sand passing back and forth between two planets? These are just a few of the many scientifically inaccurate things in the game. This mod removes all of the planets that are scientifically inaccurate, leaving only the ones that are scientifically accurate. The result is a much more realistic and scientifically accurate Outer Wilds experience.",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-april-fools-2026/releases/download/v1.0.0/ow-mod-april-fools-2026.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-april-fools-2026/releases/tag/v1.0.0",
+      "bodyZh": "星际拓荒是一款基于现实世界天文学和轨道物理学的游戏，但正如任何上过高中物理课的人都能告诉你的，游戏显然一点也不科学。一个不会把你拉成意大利面状的黑洞？能产生无限氧气的树木？在两个行星之间来回流动的沙子？这只是游戏中许多不科学之处的几个例子。这个模组移除了所有不科学的行星，只保留了那些科学的行星。结果是体验到一个更加真实和科学的星际拓荒。"
+    }
+  ]
+}

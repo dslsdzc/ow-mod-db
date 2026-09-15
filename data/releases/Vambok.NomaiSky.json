@@ -1,0 +1,74 @@
+{
+  "repoUpdatedAt": "2026-07-24T06:01:02Z",
+  "releases": [
+    {
+      "tag": "v0.4.3",
+      "name": "Version 0.4.3",
+      "date": "2025-07-02",
+      "body": "### Added:\r\n- Difficulty setting (fuel capacity)\r\n- Setting tooltips\r\n- A few planet props (rocks, grass, etc.), a lot more to come (v0.5)\r\n### Tweaks:\r\n- Stars can now be even smaller\r\n- Water now appears only in the \"Habitable Zone\" of the system (where water can be liquid)\r\n- Water level is now more likely to let some land exposed\r\n- Heightmaps improved imperceptibly\r\n- Loading texts stay on the spinning logo screen and can now0_@##$^\\\\£%\r\n### Fixes:\r\n- Refueling notif correctly hides when finished\r\n- Refilling with Kerosene now saves correctly\r\n- Going back to Timber Heart now always refill fuel properly",
+      "zipUrl": "https://github.com/Vambok/NomaiSky/releases/download/v0.4.3/Vambok.NomaiSky.zip",
+      "releaseUrl": "https://github.com/Vambok/NomaiSky/releases/tag/v0.4.3",
+      "bodyZh": "### 添加的：\n- 难度设置（燃料容量）\n- 设置提示\n- 一些行星道具（岩石、草地等），更多即将到来（v0.5）\n### 微调：\n- 星星现在可以更小\n- 水现在只出现在系统的“宜居带”（水可以保持液态的地方）\n- 水位现在更可能让部分陆地露出\n- 高度图几乎无法察觉地改进了\n- 加载文本保持在旋转的标志屏幕上，现在可以0_@##$^\\\\£%\n### 修复：\n- 加油通知在完成后正确隐藏\n- 使用煤油加油现在正确保存\n- 返回木炉星后总是正确补充燃料"
+    },
+    {
+      "tag": "v0.4.2",
+      "name": "0.4.2 - Loading tips patch",
+      "date": "2025-06-19",
+      "body": "### Added:\r\n- Loading screen tips! (togglable in settings)\r\n### Tweaks:\r\n- Galactic map is now spherical\r\n- Improved flame textures\r\n### Fixes:\r\n- Game now saves current flame textures\r\n- No longer possible to siphon fuel from inside the ship",
+      "zipUrl": "https://github.com/Vambok/NomaiSky/releases/download/v0.4.2/Vambok.NomaiSky.zip",
+      "releaseUrl": "https://github.com/Vambok/NomaiSky/releases/tag/v0.4.2",
+      "bodyZh": "### 添加的：\n- 加载屏幕提示！（可在设置中切换）\n### 微调：\n- 星图现在是球形的\n- 火焰纹理已改进\n### 修复：\n- 游戏现在保存当前的火焰纹理\n- 不再可能从船内抽取燃料"
+    },
+    {
+      "tag": "v0.4.1",
+      "name": "0.4.1 - Autopilot and save patch",
+      "date": "2025-06-14",
+      "body": "### Tweaks:\r\n- Your ship state is now saved on quit (not only on system change)\r\n- Warping message displayed on warp\r\n### Fixes:\r\n- Autopilot state and object targeting are no longer reset on system change\r\n- Autopilot is no longer flying too fast to distant stars *(you'll escape frying, yay!)*\r\n- Fixed the infamous empty system bug *(caused by lag at warp)*\r\n- Fixed clouds appearance\r\n- Travel lines are now only visible in map\r\n- Visit markers are no longer shared between game profiles\r\n- Ship state is now saving properly\r\n- Tool prompt is now correctly hidden when spawning at flight console",
+      "zipUrl": "https://github.com/Vambok/NomaiSky/releases/download/v0.4.1/Vambok.NomaiSky.zip",
+      "releaseUrl": "https://github.com/Vambok/NomaiSky/releases/tag/v0.4.1",
+      "bodyZh": "### 调整：\n- 船只状态现在在退出时保存（不仅限于系统切换时）\n- 跃迁时显示跃迁消息\n### 修复：\n- 自动驾驶状态和目标锁定不再在系统切换时重置\n- 自动驾驶不再飞得太快到远处的恒星 *(你将不会烤焦，太好了！)*\n- 修复了著名的空系统错误 *(由跃迁时的延迟引起)*\n- 修复了云层的外观\n- 旅行线现在仅在地图中可见\n- 访问标记不再在游戏配置文件之间共享\n- 船只状态现在正确保存\n- 在飞行控制台生成时，工具提示现在正确隐藏"
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2025-06-13",
+      "body": "### Added:\r\n- **Fuel management!** Slate (aka Trifid) built a brand new **refueling tool** for you! It's on the launchpad near your ship\r\n- Some planet **oceans** might be useful if you're running low on **fuel**\r\n- Planet can now have **clouds**!\r\n\r\n### Tweaks:\r\n- Refuel suit in ship drains from ship (as it should!)\r\n- Automatically activates \"show button prompts\" option at launch (that option is needed in NMS)\r\n- Added galactic coords to the map, you'll no longer get lost in the cosmos\r\n- Moons can no longer have rings *(it was a bit odd (and physically nonsensical))*\r\n- Improved RNG randomness\r\n- Improved planet heightmaps\r\n- New background music (thanks AP!)\r\n\r\n### Fixes:\r\n- Flying into a system doesn't reset your velocity anymore\r\n- Fixed name of current main star not showing when targeted\r\n- Fixed a crash when dying in a NMS system\r\n- Fixed water height level\r\n- Fixed some orbital gen quirks\r\n- Fixed Heightmap LOD1 (fix far view)",
+      "zipUrl": "https://github.com/Vambok/NomaiSky/releases/download/v0.4.0/Vambok.NomaiSky.zip",
+      "releaseUrl": "https://github.com/Vambok/NomaiSky/releases/tag/v0.4.0",
+      "bodyZh": "### 新增：\n- **燃料管理！** Slate（又名Trifid）为你建造了一个全新的**加燃料工具**！它位于你的飞船附近的发射台\n- 如果你燃料不足，一些行星的**海洋**可能会有用\n- 行星现在可以有**云层**！\n\n### 微调：\n- 飞船中的宇航服加燃料时会消耗飞船的燃料（应该这样！）\n- 自动激活启动时的“显示按钮提示”选项（NMS中需要这个选项）\n- 在地图上添加了银河坐标，你将不再在宇宙中迷失方向\n- 月球不再有环 *(这有点奇怪（而且物理上不合理）)*\n- 改进了RNG的随机性\n- 改进了行星高度图\n- 新的背景音乐（感谢AP！）\n\n### 修复：\n- 飞入星系不再重置你的速度\n- 修复了目标当前主星名称不显示的问题\n- 修复了在NMS星系中死亡时崩溃的问题\n- 修复了水位高度\n- 修复了一些轨道生成的小问题\n- 修复了高度图LOD1（修复远景）"
+    },
+    {
+      "tag": "v0.3.1",
+      "name": "Version 0.3.1",
+      "date": "2025-06-04",
+      "body": "### Changes:\r\n- **Added map indicator to previously visited systems (four display options available in settings)**\r\n- Reworked the random generator: changes to some procedural features will no longer affect other features\r\n- Some QOL improvements to the map zoom (free pitch, reduced furthest zoom, removed lock-in zoom on stars)\r\n\r\n### Bug fixes:\r\n- **Finally fixed space travel (changing system only by flying)! You can even autopilot there**\r\n- Fixed the infamous bug caused by the NH ship warp drive",
+      "zipUrl": "https://github.com/Vambok/NomaiSky/releases/download/v0.3.1/Vambok.NomaiSky.zip",
+      "releaseUrl": "https://github.com/Vambok/NomaiSky/releases/tag/v0.3.1",
+      "bodyZh": "### 更改：\n- **新增前往已访问星系的地图指示器（设置中提供四种显示选项）**\n- 重新设计了随机生成器：某些程序化特征的变化将不再影响其他特征\n- 对地图缩放进行了一些QOL改进（自由俯仰、减少最远缩放、移除恒星锁定缩放）\n\n### 错误修复：\n- **终于修复了太空旅行（仅通过飞行切换星系）！甚至可以自动驾驶**\n- 修复了由NH飞船跃迁引擎引起的臭名昭著的bug"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2025-05-25",
+      "body": "### Changes:\r\n- Allowed previously visited systems to be rebuilt when the procedural generation is updated\r\n- Added a setting to choose whether to start the game in the last visited system, in the Outer Wilds, in a random system or in a distant random system\r\n- Added acknowledgments to new contributors! (thank you <3)\r\n\r\n### Bug fixes:\r\n- Fixed a bug where moon orbited very very very far from their planet (physics is important!)\r\n- Fixed the location of some jam mods systems (lore is important!)",
+      "zipUrl": "https://github.com/Vambok/NomaiSky/releases/download/v0.3.0/Vambok.NomaiSky.zip",
+      "releaseUrl": "https://github.com/Vambok/NomaiSky/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2025-05-22",
+      "body": "### First public beta release!\r\n\r\n_Outer Y lost a month of work to this crap so you might as well give it a try while waiting x)_",
+      "zipUrl": "https://github.com/Vambok/NomaiSky/releases/download/v0.2.0/Vambok.NomaiSky.zip",
+      "releaseUrl": "https://github.com/Vambok/NomaiSky/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-05-11",
+      "body": "First beta release!",
+      "zipUrl": "https://github.com/Vambok/NomaiSky/releases/download/v0.1.0/Vambok.NomaiSky.zip",
+      "releaseUrl": "https://github.com/Vambok/NomaiSky/releases/tag/v0.1.0"
+    }
+  ]
+}

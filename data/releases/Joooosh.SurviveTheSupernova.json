@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2023-07-15T11:47:23Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "Survive the Supernova v1.1,0",
+      "date": "2022-04-26",
+      "body": "Changes from last release:\r\n\r\n- Added option in config to disable the Supernova rumble, so you can explore the Solar System in peace.\r\n- Added option in config to disable triggering the Supernova on wake",
+      "zipUrl": "https://github.com/josshmot/OW-SurviveTheSupernova/releases/download/1.1.0/Joooosh.SurviveTheSupernova.zip",
+      "releaseUrl": "https://github.com/joshua-smith98/OW-SurviveTheSupernova/releases/tag/1.1.0",
+      "bodyZh": "上次更新的改动：\n\n- 在配置中添加了禁用超新星震动的选项，这样你可以在平静中探索太阳系。\n- 在配置中添加了禁用唤醒时触发超新星的选项"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "Survive the Supernova v1.0.1",
+      "date": "2022-04-26",
+      "body": "Changes from last release:\r\n- A bit of code optimisation",
+      "zipUrl": "https://github.com/josshmot/OW-SurviveTheSupernova/releases/download/1.0.1/Joooosh.SurviveTheSupernova.zip",
+      "releaseUrl": "https://github.com/joshua-smith98/OW-SurviveTheSupernova/releases/tag/1.0.1",
+      "bodyZh": "上次更新的改动：\n- 代码优化了一些"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Survive the Supernova v1.0.0",
+      "date": "2022-04-26",
+      "body": "Initial release for the mod at v1.0.0.",
+      "zipUrl": "https://github.com/josshmot/OW-SurviveTheSupernova/releases/download/1.0.0/Joooosh.SurviveTheSupernova.zip",
+      "releaseUrl": "https://github.com/joshua-smith98/OW-SurviveTheSupernova/releases/tag/1.0.0",
+      "bodyZh": "模组在v1.0.0版本发布初始版本。"
+    }
+  ]
+}
