@@ -1,17 +1,1 @@
-[
-  {
-    "unique_name": "MillieRose.OWMixedInput",
-    "field": "name",
-    "en": "OWMixedInput"
-  },
-  {
-    "unique_name": "MillieRose.OWMixedInput",
-    "field": "description",
-    "en": "An input system rewrite for Outer Wilds."
-  },
-  {
-    "unique_name": "MillieRose.OWMixedInput",
-    "field": "latestReleaseDescription",
-    "en": "Initial release. Expect bugs."
-  }
-]
+[]
