@@ -7009,5 +7009,22 @@
       "zh": "强制星际拓荒使用独占全屏而非无边框全屏",
       "at": "2026-09-12T04:56:28.270861Z"
     }
+  },
+  "MillieRose.OWMixedInput": {
+    "name": {
+      "en": "OWMixedInput",
+      "zh": "OWMixedInput",
+      "at": "2026-09-15T07:24:52.020204Z"
+    },
+    "description": {
+      "en": "An input system rewrite for Outer Wilds.",
+      "zh": "为星际拓荒重写的输入系统。",
+      "at": "2026-09-15T07:24:52.020204Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Initial release. Expect bugs.",
+      "zh": "初始发布。请期待出现错误。",
+      "at": "2026-09-15T07:24:52.020204Z"
+    }
   }
 }
