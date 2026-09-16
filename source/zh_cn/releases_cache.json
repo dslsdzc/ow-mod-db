@@ -2256,8 +2256,17 @@
     ]
   },
   "Owen013.MovementMod": {
-    "repoUpdatedAt": "2026-09-15T21:34:32Z",
+    "repoUpdatedAt": "2026-09-16T17:42:14Z",
     "releases": [
+      {
+        "tag": "v1.7.0-pr2",
+        "name": "Sprinting Tweaks Prerelease 2",
+        "date": "2026-09-16",
+        "body": "**This is a prerelease.**\r\n### Changes\r\n- There is now a config option for whether or not vertical thrust is allowed while sprinting.\r\n- The player will now start sprinting if they are moving over the ground with the sprint button held. The player will stop sprinting if they stop moving over the ground, stop holding the sprint button (unless \"Hold to Sprint\" is disabled), or start boosting (unless \"Allow Vertical Thrust while Sprinting\" is enabled).",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.7.0-pr2/Owen013.MovementMod.zip",
+        "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.7.0-pr2"
+      },
       {
         "tag": "v1.7.0-pr1",
         "name": "Prerelease for Sprinting Tweaks",
@@ -2338,15 +2347,6 @@
         "bodyZh": "",
         "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.2-pr2/Owen013.MovementMod.zip",
         "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.2-pr2"
-      },
-      {
-        "tag": "v1.6.2-pr1",
-        "name": "v1.6.2 Prerelease 1",
-        "date": "2023-12-23",
-        "body": "**This is a prerelease.**\r\n\r\nAdds camera shaker compatibility, the option to set emergency boost volume, and probably some other stuff that I don't remember.",
-        "bodyZh": "",
-        "zipUrl": "https://github.com/Owen013/Hikers-Mod/releases/download/v1.6.2-pr1/Owen013.MovementMod.zip",
-        "releaseUrl": "https://github.com/Owen013/Hikers-Mod/releases/tag/v1.6.2-pr1"
       }
     ]
   },
