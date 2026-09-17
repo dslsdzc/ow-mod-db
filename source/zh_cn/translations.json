@@ -7026,5 +7026,22 @@
       "zh": "初始发布。请期待出现错误。",
       "at": "2026-09-15T07:24:52.020204Z"
     }
+  },
+  "Depthbomb.SmartAutopilot": {
+    "name": {
+      "en": "Smart Autopilot",
+      "zh": "智能自动驾驶",
+      "at": "2026-09-17T09:35:32.086762Z"
+    },
+    "description": {
+      "en": "Gives your ship's autopilot a little more sense. It can launch from suitable surfaces, plan routes around celestial bodies, and brake to match your destination's velocity. It also checks for nearby physical obstacles and can stop and wait when the way ahead is blocked.",
+      "zh": "给你的飞船自动驾驶增加一点智能。它可以从合适的表面起飞，规划绕过天体的航线，并制动以匹配目标的速度。它还会检查附近的物理障碍物，并在前方道路被阻挡时停止等待。",
+      "at": "2026-09-17T09:35:32.086762Z"
+    },
+    "latestReleaseDescription": {
+      "en": "- Initial release",
+      "zh": "- 初始发布",
+      "at": "2026-09-17T09:35:32.086762Z"
+    }
   }
 }
