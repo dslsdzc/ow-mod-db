@@ -1520,9 +1520,9 @@
     "at": "2026-09-02T21:37:45.304100Z"
   },
   "Hawkbar.GhostInTheMachine": {
-    "sha": "cb90016876836688602d58cc426fb8ecd5837125e27c5fcf373f8b8b49263aaa",
-    "zh": "# 机器中的幽灵\n\n![A logo spelling out Ghost in the Machine](banner.png)\n\n你遭遇了可怕的命运，不是吗？\n\n提交至 14 天 [Time Loop Mod Jam](https://outerwildsmods.com/jam/aug-2026/)！\n\n此模组假设您已完成当前存档文件中的本体游戏。在新存档文件中玩游戏的用户可能会发现探索比预期更困难。\n\n> [!WARNING]\n\n> 机器中的幽灵旨在独立游玩。如果启用了其他故事模组，请在游玩前禁用它们。\n\n> [!WARNING]\n\n> 允许您跳过死亡和闪回序列的模组，如 [General Enhancements](https://outerwildsmods.com/mods/generalenhancements/) 或 [Time Saver](https://outerwildsmods.com/mods/timesaver/)，如果使用它们来跳过，将导致模组失效。自行承担风险。\n\n支持 [Achievements+](https://outerwildsmods.com/mods/achievements/)！将此模组与它一起安装，以解锁找到彩蛋和完成可选挑战的成就。为了避免剧透，请在完成模组后再打开完整的成就列表。\n\n埃内斯托就在这附近某处，但你必须做出一个真正可怕的抉择才能遇到他。\n\n### 致谢\n\n- Hawkbar：编程、写作和设计\n\n- Insmoshable：艺术和设计\n\n特别感谢：\n\n- SanBaiMing：简体中文翻译",
-    "at": "2026-09-02T16:26:20.795504Z"
+    "sha": "bd1e84a6321aff4b1d4b79c1558136f36bb8b6443e9c1e6354e7c18f93cca421",
+    "zh": "# 机械中的幽灵\n\n![A logo spelling out Ghost in the Machine](banner.png)\n\n你遭遇了可怕的命运，不是吗？\n\n提交至 14 天 [Time Loop Mod Jam](https://outerwildsmods.com/jam/aug-2026/) 挑战！\n\n本模组假定你已完成当前存档文件中的本体游戏。在新存档文件中玩游戏的用户可能会发现探索难度高于预期。\n\n> [!WARNING]\n\n> 机械中的幽灵旨在独立游玩。如果启用了其他故事模组，请在游玩前禁用它们。\n\n> [!WARNING]\n\n> 允许你跳过死亡和闪回序列的模组，如 [General Enhancements](https://outerwildsmods.com/mods/generalenhancements/) 或 [Time Saver](https://outerwildsmods.com/mods/timesaver/)，如果在游戏中使用它们，将导致模组失效。自行承担风险。\n\n支持 [Achievements+](https://outerwildsmods.com/mods/achievements/)！将它与这个模组一起安装，以解锁寻找彩蛋和完成可选挑战的成就。为了避免剧透，请在完成模组后再打开完整的成就列表。\n\n埃内斯托就在这附近某处，但你必须做出一个真正可怕的抉择才能遇到他。\n\n### 致谢\n\n- Hawkbar：编程、写作和设计\n\n- Insmoshable：艺术和设计\n\n特别感谢：\n\n- SanBaiMing：简体中文翻译\n\n- HanSoloCh：俄语翻译",
+    "at": "2026-09-18T17:47:12.276802Z"
   },
   "Known-Mouse.EchoesOfTheObserver": {
     "sha": "6b23e6629a051540037a040410737ef97cb257b4b6538540265acdd67b47da39",

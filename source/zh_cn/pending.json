@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "unique_name": "Hawkbar.GhostInTheMachine",
+    "field": "latestReleaseDescription",
+    "en": "- Significantly reduced the size of dialogue triggers to prevent triggering them while mid-jump over black holes\r\n- Small tweaks to the Russian translation (Thanks HanSoloCh!)\r\n- one one one one"
+  }
+]

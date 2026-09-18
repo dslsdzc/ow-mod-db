@@ -6500,9 +6500,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "- Your ship now becomes entangled while at a certain location, making it easier to return to it\r\n- Added Russian translation (Thanks HanSoloCh!)\r\n- Small tweaks to the Chinese (Simplified) translation (Thanks SanBaiMing!)",
-      "zh": "- 你的飞船现在在特定位置时会陷入纠缠，使其更容易返回\n- 添加了俄语翻译（感谢HanSoloCh！)\n- 对简体中文翻译做了小调整（感谢SanBaiMing!)",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "- Significantly reduced the size of dialogue triggers to prevent triggering them while mid-jump over black holes\r\n- Small tweaks to the Russian translation (Thanks HanSoloCh!)\r\n- one one one one",
+      "zh": "- 对话触发器的大小进行了显著缩减，以防止在跨越黑洞时触发\n- 对俄语翻译进行了小调整（感谢HanSoloCh！）\n- 咔嚓咔嚓咔嚓",
+      "at": "2026-09-18T17:47:09.639188Z"
     }
   },
   "Known-Mouse.EchoesOfTheObserver": {
