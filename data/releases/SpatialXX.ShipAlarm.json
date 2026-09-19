@@ -1,0 +1,22 @@
+{
+  "repoUpdatedAt": "2025-05-03T15:38:22Z",
+  "releases": [
+    {
+      "tag": "v0.0.2",
+      "name": "Version 0.0.2",
+      "date": "2025-05-03",
+      "body": "Added new voices lines from subnautica when : \r\n\r\n-Boarding the ship \r\n\r\n-Taking off \r\n\r\n-Approaching certain celestial bodies \r\n\r\nAdded options to desactivate the new voices lines",
+      "zipUrl": "https://github.com/SpatialXX/ShipAlarm/releases/download/v0.0.2/SpatialXX.ShipAlarm.zip",
+      "releaseUrl": "https://github.com/SpatialXX/ShipAlarm/releases/tag/v0.0.2",
+      "bodyZh": "添加了来自《潜行者》的新语音片段，当：\r\n\r\n- 登船时 \r\n\r\n- 起飞时 \r\n\r\n- 接近某些天体时 \r\n\r\n添加了禁用新语音片段的选项"
+    },
+    {
+      "tag": "v0.0.1",
+      "name": "Version 0.0.1",
+      "date": "2025-03-24",
+      "body": "",
+      "zipUrl": "https://github.com/SpatialXX/ShipAlarm/releases/download/v0.0.1/SpatialXX.ShipAlarm.zip",
+      "releaseUrl": "https://github.com/SpatialXX/ShipAlarm/releases/tag/v0.0.1"
+    }
+  ]
+}

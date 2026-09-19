@@ -1,0 +1,74 @@
+{
+  "repoUpdatedAt": "2022-06-06T03:09:27Z",
+  "releases": [
+    {
+      "tag": "1.1.3",
+      "name": "1.1.3",
+      "date": "2021-11-30",
+      "body": "Correct release number in payload manifest",
+      "zipUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/download/1.1.3/tealhelix.EotE-RideMusic.zip",
+      "releaseUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/tag/1.1.3",
+      "bodyZh": "在有效载荷清单中正确设置发布编号"
+    },
+    {
+      "tag": "1.1.2",
+      "name": "1.1.2",
+      "date": "2021-11-30",
+      "body": "Twiddle light timings, and door light off by default. Very minor.",
+      "zipUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/download/1.1.2/tealhelix.EotE-RideMusic.zip",
+      "releaseUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/tag/1.1.2",
+      "bodyZh": "调整灯光时间，门灯默认关闭。非常微小。"
+    },
+    {
+      "tag": "1.1.1",
+      "name": "1.1.1",
+      "date": "2021-11-30",
+      "body": "Change mode from pause menu now working",
+      "zipUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/download/1.1.1/tealhelix.EotE-RideMusic.zip",
+      "releaseUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/tag/1.1.1",
+      "bodyZh": "从暂停菜单更改模式现已生效"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2021-11-30",
+      "body": "New End of Line mode with the Daft Punk club music from Tron: Legacy. And a light show.",
+      "zipUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/download/1.1.0/tealhelix.EotE-RideMusic.zip",
+      "releaseUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/tag/1.1.0",
+      "bodyZh": "新增行尾模式，搭配《极速赛车计划》中的达夫·普克俱乐部音乐，并附带灯光秀。"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2021-11-29",
+      "body": "Cleaned up.\r\n\r\nNote: 0.1.1 had the wrong track packaged with it so wouldn't play anything unless config.json was edited to use that track's name.",
+      "zipUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/download/1.0.0/tealhelix.EotE-RideMusic.zip",
+      "releaseUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/tag/1.0.0",
+      "bodyZh": "清理完毕。\r\n\r\n注意：0.1.1版本包含了错误的音轨，因此除非将config.json编辑为使用该音轨的名称，否则无法播放任何内容。"
+    },
+    {
+      "tag": "0.2.1",
+      "name": "Echoes of the Caribbean 0.2.1",
+      "date": "2021-11-27",
+      "body": "",
+      "zipUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/download/0.2.1/tealhelix.EotE-RideMusic.zip",
+      "releaseUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/tag/0.2.1"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "Echoes of the Caribbean 0.2.0",
+      "date": "2021-11-27",
+      "body": "Stop music at the second appropriate time also.",
+      "zipUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/download/0.2.0/tealhelix.EotE-RideMusic.zip",
+      "releaseUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "Echoes of the Caribbean 0.1.1",
+      "date": "2021-11-19",
+      "body": "Changed name to something more piratey.",
+      "zipUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/download/0.1.1/tealhelix.EotE-RideMusic.zip",
+      "releaseUrl": "https://github.com/tealhelix/ow-mod-eote-ridemusic/releases/tag/0.1.1"
+    }
+  ]
+}

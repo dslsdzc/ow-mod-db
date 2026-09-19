@@ -1,0 +1,31 @@
+{
+  "repoUpdatedAt": "2026-01-13T22:10:09Z",
+  "releases": [
+    {
+      "tag": "v0.2.4",
+      "name": "Version 0.2.4",
+      "date": "2026-01-13",
+      "body": "Added more death messages.",
+      "zipUrl": "https://github.com/deadend-g4mes/OuterCraftDeathMessages/releases/download/v0.2.4/RattmanTheStupid.OuterCraftDeathMessages.zip",
+      "releaseUrl": "https://github.com/deadend-g4mes/OuterCraftDeathMessages/releases/tag/v0.2.4",
+      "bodyZh": "增加了更多死亡信息。"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2026-01-12",
+      "body": "Text now displays on screen instead of in the OWML log.",
+      "zipUrl": "https://github.com/deadend-g4mes/OuterCraftDeathMessages/releases/download/v0.2.0/RattmanTheStupid.OuterCraftDeathMessages.zip",
+      "releaseUrl": "https://github.com/deadend-g4mes/OuterCraftDeathMessages/releases/tag/v0.2.0",
+      "bodyZh": "文本现在显示在屏幕上，而不是在OWML日志中。"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-01-09",
+      "body": "",
+      "zipUrl": "https://github.com/deadend-g4mes/OuterCraftDeathMessages/releases/download/v0.1.0/RattmanTheStupid.OuterCraftDeathMessages.zip",
+      "releaseUrl": "https://github.com/deadend-g4mes/OuterCraftDeathMessages/releases/tag/v0.1.0"
+    }
+  ]
+}

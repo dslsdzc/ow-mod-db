@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2022-04-16T15:48:32Z",
+  "releases": [
+    {
+      "tag": "v1.3.1",
+      "name": "1.3.1",
+      "date": "2022-04-16",
+      "body": "- Re-uploading mod\r\nView versions before 1.3.1: https://github.com/Tandicase/interstellargargantua/releases",
+      "zipUrl": "https://github.com/Tllya/interstellargargantua/releases/download/v1.3.1/release.zip",
+      "releaseUrl": "https://github.com/Tllya/interstellargargantua/releases/tag/v1.3.1"
+    }
+  ]
+}

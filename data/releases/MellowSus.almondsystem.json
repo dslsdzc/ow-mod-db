@@ -1,0 +1,53 @@
+{
+  "repoUpdatedAt": "2022-05-11T14:10:14Z",
+  "releases": [
+    {
+      "tag": "v0.1.5",
+      "name": "v0.1.5",
+      "date": "2022-05-11",
+      "body": "I forgor to update manifest version",
+      "zipUrl": "https://github.com/Zincinder/almondsystem/releases/download/v0.1.5/almondsystem.zip",
+      "releaseUrl": "https://github.com/MellowSus/almondsystem/releases/tag/v0.1.5"
+    },
+    {
+      "tag": "v0.1.4",
+      "name": "v0.1.4",
+      "date": "2022-05-11",
+      "body": "I lied",
+      "zipUrl": "https://github.com/Zincinder/almondsystem/releases/download/v0.1.4/almondsystem.zip",
+      "releaseUrl": "https://github.com/MellowSus/almondsystem/releases/tag/v0.1.4"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "v0.1.3",
+      "date": "2022-05-09",
+      "body": "Almond System's Orbit was made too close to the Hearthian System.\r\nLast update. I swear.",
+      "zipUrl": "https://github.com/Zincinder/almondsystem/releases/download/v0.1.3/almondsystem.zip",
+      "releaseUrl": "https://github.com/MellowSus/almondsystem/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2022-05-09",
+      "body": "I definitely know how to use GitHub",
+      "zipUrl": "https://github.com/Zincinder/almondsystem/releases/download/v0.1.2/almondsystem.zip",
+      "releaseUrl": "https://github.com/MellowSus/almondsystem/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-05-09",
+      "body": "Fixed issue of the new star system being defined as the center",
+      "zipUrl": "https://github.com/Zincinder/almondsystem/releases/download/v0.1.1/almondsystem.zip",
+      "releaseUrl": "https://github.com/MellowSus/almondsystem/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-04-12",
+      "body": "",
+      "zipUrl": "https://github.com/Zincinder/almondsystem/releases/download/v0.1.0/almondsystem.zip",
+      "releaseUrl": "https://github.com/MellowSus/almondsystem/releases/tag/v0.1.0"
+    }
+  ]
+}

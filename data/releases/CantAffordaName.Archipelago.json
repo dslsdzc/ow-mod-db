@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-09-18T22:56:25Z",
+  "releases": [
+    {
+      "tag": "v1.0.0-FixedRelease",
+      "name": "Archipelago v1.0.0-FixedRelease",
+      "date": "2023-01-23",
+      "body": "Not cheating, just screwed up the release process. Attached mod .zip",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.Archipelago/releases/download/v1.0.0-FixedRelease/CantAffordaName.Archipelago.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.Archipelago/releases/tag/v1.0.0-FixedRelease",
+      "bodyZh": "并非作弊，只是发布流程出了问题。附上模组 .zip 文件"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Archipelago v1.0.0",
+      "date": "2023-01-23",
+      "body": "First release for the New Horizon's modding jam.",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.Archipelago/releases/tag/v1.0.0",
+      "bodyZh": "新地平线的模组开发活动首次发布。"
+    }
+  ]
+}

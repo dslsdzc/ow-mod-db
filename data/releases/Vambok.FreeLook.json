@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2025-06-21T00:02:26Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-06-21",
+      "body": "First _and probably last_ release!",
+      "zipUrl": "https://github.com/Vambok/FreeLook/releases/download/v1.0.0/Vambok.FreeLook.zip",
+      "releaseUrl": "https://github.com/Vambok/FreeLook/releases/tag/v1.0.0",
+      "bodyZh": "首个发布！或许也是最后一次发布！"
+    }
+  ]
+}

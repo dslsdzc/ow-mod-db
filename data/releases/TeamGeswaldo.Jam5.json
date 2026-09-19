@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2026-08-20T20:45:19Z",
+  "releases": [
+    {
+      "tag": "9.0",
+      "name": "Powerfail",
+      "date": "2026-02-01",
+      "body": "my work is (probably) finished\r\nno this isn't the revamp this is the old powerfail that i completely wiped for some unbelievable reason\r\nmaybe a remake most likely not but in the meantime enjoyn't this amazing beautiful mod that i despise and everyone else loves\r\n\r\nkill me now\r\n- Solec",
+      "zipUrl": "https://github.com/SolecAnimations/Powerfail/releases/download/9.0/TeamGeswaldo.Jam5.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Powerfail/releases/tag/9.0",
+      "bodyZh": "我的工作（可能）完成了\n不，这不是翻新，这是那个我完全删除了的旧电力故障，出于某种难以置信的原因\n也许会重制，但最可能不会，但在此期间享受这个我鄙视而每个人都很喜欢的惊人美丽的模组吧\n\n杀了我吧\n- Solec"
+    },
+    {
+      "tag": "4.0",
+      "name": "Powerfail 4.0????",
+      "date": "2026-01-02",
+      "body": "mic check mic check\r\nthe uh version didn't version so i need to make a new version so it versions",
+      "zipUrl": "https://github.com/SolecAnimations/Powerfail/releases/download/4.0/TeamGeswaldo.Jam5Mod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Powerfail/releases/tag/4.0",
+      "bodyZh": "麦克风检查 麦克风检查\n那个呃版本没版本 所以我需要做一个新版本让它版本"
+    },
+    {
+      "tag": "3.0",
+      "name": "Powerfail 3.0",
+      "date": "2025-12-21",
+      "body": "killed story (it was horrid)",
+      "zipUrl": "https://github.com/SolecAnimations/Powerfail/releases/download/3.0/TeamGeswaldo.Jam5Mod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Powerfail/releases/tag/3.0",
+      "bodyZh": "击杀故事（这太可怕了）"
+    },
+    {
+      "tag": "2.x",
+      "name": "Powerfail 2.x",
+      "date": "2025-12-21",
+      "body": "added the story back (all the writing might be redone and it might not)",
+      "zipUrl": "https://github.com/SolecAnimations/Powerfail/releases/download/2.x/TeamGeswaldo.Jam5Mod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Powerfail/releases/tag/2.x",
+      "bodyZh": "恢复了故事（所有的文字可能会被重做，也可能不会）"
+    }
+  ]
+}

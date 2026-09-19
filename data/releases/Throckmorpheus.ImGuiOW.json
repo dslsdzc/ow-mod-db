@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-04-09T18:23:03Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2025-04-09",
+      "body": "Fix ImGui accidentally rendering on the far layer even when a main camera exists because I'm stupid and didn't check that it was working properly after refactoring",
+      "zipUrl": "https://github.com/throckmorpheus/ImguiOW/releases/download/v0.1.1/Throckmorpheus.ImGuiOW.zip",
+      "releaseUrl": "https://github.com/throckmorpheus/ImguiOW/releases/tag/v0.1.1",
+      "bodyZh": "修复ImGui即使在存在主相机的情况下也意外渲染在最远层的问题，因为我愚蠢没有在重构后检查它是否正常工作"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-04-09",
+      "body": "Initial release",
+      "zipUrl": "https://github.com/throckmorpheus/ImguiOW/releases/download/v0.1.0/Throckmorpheus.ImGuiOW.zip",
+      "releaseUrl": "https://github.com/throckmorpheus/ImguiOW/releases/tag/v0.1.0",
+      "bodyZh": "初始发布"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2022-04-25T18:16:20Z",
+  "releases": [
+    {
+      "tag": "v0.0.71",
+      "name": "Now with added shiplog entries. And a Russian translation. Attempt number 2.",
+      "date": "2022-04-25",
+      "body": "I am good at github.",
+      "zipUrl": "https://github.com/CreativeNameTxt/their-home-world/releases/download/v0.0.71/CreativeNameTxt.theirhomeworld.zip",
+      "releaseUrl": "https://github.com/CreativeNameTxt/their-home-world/releases/tag/v0.0.71"
+    },
+    {
+      "tag": "v0.0.70",
+      "name": "Now with added shiplog entries. And a Russian translation.",
+      "date": "2022-04-25",
+      "body": "This version adds Russian translation.",
+      "zipUrl": "https://github.com/CreativeNameTxt/their-home-world/releases/download/v0.0.70/CreativeNameTxt.theirhomeworld.zip",
+      "releaseUrl": "https://github.com/CreativeNameTxt/their-home-world/releases/tag/v0.0.70"
+    },
+    {
+      "tag": "v0.0.69",
+      "name": "Now with added shiplog entries. Attempt number 2.",
+      "date": "2022-04-25",
+      "body": "Why is GitHub so difficult.",
+      "zipUrl": "https://github.com/CreativeNameTxt/their-home-world/releases/download/v0.0.69/CreativeNameTxt.theirhomeworld.zip",
+      "releaseUrl": "https://github.com/CreativeNameTxt/their-home-world/releases/tag/v0.0.69"
+    }
+  ]
+}

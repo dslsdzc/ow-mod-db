@@ -1,0 +1,74 @@
+{
+  "repoUpdatedAt": "2025-03-02T16:34:18Z",
+  "releases": [
+    {
+      "tag": "v0.2.5",
+      "name": "Version 0.2.5",
+      "date": "2025-03-02",
+      "body": "- Remove old Menu Framework dependency in favor of new thing in OWML (thanks nebula). I haven't tested this but it probably works!",
+      "zipUrl": "https://github.com/Raicuparta/outer-wives/releases/download/v0.2.5/Raicuparta.OuterWives.zip",
+      "releaseUrl": "https://github.com/Raicuparta/outer-wives/releases/tag/v0.2.5",
+      "bodyZh": "- 移除旧的菜单框架依赖，改为使用OWML中的新东西（感谢nebula）。我还没测试过，但应该可以正常工作！"
+    },
+    {
+      "tag": "v0.2.4",
+      "name": "Version 0.2.4",
+      "date": "2023-08-04",
+      "body": "Prevent idiot dumb wives from accepting every stone without checking if it's the one they wanted",
+      "zipUrl": "https://github.com/Raicuparta/outer-wives/releases/download/v0.2.4/Raicuparta.OuterWives.zip",
+      "releaseUrl": "https://github.com/Raicuparta/outer-wives/releases/tag/v0.2.4",
+      "bodyZh": "阻止愚蠢的妻子们不经检查就接受每一块石头"
+    },
+    {
+      "tag": "v0.2.3",
+      "name": "Version 0.2.3",
+      "date": "2023-08-03",
+      "body": "Fix compatibility with NomaiVR, by allowing the player to unequip the probe launcher while keeping a reference to the people photographed (even though the picture itself was discarded). Only happens if NomaiVR is enabled.",
+      "zipUrl": "https://github.com/Raicuparta/outer-wives/releases/download/v0.2.3/Raicuparta.OuterWives.zip",
+      "releaseUrl": "https://github.com/Raicuparta/outer-wives/releases/tag/v0.2.3",
+      "bodyZh": "修复与NomaiVR的兼容性问题，允许玩家在保留对拍摄人物（即使照片本身已被丢弃）的引用的情况下卸下探测器发射器。仅当NomaiVR启用时才会发生。"
+    },
+    {
+      "tag": "v0.2.2",
+      "name": "Version 0.2.2",
+      "date": "2023-08-01",
+      "body": "Make Hornfels give you the codes without saying anything because you're so rude",
+      "zipUrl": "https://github.com/Raicuparta/outer-wives/releases/download/v0.2.2/Raicuparta.OuterWives.zip",
+      "releaseUrl": "https://github.com/Raicuparta/outer-wives/releases/tag/v0.2.2",
+      "bodyZh": "让霍恩费斯(霍恩费斯)不说话就给你代码，因为你太粗鲁了"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "Version 0.2.1",
+      "date": "2023-08-01",
+      "body": "Fix marrying Self",
+      "zipUrl": "https://github.com/Raicuparta/outer-wives/releases/download/v0.2.1/Raicuparta.OuterWives.zip",
+      "releaseUrl": "https://github.com/Raicuparta/outer-wives/releases/tag/v0.2.1",
+      "bodyZh": "修复与自身结婚"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2023-07-31",
+      "body": "- Allow using the probe to take pictures of outside QM while player is inside QM.\r\n- Make solanum always want a picture of Esker (didn't really have to be Esker specifically but it's one of the easier ones).\r\n- Probably still hard to marry Solanum without cheating, but at least it should be possible now?",
+      "zipUrl": "https://github.com/Raicuparta/outer-wives/releases/download/v0.2.0/Raicuparta.OuterWives.zip",
+      "releaseUrl": "https://github.com/Raicuparta/outer-wives/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2023-07-31",
+      "body": "Text adjustments",
+      "zipUrl": "https://github.com/Raicuparta/outer-wives/releases/download/v0.1.1/Raicuparta.OuterWives.zip",
+      "releaseUrl": "https://github.com/Raicuparta/outer-wives/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-07-30",
+      "body": "",
+      "zipUrl": "https://github.com/Raicuparta/outer-wives/releases/download/v0.1.0/Raicuparta.OuterWives.zip",
+      "releaseUrl": "https://github.com/Raicuparta/outer-wives/releases/tag/v0.1.0"
+    }
+  ]
+}

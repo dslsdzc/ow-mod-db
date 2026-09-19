@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-02-25T13:27:26Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-04-01",
+      "body": "- Fixes a bug on the title screen which caused the game's logo to be displayed incorrectly.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-cursed-title/releases/download/v1.0.0/xen.CursedTitle.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-cursed-title/releases/tag/v1.0.0",
+      "bodyZh": "- 修复了标题屏幕上的一个错误，导致游戏标志显示不正确。"
+    }
+  ]
+}

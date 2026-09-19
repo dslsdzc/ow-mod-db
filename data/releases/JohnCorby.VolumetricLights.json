@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-12-28T15:21:16Z",
+  "releases": [
+    {
+      "tag": "0.1.1",
+      "name": "0.1.1",
+      "date": "2023-01-18",
+      "body": "Hopefully fix VR by just disabling volumetric shadows if you are running on VR",
+      "zipUrl": "https://github.com/JohnCorby/ow-volumetric-lights/releases/download/0.1.1/JohnCorby.VolumetricLights.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-volumetric-lights/releases/tag/0.1.1",
+      "bodyZh": "希望通过禁用体积阴影来修复VR问题，如果你正在使用VR。"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "0.1.0",
+      "date": "2023-01-15",
+      "body": "You will perish",
+      "zipUrl": "https://github.com/JohnCorby/ow-volumetric-lights/releases/download/0.1.0/JohnCorby.VolumetricLights.zip",
+      "releaseUrl": "https://github.com/JohnCorby/ow-volumetric-lights/releases/tag/0.1.0",
+      "bodyZh": "你会灭亡"
+    }
+  ]
+}

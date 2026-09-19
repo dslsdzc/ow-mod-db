@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-05-31T03:23:00Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-05-31",
+      "body": "Fixed manifest",
+      "zipUrl": "https://github.com/pikpik-carrot/Portal2Skins/releases/download/v1.0.1/pikpik_carrot.Portal2Skinpack.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/Portal2Skins/releases/tag/v1.0.1",
+      "bodyZh": "已修复清单文件"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-05-31",
+      "body": "Adds 3 Portal 2 skins",
+      "zipUrl": "https://github.com/pikpik-carrot/Portal2Skins/releases/download/v1.0.0/pikpik_carrot.Portal2Skinpack.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/Portal2Skins/releases/tag/v1.0.0",
+      "bodyZh": "添加了3个《传送门2》皮肤"
+    }
+  ]
+}

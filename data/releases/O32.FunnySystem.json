@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2023-01-30T06:05:15Z",
+  "releases": [
+    {
+      "tag": "1.8.0",
+      "name": "1.8.0",
+      "date": "2023-01-28",
+      "body": "The BIGGEST update Funny System will ever receive!\r\n\r\n**Major:**\r\n- Switched around the center system\r\n- Completely revamped the story, which is now 436% less boring!\r\n- Nomai recorders have voices (with Voice Mod)\r\n\r\n**Minor:**\r\n- New location that isn't a planet\r\n- Overhaul of one planet\r\n- Black's rings are more orange\r\n- PLANET NAME is no longer a secret, and in fact, I encourage you to find it.",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.8.0/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.8.0",
+      "bodyZh": "最大的更新！Funny System 将会收到有史以来最重大的更新！\r\n\r\n**主要更新：**\r\n- 中心系统调整\r\n- 故事完全革新，现在无聊度降低了436%！\r\n- 挪麦记录仪有声音（需要配合 Voice Mod 使用）\r\n\r\n**次要更新：**\r\n- 新的位置，不是行星\r\n- 一个行星的全面改造\r\n- Black 的环系更偏橙色\r\n- 行星名称不再是秘密，事实上，我鼓励你去寻找它。"
+    },
+    {
+      "tag": "1.7.0",
+      "name": "1.7.0",
+      "date": "2023-01-22",
+      "body": "**A LONG AWAITED QOL UPDATE!**\r\n- Planets are closer together, unnecessary planets removed. 🛒\r\n- Colored orbit lines 🎨",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.7.0/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.7.0",
+      "bodyZh": "**一个期待已久的QOL更新！**\n- 行星间距更近，移除了不必要的行星。 🛒\n- 彩色轨道线 🎨"
+    },
+    {
+      "tag": "1.6.0",
+      "name": "1.6.0",
+      "date": "2023-01-13",
+      "body": "**quality assurance update**\r\n- Planets with \"clouds\" have higher res textures\r\n- Story mode uses rumors to decrease chance of player confusion\r\n- Ending fixes\r\n- Something secret, to be revealed in a week...",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.6.0/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.6.0",
+      "bodyZh": "**质量保证更新**\n- 带有“云”的行星拥有更高分辨率的纹理\n- 故事模式使用传闻来降低玩家混淆的概率\n- 结局修复\n- 某些秘密，将在一周内揭晓..."
+    },
+    {
+      "tag": "1.5.1",
+      "name": "1.5.1",
+      "date": "2022-12-26",
+      "body": "fixed the white hole (ayo?) not triggering TWO shiplogs, TWO. DAMN. SHIPLOGS.\r\nAaAAAaaaAaAaaAaAA...and a happy new year",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.5.1/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.5.1",
+      "bodyZh": "修复了白洞（ayo？）未触发两个船志，两个。该死的。船志。\nAaAAAaaaAaAaaAaAA...以及新年快乐"
+    },
+    {
+      "tag": "1.5.0",
+      "name": "1.5.0",
+      "date": "2022-12-25",
+      "body": "another shitty compatibility update for Funny Christmas because Funny System isn't fucking compatible with Funny Christmas\r\n\r\nMerry Christmas and a happy new year, hope you get a gf or something",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.5.0/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.5.0",
+      "bodyZh": "又一个糟糕的兼容性更新，用于Funny Christmas，因为Funny System根本不兼容Funny Christmas\n\n圣诞快乐，新年快乐，希望你能找到女朋友或其他什么"
+    },
+    {
+      "tag": "1.4.1",
+      "name": "1.4.1",
+      "date": "2022-12-05",
+      "body": "- Shiplog entries have pictures (finally!)\r\n- Shiplog in mapmode is colored (finally!)\r\n- Dhar and Rico's storyline entries are seperated from their normal entries",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.4.1/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.4.1"
+    },
+    {
+      "tag": "1.4.0",
+      "name": "1.4.0",
+      "date": "2022-12-03",
+      "body": "- removed the christmas preview planet\r\n- modified the shiplog slightly\r\n\r\n*\"see you on christmas!!!!!!!!!!!!!!!!!!\"*\r\n*- orbital 32 (aka cigtu)*",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.4.0/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.4.0"
+    },
+    {
+      "tag": "1.3.7.15.15.6.25.1.8.8",
+      "name": "1.3.7.15.15.6.25.1.8.8",
+      "date": "2022-11-08",
+      "body": "fixed manifest smh",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.3.7.15.15.6.25.1.8.8/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.3.7.15.15.6.25.1.8.8"
+    },
+    {
+      "tag": "1.3.GOOFYAHH",
+      "name": "1.3.GOOFYAHH",
+      "date": "2022-11-08",
+      "body": "- added a planet to the TT Twins\r\n- added something to the north/red pole of that said planet ;)",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.3.GOOFYAHH/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.3.GOOFYAHH"
+    },
+    {
+      "tag": "1.3.2",
+      "name": "1.3.2",
+      "date": "2022-10-29",
+      "body": "- Gave \"Wher\", \"Vida\", and a funny special planet some nice thick and juicy white clouds 🌥",
+      "zipUrl": "https://github.com/RealOrbital32/funny-system/releases/download/1.3.2/O32.FunnySystem.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-system/releases/tag/1.3.2"
+    }
+  ]
+}

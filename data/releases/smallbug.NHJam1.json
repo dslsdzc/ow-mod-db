@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2024-03-18T08:40:04Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2023-01-23",
+      "body": "",
+      "zipUrl": "https://github.com/Leopard501/NHJam1/releases/download/v1.0.1/NHJam1.zip",
+      "releaseUrl": "https://github.com/Leopard501/NHJam1/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2023-01-23",
+      "body": "Initial release",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/Leopard501/NHJam1/releases/tag/v1.0.0"
+    }
+  ]
+}

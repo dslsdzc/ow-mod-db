@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-05-05T21:48:14Z",
+  "releases": [
+    {
+      "tag": "v2.1.0",
+      "name": "Version 2.1.0",
+      "date": "2024-09-30",
+      "body": "- Added API\r\n- Fixed camera and colliders",
+      "zipUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/download/v2.1.0/pikpik_carrot.SkinChanger.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/tag/v2.1.0",
+      "bodyZh": "- 添加了API\n- 修复了相机和碰撞体"
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "Version 2.0.0",
+      "date": "2024-09-15",
+      "body": "- Added QSB compat (adapted from QSB Skins)\r\n- Added Common Camera Utility compat\r\n\r\nUpdate made by xen",
+      "zipUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/download/v2.0.0/pikpik_carrot.SkinChanger.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/tag/v2.0.0",
+      "bodyZh": "- 添加了QSB兼容性（源自QSB皮肤）\n- 添加了通用相机工具兼容性\n\n由xen制作的更新"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2024-09-14",
+      "body": "Removed NH and cleaned up code",
+      "zipUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/download/v1.1.0/pikpik_carrot.SkinChanger.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/tag/v1.1.0",
+      "bodyZh": "移除了NH并清理了代码"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-09-14",
+      "body": "First version of the mod. You can play as 25 characters in total.",
+      "zipUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/download/v1.0.0/pikpik_carrot.SkinChanger.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/tag/v1.0.0",
+      "bodyZh": "模组首个版本。你可以扮演总共25个角色。"
+    }
+  ]
+}

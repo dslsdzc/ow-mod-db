@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-04-25T06:51:02Z",
+  "releases": [
+    {
+      "tag": "v0.3.6",
+      "name": "v0.3.6",
+      "date": "2023-05-01",
+      "body": "It now automatically saves your placed blocks when you die, and automatically loads that save when you wake up. This can be disabled in the mod settings.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.3.6/12090113.Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.3.6",
+      "bodyZh": "现在，当你死亡时，它会自动保存你放置的方块，并在你醒来时自动加载该存档。这可以在模组设置中禁用。"
+    },
+    {
+      "tag": "v0.3.6-pre",
+      "name": "v0.3.6-pre",
+      "date": "2023-04-24",
+      "body": "QSB compatibility! QSB compatibility will eventually become a separate QSB addon, but is just a pre-release for now. As far as I can tell, everything is synced right now except if you join after someone has already placed blocks, then those blocks won't show up for you. This will eventually be fixed in the future dedicated compatibility mod.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.3.6-pre/12090113.Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.3.6-pre",
+      "bodyZh": "QSB 兼容性！QSB 兼容性最终将成为一个独立的 QSB 插件，但目前只是一个预发布版本。据我所知，目前一切同步正常，除非你在有人已经放置了方块后加入，那么那些方块将不会显示给你。这个问题最终将在未来的专用兼容性模组中得到修复。"
+    },
+    {
+      "tag": "v0.3.5",
+      "name": "v0.3.5",
+      "date": "2023-04-23",
+      "body": "Actual performance improvement now probably I think?",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.3.5/Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.3.5",
+      "bodyZh": "实际性能提升现在可能我认为？"
+    },
+    {
+      "tag": "v0.3.4",
+      "name": "v0.3.4",
+      "date": "2023-04-23",
+      "body": "Fixes:\r\n- Iron block now looks as cool as it should (normal map and smoothness/metallic map on the same block work now)\r\n- More Corby performance magic",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.3.4/Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.3.4",
+      "bodyZh": "修复：\n- 铁块现在看起来酷炫（同一块上正常贴图和光滑/金属贴图现在可以正常工作）\n- 更多科比性能魔法"
+    },
+    {
+      "tag": "v0.3.3",
+      "name": "v0.3.3",
+      "date": "2023-04-23",
+      "body": "Graphics overhaul! New normal maps and specular maps make your blocks look fancy (ish).\r\nFixes:\r\n- Actually updated the manifest this time for real now (I think)\r\n- New save format prevents all your blocks from getting mixed up when you add/remove custom blocks (your existing save should be automatically upgraded)",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.3.3/Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.3.3",
+      "bodyZh": "图形重制！新的法线贴图和高光贴图让你的方块看起来更炫（大概）。\r\n\r\n修复：\r\n- 真正更新了清单（我认为这次是真的）\r\n- 新的存档格式防止你在添加/移除自定义方块时方块混乱（你的现有存档将自动升级）"
+    },
+    {
+      "tag": "v0.3.2",
+      "name": "v0.3.2",
+      "date": "2023-04-23",
+      "body": "Switched to cutout rendering because JohnCorby says it gives me all the frames.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.3.2/Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.3.2"
+    },
+    {
+      "tag": "v0.3.1",
+      "name": "v0.3.1",
+      "date": "2023-04-23",
+      "body": "Actually updated manifest this time.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.3.1/Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.3.1"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "v0.3.0",
+      "date": "2023-04-22",
+      "body": "You can now save and load the blocks you have placed, allowing you to keep building stuff on the thing you made in the last loop, by pressing O to save and P to load. There's probably a better way to do that than key presses, but it works. No saving/loading in NomaiVR currently (unless you use the keyboard pre-release obviously).\r\nYou can probably share your save file with other people, but it might not work if they got the game from a different vendor than you, IDK. (Objects are stored as the scene hierarchy string, which I think is different for some objects maybe.)\r\nThere's also glass blocks now, because transparent textures are now supported.\r\nFixes:\r\n- Fixed regression from v0.2.0 preventing you from placing blocks where a block had been destroyed (oops)\r\n- Custom blocks you add will no longer be deleted when the mod updates",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.3.0/Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2023-04-21",
+      "body": "Added UI. When you switch blocks, you will see what block you have switched to in your suit HUD (if you have your helmet on).\r\nFixes:\r\n\r\n- fixed blocks being placed while in menus (#2)\r\n- prevented being able to place multiple blocks in the same position",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.2.0/Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-07-17",
+      "body": "Disabled mipmap generation for block textures to prevent them from looking really low resolution when texture quality isn't set to full.",
+      "zipUrl": "https://github.com/12090113/outer-wilds-cubes/releases/download/v0.1.1/Cubes.zip",
+      "releaseUrl": "https://github.com/12090113/outer-wilds-cubes/releases/tag/v0.1.1"
+    }
+  ]
+}
