@@ -7211,13 +7211,14 @@
     ]
   },
   "FunkyShoeMan.ErnestoTakeover": {
-    "repoUpdatedAt": "2023-10-08T23:40:32Z",
+    "repoUpdatedAt": "2026-09-19T14:32:45Z",
     "releases": [
       {
         "tag": "1.0.1",
         "name": "1.0.1",
         "date": "2022-11-03",
         "body": "i have somehow had 3 seprate veirsons in 1 go i have no idea how i'm messing up this horiblby",
+        "bodyZh": "",
         "zipUrl": "https://github.com/FunkyShoeMan/Ernesto-Takeover/releases/download/1.0.1/Ernesto-Takeover-main.zip",
         "releaseUrl": "https://github.com/FunkyShoeMan/Ernesto-Takeover/releases/tag/1.0.1"
       },
@@ -7226,6 +7227,7 @@
         "name": "1.0.0",
         "date": "2022-11-03",
         "body": "Ernesto has been empowered by all his NH addons, he has escape Dark bramble",
+        "bodyZh": "",
         "zipUrl": "https://github.com/FunkyShoeMan/Ernesto-Takeover/releases/download/Release/FunkyShoeMan.ErnestoTakeover.zip",
         "releaseUrl": "https://github.com/FunkyShoeMan/Ernesto-Takeover/releases/tag/Release"
       }
@@ -8477,13 +8479,14 @@
     ]
   },
   "2walker2.Evacuation": {
-    "repoUpdatedAt": "2024-03-16T12:25:25Z",
+    "repoUpdatedAt": "2026-09-19T14:31:23Z",
     "releases": [
       {
         "tag": "v2.1.2",
         "name": "Version 2.1.2",
         "date": "2023-07-31",
         "body": "",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/v2.1.2/2walker2.Evacuation.zip",
         "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/v2.1.2"
       },
@@ -8492,6 +8495,7 @@
         "name": "Version 2.1.0",
         "date": "2023-07-26",
         "body": "",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/v2.1.0/2walker2.Evacuation.zip",
         "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/v2.1.0"
       },
@@ -8500,6 +8504,7 @@
         "name": "Okay that works now I think",
         "date": "2023-05-07",
         "body": "",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/2.0.2/planets.zip",
         "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/2.0.2"
       },
@@ -8508,18 +8513,18 @@
         "name": "NEW UPDATE YEAH ITS SO AWESOME",
         "date": "2023-05-07",
         "body": "coolio",
+        "bodyZh": "酷毙了",
         "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/2.0.0/RAHHHHHH.zip",
-        "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/2.0.0",
-        "bodyZh": "酷毙了"
+        "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/2.0.0"
       },
       {
         "tag": "1.0.0",
         "name": "Jam Submission",
         "date": "2023-01-23",
         "body": "The final submission for the jam (probably).",
+        "bodyZh": "本次活动的最终提交（大概吧）。",
         "zipUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/download/1.0.0/Evacuation.Jam.Submission.zip",
-        "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/1.0.0",
-        "bodyZh": "本次活动的最终提交（大概吧）。"
+        "releaseUrl": "https://github.com/2walker2/NHJamTeamErnesto/releases/tag/1.0.0"
       }
     ]
   },
@@ -12207,13 +12212,14 @@
     ]
   },
   "Etherpod.ErnestoChase": {
-    "repoUpdatedAt": "2026-07-22T19:10:59Z",
+    "repoUpdatedAt": "2026-09-19T14:31:49Z",
     "releases": [
       {
         "tag": "v1.1.0",
         "name": "Release v1.1.0",
         "date": "2025-02-06",
         "body": "- Added an option to make Ernesto quantum\r\n- Added an option to remove the end screen and reset the loop like normal\r\n- Fixed a bug where Ernesto would become your new lifelong companion after catching you while playing with Escape the Dreamstalker",
+        "bodyZh": "",
         "zipUrl": "https://github.com/Etherpod/Ernesto-Chase/releases/download/v1.1.0/Etherpod.ErnestoChase.zip",
         "releaseUrl": "https://github.com/Etherpod/Ernesto-Chase/releases/tag/v1.1.0"
       },
@@ -12222,6 +12228,7 @@
         "name": "v1.0.0",
         "date": "2024-08-24",
         "body": "",
+        "bodyZh": "",
         "zipUrl": "https://github.com/Etherpod/Ernesto-Chase/releases/download/v1.0.0/Etherpod.ErnestoChase.zip",
         "releaseUrl": "https://github.com/Etherpod/Ernesto-Chase/releases/tag/v1.0.0"
       }
