@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "unique_name": "Owen013.MovementMod",
+    "field": "latestReleaseDescription",
+    "en": "### Changes\r\n- Sprinting can now be mapped to any key/button on the keyboard/gamepad via the config menu.\r\n- Added a config option to automatically maintain sprinting, without having to hold the sprint button.\r\n- Added a config option to allow vertical thrust and sprinting to be used simultaneously.\r\n- Tweaked sprinting behavior: you will now start sprinting if you are moving over the ground with the sprint button held. You will stop sprinting if you stop moving over the ground, stop holding the sprint button (unless \"Hold to Sprint\" is disabled), or start boosting (unless \"Allow Vertical Thrust while Sprinting\" is enabled).\r\n- Added a config option to toggle whether or not ghosts speed up while you are sprinting.\r\n- If the \"Speed Up Ghosts while Sprinting\" option is enabled, ghosts will now also turn faster while you are sprinting."
+  },
+  {
+    "unique_name": "MDJ287.RearViewMod",
+    "field": "description",
+    "en": "Toggleable and customizable rear view mirror in Outer Wilds! Useful for practicing scoutboosting."
+  }
+]

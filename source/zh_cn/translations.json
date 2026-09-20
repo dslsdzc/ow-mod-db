@@ -314,9 +314,9 @@
       "at": "2026-09-02T06:56:21.773300Z"
     },
     "latestReleaseDescription": {
-      "en": "### Changes\r\n- There is now a half-second cooldown after Wall Jumping in which you cannot Emergency Boost, which fixes an issue where you could Emergency Boost while trying to Wall Jump.\r\n- You can no longer Wall-Jump while thrusting upwards, which fixes an issue where you would wall jump while trying to boost.\r\n- Removed the ability to disable Wall Jumping while suited because of the above bugfix.\r\n- The player's jump height will now scale properly with Smol Hatchling v2.0.0.",
-      "zh": "### 更改\n- 墙壁跳跃后现在有一个半秒的冷却时间，在此期间你不能紧急加速，这修复了一个你可以在尝试墙壁跳跃时紧急加速的问题。\n- 你在向上推进时不能再墙壁跳跃，这修复了一个你试图加速时墙壁跳跃的问题。\n- 由于上述修复程序，移除了穿着时禁用墙壁跳跃的功能。\n- 玩家的跳跃高度现在会随着 Smol Hatchling v2.0.0 正确缩放。",
-      "at": "2026-09-02T06:56:21.773300Z"
+      "en": "### Changes\r\n- Sprinting can now be mapped to any key/button on the keyboard/gamepad via the config menu.\r\n- Added a config option to automatically maintain sprinting, without having to hold the sprint button.\r\n- Added a config option to allow vertical thrust and sprinting to be used simultaneously.\r\n- Tweaked sprinting behavior: you will now start sprinting if you are moving over the ground with the sprint button held. You will stop sprinting if you stop moving over the ground, stop holding the sprint button (unless \"Hold to Sprint\" is disabled), or start boosting (unless \"Allow Vertical Thrust while Sprinting\" is enabled).\r\n- Added a config option to toggle whether or not ghosts speed up while you are sprinting.\r\n- If the \"Speed Up Ghosts while Sprinting\" option is enabled, ghosts will now also turn faster while you are sprinting.",
+      "zh": "### 更改\n- 通过配置菜单，现在可以将在键盘/游戏手柄上映射冲刺到任何按键/按钮。\n- 添加了一个配置选项，可以自动保持冲刺，而无需按住冲刺按钮。\n- 添加了一个配置选项，允许垂直推进和冲刺同时使用。\n- 调整了冲刺行为：如果你在按住冲刺按钮的情况下在地面上移动，现在将会开始冲刺。如果你停止在地面上移动，停止按住冲刺按钮（除非“按住以冲刺”被禁用），或者开始加速（除非“允许冲刺时垂直推进”被启用），你将会停止冲刺。\n- 添加了一个配置选项，用于切换是否在你冲刺时幽灵会加速。\n- 如果“冲刺时加速幽灵”选项被启用，那么在你冲刺时幽灵现在也会转向得更快。",
+      "at": "2026-09-20T20:30:16.040584Z"
     }
   },
   "xen.SignalsPlus": {
@@ -6185,9 +6185,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "description": {
-      "en": "Toggleable and customizable rear view mirror! Useful for practicing scoutboosting.",
-      "zh": "可切换和自定义的后视镜！用于练习侦察加速。",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "Toggleable and customizable rear view mirror in Outer Wilds! Useful for practicing scoutboosting.",
+      "zh": "Outer Wilds中的可切换和可自定义的后视镜！用于练习侦察加速。",
+      "at": "2026-09-20T20:30:16.040584Z"
     }
   },
   "peacemkr_png.TravelersKalimba": {
