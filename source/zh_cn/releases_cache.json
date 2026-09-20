@@ -13144,8 +13144,17 @@
     ]
   },
   "cleric.DeepBramble": {
-    "repoUpdatedAt": "2026-09-13T19:48:22Z",
+    "repoUpdatedAt": "2026-09-20T20:16:34Z",
     "releases": [
+      {
+        "tag": "v1.2.7",
+        "name": "Version 1.2.7",
+        "date": "2026-09-20",
+        "body": "Added a French translation (thanks RondStone!)",
+        "bodyZh": "添加了法语翻译（感谢 RondStone！）",
+        "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.7/cleric.DeepBramble.zip",
+        "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.7"
+      },
       {
         "tag": "v1.2.6",
         "name": "Version 1.2.6",
@@ -13169,7 +13178,7 @@
         "name": "Version 1.2.4",
         "date": "2026-02-25",
         "body": "- Added PT-BR translation (thanks ErriiickK!)\r\n- Actually remembered to update the in-game credits (sorry about that SanBaiMing!)",
-        "bodyZh": "- 添加了 PT-BR 翻译 (感谢 ErriiickK!)\r\n- 终于记得更新游戏内的鸣谢名单 (抱歉 SanBaiMing!)",
+        "bodyZh": "- 添加了 PT-BR 翻译 (感谢 ErriiickK!)\r\n- 终于记得更新游戏内的鸣谢 (抱歉 SanBaiMing!)",
         "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.4/cleric.DeepBramble.zip",
         "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.4"
       },
@@ -13178,7 +13187,7 @@
         "name": "Version 1.2.3",
         "date": "2026-01-13",
         "body": "Added Simplified Chinese translation (thanks SanBaiMing!)",
-        "bodyZh": "已添加简体中文翻译（感谢三百万！）",
+        "bodyZh": "添加了简体中文翻译（感谢三百万！）",
         "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.3/cleric.DeepBramble.zip",
         "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.3"
       },
@@ -13187,7 +13196,7 @@
         "name": "Version 1.2.2",
         "date": "2025-12-02",
         "body": "Updated Japanese translation (thanks Nepyangi!)",
-        "bodyZh": "更新的日语翻译（感谢Nepyangi！）",
+        "bodyZh": "",
         "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.2/cleric.DeepBramble.zip",
         "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.2"
       },
@@ -13226,15 +13235,6 @@
         "bodyZh": "",
         "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.1.2/cleric.DeepBramble.zip",
         "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.1.2"
-      },
-      {
-        "tag": "v1.1.1",
-        "name": "Version 1.1.1",
-        "date": "2025-03-16",
-        "body": "Added a Korean translation (thanks Barim!)",
-        "bodyZh": "",
-        "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.1.1/cleric.DeepBramble.zip",
-        "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.1.1"
       }
     ]
   },
