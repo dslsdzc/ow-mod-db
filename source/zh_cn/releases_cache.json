@@ -4732,8 +4732,17 @@
     ]
   },
   "Owen013.QOLFixes": {
-    "repoUpdatedAt": "2026-09-20T17:31:44Z",
+    "repoUpdatedAt": "2026-09-21T00:10:03Z",
     "releases": [
+      {
+        "tag": "v1.3.7",
+        "name": "Option to Disable Thruster Rotation Sound Effect",
+        "date": "2026-09-21",
+        "body": "Added an option to disable the \"PSH\" sound that plays when you turn with the ship/jetpack. I found it to be annoying when turning with keyboard&mouse controls, as the \"PSH\" would sound over and over when turning slowly.",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.3.7/Owen013.QOLFixes.zip",
+        "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.3.7"
+      },
       {
         "tag": "v1.3.6",
         "name": "v1.3.6: Better Helmet Toggling + Tweaks",
@@ -4814,15 +4823,6 @@
         "bodyZh": "",
         "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.1.0/Owen013.QOLFixes.zip",
         "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.1.0"
-      },
-      {
-        "tag": "v1.0.1",
-        "name": "Bugfix",
-        "date": "2022-05-26",
-        "body": "Leave it to me to have bugs in a mod so tiny. Fixed a bug where pressing Q when not in dialogue would freeze the player.",
-        "bodyZh": "",
-        "zipUrl": "https://github.com/Owen013/QOLFixes/releases/download/v1.0.1/Owen013.QOLFixes.zip",
-        "releaseUrl": "https://github.com/Owen013/QOLFixes/releases/tag/v1.0.1"
       }
     ]
   },
