@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "unique_name": "Owen013.QOLFixes",
+    "field": "latestReleaseDescription",
+    "en": "Added an option to disable the \"PSH\" sound that plays when you turn with the ship/jetpack. I found it to be annoying when turning with keyboard&mouse controls, as the \"PSH\" would sound over and over when turning slowly."
+  }
+]

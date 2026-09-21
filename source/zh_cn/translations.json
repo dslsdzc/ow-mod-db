@@ -1659,9 +1659,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "### Changes\r\n- Added a \"When Safe\" option to the Helmet Toggling feature, which prevents you from removing the space helmet when it is unsafe to do so and automatically puts on your space helmet when the environment becomes unsafe.\r\n- The Helmet Toggling feature will now prevent the game from automatically putting the helmet back on in certain situations (i.e. when you stop roasting marshmallows or exit the pilot seat) if you've manually taken it off.\r\n- Manual Translator Equipping key now toggles whether or not the translator is equipped, like the base game's Signalscope button.\r\n- Renamed a few of the features (look at the config menu you DOLT).",
-      "zh": "### 更改\n- 为头盔切换功能添加了\"当安全时\"选项，这可以防止您在不安全时摘下太空头盔，并在环境变得不安全时自动戴上您的太空头盔。\n- 如果您手动摘下头盔，头盔切换功能现在将阻止游戏在某些情况下（即您停止烤棉花糖或退出飞行员座椅时）自动戴上头盔。\n- 手动翻译器装备键现在切换翻译器是否已装备，就像基础游戏的Signalscope按钮一样。\n- 重命名了一些功能（看看配置菜单，你这白痴）。",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "Added an option to disable the \"PSH\" sound that plays when you turn with the ship/jetpack. I found it to be annoying when turning with keyboard&mouse controls, as the \"PSH\" would sound over and over when turning slowly.",
+      "zh": "添加了一个禁用当您转动飞船/推进器的“PSH”声音的选项。我发现使用键盘和鼠标控制时转动时很烦人，因为转动缓慢时“PSH”声音会反复响起。",
+      "at": "2026-09-21T06:51:41.310196Z"
     }
   },
   "xen.CommonCameraUtility": {
