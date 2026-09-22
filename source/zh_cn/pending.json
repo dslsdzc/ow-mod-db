@@ -1,7 +1,1 @@
-[
-  {
-    "unique_name": "orclecle.EyeWitness",
-    "field": "latestReleaseDescription",
-    "en": "* Fix #7 by setting hideProxy as true.\r\n* If a certain object is stuck in a certain laboratory, the door is designed to break to prevent entry."
-  }
-]
+[]
