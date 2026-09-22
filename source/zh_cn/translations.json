@@ -6568,9 +6568,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "* Disable the item if the player heads straight to the cannon without filling in the initial ship log.\r\n* Fixed an issue where the player could get trapped inside a specific building in the final sequence at the specific place (though doing so required a deliberate effort).\r\n* Fixed a missing character of Japanese translation.",
-      "zh": "如果玩家直接前往炮台而没有填写初始飞船日志，则禁用该物品。\n* 修复了一个问题，即玩家在最终序列的特定地点被困在特定建筑物内（尽管这样做需要刻意努力）。\n* 修复了日语翻译中缺失的字符。",
-      "at": "2026-09-12T16:26:52.447520Z"
+      "en": "* Fix #7 by setting hideProxy as true.\r\n* If a certain object is stuck in a certain laboratory, the door is designed to break to prevent entry.",
+      "zh": "* 通过设置hideProxy为true修复#7。\n* 如果某个物体卡在某个实验室里，门设计为会破裂以阻止进入。",
+      "at": "2026-09-22T20:24:55.730380Z"
     }
   },
   "RiddleMajor.No_Time_To_Waste": {
