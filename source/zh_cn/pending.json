@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "unique_name": "orclecle.EyeWitness",
+    "field": "latestReleaseDescription",
+    "en": "* Ship Log map mode no longer reveals the location of a certain entity too early. (Once you understand the location, Ship Log map mode will also display the correct location.)"
+  }
+]

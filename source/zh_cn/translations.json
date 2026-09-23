@@ -6568,9 +6568,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "* Fix #7 by setting hideProxy as true.\r\n* If a certain object is stuck in a certain laboratory, the door is designed to break to prevent entry.",
-      "zh": "* 通过设置hideProxy为true修复#7。\n* 如果某个物体卡在某个实验室里，门设计为会破裂以阻止进入。",
-      "at": "2026-09-22T20:24:55.730380Z"
+      "en": "* Ship Log map mode no longer reveals the location of a certain entity too early. (Once you understand the location, Ship Log map mode will also display the correct location.)",
+      "zh": "* 飞船日志地图模式不再过早揭示某个实体的位置。(一旦你了解该位置，飞船日志地图模式也会显示正确的位置。)",
+      "at": "2026-09-23T13:26:44.977764Z"
     }
   },
   "RiddleMajor.No_Time_To_Waste": {

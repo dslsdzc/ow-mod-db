@@ -16197,14 +16197,23 @@
     ]
   },
   "orclecle.EyeWitness": {
-    "repoUpdatedAt": "2026-09-22T14:40:24Z",
+    "repoUpdatedAt": "2026-09-23T08:52:40Z",
     "releases": [
+      {
+        "tag": "v1.4.6",
+        "name": "Version 1.4.6",
+        "date": "2026-09-23",
+        "body": "* Ship Log map mode no longer reveals the location of a certain entity too early. (Once you understand the location, Ship Log map mode will also display the correct location.)",
+        "bodyZh": "* 飞船日志地图模式不再过早地揭示某个实体的位置。(一旦你理解了位置，飞船日志地图模式也会显示正确的位置。)",
+        "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.6/orclecle.EyeWitness.zip",
+        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.6"
+      },
       {
         "tag": "v1.4.5",
         "name": "Version 1.4.5",
         "date": "2026-09-22",
         "body": "* Fix #7 by setting hideProxy as true.\r\n* If a certain object is stuck in a certain laboratory, the door is designed to break to prevent entry.",
-        "bodyZh": "* 通过设置 hideProxy 为 true 修复 #7。\n* 如果某个物体卡在某个实验室里，门的设计是会破裂以阻止进入。",
+        "bodyZh": "* 通过设置 hideProxy 为 true 修复 #7。\n* 如果某个物体卡在某个实验室里，门的设计会破裂以阻止进入。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.5/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.5"
       },
@@ -16213,7 +16222,7 @@
         "name": "Version 1.4.4",
         "date": "2026-09-12",
         "body": "* Disable the item if the player heads straight to the cannon without filling in the initial ship log.\r\n* Fixed an issue where the player could get trapped inside a specific building in the final sequence at the specific place (though doing so required a deliberate effort).\r\n* Fixed a missing character of Japanese translation.",
-        "bodyZh": "* 如果玩家没有填写初始飞船日志就直奔炮台，则禁用该物品。\n* 修复了玩家在最终序列的特定地点被困在特定建筑物内的问题（尽管这样做需要刻意尝试）。\n* 修复了日语翻译中缺失的字符。",
+        "bodyZh": "* 如果玩家不填写初始飞船日志就直奔炮台，则禁用该物品。\n* 修复了玩家在最终序列的特定地点被困在特定建筑物内的问题（尽管这样做需要刻意尝试）。\n* 修复了日语翻译中缺失的字符。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.4/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.4"
       },
@@ -16222,7 +16231,7 @@
         "name": "Version 1.4.3",
         "date": "2026-09-05",
         "body": "* Fix unidentified signal notification in the final sequence in the specific place.\r\n* Fix the latest building collision in the final sequence in the specific place.",
-        "bodyZh": "* 修复最终序列中特定位置的未识别信号提示。\n* 修复最终序列中特定位置的最新建筑碰撞。",
+        "bodyZh": "* 修复最终序列中特定位置的未识别信号通知。\n* 修复最终序列中特定位置的最新建筑碰撞。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.3/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.3"
       },
@@ -16231,7 +16240,7 @@
         "name": "Version 1.4.1",
         "date": "2026-09-04",
         "body": "* Update Chinese translation. Thank you, @SanBaiMing !\r\n* Fix audio volume issue in the final sequence in the specific place.\r\n* Fix gravity issue in the final sequence in the specific place.",
-        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列特定位置的音量问题。\n* 修复最终序列特定位置的引力问题。",
+        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列中特定位置的音量问题。\n* 修复最终序列中特定位置的引力问题。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.1/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.1"
       },
@@ -16240,7 +16249,7 @@
         "name": "Version 1.4.0",
         "date": "2026-09-03",
         "body": "Finally, I have added a specific session to a certain location. (Regarding the accompanying text: I used machine translation for the Chinese version, so I would appreciate it if you could review it when you have the time, @SanBaiMing and @GeBlaster )\r\n\r\nTo be honest, I think that drawing was enough to convey the essence, but I just really wanted to give this a try as well ;;)",
-        "bodyZh": "最后，我在某个特定位置添加了一个特定会话。（关于附加文本：我使用了机器翻译来制作中文版本，所以如果您有时间，我会非常感谢您进行审阅，@SanBaiMing 和 @GeBlaster ）\n\n说实话，我认为那张图已经足够传达其精髓了，但我真的只是想也尝试一下 ;;)",
+        "bodyZh": "",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.0"
       },
@@ -16279,15 +16288,6 @@
         "bodyZh": "",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.1.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.1.0"
-      },
-      {
-        "tag": "v1.0.2",
-        "name": "Version 1.0.2",
-        "date": "2026-08-17",
-        "body": "I fixed a critical bug that prevented a certain action from being performed after completing a specific task.\r\n\r\n**Also, please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**",
-        "bodyZh": "",
-        "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.0.2/orclecle.EyeWitness.zip",
-        "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.0.2"
       }
     ]
   },
