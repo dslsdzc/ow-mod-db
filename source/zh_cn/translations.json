@@ -6959,9 +6959,9 @@
       "at": "2026-09-12T00:29:39.775613Z"
     },
     "latestReleaseDescription": {
-      "en": "Fixes:\r\n- The cockpit console now renders Greek correctly\r\n- \"Time loop\" is now \"λούπα\" instead of \"βρόχος\" throughout\r\n- Grammar corrections\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Η οθόνη του υπολογιστή στο πιλοτήριο εμφανίζει πλέον σωστά τα ελληνικά\r\n- Ο «χρονικός βρόχος» έγινε «χρονική λούπα» σε όλο το παιχνίδι\r\n- Μικροδιορθώσεις γραμματικής",
-      "zh": "修复：\n- 驾驶舱控制台现在正确渲染希腊文\n- 全程中“时间循环”改为“λούπα”而不是“βρόχος”\n- 语法修正\n___\n\nΔιορθώσεις:\n- 驾驶舱计算机现在正确显示希腊文\n- 全程中“时间循环”改为“时间 λούπα”而不是“时间 βρόχος”\n- 语法小修正",
-      "at": "2026-09-14T16:28:17.829726Z"
+      "en": "Fixes:\r\n- Missing texts were restored\r\n- Grammar and spelling corrections\r\n- Mistranslations were corrected\r\n- Fixed naming inconsistencies\r\n- Changed UI wording to phrase the players' available interactions in a better way\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Αποκαταστάθηκαν κείμενα που έλειπαν\r\n- Γραμματικά και ορθογραφικά λάθη διορθώθηκαν\r\n- Αστοχίες στη μετάφραση αποκαταστάθηκαν\r\n- Διορθώθηκαν κάποιες ασυνέπειες στην ονοματοδοσία των χαρακτήρων\r\n- Αλλάχθηκαν εκφράσεις στο UI προκειμένου οι επιλογές των παιχτών να γίνουν πιο ξεκάθαρες",
+      "zh": "修复：\n- 恢复了缺失的文本\n- 语法和拼写修正\n- 修正了误译\n- 修复了命名不一致\n- 更改了UI措辞，以更好地表达玩家可用的交互方式",
+      "at": "2026-09-24T14:19:37.038859Z"
     }
   },
   "MDJ287.LucidDreamingVisualizer": {

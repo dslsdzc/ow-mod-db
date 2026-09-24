@@ -16616,8 +16616,17 @@
     ]
   },
   "Dimitrios.GreekTranslation": {
-    "repoUpdatedAt": "2026-09-14T07:05:48Z",
+    "repoUpdatedAt": "2026-09-24T11:31:44Z",
     "releases": [
+      {
+        "tag": "v0.9.4",
+        "name": "Version 0.9.4",
+        "date": "2026-09-24",
+        "body": "Fixes:\r\n- Missing texts were restored\r\n- Grammar and spelling corrections\r\n- Mistranslations were corrected\r\n- Fixed naming inconsistencies\r\n- Changed UI wording to phrase the players' available interactions in a better way\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Αποκαταστάθηκαν κείμενα που έλειπαν\r\n- Γραμματικά και ορθογραφικά λάθη διορθώθηκαν\r\n- Αστοχίες στη μετάφραση αποκαταστάθηκαν\r\n- Διορθώθηκαν κάποιες ασυνέπειες στην ονοματοδοσία των χαρακτήρων\r\n- Αλλάχθηκαν εκφράσεις στο UI προκειμένου οι επιλογές των παιχτών να γίνουν πιο ξεκάθαρες",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/download/v0.9.4/Dimitrios.GreekTranslation.zip",
+        "releaseUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/tag/v0.9.4"
+      },
       {
         "tag": "v0.9.3",
         "name": "Version 0.9.3",
