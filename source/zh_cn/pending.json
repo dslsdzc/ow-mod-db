@@ -1,7 +1,1 @@
-[
-  {
-    "unique_name": "Dimitrios.GreekTranslation",
-    "field": "latestReleaseDescription",
-    "en": "Fixes:\r\n- Missing texts were restored\r\n- Grammar and spelling corrections\r\n- Mistranslations were corrected\r\n- Fixed naming inconsistencies\r\n- Changed UI wording to phrase the players' available interactions in a better way\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Αποκαταστάθηκαν κείμενα που έλειπαν\r\n- Γραμματικά και ορθογραφικά λάθη διορθώθηκαν\r\n- Αστοχίες στη μετάφραση αποκαταστάθηκαν\r\n- Διορθώθηκαν κάποιες ασυνέπειες στην ονοματοδοσία των χαρακτήρων\r\n- Αλλάχθηκαν εκφράσεις στο UI προκειμένου οι επιλογές των παιχτών να γίνουν πιο ξεκάθαρες"
-  }
-]
+[]
