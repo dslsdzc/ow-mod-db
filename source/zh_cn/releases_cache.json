@@ -16575,8 +16575,17 @@
     ]
   },
   "Depthbomb.ProbeRoulette": {
-    "repoUpdatedAt": "2026-09-13T21:42:24Z",
+    "repoUpdatedAt": "2026-09-25T19:04:28Z",
     "releases": [
+      {
+        "tag": "0.3.0",
+        "name": "0.3.0",
+        "date": "2026-09-25",
+        "body": "- Added configurable shotgun mode\n- Fixed player hit detection in some cases",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.3.0/ProbeRoulette-0.3.0.zip",
+        "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.3.0"
+      },
       {
         "tag": "0.2.3",
         "name": "0.2.3",

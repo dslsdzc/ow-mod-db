@@ -6942,9 +6942,9 @@
       "at": "2026-09-12T00:29:39.775613Z"
     },
     "latestReleaseDescription": {
-      "en": "- Don't check for player collision if aiming normally",
-      "zh": "- 正常瞄准时不检测玩家碰撞",
-      "at": "2026-09-13T23:56:30.415819Z"
+      "en": "- Added configurable shotgun mode\n- Fixed player hit detection in some cases\n",
+      "zh": "- 添加了可配置的霰弹枪模式\n- 修复了某些情况下的玩家命中检测",
+      "at": "2026-09-25T23:25:49.906935Z"
     }
   },
   "Dimitrios.GreekTranslation": {
