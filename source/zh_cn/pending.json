@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "unique_name": "Dimitrios.GreekTranslation",
+    "field": "latestReleaseDescription",
+    "en": "Fixes:\r\n- Cockpit's signalscope texts previously appeared very small but their size was restored\r\n- More grammar fixes\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Τα κείμενα στο σηματοσκόπιο του σκάφους φαίνονταν πολύ μικρά αλλά τώρα το μέγεθός τους αποκαταστάθηκε\r\n- Περισσότερες γραμματικές διορθώσεις"
+  }
+]
