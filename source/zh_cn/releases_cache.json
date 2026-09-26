@@ -86,14 +86,14 @@
     ]
   },
   "Raicuparta.NomaiVR": {
-    "repoUpdatedAt": "2026-09-17T18:08:13Z",
+    "repoUpdatedAt": "2026-09-26T00:36:00Z",
     "releases": [
       {
         "tag": "2.10.1-pre",
         "name": "NomaiVR-2.10.1-pre",
         "date": "2025-03-02",
         "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
-        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这个。",
+        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是，游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这个。",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.10.1-pre/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.10.1-pre"
       },
@@ -102,7 +102,7 @@
         "name": "NomaiVR-2.10.0",
         "date": "2025-03-02",
         "body": "Thank you to [mobiusteapot](https://github.com/mobiusteapot) for this update.\r\n- What year is it?\r\n- Do people still play VR?\r\n- What's even the point.\r\n- This was supposed to be my big break.\r\n- Would she still be alive?\r\n- Added snap turn option. 🕹️\r\n- They called me a coward.\r\n- Could I have made a difference?",
-        "bodyZh": "感谢[mobiusteapot](https://github.com/mobiusteapot)提供此次更新。\n- 现在是哪一年？\n- 人们还在玩VR吗？\n- 这还有什么意义。\n- 这本该是我的重大突破。\n- 她还会活着吗？\n- 增加了瞬移转向选项。 🕹️\n- 他们称我为懦夫。\n- 我能有所改变吗？",
+        "bodyZh": "感谢[mobiusteapot](https://github.com/mobiusteapot)提供此次更新。\n- 现在是哪一年？\n- 人们还在玩VR吗？\n- 这还有什么意义。\n- 这本该是我的大突破。\n- 她还会活着吗？\n- 增加了瞬移转向选项。 🕹️\n- 他们称我为懦夫。\n- 我能有所改变吗？",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.10.0/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.10.0"
       },
@@ -111,7 +111,7 @@
         "name": "NomaiVR-2.9.4-pre",
         "date": "2024-03-08",
         "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
-        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结局（片尾之后）性能非常差。所以如果你打算完成游戏，不要使用这个。",
+        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这个。",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.4-pre/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.4-pre"
       },
@@ -120,7 +120,7 @@
         "name": "NomaiVR-2.9.3-pre",
         "date": "2023-01-23",
         "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
-        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这个。",
+        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这次更新。",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.3-pre/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.3-pre"
       },
