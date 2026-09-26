@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2026-07-04T19:51:54Z",
+  "releases": [
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2026-07-04",
+      "body": "Minor translation fixes",
+      "zipUrl": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/download/v1.0.4/Luminescence.OuterWildsVietnamese.zip",
+      "releaseUrl": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/tag/v1.0.4",
+      "bodyZh": "小翻译修正"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2026-07-03",
+      "body": "Small translation fixes",
+      "zipUrl": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/download/v1.0.3/Luminescence.OuterWildsVietnamese.zip",
+      "releaseUrl": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/tag/v1.0.3",
+      "bodyZh": "小翻译修正"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2026-07-02",
+      "body": "Fixed some visual bugs\r\nRefined some translations",
+      "zipUrl": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/download/v1.0.2/Luminescence.OuterWildsVietnamese.zip",
+      "releaseUrl": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/tag/v1.0.2",
+      "bodyZh": "修复了一些视觉错误\n优化了一些翻译"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2026-06-29",
+      "body": "Yeah the first time always ends up in dumpster fire hehe, hence this second time",
+      "zipUrl": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/download/v1.0.1/Luminescence.OuterWildsVietnamese.zip",
+      "releaseUrl": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/tag/v1.0.1",
+      "bodyZh": "是的，第一次总是以灾难收场，嘿嘿，所以才有这次第二次"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "First Release",
+      "date": "2026-06-29",
+      "body": "First Release (I guess there is a first time for everything)",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/tag/v1.0.0",
+      "bodyZh": "首次发布（我想凡事都有第一次）"
+    }
+  ]
+}

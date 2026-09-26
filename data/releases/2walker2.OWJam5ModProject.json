@@ -1,0 +1,74 @@
+{
+  "repoUpdatedAt": "2025-12-02T23:32:47Z",
+  "releases": [
+    {
+      "tag": "v1.2.1",
+      "name": "Version 1.2.1",
+      "date": "2025-12-02",
+      "body": "Japanese translation by Nepyanagi",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.2.1/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.2.1",
+      "bodyZh": "日文翻译由Nepyanagi提供"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2025-09-27",
+      "body": "Minor tweaks and several translations.\r\n- Chinese translation by Nan\r\n- Korean translation by Barirn\r\n- French translation by LaraNanuq\r\n- Russian translation by HanSoloCh\r\n- Minor ship log and text adjustments\r\n- Dropping a Nomai orb now drops it until you look away rather than re-selecting it after a delay\r\n- Other extremely minor gameplay and level design tweaks",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.2.0/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.2.0",
+      "bodyZh": "次要调整和若干翻译。\n- 中文翻译由Nan完成\n- 韩文翻译由Barirn完成\n- 法文翻译由LaraNanuq完成\n- 俄文翻译由HanSoloCh完成\n- 船员日志和文本的微小调整\n- 现在丢弃一个挪麦球体会在你移开视线之前持续掉落，而不是在延迟后重新选择\n- 其他极其微小的游戏玩法和关卡设计调整"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2025-08-02",
+      "body": "Added developer commentary!\r\n- Commentary can be enabled from the options menu\r\n- Extensive commentary has been placed throughout most of the mod's points of interest\r\n- Use your signalscope to locate and warp to commentary\r\n- Some commentary includes demonstrations\r\n\r\nOne Single Minor Design Tweak:\r\n- The torches on a signal-related puzzle now change to a new color when the puzzle is solved",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.1.0/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.1.0",
+      "bodyZh": "已添加开发者评论！\n- 评论可以在选项菜单中启用\n- 大量的评论已被放置在模组大部分的兴趣点\n- 使用您的信号仪定位并跃迁到评论\n- 部分评论包含演示\n\n一个单一的小设计调整：\n- 当谜题解决时，与信号相关的谜题上的火把会变成新的颜色"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2025-07-29",
+      "body": "Lots of minor design changes based on watching people play over the last week.\r\n- Prevented clipping into ice when warping under certain circumstances\r\n- Made a beacon taller so it's more visible from a greater distance\r\n- Minor structure edits to reduce clipping and make some texts harder to miss\r\n- The buried portion of a certain structure now includes an interior\r\n- A signal-related structure has been made more visually distinct and visible from a greater distance\r\n- Minor text and ship log updates\r\n- Scaled up a secret warp receiver to make it less likely to strand you in deep space\r\n- Moved a deadly dialog option to the end of the list\r\n- Daucus has been tinted redder to make it more easily distinguishable from The Big One\r\n- Certain Nomai text spirals have been re-positioned to be easier to target with the translator",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.4/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.4",
+      "bodyZh": "基于过去一周观察玩家游戏进行的许多小设计改动。\n- 防止在特定情况下传送时穿透冰块\n- 将信标的高度增加，使其从更远距离更容易看到\n- 对一些结构进行微调以减少穿透并使部分文字更难错过\n- 某个结构的埋藏部分现在包含内部空间\n- 某个与信号相关的结构已被设计得更具视觉辨识度，且从更远距离可见\n- 对部分文字和飞船日志进行更新\n- 将一个秘密传送接收器的尺寸放大，以降低你在深空迷失的可能性\n- 将一个致命的对话框选项移至列表末尾\n- Daucus(达科斯)的红色调被加深，使其更容易与The Big One(巨大之物)区分\n- 某些挪麦文本螺旋已被重新定位，以便用翻译器更容易锁定目标"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2025-07-23",
+      "body": "fix sun light range",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.3/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.3",
+      "bodyZh": "修复太阳光照射范围"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2025-07-22",
+      "body": "audio and credit tweaks, no gameplay modified",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.2/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-07-21",
+      "body": "- fixed planet minimaps\r\n- fixed a missing model",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.1/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-07-20",
+      "body": "",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.0/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.0"
+    }
+  ]
+}

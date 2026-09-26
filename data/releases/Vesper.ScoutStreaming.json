@@ -1,0 +1,31 @@
+{
+  "repoUpdatedAt": "2024-11-04T16:35:28Z",
+  "releases": [
+    {
+      "tag": "1.2.0",
+      "name": "Fixed NH bug",
+      "date": "2022-05-21",
+      "body": "Fixed NH log bug",
+      "zipUrl": "https://github.com/Vesper-Works/Scout-Streaming/releases/download/1.2.0/Release.1.2.0.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Scout-Streaming/releases/tag/1.2.0",
+      "bodyZh": "修复了NH日志错误"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "Release for OWML 2.0.0",
+      "date": "2021-10-20",
+      "body": "",
+      "zipUrl": "https://github.com/Vesper-Works/Scout-Streaming/releases/download/1.1.0/Release.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Scout-Streaming/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Released",
+      "date": "2021-10-10",
+      "body": "Yup!",
+      "zipUrl": "https://github.com/Vesper-Works/Scout-Streaming/releases/download/1.0.0/Release.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Scout-Streaming/releases/tag/1.0.0",
+      "bodyZh": "是的！"
+    }
+  ]
+}

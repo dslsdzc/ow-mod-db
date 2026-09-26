@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-03-19T00:55:53Z",
+  "releases": [
+    {
+      "tag": "v0.0.2",
+      "name": "QSBGameModes v0.0.2",
+      "date": "2025-03-19",
+      "body": "- Fixes for the pause menu based ready up UI. https://github.com/BUNN1E5/QSBGameModes/pull/13\r\n> Thanks [jerejoensuu](https://github.com/jerejoensuu) for the fixes!",
+      "zipUrl": "https://github.com/BUNN1E5/QSBGameModes/releases/download/v0.0.2/BUNN1E5.QSBGameModes.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/QSBGameModes/releases/tag/v0.0.2",
+      "bodyZh": "- 暂停菜单基于准备就绪UI的修复。https://github.com/BUNN1E5/QSBGameModes/pull/13\r\n> 感谢[jerejoensuu](https://github.com/jerejoensuu)提供的修复！"
+    },
+    {
+      "tag": "v0.0.1",
+      "name": "QSBGameModes v0.0.1",
+      "date": "2023-03-30",
+      "body": "First Release of QSBGameModes! 🥳 \r\n\r\nThis mod is an addon for QSB, which adds the ability for the host to start and end different kinds of game modes, with them having specific settings in the mod settings menu. Currently the most complete game mode is the *Infection* game mode, which plays like a hide and seek.",
+      "zipUrl": "https://github.com/BUNN1E5/QSBGameModes/releases/download/v0.0.1/BUNN1E5.QSBGameModes.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/QSBGameModes/releases/tag/v0.0.1",
+      "bodyZh": "QSBGameModes 的首次发布！🥳\n\n这个模组是 QSB 的一个附加组件，它为主机增加了启动和结束不同种类游戏模式的能力，这些模式在模组设置菜单中有特定的设置。目前最完整游戏模式是 *Infection* 游戏模式，它玩起来像捉迷藏。"
+    }
+  ]
+}

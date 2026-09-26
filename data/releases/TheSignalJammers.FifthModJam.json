@@ -1,0 +1,61 @@
+{
+  "repoUpdatedAt": "2026-01-31T17:16:32Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "v1.1.0 Achievements+ patch",
+      "date": "2026-01-31",
+      "body": "Debug:\r\n- Typo fixes\r\n- More coverage of translatable text\r\n- Minor visual tweaks (Rotated one item 45° for better Feng Shui)\r\n- Nerfed the player's strength (You should no longer be able to barbarically shove the artifact instead of a lantern in the reelhouse spot)\r\n- Buttons are now pressed and not rotated\r\n- The unpowered structure now makes an appropriate amount of unpowered noises\r\n\r\nNew:\r\n- 14 exciting achievements! Enable the Achievement+ mod and have fun earning them all.\r\n- French translation curtesy of cOa Rex\r\n- Chinese translation curtesy of SanBaiMing. Many thanks to both of them!",
+      "zipUrl": "https://github.com/Echatsum/ModJam5/releases/download/1.1.0/TheSignalJammers.FifthModJam-1.1.0.zip",
+      "releaseUrl": "https://github.com/AnonymousStrangerOW/ModJam5/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.5",
+      "name": "v1.0.5 QoL Patch",
+      "date": "2025-09-14",
+      "body": "Debug:\r\n- Various typo fixes (including Feldspar misgendering)\r\n- Campfire now campfiring as intended\r\n\r\nNew:\r\n- Added prompts for the doors\r\n- A small area is now walkable\r\n- Torches fire now made more colorful\r\n- Timeloop paused during ending\r\n- Now compatible with Achievement+ (Barebone achievements for now, next patch should add more)\r\n- Readme updated so that Signal Jammers team members are named, rather than just in the credits\r\n- Extracted missing translatable lines into the translation file",
+      "zipUrl": "https://github.com/Echatsum/ModJam5/releases/download/1.0.5/TheSignalJammers.FifthModJam-1.0.5.zip",
+      "releaseUrl": "https://github.com/AnonymousStrangerOW/ModJam5/releases/tag/1.0.5"
+    },
+    {
+      "tag": "1.0.4",
+      "name": "v1.0.4 Performance patch",
+      "date": "2025-07-30",
+      "body": "Debug: \r\n- Scout recall bug now fixed\r\n- Minor typo fixes\r\n\r\nNew: \r\n- Small rework of the quantum puzzle, to allow for a solution players thought about but not us devs\r\n- Performance should be much better now that buildings meshes have been batched",
+      "zipUrl": "https://github.com/Echatsum/ModJam5/releases/download/1.0.4/TheSignalJammers.FifthModJam-1.0.4.zip",
+      "releaseUrl": "https://github.com/AnonymousStrangerOW/ModJam5/releases/tag/1.0.4"
+    },
+    {
+      "tag": "1.0.3",
+      "name": "v1.0.3 More Polishing",
+      "date": "2025-07-25",
+      "body": "Debug:\r\n- Music has been reduced in some areas to a more pleasant volume.\r\n- Took Ernesto to anger management, he now screams a reasonable amount.\r\n- Brought the floating geyser back to the ground.\r\n- Removed the shuttle after it has been used.\r\n- Added a collider to an object without one.\r\n\r\nNew:\r\n- Reduced the range of the star lighting, so that it does not interfere with other jam5 mods if those systems are near.\r\n- Turned the power off completely where there shouldn't be power, and added some directions in that place.\r\n- Fire made more fiery.",
+      "zipUrl": "https://github.com/Echatsum/ModJam5/releases/download/1.0.3/TheSignalJammers.FifthModJam-1.0.3.zip",
+      "releaseUrl": "https://github.com/AnonymousStrangerOW/ModJam5/releases/tag/1.0.3"
+    },
+    {
+      "tag": "1.0.2",
+      "name": "v1.0.2 Polishing",
+      "date": "2025-07-23",
+      "body": "Debug:\r\n- Depressurization no longer burst your eardrums\r\n- Tweaked position of a couple triggers, should work better\r\n\r\nNew:\r\n- Ending now says the mod name\r\n- Made a puzzle react more clearly when the player does the correct thing\r\n- Added more decoration portraits",
+      "zipUrl": "https://github.com/Echatsum/ModJam5/releases/download/1.0.2/TheSignalJammers.FifthModJam-1.0.2.zip",
+      "releaseUrl": "https://github.com/AnonymousStrangerOW/ModJam5/releases/tag/1.0.2"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1 Hotfix",
+      "date": "2025-07-21",
+      "body": "- make our star's effects fit within the jam limits\r\n- made both regular and persistent conditions for meeting a certain someone, for other modders to use it.\r\n- a certain shiplog photo is now up to date.\r\n- make a sound a bit more audible in the ending\r\n- update readme to include licenses\r\n- update licenses.txt",
+      "zipUrl": "https://github.com/Echatsum/ModJam5/releases/download/1.0.1/TheSignalJammers.FifthModJam.zip",
+      "releaseUrl": "https://github.com/AnonymousStrangerOW/ModJam5/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Initial Release",
+      "date": "2025-07-20",
+      "body": "initial release for cosmic curators, our outer wilds mod jam 5 submission.",
+      "zipUrl": "https://github.com/Echatsum/ModJam5/releases/download/1.0.0/TheSignalJammers.FifthModJam.zip",
+      "releaseUrl": "https://github.com/AnonymousStrangerOW/ModJam5/releases/tag/1.0.0"
+    }
+  ]
+}

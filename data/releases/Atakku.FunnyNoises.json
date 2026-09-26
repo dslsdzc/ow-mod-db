@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2023-01-23T01:55:05Z",
+  "releases": [
+    {
+      "tag": "v0.0.2",
+      "name": "Version 0.0.2",
+      "date": "2023-01-23",
+      "body": "",
+      "zipUrl": "https://github.com/Atakku/OWFunnyNoises/releases/download/v0.0.2/Atakku.OWFunnyNoises.zip",
+      "releaseUrl": "https://github.com/Atakku/OWFunnyNoises/releases/tag/v0.0.2"
+    },
+    {
+      "tag": "v0.0.1",
+      "name": "Version 0.0.1",
+      "date": "2023-01-07",
+      "body": "",
+      "zipUrl": "https://github.com/Atakku/OWFunnyNoises/releases/download/v0.0.1/Atakku.OWFunnyNoises.zip",
+      "releaseUrl": "https://github.com/Atakku/OWFunnyNoises/releases/tag/v0.0.1"
+    }
+  ]
+}

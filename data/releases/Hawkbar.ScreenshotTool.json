@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-02-21T08:52:29Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-02-17",
+      "body": "Initial Release",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModScreenshotTool/releases/download/v0.1.0/Hawkbar.ScreenshotTool.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModScreenshotTool/releases/tag/v0.1.0",
+      "bodyZh": "初始发布"
+    }
+  ]
+}

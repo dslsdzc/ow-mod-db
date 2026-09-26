@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-05-29T16:55:52Z",
+  "releases": [
+    {
+      "tag": "v1.1.11",
+      "name": "Version 1.1.11",
+      "date": "2026-01-24",
+      "body": "* [Fixed minor syntax/wording issues in the french translation #31](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/31) by @LaraNanuq",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.11/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.11",
+      "bodyZh": "* [Fixed minor syntax/wording issues in the french translation #31](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/31) by @LaraNanuq"
+    },
+    {
+      "tag": "v1.1.10",
+      "name": "Version 1.1.10",
+      "date": "2025-07-24",
+      "body": "* [Reworked french translation #28](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/28) by @LaraNanuq",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.10/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.10",
+      "bodyZh": "* [Reworked french translation #28](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/28) by @LaraNanuq"
+    },
+    {
+      "tag": "v1.1.9",
+      "name": "Version 1.1.9",
+      "date": "2025-07-03",
+      "body": "* [Fix the duplicated elevator in Endless Canyon when enabling New Horizons #27](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/27)",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.9/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.9",
+      "bodyZh": "* [Fix the duplicated elevator in Endless Canyon when enabling New Horizons #27](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/27)"
+    },
+    {
+      "tag": "v1.1.8",
+      "name": "Version 1.1.8",
+      "date": "2025-04-30",
+      "body": "* [Spanish translation #24](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/24) by @marcosrullan",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.8/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.8",
+      "bodyZh": "* [Spanish translation #24](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/24) by @marcosrullan"
+    },
+    {
+      "tag": "v1.1.7",
+      "name": "Version 1.1.7",
+      "date": "2025-01-09",
+      "body": "* [smol correction for german.xml #21](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/21) by @Derko8",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.7/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.7",
+      "bodyZh": "* [smol correction for german.xml #21](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/21) by @Derko8"
+    },
+    {
+      "tag": "v1.1.6",
+      "name": "Version 1.1.6",
+      "date": "2024-12-18",
+      "body": "1.1.6 by @xen-42 \r\nThis fixes Outsider ship logs appearing in New Horizons custom systems (#19) and neck dislocation caused by Daydream (#16)",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.6/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.6"
+    },
+    {
+      "tag": "v1.1.5",
+      "name": "Version 1.1.5",
+      "date": "2024-07-21",
+      "body": "* [1.1.5 #18](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/18) by @xen-42 \r\n    * This resolves [Flickering light that pushes you away in space - The outsider](https://www.reddit.com/r/outerwilds/comments/1e7wtg0/flickering_light_that_pushes_you_away_in_space/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.5/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.5"
+    },
+    {
+      "tag": "v1.1.4",
+      "name": "Version 1.1.4",
+      "date": "2024-06-14",
+      "body": "* [Italian translation correction. #17](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/issues/17) by @NerYtheLonesomeHearthian",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.4/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.4"
+    },
+    {
+      "tag": "v1.1.3",
+      "name": "Version 1.1.3",
+      "date": "2024-05-11",
+      "body": "* [Fix translation typo #15](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/15) by @solitary-sails",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.3/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.3"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "Version 1.1.2",
+      "date": "2024-04-21",
+      "body": "* [Update chinese_simple.xml #14](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/14)\r\n* Update some translations",
+      "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.2/SBtT.TheOutsider.zip",
+      "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.2"
+    }
+  ]
+}

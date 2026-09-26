@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-07-30T13:19:43Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-04-06",
+      "body": "Still a preview version, I release it anyway!!",
+      "zipUrl": "https://github.com/TRSasasusu/PickUpChert/releases/download/v0.1.0/orclecle.PickUpChert.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/PickUpChert/releases/tag/v0.1.0",
+      "bodyZh": "仍然是一个预览版本，我还是发布了！！"
+    }
+  ]
+}

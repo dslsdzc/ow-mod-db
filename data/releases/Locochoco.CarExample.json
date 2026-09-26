@@ -1,0 +1,58 @@
+{
+  "repoUpdatedAt": "2023-08-15T22:24:01Z",
+  "releases": [
+    {
+      "tag": "v0.1.5",
+      "name": "Car Example v0.1.5",
+      "date": "2023-02-11",
+      "body": "* Fixed the player not being able to leave the map screen after entering a vehicle\r\n\r\nThanks to QuantumBlur314 for reporting these issues!",
+      "zipUrl": "https://github.com/loco-choco/CarExample/releases/download/v0.1.5/Locochoco.CarExample.zip",
+      "releaseUrl": "https://github.com/loco-choco/CarExample/releases/tag/v0.1.5",
+      "bodyZh": "* 修复了进入载具后玩家无法离开地图界面的问题\r\n\r\n感谢 QuantumBlur314 报告这些问题！"
+    },
+    {
+      "tag": "v0.1.4",
+      "name": "Car Example v0.1.4",
+      "date": "2022-11-23",
+      "body": "* Adds Compatibility with owo using new shipyard networking interface system",
+      "zipUrl": "https://github.com/loco-choco/CarExample/releases/download/v0.1.4/Locochoco.CarExample.zip",
+      "releaseUrl": "https://github.com/loco-choco/CarExample/releases/tag/v0.1.4",
+      "bodyZh": "* 增加与 owo 的兼容性，使用新的造船厂网络接口系统"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "Car Example v0.1.3",
+      "date": "2022-11-15",
+      "body": "* Using new Shipyard prefab system (need to use version v.0.1.8 or higher)",
+      "zipUrl": "https://github.com/loco-choco/CarExample/releases/download/v0.1.3/Locochoco.CarExample.zip",
+      "releaseUrl": "https://github.com/loco-choco/CarExample/releases/tag/v0.1.3",
+      "bodyZh": "* 使用新的造船厂预制件系统（需要使用版本 v.0.1.8 或更高版本）"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Car Example v0.1.2",
+      "date": "2022-11-13",
+      "body": "* Adds compatibility with OWO (needs pre-release version of Slate's Shipyard)",
+      "zipUrl": "https://github.com/loco-choco/CarExample/releases/download/v0.1.2/Locochoco.CarExample.zip",
+      "releaseUrl": "https://github.com/loco-choco/CarExample/releases/tag/v0.1.2",
+      "bodyZh": "* 增加与OWO的兼容性（需要Slate的造船厂预发布版本）"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Car Example v0.1.1",
+      "date": "2022-09-18",
+      "body": "* Added Free Look",
+      "zipUrl": "https://github.com/loco-choco/CarExample/releases/download/v0.1.1/Locochoco.CarExample.zip",
+      "releaseUrl": "https://github.com/loco-choco/CarExample/releases/tag/v0.1.1",
+      "bodyZh": "* 添加了自由视角"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Car Example v0.1.0",
+      "date": "2022-09-15",
+      "body": "* Adds a car with which you can drive and experience what a raycast wheel with a single raycast feels like.",
+      "zipUrl": "https://github.com/loco-choco/CarExample/releases/download/v0.1.0/Locochoco.CarExample.zip",
+      "releaseUrl": "https://github.com/loco-choco/CarExample/releases/tag/v0.1.0"
+    }
+  ]
+}

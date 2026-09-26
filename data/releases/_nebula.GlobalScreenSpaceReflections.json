@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2025-12-28T15:21:21Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2023-11-17",
+      "body": "",
+      "zipUrl": "https://github.com/misternebula/GlobalScreenSpaceReflections/releases/download/1.0.0/_nebula.GlobalScreenSpaceReflections.zip",
+      "releaseUrl": "https://github.com/misternebula/GlobalScreenSpaceReflections/releases/tag/1.0.0"
+    }
+  ]
+}

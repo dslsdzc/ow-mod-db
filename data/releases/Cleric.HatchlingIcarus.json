@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-04-26T04:11:05Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "Hatchling Icarus v1.1.0",
+      "date": "2023-04-26",
+      "body": "Changed entire logic of how the mod actually affects the player to be cleaner, hopefully resolving a number of issues\r\n-NRE when exiting to the main menu (for sure fixed)\r\n-Personal field affecting certain physics objects, like Slate's Shipyard ships (hopefully fixed)",
+      "zipUrl": "https://github.com/coderCleric/HatchlingIcarus/releases/download/v1.1.0/Cleric.HatchlingIcarus.zip",
+      "releaseUrl": "https://github.com/coderCleric/HatchlingIcarus/releases/tag/v1.1.0",
+      "bodyZh": "已更改模组实际影响玩家的整个逻辑，使其更清晰，希望能解决一些问题\n-退出到主菜单时出现NRE（已确定修复）\n-个人领域影响某些物理对象，如斯莱特的造船厂飞船（希望能修复）"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Hatchling Icarus v1.0.0",
+      "date": "2023-02-24",
+      "body": "Initial release.",
+      "zipUrl": "https://github.com/coderCleric/HatchlingIcarus/releases/download/v1.0.0/Cleric.HatchlingIcarus.zip",
+      "releaseUrl": "https://github.com/coderCleric/HatchlingIcarus/releases/tag/v1.0.0",
+      "bodyZh": "初始发布。"
+    }
+  ]
+}

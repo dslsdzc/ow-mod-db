@@ -1,0 +1,74 @@
+{
+  "repoUpdatedAt": "2026-05-16T00:17:20Z",
+  "releases": [
+    {
+      "tag": "v1.0.7",
+      "name": "Release v1.0.7",
+      "date": "2026-05-16",
+      "body": "- Replaced the list of keybinds in the settings menu with an actual keybind setter (a new feature of OWML)",
+      "zipUrl": "https://github.com/Etherpod/TravelersPack/releases/download/v1.0.7/Etherpod.TravelersPack.zip",
+      "releaseUrl": "https://github.com/Etherpod/TravelersPack/releases/tag/v1.0.7",
+      "bodyZh": "- 将设置菜单中的按键绑定列表替换为实际的按键绑定设置器（OWML的新功能）"
+    },
+    {
+      "tag": "v1.0.6",
+      "name": "Release v1.0.6",
+      "date": "2026-03-13",
+      "body": "- Loading into the Eye from the main menu will no longer break the game (hopefully)\r\n- Added an option to change the storage capacity of the backpack",
+      "zipUrl": "https://github.com/Etherpod/TravelersPack/releases/download/v1.0.6/Etherpod.TravelersPack.zip",
+      "releaseUrl": "https://github.com/Etherpod/TravelersPack/releases/tag/v1.0.6",
+      "bodyZh": "- 从主菜单加载到宇宙之眼不会再崩溃游戏（希望如此）\n- 添加了一个更改背包存储容量的选项"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "Release v1.0.5",
+      "date": "2026-01-23",
+      "body": "- Added \"Cancel\" as a keybind option (Q on keyboard)",
+      "zipUrl": "https://github.com/Etherpod/TravelersPack/releases/download/v1.0.5/Etherpod.TravelersPack.zip",
+      "releaseUrl": "https://github.com/Etherpod/TravelersPack/releases/tag/v1.0.5",
+      "bodyZh": "- 添加了“取消”作为按键绑定选项（键盘上的Q键）"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "Release v1.0.4",
+      "date": "2024-12-31",
+      "body": "Added an API for other mods to use",
+      "zipUrl": "https://github.com/Etherpod/TravelersPack/releases/download/v1.0.4/Etherpod.TravelersPack.zip",
+      "releaseUrl": "https://github.com/Etherpod/TravelersPack/releases/tag/v1.0.4",
+      "bodyZh": "添加了一个供其他模组使用的API"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Release v1.0.3",
+      "date": "2024-12-20",
+      "body": "Fix error on scene load",
+      "zipUrl": "https://github.com/Etherpod/TravelersPack/releases/download/v1.0.3/Etherpod.TravelersPack.zip",
+      "releaseUrl": "https://github.com/Etherpod/TravelersPack/releases/tag/v1.0.3",
+      "bodyZh": "修复场景加载错误"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Release v1.0.2",
+      "date": "2024-12-20",
+      "body": "- Added a mod settings option to change the backpack keybind due to even more input conflicts",
+      "zipUrl": "https://github.com/Etherpod/TravelersPack/releases/download/v1.0.2/Etherpod.TravelersPack.zip",
+      "releaseUrl": "https://github.com/Etherpod/TravelersPack/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Release v1.0.1",
+      "date": "2024-12-16",
+      "body": "Changed the backpack button to the autopilot keybind to avoid input conflicts",
+      "zipUrl": "https://github.com/Etherpod/TravelersPack/releases/download/v1.0.1/Etherpod.TravelersPack.zip",
+      "releaseUrl": "https://github.com/Etherpod/TravelersPack/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Release v1.0.0",
+      "date": "2024-12-10",
+      "body": "",
+      "zipUrl": "https://github.com/Etherpod/TravelersPack/releases/download/v1.0.0/Etherpod.TravelersPack.zip",
+      "releaseUrl": "https://github.com/Etherpod/TravelersPack/releases/tag/v1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2025-11-17T15:08:59Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2023-08-16",
+      "body": "Initial release.",
+      "zipUrl": "https://github.com/qsb-dev/qsb-tts/releases/download/1.0.0/_nebula.QSBTTS.zip",
+      "releaseUrl": "https://github.com/qsb-dev/qsb-tts/releases/tag/1.0.0"
+    }
+  ]
+}

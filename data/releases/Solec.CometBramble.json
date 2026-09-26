@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-05-19T15:53:10Z",
+  "releases": [
+    {
+      "tag": "2.1.0",
+      "name": "2.1.0",
+      "date": "2025-05-19",
+      "body": "i forgoter the lantbern!!! ple forgiv???",
+      "zipUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/download/2.1.0/Solec.ScrewYouUnIcesYourDarkBramble.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/tag/2.1.0",
+      "bodyZh": "我忘记了灯！！！请原谅？？？"
+    },
+    {
+      "tag": "2.0.0",
+      "name": "2.0.0",
+      "date": "2025-05-19",
+      "body": "comet tail-ification of every major object in the system",
+      "zipUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/download/2.0.0/Solec.ScrewYouUnIcesYourDarkBramble.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/tag/2.0.0",
+      "bodyZh": "系统内每个主要物体的彗星尾巴化"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2025-05-17",
+      "body": "i did a wrong",
+      "zipUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/download/1.0.1/Solec.ScrewYouUnIcesYourDarkBramble.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/tag/1.0.1",
+      "bodyZh": "我做了个错误"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2025-05-16",
+      "body": "created the mod from the fabric of spacetime. what's the point of living, anyway? are we all just here for no reason, no, deeper meaning? or did someone create us for the sole purpose of making outer wilds mods screwing up what people were expecting?",
+      "zipUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/download/1.0.0/Solec.ScrewYouUnIcesYourDarkBramble.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/tag/1.0.0",
+      "bodyZh": "从时空的织物中创造了这个模组。活着的意义是什么， anyway？我们难道只是毫无理由地存在，不，更深层的意义？或者有人专门创造我们，目的是制作星际拓荒模组，搞砸了人们的期望？"
+    }
+  ]
+}

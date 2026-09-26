@@ -1,0 +1,22 @@
+{
+  "repoUpdatedAt": "2024-06-16T17:40:31Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "NH Compatibility",
+      "date": "2022-07-09",
+      "body": "Update thanks to Xen,\r\n- NH compatibility\r\n- Modernisation\r\n- Squashed bugs",
+      "zipUrl": "https://github.com/Vesper-Works/AutoResume/releases/download/1.1.0/Release.1.1.0.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/AutoResume/releases/tag/1.1.0",
+      "bodyZh": "更新感谢 Xen，\n- NH 兼容性\n- 现代化\n- 合并了错误"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Updated Rai's AutoResume mod to 2.1.0 OWML",
+      "date": "2021-10-31",
+      "body": "",
+      "zipUrl": "https://github.com/Vesper-Works/AutoResume/releases/download/1.0.0/Release.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/AutoResume/releases/tag/1.0.0"
+    }
+  ]
+}

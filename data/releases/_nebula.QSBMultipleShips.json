@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2026-06-17T03:36:29Z",
+  "releases": [
+    {
+      "tag": "0.1.0",
+      "name": "0.1.0",
+      "date": "2023-07-09",
+      "body": "- Initial addon release.",
+      "zipUrl": "https://github.com/qsb-dev/qsb-multiple-ships/releases/download/0.1.0/_nebula.QSBMultipleShips.zip",
+      "releaseUrl": "https://github.com/qsb-dev/qsb-multiple-ships/releases/tag/0.1.0"
+    }
+  ]
+}

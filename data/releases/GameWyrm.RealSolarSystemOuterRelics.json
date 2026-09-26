@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-02-20T23:40:49Z",
+  "releases": [
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2023-02-20",
+      "body": "# 1.0.1\r\n\r\nNo actual changes, just fixed manifest version.",
+      "zipUrl": "https://github.com/GameWyrm/RealSolarSystemOuterRelics/releases/download/1.0.1/RSSOuterRelics_1.0.1.zip",
+      "releaseUrl": "https://github.com/GameWyrm/RealSolarSystemOuterRelics/releases/tag/1.0.1",
+      "bodyZh": "# 1.0.1\r\n\r\n没有实际变化，仅修复了清单版本。"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2023-02-18",
+      "body": "# 1.0.0\r\n\r\nInitial Release",
+      "zipUrl": "https://github.com/GameWyrm/RealSolarSystemOuterRelics/releases/download/1.0.0/1.0.0.zip",
+      "releaseUrl": "https://github.com/GameWyrm/RealSolarSystemOuterRelics/releases/tag/1.0.0",
+      "bodyZh": "# 1.0.0\r\n\r\n初始发布"
+    }
+  ]
+}

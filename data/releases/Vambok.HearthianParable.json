@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-11-27T09:52:54Z",
+  "releases": [
+    {
+      "tag": "v1.8.1",
+      "name": "Version 1.8.1",
+      "date": "2025-09-07",
+      "body": "### New Ernesto abilities:\r\n- Speaking chinese\r\n- Protecting you _(and your ship)_ from the star's gravity",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.8.1/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.8.1",
+      "bodyZh": "### 新的Ernesto能力：\n- 说中文\n- 保护你 _(以及你的飞船)_ 免受恒星引力"
+    },
+    {
+      "tag": "v1.8.0",
+      "name": "Ernesto",
+      "date": "2025-09-06",
+      "body": "### Fixed the annoying bug where the scream of the dev was unending and the end not firing!\r\n\r\n_Added **Ernesto**_",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.8.0/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.8.0",
+      "bodyZh": "### 修复了开发者尖叫声不断且结束不触发烦人bug！\r\n\r\n_添加了**Ernesto(埃内斯特奥)**_"
+    },
+    {
+      "tag": "v1.7.2",
+      "name": "Version 1.7.2",
+      "date": "2025-08-02",
+      "body": "### Chinese localization\r\nAdded full Chinese translation by Nan_fyn *(Thanks!)*",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.7.2/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.7.2",
+      "bodyZh": "### 中文本地化\n添加了Nan_fyn的完整中文翻译 *(谢谢！)*"
+    },
+    {
+      "tag": "v1.7.1",
+      "name": "Version 1.7.1",
+      "date": "2025-08-01",
+      "body": "### Subtitles fixes and general QOL\r\n- Lowered global ambiant sounds when dialogues are playing\r\n- Fixed game language setting effect on subtitles being late by one language\r\n- _Subtle subtitles_ fixes\r\n- Code cleaned",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.7.1/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.7.1",
+      "bodyZh": "### 字幕修复及一般QOL改进\n- 对话播放时降低了全局环境音量\n- 修复了游戏语言设置对字幕延迟一个语言版本的问题\n- _微妙字幕_修复\n- 代码清理"
+    },
+    {
+      "tag": "v1.7.0",
+      "name": "Version 1.7.0",
+      "date": "2025-07-31",
+      "body": "### Localization support and fixes\r\n- Added **full french translation and support for more** _(soon, very soon)_\r\n- Added anti-platforming fix _(stop doing that! now it should be near impossible)_\r\n- Cleaned the anti-ship fix _(no more invisible colliders!)_\r\n- Fixed some errors in dialogues\r\n- Fixed a bug with profile game saves\r\n- Fixed a bug with some subtitles not showing\r\n- Fixed speedrun timer being wrong after dying",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.7.0/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.7.0",
+      "bodyZh": "### 本地化支持与修复\n- 添加了**完整的法语翻译和支持** _(很快，非常快)_\n- 添加了反平台机制修复 _(停止那样做！现在应该几乎不可能了)_\n- 清理了反飞船修复 _(不再有不可见的碰撞器!)_\n- 修复了对话中的一些错误\n- 修复了个人资料游戏存档的bug\n- 修复了某些字幕不显示的bug\n- 修复了死亡后速通计时器错误"
+    },
+    {
+      "tag": "v1.6.0",
+      "name": "Version 1.6.0",
+      "date": "2025-07-30",
+      "body": "### Bunch of fixes and improvements!\r\n- The mod now handle multiple player profiles (each one has its own saves)\r\n- Fixed shiplogs _(again!)_, they are clearer and everything useful should stay while relevant\r\n- \"Changing audio source\" will not weirdly cut the previous dialogue anymore\r\n- Subtitles are less buggy and more reactive (hiding and coming back when they should)\r\n- Speedrun timer's format improved\r\n- Added some acknowledgments to the Readme <3",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.6.0/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.6.0"
+    },
+    {
+      "tag": "v1.5.2",
+      "name": "Version 1.5.2",
+      "date": "2025-07-27",
+      "body": "- Added a \"Difficulty\" setting for all the nostalgics of the days before subtitles _(nobody)_.\r\n- Added a speedrun timer in the settings _because why not_.",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.5.2/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.5.2"
+    },
+    {
+      "tag": "v1.5.0",
+      "name": "Version 1.5.0",
+      "date": "2025-07-26",
+      "body": "### - Added **subtitles**!\r\n\\- Made shiplog not useless (it stores things you should've heard _but you didn't because you were so bored_).\r\n  \r\nThat makes the mod **waay** easier to complete. _(ppl having completed it before this patch will get a golf ball plushie ~~except that's not true~~)_",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.5.0/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.5.0"
+    },
+    {
+      "tag": "v1.4.2",
+      "name": "Version 1.4.2",
+      "date": "2025-07-22",
+      "body": "- Fixed the bundle compatibility issue\r\n- Added color to ship logs",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.4.2/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.4.2"
+    },
+    {
+      "tag": "v1.4.1",
+      "name": "Version 1.4.1",
+      "date": "2025-07-20",
+      "body": "Better shiplogs and no more purple sun's bullying other mods!",
+      "zipUrl": "https://github.com/Vambok/HearthianParable/releases/download/v1.4.1/Vambok.HearthianParable.zip",
+      "releaseUrl": "https://github.com/Vambok/HearthianParable/releases/tag/v1.4.1"
+    }
+  ]
+}

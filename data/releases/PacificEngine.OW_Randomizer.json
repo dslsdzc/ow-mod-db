@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2024-10-28T18:51:39Z",
+  "releases": [
+    {
+      "tag": "0.7.7",
+      "name": "v0.7.7",
+      "date": "2022-01-25",
+      "body": "## What's Changed\r\n- Some build updates\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.7.6...0.7.7",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.7.7/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.7.7"
+    },
+    {
+      "tag": "0.7.6",
+      "name": "v0.7.6",
+      "date": "2022-01-05",
+      "body": "## What's changed\r\n* Now do Randomizer Update on second frame and on `Update`\r\n* Randomizer now fixes issues with the Mapping Satellite in case planets venture too close\r\n* Randomizer handles static bodies like the White Hole in a consistent way\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.7.5...0.7.6",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.7.6/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.7.6"
+    },
+    {
+      "tag": "0.7.5",
+      "name": "v0.7.5",
+      "date": "2022-01-04",
+      "body": "## What's Changed\r\n* Utilized new features from the latest common\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.7.4...0.7.5",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.7.5/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.7.5"
+    },
+    {
+      "tag": "0.7.4",
+      "name": "v0.7.4",
+      "date": "2022-01-02",
+      "body": "## What's Changed\r\n* Random Planet values are now calculated rather than try until a good value is found\r\n  * This prevent potential infinite loops\r\n* If bad values are given to the randomizer, it will now log them\r\n* Random values no longer have bias to get planets closer, and will use the full array available to them \r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.7.3...0.7.4",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.7.4/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.7.4"
+    },
+    {
+      "tag": "0.7.3",
+      "name": "v0.7.3",
+      "date": "2021-12-30",
+      "body": "## What's Changed\r\n* Some refactoring\r\n* Some new Null Checks\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.7.2...0.7.3",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.7.3/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.7.3"
+    },
+    {
+      "tag": "0.7.2",
+      "name": "v0.7.2",
+      "date": "2021-12-30",
+      "body": "## What's Changed\r\n* Now works with New Horizons\r\n* Handled NPE in New Horizons when objects don't have parents\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.7.1...0.7.2",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.7.2/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.7.2"
+    },
+    {
+      "tag": "0.7.1",
+      "name": "v0.7.1",
+      "date": "2021-12-28",
+      "body": "## What's Changed\r\n* Now will randomize planets it doesn't recognize, instead of not touching them\r\n* Now support inclination angles between -90 and 90 degrees\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.7.0...0.7.1",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.7.1/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.7.1"
+    },
+    {
+      "tag": "0.7.0",
+      "name": "v0.7.0",
+      "date": "2021-12-27",
+      "body": "## What's Changed\r\n* Added support for Common v0.5.0\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.6.2...0.7.0",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.7.0/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.7.0"
+    },
+    {
+      "tag": "0.6.2",
+      "name": "v0.6.2",
+      "date": "2021-12-24",
+      "body": "## What's Changed\r\n* Bug Fix: Issues with the Hourglass Twins Drifting Apart\r\n* Bug Fix: Hourglass Twins rapidly loading when `On Use` was selected for randomizer settings.\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.6.1...0.6.2",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.6.2/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.6.2"
+    },
+    {
+      "tag": "0.6.1",
+      "name": "v0.6.1",
+      "date": "2021-12-23",
+      "body": "## What's Changed\r\n* Added ability to randomize Brittle Hollow\r\n\r\n**Full Changelog**: https://github.com/PacificEngine/OW_Randomizer/compare/0.6.0...0.6.1",
+      "zipUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/download/0.6.1/PacificEngine.OW_Randomizer.zip",
+      "releaseUrl": "https://github.com/PacificEngine/OW_Randomizer/releases/tag/0.6.1"
+    }
+  ]
+}

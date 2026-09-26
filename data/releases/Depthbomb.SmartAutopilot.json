@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-09-18T03:30:58Z",
+  "releases": [
+    {
+      "tag": "0.1.0",
+      "name": "0.1.0",
+      "date": "2026-09-14",
+      "body": "- Initial release",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/depthbomb/OuterWildsSmartAutopilot/releases/download/0.1.0/Depthbomb.SmartAutopilot-0.1.0.zip",
+      "releaseUrl": "https://github.com/depthbomb/OuterWildsSmartAutopilot/releases/tag/0.1.0"
+    }
+  ]
+}

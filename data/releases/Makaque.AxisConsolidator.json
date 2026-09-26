@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-12-16T21:42:17Z",
+  "releases": [
+    {
+      "tag": "v1.0",
+      "name": "Version 1.0",
+      "date": "2024-12-13",
+      "body": "First release. Tested and working.",
+      "zipUrl": "https://github.com/Makaque/AxisConsolidator/releases/download/v1.0/Makaque.AxisConsolidator.zip",
+      "releaseUrl": "https://github.com/Makaque/AxisConsolidator/releases/tag/v1.0",
+      "bodyZh": "首次发布。经过测试且可运行。"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2022-09-01T20:33:11Z",
+  "releases": [
+    {
+      "tag": "0.0.11",
+      "name": "NomaiVROnlinePatches-v0.0.11",
+      "date": "2022-09-01",
+      "body": "* Disabled ability to equip the recording tool by @JustOnesAndZeros",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.11/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.11",
+      "bodyZh": "* 禁用了通过 @JustOnesAndZeros 装备记录工具的功能"
+    },
+    {
+      "tag": "0.0.10",
+      "name": "NomaiVROnlinePatches-v0.0.10",
+      "date": "2022-08-29",
+      "body": "Temporaily disabled the chat input since it was broken. Thanks Yog-Speggoth.",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.10/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.10",
+      "bodyZh": "临时禁用了聊天输入，因为它坏了。谢谢 Yog-Speggoth。"
+    },
+    {
+      "tag": "0.0.9",
+      "name": "NomaiVROnlinePatches-v0.0.9",
+      "date": "2022-07-03",
+      "body": "Updated NomaiVR version",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.9/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.9",
+      "bodyZh": "更新后的挪麦VR版本"
+    },
+    {
+      "tag": "0.0.8",
+      "name": "NomaiVROnlinePatches-v0.0.8",
+      "date": "2022-05-09",
+      "body": "* Update to the latest OWO version",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.8/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.8",
+      "bodyZh": "* 更新至最新OWO版本"
+    },
+    {
+      "tag": "0.0.7",
+      "name": "NomaiVROnlinePatches-v0.0.7",
+      "date": "2022-01-08",
+      "body": "- Updated for NomaiVR 2.6",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.7/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.7",
+      "bodyZh": "- 已更新至挪麦VR 2.6"
+    },
+    {
+      "tag": "0.0.6",
+      "name": "NomaiVROnlinePatches-v0.0.6",
+      "date": "2021-12-15",
+      "body": "",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.6/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.6"
+    },
+    {
+      "tag": "0.0.5",
+      "name": "NomaiVROnlinePatches-v0.0.5",
+      "date": "2021-12-03",
+      "body": "- Switched to semver checking for NomaiVR update",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.5/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.5"
+    },
+    {
+      "tag": "0.0.4",
+      "name": "NomaiVROnlinePatches-v0.0.4",
+      "date": "2021-12-01",
+      "body": "- Support for OWOnline 0.3.5",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.4/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.4"
+    },
+    {
+      "tag": "0.0.3",
+      "name": "NomaiVROnlinePatches-v0.0.3",
+      "date": "2021-11-25",
+      "body": "- Send messages only if the keyboard has the chat in focus",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.3/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.3"
+    },
+    {
+      "tag": "0.0.2",
+      "name": "NomaiVROnlinePatches-v0.0.2",
+      "date": "2021-11-25",
+      "body": "- Added version check",
+      "zipUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/download/0.0.2/Artum.NomaiVROnlinePatches.zip",
+      "releaseUrl": "https://github.com/artumino/NomaiVROnlinePatches/releases/tag/0.0.2"
+    }
+  ]
+}

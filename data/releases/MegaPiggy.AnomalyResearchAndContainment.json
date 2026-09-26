@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2025-07-23T20:51:32Z",
+  "releases": [
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2025-07-23",
+      "body": "- fixed another missing ship log (i really should have tested on a new save file but I didn't have the time lol)",
+      "zipUrl": "https://github.com/MegaPiggy/AnomalyResearchAndContainment/releases/download/v1.0.3/MegaPiggy.AnomalyResearchAndContainment.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/AnomalyResearchAndContainment/releases/tag/v1.0.3",
+      "bodyZh": "- 修复了另一条缺失的飞船日志（我本应该在新存档文件上测试的，但我没时间了哈哈）"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2025-07-23",
+      "body": "- Update final image\r\n- Stop a log spam\r\n- Fix bug where you get a ship log early\r\n- Fix reveal volume not giving you the needed logs",
+      "zipUrl": "https://github.com/MegaPiggy/AnomalyResearchAndContainment/releases/download/v1.0.2/MegaPiggy.AnomalyResearchAndContainment.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/AnomalyResearchAndContainment/releases/tag/v1.0.2",
+      "bodyZh": "- 更新最终图像\n- 停止日志垃圾信息\n- 修复早期获得飞船日志的bug\n- 修复揭示音量未提供所需日志的问题"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-07-23",
+      "body": "don't mind the fact that this is 1.0.1 lol i can't bother to make it go back",
+      "zipUrl": "https://github.com/MegaPiggy/AnomalyResearchAndContainment/releases/download/v1.0.1/MegaPiggy.AnomalyResearchAndContainment.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/AnomalyResearchAndContainment/releases/tag/v1.0.1",
+      "bodyZh": "别在意这个是1.0.1版本啦，我懒得让它回去了"
+    }
+  ]
+}

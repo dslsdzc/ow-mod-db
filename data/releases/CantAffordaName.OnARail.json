@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-08-29T09:24:33Z",
+  "releases": [
+    {
+      "tag": "v1.1.2",
+      "name": "On A Rail v1.1.2",
+      "date": "2025-08-29",
+      "body": "Fixes spelling errors in translations/english.json",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/download/v1.1.2/CantAffordaName.OnARail.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/tag/v1.1.2",
+      "bodyZh": "修复 translations/english.json 中的拼写错误"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "On A Rail v1.1.1",
+      "date": "2025-08-22",
+      "body": "A QoL update based on feedback.\r\n- All text has been moved to translation .json files\r\n- Added Simplified Chinese translation by @NanFyn\r\n- Additional ship logs & adjustments to ship log layout\r\n- The geometry of Hollow Pillar on Spruce Caboose has been adjusted for ease of access\r\n- The water on Spruce Caboose is now less murky\r\n- It's now possible to escape the water on Spruce Caboose if the player runs out of jetpack fuel\r\n- Hearthian fuel canisters have been replaced by Nomaian fuel canisters\r\n- A fact that previously required identifying a signal to display alternative text now only requires entering a specific location\r\n- Ghost Matter volumes have been tweaked\r\n- Certain SectorCullGroups will no longer cause geometry to fade into existence when interacted with\r\n- Time Slicing no longer applies to certain gravity volumes connected by warp pads\r\n- The radius of sectors have been adjusted per planet\r\n- Notification volumes created with New Horizons have been replaced with ones from the base game\r\n- An item that was hard to find is now slightly easier to find (and has an entry location once it has been found)\r\n- If the player reaches an end game location without a certain ship log, a rumor will be learned instead of a fact\r\n- The whistle has its volume boosted during the ending\r\n- If the player has a certain ship log, a screen prompt will be shown on screen during the ending\r\n- Controllers with rumble support will no longer continuously vibrate during the ending after fading to black\r\n- Geswaldo has been added (You will _never_ find him)",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/download/v1.1.1/CantAffordaName.OnARail.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/tag/v1.1.1",
+      "bodyZh": "基于反馈的质量更新。\n- 所有文本已移至翻译 .json 文件\n- 添加了简体中文翻译 by @NanFyn\n- 增加了飞船日志 & 调整了飞船日志布局\n- 云杉车队的空心柱几何结构已调整，以便更容易进入\n- 云杉车队的海水现在变得不那么浑浊\n- 如果玩家在云杉车队耗尽喷气背包燃料，现在可以逃离海水\n- 哈斯人燃料罐已被诺麦人燃料罐取代\n- 以前需要识别信号来显示替代文本的一个事实，现在只需要进入特定位置\n- 幽灵物质体积已被调整\n- 某些 SectorCullGroups 在交互时将不再导致几何体淡入存在\n- 时间切片不再适用于通过跃迁板连接的某些重力体积\n- 行星的扇区半径已根据每个行星进行调整\n- 使用新地平线创建的通知体积已被基础游戏中的通知体积取代\n- 一个原本难以找到的物品现在稍微容易找到（找到后会有一个入口位置）\n- 如果玩家在没有特定飞船日志的情况下到达游戏结束地点，将学习到一个传闻而不是一个事实\n- 结尾期间哨声音量已提升\n- 如果玩家有特定飞船日志，结尾期间屏幕上会显示屏幕提示\n- 支持震动功能的控制器在黑屏后不再在结尾期间持续震动\n- Geswaldo 已添加（你将永远不会找到他）"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "On A Rail v1.1.0",
+      "date": "2025-07-26",
+      "body": "A major patch that completely revamps almost everything!\r\n\r\n-A certain planet has been made spookier to deal with there being multiple suns in the system\r\n-The Ernesto family tree has been trimmed significantly to make navigation easier\r\n-Fish will do a better job at trying to avoid the ship (Give them a break, they didn't go to college)\r\n-Fish will no longer destroy the ship\r\n-Ship logs are fully implemented! Entry Locations, Rumors, Alt Text, etc.\r\n-Hints are now more descriptive about how to proceed and more clearly state what they intend to teach.\r\n-The ending is now less vague.\r\n-Fixes for various stretched or misaligned textures\r\n-The local sun will forcibly have its light radius set to 2500m (Someone else fixed it because it wasn't my fault? Too bad! Band-aid solution stays!)",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/download/v1.1.0/CantAffordaName.OnARail.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/tag/v1.1.0",
+      "bodyZh": "一个重大更新，几乎完全改动了所有内容！\n\n- 某个星球被做得更加阴森，以应对系统中有多颗太阳的情况\n- 埃尔内斯托家族树被大幅简化，以方便导航\n- 鱼会更好地尝试避开飞船（给它们一点休息时间，它们没有上大学）\n- 鱼不再会摧毁飞船\n- 飞船日志已完全实现！包括入口位置、传闻、替代文本等\n- 提示现在更详细地说明了如何进行，并更清晰地表明它们打算教什么。\n- 结局现在不那么模糊。\n- 修复了各种拉伸或未对齐的纹理\n- 本地太阳将被强制将其光照半径设置为2500米（有人已经修复了它，因为这不是我的错？太糟糕了！贴片解决方案仍然保留！）"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "On A Rail v1.0.0",
+      "date": "2025-07-23",
+      "body": "First Release.",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/download/v1.0.0/CantAffordaName.OnARail.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/tag/v1.0.0",
+      "bodyZh": "首次发布。"
+    }
+  ]
+}
