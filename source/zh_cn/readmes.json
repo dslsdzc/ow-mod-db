@@ -1225,9 +1225,9 @@
     "at": "2026-09-02T16:26:20.795504Z"
   },
   "Vambok.NomaiSky": {
-    "sha": "a31541f23828a22d04cbcb0525e060046b3729da5eb8c39a1bfb220acd3a0cd9",
-    "zh": "![Nomai's Sky Banner](https://github.com/user-attachments/assets/da5bc69f-1730-4ddc-97b8-77ae38793335)\n\n[![Donate](https://img.shields.io/badge/Donate-PayPal(Vambok)-blue.svg)](https://www.paypal.com/paypalme/vambok) <sup><sub>(你可能应该等待模组成长，但你也可以现在就捐款来帮助它更快成长，无论怎样都无限感谢)</sub></sup>\n\n# 挪麦的天空 *(beta版本)*\n\n一个程序生成的、近乎无限可能的宇宙！\n\n- 数以亿计的恒星系统\n\n- 你可以通过飞行到达任何一个系统（或者使用银河地图进行跃迁）\n\n- 多彩的恒星、行星和卫星，具有从普通到稀有（超稀有？）的特定性\n\n- 没有额外的黑棘，也没有鱼钩鱼*\n\n- 注意你的燃料！星际旅行非常消耗燃料。幸运的是，你的推进器并不挑剔。\n\n- 如果你安装了其他模组，你可能会在星星中找到它们...\n\n- 你可以慢慢来，没有星星会爆炸 *(我们终于修好了这个该死的东西！)*\n\n\\**仅适用于从此模组生成的恒星系统*\n\n<sup><sub>*不提供保证，模组制作者将系统性地忽略任何回收*</sub></sup><!--*ⁿᵒ ᵍᵘᵃʳᵃⁿᵗᵉᵉ ᵍˡᵘᵃⁿ ᵉ ᵐᵒᵈ ᶜʳᵉᵃᵗᵒʳ ʷˡˡˡ ˢʸˢᵗᵉᵐᵃᵗˡᶜᵃˡˡʸ ˡᵍⁿᵒʳᵉ ᵃⁿʸ ʳᵉᶜˡᵃᵐᵃᵗˡᵒⁿ*-->\n\n------\n\n### 致谢\n\n- Vambok: 编程\n\n- Trifid: 新物品（建模和代码）\n\n- Lezzlebit: 模组标志\n\n- Andrew Prahlow: 音乐",
-    "at": "2026-09-02T16:26:20.795504Z"
+    "sha": "eaa8c56249ea2d38612ceb2a0cf11af77a93f4d5ea2cda0aa4aa861e4d7365d7",
+    "zh": "![Nomai's Sky Banner](https://github.com/user-attachments/assets/da5bc69f-1730-4ddc-97b8-77ae38793335)\n\n[![Donate](https://img.shields.io/badge/Donate-PayPal(Vambok)-blue.svg)](https://www.paypal.com/paypalme/vambok) <sup><sub>(你可能应该等待模组成长，但你也可以现在就捐款来帮助它更快成长，无论怎样都无限感谢)</sub></sup>\n\n# 挪麦的天空 *(beta版本 <sub><sup>(任何帮助都非常受欢迎)</sup></sub>)*\n\n一个由程序生成、近乎无限可能的宇宙！\n\n- 数以亿计的恒星系统\n\n- 你可以通过飞行到它们那里（或者使用银河地图进行跃迁）访问任何一个\n\n- 多彩的恒星、行星和卫星，具有从普通到稀有（超稀有？）的特定性\n\n- 一个新的工具来补充你的油箱！*现在还有多种燃料类型！*\n\n- 没有添加黑棘星，也没有鮟鱇鱼*\n\n- 留意你的燃料！星际旅行消耗燃料。*幸运的是你的推进器并不挑剔。*\n\n- 如果你安装了其他模组，你可能会在星星中找到它的恒星系统...\n\n- 你可以慢慢来，没有星星会爆炸 *(我们终于修复了这个该死的东西！)*\n\n\\**仅适用于由此模组生成的恒星系统*\n\n<!--<sup><sub>*不提供保证，模组制作者将系统性地忽略任何回收*</sub></sup><!--*ⁿᵒ ᵍᵘᵃʳᵃⁿᵗᵉᵉ ᵍˡᵛᵉⁿ ᵃⁿᵈ ᵐᵒᵈ ᶜʳᵉᵃᵗᵒʳ ʷˡˡˡ ˢʸˢᵗᵉᵐᵃᵗˡᶜᵃˡˡʸ ˡᵍⁿᵒʳᵉ ᵃⁿʸ ʳᵉᶜˡᵃᵐᵃᵗˡᵒⁿ*-->\n\n------\n\n### 致谢\n\n- Vambok: 编程\n\n- Trifid: 新物品（建模和代码）\n\n- Lezzlebit: 模组标志\n\n- Andrew Prahlow: 音乐",
+    "at": "2026-09-26T12:21:50.403445Z"
   },
   "Novaenia.MouseFix": {
     "sha": "839c708f984a18f01d4484ae86428d351dd3906ef8867f63c97f8bc919952219",
