@@ -7043,5 +7043,22 @@
       "zh": "- 初始发布",
       "at": "2026-09-17T09:35:32.086762Z"
     }
+  },
+  "xen-42.ConfigurableSlowTime": {
+    "name": {
+      "en": "Configurable Time Loop",
+      "zh": "可配置的时间循环",
+      "at": "2026-09-29T02:14:22.981068Z"
+    },
+    "description": {
+      "en": "Lets you change the length of the time loop",
+      "zh": "允许你改变时间循环的长度",
+      "at": "2026-09-29T02:14:22.981068Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Initial release",
+      "zh": "初始发布",
+      "at": "2026-09-29T02:14:22.981068Z"
+    }
   }
 }
