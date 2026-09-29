@@ -1,17 +1,1 @@
-[
-  {
-    "unique_name": "xen-42.ConfigurableSlowTime",
-    "field": "name",
-    "en": "Configurable Time Loop"
-  },
-  {
-    "unique_name": "xen-42.ConfigurableSlowTime",
-    "field": "description",
-    "en": "Lets you change the length of the time loop"
-  },
-  {
-    "unique_name": "xen-42.ConfigurableSlowTime",
-    "field": "latestReleaseDescription",
-    "en": "Initial release"
-  }
-]
+[]
