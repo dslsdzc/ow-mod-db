@@ -5991,9 +5991,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "latestReleaseDescription": {
-      "en": "## What's Changed in v1.3.0\n\n- feat: drop mod-side centring, let the tracker app own the centre\n- fix: give the forward lean its own travel budget again\n- fix(smoothing): migrate to the per-connection smoothing pair",
-      "zh": "## v1.3.0中的变更\n\n- feat: 移除模组侧中心对齐，让追踪器应用拥有中心\n- fix: 再次为前倾提供独立的移动预算\n- fix(smoothing): 迁移到每个连接的平滑对",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "## What's Changed in v1.4.0\n\n- fix: stabilise the camera patch paths and cut per-frame work\n- feat(flashlight): lead the view by 1.5x, and make it configurable\n- fix(tracking,docs): resolve the adversarial review findings\n- fix: make the unset-quaternion guard actually fire",
+      "zh": "## v1.4.0 中的变更",
+      "at": "2026-09-30T04:39:30.585506Z"
     }
   },
   "MDJ287.AroundTheWorldColliderVisualizer": {
