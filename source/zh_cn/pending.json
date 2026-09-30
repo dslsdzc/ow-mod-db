@@ -1,7 +1,1 @@
-[
-  {
-    "unique_name": "udkyo.HeadTracking",
-    "field": "latestReleaseDescription",
-    "en": "## What's Changed in v1.4.0\n\n- fix: stabilise the camera patch paths and cut per-frame work\n- feat(flashlight): lead the view by 1.5x, and make it configurable\n- fix(tracking,docs): resolve the adversarial review findings\n- fix: make the unset-quaternion guard actually fire"
-  }
-]
+[]
