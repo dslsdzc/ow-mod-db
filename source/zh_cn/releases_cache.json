@@ -86,14 +86,14 @@
     ]
   },
   "Raicuparta.NomaiVR": {
-    "repoUpdatedAt": "2026-09-26T00:36:00Z",
+    "repoUpdatedAt": "2026-09-30T10:41:53Z",
     "releases": [
       {
         "tag": "2.10.1-pre",
         "name": "NomaiVR-2.10.1-pre",
         "date": "2025-03-02",
         "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
-        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是，游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这个。",
+        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结局（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这次更新。",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.10.1-pre/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.10.1-pre"
       },
@@ -120,7 +120,7 @@
         "name": "NomaiVR-2.9.3-pre",
         "date": "2023-01-23",
         "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
-        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这次更新。",
+        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这个。",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.3-pre/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.3-pre"
       },
@@ -129,7 +129,7 @@
         "name": "NomaiVR-2.9.2",
         "date": "2023-01-23",
         "body": "- Changed toolbelt hiding logic to support more mods",
-        "bodyZh": "- 已更改工具带隐藏逻辑以支持更多模组",
+        "bodyZh": "- 将工具带隐藏逻辑更改为支持更多模组",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.2/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.2"
       },
