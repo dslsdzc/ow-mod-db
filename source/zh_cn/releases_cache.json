@@ -16628,8 +16628,17 @@
     ]
   },
   "Dimitrios.GreekTranslation": {
-    "repoUpdatedAt": "2026-09-28T09:02:52Z",
+    "repoUpdatedAt": "2026-10-01T14:08:41Z",
     "releases": [
+      {
+        "tag": "v0.9.6",
+        "name": "Version 0.9.6",
+        "date": "2026-10-01",
+        "body": "Fixes:\r\n- Small grammar fixes\r\n- Removed unnecessary files used for logging mod's behavior\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Μικρές γραμματικές διορθώσεις\r\n- Αφαίρεση αρχείων που χρησιμοποιούνταν για καταγραφή λειτουργίας του mod",
+        "bodyZh": "",
+        "zipUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/download/v0.9.6/Dimitrios.GreekTranslation.zip",
+        "releaseUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/tag/v0.9.6"
+      },
       {
         "tag": "v0.9.5",
         "name": "Version 0.9.5",
