@@ -1,0 +1,40 @@
+{
+  "repoUpdatedAt": "2023-03-04T23:24:58Z",
+  "releases": [
+    {
+      "tag": "0.2.1",
+      "name": "Quantum moon effects",
+      "date": "2022-09-10",
+      "body": "Added ambient effects while on the quantum moon",
+      "zipUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/download/0.2.1/LivingFray.RGBIntegration.zip",
+      "releaseUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/tag/0.2.1",
+      "bodyZh": "在量子卫星上添加了环境效果"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "Razer Chroma SDK Support",
+      "date": "2022-09-10",
+      "body": "Added support for the razer chroma sdk\r\n(Tested on a huntsman keyboard, others should work)\r\n\r\nFixed a bug where the flashlight flickered on steelseries mice.\r\n(Let me know if this accidently broke any other zoned devices, I don't have any to test it on but as far as I can tell it should be fine)",
+      "zipUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/download/0.2.0/LivingFray.RGBIntegration.zip",
+      "releaseUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/tag/0.2.0",
+      "bodyZh": "添加了对razer chroma sdk的支持\n（在huntsman键盘上测试过，其他设备应该也适用）\n\n修复了在steelseries鼠标上手电筒闪烁的bug。\n（如果这个修复意外破坏了其他区域设备，请告诉我，我没有设备可以测试，但据我所知应该没问题）"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "Potential fix for non-per-key keyboards",
+      "date": "2022-08-30",
+      "body": "Added some default event bindings for zoned devices to hopefully display the ambient effects for certain keyboards (e.g. Apex 3).\r\n\r\nFun fact: Steelseries has an rgb zone called \"all\" that apparently means \"all, but only if your keyboard can illuminate each key individually, otherwise none\"",
+      "zipUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/download/0.1.1/LivingFray.RGBIntegration.zip",
+      "releaseUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/tag/0.1.1",
+      "bodyZh": "添加了一些默认的事件绑定，用于区域设备，希望能显示某些键盘（例如 Apex 3）的环境效果。\r\n\r\n有趣的事实：Steelseries 有一个名为 \"all\" 的 RGB 区域，其含义似乎是 \"全部，但只有当你的键盘能够单独点亮每个按键时才有效，否则无效\"。"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Initial release",
+      "date": "2022-08-27",
+      "body": "",
+      "zipUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/download/0.1.0/LivingFray.RGBIntegration.zip",
+      "releaseUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/tag/0.1.0"
+    }
+  ]
+}

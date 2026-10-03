@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2022-05-14T09:54:08Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-05-14",
+      "body": "Initial Release",
+      "zipUrl": "https://github.com/LivingFray/OW-PowerFailure/releases/download/1.0.0/release.zip",
+      "releaseUrl": "https://github.com/LivingFray/OW-PowerFailure/releases/tag/1.0.0"
+    }
+  ]
+}

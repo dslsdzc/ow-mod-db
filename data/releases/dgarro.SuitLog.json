@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-04-26T21:19:27Z",
+  "releases": [
+    {
+      "tag": "1.5.0",
+      "name": "1.5.0",
+      "date": "2026-04-26",
+      "body": "Added the methofd `LockSuitLog` and `UnlockSuitLog` to the API that allows other mods to disable/re-enable the Suit Log.\r\n\r\nThank you @aXu-AP for the contribution!",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.5.0/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.5.0",
+      "bodyZh": "添加了方法`LockSuitLog`和`UnlockSuitLog`到API中，允许其他模组禁用/启用宇航服日志。\n\n感谢@aXu-AP的贡献！"
+    },
+    {
+      "tag": "1.4.2",
+      "name": "1.4.2",
+      "date": "2026-01-13",
+      "body": "The Suit Log is not longer openable while holding custom items, fixing incompatibility with Echo Hike and possibly other mods. \r\n\r\nThank you @aXu-AP for the contribution!",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.4.2/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.4.2",
+      "bodyZh": "套装日志在持有自定义物品时不再可打开，修复了与回声远足及其他模组的兼容性问题。\r\n\r\n感谢 @aXu-AP 的贡献！"
+    },
+    {
+      "tag": "1.4.1",
+      "name": "1.4.1",
+      "date": "2025-08-22",
+      "body": "- Translations are now in JSON files.\r\n- Missing texts are now translatable: the \"Close Entries\" prompt and the texts for custom modes (the same 3 texts as Custom Ship Log Modes)\r\n\r\n\r\n- Added Spanish translation for the missing texts\r\n- Added Simplified Chinese translation for the missing texts by @NanFyn (from CSLM translation and missing \"Close Entries\" prompt issue report)\r\n- Added Japanese translation for custom mode texts by @TRSasasusu (from CSLM translation, \"Close Entries\" translation is still missing!)",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.4.1/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.4.1",
+      "bodyZh": "- 现在翻译已存储在JSON文件中。\r\n- 缺失文本现在可翻译：\"关闭条目\"提示以及自定义模式（与自定义飞船日志模式相同的3条文本）\r\n\r\n\r\n- 为缺失文本添加了西班牙语翻译\r\n- 通过@NanFyn添加了缺失文本的简体中文翻译（来自CSLM翻译和缺失\"关闭条目\"提示的问题报告）\r\n- 通过@TRSasasusu添加了自定义模式文本的日语翻译（来自CSLM翻译，\"关闭条目\"的翻译仍然缺失！）"
+    },
+    {
+      "tag": "1.4.0",
+      "name": "1.4.0",
+      "date": "2025-05-11",
+      "body": "Added translations for 16 languages by @omega-fallon (and russian correction by @istudyatuni)",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.4.0/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.4.0",
+      "bodyZh": "增加了 @omega-fallon 的 16 种语言翻译（以及 @istudyatuni 的俄语修正）"
+    },
+    {
+      "tag": "1.3.2",
+      "name": "1.3.2",
+      "date": "2024-06-11",
+      "body": "Fixed to work with Outer Wilds Patch 15 (updated game libs). Thank you @MegaPiggy  !",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.3.2/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.3.2",
+      "bodyZh": "修复以支持星际拓荒补丁15（更新了游戏库）。感谢 @MegaPiggy !"
+    },
+    {
+      "tag": "1.3.1",
+      "name": "1.3.1",
+      "date": "2024-03-02",
+      "body": "- Fix custom modes's `Initialize`  being called twice or not at all instead of just once.\r\n- Fix item lists's description field not being properly starting cleared",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.3.1/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.3.1"
+    },
+    {
+      "tag": "1.3.0",
+      "name": "1.3.0",
+      "date": "2024-02-28",
+      "body": "**Custom Suit Log Modes**\r\n\r\nThis update adds an API that allows other mods to add their custom Suit Log modes that the user can switch between (including a mode selector like in [Custom Ship Log Modes](https://outerwildsmods.com/mods/customshiplogmodes/)).\r\n\r\nThe API also includes many methods to create and use item lists on the suit's helmet UI that are very similar to the ones from Custom Ship Log Modes with easy portability between the two. See the [README's guide](https://github.com/dgarroDC/SuitLog#suit-log-modes-developer-guide) for more info.",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.3.0/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.3.0"
+    },
+    {
+      "tag": "1.2.8",
+      "name": "1.2.8",
+      "date": "2024-02-09",
+      "body": "- An orange question mark is displayed when selecting a rumored entry or a planet with no revealed entries, similar to vanilla's Ship Log Map Mode.\r\n- More internal changes were made to progress the future custom modes feature, particularly for item lists. In fact, the question mark was added for a better compatibility between Ship Log and Suit Log item lists.",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.2.8/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.2.8"
+    },
+    {
+      "tag": "1.2.7",
+      "name": "1.2.7",
+      "date": "2024-01-29",
+      "body": "- Planets (and other locations) with no entries revealed but that are visible in the vanilla Ship Log's Map Mode are now also visible in the Suit Log (also with the message \"No discoveries yet.\"). This also includes New Horizon's planets (the ones without `invisibleWhenHidden` set in `true`).\r\n- With this update a large internal refactor to the codebase was done, moving most of the logic to a `SuitLogMode`  and a `SuitLogItemList`. This doesn't change anything to the mod functionality yet, but it's a first step to a future update that will include the possibility to others mods to add Custom Suit Log Modes, allowing them to use the Suit Log UI with a similar API to the Custom Ship Log Modes \"Item List\" API methods (this should help porting existing Ship Log Modes that use those methods to the Suit Log, although there will be some different that will be clarified when the update is complete).",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.2.7/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.2.7"
+    },
+    {
+      "tag": "1.2.6",
+      "name": "1.2.6",
+      "date": "2023-12-24",
+      "body": "Fix NRE errors when starting the solar system after Outer Wilds Patch 14 (#1). The errors were harmless, only causing unnecessary noise in the logs, so this fix avoids it.\r\n\r\nThanks @xen-42 and @Ixrec for reporting this issue!",
+      "zipUrl": "https://github.com/dgarroDC/SuitLog/releases/download/1.2.6/dgarro.SuitLog.zip",
+      "releaseUrl": "https://github.com/dgarroDC/SuitLog/releases/tag/1.2.6"
+    }
+  ]
+}

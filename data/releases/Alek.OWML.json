@@ -1,0 +1,86 @@
+{
+  "repoUpdatedAt": "2026-08-13T10:56:55Z",
+  "releases": [
+    {
+      "tag": "2.16.2",
+      "name": "2.16.2",
+      "date": "2026-05-13",
+      "body": "",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.16.2/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.16.2"
+    },
+    {
+      "tag": "2.16.1",
+      "name": "2.16.1",
+      "date": "2026-04-26",
+      "body": "",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.16.1/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.16.1"
+    },
+    {
+      "tag": "2.16.0",
+      "name": "2.16.0",
+      "date": "2026-04-25",
+      "body": "",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.16.0/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.16.0"
+    },
+    {
+      "tag": "2.15.5",
+      "name": "2.15.5",
+      "date": "2026-01-31",
+      "body": "",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.15.5/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.15.5"
+    },
+    {
+      "tag": "2.15.4",
+      "name": "2.15.4",
+      "date": "2025-08-28",
+      "body": "fix latest game version for gamepass",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.15.4/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.15.4",
+      "bodyZh": "修复最新游戏版本以支持游戏通行证"
+    },
+    {
+      "tag": "2.15.3",
+      "name": "2.15.3",
+      "date": "2025-06-24",
+      "body": "",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.15.3/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.15.3"
+    },
+    {
+      "tag": "2.15.2",
+      "name": "2.15.2",
+      "date": "2025-05-07",
+      "body": "",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.15.2/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.15.2"
+    },
+    {
+      "tag": "2.15.1",
+      "name": "2.15.1",
+      "date": "2025-02-13",
+      "body": "",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.15.1/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.15.1"
+    },
+    {
+      "tag": "2.15.0",
+      "name": "2.15.0",
+      "date": "2025-02-13",
+      "body": "",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.15.0/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.15.0"
+    },
+    {
+      "tag": "2.14.1",
+      "name": "2.14.1",
+      "date": "2025-01-13",
+      "body": "",
+      "zipUrl": "https://github.com/ow-mods/owml/releases/download/2.14.1/OWML.zip",
+      "releaseUrl": "https://github.com/amazingalek/owml/releases/tag/2.14.1"
+    }
+  ]
+}

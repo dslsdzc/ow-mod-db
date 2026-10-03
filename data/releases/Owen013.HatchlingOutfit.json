@@ -1,0 +1,69 @@
+{
+  "repoUpdatedAt": "2026-02-24T23:27:59Z",
+  "releases": [
+    {
+      "tag": "v1.2.4",
+      "name": "Housekeeping",
+      "date": "2026-02-24",
+      "body": "### Changes\r\n- Default settings now use the vanilla suit style.\r\n- Code refactoring.",
+      "zipUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/download/v1.2.4/Owen013.HatchlingOutfit.zip",
+      "releaseUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/tag/v1.2.4"
+    },
+    {
+      "tag": "v1.2.3",
+      "name": "v1.2.3: Helmet Tweaks and Vanilla Bugfixes",
+      "date": "2024-03-14",
+      "body": "- The helmet visibility is now based on whether or not you're wearing the helmet rather than the whole suit; if you're wearing the suit but not the helmet, the head will now appear unhelmeted.\r\n- Fixed a bug(?) in the vanilla game where the shadow of your right arm will appear even the arm is not visible (usually because you're holding an item).",
+      "zipUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/download/v1.2.3/Owen013.HatchlingOutfit.zip",
+      "releaseUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/tag/v1.2.3"
+    },
+    {
+      "tag": "v1.2.2",
+      "name": "v1.2.2: Bugfix",
+      "date": "2024-03-14",
+      "body": "MonoBehaviors now properly unsubscribe from events to prevent the config from breaking after the first loop.",
+      "zipUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/download/v1.2.2/Owen013.HatchlingOutfit.zip",
+      "releaseUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/tag/v1.2.2"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "v1.2.1: Compatibility Fix with Common Camera Utility",
+      "date": "2024-01-14",
+      "body": "The custom outfit should now appear correctly on custom camera **in most cases. (See below)**\r\n\r\nKnown Bug: if you put the player's helmet on when its normally off or vice-versa and switch to a custom camera (like Static Camera) and then go back into the config and set the player's helmet to be in its default state (on when the suit is worn or off when it isn't) then the player's head will not appear in the custom camera until you switch back to the normal camera and back into the custom one. This should be fixed when the next version of Common Camera Utility is released.",
+      "zipUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/download/v1.2.1/Owen013.HatchlingOutfit.zip",
+      "releaseUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/tag/v1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "v1.2.0",
+      "date": "2022-10-01",
+      "body": "This version has been sitting on my computer unchanged for so long that I don't even remember what it adds. Enjoy.",
+      "zipUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/download/v1.2.0/Owen013.HatchlingOutfit.zip",
+      "releaseUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0: Missing Limbs and Sleeves",
+      "date": "2022-05-22",
+      "body": "* Added the ability to remove certain body parts from the playermodel entirely.\r\n* Added the ability to put suit sleeve on only one arm.",
+      "zipUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/download/v1.1.0/Owen013.HatchlingOutfit.zip",
+      "releaseUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Full Release",
+      "date": "2022-05-22",
+      "body": "This mod allows you to customize the hatchling's outfit! Open the configuration menu to customize which suit pieces the hatchling will wear (helmet, jacket, etc).",
+      "zipUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/download/v1.0.0/Owen013.HatchlingOutfit.zip",
+      "releaseUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "First Release",
+      "date": "2022-05-22",
+      "body": "",
+      "zipUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/download/v0.1.0/Owen013.HatchlingOutfit.zip",
+      "releaseUrl": "https://github.com/Owen013/Hatchling-Outfitter/releases/tag/v0.1.0"
+    }
+  ]
+}

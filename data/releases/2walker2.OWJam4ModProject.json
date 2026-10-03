@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2024-11-05T02:53:21Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Small Patch",
+      "date": "2024-11-05",
+      "body": "Fixed an issue where a light sensor could be activated by the wrong light.",
+      "zipUrl": "https://github.com/2walker2/OWJam4ModProject/releases/download/v1.0.1/2walker2.OWJam4ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam4ModProject/releases/tag/v1.0.1",
+      "bodyZh": "修复了一个问题，即光线传感器可能被错误的光线激活。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Jam Release",
+      "date": "2024-11-05",
+      "body": "A dream of ever greater heights.",
+      "zipUrl": "https://github.com/2walker2/OWJam4ModProject/releases/download/v1.0.0/2walker2.OWJam4ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam4ModProject/releases/tag/v1.0.0",
+      "bodyZh": "一个不断追求更高境界的梦想。"
+    }
+  ]
+}

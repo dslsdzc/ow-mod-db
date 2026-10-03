@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-01-07T21:02:11Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2022-12-15",
+      "body": "It's released",
+      "zipUrl": "https://github.com/Acamaeda/OuterWildsSand/releases/download/v0.1.0/OuterWildsSand.zip",
+      "releaseUrl": "https://github.com/Acamaeda/OuterWildsSand/releases/tag/v0.1.0",
+      "bodyZh": "已发布"
+    }
+  ]
+}

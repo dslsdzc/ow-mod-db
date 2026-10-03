@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2024-11-05T01:36:02Z",
+  "releases": [
+    {
+      "tag": "0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-11-05",
+      "body": "Initial Release",
+      "zipUrl": "https://github.com/Echatsum/MisfiredJump/releases/download/0.1.0/Echatsum.MisfiredJump.zip",
+      "releaseUrl": "https://github.com/Echatsum/MisfiredJump/releases/tag/0.1.0"
+    }
+  ]
+}

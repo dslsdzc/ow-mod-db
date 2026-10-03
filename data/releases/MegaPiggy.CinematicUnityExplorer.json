@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2025-12-30T19:31:57Z",
+  "releases": [
+    {
+      "tag": "6.0.1",
+      "name": "v6.0.1",
+      "date": "2025-12-30",
+      "body": "- Allowed for usage in the post credits scene\r\n- Updated Cinematic Unity Explorer version",
+      "zipUrl": "https://github.com/MegaPiggy/Cinematic-Unity-Explorer-For-Outer-Wilds/releases/download/6.0.1/MegaPiggy.CinematicUnityExplorer.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/Cinematic-Unity-Explorer-For-Outer-Wilds/releases/tag/6.0.1"
+    },
+    {
+      "tag": "6.0.0",
+      "name": "v6.0.0",
+      "date": "2024-06-15",
+      "body": "- Adds interactable gizmos\r\n\r\n- To use them first select a transform with the scene inspector\r\n  - Then press R to cycle from Local Position, Local Rotation and none.\r\n  - You can even then press T to when...\r\n    - in Local Position mode go from actual local position to using the transform orientation\r\n    - in Local Rotation to toggle a rotation wheel that always looks at the camera\r\n- This used Cinematic Unity Explorer version 1.1.0\r\n\r\n- This is a pre-release, so if something goes terribly wrong please tell me.",
+      "zipUrl": "https://github.com/MegaPiggy/Cinematic-Unity-Explorer-For-Outer-Wilds/releases/download/6.0.0/MegaPiggy.CinematicUnityExplorer.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/Cinematic-Unity-Explorer-For-Outer-Wilds/releases/tag/6.0.0"
+    },
+    {
+      "tag": "5.9.0",
+      "name": "v5.9.0",
+      "date": "2024-06-15",
+      "body": "- This used Cinematic Unity Explorer version 1.1.0",
+      "zipUrl": "https://github.com/MegaPiggy/Cinematic-Unity-Explorer-For-Outer-Wilds/releases/download/5.9.0/MegaPiggy.CinematicUnityExplorer.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/Cinematic-Unity-Explorer-For-Outer-Wilds/releases/tag/5.9.0"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2025-08-20T03:15:15Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2024-09-29",
+      "body": "",
+      "zipUrl": "https://github.com/leadpogrommer/PeacefulGhosts/releases/download/v0.1.2/Leadpogrommer.PeacefulGhosts.zip",
+      "releaseUrl": "https://github.com/leadpogrommer/PeacefulGhosts/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Release v0.1.1",
+      "date": "2022-06-30",
+      "body": "",
+      "zipUrl": "https://github.com/leadpogrommer/PeacefulGhosts/releases/download/v0.1.1/Leadpogrommer.PeacefulGhosts.zip",
+      "releaseUrl": "https://github.com/leadpogrommer/PeacefulGhosts/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Release v0.1.0",
+      "date": "2021-10-25",
+      "body": "",
+      "zipUrl": "https://github.com/leadpogrommer/PeacefulGhosts/releases/download/v0.1.0/Leadpogrommer.PeacefulGhosts.zip",
+      "releaseUrl": "https://github.com/leadpogrommer/PeacefulGhosts/releases/tag/v0.1.0"
+    }
+  ]
+}

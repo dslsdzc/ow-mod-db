@@ -1,0 +1,58 @@
+{
+  "repoUpdatedAt": "2026-07-31T15:46:54Z",
+  "releases": [
+    {
+      "tag": "1.1.2",
+      "name": "1.1.2",
+      "date": "2025-04-02",
+      "body": "Update translation.\r\nDisable option to show character names in English.",
+      "zipUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/download/1.1.2/PuFF.OWCHT.zip",
+      "releaseUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/tag/1.1.2",
+      "bodyZh": "更新翻译。\n禁用显示英文名选项。"
+    },
+    {
+      "tag": "1.1.1",
+      "name": "1.1.1",
+      "date": "2022-06-06",
+      "body": "Fixed number not showing in low oxygen/fuel prompt",
+      "zipUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/download/1.1.1/PuFF.OWCHT.zip",
+      "releaseUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/tag/1.1.1",
+      "bodyZh": "修复了低氧气/燃料提示中未显示数量的问题"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2022-05-15",
+      "body": "Add option to show charaters names in English in mod config.\r\nExit to main menu to apply changes.",
+      "zipUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/download/1.1.0/PuFF.OWCHT.zip",
+      "releaseUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/tag/1.1.0",
+      "bodyZh": "在模组配置中添加显示英文名的选项。\n返回主菜单以应用更改。"
+    },
+    {
+      "tag": "1.0.2",
+      "name": "1.0.2",
+      "date": "2022-05-14",
+      "body": "Fix release folder path",
+      "zipUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/download/1.0.2/PuFF.OWCHT.zip",
+      "releaseUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/tag/1.0.2",
+      "bodyZh": "修复发布文件夹路径"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2022-05-14",
+      "body": "Updated manifest.json\r\nUpdated OWML to 2.3.3",
+      "zipUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/download/1.0.1/OWCHT.zip",
+      "releaseUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/tag/1.0.1",
+      "bodyZh": "更新 manifest.json\n更新星际拓荒模组加载器至 2.3.3"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-05-14",
+      "body": "Initial release.",
+      "zipUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/download/1.0.0/OWCHT.zip",
+      "releaseUrl": "https://github.com/puffbro/outer-wilds-traditional-chinese-translation/releases/tag/1.0.0"
+    }
+  ]
+}

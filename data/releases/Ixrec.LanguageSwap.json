@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-02-08T16:44:17Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2025-02-08",
+      "body": "declare and document incompability with all VanillaFix-based mods",
+      "zipUrl": "https://github.com/Ixrec/OuterWildsLanguageSwap/releases/download/v0.1.1/Ixrec.LanguageSwap.zip",
+      "releaseUrl": "https://github.com/Ixrec/OuterWildsLanguageSwap/releases/tag/v0.1.1",
+      "bodyZh": "声明并记录与所有基于VanillaFix的模组的兼容性问题"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-02-08",
+      "body": "First Release!",
+      "zipUrl": "https://github.com/Ixrec/OuterWildsLanguageSwap/releases/download/v0.1.0/Ixrec.LanguageSwap.zip",
+      "releaseUrl": "https://github.com/Ixrec/OuterWildsLanguageSwap/releases/tag/v0.1.0",
+      "bodyZh": "首次发布！"
+    }
+  ]
+}

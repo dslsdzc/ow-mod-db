@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2026-03-14T02:31:42Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2026-03-14",
+      "body": "- Updated Chinese (Simplified) translation (thanks SanBaiMing!)",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-jam-2/releases/download/v0.1.2/Hawkbar.TheSurvivors.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-jam-2/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2026-01-14",
+      "body": "- Added Chinese translation (thanks SanBaiMing!)",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-jam-2/releases/download/v0.1.1/Hawkbar.TheSurvivors.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-jam-2/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "v0.1.0",
+      "date": "2023-07-16",
+      "body": "Submission for the Summer 2023 mod jam! A new Nomai recording has been added to the Vessel. See the Readme for known issues and ping Hawkbar on Discord for the rest.\r\n\r\n**Full Changelog**: https://github.com/Hawkbat/ow-mod-jam-2/commits/0.1.0",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-jam-2/releases/download/0.1.0/Hawkbar.TheSurvivors.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-jam-2/releases/tag/0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2026-08-30T01:37:43Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2026-05-29",
+      "body": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v1.0.1/outer-wilds-real-solar-system.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-07-03",
+      "body": "- A lot of new celestial bodies! Gas giant moons, dwarf planets, asteroids, and a few more local stars.\r\n- A lot of new spacecraft scattered around the system.\r\n- A lot of new textures and visual improvements.\r\n- Spaceflight music by @gpixl.\r\n- Ship Log icons by @ClassicalBro.\r\n- Gateway structures for fast travel between Earth, Proxima b, and Barnard's Star b.\r\n- Improved orbits and sizes to be more consistent and realistic.\r\n- Slightly whimsical details, such as gas giant interiors, dust devils on Mars, and meteors spewing from Io.\r\n- Star evolutions and timed events due to them, such as rings fading and terrestrial planets melting.\r\n- Milky Way skybox.\r\n- Achievements.\r\n- Some aquatic life ;)",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v1.0.0/outer-wilds-real-solar-system.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.6.7",
+      "name": "v0.6.7",
+      "date": "2024-03-13",
+      "body": "- Added Rhea to Saturn\r\n- Updated Neptune, Charon, Moon, Vesta, Ceres, and Venus textures\r\n- Polish Translation by @Minecraft633\r\n\r\nA major update coming soon :)",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v0.6.7/outer-wilds-real-solar-system.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v0.6.7"
+    },
+    {
+      "tag": "v0.6.6",
+      "name": "v0.6.6",
+      "date": "2022-09-20",
+      "body": "Added a little teaser",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v0.6.6/outer-wilds-real-solar-system.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v0.6.6"
+    },
+    {
+      "tag": "v0.6.5",
+      "name": "v0.6.5",
+      "date": "2022-06-20",
+      "body": "- Moved the vessel to be farther from the sun",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v0.6.5/outer-wilds-real-solar-system.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v0.6.5"
+    },
+    {
+      "tag": "v0.6.4",
+      "name": "v0.6.4",
+      "date": "2022-05-14",
+      "body": "- Added Barnard's Star, thanks @MegaPiggy\r\n- Basic size tweaks by @TerrificTrifid\r\n- Venus improvements by @TerrificTrifid\r\n- Jammer",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v0.6.4/xen.RealSolarSystem.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v0.6.4"
+    },
+    {
+      "tag": "v0.6.3",
+      "name": "v0.6.3",
+      "date": "2022-05-10",
+      "body": "- Fixed Proxima Centauri position",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v0.6.3/xen.RealSolarSystem.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v0.6.3"
+    },
+    {
+      "tag": "v0.6.2",
+      "name": "v0.6.2",
+      "date": "2022-03-12",
+      "body": "Fix typo",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v0.6.2/xen.RealSolarSystem.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v0.6.2"
+    },
+    {
+      "tag": "v0.6.1",
+      "name": "v0.6.1",
+      "date": "2022-03-12",
+      "body": "Update Russian translation for Pluto moons",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v0.6.1/xen.RealSolarSystem.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v0.6.1"
+    },
+    {
+      "tag": "v0.6.0",
+      "name": "v0.6.0",
+      "date": "2022-03-10",
+      "body": "- Russian translation\r\n- Moons of pluto-charon",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/download/v0.6.0/xen.RealSolarSystem.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-real-solar-system/releases/tag/v0.6.0"
+    }
+  ]
+}

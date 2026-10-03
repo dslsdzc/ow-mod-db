@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2025-07-22T18:32:04Z",
+  "releases": [
+    {
+      "tag": "0.0.1",
+      "name": "Version 0.0.1",
+      "date": "2025-07-22",
+      "body": "Initial Release",
+      "zipUrl": "https://github.com/NotADuck02/Boreas.Jam5Campfire/releases/download/0.0.1/Boreas.Jam5Campfire-main.zip",
+      "releaseUrl": "https://github.com/NotADuck02/Boreas.Jam5Campfire/releases/tag/0.0.1",
+      "bodyZh": "初始发布"
+    }
+  ]
+}

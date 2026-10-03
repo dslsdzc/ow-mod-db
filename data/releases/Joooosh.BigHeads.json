@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-05-01T03:31:09Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "Big Heads v1.0.0",
+      "date": "2022-05-01",
+      "body": "1.0.0 release for Big Heads.",
+      "zipUrl": "https://github.com/josshmot/OW-BigHeads/releases/download/1.0.0/Joooosh.BigHeads.zip",
+      "releaseUrl": "https://github.com/joshua-smith98/OW-BigHeads/releases/tag/1.0.0",
+      "bodyZh": "1.0.0版本适用于大头们。"
+    }
+  ]
+}

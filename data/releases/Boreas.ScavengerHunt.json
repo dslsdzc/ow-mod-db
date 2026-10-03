@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2025-04-22T00:56:02Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-04-22",
+      "body": "Made a certain area much easier to reach.",
+      "zipUrl": "https://github.com/NotADuck02/Boreas.ScavengerHunt/releases/download/v1.0.0/Boreas.ScavengerHunt.zip",
+      "releaseUrl": "https://github.com/NotADuck02/Boreas.ScavengerHunt/releases/tag/v1.0.0",
+      "bodyZh": "使某个区域更容易到达。"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2024-12-13",
+      "body": "Name is more descriptive",
+      "zipUrl": "https://github.com/NotADuck02/Boreas.ScavengerHunt/releases/download/v0.1.1/Boreas.ScavengerHunt.zip",
+      "releaseUrl": "https://github.com/NotADuck02/Boreas.ScavengerHunt/releases/tag/v0.1.1",
+      "bodyZh": "名称更具描述性"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-12-13",
+      "body": "Main Mod Complete, a little rough around the edges but the content is done.",
+      "zipUrl": "https://github.com/NotADuck02/Boreas.ScavengerHunt/releases/download/v0.1.0/Boreas.ScavengerHunt.zip",
+      "releaseUrl": "https://github.com/NotADuck02/Boreas.ScavengerHunt/releases/tag/v0.1.0",
+      "bodyZh": "主模组完成，边缘略显粗糙但内容已完成。"
+    }
+  ]
+}

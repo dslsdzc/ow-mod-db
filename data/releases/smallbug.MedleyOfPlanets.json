@@ -1,0 +1,45 @@
+{
+  "repoUpdatedAt": "2023-12-04T21:49:14Z",
+  "releases": [
+    {
+      "tag": "v1.1.1",
+      "name": "v1.1.1",
+      "date": "2022-02-10",
+      "body": "Improved water colors",
+      "zipUrl": "https://github.com/Leopard501/PlanetMedley/releases/download/v1.1.1/PlanetMedley.zip",
+      "releaseUrl": "https://github.com/Leopard501/PlanetMedley/releases/tag/v1.1.1"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0",
+      "date": "2022-02-06",
+      "body": "",
+      "zipUrl": "https://github.com/Leopard501/PlanetMedley/releases/download/v1.1.0/PlanetMedley.zip",
+      "releaseUrl": "https://github.com/Leopard501/PlanetMedley/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "v1.0.2",
+      "date": "2022-02-04",
+      "body": "",
+      "zipUrl": "https://github.com/Leopard501/PlanetMedley/releases/download/v1.0.2/PlanetMedley.zip",
+      "releaseUrl": "https://github.com/Leopard501/PlanetMedley/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-02-02",
+      "body": "",
+      "zipUrl": "https://github.com/Leopard501/PlanetMedley/releases/download/v1.0.1/PlanetMedley.zip",
+      "releaseUrl": "https://github.com/Leopard501/PlanetMedley/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-02-02",
+      "body": "",
+      "zipUrl": "https://github.com/Leopard501/PlanetMedley/releases/download/v1.0.0/PlanetMedley.zip",
+      "releaseUrl": "https://github.com/Leopard501/PlanetMedley/releases/tag/v1.0.0"
+    }
+  ]
+}

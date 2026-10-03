@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-05-13T12:08:58Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-04-19",
+      "body": "Initial release! Enables fast-traveling to locked-on planets while piloting the ship.",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModFastTravel/releases/download/v0.1.0/Hawkbar.FastTravel.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModFastTravel/releases/tag/v0.1.0",
+      "bodyZh": "初始发布！在驾驶飞船时，可快速传送至锁定星球。"
+    }
+  ]
+}

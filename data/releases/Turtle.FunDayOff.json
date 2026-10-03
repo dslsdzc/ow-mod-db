@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2023-07-16T17:36:52Z",
+  "releases": [
+    {
+      "tag": "0.4.0",
+      "name": "Quick Patch",
+      "date": "2023-07-16",
+      "body": "Had to fix mod real quick to be downloadable",
+      "zipUrl": "https://github.com/TextureTurtle/ErnestosFunDayOff/releases/download/0.4.0/MOD.WORKS.PATCH.zip",
+      "releaseUrl": "https://github.com/TextureTurtle/ErnestosFunDayOff/releases/tag/0.4.0",
+      "bodyZh": "不得不快速修复模组以供下载"
+    },
+    {
+      "tag": "0.3.0",
+      "name": "Music Update!",
+      "date": "2023-07-16",
+      "body": "20 more updates before submissions close",
+      "zipUrl": "https://github.com/TextureTurtle/ErnestosFunDayOff/releases/download/0.3.0/Cool.Sounds.zip",
+      "releaseUrl": "https://github.com/TextureTurtle/ErnestosFunDayOff/releases/tag/0.3.0",
+      "bodyZh": "提交截止前还有20次更新"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "Pre Jam Patch",
+      "date": "2023-07-16",
+      "body": "Lets fucking goo it's actually playable now!!!",
+      "zipUrl": "https://github.com/TextureTurtle/ErnestosFunDayOff/releases/download/0.2.0/Update.zip",
+      "releaseUrl": "https://github.com/TextureTurtle/ErnestosFunDayOff/releases/tag/0.2.0",
+      "bodyZh": "Let's fucking go it's actually playable now!!!"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "FINNALly GOD IS REAL (Jam Release)",
+      "date": "2023-07-16",
+      "body": "Yayyyyyyy",
+      "zipUrl": "https://github.com/TextureTurtle/ErnestosFunDayOff/releases/download/0.1.0/Fun.zip",
+      "releaseUrl": "https://github.com/TextureTurtle/ErnestosFunDayOff/releases/tag/0.1.0",
+      "bodyZh": "耶耶耶耶耶"
+    }
+  ]
+}

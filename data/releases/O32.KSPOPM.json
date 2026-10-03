@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-02-02T11:02:27Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2023-02-02",
+      "body": "Is the original solar system not enough? Well, here's KSP's Outer Planets Mod, squished down into an OW-sized system.",
+      "zipUrl": "https://github.com/RealOrbital32/KSPOPM/releases/download/1.0.0/O32.KSPOPM.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/KSPOPM/releases/tag/1.0.0",
+      "bodyZh": "原太阳系还不够吗？好吧，这是KSP的外行星模组，被压缩进了OW规模的系统中。"
+    }
+  ]
+}

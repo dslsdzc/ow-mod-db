@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-12-29T21:02:59Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-12-28",
+      "body": "first release yay",
+      "zipUrl": "https://github.com/ColumbidaeCafe/MoarMarshmallows/releases/download/v0.1.0/ColumbidaeCafe.MoarMarshmallows.zip",
+      "releaseUrl": "https://github.com/ColumbidaeCafe/MoarMarshmallows/releases/tag/v0.1.0",
+      "bodyZh": "首次发布太好了"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "repoUpdatedAt": "2022-03-17T20:27:08Z",
+  "releases": [
+    {
+      "tag": "0.7.0",
+      "name": "More more models and textures",
+      "date": "2021-12-13",
+      "body": "0.7.0\r\n\r\nBunch of new skeleton models and tools",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsHalf-Life/releases/download/0.7.0/Release.0.7.0.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsHalf-Life/releases/tag/0.7.0",
+      "bodyZh": "0.7.0\r\n\r\n一些新的骨骼模型和工具"
+    },
+    {
+      "tag": "0.6.0",
+      "name": "Models and more textures!",
+      "date": "2021-12-09",
+      "body": "",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsHalf-Life/releases/download/0.6.0/Release.0.6.0.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsHalf-Life/releases/tag/0.6.0"
+    },
+    {
+      "tag": "0.5.0",
+      "name": "Initial Release",
+      "date": "2021-12-07",
+      "body": "",
+      "zipUrl": "https://github.com/Vesper-Works/OuterWildsHalf-Life/releases/download/0.5.0/Release.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/OuterWildsHalf-Life/releases/tag/0.5.0"
+    }
+  ]
+}

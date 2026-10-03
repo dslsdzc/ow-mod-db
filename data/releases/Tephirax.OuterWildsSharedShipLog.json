@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2024-11-27T23:15:15Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Included file & updated metadata",
+      "date": "2022-11-18",
+      "body": "Incremented version number and included .zip",
+      "zipUrl": "https://github.com/Tephirax/SharedShipLog/releases/download/v0.1.1/OuterWildsSharedShipLog.zip",
+      "releaseUrl": "https://github.com/Tephirax/SharedShipLog/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1",
+      "name": "Initial Release",
+      "date": "2022-11-18",
+      "body": "Initial release of the Shared Ship Log mod. Everything is functional in the base game; DLC testing to come shortly.",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/Tephirax/SharedShipLog/releases/tag/v0.1"
+    }
+  ]
+}

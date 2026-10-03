@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2024-06-06T15:58:01Z",
+  "releases": [
+    {
+      "tag": "v0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2024-06-04",
+      "body": "Restricted controls to numpad to allow for compatibility with other mods.",
+      "zipUrl": "https://github.com/spacepiano/Outer-Wilds---Speed-up-Time/releases/download/v0.4.0/Spacepiano.AlterTime.zip",
+      "releaseUrl": "https://github.com/spacepiano/Outer-Wilds---Speed-up-Time/releases/tag/v0.4.0",
+      "bodyZh": "将控制限制为数字键盘，以允许与其他模组兼容。"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2024-06-03",
+      "body": "New time settings.",
+      "zipUrl": "https://github.com/spacepiano/Outer-Wilds---Speed-up-Time/releases/download/v0.3.0/Spacepiano.AlterTime.zip",
+      "releaseUrl": "https://github.com/spacepiano/Outer-Wilds---Speed-up-Time/releases/tag/v0.3.0",
+      "bodyZh": "新的时间设置。"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Speed up Time",
+      "date": "2022-04-25",
+      "body": "First release",
+      "zipUrl": "https://github.com/spacepiano/Outer-Wilds---Speed-up-Time/releases/download/0.1.0/release.zip",
+      "releaseUrl": "https://github.com/spacepiano/Outer-Wilds---Speed-up-Time/releases/tag/0.1.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

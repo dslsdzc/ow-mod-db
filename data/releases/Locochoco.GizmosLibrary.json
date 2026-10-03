@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-09-02T21:14:53Z",
+  "releases": [
+    {
+      "tag": "0.1.0",
+      "name": "Gizmos Library v0.1.0",
+      "date": "2022-09-02",
+      "body": "* First release of the library!",
+      "zipUrl": "https://github.com/loco-choco/GizmosLibrary/releases/download/0.1.0/Locochoco.GizmosLibrary.zip",
+      "releaseUrl": "https://github.com/loco-choco/GizmosLibrary/releases/tag/0.1.0",
+      "bodyZh": "* 库首次发布！"
+    }
+  ]
+}

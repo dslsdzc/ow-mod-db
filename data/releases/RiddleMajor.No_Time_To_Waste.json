@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-09-18T20:06:56Z",
+  "releases": [
+    {
+      "tag": "1.0.1",
+      "name": "Release 1.0.1",
+      "date": "2026-09-18",
+      "body": "Small shiplog fix cause I was pestered",
+      "bodyZh": "飞船日志的小修小补，因为我被烦扰了",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/1.0.1/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "Release 1.0.0",
+      "date": "2026-08-20",
+      "body": "Final release for now. Any game breaking bugs arise I will return but, I'm tired yo.",
+      "bodyZh": "目前暂定最终版本。如果出现任何导致游戏崩溃的bug，我会回来修复，但我已经累了。",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/1.0.0/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/1.0.0"
+    },
+    {
+      "tag": "0.1.9",
+      "name": "Release 0.1.9",
+      "date": "2026-08-19",
+      "body": "Changed credit type.",
+      "bodyZh": "已更改信用类型。",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/0.1.9/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/0.1.9"
+    },
+    {
+      "tag": "0.1.8",
+      "name": "Release 0.1.8",
+      "date": "2026-08-19",
+      "body": "Small collision fixes",
+      "bodyZh": "小型碰撞修复",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/0.1.8/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/0.1.8"
+    },
+    {
+      "tag": "0.1.7",
+      "name": "Release 0.1.7",
+      "date": "2026-08-19",
+      "body": "Actually fixed the collision issue",
+      "bodyZh": "实际上修复了碰撞问题",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/0.1.7/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/0.1.7"
+    },
+    {
+      "tag": "0.1.6",
+      "name": "Release 0.1.6",
+      "date": "2026-08-19",
+      "body": "Fixed collision issue",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/0.1.6/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/0.1.6"
+    },
+    {
+      "tag": "0.1.5",
+      "name": "Release 0.1.5",
+      "date": "2026-08-18",
+      "body": "Fixed manifest",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/0.1.5/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/0.1.5"
+    },
+    {
+      "tag": "0.1.4",
+      "name": "Release 0.1.4",
+      "date": "2026-08-18",
+      "body": "More fixes to alleviate timing problems",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/0.1.4/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/0.1.4"
+    },
+    {
+      "tag": "0.1.3",
+      "name": "Release 0.1.3",
+      "date": "2026-08-18",
+      "body": "Made a certain entrance even bigger\r\nMade a certain section slightly faster",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/0.1.3/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/0.1.3"
+    },
+    {
+      "tag": "0.1.2",
+      "name": "Release 0.1.2",
+      "date": "2026-08-18",
+      "body": "Made certain objects closer to reach",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/download/0.1.2/RiddleMajor.No_Time_To_Waste.zip",
+      "releaseUrl": "https://github.com/RiddleMajor/No-Time-To-Explain-/releases/tag/0.1.2"
+    }
+  ]
+}
