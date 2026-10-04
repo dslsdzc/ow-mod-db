@@ -1,12 +1,1 @@
-[
-  {
-    "unique_name": "Titch.ShipRemoteAutopilot",
-    "field": "description",
-    "en": "Remote Autopilot system for the Ship in 'Outer Wilds'"
-  },
-  {
-    "unique_name": "Titch.ShipRemoteAutopilot",
-    "field": "latestReleaseDescription",
-    "en": "- Refactored old bad 2022 code (oh my god-)\r\n- Added automatic landing to the ship when using Remote Autopilot.\r\n- UI notifications when the player has the suit on.\r\n- Gamepad controls now available.\r\n\r\nEnjoy :D "
-  }
-]
+[]
