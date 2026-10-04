@@ -6495,14 +6495,14 @@
       "at": "2026-09-02T07:58:21.691459Z"
     },
     "description": {
-      "en": "You've met with a terrible fate, haven't you? An entry for the 6th Outer Wilds mod jam.",
-      "zh": "你遭遇了可怕的命运，不是吗？第六届星际拓荒模组节的一个条目",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "You've met with a terrible fate, haven't you? First-place winner of the 6th Outer Wilds mod jam.",
+      "zh": "你遭遇了可怕的命运，不是吗？第6届星际拓荒模组大赛一等奖。",
+      "at": "2026-10-04T21:48:35.482566Z"
     },
     "latestReleaseDescription": {
-      "en": "- Significantly reduced the size of dialogue triggers to prevent triggering them while mid-jump over black holes\r\n- Small tweaks to the Russian translation (Thanks HanSoloCh!)\r\n- one one one one",
-      "zh": "- 对话触发器的大小进行了显著缩减，以防止在跨越黑洞时触发\n- 对俄语翻译进行了小调整（感谢HanSoloCh！）\n- 咔嚓咔嚓咔嚓",
-      "at": "2026-09-18T17:47:09.639188Z"
+      "en": "- Added Japanese translation (Thanks orclecle!)\r\n- Prevented the ship log from prematurely revealing certain entries\r\n- Blocked a certain vanilla achievement from triggering while following the normal mod progression\r\n- A certain weather phenomenon has been adjusted to be more reliable\r\n- Corrected the text for a ship log entry that referred to the wrong Hourglass Twin",
+      "zh": "- 添加了日语翻译（感谢orclecle！）\n- 防止飞船日志过早揭示某些条目\n- 在遵循正常模组进度时阻止了一个特定的原版成就触发\n- 调整了某个天气现象，使其更可靠\n- 修正了飞船日志条目中对错误的沙漏双星的提及",
+      "at": "2026-10-04T21:48:35.482566Z"
     }
   },
   "Known-Mouse.EchoesOfTheObserver": {

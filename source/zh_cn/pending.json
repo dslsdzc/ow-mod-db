@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "unique_name": "Hawkbar.GhostInTheMachine",
+    "field": "description",
+    "en": "You've met with a terrible fate, haven't you? First-place winner of the 6th Outer Wilds mod jam."
+  },
+  {
+    "unique_name": "Hawkbar.GhostInTheMachine",
+    "field": "latestReleaseDescription",
+    "en": "- Added Japanese translation (Thanks orclecle!)\r\n- Prevented the ship log from prematurely revealing certain entries\r\n- Blocked a certain vanilla achievement from triggering while following the normal mod progression\r\n- A certain weather phenomenon has been adjusted to be more reliable\r\n- Corrected the text for a ship log entry that referred to the wrong Hourglass Twin"
+  }
+]
