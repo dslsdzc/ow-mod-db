@@ -1870,14 +1870,14 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "description": {
-      "en": "Gives the player the ability to remotely \"summon\" the player's ship to a selected location. This is \"new\" technology from The Outer Wilds Ventures and as such- is fairly rudimentary.",
-      "zh": "赋予玩家远程“召唤”其飞船到选定位置的能力。这是来自星际拓荒冒险公司的“新技术”，因此相当基础。",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "Remote Autopilot system for the Ship in 'Outer Wilds'",
+      "zh": "星际拓荒中的飞船远程自动驾驶系统",
+      "at": "2026-10-04T01:52:49.385563Z"
     },
     "latestReleaseDescription": {
-      "en": "- Did some clean up to the code, comments and efficiency (i think...)\r\n- Added clearer notification support for the process of Remote Autopilot.\r\n- Added alternative keys options in the settings, If options are on, the Numpad will be replaced with the main keyboard layout of the same options.\r\n\r\nEnjoy! :)",
-      "zh": "- 对代码、注释和效率进行了一些清理（我认为...）\n- 为远程自动驾驶过程添加了更清晰的提示支持。\n- 在设置中添加了替代按键选项，如果选项开启，数字键盘将被替换为相同选项的主键盘布局。\n享受吧！：)",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "- Refactored old bad 2022 code (oh my god-)\r\n- Added automatic landing to the ship when using Remote Autopilot.\r\n- UI notifications when the player has the suit on.\r\n- Gamepad controls now available.\r\n\r\nEnjoy :D ",
+      "zh": "- 重构了旧的坏2022代码（哦我的天啊-)\n- 使用远程自动驾驶时，飞船自动降落。\n- 玩家穿着宇航服时，UI通知。\n- 现在可以使用游戏手柄控制。",
+      "at": "2026-10-04T01:52:49.385563Z"
     }
   },
   "12090113.Cubes": {
