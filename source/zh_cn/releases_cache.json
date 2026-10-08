@@ -8931,14 +8931,14 @@
     ]
   },
   "nice2cu1.OuterWildFixFont": {
-    "repoUpdatedAt": "2026-10-08T06:28:51Z",
+    "repoUpdatedAt": "2026-10-08T08:41:42Z",
     "releases": [
       {
         "tag": "3.0.0",
         "name": "OuterWildFixFont 3.0.0",
         "date": "2026-10-08",
         "body": "- 修改字体加载方式，从 Fonts/GameFont.ttf 加载自定义字体\r\n- 优化飞船日志字体采样与组件缓存，默认字号设为 20",
-        "bodyZh": "- 修改字体加载方式，从 Fonts/GameFont.ttf 加载自定义字体\r\n- 优化飞船日志字体采样与组件缓存，默认字号设为 20",
+        "bodyZh": "- 修改字体加载方式，从 Fonts/GameFont.ttf 加载自定义字体  \n- 优化飞船日志字体采样与组件缓存，默认字号设为 20",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/3.0.0/OuterWildFixFont-3.0.0.zip",
         "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/3.0.0"
       },
@@ -8956,7 +8956,7 @@
         "name": "OuterWildsFixFont",
         "date": "2024-04-07",
         "body": "1、调整ConsoleDisplay的修改逻辑。\r\n2、修复手拿信号镜以及飞船信号镜文字太小/缺失问题。\r\n3、删除不必要的日志输出。",
-        "bodyZh": "1、调整ConsoleDisplay的修改逻辑。\n2、修复手拿信号镜以及飞船信号镜文字太小/缺失问题。\n3、删除不必要的日志输出。",
+        "bodyZh": "1、调整ConsoleDisplay的修改逻辑。\n2、修复手持信号镜以及飞船信号镜文字太小/缺失问题。\n3、删除不必要的日志输出。",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.0.6/nice2cu1.OuterWildFixFont.zip",
         "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.6"
       },
@@ -8974,7 +8974,7 @@
         "name": "OuterWildsFixFont",
         "date": "2024-03-24",
         "body": "修复飞船信号镜、控制台文字大小问题。[#4](https://github.com/nice2cu1/OuterWildFixFont/issues/4)",
-        "bodyZh": "修复飞船信号镜、控制台文字大小问题。[0]",
+        "bodyZh": "修复飞船信号镜、控制台文字大小问题。[#4](https://github.com/nice2cu1/OuterWildFixFont/issues/4)",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.0.4/nice2cu1.OuterWildFixFont.zip",
         "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.4"
       },

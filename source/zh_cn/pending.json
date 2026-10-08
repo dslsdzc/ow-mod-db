@@ -2,11 +2,6 @@
   {
     "unique_name": "nice2cu1.OuterWildFixFont",
     "field": "description",
-    "en": "replaces fonts in the Simplified Chinese interfaces of Outer Wilds and its story mods to help resolve missing Chinese characters. It covers character dialogue, the Nomai translator, the ship log, and other interfaces. Character availability depends on the glyph coverage of the selected font."
-  },
-  {
-    "unique_name": "nice2cu1.OuterWildFixFont",
-    "field": "latestReleaseDescription",
-    "en": "- 修改字体加载方式，从 Fonts/GameFont.ttf 加载自定义字体\r\n- 优化飞船日志字体采样与组件缓存，默认字号设为 20"
+    "en": "replaces fonts in the Simplified Chinese interfaces of Outer Wilds and its story mods to help resolve missing Chinese characters."
   }
 ]

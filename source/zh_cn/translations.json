@@ -3490,9 +3490,9 @@
       "at": "2026-09-02T07:02:17.685998Z"
     },
     "description": {
-      "en": "It replaces the fonts in most (almost all) scenes of the game, allowing missing characters to be properly displayed in the Chinese environment.",
-      "zh": "它替换了游戏中大多数（几乎全部）场景的字体，允许在中文环境下正确显示缺失的字符。",
-      "at": "2026-09-02T07:02:17.685998Z"
+      "en": "replaces fonts in the Simplified Chinese interfaces of Outer Wilds and its story mods to help resolve missing Chinese characters.",
+      "zh": "替换星际拓荒及其故事模组的简体中文界面字体，以帮助解决缺失中文字符的问题。",
+      "at": "2026-10-08T20:03:27.439099Z"
     },
     "latestReleaseDescription": {
       "en": "- 修改字体加载方式，从 Fonts/GameFont.ttf 加载自定义字体\r\n- 优化飞船日志字体采样与组件缓存，默认字号设为 20",
