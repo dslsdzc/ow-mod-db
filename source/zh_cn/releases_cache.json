@@ -8931,58 +8931,68 @@
     ]
   },
   "nice2cu1.OuterWildFixFont": {
-    "repoUpdatedAt": "2025-11-03T05:47:00Z",
+    "repoUpdatedAt": "2026-10-08T06:28:51Z",
     "releases": [
+      {
+        "tag": "3.0.0",
+        "name": "OuterWildFixFont 3.0.0",
+        "date": "2026-10-08",
+        "body": "- 修改字体加载方式，从 Fonts/GameFont.ttf 加载自定义字体\r\n- 优化飞船日志字体采样与组件缓存，默认字号设为 20",
+        "bodyZh": "- 修改字体加载方式，从 Fonts/GameFont.ttf 加载自定义字体\r\n- 优化飞船日志字体采样与组件缓存，默认字号设为 20",
+        "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/3.0.0/OuterWildFixFont-3.0.0.zip",
+        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/3.0.0"
+      },
       {
         "tag": "2.1.0",
         "name": "OuterWildsFixFont",
         "date": "2025-08-25",
         "body": "这次应经是真的修复了飞船控制台文字在恒星际穿越后依旧过小/消失的问题🥲 #5",
+        "bodyZh": "这次已经是真的修复了飞船控制台文字在恒星际穿越后依旧过小/消失的问题🥲 #5",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.1.0/nice2cu1.OuterWildFixFont.zip",
-        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.1.0",
-        "bodyZh": "这次应经是真的修复了飞船控制台文字在恒星际穿越后依旧过小/消失的问题🥲 #5"
+        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.1.0"
       },
       {
         "tag": "2.0.6",
         "name": "OuterWildsFixFont",
         "date": "2024-04-07",
         "body": "1、调整ConsoleDisplay的修改逻辑。\r\n2、修复手拿信号镜以及飞船信号镜文字太小/缺失问题。\r\n3、删除不必要的日志输出。",
+        "bodyZh": "1、调整ConsoleDisplay的修改逻辑。\n2、修复手拿信号镜以及飞船信号镜文字太小/缺失问题。\n3、删除不必要的日志输出。",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.0.6/nice2cu1.OuterWildFixFont.zip",
-        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.6",
-        "bodyZh": "1、调整ConsoleDisplay的修改逻辑。\n2、修复手拿信号镜以及飞船信号镜文字太小/缺失问题。\n3、删除不必要的日志输出。"
+        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.6"
       },
       {
         "tag": "2.0.5",
         "name": "OuterWildsFixFont",
         "date": "2024-03-27",
         "body": "新增：\r\n1.在MOD菜单中添加滑块来控制飞船日志文字大小，以应对更多极端情况。（即时生效）\r\n调整：\r\n1.改变ConsoleDisplay的查找逻辑，减少Find Object的次数，以免造成性能损失",
+        "bodyZh": "新增：\n1. 在MOD菜单中添加滑块来控制飞船日志文字大小，以应对更多极端情况。（即时生效）\n调整：\n1. 改变ConsoleDisplay的查找逻辑，减少Find Object的次数，以免造成性能损失",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.0.5/nice2cu1.OuterWildFixFont.zip",
-        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.5",
-        "bodyZh": "新增：\n1. 在MOD菜单中添加滑块来控制飞船日志文字大小，以应对更多极端情况。（即时生效）\n调整：\n1. 改变ConsoleDisplay的查找逻辑，减少Find Object的次数，以免造成性能损失"
+        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.5"
       },
       {
         "tag": "2.0.4",
         "name": "OuterWildsFixFont",
         "date": "2024-03-24",
         "body": "修复飞船信号镜、控制台文字大小问题。[#4](https://github.com/nice2cu1/OuterWildFixFont/issues/4)",
+        "bodyZh": "修复飞船信号镜、控制台文字大小问题。[0]",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.0.4/nice2cu1.OuterWildFixFont.zip",
-        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.4",
-        "bodyZh": "修复飞船信号镜、控制台文字大小问题。[#4](https://github.com/nice2cu1/OuterWildFixFont/issues/4)"
+        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.4"
       },
       {
         "tag": "2.0.3",
         "name": "OuterWildFixFont",
         "date": "2023-10-03",
         "body": "适配v1.1.14",
+        "bodyZh": "",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.0.3/nice2cu1.OuterWildFixFont.zip",
-        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.3",
-        "bodyZh": "适配v1.1.14"
+        "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.3"
       },
       {
         "tag": "2.0.2",
         "name": "OuterWildFixFont",
         "date": "2023-08-20",
         "body": "使大部分文字应用上补丁字体，新增一个飞船控制台文字显示问题（信号镜无影响），未来可能会修复",
+        "bodyZh": "",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.0.2/nice2cu1.OuterWildFixFont.zip",
         "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.2"
       },
@@ -8991,6 +9001,7 @@
         "name": "OuterWildFixFont ",
         "date": "2023-06-07",
         "body": "fix version",
+        "bodyZh": "",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.0.1/nice2cu1.OuterWildFixFont.zip",
         "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.1"
       },
@@ -8999,6 +9010,7 @@
         "name": "OuterWildFixFont",
         "date": "2023-03-24",
         "body": "Fix:\r\n\r\n- 宇宙飞船日志显示问题\r\n\r\n- 飞船内部GUI小字问题",
+        "bodyZh": "",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/2.0.0/OuterWildFixFont.zip",
         "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/2.0.0"
       },
@@ -9007,6 +9019,7 @@
         "name": "OuterWildFixFont",
         "date": "2023-01-31",
         "body": "**Full Changelog**: https://github.com/nice2cu1/OuterWildFixFont/commits/v1\r\n\r\n解压文件。将其放置Mod Directory内即可",
+        "bodyZh": "",
         "zipUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/download/1.0.0/OuterWildFixFont.zip",
         "releaseUrl": "https://github.com/nice2cu1/OuterWildFixFont/releases/tag/1.0.0"
       }
