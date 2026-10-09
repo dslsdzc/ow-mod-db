@@ -16221,7 +16221,7 @@
     ]
   },
   "orclecle.EyeWitness": {
-    "repoUpdatedAt": "2026-10-08T15:28:38Z",
+    "repoUpdatedAt": "2026-10-09T08:57:45Z",
     "releases": [
       {
         "tag": "v1.4.6",
@@ -16237,7 +16237,7 @@
         "name": "Version 1.4.5",
         "date": "2026-09-22",
         "body": "* Fix #7 by setting hideProxy as true.\r\n* If a certain object is stuck in a certain laboratory, the door is designed to break to prevent entry.",
-        "bodyZh": "* 通过设置 hideProxy 为 true 修复 #7。\n* 如果某个物体卡在某个实验室里，门的设计是为了打破以阻止进入。",
+        "bodyZh": "* 通过设置 hideProxy 为 true 来修复 #7。\n* 如果某个物体卡在某个实验室里，门被设计成会破裂以阻止进入。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.5/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.5"
       },
@@ -16264,7 +16264,7 @@
         "name": "Version 1.4.1",
         "date": "2026-09-04",
         "body": "* Update Chinese translation. Thank you, @SanBaiMing !\r\n* Fix audio volume issue in the final sequence in the specific place.\r\n* Fix gravity issue in the final sequence in the specific place.",
-        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列中特定位置的音量问题。\n* 修复最终序列中特定位置的重力问题。",
+        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列特定位置的音量问题。\n* 修复最终序列特定位置的引力问题。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.1/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.1"
       },
