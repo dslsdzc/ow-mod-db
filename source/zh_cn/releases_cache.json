@@ -86,14 +86,14 @@
     ]
   },
   "Raicuparta.NomaiVR": {
-    "repoUpdatedAt": "2026-10-05T21:01:51Z",
+    "repoUpdatedAt": "2026-10-09T00:14:27Z",
     "releases": [
       {
         "tag": "2.10.1-pre",
         "name": "NomaiVR-2.10.1-pre",
         "date": "2025-03-02",
         "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
-        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这次变更的一个副作用是游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这次更新。",
+        "bodyZh": "此版本不会禁用键盘输入，就像正常的挪麦VR一样。你需要在安装此版本之前修复游戏。\n\n这个变化的副作用是游戏结局（片尾之后）性能非常差。所以如果你打算完成游戏，不要使用此版本。",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.10.1-pre/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.10.1-pre"
       },
@@ -102,7 +102,7 @@
         "name": "NomaiVR-2.10.0",
         "date": "2025-03-02",
         "body": "Thank you to [mobiusteapot](https://github.com/mobiusteapot) for this update.\r\n- What year is it?\r\n- Do people still play VR?\r\n- What's even the point.\r\n- This was supposed to be my big break.\r\n- Would she still be alive?\r\n- Added snap turn option. 🕹️\r\n- They called me a coward.\r\n- Could I have made a difference?",
-        "bodyZh": "感谢[mobiusteapot](https://github.com/mobiusteapot)提供此次更新。\n- 现在是哪一年？\n- 人们还在玩VR吗？\n- 这还有什么意义。\n- 这本该是我的大突破。\n- 她还会活着吗？\n- 添加了瞬移转向选项。 🕹️\n- 他们称我为懦夫。\n- 我能有所改变吗？",
+        "bodyZh": "感谢[mobiusteapot](https://github.com/mobiusteapot)提供此次更新。\n- 现在是哪一年？\n- 人们还在玩VR吗？\n- 这有什么意义。\n- 这本该是我的大突破。\n- 她还会活着吗？\n- 增加了瞬移转向选项。 🕹️\n- 他们称我为懦夫。\n- 我能有所改变吗？",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.10.0/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.10.0"
       },
@@ -120,7 +120,7 @@
         "name": "NomaiVR-2.9.3-pre",
         "date": "2023-01-23",
         "body": "This release doesn't disable keyboard inputs, like normal NomaiVR does. You need to repair the game before installing this release.\r\n\r\nA side effect of this change is that the ending of the game (after the credits) has really bad performance. So if you're gonna finish the game, don't use this.",
-        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这次变更的一个副作用是游戏结束（片尾之后）的性能非常差。所以如果你打算完成游戏，不要使用这个。",
+        "bodyZh": "这次更新不会禁用键盘输入，就像正常的 NomaiVR 一样。你需要在安装这次更新之前修复游戏。\n\n这个变化的副作用是游戏结束（片尾之后）的性能真的很差。所以如果你打算完成游戏，不要使用这个。",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.3-pre/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.3-pre"
       },
@@ -129,7 +129,7 @@
         "name": "NomaiVR-2.9.2",
         "date": "2023-01-23",
         "body": "- Changed toolbelt hiding logic to support more mods",
-        "bodyZh": "- 已更改工具腰带隐藏逻辑以支持更多模组",
+        "bodyZh": "- 已更改工具带隐藏逻辑以支持更多模组",
         "zipUrl": "https://github.com/Raicuparta/nomai-vr/releases/download/2.9.2/Raicuparta.NomaiVR.zip",
         "releaseUrl": "https://github.com/Raicuparta/nomai-vr/releases/tag/2.9.2"
       },
@@ -15215,25 +15215,25 @@
     ]
   },
   "LostPython.SubaruDeathSound": {
-    "repoUpdatedAt": "2026-01-28T23:18:03Z",
+    "repoUpdatedAt": "2026-10-08T22:27:12Z",
     "releases": [
       {
         "tag": "v0.1.5",
         "name": "ACTUAL Subaru Death Sound Mod Release",
         "date": "2026-01-28",
         "body": "I hope this works.",
+        "bodyZh": "我希望这能行。",
         "zipUrl": "https://github.com/LostPython1192/SubaruDeathSound/releases/download/v0.1.5/LostPython.SubaruDeathSound.zip",
-        "releaseUrl": "https://github.com/LostPython1192/SubaruDeathSound/releases/tag/v0.1.5",
-        "bodyZh": "我希望这能行。"
+        "releaseUrl": "https://github.com/LostPython1192/SubaruDeathSound/releases/tag/v0.1.5"
       },
       {
         "tag": "v1.0.0",
         "name": "Subaru Death Sound Mod Release",
         "date": "2026-01-28",
         "body": "Finished the first part of the Subaru Death Sound mod.",
+        "bodyZh": "完成了所莱内姆死亡之音模组的第一部分。",
         "zipUrl": "",
-        "releaseUrl": "https://github.com/LostPython1192/SubaruDeathSound/releases/tag/v1.0.0",
-        "bodyZh": "完成了所莱内姆死亡之音模组的第一个部分。"
+        "releaseUrl": "https://github.com/LostPython1192/SubaruDeathSound/releases/tag/v1.0.0"
       }
     ]
   },
@@ -16221,7 +16221,7 @@
     ]
   },
   "orclecle.EyeWitness": {
-    "repoUpdatedAt": "2026-10-06T15:57:22Z",
+    "repoUpdatedAt": "2026-10-08T15:28:38Z",
     "releases": [
       {
         "tag": "v1.4.6",
@@ -16237,7 +16237,7 @@
         "name": "Version 1.4.5",
         "date": "2026-09-22",
         "body": "* Fix #7 by setting hideProxy as true.\r\n* If a certain object is stuck in a certain laboratory, the door is designed to break to prevent entry.",
-        "bodyZh": "* 通过设置 hideProxy 为 true 修复 #7。\n* 如果某个物体卡在某个实验室里，门的设计会破裂以阻止进入。",
+        "bodyZh": "* 通过设置 hideProxy 为 true 修复 #7。\n* 如果某个物体卡在某个实验室里，门的设计是为了打破以阻止进入。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.5/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.5"
       },
@@ -16246,7 +16246,7 @@
         "name": "Version 1.4.4",
         "date": "2026-09-12",
         "body": "* Disable the item if the player heads straight to the cannon without filling in the initial ship log.\r\n* Fixed an issue where the player could get trapped inside a specific building in the final sequence at the specific place (though doing so required a deliberate effort).\r\n* Fixed a missing character of Japanese translation.",
-        "bodyZh": "* 如果玩家没有填写初始飞船日志就直奔炮台，则禁用该物品。\n* 修复了一个问题，玩家在最终序列的特定地点可能会被困在特定建筑内（尽管这需要刻意为之）。\n* 修复了日语翻译中缺失的字符。",
+        "bodyZh": "* 如果玩家没有填写初始飞船日志就直奔炮台，则禁用该物品。\n* 修复了玩家在最终序列的特定地点被困在特定建筑物内的问题（尽管这样做需要刻意尝试）。\n* 修复了日语翻译中缺失的字符。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.4/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.4"
       },
@@ -16255,7 +16255,7 @@
         "name": "Version 1.4.3",
         "date": "2026-09-05",
         "body": "* Fix unidentified signal notification in the final sequence in the specific place.\r\n* Fix the latest building collision in the final sequence in the specific place.",
-        "bodyZh": "* 修复最终序列中特定位置的未识别信号提示。\n* 修复最终序列中特定位置的最新建筑碰撞问题。",
+        "bodyZh": "* 修复最终序列中特定位置的未识别信号提示。\n* 修复最终序列中特定位置的最新建筑碰撞。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.3/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.3"
       },
@@ -16264,7 +16264,7 @@
         "name": "Version 1.4.1",
         "date": "2026-09-04",
         "body": "* Update Chinese translation. Thank you, @SanBaiMing !\r\n* Fix audio volume issue in the final sequence in the specific place.\r\n* Fix gravity issue in the final sequence in the specific place.",
-        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列中特定位置的音量问题。\n* 修复最终序列中特定位置的引力问题。",
+        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列中特定位置的音量问题。\n* 修复最终序列中特定位置的重力问题。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.1/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.1"
       },
