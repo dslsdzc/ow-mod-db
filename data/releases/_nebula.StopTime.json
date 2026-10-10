@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2026-07-26T17:13:09Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-07-25",
+      "body": "Updated to latest game version.",
+      "zipUrl": "https://github.com/misternebula/StopTime/releases/download/1.0.0/StopTime.zip",
+      "releaseUrl": "https://github.com/misternebula/StopTime/releases/tag/1.0.0"
+    },
+    {
+      "tag": "v1.0",
+      "name": "Initial release for Mod Loader App.",
+      "date": "2020-04-12",
+      "body": "",
+      "zipUrl": "https://github.com/misternebula/StopTime/releases/download/v1.0/StopTime.zip",
+      "releaseUrl": "https://github.com/misternebula/StopTime/releases/tag/v1.0"
+    }
+  ]
+}

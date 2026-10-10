@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2025-02-20T16:43:20Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2024-01-29",
+      "body": "Translation and bugfix patch provided by @TRSasasusu \r\n- Added Japanese translation\r\n- Fixed score not updating on game over (without standing up and sitting down again)",
+      "zipUrl": "https://github.com/codelazarus14/InhabitantChess/releases/download/v0.1.2/codelazarus14.InhabitantChess.zip",
+      "releaseUrl": "https://github.com/codelazarus14/InhabitantChess/releases/tag/v0.1.2",
+      "bodyZh": "由 @TRSasasusu 提供的翻译和错误修复补丁  \n- 添加了日语翻译  \n- 修复了游戏结束时分数不更新（无需站起来再坐下）的问题"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2024-01-14",
+      "body": "Note: if the game is generating errors related to missing config settings, you might need to delete `config.json` in the mod folder to generate a fresh one. \r\n\r\n- Added sound effects on game win/loss\r\n- Added score prompt to HUD\r\n- Removed shortcut unlock requirement, can be toggled like any other mod option\r\n- Fixed some sounds interrupting each other\r\n- Fixed vision torch/torch socket changing interactable at the wrong times\r\n- Fixed bug where the player's turn could be skipped after previously losing an adjacent piece\r\n- Updated README",
+      "zipUrl": "https://github.com/codelazarus14/InhabitantChess/releases/download/v0.1.1/codelazarus14.InhabitantChess.zip",
+      "releaseUrl": "https://github.com/codelazarus14/InhabitantChess/releases/tag/v0.1.1",
+      "bodyZh": "注意：如果游戏生成与缺失配置设置相关的错误，您可能需要删除模组文件夹中的 `config.json` 以生成一个全新的配置文件。\r\n\r\n- 添加了游戏胜利/失败时的音效\r\n- 在HUD中添加了得分提示\r\n- 移除了快捷解锁要求，可以像其他模组选项一样切换\r\n- 修复了一些声音互相干扰的问题\r\n- 修复了视觉火炬/火炬插座在错误时间改变可交互对象的问题\r\n- 修复了在之前失去相邻棋子后玩家回合可能被跳过的错误\r\n- 更新了README"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-06-07",
+      "body": "First release, still missing a few features and error-prone but it's stable enough :/",
+      "zipUrl": "https://github.com/codelazarus14/InhabitantChess/releases/download/v0.1.0/codelazarus14.InhabitantChess.zip",
+      "releaseUrl": "https://github.com/codelazarus14/InhabitantChess/releases/tag/v0.1.0",
+      "bodyZh": "首次发布，仍然缺少一些功能且容易出错，但已经足够稳定：/"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2026-04-01T15:52:33Z",
+  "releases": [
+    {
+      "tag": "v7.0.0",
+      "name": "Version 7.0.0",
+      "date": "2025-12-30",
+      "body": "use a simpler fork of unity explorer without the extra features because surprise keybinds and etc etc. if you want cinematic unity explorer, use [megapiggy's fork](https://github.com/MegaPiggy/Cinematic-Unity-Explorer-For-Outer-Wilds)",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/v7.0.0/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/v7.0.0"
+    },
+    {
+      "tag": "v6.0.1",
+      "name": "Version 6.0.1",
+      "date": "2025-01-29",
+      "body": "you now have to hold `U` will pressing `R` or `T` to do gizmo stuff, since it was so easy to accidentally press the keys while typing",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/v6.0.1/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/v6.0.1"
+    },
+    {
+      "tag": "v6.0.0",
+      "name": "Version 6.0.0",
+      "date": "2025-01-24",
+      "body": "- Added loco's gizmos support to release. I think they're still jank, so report any bugs you find.\r\n- Allowed for Unity Explorer usage in the post credits scene (thanks to anon)\r\n- **Switched over to Cinematic Unity Explorer. Please read the [guide](https://framedsc.com/GeneralGuides/cinematic-unity-explorer.htm#hotkeys) for all the cool new features this brings.** one of the things is better freecam and **camera paths**, which should be helpful for trailers.",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/v6.0.0/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/v6.0.0"
+    },
+    {
+      "tag": "5.0.1",
+      "name": "5.0.1",
+      "date": "2023-08-19",
+      "body": "- Changed default Hotkeys from:\r\n  - \"R\" &rarr; \"G\"\r\n  - \"T\" &rarr; \"B\"\r\n- Added configuration for changing keys, but isn't implemented.",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/5.0.1/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/5.0.1"
+    },
+    {
+      "tag": "5.0.0",
+      "name": "5.0.0",
+      "date": "2022-11-07",
+      "body": "* Adds interactable gizmos \r\n    * To use them first select a transform with the scene inspector\r\n    * Then press `R` to cycle from `Local Position`, `Local Rotation` and none.\r\n    * You can even then press `T` to when...\r\n         * in `Local Position` mode go from actual local position to using the transform orientation\r\n         * in `Local Rotation` to toggle a rotation wheel that always looks at the camera\r\n         \r\n * This used Unity Explorer version `4.9.0`\r\n * This is a pre-release, so if something goes terribly wrong please tell me.",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/5.0.0/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/5.0.0"
+    },
+    {
+      "tag": "4.9.0",
+      "name": "4.9.0",
+      "date": "2022-06-26",
+      "body": "",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/4.9.0/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/4.9.0"
+    },
+    {
+      "tag": "4.8.1",
+      "name": "4.8.1",
+      "date": "2022-05-18",
+      "body": "idk download it and find out",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/4.8.1/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/4.8.1"
+    },
+    {
+      "tag": "4.7.12",
+      "name": "4.7.12",
+      "date": "2022-05-01",
+      "body": "# Changelog\r\n* Added + and - buttons to the GameObject inspector's Transform controls for precision adjustments, along with an input field to set the increment value for said buttons and the slider.\r\n* Implemented Control key modifier to the Home/End line jump in the C# Console (holding control will cause Home/End to jump to the start/end of the entire document).\r\n# In UniverseLib\r\n* Fixed an issue with IL2CPP games that use the new InputSystem\r\n* Fixed certain IL2CPP IEnumerable and IDictionary types failing to enumerate\r\n* Fixed a null reference that could occur in games which have no EventSystem\r\n* Fixed a null reference when attempting to parse invalid user input",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/4.7.12/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/4.7.12"
+    },
+    {
+      "tag": "4.7.9",
+      "name": "4.7.9",
+      "date": "2022-04-25",
+      "body": "### Hotfix\r\n- Fixed the standalone releases not initialising outside of the editor (https://github.com/sinai-dev/UnityExplorer/issues/142)\r\n- Fixed input remaining locked if all menus were closed while the \"resizing arrow\" was visible\r\n- Changed the editor save data folder to the project root folder instead of the Assets folder\r\n- Added some more rigorous checks to ensure all objects are cleaned up in the editor\r\n- Fixed rare cases of panels not having valid sizes or positions after loading save data\r\n### Changes\r\n- C# Console: Implemented Home and End keys to jump to the start/end of the line\r\n- Type auto-completers are now async, greatly increasing responsivity and reducing initial startup time\r\n- IL2CPP Unhollowed module loading is now async, reducing delays during the startup process\r\n- Fixed an issue when constructing a generic hook and then pressing the Edit button on an existing hook before finishing\r\n- Fixed a Unity error that could occur when closing the UnityExplorer menu",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/4.7.9/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/4.7.9"
+    },
+    {
+      "tag": "4.7.7",
+      "name": "4.7.7",
+      "date": "2022-04-23",
+      "body": "- Type auto-completers are now async, greatly increasing responsivity and reducing initial startup time.\r\n- IL2CPP Unhollowed module loading is now async, reducing delays during the startup process.\r\n- Fixed an issue when constructing a generic hook and then pressing the Edit button on an existing hook before finishing.\r\n- Fixed a Unity error that could occur when closing the UnityExplorer menu.",
+      "zipUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/download/4.7.7/Vesper.UnityExplorer.zip",
+      "releaseUrl": "https://github.com/Vesper-Works/Unity-Explorer-For-Outer-Wilds/releases/tag/4.7.7"
+    }
+  ]
+}

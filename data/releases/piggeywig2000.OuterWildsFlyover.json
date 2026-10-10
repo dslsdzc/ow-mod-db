@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-08-05T19:07:31Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "OuterWildsFlyover 1.0.0",
+      "date": "2022-02-03",
+      "body": "Initial release\r\n- 80 i-points placed around the base game\r\n- Results screen that tracks and saves i-points",
+      "zipUrl": "https://github.com/piggeywig2000/OuterWildsFlyover/releases/download/1.0.0/OuterWildsFlyover.1.0.0.zip",
+      "releaseUrl": "https://github.com/piggeywig2000/OuterWildsFlyover/releases/tag/1.0.0",
+      "bodyZh": "初始发布\n- 在基础游戏周围放置了80个i点\n- 结果屏幕跟踪并保存i点"
+    }
+  ]
+}

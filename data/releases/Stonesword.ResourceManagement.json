@@ -1,0 +1,58 @@
+{
+  "repoUpdatedAt": "2024-04-20T03:34:54Z",
+  "releases": [
+    {
+      "tag": "v0.3.0",
+      "name": "V0.3.0 Emergency Thrusters",
+      "date": "2024-04-20",
+      "body": "# Resource Management v0.3.0\r\n\r\n### Ship Emergency Thrusters\r\n- They work about the same as your suit: When you run out of fuel, they will activate and drain oxygen at a *very* quick rate whenever you're thrusting, so watch out.\r\n\r\n### Mod settings\r\n- Now you can access the mod configuration from the Mods tabs in the game settings. You'll be able to customize certain parameters such as oxygen regeneration rate, or enable / disable certain functions.\r\n\r\n### And *a* bug fix\r\n- (Hopefully) fixed a NRE spam in console after dying / meditating\r\n\r\n\r\n- Removed code",
+      "zipUrl": "https://github.com/el-piedras/Resource-Management/releases/download/v0.3.0/Stonesword.ResourceManagement.zip",
+      "releaseUrl": "https://github.com/el-piedras/Resource-Management/releases/tag/v0.3.0",
+      "bodyZh": "# 资源管理 v0.3.0\n\n### 船舶紧急推进器\n- 它们的工作原理与你的宇航服类似：当你燃料耗尽时，它们将在你推进时激活，并以*非常*快的速率消耗氧气，所以请小心。\n\n### 模组设置\n- 现在你可以从游戏设置的模组选项卡中访问模组配置。你将能够自定义某些参数，例如氧气再生速率，或启用/禁用某些功能。\n\n### 以及*一个*错误修复\n- (希望)修复了在死亡/冥想后控制台出现的NRE信息轰炸\n\n- 删除了代码"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "V0.2.1 hotfix",
+      "date": "2024-04-14",
+      "body": "- Fixed bug where refueling outside the ship would drain the ship's fuel tank (whoops)\r\n- Removed some unused code\r\n\r\n(I somehow didn't find this earlier lol)",
+      "zipUrl": "https://github.com/el-piedras/Resource-Management/releases/download/v0.2.1/Stonesword.ResourceManagement.zip",
+      "releaseUrl": "https://github.com/el-piedras/Resource-Management/releases/tag/v0.2.1",
+      "bodyZh": "- 修复了在飞船外加油会消耗飞船燃料箱的bug（哎呀）\n- 删除了一些未使用的代码\n\n（我之前怎么没发现这个呢 lol）"
+    },
+    {
+      "tag": "V0.2.0",
+      "name": "V0.2.0 New mechanics",
+      "date": "2024-04-14",
+      "body": "# 0.2.0 patch notes\r\n- When buckling up, oxygen in your suit will transfer to the ship's tank (If it has enough capacity to do so). This fixes a bug that kills the player if they try to buckle up with no oxygen in the ship.\r\n- Refilling your jetpack now draws fuel from the ship's fuel tank.\r\n- Refilling oxygen now draws oxygen from the ship's oxygen tank.\r\n- Added a refueling speed multiplier when landing back in the land pad in Timber Hearth. This comes with a purple light in the fuel gauge.\r\n- Made a few internal changes to how Oxygen in the ship is handled (Now it draw's 1 unit per second, same as the player).",
+      "zipUrl": "https://github.com/el-piedras/Resource-Management/releases/download/V0.2.0/Stonesword.ResourceManagement.zip",
+      "releaseUrl": "https://github.com/el-piedras/Resource-Management/releases/tag/V0.2.0",
+      "bodyZh": "# 0.2.0 版本更新日志\n- 系统在安全带固定时，宇航服中的氧气会转移到飞船的储氧罐（前提是储氧罐有足够容量）。此修复了在飞船内无氧气时尝试安全带固定会导致玩家死亡的问题。\n- 现在为喷射背包充能会从飞船的燃料罐中抽取燃料。\n- 现在为氧气充能会从飞船的氧气罐中抽取氧气。\n- 在木炉星着陆时添加了充能速度倍率，燃料量表中会显示紫色光芒。\n- 对飞船内氧气处理方式进行了若干内部调整（现在每秒抽取1单位，与玩家相同）。"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "V0.1.2 Ship notifications",
+      "date": "2024-04-09",
+      "body": "Ship notifications will now appear when oxygen or fuel reach a critical status or deplete.",
+      "zipUrl": "https://github.com/el-piedras/Resource-Management/releases/download/v0.1.2/Stonesword.ResourceManagement.zip",
+      "releaseUrl": "https://github.com/el-piedras/Resource-Management/releases/tag/v0.1.2",
+      "bodyZh": "飞船通知将在氧气或燃料达到临界状态或耗尽时出现。"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "V0.1.1 Critical bugfix",
+      "date": "2024-04-06",
+      "body": "Fixed a critical bug where you'd get oxygen on unintended places.",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/el-piedras/Resource-Management/releases/tag/v0.1.1",
+      "bodyZh": "修复了一个关键错误，导致氧气会在非预期位置生成。"
+    },
+    {
+      "tag": "mod",
+      "name": "V0.1.0 Resource Management release",
+      "date": "2024-04-06",
+      "body": "Outer wilds mod that adds a few mechanics and purpose to the ship's fuel and oxygen tank.",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/el-piedras/Resource-Management/releases/tag/mod"
+    }
+  ]
+}

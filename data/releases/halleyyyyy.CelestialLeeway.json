@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2023-03-01T03:14:05Z",
+  "releases": [
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2023-03-01",
+      "body": "",
+      "zipUrl": "https://github.com/halleyyyyy/CelestialLeeway/releases/download/v0.2.0/CelestialLeeway.zip",
+      "releaseUrl": "https://github.com/halleyyyyy/CelestialLeeway/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-01-26",
+      "body": "",
+      "zipUrl": "https://github.com/halleyyyyy/CelestialLeeway/releases/download/v0.1.0/CelestialLeeway.zip",
+      "releaseUrl": "https://github.com/halleyyyyy/CelestialLeeway/releases/tag/v0.1.0"
+    }
+  ]
+}

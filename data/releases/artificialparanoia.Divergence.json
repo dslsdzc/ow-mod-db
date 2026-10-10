@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-09-03T22:17:34Z",
+  "releases": [
+    {
+      "tag": "v1.5.0",
+      "name": "1.5.0",
+      "date": "2025-09-03",
+      "body": "## Fixes and Improvements\r\n\r\n### General\r\n\r\n- Prevented a music track from playing more times than it should, and adjusted the ambience of a certain location.\r\n- Fixed a bug where signals would break in a certain context.\r\n- Updated the visuals of a certain sequence to more clearly indicate its location.\r\n- Made an alarm work in a way that's consistent with others of its kind.\r\n- A certain utility will now accurately track the occupants of a specific location.\r\n- Fixed a bug where certain beams of light wouldn't appear as they should.\r\n- Fixed an issue where \"Unidentified Signal Nearby\" would appear in the HUD despite there being no signal nearby.\r\n- Moved an easter egg to an even less conspicuous place.\r\n\r\n### Art\r\n\r\n- Added the new logo to the main menu as a subtitle (thanks Classic!)\r\n\r\n### Story and Text\r\n\r\n- Various text corrections and improvements\r\n- Added some additional dialogue options to Hornfels about certain topics\r\n- Reworked a particular text log to be more relevant and clear\r\n- Updated Japanese translation (thanks @TRSasasusu!)",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.5.0/artificialparanoia.Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.5.0",
+      "bodyZh": "## 修复与改进\n\n### 常规\n\n- 防止某段音乐轨道播放次数超出预期，并调整了某个特定地点的环境音效。\n- 修复了在特定环境下信号会中断的bug。\n- 更新了某个特定序列的视觉效果，使其更清晰地指示其位置。\n- 使某个警报器以与其他同类设备一致的方式工作。\n- 某个特定工具现在能准确追踪某个特定地点的居住者。\n- 修复了某些光线不会按预期显示的bug。\n- 修复了即使附近没有信号，“附近有未识别信号”也会在HUD中显示的问题。\n- 将一个彩蛋移动到了更加不显眼的位置。\n\n### 艺术\n\n- 将新标志作为副标题添加到主菜单（感谢Classic！）。\n\n### 故事与文本\n\n- 各种文本修正和改进\n- 为霍恩费斯(霍恩费斯)关于某些话题添加了额外的对话选项\n- 重新设计了一个特定的文本日志，使其更相关和清晰\n- 更新了日语翻译（感谢@TRSasasusu！）"
+    },
+    {
+      "tag": "v1.5.0-pr.1",
+      "name": "1.5.0-pr.1",
+      "date": "2025-08-31",
+      "body": "This is an experimental prerelease and is missing some things that will be present in the final version! Please report any bugs you may find.\r\n\r\n## Fixes and Improvements\r\n\r\n### General\r\n\r\n- Prevented an music track from playing more times than it should, and adjusted the ambience of a certain location.\r\n- Fixed a bug where signals would break in a certain context.\r\n- Updated the visuals of a certain sequence to more clearly indicate its location.\r\n- Made an alarm work in a way that's consistent with others of its kind.\r\n- A certain utility will now accurately track the occupants of a specific location.\r\n- Fixed a bug where certain beams of light wouldn't appear as they should.\r\n- Fixed an issue where \"Unidentified Signal Nearby\" would appear in the HUD despite there being no signal nearby.\r\n- Moved an easter egg to an even less conspicuous place.\r\n\r\n### Art\r\n\r\n- Added the new logo to the main menu as a subtitle (thanks Classic!)\r\n\r\n### Story and Text\r\n\r\n- Various text corrections and improvements\r\n- Added some additional dialogue options to Hornfels about certain topics\r\n- Reworked a particular text log to be more relevant and clear",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.5.0-pr.1/artificialparanoia.Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.5.0-pr.1",
+      "bodyZh": "这是一个实验性预发布版本，最终版本中将会包含一些目前缺失的内容！请报告您发现的任何问题。\n\n## 修复与改进\n\n### 常规\n\n- 防止某个音乐轨道播放次数超出预期，并调整了某个地点的环境音效。\n- 修复了在特定环境下信号会中断的问题。\n- 更新了某个序列的视觉效果，以更清晰地指示其位置。\n- 使某个警报器以与其他同类设备一致的方式工作。\n- 某个工具现在能够准确追踪特定地点的居住者。\n- 修复了某些光线不会按预期显示的问题。\n- 修复了在HUD中即使附近没有信号也会显示“附近有未知信号”的问题。\n- 将一个彩蛋移动到了更加不显眼的位置。\n\n### 艺术\n\n- 将新标志作为副标题添加到主菜单（感谢Classic！）。\n\n### 故事与文本\n\n- 各种文本修正和改进\n- 为霍恩费斯(霍恩费斯)关于某些话题添加了额外的对话选项\n- 重新设计了一个特定的文本日志，使其更加相关和清晰"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "1.1.1",
+      "date": "2025-08-16",
+      "body": "### Fixes and Improvements\r\n\r\n- Fixed a bug where a certain area would fade in slowly in certain contexts",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.1.1/artificialparanoia.Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.1.1",
+      "bodyZh": "### 修复与改进\r\n\r\n- 修复了一个特定区域在某些情况下缓慢淡入的bug"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "1.1.0",
+      "date": "2025-08-13",
+      "body": "### Fixes and Improvements\r\n- Fixed a bug where the exterior of a certain location wouldn't appear in certain contexts",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.1.0/artificialparanoia.Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.1.0",
+      "bodyZh": "### 修复与改进\n- 修复了一个问题，在特定环境下某个位置的室外场景不会显示"
+    },
+    {
+      "tag": "v1.0.9",
+      "name": "1.0.9",
+      "date": "2025-08-12",
+      "body": "### Fixes and Improvements\r\n- Fixed an issue where a particular area would turn invisible in certain contexts\r\n- Fixed additional audio and visual issues when returning to a particular area in certain contexts\r\n- Made a music cue slightly quieter",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.0.9/artificialparanoia.Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.0.9",
+      "bodyZh": "### 修复与改进\n- 修复了在特定情况下某个区域会变得不可见的问题\n- 修复了在特定情况下返回到某个区域时的额外音频和视觉问题\n- 将音乐片段调低了音量"
+    },
+    {
+      "tag": "v1.0.8",
+      "name": "1.0.8",
+      "date": "2025-07-03",
+      "body": "### Fixes and Improvements\r\n\r\n- Fixed a regression in the previous version where multiple folders were missing from the release.",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.0.8/artificialparanoia.Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.0.8"
+    },
+    {
+      "tag": "v1.0.7",
+      "name": "1.0.7",
+      "date": "2025-07-03",
+      "body": "Integrated the additions from @TRSasasusu's [Enhance Divergence Mod](https://github.com/TRSasasusu/TinyPatchForDivergence) into the main mod, which include:\r\n\r\n- Major visual adjustments to a certain location.\r\n- Dynamically updating text elements that correspond to changes in the environment.  \r\n\r\nThis is the largest change introduced in the update, as it adds code to what was previously a New Horizon's add-on. In the spirit of the January 2023 New Horizon's Mod Jam, the vast majority of Divergence continues to only use features provided by New Horizons, as the additions from Enhance Divergence Mod only concern visuals and small, immersive details. Once again, a huge thank you to @TRSasasusu for creating the Enhance Divergence Mod, and for general assistance with the project itself since its release!\r\n\r\nAlong with the integration of Enhance Divergence Mod, there have been several other improvements and bug fixes in order to make the mod more enjoyable:\r\n\r\n### Fixes and Improvements\r\n\r\n- Made a certain set of symbols visible in a specific view.\r\n- Fixed a hole in the geometry that was visible in a specific view. \r\n- Fixed a certain fire extinguishing itself near the end of the loop.\r\n- Made the intended starting point of the mod a little more clear.\r\n- Tweaked some strings and fixed some typos, and adjusted a few conversations. \r\n- Removed a text log that wasn't very useful in telling you where you need to go.\r\n- Updated Japanese translation (thanks @TRSasasusu!)\r\n\r\n### Additions\r\n- Added a much faster way to return to a particular location.\r\n- Added a way to reset progress for a specific puzzle without restarting the loop.",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.0.7/artificialparanoia.Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.0.7"
+    },
+    {
+      "tag": "v1.0.6",
+      "name": "1.0.6",
+      "date": "2025-06-21",
+      "body": "### Fixes and Improvements\r\n- Moved a certain arrival point to its original intended spot, so that performing a certain feat is much less tedious\r\n- Text corrections and improvements\r\n- Fixed an issue with the Japanese translation (thanks @TRSasasusu!)\r\n- Made an easter egg slightly more obscure once again\r\n\r\n### Additions\r\n- Added another way to leave a particular location.",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.0.6/Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.0.6"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "1.0.5",
+      "date": "2024-06-23",
+      "body": "### Fixes and improvements\r\n- Updated Japanese translation (thanks @TRSasasusu!)\r\n- Fixed a minor typo when talking to a certain Hearthian about a location",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.0.5/Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.0.5"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "1.0.4",
+      "date": "2024-06-22",
+      "body": "### Fixes and Improvements\r\n- Reworded some clues to more clearly direct the player to a particular place of residence\r\n- Made the path leading to a certain place of residence more obvious\r\n- Made a certain trigger larger so that players no longer think that the intended solution of a puzzle is incorrect\r\n- Various text corrections and improvements\r\n\r\n### Additions\r\n- Added a different way to initiate a certain conversation after starting a New Expedition",
+      "zipUrl": "https://github.com/artificialparanoia/Divergence/releases/download/v1.0.4/Divergence.zip",
+      "releaseUrl": "https://github.com/artificialparanoia/Divergence/releases/tag/v1.0.4"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "repoUpdatedAt": "2025-07-23T00:44:38Z",
+  "releases": [
+    {
+      "tag": "0.2.4",
+      "name": "v0.2.4",
+      "date": "2025-07-22",
+      "body": "- Added icons to various interactable objects to make them easier to tell apart visually.",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.4/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.4",
+      "bodyZh": "- 为多种可交互物体添加了图标，以便于视觉区分。"
+    },
+    {
+      "tag": "0.2.3",
+      "name": "v0.2.3",
+      "date": "2025-07-21",
+      "body": "- Fixed blurry textures from latest New Horizons update\r\n- Fixed gravity from an invisible body affecting the player intermittently",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.3/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.3",
+      "bodyZh": "- 修复了最新New Horizons更新带来的模糊纹理问题\r\n- 修复了由一个不可见物体间歇性影响玩家的重力问题"
+    },
+    {
+      "tag": "0.2.2",
+      "name": "v0.2.2",
+      "date": "2025-07-21",
+      "body": "- Re-enabled the scout launcher but patched out the scout boost velocity bonus while in certain mod locations.\r\n- Fixed some warp devices not activating in some circumstances.",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.2/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.2",
+      "bodyZh": "- 重新启用了侦察发射器，但在某些模组位置时移除了侦察加速速度加成。\n- 修复了某些情况下跃迁设备无法激活的问题。"
+    },
+    {
+      "tag": "0.2.1",
+      "name": "v0.2.1",
+      "date": "2025-07-21",
+      "body": "- Hotfix to disable the scout launcher in most locations to prevent sequence breaking via scout boosting\r\n- Minor visual improvements to certain props in a central location",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.1/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.1",
+      "bodyZh": "- 热补丁：在大多数位置禁用侦察发射器，以防止通过侦察加速导致顺序破坏\n- 对中央位置中某些道具进行微小的视觉效果改进"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "v0.2.0",
+      "date": "2025-07-20",
+      "body": "Official jam submission release candidate.",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.0/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.0",
+      "bodyZh": "官方同人游戏提交的候选版本。"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "v0.1.0",
+      "date": "2025-07-18",
+      "body": "- Initial jam release candidate",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.1.0/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.1.0"
+    }
+  ]
+}

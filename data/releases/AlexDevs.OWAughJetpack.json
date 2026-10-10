@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-01-21T17:23:09Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2023-01-21",
+      "body": "## What's Changed\r\n* Fix for the audio loading issues by @Atakku in https://github.com/Ale32bit/OWAughJetpack/pull/1\r\n\r\n## New Contributors\r\n* @Atakku made their first contribution in https://github.com/Ale32bit/OWAughJetpack/pull/1\r\n\r\n**Full Changelog**: https://github.com/Ale32bit/OWAughJetpack/compare/v0.1.0...v0.1.1",
+      "zipUrl": "https://github.com/Ale32bit/OWAughJetpack/releases/download/v0.1.1/AlexDevs.OWAughJetpack.zip",
+      "releaseUrl": "https://github.com/Ale32bit/OWAughJetpack/releases/tag/v0.1.1",
+      "bodyZh": "## 有什么变化\n* 通过 @Atakku 在 https://github.com/Ale32bit/OWAughJetpack/pull/1 修复了音频加载问题\n\n## 新贡献者\n* @Atakku 在 https://github.com/Ale32bit/OWAughJetpack/pull/1 中做出了首次贡献\n\n**完整变更日志**: https://github.com/Ale32bit/OWAughJetpack/compare/v0.1.0...v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "First Version",
+      "date": "2023-01-06",
+      "body": "AUGH!\r\n\r\n**Full Changelog**: https://github.com/Ale32bit/OWAughJetpack/commits/v0.1.0",
+      "zipUrl": "https://github.com/Ale32bit/OWAughJetpack/releases/download/v0.1.0/AlexDevs.OWAughJetpack.zip",
+      "releaseUrl": "https://github.com/Ale32bit/OWAughJetpack/releases/tag/v0.1.0",
+      "bodyZh": "啊！\n\n**完整变更日志**: https://github.com/Ale32bit/OWAughJetpack/commits/v0.1.0"
+    }
+  ]
+}

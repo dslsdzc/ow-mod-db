@@ -1,0 +1,85 @@
+{
+  "repoUpdatedAt": "2026-08-19T20:53:22Z",
+  "releases": [
+    {
+      "tag": "v1.5.1",
+      "name": "Version 1.5.1",
+      "date": "2026-05-11",
+      "body": "Hotfix to fix qsb/nh bug. Also fixes the gamma menu supposedly, I didn't test that part.",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.5.1/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.5.1"
+    },
+    {
+      "tag": "v1.5.0",
+      "name": "Version 1.5.0",
+      "date": "2025-03-02",
+      "body": "- Fix some quantum objects in NH mods. They should move around now, at least. (ty xen)\r\n- Fix most items in NH mods. Custom item logic will not work, but you can do normal item things (pick up, drop, insert into slot). (ty xen)\r\n- Fix chat/HUD working in custom systems. It still does not work in the eye yet.\r\n\r\nxen and nebula said they tested this so i will not :)",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.5.0/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.5.0"
+    },
+    {
+      "tag": "v1.4.2",
+      "name": "Version 1.4.2",
+      "date": "2025-02-28",
+      "body": "Fix the collection modified thing a little better, and also change the message shown so people can report the bug better",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.4.2/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.4.2"
+    },
+    {
+      "tag": "v1.4.1",
+      "name": "Version 1.4.1",
+      "date": "2025-02-28",
+      "body": "Hopefully fixed a collection modified exception?",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.4.1/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.4.1"
+    },
+    {
+      "tag": "v1.4.0",
+      "name": "Version 1.4.0",
+      "date": "2025-02-27",
+      "body": "- Rewritten Steam networking transport. There shouldn't be much difference to what it was before, but hopefully more stable! Please report any issues if they happen.\r\n- Moved debug settings to normal mod config menus.\r\n- Moved \"Disconnect\" button to the bottom of the pause menu, instead of the top.\r\n\r\nAlso, it's (pretty much) QSB's 5th birthday! Half a decade... I'm old.",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.4.0/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.4.0"
+    },
+    {
+      "tag": "v1.3.0",
+      "name": "Version 1.3.0",
+      "date": "2025-02-22",
+      "body": "- Replaced MenuFramework with calls to \"new\" OWML menu system.\r\n- Fixed poses for holding items not working. No idea how long this has been broken...\r\n- Rewrote the HUD that shows what planet each player is on.\r\n  - Added compatibility with custom New Horizons planets. The HUD will use the sprite defined in `MapModeInfo.revealedSprite`. If no sprite is defined, it will use the default unknown icon (a question mark).\r\n    - This should also work when base-game planets have their ship log icon overridden with a new one, but I haven't tested this since I don't think anyone has actually done this yet.\r\n  - Added a new config option, `Always Show Planet Icons`, which is by default disabled. Normally, QSB will display a question mark when you are in places where you cannot usually open your map. By enabling this option, this behaviour does not happen. This means the exact planet you are on will always be visible, even if it doesn't fit thematically to know that information.\r\n- Stop players from connecting if they have New Horizons installed and the server doesn't, or vice versa.\r\n- Increased default timeout length from 25 seconds to 40 seconds. This should help with timeouts during long New Horizons load times.\r\n- Made other players invisible in an ending sequence.\r\n- Made player markers invisible in more locations.",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.3.0/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.3.0"
+    },
+    {
+      "tag": "v1.2.3",
+      "name": "Version 1.2.3",
+      "date": "2024-12-23",
+      "body": "- Fixed the Quantum Shrine not working in the 6th location.",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.2.3/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.2.3"
+    },
+    {
+      "tag": "v1.2.2",
+      "name": "Version 1.2.2",
+      "date": "2024-12-17",
+      "body": "- (Probably) fixed a bug where NomaiVR would still respect the \"pause time when\" options in the pre-flight checklist, by lying to NomaiVR that we're totally not pausing time right now don't worry about it dude",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.2.2/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.2.2"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "Version 1.2.1",
+      "date": "2024-12-16",
+      "body": "- Added Korean translation. (By @Akasha0513)\r\n- Added customizable KCP port number.",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.2.1/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2024-06-11",
+      "body": "- Updated code to Patch 15.\r\n- Updated OWML.\r\n- Fixed softlock when trying to host after connecting to a server.\r\n- Updated Russian translation (@air2921)\r\n- Fixed GitHub workflow for building.",
+      "zipUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/download/v1.2.0/Raicuparta.QuantumSpaceBuddies.zip",
+      "releaseUrl": "https://github.com/qsb-dev/quantum-space-buddies/releases/tag/v1.2.0"
+    }
+  ]
+}

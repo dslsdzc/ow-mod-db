@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2024-12-31T02:07:57Z",
+  "releases": [
+    {
+      "tag": "v1.0.4",
+      "name": "Release v1.0.4",
+      "date": "2024-12-31",
+      "body": "- Made Traveler's Pack a dependency and fixed related bugs\r\n- Made the lamp prompt easier to notice",
+      "zipUrl": "https://github.com/Etherpod/LuminaTerra/releases/download/v1.0.4/Etherpod.LuminaTerra.zip",
+      "releaseUrl": "https://github.com/Etherpod/LuminaTerra/releases/tag/v1.0.4",
+      "bodyZh": "- 将旅行者背包设为依赖项并修复了相关问题错误\r\n- 使灯的提示更容易被注意到"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Release v1.0.3",
+      "date": "2024-11-22",
+      "body": "**Full Changelog**: https://github.com/Etherpod/LuminaTerra/compare/v1.0.2...v1.0.3",
+      "zipUrl": "https://github.com/Etherpod/LuminaTerra/releases/download/v1.0.3/Etherpod.LuminaTerra.zip",
+      "releaseUrl": "https://github.com/Etherpod/LuminaTerra/releases/tag/v1.0.3",
+      "bodyZh": "**完整变更日志**: https://github.com/Etherpod/LuminaTerra/compare/v1.0.2...v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Release v1.0.2",
+      "date": "2024-11-05",
+      "body": "Fix bug with tools breaking after 1 loop",
+      "zipUrl": "https://github.com/Etherpod/LuminaTerra/releases/download/v1.0.2/Etherpod.LuminaTerra.zip",
+      "releaseUrl": "https://github.com/Etherpod/LuminaTerra/releases/tag/v1.0.2",
+      "bodyZh": "修复工具在循环1次后损坏的bug"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Release v1.0.1",
+      "date": "2024-11-05",
+      "body": "Mostly fix ending that didn't get pushed the other day (this is the version that should be judged)",
+      "zipUrl": "https://github.com/Etherpod/LuminaTerra/releases/download/v1.0.1/Etherpod.LuminaTerra.zip",
+      "releaseUrl": "https://github.com/Etherpod/LuminaTerra/releases/tag/v1.0.1",
+      "bodyZh": "主要修复前几天未发布的结局（这是应该被评判的版本）"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Release v1.0.0",
+      "date": "2024-11-05",
+      "body": "Technical difficulties came up, so ending is incomplete. Will be updated later",
+      "zipUrl": "https://github.com/Etherpod/LuminaTerra/releases/download/v1.0.0/Etherpod.LuminaTerra.zip",
+      "releaseUrl": "https://github.com/Etherpod/LuminaTerra/releases/tag/v1.0.0",
+      "bodyZh": "技术问题出现，所以结局不完整。稍后将会更新。"
+    }
+  ]
+}

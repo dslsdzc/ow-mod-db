@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-07-29T22:27:01Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2025-07-29",
+      "body": "- Made the mod much more functional by having it query the json files. There are no longer any fields that the user manually needs to fill in!\r\n- Overall accounts for many more situations and is a lot more elegant.",
+      "zipUrl": "https://github.com/coderCleric/NomaiTextPrinter/releases/download/v1.1.0/Cleric.NomaiTextPrinter.zip",
+      "releaseUrl": "https://github.com/coderCleric/NomaiTextPrinter/releases/tag/v1.1.0",
+      "bodyZh": "- 通过查询json文件，使模组功能更强大，不再有任何需要用户手动填写的字段！\n- 总体考虑了更多情况，并且更加优雅。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2022-12-05",
+      "body": "Initial release.",
+      "zipUrl": "https://github.com/coderCleric/NomaiTextPrinter/releases/download/v1.0.0/coderCleric.NomaiTextPrinter.zip",
+      "releaseUrl": "https://github.com/coderCleric/NomaiTextPrinter/releases/tag/v1.0.0",
+      "bodyZh": "初始发布。"
+    }
+  ]
+}

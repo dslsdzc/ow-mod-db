@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-11-05T04:11:12Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2024-11-05",
+      "body": "First release and probably the only release",
+      "zipUrl": "https://github.com/MegaPiggy/Jam4JokeEntry/releases/download/1.0.0/MegaPiggy.Jam4JokeEntry.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/Jam4JokeEntry/releases/tag/1.0.0",
+      "bodyZh": "首次发布，也可能是唯一的发布"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-12-27T20:35:49Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-12-27",
+      "body": "Cleaning stuff up to actually make it look acceptable.",
+      "zipUrl": "https://github.com/MrGruntie/Invert_Target_Lock/releases/download/v1.0.1/MrGruntie.invert.zip",
+      "releaseUrl": "https://github.com/MrGruntie/Invert_Target_Lock/releases/tag/v1.0.1",
+      "bodyZh": "清理一些东西，使其看起来可以接受。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-12-27",
+      "body": "Initial setup",
+      "zipUrl": "https://github.com/MrGruntie/Invert_Target_Lock/releases/download/v1.0.0/MrGruntie.invert.zip",
+      "releaseUrl": "https://github.com/MrGruntie/Invert_Target_Lock/releases/tag/v1.0.0",
+      "bodyZh": "初始设置"
+    }
+  ]
+}

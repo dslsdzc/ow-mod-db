@@ -1,0 +1,53 @@
+{
+  "repoUpdatedAt": "2024-08-26T00:09:46Z",
+  "releases": [
+    {
+      "tag": "v0.2.4",
+      "name": "v0.2.4",
+      "date": "2022-11-07",
+      "body": "Adds the `bind` native command to allow keys to be bound to commands.",
+      "zipUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/download/v0.2.4/Smaed.DeveloperConsole.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/tag/v0.2.4"
+    },
+    {
+      "tag": "v0.2.3",
+      "name": "v0.2.3",
+      "date": "2022-10-16",
+      "body": "Adds 3 new 'native' commands: `help`, `find` and `clear`.",
+      "zipUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/download/v0.2.3/Smaed.DeveloperConsole.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/tag/v0.2.3"
+    },
+    {
+      "tag": "v0.2.2",
+      "name": "v0.2.2",
+      "date": "2022-10-13",
+      "body": "Renames the Console type to ConsoleData to prevent System.Console clash.",
+      "zipUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/download/v0.2.2/Smaed.DeveloperConsole.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/tag/v0.2.2"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "v0.2.1",
+      "date": "2022-10-11",
+      "body": "Adds new message types to the console log function.\r\n\r\n(Also cleans up the code a bunch)",
+      "zipUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/download/v0.2.1/Smaed.DeveloperConsole.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2022-10-11",
+      "body": "",
+      "zipUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/download/v0.2.0/Smaed.DeveloperConsole.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-10-09",
+      "body": "Initial release.",
+      "zipUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/download/v0.1.0/Smaed.DeveloperConsole.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_DeveloperConsole/releases/tag/v0.1.0"
+    }
+  ]
+}

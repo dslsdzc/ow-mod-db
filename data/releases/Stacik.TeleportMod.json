@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-02-01T19:08:19Z",
+  "releases": [
+    {
+      "tag": "0.1.0",
+      "name": "0.1.0",
+      "date": "2026-02-01",
+      "body": "Rerefixed release",
+      "zipUrl": "https://github.com/StacikM/TeleportMod/releases/download/0.1.0/Stacik.TeleportMod.zip",
+      "releaseUrl": "https://github.com/StacikM/TeleportMod/releases/tag/0.1.0",
+      "bodyZh": "重新修复发布"
+    }
+  ]
+}

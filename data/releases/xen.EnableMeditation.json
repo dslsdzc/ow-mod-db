@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-01-02T21:27:21Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-12-26",
+      "body": "- Makes the \"meditate until next loop\" button always available in the pause menu",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-meditation/releases/download/1.0.0/xen.EnableMeditation.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-meditation/releases/tag/1.0.0",
+      "bodyZh": "- 使“冥想直至下一循环”按钮在暂停菜单中始终可用"
+    }
+  ]
+}

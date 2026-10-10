@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2024-02-21T09:51:22Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2024-02-21",
+      "body": "- Did some clean up to the code, comments and efficiency (i think...)\r\n- Added clearer notification support for the process of Remote Autopilot.\r\n- Added alternative keys options in the settings, If options are on, the Numpad will be replaced with the main keyboard layout of the same options.\r\n\r\nEnjoy! :)",
+      "zipUrl": "https://github.com/sherwoodw28/remoteautopilot/releases/download/1.1.0/Titch.ShipRemoteAutopilot.zip",
+      "releaseUrl": "https://github.com/TitchMW/remoteautopilot/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2024-02-19",
+      "body": "Added notification system so that you know which location is currently selected.\r\nMade it so the ship will not collide with the sun (Do NOT be inside during transit now...)\r\n\r\nEnjoy!",
+      "zipUrl": "https://github.com/sherwoodw28/remoteautopilot/releases/download/1.0.0/Titch.ShipRemoteAutopilot.zip",
+      "releaseUrl": "https://github.com/TitchMW/remoteautopilot/releases/tag/1.0.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "0.1.0",
+      "date": "2022-07-09",
+      "body": "",
+      "zipUrl": "https://github.com/sherwoodw28/remoteautopilot/releases/download/v0.1.0/Titch.ShipRemoteAutopilot.zip",
+      "releaseUrl": "https://github.com/TitchMW/remoteautopilot/releases/tag/v0.1.0"
+    }
+  ]
+}

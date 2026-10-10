@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-08-28T00:54:08Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-08-28",
+      "body": "First release",
+      "zipUrl": "https://github.com/throckmorpheus/SlidingInShipFix/releases/download/v0.1.0/Throckmorpheus.SlidingInShipFix.zip",
+      "releaseUrl": "https://github.com/throckmorpheus/SlidingInShipFix/releases/tag/v0.1.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

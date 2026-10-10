@@ -1,0 +1,45 @@
+{
+  "repoUpdatedAt": "2023-10-08T23:40:33Z",
+  "releases": [
+    {
+      "tag": "v0.2.2",
+      "name": "v0.2.2",
+      "date": "2022-10-16",
+      "body": "Adds info to all commands",
+      "zipUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/download/v0.2.2/Smaed.ConsoleCheats.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/tag/v0.2.2"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "v0.2.1",
+      "date": "2022-10-13",
+      "body": "Updated to newest DeveloperConsole version.",
+      "zipUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/download/v0.2.1/Smaed.ConsoleCheats.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2022-10-12",
+      "body": "Strips out the CommonResources dependency, and changes some commands to better take advantage of the console system.",
+      "zipUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/download/v0.2.0/Smaed.ConsoleCheats.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-10-11",
+      "body": "",
+      "zipUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/download/v0.1.1/Smaed.ConsoleCheats.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-10-10",
+      "body": "Initial release",
+      "zipUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/download/v0.1.0/Smaed.ConsoleCheats.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_ConsoleCheats/releases/tag/v0.1.0"
+    }
+  ]
+}

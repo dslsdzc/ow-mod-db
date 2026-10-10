@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-09-15T07:35:11Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-09-15",
+      "body": "Initial release. Expect bugs.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/milliero-se/OWMixedInput/releases/download/v0.1.0/MillieRose.OWMixedInput.zip",
+      "releaseUrl": "https://github.com/milliero-se/OWMixedInput/releases/tag/v0.1.0"
+    }
+  ]
+}

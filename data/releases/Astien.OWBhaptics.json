@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-10-06T20:13:47Z",
+  "releases": [
+    {
+      "tag": "0.1.0",
+      "name": "OW bhaptics integration",
+      "date": "2022-09-18",
+      "body": "☕ If you wanna show some support you can buy me a coffee : https://www.buymeacoffee.com/astienth4",
+      "zipUrl": "https://github.com/Astienth/Outer-Wilds-bhaptics/releases/download/0.1.0/Astien.OWBhaptics.zip",
+      "releaseUrl": "https://github.com/Astienth/ow-bhaptics/releases/tag/0.1.0",
+      "bodyZh": "☕ 如果你想表示支持，可以给我买杯咖啡 : https://www.buymeacoffee.com/astienth4"
+    }
+  ]
+}

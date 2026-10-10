@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-10-19T16:29:44Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-10-18",
+      "body": "First release",
+      "zipUrl": "https://github.com/Yurtle212/OuterWilds-ToggleHUD/releases/download/v0.1.0/Yurtle.ToggleHUD.zip",
+      "releaseUrl": "https://github.com/Yurtle212/OuterWilds-ToggleHUD/releases/tag/v0.1.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

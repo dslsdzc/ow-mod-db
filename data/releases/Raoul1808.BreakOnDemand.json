@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2022-12-26T22:28:42Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0 Initial Release",
+      "date": "2022-12-23",
+      "body": "",
+      "zipUrl": "https://github.com/Raoul1808/BreakOnDemand/releases/download/v1.0.0/Raoul1808.BreakOnDemand.zip",
+      "releaseUrl": "https://github.com/Raoul1808/BreakOnDemand/releases/tag/v1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2025-06-04T00:54:14Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-06-04",
+      "body": "Initial Release",
+      "zipUrl": "https://github.com/pikpik-carrot/TF2Skins/releases/download/1.0.0/pikpik_carrot.TF2Skins.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/TF2Skins/releases/tag/1.0.0",
+      "bodyZh": "初始发布"
+    }
+  ]
+}

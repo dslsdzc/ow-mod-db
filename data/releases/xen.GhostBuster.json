@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2024-05-22T18:40:29Z",
+  "releases": [
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2024-05-22",
+      "body": "- Adds a GlobalMessenger event for mod compatibility",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/v1.0.2/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/v1.0.2",
+      "bodyZh": "- 添加了一个 GlobalMessenger 事件用于模组兼容性"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/v1.0.1/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/v1.0.1",
+      "bodyZh": "- 在模组清单中添加Patreon捐赠链接"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2023-07-19",
+      "body": "- Fixed a bug where there were interact receivers for extinguished lanterns\r\n- Added a \"debug logs\" option\r\n- Added a \"show names\" option that let's you know whose life you're snuffing out. You monster.",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/v1.0.0/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/v1.0.0",
+      "bodyZh": "- 修复了一个熄灭的灯笼没有交互接收器的问题\n- 添加了一个“调试日志”选项\n- 添加了一个“显示名称”选项，让你知道你在扼杀谁的生命。你这个怪物。"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-04-19",
+      "body": "I ain't afraid of no null reference exception.",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/0.1.1/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/0.1.1",
+      "bodyZh": "我不怕空引用异常。"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-04-19",
+      "body": "I ain't afraid of no ghosts.",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/0.1.0/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/0.1.0",
+      "bodyZh": "我不怕鬼。"
+    }
+  ]
+}

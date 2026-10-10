@@ -1,0 +1,77 @@
+{
+  "repoUpdatedAt": "2025-04-28T20:39:51Z",
+  "releases": [
+    {
+      "tag": "0.8.1",
+      "name": "0.8.1",
+      "date": "2024-09-08",
+      "body": "## What's Changed\r\n- Allow toggling display with `H` (#12)\r\n- Allow displaying only when suit is equipped (#17)\r\n- Fix clock showing up on main menu (#11)\r\n- Fix clock going negative (#16)",
+      "zipUrl": "https://github.com/clubby789/OWClock/releases/download/0.8.1/Release.zip",
+      "releaseUrl": "https://github.com/clubby789/OWClock/releases/tag/0.8.1"
+    },
+    {
+      "tag": "0.7.0",
+      "name": "0.7.0",
+      "date": "2022-03-23",
+      "body": "## What's Changed\r\n* Version 0.7.0 EotE events by @Tllya in https://github.com/clubby789/OWClock/pull/15",
+      "zipUrl": "https://github.com/clubby789/OWClock/releases/download/0.7.0/release.zip",
+      "releaseUrl": "https://github.com/clubby789/OWClock/releases/tag/0.7.0"
+    },
+    {
+      "tag": "0.6.1",
+      "name": "0.6.1",
+      "date": "2021-12-14",
+      "body": "> Closes #7\r\n> It might help with #4 too because the RecalculatePosition is called every time settings are changed now.\r\n> Remove redundant \\ from build event.\r\n> OwmlDir can be dynamic with %appdata%\r\n> Make UniqueName match.\r\n> Remove events from list when they have passed (Should improve performance slightly)\r\n> RecalculatePosition from Configure to fix HudScale.\r\n> Add comments.\r\n> Organize code blocks.",
+      "zipUrl": "https://github.com/clubby789/OWClock/releases/download/0.6.1/Release.zip",
+      "releaseUrl": "https://github.com/clubby789/OWClock/releases/tag/0.6.1"
+    },
+    {
+      "tag": "0.5.0",
+      "name": "0.5.0",
+      "date": "2021-10-26",
+      "body": "Bringing the mod up to date, thanks to @A9G-Data-Droid",
+      "zipUrl": "https://github.com/clubby789/OWClock/releases/download/0.5.0/Release.zip",
+      "releaseUrl": "https://github.com/clubby789/OWClock/releases/tag/0.5.0"
+    },
+    {
+      "tag": "0.4.0",
+      "name": "0.4.0",
+      "date": "2020-11-12",
+      "body": "Adds some new events in, and adds filtering.\r\n\r\nKNOWN ISSUE:\r\n - Changing the filters can break everything. Be careful with it.",
+      "zipUrl": "https://github.com/clubby789/OWClock/releases/download/0.4.0/Release.zip",
+      "releaseUrl": "https://github.com/clubby789/OWClock/releases/tag/0.4.0"
+    },
+    {
+      "tag": "0.3.0",
+      "name": "Improved formatting of events",
+      "date": "2020-09-22",
+      "body": "Events listed on the side will now wrap round if too long, and ad just their height accordingly. Also added some more events to the default events list.",
+      "zipUrl": "https://github.com/clubby789/OWClock/releases/download/0.3.0/Release.zip",
+      "releaseUrl": "https://github.com/clubby789/OWClock/releases/tag/0.3.0"
+    },
+    {
+      "tag": "0.2.7",
+      "name": "OW-Db Release",
+      "date": "2020-09-20",
+      "body": "First release for the OW mod DB",
+      "zipUrl": "https://github.com/clubby789/OWClock/releases/download/0.2.7/Release.zip",
+      "releaseUrl": "https://github.com/clubby789/OWClock/releases/tag/0.2.7"
+    },
+    {
+      "tag": "0.2.5",
+      "name": "Fix event sorting",
+      "date": "2020-09-20",
+      "body": "Properly sort events that are added",
+      "zipUrl": "https://github.com/clubby789/OWClock/releases/download/0.2.5/Release.zip",
+      "releaseUrl": "https://github.com/clubby789/OWClock/releases/tag/0.2.5"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "Initial Release",
+      "date": "2020-09-20",
+      "body": "",
+      "zipUrl": "https://github.com/clubby789/OWClock/releases/download/0.2.0/Release.zip",
+      "releaseUrl": "https://github.com/clubby789/OWClock/releases/tag/0.2.0"
+    }
+  ]
+}

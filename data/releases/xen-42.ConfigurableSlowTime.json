@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-09-29T02:00:41Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-09-29",
+      "body": "Initial release",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/ow-configurable-slow-time/releases/download/v0.1.0/xen-42.ConfigurableSlowTime.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-configurable-slow-time/releases/tag/v0.1.0"
+    }
+  ]
+}

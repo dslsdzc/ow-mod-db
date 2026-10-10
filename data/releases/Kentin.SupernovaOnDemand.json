@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-04-29T13:08:54Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "Release v1.0.0",
+      "date": "2022-04-29",
+      "body": "Initial release\r\n\r\n**Full Changelog**: https://github.com/QuentinGruber/SupernovaOnDemand/commits/1.0.0",
+      "zipUrl": "https://github.com/QuentinGruber/SupernovaOnDemand/releases/download/1.0.0/Kentin.SupernovaOnDemand.zip",
+      "releaseUrl": "https://github.com/QuentinGruber/SupernovaOnDemand/releases/tag/1.0.0",
+      "bodyZh": "初始发布\n\n**完整变更日志**: https://github.com/QuentinGruber/SupernovaOnDemand/commits/1.0.0"
+    }
+  ]
+}

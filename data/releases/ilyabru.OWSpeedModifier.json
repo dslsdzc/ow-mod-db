@@ -1,0 +1,21 @@
+{
+  "repoUpdatedAt": "2022-11-06T23:03:00Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2022-11-06",
+      "body": "- Made offset apply only when total speeds > 2\r\n- Added a speed reset option when getting in and out of cockpit\r\n- Updated OWML",
+      "zipUrl": "https://github.com/ilyabru/OWSpeedModifier/releases/download/1.1.0/ilyabru.OWSpeedModifier.zip",
+      "releaseUrl": "https://github.com/ilyabru/OWSpeedModifier/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-08-23",
+      "body": "",
+      "zipUrl": "https://github.com/ilyabru/OWSpeedModifier/releases/download/1.0.0/ilyabru.OWSpeedModifier.zip",
+      "releaseUrl": "https://github.com/ilyabru/OWSpeedModifier/releases/tag/1.0.0"
+    }
+  ]
+}
