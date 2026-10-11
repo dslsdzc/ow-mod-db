@@ -7461,25 +7461,25 @@
     ]
   },
   "Locochoco.KSPShips": {
-    "repoUpdatedAt": "2026-05-04T19:28:12Z",
+    "repoUpdatedAt": "2026-10-11T09:15:34Z",
     "releases": [
       {
         "tag": "v0.1.1",
         "name": "Kerbal Space Ventures v0.1.1",
         "date": "2023-02-11",
         "body": "* Fixed the player not being able to leave the map screen after entering a pod\r\n\r\nThanks to QuantumBlur314 for reporting these issues!",
+        "bodyZh": "* 修复了进入逃生舱后玩家无法离开地图界面的问题\r\n\r\n感谢 QuantumBlur314 报告这些问题！",
         "zipUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/download/v0.1.1/Locochoco.KSPShips.zip",
-        "releaseUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/tag/v0.1.1",
-        "bodyZh": "* 修复了进入逃生舱后玩家无法离开地图界面的问题\r\n\r\n感谢 QuantumBlur314 报告这些问题！"
+        "releaseUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/tag/v0.1.1"
       },
       {
         "tag": "v0.1.0",
         "name": "Kerbal Space Ventures v0.1.0",
         "date": "2022-11-23",
         "body": "* Allows the creation of custom ships from `.craft` files from the game Kerbal Space Program.\r\n* For now only the small solid booster, the mk1 crew pod and the small decoupler exist.\r\n\r\n\r\n- 3d models for each part from FunkyShoeMan#0001!",
+        "bodyZh": "* 允许从游戏《Kerbal Space Program》的`.craft`文件中创建自定义飞船。\n* 目前只有小型固体助推器、mk1乘员舱和小型分离器存在。\n- 每个部件的三维模型来自FunkyShoeMan#0001！",
         "zipUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/download/v0.1.0/Locochoco.KSPShips.zip",
-        "releaseUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/tag/v0.1.0",
-        "bodyZh": "* 允许从《Kerbal Space Program》游戏的`.craft`文件中创建自定义飞船。\n* 目前仅存在小型固体助推器、mk1乘员舱和小型分离器。\n- 每个部件的三维模型来自FunkyShoeMan#0001！"
+        "releaseUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/tag/v0.1.0"
       }
     ]
   },
@@ -16221,7 +16221,7 @@
     ]
   },
   "orclecle.EyeWitness": {
-    "repoUpdatedAt": "2026-10-10T17:13:33Z",
+    "repoUpdatedAt": "2026-10-11T10:03:20Z",
     "releases": [
       {
         "tag": "v1.4.6",
@@ -16237,7 +16237,7 @@
         "name": "Version 1.4.5",
         "date": "2026-09-22",
         "body": "* Fix #7 by setting hideProxy as true.\r\n* If a certain object is stuck in a certain laboratory, the door is designed to break to prevent entry.",
-        "bodyZh": "* 通过设置 hideProxy 为 true 修复 #7。\n* 如果某个物体卡在某个实验室里，门的设计会破裂以阻止进入。",
+        "bodyZh": "* 通过设置 hideProxy 为 true 修复 #7。\n* 如果某个物体卡在某个实验室里，门的设计是会破裂以阻止进入。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.5/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.5"
       },
@@ -16246,7 +16246,7 @@
         "name": "Version 1.4.4",
         "date": "2026-09-12",
         "body": "* Disable the item if the player heads straight to the cannon without filling in the initial ship log.\r\n* Fixed an issue where the player could get trapped inside a specific building in the final sequence at the specific place (though doing so required a deliberate effort).\r\n* Fixed a missing character of Japanese translation.",
-        "bodyZh": "* 如果玩家没有填写初始飞船日志就直奔炮台，则禁用该物品。\n* 修复了一个问题，玩家在最终序列的特定地点可能会被困在特定建筑内（尽管这样做需要刻意尝试）。\n* 修复了日语翻译中缺失的字符。",
+        "bodyZh": "* 如果玩家没有填写初始飞船日志就直奔炮台，则禁用该物品。\n* 修复了一个问题，玩家在最终序列的特定地点可能会被困在特定建筑内（尽管这需要刻意为之）。\n* 修复了日语翻译中缺失的字符。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.4/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.4"
       },
@@ -16264,7 +16264,7 @@
         "name": "Version 1.4.1",
         "date": "2026-09-04",
         "body": "* Update Chinese translation. Thank you, @SanBaiMing !\r\n* Fix audio volume issue in the final sequence in the specific place.\r\n* Fix gravity issue in the final sequence in the specific place.",
-        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列特定位置的音量问题。\n* 修复最终序列特定位置的引力问题。",
+        "bodyZh": "* 更新中文翻译。感谢 @SanBaiMing ！\n* 修复最终序列中特定位置的音量问题。\n* 修复最终序列中特定位置的重力问题。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.1/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.1"
       },
