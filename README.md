@@ -96,3 +96,11 @@ python scripts/readmes.py --lang ja --dry-run      # ja README 翻译统计
 ## 测试
 
 `python -m pytest scripts/test -q`
+
+端到端测试(真实浏览器驱动,需要先构建 dist/):
+
+```bash
+pip install playwright && python -m playwright install chromium
+python scripts/build.py
+python -m pytest e2e -q
+```
