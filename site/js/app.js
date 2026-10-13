@@ -715,6 +715,26 @@ function initReadme(mod) {
   })();
 }
 
+function initShare(mod) {
+  const btn = document.getElementById("share-btn");
+  if (!btn) return;
+  const label = btn.textContent;
+  btn.addEventListener("click", async () => {
+    const url = location.href.split("#")[0];
+    const title = `${mod.name} — 星际拓荒 MOD 数据库`;
+    if (navigator.share) {
+      try { await navigator.share({ title, url }); return; } catch (e) { /* 取消或失败则走复制 */ }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      btn.textContent = window.t ? t("detail.copied") : "已复制链接";
+      setTimeout(() => { btn.textContent = label; }, 2000);
+    } catch (e) {
+      window.prompt(window.t ? t("detail.share") : "分享", url);
+    }
+  });
+}
+
 function renderDetail(mods) {
   const params = new URLSearchParams(location.search);
   const pathHit = location.pathname.match(/\/mod\/([^/]+)\.html$/);
@@ -750,6 +770,7 @@ function renderDetail(mods) {
       </div>
       <div class="buttons-second">
         ${mod.slug ? `<a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/#downloads" target="_blank" rel="noopener">下载统计</a>` : ""}
+        <button class="secondary" type="button" id="share-btn">${window.t ? t("detail.share") : "分享"}</button>
         <a class="secondary" href="${reportUrl}" target="_blank" rel="noopener">${window.t ? t("detail.reportIssue") : "报告翻译问题"}</a>
       </div>
       ${mod.description ? `<div class="section"><h3>简介</h3><div class="readme" id="desc-md"></div></div>` : ""}
@@ -790,6 +811,7 @@ function renderDetail(mods) {
   initReleases(mod);
   initPatchBlock(mod);
   initComments(mod);
+  initShare(mod);
 }
 
 (function initToTop() {

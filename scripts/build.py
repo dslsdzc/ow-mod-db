@@ -125,10 +125,65 @@ def deploy_site(site_dir: Path, dist_dir: Path) -> None:
 _MOD_PAGE_MARKERS = (
     '<meta name="viewport" content="width=device-width, initial-scale=1">',
     "<title>MOD 详情 — 星际拓荒 MOD 数据库</title>",
-    '<meta property="og:title" content="MOD 详情 — 星际拓荒 MOD 数据库">',
-    f'<meta property="og:image" content="{SITE_URL}/og.png">',
+    "<!-- OG:START -->",
+    "<!-- OG:END -->",
     '<main id="detail"></main>',
 )
+
+
+def meta_block(*, title: str, description: str, url: str, image: str, image_alt: str,
+               image_size: tuple[int, int] | None = None) -> str:
+    """OG/Twitter 卡片与 canonical 的完整元数据块。
+
+    依据 2026 各平台现状: og:* 为主, 显式 twitter:title/description/image(X 的 og 回退不稳);
+    image_size 仅在尺寸确知(站点自有的 1200x630 og.png)时声明, 避免错误标注作者缩略图。
+    """
+    lines = [
+        "<!-- OG:START -->",
+        '<meta property="og:site_name" content="星际拓荒 MOD 数据库">',
+        '<meta property="og:locale" content="zh_CN">',
+        f'<meta property="og:title" content="{html_escape(title)}">',
+        f'<meta property="og:description" content="{html_escape(description)}">',
+        '<meta property="og:type" content="website">',
+        f'<meta property="og:url" content="{html_escape(url)}">',
+        f'<meta property="og:image" content="{html_escape(image)}">',
+    ]
+    if image_size:
+        lines += [f'<meta property="og:image:width" content="{image_size[0]}">',
+                  f'<meta property="og:image:height" content="{image_size[1]}">']
+    lines += [
+        f'<meta property="og:image:alt" content="{html_escape(image_alt)}">',
+        '<meta name="twitter:card" content="summary_large_image">',
+        f'<meta name="twitter:title" content="{html_escape(title)}">',
+        f'<meta name="twitter:description" content="{html_escape(description)}">',
+        f'<meta name="twitter:image" content="{html_escape(image)}">',
+        f'<link rel="canonical" href="{html_escape(url)}">',
+        "<!-- OG:END -->",
+    ]
+    return "\n".join(lines)
+
+
+def mod_jsonld(*, name: str, author: str, version: str, download_url: str,
+               page_url: str, image: str) -> str:
+    """静态详情页的结构化数据(schema.org SoftwareApplication)。"""
+    data: dict = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": name,
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "url": page_url,
+    }
+    if author:
+        data["author"] = {"@type": "Organization", "name": author}
+    if version:
+        data["softwareVersion"] = version
+    if download_url:
+        data["downloadUrl"] = download_url
+    if image:
+        data["image"] = image
+    text = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    return f'<script type="application/ld+json">{text}</script>'
 
 
 def mod_page_filename(unique_name: str) -> str:
@@ -165,7 +220,7 @@ def build_mod_pages(template: str, mods: list[dict], translations: dict, dist: P
                     if thumb else f"{site_url}/og.png")
         page_url = f"{site_url}/{MOD_PAGE_DIR}/{quote(mod.get('uniqueName') or '')}.html"
         title = f"{name} — 星际拓荒 MOD 数据库"
-        lead = desc[:140] + ("…" if len(desc) > 140 else "")
+        lead = (desc[:140] + ("…" if len(desc) > 140 else "")) if desc else f"星际拓荒 MOD:{name}"
         meta_line = f"{author} · v{version}" if version else author
 
         html = template
@@ -174,13 +229,15 @@ def build_mod_pages(template: str, mods: list[dict], translations: dict, dist: P
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n<base href="../">', 1)
         html = html.replace("<title>MOD 详情 — 星际拓荒 MOD 数据库</title>",
                             f"<title>{html_escape(title)}</title>", 1)
-        html = html.replace('<meta property="og:title" content="MOD 详情 — 星际拓荒 MOD 数据库">',
-                            f'<meta property="og:title" content="{html_escape(title)}">', 1)
-        html = html.replace(f'<meta property="og:image" content="{site_url}/og.png">',
-                            f'<meta property="og:image" content="{html_escape(og_image)}">\n'
-                            f'<meta property="og:description" content="{html_escape(lead)}">\n'
-                            f'<meta property="og:url" content="{html_escape(page_url)}">\n'
-                            f'<link rel="canonical" href="{html_escape(page_url)}">', 1)
+        block = meta_block(
+            title=title, description=lead, url=page_url, image=og_image,
+            image_alt=f"{name} 的缩略图" if thumb else "星际拓荒 MOD 数据库",
+            image_size=None if thumb else (1200, 630))
+        block += "\n" + mod_jsonld(
+            name=name, author=author, version=version,
+            download_url=str(out.get("downloadUrl") or ""), page_url=page_url, image=og_image)
+        html = re.sub(r"<!-- OG:START -->.*?<!-- OG:END -->",
+                      lambda _m, b=block: b, html, count=1, flags=re.S)
         # 静态页之间不预渲染; 预渲染规则由根页面覆盖"列表 -> 详情"主路径
         html = re.sub(r'<script type="speculationrules">.*?</script>\n', "", html, count=1, flags=re.S)
         static_body = (

@@ -49,6 +49,7 @@ def test_static_detail_page_seo_tags(page, site_server):
     og_title = page.locator('meta[property="og:title"]').get_attribute("content") or ""
     assert "新地平线" in og_title
     page.wait_for_selector("#detail h1")
+    assert page.locator("#share-btn").count() == 1  # 分享按钮渲染
 
 
 def test_service_worker_registers_and_caches(page, site_server):

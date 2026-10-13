@@ -122,6 +122,7 @@ def test_detail_ux_markers():
     assert "issues/new?template=translation.md" in js    # 报告翻译问题入口
     assert "searchTimer" in js                            # 搜索防抖
     assert 'img.loading = "lazy"' in js                   # README 图片懒加载
+    assert "navigator.share" in js and "share-btn" in js  # 分享按钮(Web Share + 复制兜底)
     tmpl = REPO_ROOT / ".github" / "ISSUE_TEMPLATE" / "translation.md"
     assert tmpl.exists()                                  # issue 模板
 

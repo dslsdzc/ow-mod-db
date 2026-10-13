@@ -96,6 +96,9 @@ def test_build_mod_pages_generates_seo_pages(tmp_path):
     assert '<base href="../">' in page
     assert "OWML 的模组加载器" in page                     # 中文简介进静态正文
     assert 'rel="canonical"' in page and "/mod/Alek.OWML.html" in page
+    assert 'property="og:site_name"' in page
+    assert 'name="twitter:card"' in page                   # X 大图卡片
+    assert "application/ld+json" in page                   # 结构化数据
     assert "speculationrules" not in page                  # 静态页不放预渲染规则
     assert "返回全部 MOD" in page
     assert 'id="detail"' in page
