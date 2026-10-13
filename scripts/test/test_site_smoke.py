@@ -28,7 +28,7 @@ def _run_build(tmp_path):
 
 
 def test_site_files_exist():
-    for rel in ("index.html", "mods.html", "mod.html", "css/style.css", "js/app.js"):
+    for rel in ("index.html", "mods.html", "mod.html", "css/style.css", "js/app.js", "sw.js"):
         assert (REPO_ROOT / "site" / rel).exists(), f"缺少 site/{rel}"
 
 
@@ -40,7 +40,7 @@ def test_dist_artifacts_and_json_valid(tmp_path):
     meta = payload["meta"]
     assert meta["mods"] == len(mods_data) == 2
     assert meta["zhDescriptions"] == 1  # 仅 Alek.OWML 简介有中文
-    required_keys = {"uniqueName", "name", "description", "authorDisplay", "downloadUrl",
+    required_keys = {"uniqueName", "name", "originalName", "description", "authorDisplay", "downloadUrl",
                      "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount",
                      "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",
                      "latestReleaseDescription", "readmeDownloadUrl", "parent", "repoVariations"}
@@ -81,6 +81,40 @@ def test_jams_page_markers():
     assert 'id="jams"' in html
     assert "jamKey" in js and "renderJams" in js
     assert "jam_content.json" in js
+
+
+def test_search_matches_original_english_name():
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert "originalName" in js  # 搜索匹配英文原名
+    html = (REPO_ROOT / "site" / "mods.html").read_text(encoding="utf-8")
+    assert "英文原名" in html     # placeholder 提示
+
+
+def test_thumbnail_load_strategy_and_sw_markers():
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert "setupLazyThumbs" in js and "data-src" in js     # 手动提前预载
+    assert "fetchpriority" in js                            # 首屏图优先
+    assert "serviceWorker" in js                            # SW 注册
+    sw = (REPO_ROOT / "site" / "sw.js").read_text(encoding="utf-8")
+    assert "thumbnails" in sw and "caches" in sw and "skipWaiting" in sw
+    for page in ("index.html", "mods.html", "mod.html"):
+        html = (REPO_ROOT / "site" / page).read_text(encoding="utf-8")
+        assert "preconnect" in html                         # 预连接图片域
+
+
+def test_sw_caches_assets_and_pages():
+    sw = (REPO_ROOT / "site" / "sw.js").read_text(encoding="utf-8")
+    assert "ow-assets" in sw and "ow-pages" in sw          # 静态资源 + 页面缓存桶
+    assert 'searchParams.has("v")' in sw                    # 版本化资源
+    assert "(png|svg" in sw                                 # 无版本戳图片(占位图等)也进缓存
+    assert "navigate" in sw                                 # HTML network-first
+    assert "ASSET_MAX" in sw and "PAGE_MAX" in sw           # 上限清理
+
+
+def test_speculation_rules_markers():
+    for page in ("index.html", "mods.html", "jams.html", "mod.html"):
+        html = (REPO_ROOT / "site" / page).read_text(encoding="utf-8")
+        assert "speculationrules" in html and "mod.html*" in html
 
 
 def test_official_mod_links_rewritten_markers():

@@ -24,7 +24,7 @@ function thumbUrl(m) {
     : "";
 }
 
-const THUMB_BG = { "1/1": "png/1to1.png", "16/9": "png/16to9.png", "21/9": "png/21to9.png" };
+const THUMB_BG = { "1/1": "png/1to1.webp", "16/9": "png/16to9.webp", "21/9": "png/21to9.webp" };
 
 function ratioKey(w, h) {
   const r = w / h;
@@ -50,11 +50,40 @@ function setupAllThumbs(root) {
   [...(root || document).querySelectorAll(".thumb-box")].forEach(setupThumbBox);
 }
 
-function cardHtml(m) {
+// ---- 缩略图预载策略: 首屏若干张直接加载,其余在进入视口前固定约 1.5 屏预载(慢网下浏览器自带 lazy 的提前量会收缩) ----
+const THUMB_EAGER_N = 9;
+let thumbObserver = null;
+
+function setupLazyThumbs(root) {
+  const imgs = [...(root || document).querySelectorAll("img[data-src]")];
+  if (!imgs.length) return;
+  if (!("IntersectionObserver" in window)) {
+    imgs.forEach((img) => { img.src = img.getAttribute("data-src"); img.removeAttribute("data-src"); });
+    return;
+  }
+  if (!thumbObserver) {
+    thumbObserver = new IntersectionObserver((entries) => {
+      for (const en of entries) {
+        if (!en.isIntersecting) continue;
+        const img = en.target;
+        const src = img.getAttribute("data-src");
+        if (src) { img.src = src; img.removeAttribute("data-src"); }
+        thumbObserver.unobserve(img);
+      }
+    }, { rootMargin: "1200px 0px" });
+  }
+  imgs.forEach((img) => thumbObserver.observe(img));
+}
+
+function cardHtml(m, idx) {
   const thumb = thumbUrl(m);
+  const img = !thumb ? ""
+    : ((idx || 0) < THUMB_EAGER_N
+      ? `<img src="${esc(thumb)}" alt="" loading="eager" fetchpriority="high" decoding="async">`
+      : `<img data-src="${esc(thumb)}" alt="" decoding="async">`);
   const visual = thumb
-    ? `<span class="thumb-box"><img src="${esc(thumb)}" alt="" loading="lazy"></span>`
-    : `<span class="thumb-box ph-thumb" style="background-image:url('png/16to9.png')"><span class="ph-text">${esc(m.name || m.uniqueName || "?")}</span></span>`;
+    ? `<span class="thumb-box">${img}</span>`
+    : `<span class="thumb-box ph-thumb" style="background-image:url('png/16to9.webp')"><span class="ph-text">${esc(m.name || m.uniqueName || "?")}</span></span>`;
   return `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
     ${visual}
     <h3>${esc(m.name)}</h3>
@@ -162,7 +191,7 @@ function renderJams(mods) {
         ${(c.officialUrl || o.officialUrl) ? `<p><a class="link" href="${esc(c.officialUrl || o.officialUrl)}" target="_blank" rel="noopener">官方届次页面</a></p>` : ""}
         ${sections}
         ${c.sections && c.sections.length ? `<p class="foot-note">译文依据官方 Jam 页面撰写,版权归主办方;参赛作品列表为本站自动聚合。</p>` : ""}
-        <div class="grid">${list.map(cardHtml).join("")}</div>
+        <div class="grid">${list.map((m) => cardHtml(m, THUMB_EAGER_N)).join("")}</div>
       </section>`;
     }).join("");
     // 跳转条必须在 innerHTML 之后插入(否则会被覆盖)
@@ -182,6 +211,7 @@ function renderJams(mods) {
       root.prepend(nav);
     }
     setupAllThumbs(root);
+    setupLazyThumbs(root);
     // 分组简介与章节正文: 统一走 markdown(保列表/换行),按组作用域查找
     root.querySelectorAll("[data-bucket-md]").forEach((el) => {
       const c = content[el.dataset.bucketMd];
@@ -240,6 +270,7 @@ function renderHome(mods) {
     return `<section><h2>${window.t ? t(title) : title}</h2><div class="grid">${items.map(cardHtml).join("")}</div></section>`;
   }).join("");
   setupAllThumbs(featured);
+  setupLazyThumbs(featured);
 }
 
 function renderList(mods) {
@@ -283,6 +314,7 @@ function renderList(mods) {
     count.textContent = (window.t ? t("mods.count", { n: shown.length, m: mods.length }) : (shown.length + " / " + mods.length + " 个 MOD"));
     grid.innerHTML = shown.map(cardHtml).join("") || `<p class="placeholder">${window.t ? t("mods.none") : "没有匹配的 MOD"}</p>`;
     setupAllThumbs(grid);
+    setupLazyThumbs(grid);
   }
 
   search.addEventListener("input", draw);
@@ -687,8 +719,8 @@ function renderDetail(mods) {
   main.innerHTML = `
     <div class="detail">
       ${thumb
-        ? `<span class="thumb-box detail-thumb" id="hero-thumb"><img src="${esc(thumb)}" alt=""></span>`
-        : `<span class="thumb-box detail-thumb ph-thumb" style="background-image:url('png/21to9.png')"><span class="ph-text">${esc(mod.name || mod.uniqueName)}</span></span>`}
+        ? `<span class="thumb-box detail-thumb" id="hero-thumb"><img src="${esc(thumb)}" alt="" fetchpriority="high" decoding="async"></span>`
+        : `<span class="thumb-box detail-thumb ph-thumb" style="background-image:url('png/21to9.webp')"><span class="ph-text">${esc(mod.name || mod.uniqueName)}</span></span>`}
       <h1>${esc(mod.name)}</h1>
       <div class="meta">${repoOwner ? `<a class="link" href="https://github.com/${esc(repoOwner)}" target="_blank" rel="noopener">@${esc(repoOwner)}</a>` : esc(mod.authorDisplay)} · v${esc(mod.version)} · ${esc(mod.downloadCount)} 次下载 · 更新于 ${esc((mod.latestReleaseDate || "").slice(0, 10))}</div>
       <div>${(mod.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
@@ -765,6 +797,13 @@ function renderDetail(mods) {
   }, { passive: true });
   document.body.appendChild(btn);
 })();
+
+// ---- 缩略图本地缓存(Service Worker): 回访时图片秒出; 不支持或注册失败则静默跳过 ----
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
 
 loadMods()
   .then((data) => {
