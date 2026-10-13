@@ -206,7 +206,10 @@ function renderJams(mods) {
         const sec = key.startsWith("sec-")
           ? root.querySelector(`[data-page="${key.slice(4)}"]`)
           : root.querySelector(`section[data-jam="${key}"]`);
-        if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (sec) {
+          const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          sec.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+        }
       });
       root.prepend(nav);
     }
@@ -296,10 +299,15 @@ function renderList(mods) {
     };
     mk(window.t ? t("mods.allTag") : "全部", "");
     for (const t of allTags) mk(t, t);
+    refreshChips();  // 初始 "全部" 处于选中态(并同步 aria-pressed)
   }
   function refreshChips() {
     if (!chipsEl) return;
-    [...chipsEl.children].forEach((b) => b.classList.toggle("active", b.dataset.tag === tag));
+    [...chipsEl.children].forEach((b) => {
+      const on = b.dataset.tag === tag;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-pressed", String(on));
+    });
   }
 
   function draw() {

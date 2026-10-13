@@ -15,25 +15,28 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#content" data-i18n="a11y.skip">跳到主要内容</a>
 <header class="site-header">
-  <nav>
+  <nav data-i18n-aria-label="a11y.nav">
     <a class="brand" href="index.html" data-i18n="brand">星际拓荒 MOD</a>
     <a href="mods.html" data-i18n="nav.mods">全部 MOD</a>
     <a href="jams.html" data-i18n="nav.jams">历届 Jam</a>
     <a href="mod-manager.html" data-i18n="nav.manager">Mod Manager</a>
   </nav>
 </header>
-<main>
+<main id="content">
   <h1 data-i18n="mods.title">全部 MOD</h1>
   <div class="controls">
+    <label class="sr-only" for="search" data-i18n="mods.searchLabel">搜索 MOD</label>
     <input id="search" type="search" data-i18n-placeholder="mods.search" placeholder="搜索 MOD 名称 / 简介…（支持英文原名）">
+    <label class="sr-only" for="sort" data-i18n="mods.sortLabel">排序方式</label>
     <select id="sort">
       <option value="installs" data-i18n="mods.sort.installs">按热门排序</option>
       <option value="newest" data-i18n="mods.sort.newest">按最新发布</option>
       <option value="updated" data-i18n="mods.sort.updated">按最近更新</option>
       <option value="name" data-i18n="mods.sort.name">按名称</option>
     </select>
-    <span id="count"></span>
+    <span id="count" aria-live="polite"></span>
   </div>
   <div id="tag-chips" class="chips"></div>
   <div id="mod-grid" class="grid"></div>

@@ -7,6 +7,10 @@
 window.I18N = {
   "zh-CN": {
     "brand": "星际拓荒 MOD",
+    "a11y.skip": "跳到主要内容",
+    "a11y.nav": "主导航",
+    "mods.searchLabel": "搜索 MOD",
+    "mods.sortLabel": "排序方式",
     "nav.mods": "全部 MOD",
     "nav.jams": "历届 Jam",
     "nav.manager": "Mod Manager",
@@ -42,6 +46,10 @@ window.I18N = {
   },
   "ja": {
     "brand": "アウターワイルズ MOD",
+    "a11y.skip": "メインコンテンツへ移動",
+    "a11y.nav": "メインナビ",
+    "mods.searchLabel": "MODを検索",
+    "mods.sortLabel": "並び替え",
     "nav.mods": "すべてのMOD",
     "nav.jams": "過去のJam",
     "nav.manager": "Mod Manager",
@@ -107,6 +115,10 @@ window.I18N = {
     document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
       const v = window.t(el.dataset.i18nPlaceholder);
       if (v) el.setAttribute("placeholder", v);
+    });
+    document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
+      const v = window.t(el.dataset.i18nAriaLabel);
+      if (v) el.setAttribute("aria-label", v);
     });
   }
 

@@ -132,3 +132,13 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .rel-body { margin-top: .4rem; font-size: .9rem; }
 .detail .thumb { width: 100%; max-width: 720px; height: auto;   /* 完整展示,不裁切不变形 */
                  border-radius: 10px; background: rgba(255,255,255,.06); margin-bottom: 1rem; }
+
+/* 无障碍: 屏幕阅读器专用文本、跳转链接与统一焦点样式 */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+           overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 100;
+             background: #ff9c86; color: #0b0d10; padding: .5rem 1rem;
+             border-radius: 0 0 8px 0; font-weight: 600; text-decoration: none; }
+.skip-link:focus { left: 0; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid rgba(255,156,134,.9); outline-offset: 2px; }

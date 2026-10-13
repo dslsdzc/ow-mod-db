@@ -135,6 +135,21 @@ def test_static_mod_page_markers():
         assert '"./mod/*"' in html                            # 预渲染覆盖静态页
 
 
+def test_a11y_markers():
+    css = (REPO_ROOT / "site" / "css" / "style.css").read_text(encoding="utf-8")
+    assert ".sr-only" in css and ".skip-link" in css and "focus-visible" in css
+    for page in ("index.html", "mods.html", "mod.html", "jams.html", "mod-manager.html", "404.html"):
+        html = (REPO_ROOT / "site" / page).read_text(encoding="utf-8")
+        assert 'class="skip-link"' in html                  # 跳转链接
+        assert "data-i18n-aria-label" in html               # 导航区域名
+    mods = (REPO_ROOT / "site" / "mods.html").read_text(encoding="utf-8")
+    assert "aria-live" in mods and 'for="search"' in mods   # 结果数播报 + 表单标签
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert "aria-pressed" in js                             # 筛选 chips 状态
+    i18n = (REPO_ROOT / "site" / "js" / "i18n.js").read_text(encoding="utf-8")
+    assert "a11y.skip" in i18n and "i18nAriaLabel" in i18n
+
+
 def test_official_mod_links_rewritten_markers():
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
     assert "rewriteOfficialModLinks" in js
