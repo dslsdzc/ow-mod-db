@@ -1,1 +1,32 @@
-{"index": [], "pages": {}}
+{
+  "index": [
+    { "key": "jam6", "label": "開催中:タイムループ Mod Jam", "url": "https://outerwildsmods.com/jam/aug-2026", "now": true },
+    { "key": null, "page": "game-jam-2026", "label": "2026年2月:Game Jam", "url": "https://outerwildsmods.com/jam/game-jam-2026" },
+    { "key": "jam5", "label": "2025年7月:ミニ恒星系 Mod Jam", "url": "https://outerwildsmods.com/jam/jul-2025" },
+    { "key": "jam4", "label": "2024年10月:ミニマルテキスト Mod Jam", "url": "https://outerwildsmods.com/jam/oct-2024" },
+    { "key": "jam3", "label": "2024年3月:単一惑星 Mod Jam", "url": "https://outerwildsmods.com/jam/mar-2024" },
+    { "key": null, "page": "jul-2023", "label": "2023年7月:Outer Wilds Mod Jam(第2回)", "url": "https://outerwildsmods.com/jam/jul-2023" },
+    { "key": null, "page": "jan-2023", "label": "2023年1月:ニュー・ホライズン Jam", "url": "https://outerwildsmods.com/jam/jan-2023" }
+  ],
+  "pages": {},
+  "jam3": {
+    "name": "第3回アウターワイルズ モッドジャム:単一惑星",
+    "officialUrl": "https://outerwildsmods.com/jam/mar-2024",
+    "members": ["xen.UnofficialJam3Entry", "Echatsum.CallisThesis", "MegaPiggy.Axiom", "CrypticBird.Jam3", "coderCleric.JamHub", "Hawkbar.SolarRangers", "orclecle.Finis", "TeamErnesto.OWJam3ModProject", "Trifid.TrifidJam3", "pikpik_carrot.BandTogether", "GameWyrm.HearthsNeighbor2"]
+  },
+  "jam4": {
+    "name": "第4回アウターワイルズ モッドジャム:ミニマルテキスト",
+    "officialUrl": "https://outerwildsmods.com/jam/oct-2024",
+    "members": ["MegaPiggy.Jam4JokeEntry", "TeamMitis.Liaison", "pikpik_carrot,shoe,TextureTurtle.2024FallJam", "AsymmetricalCavern.LonesomeLake", "Echatsum.MisfiredJump", "orclecle.Guardian", "2walker2.OWJam4ModProject", "Etherpod.LuminaTerra", "xen.EscapeRoomJam4", "Hawkbar.GreenFlameBlade"]
+  },
+  "jam5": {
+    "name": "第5回アウターワイルズ モッドジャム:ミニ恒星系",
+    "officialUrl": "https://outerwildsmods.com/jam/jul-2025",
+    "members": ["Boreas.Jam5CakeCapere", "APOLLO.939sPlanetdotSTRUCTURE", "Ender.Beryl.BrightSpark", "Onbvb.catastrophe", "Trifid.TrifidJam5", "Etherpod.T0187", "MegaPiggy.AnomalyResearchAndContainment", "LeeSpork.ModJam5", "Vambok.HearthianParable", "Hawkbar.Terrarium", "TeamGeswaldo.Jam5", "orclecle.Jam5PingBox", "CantAffordaName.OnARail", "TheLoweDown256.TLDJam5", "TheSignalJammers.FifthModJam", "2walker2.OWJam5ModProject"]
+  },
+  "jam6": {
+    "name": "第6回アウターワイルズ モッドジャム:タイムループ",
+    "officialUrl": "https://outerwildsmods.com/jam/aug-2026",
+    "members": ["Olallieberry.BorrowedTomorrows", "LeeSpork.Jam6", "TeamFred.ThroughTheAges", "GameWyrm.HotelPenumbra", "RiddleMajor.No_Time_To_Waste", "Known-Mouse.EchoesOfTheObserver", "orclecle.EyeWitness", "Hawkbar.GhostInTheMachine"]
+  }
+}

@@ -121,7 +121,8 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .readme-actions button { background: rgba(255,255,255,.1); color: #fff; border: 1px solid rgba(255,255,255,.2);
   border-radius: 6px; padding: .3rem .8rem; cursor: pointer; font-size: .85rem; }
 .readme-actions button:hover { border-color: #ff9c86; }
-.readme-actions .hint { color: rgba(255,255,255,.5); font-size: .8rem; }
+.readme-actions .hint { color: rgba(255,255,255,.5); font-size: .8rem;
+                      flex-basis: 100%; order: 9; }   /* 固定独占按钮下方一行, 列表顺序稳定 */
 .readme-actions .busy { opacity: .5; pointer-events: none; }
 .rel-item { border-top: 1px solid rgba(255,255,255,.1); padding: .6rem 0; }
 .rel-item:first-child { border-top: none; }
@@ -142,3 +143,17 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .skip-link:focus { left: 0; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
   outline: 2px solid rgba(255,156,134,.9); outline-offset: 2px; }
+
+/* 下载趋势折线图 */
+#trend-chart { position: relative; }
+.trend-svg { width: 100%; height: auto; display: block; touch-action: pan-y; }
+.trend-axis { fill: rgba(255,255,255,.55); font-size: 12px; }
+.trend-src { color: rgba(255,255,255,.5); font-size: .8rem; margin: .4rem 0 0; }
+.trend-guide { stroke: rgba(255,255,255,.3); stroke-dasharray: 3 3; stroke-width: 1; }
+.trend-dot { fill: #ff9c86; stroke: #fff; stroke-width: 1.5; }
+.trend-tip { position: absolute; transform: translate(-50%, -100%); z-index: 5;
+             background: rgba(15,17,20,.95); border: 1px solid rgba(255,255,255,.15);
+             border-radius: 6px; padding: .35rem .6rem; line-height: 1.4;
+             white-space: nowrap; pointer-events: none; }
+.trend-tip b { display: block; color: rgba(255,255,255,.65); font-weight: 500; font-size: .72rem; }
+.trend-tip span { color: #ff9c86; font-weight: 600; font-size: .82rem; }

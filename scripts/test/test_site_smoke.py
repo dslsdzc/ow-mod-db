@@ -1,5 +1,6 @@
 """构建产物冒烟测试: 跑 build 后检查 dist 产物结构。"""
 import json
+import re
 from pathlib import Path
 
 from patch_registry import patches_to_dict, validate_patches
@@ -123,6 +124,7 @@ def test_detail_ux_markers():
     assert "searchTimer" in js                            # 搜索防抖
     assert 'img.loading = "lazy"' in js                   # README 图片懒加载
     assert "navigator.share" in js and "share-btn" in js  # 分享按钮(Web Share + 复制兜底)
+    assert "trend-section" in js and "downloads.json" in js  # 下载趋势(官方统计 API 按需加载)
     tmpl = REPO_ROOT / ".github" / "ISSUE_TEMPLATE" / "translation.md"
     assert tmpl.exists()                                  # issue 模板
 
@@ -149,6 +151,44 @@ def test_a11y_markers():
     assert "aria-pressed" in js                             # 筛选 chips 状态
     i18n = (REPO_ROOT / "site" / "js" / "i18n.js").read_text(encoding="utf-8")
     assert "a11y.skip" in i18n and "i18nAriaLabel" in i18n
+
+
+def test_i18n_dict_keys_aligned():
+    """zh-CN 与 ja 词典的 key 必须一一对应(防止新增界面文案漏翻一种语言)。"""
+    src = (REPO_ROOT / "site" / "js" / "i18n.js").read_text(encoding="utf-8")
+    zh_block = src.split('"zh-CN": {', 1)[1].split('},\n  "ja": {', 1)[0]
+    ja_block = src.split('"ja": {', 1)[1].split("};", 1)[0]
+    zh_keys = set(re.findall(r'"([\w.\-]+)":', zh_block))
+    ja_keys = set(re.findall(r'"([\w.\-]+)":', ja_block))
+    assert zh_keys and ja_keys
+    assert zh_keys == ja_keys, f"词典不一致: 仅zh={sorted(zh_keys - ja_keys)} 仅ja={sorted(ja_keys - zh_keys)}"
+
+
+def test_app_js_hardcoded_ui_now_goes_through_i18n():
+    """抽查已知界面文案已接入 i18n(配合 e2e 的 ja 运行时泄漏检测共同防回潮)。"""
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    for need in ('t("home.total"', 't("home.syncInfo"', 't("detail.downloadZip")',
+                 't("detail.repoLink")', 't("jams.groupNote"', 't("patch.install")',
+                 't("detail.comments")', 't("backTop")', 't("readme.aiNote"',
+                 't("releases.showAll"', 't("site.name")'):
+        assert need in js, f"未接入 i18n: {need}"
+
+
+def test_all_referenced_i18n_keys_are_defined():
+    """app.js 与页面里引用的所有 i18n key 必须存在于词典(防 key 泄漏到界面, 如曾出现的 jams.title)。"""
+    i18n = (REPO_ROOT / "site" / "js" / "i18n.js").read_text(encoding="utf-8")
+    zh_block = i18n.split('"zh-CN": {', 1)[1].split('},\n  "ja": {', 1)[0]
+    defined = set(re.findall(r'"([\w.\-]+)":', zh_block))
+    assert defined
+
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    used_js = set(re.findall(r'\bt\("([\w.\-]+)"', js))
+    assert not (used_js - defined), f"app.js 引用未定义 key: {sorted(used_js - defined)}"
+
+    for path in sorted((REPO_ROOT / "site").glob("*.html")):
+        html = path.read_text(encoding="utf-8")
+        used = set(re.findall(r'data-i18n(?:-placeholder|-aria-label|-title)?="([\w.\-]+)"', html))
+        assert not (used - defined), f"{path.name} 引用未定义 key: {sorted(used - defined)}"
 
 
 def test_official_mod_links_rewritten_markers():

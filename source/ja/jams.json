@@ -1,4 +1,8 @@
 {
- "overrides": {},
- "fallbackTitle": "その他のJam作品"
+  "_说明": "歴代 Jam 分组的人工补充(可选)。键为识别出的届次(如 jam5),name 覆盖默认标题,officialUrl 附官方页,note 自由评语。留空则全自动。",
+  "overrides": {
+    "jam1": { "name": "第1回:ニュー・ホライズン Jam(2023-01)" },
+    "jam2": { "name": "第2回:Outer Wilds Mod Jam(2023-07)" }
+  },
+  "fallbackTitle": "その他のJam作品"
 }

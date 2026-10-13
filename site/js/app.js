@@ -176,8 +176,8 @@ function renderJams(mods) {
     const titleOf = (k) => {
       if (content[k] && content[k].name) return content[k].name;
       if (overrides[k] && overrides[k].name) return overrides[k].name;
-      if (k === "other") return (cfg.fallbackTitle || "其他 Jam 作品");
-      return "历届 Jam 届次(待补充)";   // 不做数字编号,保持可扩展
+      if (k === "other") return (cfg.fallbackTitle || (window.t ? t("jams.fallbackTitle") : "其他 Jam 作品"));
+      return window.t ? t("jams.missingTitle") : "历届 Jam 届次(待补充)";   // 不做数字编号,保持可扩展
     };
     root.innerHTML = entries.map(([k, list]) => {
       list.sort((a, b) => installs(b) - installs(a));
@@ -188,9 +188,9 @@ function renderJams(mods) {
       return `<section class="home-section" data-jam="${esc(k)}">
         <h2>${esc(titleOf(k))} <span class="meta">· ${window.t ? t("jams.works", { n: list.length }) : (list.length + " 个作品")}</span></h2>
         ${c.introZh ? `<div class="readme" data-bucket-md="${esc(k)}"></div>` : ""}
-        ${(c.officialUrl || o.officialUrl) ? `<p><a class="link" href="${esc(c.officialUrl || o.officialUrl)}" target="_blank" rel="noopener">官方届次页面</a></p>` : ""}
+        ${(c.officialUrl || o.officialUrl) ? `<p><a class="link" href="${esc(c.officialUrl || o.officialUrl)}" target="_blank" rel="noopener">${window.t ? t("jams.officialLink") : "官方届次页面"}</a></p>` : ""}
         ${sections}
-        ${c.sections && c.sections.length ? `<p class="foot-note">译文依据官方 Jam 页面撰写,版权归主办方;参赛作品列表为本站自动聚合。</p>` : ""}
+        ${c.sections && c.sections.length ? `<p class="foot-note">${window.t ? t("jams.groupNote") : "译文依据官方 Jam 页面撰写,版权归主办方;参赛作品列表为本站自动聚合。"}</p>` : ""}
         <div class="grid">${list.map((m) => cardHtml(m, THUMB_EAGER_N)).join("")}</div>
       </section>`;
     }).join("");
@@ -233,10 +233,10 @@ function renderJams(mods) {
         <h2>${esc(p.titleZh || "")}</h2>
         <div class="readme" data-page-md></div>
         <div class="cta-row" style="margin-top:.6rem;">
-          <a class="cta" href="${esc(p.url || "#")}" target="_blank" rel="noopener">${esc(p.urlLabelZh || "前往官方页面")}</a>
+          <a class="cta" href="${esc(p.url || "#")}" target="_blank" rel="noopener">${esc(p.urlLabelZh || (window.t ? t("jams.toOfficial") : "前往官方页面"))}</a>
         </div>
         ${(p.sections || []).map((s, i) => `<div class="jam-sec"><h3>${esc(s.h)}</h3><div class="readme" data-page-sec="${pk}-${i}"></div></div>`).join("")}
-        <p class="foot-note">译文依据官方 Jam 页面撰写,版权归主办方。</p>
+        <p class="foot-note">${window.t ? t("jams.groupNote") : "译文依据官方 Jam 页面撰写,版权归主办方。"}</p>
       </section>`).join("");
     if (pagesHtml) root.insertAdjacentHTML("beforeend", pagesHtml);
     // 信息页正文:按页作用域填充,避免全局选择器错位
@@ -251,16 +251,16 @@ function renderJams(mods) {
       });
     });
   }).catch((err) => {
-    root.innerHTML = `<p class="placeholder">Jam 页渲染失败:${esc(err && err.message ? err.message : String(err))}</p>`;
+    root.innerHTML = `<p class="placeholder">${window.t ? t("jams.renderFailed") : "Jam 页渲染失败:"}${esc(err && err.message ? err.message : String(err))}</p>`;
   });
   } catch (e) {
-    root.innerHTML = `<p class="placeholder">Jam 页渲染失败:${esc(e && e.message ? e.message : String(e))}</p>`;
+    root.innerHTML = `<p class="placeholder">${window.t ? t("jams.renderFailed") : "Jam 页渲染失败:"}${esc(e && e.message ? e.message : String(e))}</p>`;
   }
 }
 
 function renderHome(mods) {
   const total = document.getElementById("mod-total");
-  if (total) total.textContent = `目前共有 ${mods.length} 个 MOD、扩展与工具。`;
+  if (total) total.textContent = window.t ? t("home.total", { n: mods.length }) : `目前共有 ${mods.length} 个 MOD、扩展与工具。`;
   const featured = document.getElementById("featured");
   if (!featured) return;
   const sections = [
@@ -406,7 +406,7 @@ function rewriteOfficialModLinks(scope) {
 
 function renderMarkdownInto(el, md, baseUrl, breaks) {
   if (!window.marked || !window.DOMPurify) {
-    el.innerHTML = `<p class="placeholder">渲染库未加载(CDN 不可达),<a class="link" href="${esc(baseUrl)}" target="_blank" rel="noopener">打开仓库原文目录</a></p>`;
+    el.innerHTML = `<p class="placeholder">${window.t ? t("readme.libMissing") : "渲染库未加载(CDN 不可达)," }<a class="link" href="${esc(baseUrl)}" target="_blank" rel="noopener">${window.t ? t("readme.openRepo") : "打开仓库原文目录"}</a></p>`;
     return;
   }
   const raw = marked.parse(md, { gfm: true, breaks: !!breaks });
@@ -450,16 +450,16 @@ function initPatchBlock(mod) {
       section.hidden = false;
       const installBtn = p.install === "owmm" && p.uniqueName
         ? `<a class="cta" href="owmods://install-mod/${encodeURIComponent(p.uniqueName)}"
-             title="需已安装 Outer Wilds Mod Manager">一键安装补丁</a>`
-        : (p.url ? `<a class="cta" href="${esc(p.url)}" target="_blank" rel="noopener">下载补丁</a>` : "");
+             title="${window.t ? t("detail.installHint") : "需已安装 Outer Wilds Mod Manager"}">${window.t ? t("patch.install") : "一键安装补丁"}</a>`
+        : (p.url ? `<a class="cta" href="${esc(p.url)}" target="_blank" rel="noopener">${window.t ? t("patch.download") : "下载补丁"}</a>` : "");
       const manualNote = p.install === "manual"
-        ? `<p class="foot-note">下载后放入 Mods 文件夹,或用 OWMM 安装 zip。</p>` : "";
+        ? `<p class="foot-note">${window.t ? t("patch.hint") : "下载后放入 Mods 文件夹,或用 OWMM 安装 zip。"}</p>` : "";
       box.innerHTML =
-        `<div><p style="margin:0 0 .4rem;">${esc(p.name || "中文支持")}</p>
+        `<div><p style="margin:0 0 .4rem;">${esc(p.name || (window.t ? t("detail.patchSection") : "中文支持"))}</p>
          <div class="cta-row">${installBtn}</div>
          ${p.note ? `<p class="foot-note">${esc(p.note)}</p>` : ""}
          ${manualNote}
-         <p class="foot-note">补丁为社区作品,版权归作者所有。</p></div>`;
+         <p class="foot-note">${window.t ? t("patch.note") : "补丁为社区作品,版权归作者所有。"}</p></div>`;
     })
     .catch(() => section.remove());
 }
@@ -481,7 +481,7 @@ function initReleases(mod) {
             <a class="rel-tag" href="${esc(r.zipUrl || r.releaseUrl || "#")}" target="_blank" rel="noopener">${esc(r.tag)}</a>
             <span class="rel-meta">${esc(r.name !== r.tag ? r.name : "")} · ${esc(r.date)}</span>
             ${r.zipUrl ? `<a class="rel-zip" href="${esc(r.zipUrl)}" target="_blank" rel="noopener">zip</a>` : ""}
-            ${r.body ? `<button class="chip rel-tr">${r.bodyZh ? "原文" : "微软翻译"}</button>` : ""}
+            ${r.body ? `<button class="chip rel-tr" data-showing="${r.bodyZh ? "translation" : "original"}">${r.bodyZh ? (window.t ? t("releases.original") : "原文") : (window.t ? t("readme.msView") : "微软翻译")}</button>` : ""}
           </div>
           ${r.body ? `<div class="readme rel-body"></div>` : ""}
         </div>`;
@@ -495,19 +495,23 @@ function initReleases(mod) {
           if (btn) {
             btn.onclick = async () => {
               if (btn.classList.contains("busy")) return;
-              if (btn.textContent === "原文") {
+              if (btn.dataset.showing === "translation") {
                 renderMarkdownInto(bodyEl, r.body, "");
-                btn.textContent = r.bodyZh ? "中文译文" : "微软翻译";
+                btn.dataset.showing = "original";
+                btn.textContent = r.bodyZh
+                  ? (window.t ? t("releases.translation") : "中文译文")
+                  : (window.t ? t("readme.msView") : "微软翻译");
                 return;
               }
               btn.classList.add("busy");
-              btn.textContent = "翻译中…";
+              btn.textContent = window.t ? t("readme.msLoading") : "翻译中…";
               try {
                 const zh = await msTranslateTexts([r.body]);
                 renderMarkdownInto(bodyEl, zh[0] || r.body, "");
-                btn.textContent = "原文";
+                btn.dataset.showing = "translation";
+                btn.textContent = window.t ? t("releases.original") : "原文";
               } catch (e) {
-                btn.textContent = "翻译失败";
+                btn.textContent = window.t ? t("readme.msFailed") : "翻译失败";
               } finally {
                 btn.classList.remove("busy");
               }
@@ -521,7 +525,7 @@ function initReleases(mod) {
       if (more) {
         const btn = document.createElement("button");
         btn.className = "chip";
-        btn.textContent = `显示全部 ${rels.length} 个版本`;
+        btn.textContent = window.t ? t("releases.showAll", { n: rels.length }) : `显示全部 ${rels.length} 个版本`;
         btn.onclick = () => { renderItems(rels); btn.remove(); };
         list.appendChild(btn);
       }
@@ -621,7 +625,16 @@ function initReadme(mod) {
   section.hidden = false;
   const actions = document.getElementById("readme-actions");
   const content = document.getElementById("readme-content");
-  const setHint = (text) => { actions.innerHTML = `<span class="hint">${esc(text)}</span>`; };
+  const setHint = (text) => {
+    // 只更新提示文字, 不清空容器(否则会把旁边注入的按钮一起销毁)
+    let h = actions.querySelector("span.hint");
+    if (!h) {
+      h = document.createElement("span");
+      h.className = "hint";
+      actions.prepend(h);
+    }
+    h.textContent = text;
+  };
   const baseUrl = mod.readmeDownloadUrl.slice(0, mod.readmeDownloadUrl.lastIndexOf("/") + 1);
 
   async function fetchEn() {
@@ -644,21 +657,21 @@ function initReadme(mod) {
                           "Unlicense", "0BSD", "MIT-0", "MPL-2.0"].includes(lic);
 
       if (zh && zh.zh) {
-        setHint("译文由 AI 生成 · 原文版权归作者所有 · " + lic);
+        setHint(window.t ? t("readme.aiNote", { lic }) : "译文由 AI 生成 · 原文版权归作者所有 · " + lic);
         showMd(zh.zh);
         // 两个显式按钮互相切换(比单按钮改文字更可靠,无状态残留)
         const zhBtn = document.createElement("button");
-        zhBtn.textContent = "回到中文译文";
+        zhBtn.textContent = window.t ? t("readme.backTranslation") : "回到中文译文";
         zhBtn.hidden = true;
         const enBtn = document.createElement("button");
-        enBtn.textContent = "查看英文原文";
+        enBtn.textContent = window.t ? t("readme.viewOriginal") : "查看英文原文";
         const setActive = (zhActive) => {
-          zhBtn.hidden = !zhActive;
-          enBtn.hidden = zhActive;
+          zhBtn.hidden = zhActive;    // 译文态: 隐藏"回到译文", 显示"查看原文"
+          enBtn.hidden = !zhActive;
         };
         zhBtn.onclick = () => {
           showMd(zh.zh);
-          setHint("译文由 AI 生成 · 原文版权归作者所有 · " + lic);
+          setHint(window.t ? t("readme.aiNote", { lic }) : "译文由 AI 生成 · 原文版权归作者所有 · " + lic);
           setActive(true);
         };
         enBtn.onclick = async () => {
@@ -666,9 +679,9 @@ function initReadme(mod) {
           enBtn.classList.add("busy");
           try {
             showMd(await fetchEn());
-            setHint("英文原文 · 原文版权归作者所有");
+            setHint(window.t ? t("readme.originalNote") : "英文原文 · 原文版权归作者所有");
             setActive(false);
-          } catch (e) { setHint("加载失败:" + e.message); }
+          } catch (e) { setHint((window.t ? t("readme.loadFailed") : "加载失败:") + e.message); }
           finally { enBtn.classList.remove("busy"); }
         };
         actions.prepend(enBtn);
@@ -679,38 +692,40 @@ function initReadme(mod) {
       const md = await fetchEn();
       const addMsButton = (hintBase) => {
         const btn = document.createElement("button");
-        btn.textContent = "微软翻译查看";
+        btn.textContent = window.t ? t("readme.msView") : "微软翻译查看";
         btn.onclick = async () => {
           btn.classList.add("busy");
-          btn.textContent = "翻译中…";
+          btn.textContent = window.t ? t("readme.msLoading") : "翻译中…";
           try {
             // 先渲染英文 HTML(链接/图片/代码块保持原样),再只翻译可见文本
             showMd(md);
             await translateReadmeDom(content);
-            setHint("微软翻译即时结果 · " + hintBase);
+            setHint(window.t ? t("readme.msResult", { base: hintBase }) : "微软翻译即时结果 · " + hintBase);
           } catch (e) {
-            setHint("翻译失败:" + e.message + " (可换用浏览器自带翻译)");
+            setHint(window.t ? t("readme.msFailedMsg", { msg: e.message }) : "翻译失败:" + e.message + " (可换用浏览器自带翻译)");
           } finally {
             btn.classList.remove("busy");
-            btn.textContent = "微软翻译查看";
+            btn.textContent = window.t ? t("readme.msView") : "微软翻译查看";
           }
         };
         actions.prepend(btn);
       };
       if (permissive) {
-        setHint(lic + " 许可 · 译文生成中,可用「微软翻译查看」即时浏览(不保存)");
+        setHint(window.t ? t("readme.msHint", { lic }) : lic + " 许可 · 译文生成中,可用「微软翻译查看」即时浏览(不保存)");
         showMd(md);
-        addMsButton("仅本次查看,不保存");
+        addMsButton(window.t ? t("readme.msOnlyOnce") : "仅本次查看,不保存");
       } else {
         // 非开放许可(AGPL/GPL/无): 尊重版权不预翻不保存;
         // 但用户即时浏览性翻译等同于浏览器翻译,仍提供按钮
-        setHint("仓库许可为 " + (lic === "none" ? "未声明(保留所有权利)" : lic)
-                + ",未保存译文;下方按钮为即时翻译,仅供本次阅读、不保存");
+        setHint(window.t
+          ? t("readme.noLicenseHint", { lic: lic === "none" ? t("readme.licenseNone") : lic })
+          : "仓库许可为 " + (lic === "none" ? "未声明(保留所有权利)" : lic)
+            + ",未保存译文;下方按钮为即时翻译,仅供本次阅读、不保存");
         showMd(md);
-        addMsButton("原文版权归作者所有 · 仅本次阅读,不保存");
+        addMsButton(window.t ? t("readme.msCopyright") : "原文版权归作者所有 · 仅本次阅读,不保存");
       }
     } catch (e) {
-      setHint("README 加载失败:" + e.message);
+      setHint((window.t ? t("readme.fetchFailed") : "README 加载失败:") + e.message);
     }
   })();
 }
@@ -721,7 +736,7 @@ function initShare(mod) {
   const label = btn.textContent;
   btn.addEventListener("click", async () => {
     const url = location.href.split("#")[0];
-    const title = `${mod.name} — 星际拓荒 MOD 数据库`;
+    const title = `${mod.name} — ${window.t ? t("site.name") : "星际拓荒 MOD 数据库"}`;
     if (navigator.share) {
       try { await navigator.share({ title, url }); return; } catch (e) { /* 取消或失败则走复制 */ }
     }
@@ -735,6 +750,159 @@ function initShare(mod) {
   });
 }
 
+// ---- 下载趋势(页面末尾): 滚动到视口时才按需拉官方统计 API, 失败优雅降级 ----
+function trendChartHtml(rows) {
+  const pts = rows
+    .filter((r) => r && typeof r.DownloadCount === "number" && typeof r.UnixTimestamp === "number")
+    .sort((a, b) => a.UnixTimestamp - b.UnixTimestamp);
+  const W = 720, H = 220, PL = 10, PR = 10, PT = 16, PB = 22;
+  const xs = pts.map((p) => p.UnixTimestamp);
+  const ys = pts.map((p) => p.DownloadCount);
+  const x0 = xs[0], x1 = xs[xs.length - 1];
+  const y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const sx = (t) => PL + (t - x0) / Math.max(1, x1 - x0) * (W - PL - PR);
+  const sy = (v) => PT + (1 - (v - y0) / Math.max(1, y1 - y0)) * (H - PT - PB);
+  const step = Math.max(1, Math.ceil(pts.length / 160));
+  const sampled = pts.filter((_, i) => i % step === 0 || i === pts.length - 1);
+  const line = sampled.map((p) => `${sx(p.UnixTimestamp).toFixed(1)},${sy(p.DownloadCount).toFixed(1)}`).join(" ");
+  const first = sampled[0], last = sampled[sampled.length - 1];
+  const area = `${sx(first.UnixTimestamp).toFixed(1)},${H - PB} ${line} ${sx(last.UnixTimestamp).toFixed(1)},${H - PB}`;
+  const fmtDate = (t) => new Date(t * 1000).toISOString().slice(0, 10);
+  const fmtNum = (v) => (v >= 10000 ? Math.round(v / 1000) + "k" : String(v));
+  const html = `
+    <svg class="trend-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${window.t ? t("trend.title") : "下载趋势"}">
+      <defs><linearGradient id="trend-fill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ff9c86" stop-opacity="0.32"/>
+        <stop offset="100%" stop-color="#ff9c86" stop-opacity="0.02"/>
+      </linearGradient></defs>
+      <polygon fill="url(#trend-fill)" points="${area}"/>
+      <polyline fill="none" stroke="#ff9c86" stroke-width="2" points="${line}"/>
+      <circle cx="${sx(last.UnixTimestamp).toFixed(1)}" cy="${sy(last.DownloadCount).toFixed(1)}" r="3" fill="#ff9c86"/>
+      <text x="${PL}" y="${H - 6}" class="trend-axis">${fmtDate(first.UnixTimestamp)}</text>
+      <text x="${W - PR}" y="${H - 6}" class="trend-axis" text-anchor="end">${fmtDate(last.UnixTimestamp)}</text>
+      <text x="${W - PR}" y="${PT + 10}" class="trend-axis" text-anchor="end">${fmtNum(last.DownloadCount)}</text>
+    </svg>
+    <p class="trend-src">${window.t ? t("trend.source") : "数据来自 outerwildsmods.com"}</p>`;
+  return { html, pts, geo: { W, H, PL, PR, PT, PB, x0, x1, sx, sy } };
+}
+
+function setupTrendInteractions(box, pts, geo) {
+  const svg = box.querySelector("svg");
+  if (!svg || !pts.length) return;
+  const NS = "http://www.w3.org/2000/svg";
+  const guide = document.createElementNS(NS, "line");
+  guide.setAttribute("class", "trend-guide");
+  guide.setAttribute("y1", geo.PT);
+  guide.setAttribute("y2", geo.H - geo.PB);
+  guide.style.display = "none";
+  const dot = document.createElementNS(NS, "circle");
+  dot.setAttribute("class", "trend-dot");
+  dot.setAttribute("r", "4");
+  dot.style.display = "none";
+  svg.appendChild(guide);
+  svg.appendChild(dot);
+  const tip = document.createElement("div");
+  tip.className = "trend-tip";
+  tip.hidden = true;
+  box.appendChild(tip);
+
+  const fmtNum = (v) => Number(v).toLocaleString("en-US");
+  const fmtDate = (t) => new Date(t * 1000).toISOString().slice(0, 10);
+  let hideTimer = 0;
+  const hide = () => {
+    guide.style.display = "none";
+    dot.style.display = "none";
+    tip.hidden = true;
+  };
+  const scheduleHide = () => {
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(hide, 1400);
+  };
+  const show = (clientX) => {
+    clearTimeout(hideTimer);
+    const rect = svg.getBoundingClientRect();
+    if (!rect.width) return;
+    const k = geo.W / rect.width;   // 屏幕像素 -> SVG 坐标
+    const gx = Math.min(Math.max((clientX - rect.left) * k, geo.PL), geo.W - geo.PR);
+    const when = geo.x0 + (gx - geo.PL) / (geo.W - geo.PL - geo.PR) * (geo.x1 - geo.x0);
+    let lo = 0, hi = pts.length - 1;   // 二分找最近时间点
+    while (hi - lo > 1) {
+      const mid = (lo + hi) >> 1;
+      if (pts[mid].UnixTimestamp <= when) lo = mid; else hi = mid;
+    }
+    const p = Math.abs(pts[lo].UnixTimestamp - when) <= Math.abs(pts[hi].UnixTimestamp - when) ? pts[lo] : pts[hi];
+    const px = geo.sx(p.UnixTimestamp), py = geo.sy(p.DownloadCount);
+    guide.setAttribute("x1", px);
+    guide.setAttribute("x2", px);
+    guide.style.display = "";
+    dot.setAttribute("cx", px);
+    dot.setAttribute("cy", py);
+    dot.style.display = "";
+    tip.innerHTML = `<b>${fmtDate(p.UnixTimestamp)}</b><span>${window.t ? t("meta.downloads", { n: fmtNum(p.DownloadCount) }) : fmtNum(p.DownloadCount) + " 次下载"}</span>`;
+    tip.hidden = false;
+    const pxScreen = px / k;
+    const half = tip.offsetWidth / 2;
+    const left = Math.min(Math.max(pxScreen, half + 2), rect.width - half - 2);
+    tip.style.left = left + "px";
+    tip.style.top = (py / k - 10) + "px";
+  };
+
+  svg.addEventListener("pointerdown", (e) => show(e.clientX));
+  svg.addEventListener("pointermove", (e) => {
+    if (e.pointerType === "mouse" || e.buttons) show(e.clientX);
+  });
+  svg.addEventListener("pointerup", scheduleHide);
+  svg.addEventListener("pointercancel", scheduleHide);
+  svg.addEventListener("pointerleave", (e) => {
+    if (e.pointerType === "mouse") hide(); else scheduleHide();
+  });
+}
+
+function initTrend(mod) {
+  const section = document.getElementById("trend-section");
+  const box = document.getElementById("trend-chart");
+  if (!section || !box) return;
+  const fallback = () => {
+    const link = mod.slug
+      ? ` · <a class="link" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/#downloads" target="_blank" rel="noopener">${window.t ? t("trend.viewOnOfficial") : "在官方站查看"}</a>`
+      : "";
+    box.innerHTML = `<p class="placeholder">${window.t ? t("trend.failed") : "趋势数据暂时无法获取"}${link}</p>`;
+  };
+  const noData = () => {
+    // 新上传的 MOD 官方统计尚未积累历史(返回空数组/404), 属正常现象
+    box.innerHTML = `<p class="placeholder">${window.t ? t("trend.noData") : "该 MOD 暂无趋势数据"}</p>`;
+  };
+  let started = false;
+  const load = async () => {
+    if (started) return;
+    started = true;
+    try {
+      const url = `https://outerwildsmods.com/api/${encodeURIComponent(mod.uniqueName)}/downloads.json`;
+      const resp = await fetch(url, { mode: "cors" });
+      if (resp.status === 404) { noData(); return; }   // 统计服务暂无此 MOD 记录
+      if (!resp.ok) throw new Error("HTTP " + resp.status);
+      const rows = await resp.json();
+      if (!Array.isArray(rows) || rows.length < 2) { noData(); return; }   // 历史数据尚未积累
+      const chart = trendChartHtml(rows);
+      box.innerHTML = chart.html;
+      setupTrendInteractions(box, chart.pts, chart.geo);
+    } catch (e) {
+      fallback();
+    }
+  };
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((en) => en.isIntersecting)) {
+        io.disconnect();
+        load();
+      }
+    }, { rootMargin: "300px 0px" });
+    io.observe(section);
+  } else {
+    load();
+  }
+}
+
 function renderDetail(mods) {
   const params = new URLSearchParams(location.search);
   const pathHit = location.pathname.match(/\/mod\/([^/]+)\.html$/);
@@ -743,11 +911,11 @@ function renderDetail(mods) {
   const main = document.getElementById("detail");
   if (!main) return;
   if (!mod) {
-    main.innerHTML = `<p class="placeholder">未找到该 MOD,<a class="link" href="mods.html">返回列表</a></p>`;
-    document.title = "未找到 — 星际拓荒 MOD 数据库";
+    main.innerHTML = `<p class="placeholder">${window.t ? t("detail.notFound") : "未找到该 MOD,"}<a class="link" href="mods.html">${window.t ? t("detail.backList") : "返回列表"}</a></p>`;
+    document.title = (window.t ? t("detail.notFoundTitle") : "未找到") + " — " + (window.t ? t("site.name") : "星际拓荒 MOD 数据库");
     return;
   }
-  document.title = mod.name + " — 星际拓荒 MOD 数据库";
+  document.title = mod.name + " — " + (window.t ? t("site.name") : "星际拓荒 MOD 数据库");
   const thumb = thumbUrl(mod);
   const repoParts = (mod.repo || "").split("/");
   const reportBody = `MOD: ${mod.name} (${mod.uniqueName})\n页面: ${location.href}\n\n## 问题描述\n\n(哪里的翻译有问题? 原文是什么?)\n\n## 建议译法\n\n(可选)\n`;
@@ -761,41 +929,44 @@ function renderDetail(mods) {
         ? `<span class="thumb-box detail-thumb" id="hero-thumb"><img src="${esc(thumb)}" alt="" fetchpriority="high" decoding="async"></span>`
         : `<span class="thumb-box detail-thumb ph-thumb" style="background-image:url('png/21to9.webp')"><span class="ph-text">${esc(mod.name || mod.uniqueName)}</span></span>`}
       <h1>${esc(mod.name)}</h1>
-      <div class="meta">${repoOwner ? `<a class="link" href="https://github.com/${esc(repoOwner)}" target="_blank" rel="noopener">@${esc(repoOwner)}</a>` : esc(mod.authorDisplay)} · v${esc(mod.version)} · ${esc(mod.downloadCount)} 次下载 · 更新于 ${esc((mod.latestReleaseDate || "").slice(0, 10))}</div>
+      <div class="meta">${repoOwner ? `<a class="link" href="https://github.com/${esc(repoOwner)}" target="_blank" rel="noopener">@${esc(repoOwner)}</a>` : esc(mod.authorDisplay)} · v${esc(mod.version)} · ${window.t ? t("meta.downloads", { n: mod.downloadCount }) : esc(mod.downloadCount) + " 次下载"} · ${window.t ? t("meta.updatedAt", { d: esc((mod.latestReleaseDate || "").slice(0, 10)) }) : "更新于 " + esc((mod.latestReleaseDate || "").slice(0, 10))}</div>
       <div>${(mod.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
       <div class="buttons">
-        <a href="owmods://install-mod/${encodeURIComponent(mod.uniqueName)}" title="需要已安装 Outer Wilds Mod Manager">一键安装</a>
-        <a class="secondary" href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">下载 zip${mod.version ? ` (v${esc(mod.version)})` : ""}</a>
-        ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">源代码仓库</a>` : ""}
+        <a href="owmods://install-mod/${encodeURIComponent(mod.uniqueName)}" title="${window.t ? t("detail.installHint") : "需要已安装 Outer Wilds Mod Manager"}">${window.t ? t("detail.install") : "一键安装"}</a>
+        <a class="secondary" href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">${window.t ? t("detail.downloadZip") : "下载 zip"}${mod.version ? ` (v${esc(mod.version)})` : ""}</a>
+        ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">${window.t ? t("detail.repoLink") : "源代码仓库"}</a>` : ""}
       </div>
       <div class="buttons-second">
-        ${mod.slug ? `<a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/#downloads" target="_blank" rel="noopener">下载统计</a>` : ""}
         <button class="secondary" type="button" id="share-btn">${window.t ? t("detail.share") : "分享"}</button>
         <a class="secondary" href="${reportUrl}" target="_blank" rel="noopener">${window.t ? t("detail.reportIssue") : "报告翻译问题"}</a>
       </div>
-      ${mod.description ? `<div class="section"><h3>简介</h3><div class="readme" id="desc-md"></div></div>` : ""}
-      ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><div class="readme" id="release-md"></div></div>` : ""}
+      ${mod.description ? `<div class="section"><h3>${window.t ? t("detail.desc") : "简介"}</h3><div class="readme" id="desc-md"></div></div>` : ""}
+      ${mod.latestReleaseDescription ? `<div class="section"><h3>${window.t ? t("detail.latestRelease") : "最新版本更新说明"}</h3><div class="readme" id="release-md"></div></div>` : ""}
       <div class="section" id="readme-section" hidden>
         <h3>README</h3>
         <div class="readme-actions" id="readme-actions"></div>
         <div class="readme" id="readme-content"></div>
       </div>
       <div class="section" id="addons-section" hidden>
-        <h3>附属与变体</h3>
+        <h3>${window.t ? t("detail.addons") : "附属与变体"}</h3>
         <div id="addons-list"></div>
       </div>
       <div class="section" id="releases-section" hidden>
-        <h3>版本历史</h3>
+        <h3>${window.t ? t("detail.releaseHistory") : "版本历史"}</h3>
         <div id="releases-list"></div>
       </div>
       <div class="section" id="patch-section" hidden>
-        <h3>中文支持</h3>
+        <h3>${window.t ? t("detail.patchSection") : "中文支持"}</h3>
         <div id="patch-box"></div>
       </div>
       <div class="section" id="comments-section" hidden>
-        <h3>讨论区</h3>
-        <div class="readme-actions"><span class="hint">评论由 GitHub Discussions 驱动 · 英文评论可用浏览器自带翻译阅读</span></div>
+        <h3>${window.t ? t("detail.comments") : "讨论区"}</h3>
+        <div class="readme-actions"><span class="hint">${window.t ? t("detail.commentsHint") : "评论由 GitHub Discussions 驱动 · 英文评论可用浏览器自带翻译阅读"}</span></div>
         <div id="giscus"></div>
+      </div>
+      <div class="section" id="trend-section">
+        <h3>${window.t ? t("trend.title") : "下载趋势"}</h3>
+        <div id="trend-chart"><p class="placeholder">${window.t ? t("trend.loading") : "加载趋势中…"}</p></div>
       </div>
     </div>`;
   const hero = document.getElementById("hero-thumb");
@@ -812,6 +983,7 @@ function renderDetail(mods) {
   initPatchBlock(mod);
   initComments(mod);
   initShare(mod);
+  initTrend(mod);
 }
 
 (function initToTop() {
@@ -819,9 +991,9 @@ function renderDetail(mods) {
   const btn = document.createElement("button");
   btn.id = "to-top";
   btn.className = "to-top";
-  btn.title = "回到顶部";
+  btn.title = window.t ? t("backTop") : "回到顶部";
   btn.type = "button";
-  btn.setAttribute("aria-label", "回到顶部");
+  btn.setAttribute("aria-label", window.t ? t("backTop") : "回到顶部");
   btn.innerHTML =
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/></svg>';
   const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -854,8 +1026,10 @@ loadMods()
     initSlugMap(mods);
     const syncInfo = document.getElementById("sync-info");
     if (syncInfo && meta.generatedAt) {
-      const t = String(meta.generatedAt).replace("T", " ").slice(0, 16);
-      syncInfo.textContent = `数据同步于 ${t} UTC · ${meta.zhDescriptions}/${meta.mods} 个简介已汉化`;
+      const ts = String(meta.generatedAt).replace("T", " ").slice(0, 16);
+      syncInfo.textContent = window.t
+        ? t("home.syncInfo", { t: ts, done: meta.zhDescriptions, total: meta.mods })
+        : `数据同步于 ${ts} UTC · ${meta.zhDescriptions}/${meta.mods} 个简介已汉化`;
     }
     if (document.getElementById("featured")) renderHome(mods);
     else if (document.getElementById("jams")) renderJams(mods);
@@ -866,5 +1040,5 @@ loadMods()
     const target = document.getElementById("detail")
       || document.getElementById("mod-grid")
       || document.getElementById("featured");
-    if (target) target.innerHTML = `<p class="placeholder">加载失败:${esc(err.message)}</p>`;
+    if (target) target.innerHTML = `<p class="placeholder">${window.t ? t("load.failed") : "加载失败:"}${esc(err.message)}</p>`;
   });

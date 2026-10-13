@@ -445,7 +445,9 @@ def main() -> None:
         (data_dir / "releases").mkdir(parents=True, exist_ok=True)
         save_json(data_dir / "mods.json", {"mods": mods_lang, "meta": meta_with_lang(lang, mods_lang, generated_at)})
         if lang == "zh_cn":
-            save_json(dist / "database.json", database_lang)  # 保持 OWMM URL(仅中文版)
+            save_json(dist / "database.json", database_lang)  # 保持 OWMM URL(中文版,根路径不变)
+        else:
+            save_json(data_dir / "database.json", database_lang)  # 各语言自带 OWMM 数据库文件
         # 版本历史: 每 mod 独立小文件,详情页按需加载(各语言缓存各自成目录)
         releases = load_json(lang_file("releases_cache", lang))
         rel_dir = data_dir / "releases"
