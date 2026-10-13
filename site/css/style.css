@@ -67,17 +67,18 @@ section h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 .chip.active::before { content: "✓ "; }
 .detail h1 { margin: .25rem 0; }
 .detail .meta { color: rgba(255,255,255,.65); margin-bottom: 1rem; }
-.detail .buttons { display: flex; gap: .75rem; margin: 1rem 0; }
+.detail .buttons { display: flex; gap: .75rem; margin: 1rem 0 .6rem; }
 .detail .buttons { flex-wrap: wrap; row-gap: .5rem; }
 .detail .buttons a { padding: .55rem 1.2rem; border-radius: 8px; text-decoration: none;
                      background: #ff9c86; color: #0b0d10; font-weight: 600;
                      white-space: nowrap; }   /* 按钮文字不折行,整体换行 */
 .detail .buttons a.secondary { background: rgba(255,255,255,.12); color: #fff; }
-.buttons-second { display: flex; margin-top: .5rem; }
-.buttons-second a, .buttons-second button { padding: .35rem .9rem; border-radius: 6px; text-decoration: none;
-                    background: rgba(255,255,255,.07); color: rgba(255,255,255,.75); font-size: .85rem;
-                    border: 1px solid rgba(255,255,255,.15); cursor: pointer; font-family: inherit; }
-.buttons-second a:hover, .buttons-second button:hover { border-color: #ff9c86; color: #fff; }
+.buttons-links { display: flex; flex-wrap: wrap; align-items: center; gap: .15rem 1.1rem;
+                 margin: 0 0 .4rem; }
+.buttons-links a, .buttons-links button { background: none; border: none; padding: 0; cursor: pointer;
+                 font-size: .85rem; font-family: inherit; color: rgba(255,255,255,.55);
+                 text-decoration: none; }
+.buttons-links a:hover, .buttons-links button:hover { color: #ff9c86; text-decoration: underline; }
 .detail .section { border: 1px solid rgba(255,255,255,.12); border-radius: 10px;
                    padding: 1rem 1.25rem; margin-top: 1.25rem; background: rgba(255,255,255,.04); }
 .detail .section h3 { margin: 0 0 .5rem; font-size: 1rem; }

@@ -934,11 +934,11 @@ function renderDetail(mods) {
       <div class="buttons">
         <a href="owmods://install-mod/${encodeURIComponent(mod.uniqueName)}" title="${window.t ? t("detail.installHint") : "需要已安装 Outer Wilds Mod Manager"}">${window.t ? t("detail.install") : "一键安装"}</a>
         <a class="secondary" href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">${window.t ? t("detail.downloadZip") : "下载 zip"}${mod.version ? ` (v${esc(mod.version)})` : ""}</a>
-        ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">${window.t ? t("detail.repoLink") : "源代码仓库"}</a>` : ""}
       </div>
-      <div class="buttons-second">
-        <button class="secondary" type="button" id="share-btn">${window.t ? t("detail.share") : "分享"}</button>
-        <a class="secondary" href="${reportUrl}" target="_blank" rel="noopener">${window.t ? t("detail.reportIssue") : "报告翻译问题"}</a>
+      <div class="buttons-links">
+        ${mod.repo ? `<a href="${esc(mod.repo)}" target="_blank" rel="noopener">${window.t ? t("detail.repoLink") : "源代码仓库"}</a>` : ""}
+        <button type="button" id="share-btn">${window.t ? t("detail.share") : "分享"}</button>
+        <a href="${reportUrl}" target="_blank" rel="noopener">${window.t ? t("detail.reportIssue") : "报告翻译问题"}</a>
       </div>
       ${mod.description ? `<div class="section"><h3>${window.t ? t("detail.desc") : "简介"}</h3><div class="readme" id="desc-md"></div></div>` : ""}
       ${mod.latestReleaseDescription ? `<div class="section"><h3>${window.t ? t("detail.latestRelease") : "最新版本更新说明"}</h3><div class="readme" id="release-md"></div></div>` : ""}

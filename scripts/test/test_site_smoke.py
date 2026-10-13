@@ -125,6 +125,7 @@ def test_detail_ux_markers():
     assert 'img.loading = "lazy"' in js                   # README 图片懒加载
     assert "navigator.share" in js and "share-btn" in js  # 分享按钮(Web Share + 复制兜底)
     assert "trend-section" in js and "downloads.json" in js  # 下载趋势(官方统计 API 按需加载)
+    assert "buttons-links" in js                           # 主按钮/辅助链接两级布局
     tmpl = REPO_ROOT / ".github" / "ISSUE_TEMPLATE" / "translation.md"
     assert tmpl.exists()                                  # issue 模板
 
