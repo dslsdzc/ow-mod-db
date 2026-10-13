@@ -66,7 +66,9 @@ def test_service_worker_registers_and_caches(page, site_server):
 def test_offline_fallback_after_visit(page, site_server):
     page.goto(site_server + "/mods.html")
     page.wait_for_function("!!navigator.serviceWorker.controller", timeout=20000)
-    page.wait_for_timeout(500)  # 让页面资源写入缓存
+    page.reload()                   # 第二次导航经过 SW, 写入页面缓存(首次导航发生在 SW 接管前)
+    page.wait_for_selector(".mod-card")
+    page.wait_for_timeout(500)      # 让页面资源写入缓存
     page.context.set_offline(True)
     try:
         page.goto(site_server + "/mods.html")
