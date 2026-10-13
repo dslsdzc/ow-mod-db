@@ -117,6 +117,15 @@ def test_speculation_rules_markers():
         assert "speculationrules" in html and "mod.html*" in html
 
 
+def test_detail_ux_markers():
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert "issues/new?template=translation.md" in js    # 报告翻译问题入口
+    assert "searchTimer" in js                            # 搜索防抖
+    assert 'img.loading = "lazy"' in js                   # README 图片懒加载
+    tmpl = REPO_ROOT / ".github" / "ISSUE_TEMPLATE" / "translation.md"
+    assert tmpl.exists()                                  # issue 模板
+
+
 def test_official_mod_links_rewritten_markers():
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
     assert "rewriteOfficialModLinks" in js

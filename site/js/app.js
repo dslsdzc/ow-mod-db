@@ -317,7 +317,11 @@ function renderList(mods) {
     setupLazyThumbs(grid);
   }
 
-  search.addEventListener("input", draw);
+  let searchTimer = 0;
+  search.addEventListener("input", () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(draw, 120);  // 防抖: 快速输入时避免每次按键都重建列表
+  });
   if (sort) sort.addEventListener("change", draw);
   draw();
 }
@@ -400,8 +404,10 @@ function renderMarkdownInto(el, md, baseUrl, breaks) {
   const raw = marked.parse(md, { gfm: true, breaks: !!breaks });
   el.innerHTML = DOMPurify.sanitize(raw);
   renderMermaidBlocks(el);
-  // 加载失败的图(如徽章图无法访问)直接隐藏,不显示 alt 文本噪音
+  // 加载失败的图(如徽章图无法访问)直接隐藏,不显示 alt 文本噪音; 懒加载避免一次性拉取大量图片
   el.querySelectorAll("img").forEach((img) => {
+    img.loading = "lazy";
+    img.decoding = "async";
     img.addEventListener("error", () => { img.style.visibility = "hidden"; }, { once: true });
   });
   // 相对路径图片/链接补全为 raw 绝对地址
@@ -716,6 +722,10 @@ function renderDetail(mods) {
   const thumb = thumbUrl(mod);
   const repoParts = (mod.repo || "").split("/");
   const repoOwner = repoParts.length >= 2 ? (repoParts[repoParts.length - 2] || "") : "";
+  const reportBody = `MOD: ${mod.name} (${mod.uniqueName})\n页面: ${location.href}\n\n## 问题描述\n\n(哪里的翻译有问题? 原文是什么?)\n\n## 建议译法\n\n(可选)\n`;
+  const reportUrl = "https://github.com/dslsdzc/ow-mod-db/issues/new?template=translation.md&title="
+    + encodeURIComponent(`[翻译] ${mod.name} (${mod.uniqueName})`)
+    + "&body=" + encodeURIComponent(reportBody);
   main.innerHTML = `
     <div class="detail">
       ${thumb
@@ -729,9 +739,10 @@ function renderDetail(mods) {
         <a class="secondary" href="${esc(mod.downloadUrl)}" target="_blank" rel="noopener">下载 zip${mod.version ? ` (v${esc(mod.version)})` : ""}</a>
         ${mod.repo ? `<a class="secondary" href="${esc(mod.repo)}" target="_blank" rel="noopener">源代码仓库</a>` : ""}
       </div>
-      ${mod.slug ? `<div class="buttons-second">
-        <a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/#downloads" target="_blank" rel="noopener">下载统计</a>
-      </div>` : ""}
+      <div class="buttons-second">
+        ${mod.slug ? `<a class="secondary" href="https://outerwildsmods.com/mods/${encodeURIComponent(mod.slug)}/downloads/#downloads" target="_blank" rel="noopener">下载统计</a>` : ""}
+        <a class="secondary" href="${reportUrl}" target="_blank" rel="noopener">${window.t ? t("detail.reportIssue") : "报告翻译问题"}</a>
+      </div>
       ${mod.description ? `<div class="section"><h3>简介</h3><div class="readme" id="desc-md"></div></div>` : ""}
       ${mod.latestReleaseDescription ? `<div class="section"><h3>最新版本更新说明</h3><div class="readme" id="release-md"></div></div>` : ""}
       <div class="section" id="readme-section" hidden>

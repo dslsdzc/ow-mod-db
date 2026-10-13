@@ -27,6 +27,46 @@ def fetch_official(url: str = OFFICIAL_DB_URL) -> dict:
     return data
 
 
+def validate_official(data: dict) -> list[str]:
+    """官方库结构校验: 返回警告列表(不抛错; 顶层结构问题由 fetch_official 把关)。
+
+    上游数据异常时给出可读提示,避免静默生成坏数据或构建时才发现。
+    """
+    warns = []
+    for group in ("releases", "alphaReleases"):
+        mods = data.get(group)
+        if mods is None:
+            warns.append(f"缺少 {group} 分组")
+            continue
+        if not isinstance(mods, list):
+            warns.append(f"{group} 不是数组")
+            continue
+        seen: set[str] = set()
+        no_uid = no_name = dup = non_dict = 0
+        for mod in mods:
+            if not isinstance(mod, dict):
+                non_dict += 1
+                continue
+            uid = mod.get("uniqueName")
+            if not uid:
+                no_uid += 1
+            elif uid in seen:
+                dup += 1
+            else:
+                seen.add(uid)
+            if not str(mod.get("name") or "").strip():
+                no_name += 1
+        if non_dict:
+            warns.append(f"{group}: {non_dict} 个非对象条目")
+        if no_uid:
+            warns.append(f"{group}: {no_uid} 个条目缺 uniqueName")
+        if dup:
+            warns.append(f"{group}: {dup} 个条目 uniqueName 重复")
+        if no_name:
+            warns.append(f"{group}: {no_name} 个条目缺 name")
+    return warns
+
+
 def diff_database(official: dict, translations: dict) -> list[dict]:
     """Return [{unique_name, field, en}] for fields that changed or are new."""
     pending = []
@@ -59,6 +99,9 @@ def main() -> None:
         official = fetch_official(args.official)
     else:
         official = load_json(Path(args.official))
+
+    for warning in validate_official(official):
+        print(f"  官方库校验警告: {warning}")
 
     translations = load_translations(translations_path)
     pending = diff_database(official, translations)

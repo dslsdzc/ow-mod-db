@@ -51,6 +51,43 @@ def test_diff_detects_changed_field():
     assert changed == [{"unique_name": "Test.Mod", "field": "name", "en": "Test Mod"}]
 
 
+def test_validate_official_clean_fixture_has_no_warnings():
+    assert sync.validate_official(_official()) == []
+
+
+def test_validate_official_flags_broken_entries():
+    broken = {
+        "releases": [
+            {"uniqueName": "A.B", "name": "x"},
+            {"uniqueName": "A.B", "name": "duplicate uid"},
+            {"name": "no uid"},
+            {"uniqueName": "C.D"},
+            "not a dict",
+        ],
+        "alphaReleases": "not a list",
+    }
+    text = "\n".join(sync.validate_official(broken))
+    assert "uniqueName 重复" in text
+    assert "缺 uniqueName" in text
+    assert "缺 name" in text
+    assert "alphaReleases 不是数组" in text
+    assert "非对象条目" in text
+
+
+def test_main_prints_validation_warnings(tmp_path, monkeypatch, capsys):
+    bad = {"releases": [{"uniqueName": "A.B", "name": ""}], "alphaReleases": []}
+    monkeypatch.setattr(sync, "fetch_official", lambda url: bad)
+    monkeypatch.setattr(
+        "sys.argv",
+        ["sync.py", "--official", "https://example.com/db.json",
+         "--out", str(tmp_path / "pending.json"),
+         "--save-official", str(tmp_path / "official.json"),
+         "--translations", str(tmp_path / "translations.json")],
+    )
+    sync.main()
+    assert "官方库校验警告" in capsys.readouterr().out
+
+
 def test_fetch_official_raises_on_bad_format(monkeypatch):
     class BadResp:
         def raise_for_status(self):
