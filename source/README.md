@@ -69,7 +69,7 @@ AI 翻译必须遵守的术语对照,分两节:
 
 - **目录代码与显示语言映射**: `zh_cn` ↔ 简体中文(默认)、`ja` ↔ 日本語。站点侧 zh_cn 数据在根 `data/`,其余语言在 `data/<lang>/`;ja 数据缺失/未翻译时回退官方英文原文,不空白。
 - **新增语言**: ① 建 `source/<code>/` 目录,种子与 zh_cn 同构(空表即可;`pending.json` 不用手建,`sync.py --lang <code>` 自动生成;`jams.json`/`jam_content.json` 属人工策展,见上表,复制 zh_cn 后改);② 填该语言术语词典 `<code>/glossary.json`(空词典 = 全部交给 AI 直译);③ 译文映射表 `<code>/translations.json` 由流水线自动生成,人工精校走 `<code>/human_translations.json`;④ 代码侧登记 `scripts/build.py` 的 `LANGS`(现 `["zh_cn","ja","en"]`)与站点侧 `site/js/i18n.js`(词典、语言切换器选项与 `LANG_DIR` 映射)各一处——漏掉则 `dist` 不产出新语言目录或切换器不可选;⑤ 在 CI 的 workflow_dispatch 选该 `lang` 试跑验证。
-- **ja 术语取证要求**: 日本語术语词典必须**人工从游戏官方日文版逐条取证后填充**,官方日文译名常与字面翻译不同,勿凭 AI/机翻猜测(如 Nomai → ノマイ)。
+- **ja 术语取证要求**: 日本語术语词典必须**人工从游戏官方日文版逐条取证后填充**,官方日文译名常与字面翻译不同,勿凭 AI/机翻猜测(如 Nomai → ノマイ)。取证辅助: `python scripts/ja_glossary_todo.py` 依据 zh_cn 术语表生成 `source/ja/glossary_todo.md` 清单并标记已填进度,填完重跑刷新。
 
 ## 许可说明
 
