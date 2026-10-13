@@ -60,6 +60,8 @@ def test_build_all_produces_site_data_from_releases():
     assert by_name["Alek.OWML"]["description"] == "OWML 的模组加载器"
     assert by_name["Test.Mod"]["name"] == "Test Mod"  # 无译文保留英文
     assert by_name["Test.Mod"]["latestReleaseDate"] == ""  # 字段存在
+    assert by_name["Alek.OWML"]["originalName"] == "OWML"  # 英文原名始终保留(供搜索)
+    assert by_name["Test.Mod"]["originalName"] == "Test Mod"  # 与译名解耦
     assert "authorDisplay" in by_name["Alek.OWML"]
 
 
@@ -78,7 +80,7 @@ def test_site_data_normalizes_version_and_author():
 
 def test_site_data_has_exact_key_set():
     _, mods_data = build.build_all(_official(), _translations())
-    expected = {"uniqueName", "name", "description", "authorDisplay", "downloadUrl",
+    expected = {"uniqueName", "name", "originalName", "description", "authorDisplay", "downloadUrl",
                 "repo", "tags", "slug", "thumbnail", "downloadCount", "installCount",
                 "weeklyInstallCount", "version", "latestReleaseDate", "firstReleaseDate",
                 "latestReleaseDescription", "readmeDownloadUrl", "parent", "repoVariations"}

@@ -277,7 +277,7 @@ function renderList(mods) {
     let shown = mods.filter((m) => {
       if (tag && !(m.tags || []).includes(tag)) return false;
       if (!q) return true;
-      return (m.name + " " + m.description + " " + m.authorDisplay).toLowerCase().includes(q);
+      return (m.name + " " + (m.originalName || "") + " " + m.description + " " + m.authorDisplay).toLowerCase().includes(q);
     });
     shown = sortMods(shown, mode);
     count.textContent = (window.t ? t("mods.count", { n: shown.length, m: mods.length }) : (shown.length + " / " + mods.length + " 个 MOD"));

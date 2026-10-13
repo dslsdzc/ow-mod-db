@@ -52,6 +52,7 @@ def build_all(official: dict, translations: dict) -> tuple[dict, list[dict]]:
                 mods_data.append({
                     "uniqueName": out_mod.get("uniqueName", ""),
                     "name": out_mod.get("name", ""),
+                    "originalName": mod.get("name", ""),  # 官方英文原名(供搜索,不随译名变)
                     "description": out_mod.get("description", ""),
                     "authorDisplay": out_mod.get("authorDisplay") or out_mod.get("author", ""),
                     "downloadUrl": out_mod.get("downloadUrl", ""),
