@@ -6568,9 +6568,9 @@
       "at": "2026-10-11T18:19:35.331441Z"
     },
     "latestReleaseDescription": {
-      "en": "* Ship Log map mode no longer reveals the location of a certain entity too early. (Once you understand the location, Ship Log map mode will also display the correct location.)",
-      "zh": "* 飞船日志地图模式不再过早揭示某个实体的位置。(一旦你了解该位置，飞船日志地图模式也会显示正确的位置。)",
-      "at": "2026-09-23T13:26:44.977764Z"
+      "en": "* Added developer commentary; Ernesto provides the narration (available only after completing this mod once).\r\n* *Ernesto loves facing each other atop the two pairs of jagged stumps near the waterfall.*\r\n* Added new dialogue for Gabbro, Chert, Esker, Riebeck, and Feldspar.\r\n* Adjusted the rendering order so that HUD markers remain visible even when inside clouds.\r\n* Fixed an issue where the \"unidentified signal\" notification would disappear upon acquiring Gabbro's signal when starting a new save file.\r\n* Adjusted the content of several ship log entries.",
+      "zh": "* 添加了开发者评论；Ernesto 提供旁白（仅完成此模组一次后可用）。\n* *Ernesto 喜欢面对彼此，位于瀑布附近的两对尖锐树桩顶部。*\n* 为加布罗、切特、埃斯科、瑞拜克和费尔德斯巴添加了新的对话。\n* 调整了渲染顺序，以便HUD标记即使在云层内部也能保持可见。\n* 修复了一个问题，即在开始新的存档文件时，当获得加布罗的信号时，“未识别信号”通知会消失。\n* 调整了几个飞船日志条目的内容。",
+      "at": "2026-10-13T21:25:50.382808Z"
     }
   },
   "RiddleMajor.No_Time_To_Waste": {
