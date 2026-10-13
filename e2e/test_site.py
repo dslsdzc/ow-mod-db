@@ -48,6 +48,10 @@ def test_static_detail_page_seo_tags(page, site_server):
     assert canonical.endswith("/mod/xen.NewHorizons.html")
     og_title = page.locator('meta[property="og:title"]').get_attribute("content") or ""
     assert "新地平线" in og_title
+    og_image = page.locator('meta[property="og:image"]').get_attribute("content") or ""
+    assert "/og/xen.NewHorizons." in og_image and og_image.endswith(".webp")  # 品牌分享卡片
+    fname = og_image.rsplit("/", 1)[1]
+    assert page.request.get(site_server + "/og/" + fname).ok                  # 卡片图在构建产物中
     page.wait_for_selector("#detail h1")
     assert page.locator("#share-btn").count() == 1  # 分享按钮渲染
 

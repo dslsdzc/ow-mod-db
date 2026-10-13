@@ -126,6 +126,26 @@ def test_build_seo_files_lists_pages(tmp_path):
     assert "Sitemap:" in robots and "/sitemap.xml" in robots
 
 
+def test_build_og_cards_renders_webp(tmp_path):
+    mapping = build.build_og_cards(_official()["releases"], _translations(), tmp_path)
+    assert set(mapping) == {"Alek.OWML", "Test.Mod"}
+    fname = mapping["Alek.OWML"].rsplit("/", 1)[1]
+    assert fname.startswith("Alek.OWML.") and fname.endswith(".webp")
+    from PIL import Image
+    im = Image.open(tmp_path / "og" / fname)
+    assert im.size == (1200, 630) and im.format == "WEBP"
+
+
+def test_build_mod_pages_uses_og_card_url(tmp_path):
+    template = (Path(__file__).resolve().parents[2] / "site" / "mod.html").read_text(encoding="utf-8")
+    card = "https://dslsdzc.github.io/ow-mod-db/og/Alek.OWML.abcd1234.webp"
+    build.build_mod_pages(template, _official()["releases"], _translations(), tmp_path,
+                          og_map={"Alek.OWML": card})
+    page = (tmp_path / "mod" / "Alek.OWML.html").read_text(encoding="utf-8")
+    assert f'<meta property="og:image" content="{card}">' in page
+    assert "application/ld+json" in page
+
+
 def test_deploy_site_copies_files(tmp_path):
     site = tmp_path / "site"
     (site / "css").mkdir(parents=True)

@@ -31,6 +31,7 @@ DIST = Path("dist")
 LANGS = ["zh_cn", "ja", "en"]  # en 为回退用的官方原文(翻译为空)
 SITE_URL = "https://dslsdzc.github.io/ow-mod-db"
 MOD_PAGE_DIR = "mod"
+OG_DIR = "og"
 _SAFE_FILENAME = re.compile(r'[/\\:*?"<>|\s]')  # 文件名不安全字符(含空白)
 _CJK = re.compile(r"[一-鿿]")
 
@@ -108,6 +109,140 @@ def patches_payload(path: Path, official: dict) -> dict:
     for e in validate_patches(patches, ids):
         print(f"  注册表校验: {e}")
     return patches_to_dict(patches)
+
+
+ROOT = Path(__file__).resolve().parent.parent
+OG_FONT = ROOT / "assets" / "NotoSansSC-og.otf"
+
+
+# ---- 分享卡片图(OG image): 站点品牌视觉, 不含作者缩略图, 与站点同源部署 ----
+
+def _text_units(text: str) -> list[str]:
+    """断行单元: 连续 ASCII 视作一个整体词, 其余按字符。"""
+    units, buf = [], ""
+    for ch in text:
+        if ch.isascii() and not ch.isspace():
+            buf += ch
+        else:
+            if buf:
+                units.append(buf)
+                buf = ""
+            units.append(ch)
+    if buf:
+        units.append(buf)
+    return units
+
+
+def _wrap_units(draw, units: list[str], font, max_width: int) -> list[str]:
+    lines, line = [], ""
+    for u in units:
+        if not line or draw.textlength(line + u, font=font) <= max_width:
+            line += u
+        else:
+            lines.append(line.rstrip())
+            line = "" if u.isspace() else u
+    if line.strip():
+        lines.append(line.rstrip())
+    return lines
+
+
+def _fit_title(draw, text: str, max_width: int = 640, max_lines: int = 3,
+               hi: int = 76, lo: int = 36):
+    """在宽/行数约束内取最大字号; 超长截断并加省略号。"""
+    from PIL import ImageFont
+    for size in range(hi, lo - 1, -2):
+        font = ImageFont.truetype(str(OG_FONT), size)
+        lines = _wrap_units(draw, _text_units(text), font, max_width)
+        if len(lines) <= max_lines:
+            return font, lines
+    font = ImageFont.truetype(str(OG_FONT), lo)
+    lines = _wrap_units(draw, _text_units(text), font, max_width)
+    if len(lines) > max_lines:
+        lines = lines[:max_lines]
+        lines[-1] = lines[-1].rstrip() + "…"
+    return font, lines
+
+
+def render_og_card(name: str, author: str, version: str, dst: Path) -> None:
+    """渲染 1200x630 分享卡片(深底/橙色星球/轨道, 复刻 favicon 视觉)。"""
+    import math
+
+    from PIL import Image, ImageDraw, ImageFont
+    W, H = 1200, 630
+    accent, inner = (255, 156, 134), (255, 200, 179)
+    img = Image.new("RGB", (W, H), (11, 13, 16))
+    d = ImageDraw.Draw(img)
+    # 右侧星球与轨道
+    cx, cy, r = 955, 320, 148
+    rot = math.radians(-24)
+    orbit = []
+    for i in range(0, 361, 2):
+        a = math.radians(i)
+        ex, ey = 205 * math.cos(a), 76 * math.sin(a)
+        orbit.append((ex * math.cos(rot) - ey * math.sin(rot) + cx,
+                      ex * math.sin(rot) + ey * math.cos(rot) + cy))
+    d.line(orbit + [orbit[0]], fill=accent, width=5, joint="curve")
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=accent)
+    d.ellipse((cx - r * 0.62, cy - r * 0.62, cx + r * 0.62, cy + r * 0.62), fill=inner)
+    d.ellipse((cx + 196, cy - 152, cx + 228, cy - 120), fill=(120, 170, 255))
+    # 品牌行(小星球图标 + 站名)
+    d.ellipse((90, 78, 118, 106), fill=accent)
+    d.ellipse((94, 82, 114, 102), fill=inner)
+    brand = ImageFont.truetype(str(OG_FONT), 32)
+    d.text((134, 78), "星际拓荒 MOD 数据库", font=brand, fill=(158, 163, 170))
+    # 标题
+    font, lines = _fit_title(d, str(name or "").strip())
+    y = 208
+    for ln in lines:
+        d.text((90, y), ln, font=font, fill=(245, 246, 248))
+        y += int(font.size * 1.2)
+    # 作者 · 版本
+    meta = str(author or "").strip()[:46]
+    if version:
+        meta = (meta + " · v" + str(version)[:12]).lstrip(" ·")
+    small = ImageFont.truetype(str(OG_FONT), 32)
+    d.text((90, 520), meta, font=small, fill=(140, 146, 153))
+    img.save(dst, "WEBP", quality=82, method=6)
+
+
+def build_og_cards(mods: list[dict], translations: dict, dist: Path,
+                   site_url: str = SITE_URL) -> dict[str, str]:
+    """生成分享卡片图 dist/og/<uid>.<hash>.webp, 返回 {uniqueName: 绝对URL}。
+
+    文件名带内容哈希(名称/作者/版本), 翻译更新后 URL 随之变化, 无需失效逻辑;
+    已存在的文件跳过渲染(本地增量构建友好)。字体缺失时整体跳过。
+    """
+    if not OG_FONT.exists():
+        print("  分享卡片: 字体子集缺失(assets/NotoSansSC-og.otf),跳过")
+        return {}
+    import hashlib
+    out_dir = dist / OG_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
+    mapping: dict[str, str] = {}
+    keep: set[str] = set()
+    for mod in mods:
+        uid = mod.get("uniqueName") or ""
+        if not uid or _SAFE_FILENAME.search(uid):
+            continue
+        out = translate_mod(mod, translations)
+        name = str(out.get("name") or uid)
+        author = str(out.get("authorDisplay") or out.get("author") or "")
+        version = str(out.get("version") or "").removeprefix("v")
+        sig = hashlib.sha1(f"{name}|{author}|{version}".encode("utf-8")).hexdigest()[:8]
+        filename = f"{uid}.{sig}.webp"
+        keep.add(filename)
+        dst = out_dir / filename
+        if not dst.exists():
+            try:
+                render_og_card(name, author, version, dst)
+            except Exception as e:  # 单张失败不阻塞构建
+                print(f"  分享卡片渲染失败({uid}): {e}")
+                continue
+        mapping[uid] = f"{site_url}/{OG_DIR}/{quote(uid)}.{sig}.webp"
+    for stale in out_dir.glob("*.webp"):  # 清理旧版本卡片
+        if stale.name not in keep:
+            stale.unlink()
+    return mapping
 
 
 def deploy_site(site_dir: Path, dist_dir: Path) -> None:
@@ -192,11 +327,11 @@ def mod_page_filename(unique_name: str) -> str:
 
 
 def build_mod_pages(template: str, mods: list[dict], translations: dict, dist: Path,
-                    site_url: str = SITE_URL) -> int:
+                    site_url: str = SITE_URL, og_map: dict[str, str] | None = None) -> int:
     """按 mod.html 模板为每个 mod 生成 dist/mod/<uniqueName>.html。
 
     静态页带定制 title/og/canonical 与一段无 JS 可见的正文; 以 <base href="../">
-    让 css/js/data 相对路径继续相对站点根解析。返回生成页数。
+    让 css/js/data 相对路径继续相对站点根解析。og_map 提供分享卡片图 URL。返回生成页数。
     """
     missing = [m for m in _MOD_PAGE_MARKERS if m not in template]
     if missing:
@@ -216,8 +351,14 @@ def build_mod_pages(template: str, mods: list[dict], translations: dict, dist: P
         author = str(out.get("authorDisplay") or out.get("author") or "")
         version = str(out.get("version") or "").removeprefix("v")
         thumb = (mod.get("thumbnail") or {}).get("main") or ""
-        og_image = (f"https://ow-mods.github.io/ow-mod-db/thumbnails/{thumb}"
-                    if thumb else f"{site_url}/og.png")
+        card_url = (og_map or {}).get(mod.get("uniqueName") or "")
+        if card_url:
+            og_image, image_size, image_alt = card_url, (1200, 630), f"{name} — 星际拓荒 MOD 数据库"
+        elif thumb:
+            og_image = f"https://ow-mods.github.io/ow-mod-db/thumbnails/{thumb}"
+            image_size, image_alt = None, f"{name} 的缩略图"
+        else:
+            og_image, image_size, image_alt = f"{site_url}/og.png", (1200, 630), "星际拓荒 MOD 数据库"
         page_url = f"{site_url}/{MOD_PAGE_DIR}/{quote(mod.get('uniqueName') or '')}.html"
         title = f"{name} — 星际拓荒 MOD 数据库"
         lead = (desc[:140] + ("…" if len(desc) > 140 else "")) if desc else f"星际拓荒 MOD:{name}"
@@ -231,8 +372,7 @@ def build_mod_pages(template: str, mods: list[dict], translations: dict, dist: P
                             f"<title>{html_escape(title)}</title>", 1)
         block = meta_block(
             title=title, description=lead, url=page_url, image=og_image,
-            image_alt=f"{name} 的缩略图" if thumb else "星际拓荒 MOD 数据库",
-            image_size=None if thumb else (1200, 630))
+            image_alt=image_alt, image_size=image_size)
         block += "\n" + mod_jsonld(
             name=name, author=author, version=version,
             download_url=str(out.get("downloadUrl") or ""), page_url=page_url, image=og_image)
@@ -326,7 +466,9 @@ def main() -> None:
     template = (Path(args.site) / "mod.html").read_text(encoding="utf-8")
     zh_path = lang_file("translations", "zh_cn")
     zh_translations = load_translations(zh_path) if zh_path.exists() else {}
-    page_count = build_mod_pages(template, official.get("releases", []), zh_translations, dist)
+    og_map = build_og_cards(official.get("releases", []), zh_translations, dist)
+    page_count = build_mod_pages(template, official.get("releases", []), zh_translations, dist,
+                                 og_map=og_map)
     build_seo_files(dist, official.get("releases", []), generated_at)
     # 静态资源与数据接口加版本号: 界面不缓存,图片(不在此列)可缓存; 含静态详情页
     stamp = generated_at.replace(":", "").replace("-", "").replace(".", "Z")[:17]
@@ -338,7 +480,7 @@ def main() -> None:
             text = text.replace("<head>", f'<head>\n<script>window.DATA_V = "{stamp}";</script>', 1)
         html.write_text(text, encoding="utf-8")
     print(f"已生成 {dist/'database.json'}(zh_cn)与站点数据 {', '.join(site_data_dir(l) for l in LANGS)},"
-          f"MOD 数: {zh_mod_count},静态详情页: {page_count}")
+          f"MOD 数: {zh_mod_count},静态详情页: {page_count},分享卡片: {len(og_map)}")
 
 
 if __name__ == "__main__":
