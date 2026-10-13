@@ -126,6 +126,7 @@ jobs:
             source/${{ inputs.lang || 'zh_cn' }}/pending.json \
             source/${{ inputs.lang || 'zh_cn' }}/readmes.json \
             source/${{ inputs.lang || 'zh_cn' }}/releases_cache.json \
+            source/${{ inputs.lang || 'zh_cn' }}/last_glossary.json \
             source/official.json source/license_cache.json source/readme_denylist.json
           git diff --cached --quiet || git commit -m "chore: 更新翻译缓存 [skip ci]"
           git checkout -- .   # 丢弃未暂存杂散变更

@@ -7,7 +7,7 @@
     },
     "description": {
       "en": "The mod loader and mod framework for Outer Wilds",
-      "zh": "アウターワイルズ用のMODローダーおよびMODフレームワーク",
+      "zh": "Outer Wilds用のMODローダーおよびMODフレームワーク",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -19,7 +19,7 @@
     },
     "description": {
       "en": "Outer Wilds VR Mod with 6DOF tracking and full motion control support",
-      "zh": "アウターワイルズ用VR MODで、6DOFトラッキングと完全な動作制御サポート付き",
+      "zh": "Outer Wilds用VR MODで、6DOFトラッキングと完全な動作制御サポート付き",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -36,7 +36,7 @@
     },
     "description": {
       "en": "Quantum Space Buddies ( QSB ) is a multiplayer mod for Outer Wilds.",
-      "zh": "Quantum Space Buddies ( QSB ) は、アウターワイルズ用のマルチプレイヤーMODです。",
+      "zh": "Quantum Space Buddies ( QSB ) は、Outer Wilds用のマルチプレイヤーMODです。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -65,7 +65,7 @@
     },
     "description": {
       "en": "A free-camera mod for Outer Wilds",
-      "zh": "アウターワイルズ用のフリーカメラMOD",
+      "zh": "Outer Wilds用のフリーカメラMOD",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -82,7 +82,7 @@
     },
     "description": {
       "en": "Enables crouching in Outer Wilds.",
-      "zh": "アウターワイルズでしゃがみを可能にします。",
+      "zh": "Outer Wildsでしゃがみを可能にします。",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -94,7 +94,7 @@
     },
     "description": {
       "en": "A clock overlay mod for Outer Wilds, including events",
-      "zh": "アウターワイルズ用のクロックオーバーモッド、イベントを含む",
+      "zh": "Outer Wilds用のクロックオーバーモッド、イベントを含む",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -111,7 +111,7 @@
     },
     "description": {
       "en": "Screenshot mod for Outer Wilds.",
-      "zh": "アウターワイルズ用のスクリーンショットMOD.",
+      "zh": "Outer Wilds用のスクリーンショットMOD.",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -123,7 +123,7 @@
     },
     "description": {
       "en": "Menu manipulation helpers for Outer Wilds, mainly for _nebula's mods.",
-      "zh": "アウターワイルズ用のメニュー操作ヘルパー、主に _nebula's mods のために",
+      "zh": "Outer Wilds用のメニュー操作ヘルパー、主に _nebula's mods のために",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -157,7 +157,7 @@
     },
     "description": {
       "en": "A mod containing all of the shaders I've created for Outer Wilds! ",
-      "zh": "アウターワイルズ用に作成した全てのシェーダーを含むMODです！",
+      "zh": "Outer Wilds用に作成した全てのシェーダーを含むMODです！",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -174,7 +174,7 @@
     },
     "description": {
       "en": "A deprecated Outer Wilds mmo experience, you probably want QSB instead!",
-      "zh": "アウターワイルズの古いMMO体験です、代わりにQSBを使用することをお勧めします！",
+      "zh": "Outer Wildsの古いMMO体験です、代わりにQSBを使用することをお勧めします！",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -351,7 +351,7 @@
     },
     "description": {
       "en": "A third-person camera for Outer Wilds.",
-      "zh": "アウターワイルズ用の第三人称カメラです。",
+      "zh": "Outer Wilds用の第三人称カメラです。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -436,7 +436,7 @@
     },
     "description": {
       "en": "Outer Wilds mod: gives the player night vision on Echoes of the Eye's dream world.",
-      "zh": "アウターワイルズmod: Echoes of the Eyeの夢の世界でプレイヤーに夜間視覚を提供します。",
+      "zh": "Outer Wildsmod: Echoes of the Eyeの夢の世界でプレイヤーに夜間視覚を提供します。",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -618,7 +618,7 @@
     },
     "latestReleaseDescription": {
       "en": "# Smol Hatchling 2.0: Outer Wilds Scale Manipulator\r\nSmol Hatchling has been remade from the ground up! Smol Hatchling can now be used not only by players who want to experience Outer Wilds from many different scales, but by other mod developers who may want to resize the player or other things in their mods.\r\n\r\n## Features\r\n\r\n### Customizable Scale for the Player, Anglerfish, the Stranger's Inhabitants, and more!\r\nWith Smol Hatchling, you can set the player character to any size you want; smaller than a marshmallow, bigger than the solar system, or anywhere in between!\r\n\r\nIt even comes with hotkeys you can use to change your scale on the fly: press the \"<\" key to divide your size by two, \">\" to multiply it by two, and \"/\" to return to normal. Player properties such as their collider size, grounded raycasts, and speed are automatically tweaked to work with the Player being resized.\r\n\r\nSmol Hatchling can be used to resize **any object** in the game. All moving creatures will have their movement speed and other attributes adjusted as well so it makes sense compared to their size! I'm planning to add adjustments for other types of objects in the future so that they will also be fully functional at different sizes!\r\n\r\nNote: Custom Player Scale must be enabled in the config menu prior to use. Otherwise, Smol Hatchling will automatically use the default player scale or the scale set by other mods.\r\n\r\n### API for use by other Mods\r\nSmol Hatchling comes with an API that other mods can use to resize the Player or other objects!",
-      "zh": "# スモールハッチング 2.0: アウターワイルズスケールマニピュレーター\nスモールハッチングは完全にリメイクされました！スモールハッチングは、アウターワイルズを多くの異なるスケールから体験したいプレイヤーや、他のモジュール開発者がプレイヤーや他のモジュール内のものをリサイズしたい場合に使用できるようになりました。\n\n## フィーチャーズ\n\n### プレイヤー、アンコウ、ストレンジャーの住民、そして他のもののカスタマイズ可能なスケール!\nスモールハッチングを使用すると、プレイヤーキャラクターを望むサイズに設定できます；マシュマロより小さい、太陽系より大きい、またはその間のどこでも！\n\nそれには、フライでサイズを変更するためのショートカットキーが付属しています：\"<\"キーを押すとサイズを2で割り、\">\"キーを押すとサイズを2で掛け、\"/\"キーを押すと通常に戻ります。プレイヤーのプロパティ、例えばコライダーサイズ、接地レイキャスト、速度などは、自動的にリサイズされたプレイヤーと互換性があるように調整されます。\n\nスモールハッチングはゲーム内の**あらゆるオブジェクト**をリサイズするために使用できます。すべての移動生物の移動速度や他の属性も、そのサイズに対して意味のあるように調整されます！今後、他のタイプのオブジェクトの調整を追加する予定で、それらも異なるサイズで完全に機能するようになります！\n\n注意：カスタムプレイヤースケールは、使用する前に設定メニューで有効にする必要があります。それ以外の場合、スモールハッチングは自動的にデフォルトのプレイヤースケールまたは他のモジュールによって設定されたスケールを使用します。\n\n### 他のモジュールによるAPI\nスモールハッチングは、他のモジュールがプレイヤーや他のオブジェクトをリサイズするために使用できるAPIを備えています！",
+      "zh": "# スモールハッチング 2.0: Outer Wildsスケールマニピュレーター\nスモールハッチングは完全にリメイクされました！スモールハッチングは、Outer Wildsを多くの異なるスケールから体験したいプレイヤーや、他のモジュール開発者がプレイヤーや他のモジュール内のものをリサイズしたい場合に使用できるようになりました。\n\n## フィーチャーズ\n\n### プレイヤー、アンコウ、ストレンジャーの住民、そして他のもののカスタマイズ可能なスケール!\nスモールハッチングを使用すると、プレイヤーキャラクターを望むサイズに設定できます；マシュマロより小さい、太陽系より大きい、またはその間のどこでも！\n\nそれには、フライでサイズを変更するためのショートカットキーが付属しています：\"<\"キーを押すとサイズを2で割り、\">\"キーを押すとサイズを2で掛け、\"/\"キーを押すと通常に戻ります。プレイヤーのプロパティ、例えばコライダーサイズ、接地レイキャスト、速度などは、自動的にリサイズされたプレイヤーと互換性があるように調整されます。\n\nスモールハッチングはゲーム内の**あらゆるオブジェクト**をリサイズするために使用できます。すべての移動生物の移動速度や他の属性も、そのサイズに対して意味のあるように調整されます！今後、他のタイプのオブジェクトの調整を追加する予定で、それらも異なるサイズで完全に機能するようになります！\n\n注意：カスタムプレイヤースケールは、使用する前に設定メニューで有効にする必要があります。それ以外の場合、スモールハッチングは自動的にデフォルトのプレイヤースケールまたは他のモジュールによって設定されたスケールを使用します。\n\n### 他のモジュールによるAPI\nスモールハッチングは、他のモジュールがプレイヤーや他のオブジェクトをリサイズするために使用できるAPIを備えています！",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -715,7 +715,7 @@
     },
     "description": {
       "en": "The Doctor and their TARDIS visit the Outer Wilds Solar System!",
-      "zh": "ドクターと彼女のタイムマシンがアウターワイルズ太陽系を訪れます！",
+      "zh": "ドクターと彼女のタイムマシンがOuter Wilds太陽系を訪れます！",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -746,12 +746,12 @@
   "milesand.OWKT": {
     "name": {
       "en": "Outer Wilds Korean Translation",
-      "zh": "アウターワイルズ韓国語翻訳",
+      "zh": "Outer Wilds韓国語翻訳",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
       "en": "Korean re-translation for Outer Wilds",
-      "zh": "アウターワイルズの韓国語再翻訳",
+      "zh": "Outer Wildsの韓国語再翻訳",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -792,7 +792,7 @@
   "xen.OuterWario": {
     "name": {
       "en": "Outer Wario Echoes of the Waaaaaaaaaaah",
-      "zh": "アウターワイルズワリオエコーズ・オブ・ザ・ワアアアアー",
+      "zh": "Outer Wildsワリオエコーズ・オブ・ザ・ワアアアアー",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
@@ -826,7 +826,7 @@
   "Titch.OWMusicPlayer": {
     "name": {
       "en": "Outer Wilds Music Player",
-      "zh": "アウターワイルズ音楽プレイヤー",
+      "zh": "Outer Wilds音楽プレイヤー",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
@@ -918,12 +918,12 @@
   "piggeywig2000.OuterWildsFlyover": {
     "name": {
       "en": "Outer Wilds Flyover",
-      "zh": "アウターワイルズフライオーバー",
+      "zh": "Outer Wildsフライオーバー",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
       "en": "Recreation of the Island Flyover game from Wii Sports Resort in Outer Wilds",
-      "zh": "Wii Sports Resortの島フライオーバーゲームをアウターワイルズで再現",
+      "zh": "Wii Sports Resortの島フライオーバーゲームをOuter Wildsで再現",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -981,7 +981,7 @@
     },
     "description": {
       "en": "A mod which adds Celeste movement features to Outer Wilds",
-      "zh": "アウターワイルズにクェルテスの動きの特徴を追加するモード",
+      "zh": "Outer Wildsにクェルテスの動きの特徴を追加するモード",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -1020,7 +1020,7 @@
     },
     "latestReleaseDescription": {
       "en": "- Fixed a conflict with New Horizons where warping from another star system back to the Outer Wilds would cause an infinite loading screen (thank you Yub3l for reporting this).",
-      "zh": "- 新しい世界で星系からアウターワイルズにワープすると無限のロード画面が発生する問題を修正しました（Yub3lさんに報告いただきありがとうございます）。",
+      "zh": "- 新しい世界で星系からOuter Wildsにワープすると無限のロード画面が発生する問題を修正しました（Yub3lさんに報告いただきありがとうございます）。",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -1032,7 +1032,7 @@
     },
     "description": {
       "en": "An Outer Wilds mod that adjusts Hollow's Lantern's meteors. (Reupload of Trainzack's mod)",
-      "zh": "アウターワイルズ用のMODで、空洞のランタンの流星を調整します。（TrainzackさんのMODの再アップロード）",
+      "zh": "Outer Wilds用のMODで、空洞のランタンの流星を調整します。（TrainzackさんのMODの再アップロード）",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -1049,7 +1049,7 @@
     },
     "description": {
       "en": "Fixes some vanilla bugs in Outer Wilds",
-      "zh": "アウターワイルズのバニラバグをいくつか修正",
+      "zh": "Outer Wildsのバニラバグをいくつか修正",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -1175,7 +1175,7 @@
     },
     "description": {
       "en": "Makes the Marshmallow's in Outer Wilds never despawn",
-      "zh": "アウターワイルズのマシュマロがいつまでも出現しないようにします",
+      "zh": "Outer Wildsのマシュマロがいつまでも出現しないようにします",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -1238,7 +1238,7 @@
     },
     "description": {
       "en": "Open any closed door or pathway in the Outer Wilds using this Mod!",
-      "zh": "このModを使ってアウターワイルズの閉じたドアや通路を開けます！",
+      "zh": "このModを使ってOuter Wildsの閉じたドアや通路を開けます！",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -1757,7 +1757,7 @@
     },
     "description": {
       "en": "Changes the title logo to the alpha logo, and replaces the planet on the title screen with the one from the alpha version of Outer Wilds.",
-      "zh": "アルファロゴにタイトルロゴを変更し、タイトルスクリーンの惑星をアウターワイルズのアルファバージョンからのもので置き換えます。",
+      "zh": "アルファロゴにタイトルロゴを変更し、タイトルスクリーンの惑星をOuter Wildsのアルファバージョンからのもので置き換えます。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -1905,7 +1905,7 @@
     },
     "description": {
       "en": "A Czech localization of Outer Wilds",
-      "zh": "アウターワイルズのチェコ語ローカライゼーション \n",
+      "zh": "Outer Wildsのチェコ語ローカライゼーション \n",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -2109,7 +2109,7 @@
     },
     "description": {
       "en": "Adds some cut achievements back into Outer Wilds.",
-      "zh": "一部の削除された達成アイテムをアウターワイルズに戻しました",
+      "zh": "一部の削除された達成アイテムをOuter Wildsに戻しました",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -2189,7 +2189,7 @@
     },
     "description": {
       "en": "A library to help drawing gizmos on Outer Wilds",
-      "zh": "アウターワイルズでギジモを描くのを助けるライブラリ",
+      "zh": "Outer Wildsでギジモを描くのを助けるライブラリ",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -2240,7 +2240,7 @@
     },
     "description": {
       "en": "A mod that creates 5 custom planets on Outer Wilds. Each of them hides a secret code. Gather them and make your name appear on the mod!",
-      "zh": "アウターワイルズで5つのカスタム惑星を作成するMOD。それぞれが秘密のコードを隠しています。それらを集めて、あなたの名前をMODに表示させましょう！",
+      "zh": "Outer Wildsで5つのカスタム惑星を作成するMOD。それぞれが秘密のコードを隠しています。それらを集めて、あなたの名前をMODに表示させましょう！",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -2652,7 +2652,7 @@
   "Locochoco.ShipyardOWOAddon": {
     "name": {
       "en": "Slate's Shipyard for Outer Wilds Online",
-      "zh": "スレイトのアウターワイルズ・オンライン用造船所",
+      "zh": "スレイトのOuter Wilds・オンライン用造船所",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
@@ -2703,7 +2703,7 @@
     },
     "description": {
       "en": "Outer Wilds mod that predicts and visualizes your future trajectory",
-      "zh": "未来の軌道を予測し、可視化するアウターワイルズのモード",
+      "zh": "未来の軌道を予測し、可視化するOuter Wildsのモード",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -2720,7 +2720,7 @@
     },
     "description": {
       "en": "Outer Wilds with chaotic N Body Physics and extra planet interactions. Mix with randomizer for extra chaos.",
-      "zh": "アウターワイルズで混沌としたN体問題物理学と追加惑星の相互作用。ランダムライザーと組み合わせてさらなる混沌を追加。",
+      "zh": "Outer Wildsで混沌としたN体問題物理学と追加惑星の相互作用。ランダムライザーと組み合わせてさらなる混沌を追加。",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -2732,7 +2732,7 @@
     },
     "description": {
       "en": "Mod to automatically export your Outer Wilds ship log for online viewing",
-      "zh": "アウターワイルズの航行記録をオンラインで閲覧するために自動的にエクスポートするMOD",
+      "zh": "Outer Wildsの航行記録をオンラインで閲覧するために自動的にエクスポートするMOD",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -2749,7 +2749,7 @@
     },
     "description": {
       "en": "Addon for shipyard which reads .craft KSP files into the game Outer Wilds",
-      "zh": "船台の追加ツールで、.craft KSPファイルを読み取り、アウターワイルズゲームに追加",
+      "zh": "船台の追加ツールで、.craft KSPファイルを読み取り、Outer Wildsゲームに追加",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3011,7 +3011,7 @@
     },
     "description": {
       "en": "Outer Wilds mod that replaces the Jetpack boost sound with the AUGH snoring sound",
-      "zh": "アウターワイルズMODで、ジェットパックのブースト音をAUGHの鼻歌の音に置き換えます",
+      "zh": "Outer WildsMODで、ジェットパックのブースト音をAUGHの鼻歌の音に置き換えます",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3069,7 +3069,7 @@
     },
     "description": {
       "en": "Adds a new star system (and small story!) to outer wilds",
-      "zh": "アウターワイルズに新しい恒星系（そして小さなストーリー！）を追加します",
+      "zh": "Outer Wildsに新しい恒星系（そして小さなストーリー！）を追加します",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3086,7 +3086,7 @@
     },
     "description": {
       "en": "An Outer Wilds story mod",
-      "zh": "アウターワイルズのストーリーモド",
+      "zh": "Outer Wildsのストーリーモド",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3280,7 +3280,7 @@
     },
     "description": {
       "en": "A Mod for Outer Wilds that projects the orrery in the observatory onto the actual star system, making navigation easier (and more... magical).",
-      "zh": "アウターワイルズ用のモッドで、観測所に投影されるオルレリを実際の恒星系に投影し、ナビゲーションを容易にする（そしてもっと…魔法に）",
+      "zh": "Outer Wilds用のモッドで、観測所に投影されるオルレリを実際の恒星系に投影し、ナビゲーションを容易にする（そしてもっと…魔法に）",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3355,7 +3355,7 @@
     },
     "description": {
       "en": "A mod for Outer Wilds that adds various Nomai Keys to the world which must be collected before the game can be completed.",
-      "zh": "アウターワイルズ用のモッドで、ゲームが完了する前に集める必要があるさまざまなノマイキーが世界に追加されます",
+      "zh": "Outer Wilds用のモッドで、ゲームが完了する前に集める必要があるさまざまなノマイキーが世界に追加されます",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3474,7 +3474,7 @@
     },
     "description": {
       "en": "An Outer Wilds mod which lets you control how anglerfish behave.",
-      "zh": "アウターワイルズのモードで、アンコウの行動を制御できます。",
+      "zh": "Outer Wildsのモードで、アンコウの行動を制御できます。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3486,12 +3486,12 @@
   "nice2cu1.OuterWildFixFont": {
     "name": {
       "en": "Outer Wilds Chinese Fix",
-      "zh": "アウターワイルズ中国語修正",
+      "zh": "Outer Wilds中国語修正",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
       "en": "replaces fonts in the Simplified Chinese interfaces of Outer Wilds and its story mods to help resolve missing Chinese characters.",
-      "zh": "アウターワイルズとそのストーリーモードの簡体中国語インターフェースのフォントを置き換え、欠落している中国語文字を解決するのを助けるために使用されます。",
+      "zh": "Outer Wildsとそのストーリーモードの簡体中国語インターフェースのフォントを置き換え、欠落している中国語文字を解決するのを助けるために使用されます。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3622,7 +3622,7 @@
     },
     "description": {
       "en": "someone named Sam Lastname in the ow discord has a daughter and she made her own outer wilds system so here i am",
-      "zh": "ow discordにサム・ラストネームという名前の人がいる데、彼女は自分のアウターワイルズシステムを作ったので、ここにいる",
+      "zh": "ow discordにサム・ラストネームという名前の人がいる데、彼女は自分のOuter Wildsシステムを作ったので、ここにいる",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3644,7 +3644,7 @@
     },
     "latestReleaseDescription": {
       "en": "Fixed to work with Outer Wilds Patch 15 (updated game libs).",
-      "zh": "アウターワイルズパッチ15（更新されたゲームライブラリ）と互換性のあるように修正",
+      "zh": "Outer Wildsパッチ15（更新されたゲームライブラリ）と互換性のあるように修正",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -3775,14 +3775,14 @@
     },
     "description": {
       "en": "Localizing Outer Wilds (Fjarlæg Firnindi) into Icelandic",
-      "zh": "アウターワイルズ（Fjarlæg Firnindi）をアイスランド語にローカライズ",
+      "zh": "Outer Wilds（Fjarlæg Firnindi）をアイスランド語にローカライズ",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
   "GoldenCrepe.OuterWildsKazoo": {
     "name": {
       "en": "Outer Wilds Kazoo",
-      "zh": "アウターワイルズカズー",
+      "zh": "Outer Wildsカズー",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
@@ -3792,7 +3792,7 @@
     },
     "latestReleaseDescription": {
       "en": "Outer Wilds Kazoo: Now with actual Kazoo sound files. Whoops.",
-      "zh": "アウターワイルズカズー：実際のカズー音声ファイルで更新。うわー。",
+      "zh": "Outer Wildsカズー：実際のカズー音声ファイルで更新。うわー。",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -3821,7 +3821,7 @@
     },
     "description": {
       "en": "random shipless speedrun generator for Outer Wilds",
-      "zh": "アウターワイルズ用ランダムな船なしスピードラン生成器",
+      "zh": "Outer Wilds用ランダムな船なしスピードラン生成器",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3889,7 +3889,7 @@
     },
     "description": {
       "en": "A short story mod for Outer Wilds.",
-      "zh": "アウターワイルズ用の短編ストーリーMODです。",
+      "zh": "Outer Wilds用の短編ストーリーMODです。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3923,7 +3923,7 @@
     },
     "description": {
       "en": "A short story mod for an Outer Wilds modding jam. Check your ship logs to start!",
-      "zh": "アウターワイルズ MODディージャム用の短編ストーリーMOD。船の航行記録を確認して始めてください！",
+      "zh": "Outer Wilds MODディージャム用の短編ストーリーMOD。船の航行記録を確認して始めてください！",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3974,7 +3974,7 @@
     },
     "description": {
       "en": "An Outer Wilds Dating Sim. Talk to your favorite character to get started.",
-      "zh": "アウターワイルズデートシミュレーション。お気に入りのキャラクターと話すと始まる。",
+      "zh": "Outer Wildsデートシミュレーション。お気に入りのキャラクターと話すと始まる。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -3991,7 +3991,7 @@
     },
     "description": {
       "en": "A mod for outer wilds",
-      "zh": "アウターワイルズ用のモード",
+      "zh": "Outer Wilds用のモード",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4008,7 +4008,7 @@
     },
     "description": {
       "en": "An Outer Wilds mod that brings back the Debug HUD disabled by the devs before publishing the game",
-      "zh": "開発者がゲームを公開する前に無効にしたデバッグHUDを復元するアウターワイルズ用モード",
+      "zh": "開発者がゲームを公開する前に無効にしたデバッグHUDを復元するOuter Wilds用モード",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -4020,7 +4020,7 @@
     },
     "description": {
       "en": "Outer Wilds provides a realistic simulation of life in outer space.",
-      "zh": "アウターワイルズは、外の宇宙での生活をリアルなシミュレーションを提供する。",
+      "zh": "Outer Wildsは、外の宇宙での生活をリアルなシミュレーションを提供する。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4037,7 +4037,7 @@
     },
     "description": {
       "en": "Outer Wilds mod that keeps track of seen and unseen lore across game sessions, highlighting new content in purple for easy identification.",
-      "zh": "アウターワイルズ用のモードで、ゲームセッション間で見たことのない伝説を追跡し、新しいコンテンツを紫で強調表示して簡単に識別できるようにする。",
+      "zh": "Outer Wilds用のモードで、ゲームセッション間で見たことのない伝説を追跡し、新しいコンテンツを紫で強調表示して簡単に識別できるようにする。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4054,7 +4054,7 @@
     },
     "description": {
       "en": "A Outer Wilds Mod that replaces the flashback sound with \"SORRISO RONALDO\".",
-      "zh": "アウターワイルズ用モードで、フラッシュバックのサウンドを「SORRISO RONALDO」に置き換える。",
+      "zh": "Outer Wilds用モードで、フラッシュバックのサウンドを「SORRISO RONALDO」に置き換える。",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -4083,7 +4083,7 @@
     },
     "description": {
       "en": "An Outer Wilds mod that adds silly filters/overlays to scout images.",
-      "zh": "アウターワイルズ用のモッドで、探査画像にシルリーなフィルタ/オーバーレイを追加します。",
+      "zh": "Outer Wilds用のモッドで、探査画像にシルリーなフィルタ/オーバーレイを追加します。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4158,7 +4158,7 @@
     },
     "description": {
       "en": "Simpler Times is a mod for Outer Wilds, that fixes up several Nomai structures in the game, and removes some timed elements from the planets, making for a more exploratory/new game plus experience.",
-      "zh": "シンマータイムズはアウターワイルズ用のモッドで、ゲーム内のいくつかのノマイの構造を修正し、惑星からいくつかのタイムド要素を削除し、より探検的な/新しいゲームプラスの体験を作成します。",
+      "zh": "シンマータイムズはOuter Wilds用のモッドで、ゲーム内のいくつかのノマイの構造を修正し、惑星からいくつかのタイムド要素を削除し、より探検的な/新しいゲームプラスの体験を作成します。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4175,7 +4175,7 @@
     },
     "description": {
       "en": "An Outer Wilds mod for the Archipelago multi-game randomizer system",
-      "zh": "アウターワイルズ用のアーカイペラゴマルチゲームランダムライザーシステムのモード",
+      "zh": "Outer Wilds用のアーカイペラゴマルチゲームランダムライザーシステムのモード",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4226,7 +4226,7 @@
     },
     "description": {
       "en": "An Outer Wilds mod for taking New Horizons-ready ship log and slide reel screenshots.",
-      "zh": "新しいハ horizons準備済みの船のログとスライドリールスクリーンショットを撮るためのアウターワイルズのモード。",
+      "zh": "新しいハ horizons準備済みの船のログとスライドリールスクリーンショットを撮るためのOuter Wildsのモード。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4260,7 +4260,7 @@
     },
     "description": {
       "en": "A fan-made expansion exploring the origin of The Interloper (EN,JP,CN,RU,FR,KO,IT). @;{&< ?/ })& ?][\"[/;| *?/*&+} (?] &?}&",
-      "zh": "アウターワイルズのファンによる拡張パック、『The Interloper』の起源を探る（EN,JP,CN,RU,FR,KO,IT）",
+      "zh": "Outer Wildsのファンによる拡張パック、『The Interloper』の起源を探る（EN,JP,CN,RU,FR,KO,IT）",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4277,7 +4277,7 @@
     },
     "description": {
       "en": "The base solar system for the 3rd Outer Wilds mod jam. Install jam entries separately to play!",
-      "zh": "3番目のアウターワイルズMODジャムの基本太陽系です。ジャムエントリーを別々にインストールして遊んでください！",
+      "zh": "3番目のOuter WildsMODジャムの基本太陽系です。ジャムエントリーを別々にインストールして遊んでください！",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4764,7 +4764,7 @@
     },
     "description": {
       "en": "Ukrainian localization for Outer Wilds",
-      "zh": "アウターワイルズのウクライナ語ローカライゼーション",
+      "zh": "Outer Wildsのウクライナ語ローカライゼーション",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -4892,7 +4892,7 @@
   "xen.EscapeRoomJam4": {
     "name": {
       "en": "Outer Wilds Escape Room",
-      "zh": "アウターワイルズエスケープルーム",
+      "zh": "Outer Wildsエスケープルーム",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
@@ -5033,7 +5033,7 @@
     },
     "description": {
       "en": "(VERY INCOMPLETE) A strange planetoid is entering the Outer Wilds system, what secrets might it hold?",
-      "zh": "(非常に不完全) 奇妙な惑星がアウターワイルズシステムに入ってくる、何の秘密を秘めているだろうか？",
+      "zh": "(非常に不完全) 奇妙な惑星がOuter Wildsシステムに入ってくる、何の秘密を秘めているだろうか？",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5050,7 +5050,7 @@
     },
     "description": {
       "en": "Escape the box! Joke entry for the Outer Wilds 4th Mod Jam.",
-      "zh": "箱から逃げ出せ！ アウターワイルズ4回目のモジュールジャムのジョークエントリー",
+      "zh": "箱から逃げ出せ！ Outer Wilds4回目のモジュールジャムのジョークエントリー",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5084,7 +5084,7 @@
     },
     "description": {
       "en": "Outer Wilds mod to align jetpack flight vertical look direction to either player or ship setting",
-      "zh": "アウターワイルズモジュールで、ジェットパックの飛行垂直視方向をプレイヤーや船の設定に合わせます",
+      "zh": "Outer Wildsモジュールで、ジェットパックの飛行垂直視方向をプレイヤーや船の設定に合わせます",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5118,7 +5118,7 @@
     },
     "description": {
       "en": "A tracker for the podracing game in Outer Wilds",
-      "zh": "アウターワイルズのPodracingゲーム用のトラッカー",
+      "zh": "Outer WildsのPodracingゲーム用のトラッカー",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5186,7 +5186,7 @@
     },
     "description": {
       "en": "An Outer Wilds mod to switch the current language in-game by pressing Ctrl+L",
-      "zh": "アウターワイルズMODで、ゲーム内でCtrl+Lを押すことで現在の言語を切り替えます",
+      "zh": "Outer WildsMODで、ゲーム内でCtrl+Lを押すことで現在の言語を切り替えます",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5237,7 +5237,7 @@
     },
     "description": {
       "en": "A mod for Outer Wilds that converts the Launch Codes from --|-..|-. to Trans Rights (or Trans Wrongs)",
-      "zh": "アウターワイルズ用のMODで、Launch Codesを--|-..|-.からTrans Rights（またはTrans Wrongs）に変換します",
+      "zh": "Outer Wilds用のMODで、Launch Codesを--|-..|-.からTrans Rights（またはTrans Wrongs）に変換します",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5254,7 +5254,7 @@
     },
     "description": {
       "en": "A mod for Outer Wilds of the sorts of Subnautica's Weather mod, adding weather scattered across the star system.",
-      "zh": "アウターワイルズ用のSubnauticaのWeatherモドのようなもので、恒星系に散らばった天気を追加します",
+      "zh": "Outer Wilds用のSubnauticaのWeatherモドのようなもので、恒星系に散らばった天気を追加します",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5271,7 +5271,7 @@
     },
     "description": {
       "en": "Adds an in-game menu for placing props in Outer Wilds via New Horizons",
-      "zh": "アウターワイルズでプロップを配置するためのインゲームメニューを追加します",
+      "zh": "Outer Wildsでプロップを配置するためのインゲームメニューを追加します",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5305,7 +5305,7 @@
     },
     "description": {
       "en": "Outer Wilds library mod adding support for Dear ImGui.",
-      "zh": "Dear ImGuiのサポートを追加するアウターワイルズライブラリモード",
+      "zh": "Dear ImGuiのサポートを追加するOuter Wildsライブラリモード",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5339,7 +5339,7 @@
     },
     "description": {
       "en": "Makes the ice melting in outer wilds consistent",
-      "zh": "アウターワイルズでの氷の溶けるのを一貫性のあるものにします",
+      "zh": "Outer Wildsでの氷の溶けるのを一貫性のあるものにします",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5623,7 +5623,7 @@
     },
     "description": {
       "en": "(2025 Best Puzzles Award Winner) Lore of a Nomai named Ping. Explore why there are modding jams in the Outer Wilds universe. Outer Wilds Mod Jam 5 entry",
-      "zh": "(2025年ベストパズル賞受賞作) ノマイのピングに関する伝説。アウターワイルズ宇宙でモディングジャムがある理由を探検します。アウターワイルズモードジャム5のエントリー",
+      "zh": "(2025年ベストパズル賞受賞作) ノマイのピングに関する伝説。Outer Wilds宇宙でモディングジャムがある理由を探検します。Outer Wildsモードジャム5のエントリー",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5640,7 +5640,7 @@
     },
     "description": {
       "en": "Small Submission for Outer Wilds Mod Jam 5, Mystery of the Missing Cake",
-      "zh": "アウターワイルズモードジャム5のための小さな提出、消えたケーキの謎",
+      "zh": "Outer Wildsモードジャム5のための小さな提出、消えたケーキの謎",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5742,7 +5742,7 @@
     },
     "description": {
       "en": "Outer Wilds Modding Jam Project",
-      "zh": "アウターワイルズMODミーティングジャムプロジェクト",
+      "zh": "Outer WildsMODミーティングジャムプロジェクト",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -5824,7 +5824,7 @@
   "DragonflyL5.OWCHTfix": {
     "name": {
       "en": "Outer Wilds Chinese Translation Fixed",
-      "zh": "アウターワイルズ中国語訳修正",
+      "zh": "Outer Wilds中国語訳修正",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
@@ -5846,7 +5846,7 @@
     },
     "description": {
       "en": "An Outer Wilds Mod which allows the player to summon the ship to their location",
-      "zh": "アウターワイルズMODでプレイヤーが自分の位置に船を召喚できるようにする",
+      "zh": "Outer WildsMODでプレイヤーが自分の位置に船を召喚できるようにする",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -6166,7 +6166,7 @@
     },
     "latestReleaseDescription": {
       "en": "Outer Wilds is a game loosely based on real-world astronomy and orbital physics, but as anyone who has taken a high school physics class could tell you, the game is clearly not scientifically accurate at all. A black hole that doesn't spaghettify you? Trees that produce infinite oxygen? Sand passing back and forth between two planets? These are just a few of the many scientifically inaccurate things in the game. This mod removes all of the planets that are scientifically inaccurate, leaving only the ones that are scientifically accurate. The result is a much more realistic and scientifically accurate Outer Wilds experience.",
-      "zh": "アウターワイルズは、現実世界の天文学と軌道物理学に弱く基づいたゲームですが、高校物理の授業を受けている誰でもわかるように、ゲームは全く科学的に正確ではありません。スパゲッティ化しないブラックホール？ 無限の酸素を生産する木？ 二つの惑星の間で砂が往復する？ これらはゲーム内の科学的に不正確な多くの事柄のほんの数例です。このMODは科学的に不正確なすべての惑星を削除し、科学的に正確なものだけを残します。結果は、もっと現実的で科学的に正確なアウターワイルズの体験になります。",
+      "zh": "Outer Wildsは、現実世界の天文学と軌道物理学に弱く基づいたゲームですが、高校物理の授業を受けている誰でもわかるように、ゲームは全く科学的に正確ではありません。スパゲッティ化しないブラックホール？ 無限の酸素を生産する木？ 二つの惑星の間で砂が往復する？ これらはゲーム内の科学的に不正確な多くの事柄のほんの数例です。このMODは科学的に不正確なすべての惑星を削除し、科学的に正確なものだけを残します。結果は、もっと現実的で科学的に正確なOuter Wildsの体験になります。",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -6195,7 +6195,7 @@
     },
     "description": {
       "en": "Arabic_Hesham — Arabic translation for Outer Wilds + Echoes of the Eye DLC | ترجمة عربية للعبة Outer Wilds",
-      "zh": "Arabic_Hesham — アウターワイルズ + Echoes of the Eye DLC のアラビア語訳 | ترجمة عربية للعبة Outer Wilds",
+      "zh": "Arabic_Hesham — Outer Wilds + Echoes of the Eye DLC のアラビア語訳 | ترجمة عربية للعبة Outer Wilds",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6241,7 +6241,7 @@
   "MrsNebula.OWItalianLocalFix": {
     "name": {
       "en": "Outer Wilds Italian Localization Fix",
-      "zh": "アウターワイルズイタリア語ローカライゼーション修正",
+      "zh": "Outer Wildsイタリア語ローカライゼーション修正",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "description": {
@@ -6263,7 +6263,7 @@
     },
     "description": {
       "en": "An Outer Wilds Mod for Outer Wilds Mod Loader. Makes the game use varying deltaTime instead of fixedTimestep. Fixes mouse horizontal rotation.",
-      "zh": "アウターワイルズ用のアウターワイルズMODローダー用モード。ゲームが固定されたtimestepの代わりに変動しているdeltaTimeを使用するようにします。マウスの水平回転を修正します",
+      "zh": "Outer Wilds用のOuter WildsMODローダー用モード。ゲームが固定されたtimestepの代わりに変動しているdeltaTimeを使用するようにします。マウスの水平回転を修正します",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -6287,7 +6287,7 @@
     },
     "description": {
       "en": "The newest mod for practicing Outer Wilds speedrunning",
-      "zh": "アウターワイルズスピードランニングを練習するための最新のモード",
+      "zh": "Outer Wildsスピードランニングを練習するための最新のモード",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6350,7 +6350,7 @@
     },
     "description": {
       "en": "A mod that adds subtitles (crudely) to outer wilds",
-      "zh": "アウターワイルズに字幕（粗削りで）を追加するMOD",
+      "zh": "Outer Wildsに字幕（粗削りで）を追加するMOD",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6418,7 +6418,7 @@
     },
     "description": {
       "en": "You've met with a terrible fate, haven't you? First-place winner of the 6th Outer Wilds mod jam.",
-      "zh": "恐ろしい運命に出会ったでしょ？ 6回目のアウターワイルズMODジャムの優勝者です。",
+      "zh": "恐ろしい運命に出会ったでしょ？ 6回目のOuter WildsMODジャムの優勝者です。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6435,7 +6435,7 @@
     },
     "description": {
       "en": "Can you help Bruce save his home planet? Also, Bruce. Also, his home planet. LeeSpork's entry for the 6th Outer Wilds mod jam.",
-      "zh": "ブルースの故郷惑星を救う手伝いしてくれる？ それもブルース。それも彼の故郷惑星。LeeSporkの6回目のアウターワイルズMODジャムのエントリ。",
+      "zh": "ブルースの故郷惑星を救う手伝いしてくれる？ それもブルース。それも彼の故郷惑星。LeeSporkの6回目のOuter WildsMODジャムのエントリ。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6469,7 +6469,7 @@
     },
     "description": {
       "en": "Lore of your other time buddy. Outer Wilds Mod Jam 6 Second-place winner (EN, JA, zh-CN)",
-      "zh": "あなたの他の時の仲間の物語。アウターワイルズMODジャム6 第2位受賞者（EN, JA, zh-CN）",
+      "zh": "あなたの他の時の仲間の物語。Outer WildsMODジャム6 第2位受賞者（EN, JA, zh-CN）",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6486,7 +6486,7 @@
     },
     "description": {
       "en": "A short Outer Wilds mod for jam 6 about a system out of time. Our first mod made by a team of only 2 people, so please excuse any bugs and have fun!",
-      "zh": "タイムアウトのシステムについてのジャム6用の短いアウターワイルズMOD。わずか2人で作成した私たちの最初のMODなので、バグがあったとしても楽しんでください！",
+      "zh": "タイムアウトのシステムについてのジャム6用の短いOuter WildsMOD。わずか2人で作成した私たちの最初のMODなので、バグがあったとしても楽しんでください！",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6605,7 +6605,7 @@
     },
     "description": {
       "en": "Italian-language Outer Wilds mod that turns Echoes of the Eye into a guided completionist run, with custom slide reels, dialogue and ship log entries.",
-      "zh": "イタリア語のアウターワイルズmodで、エコーズオブジョイをガイドされた完璧主義者のランに変えます。カスタムスライドリール、ディアログと船のログエントリを含みます。",
+      "zh": "イタリア語のOuter Wildsmodで、エコーズオブジョイをガイドされた完璧主義者のランに変えます。カスタムスライドリール、ディアログと船のログエントリを含みます。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6719,7 +6719,7 @@
     },
     "description": {
       "en": "An input system rewrite for Outer Wilds.",
-      "zh": "アウターワイルズ用の入力システムのリライト。",
+      "zh": "Outer Wilds用の入力システムのリライト。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6753,7 +6753,7 @@
     },
     "description": {
       "en": "Unity game patcher and plugin framework modified for Outer Wilds Alpha",
-      "zh": "アウターワイルズアルファ用に修正されたUnityゲームパッチャーとプラグインフレームワーク",
+      "zh": "Outer Wildsアルファ用に修正されたUnityゲームパッチャーとプラグインフレームワーク",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6787,7 +6787,7 @@
     },
     "description": {
       "en": "BepInEx plugin that helps creating mods for the game Outer Wilds Alpha (1.2)",
-      "zh": "アウターワイルズアルファ(1.2)用のモード作成を助けるBepInExプラグイン",
+      "zh": "Outer Wildsアルファ(1.2)用のモード作成を助けるBepInExプラグイン",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6804,7 +6804,7 @@
     },
     "description": {
       "en": "Fixes for the alpha of Outer Wilds",
-      "zh": "アウターワイルズのアルファ用の修正",
+      "zh": "Outer Wildsのアルファ用の修正",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6821,7 +6821,7 @@
     },
     "description": {
       "en": "Adds a small ship into the game Outer Wilds Alpha",
-      "zh": "アウターワイルズアルファに小型船を追加します",
+      "zh": "Outer Wildsアルファに小型船を追加します",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6838,7 +6838,7 @@
     },
     "description": {
       "en": "A mod for Outer Wilds Alpha that adds a free cam to it",
-      "zh": "アウターワイルズアルファに自由カメラを追加するモード",
+      "zh": "Outer Wildsアルファに自由カメラを追加するモード",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
@@ -6855,12 +6855,12 @@
     },
     "description": {
       "en": "Mod for the Alpha Outer Wilds version 1.2 that adds a grapple rope to the game",
-      "zh": "アウターワイルズアルファバージョン1.2用のモードで、ゲームにグレップロープを追加します",
+      "zh": "Outer Wildsアルファバージョン1.2用のモードで、ゲームにグレップロープを追加します",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
       "en": "* Added Manifest to make it work with OWMM\r\n* [Fixes from MegaPiggy](https://github.com/ShoosGun/ProbeGrappleMod/commit/a96be8095c25ca58d5da01d36b5150cf039258a2).\r\n\r\nThanks [MegaPiggy](https://github.com/MegaPiggy) for all the fixes!",
-      "zh": "* アウターワイルズとの互換性を確保するためのManifestを追加\n* [MegaPiggyからの修正](https://github.com/ShoosGun/ProbeGrappleMod/commit/a96be8095c25ca58d5da01d36b5150cf039258a2).\n\n[MegaPiggy](https://github.com/MegaPiggy)の修正に感謝！",
+      "zh": "* Outer Wildsとの互換性を確保するためのManifestを追加\n* [MegaPiggyからの修正](https://github.com/ShoosGun/ProbeGrappleMod/commit/a96be8095c25ca58d5da01d36b5150cf039258a2).\n\n[MegaPiggy](https://github.com/MegaPiggy)の修正に感謝！",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -6872,12 +6872,12 @@
     },
     "description": {
       "en": "A mod that adds a screen for the landing camera for Outer Wilds Alpha",
-      "zh": "アウターワイルズアルファ用に着陸カメラのスクリーンを追加するMOD",
+      "zh": "Outer Wildsアルファ用に着陸カメラのスクリーンを追加するMOD",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {
       "en": "* Adds a bottom cam that acts like the one in the final release of Outer Wilds",
-      "zh": "* 最終版のアウターワイルズのものと同じ動作をする下部カメラを追加",
+      "zh": "* 最終版のOuter Wildsのものと同じ動作をする下部カメラを追加",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -6945,7 +6945,7 @@
     },
     "latestReleaseDescription": {
       "en": "### This is the forked version of RuntimeUnityEditor made to work with Unity 4.1, specially with the game Outer Wilds Alpha 1.2\r\n\r\n* Added manifest file for it to be compatible with OWMM\r\n* Removed some features that can't be used in Unity 4.1",
-      "zh": "### これはUnity 4.1で動作するように作成されたRuntimeUnityEditorのフォーク版で、特にアウターワイルズアルファ1.2用です\n\n* OWMMとの互換性を確保するためのmanifestファイルを追加\n* Unity 4.1では使用できない機能をいくつか削除",
+      "zh": "### これはUnity 4.1で動作するように作成されたRuntimeUnityEditorのフォーク版で、特にOuter Wildsアルファ1.2用です\n\n* OWMMとの互換性を確保するためのmanifestファイルを追加\n* Unity 4.1では使用できない機能をいくつか削除",
       "at": "2026-10-13T16:05:02.747244Z"
     }
   },
@@ -6957,7 +6957,7 @@
     },
     "description": {
       "en": "Outer Wilds Alpha Demo mod that removes the Spoiler Quarantines from Dark Bramble, Giant's Deep, Hourglass Twins, and Quantum Moon.",
-      "zh": "アウターワイルズアルファデモモッドで、闇のイバラ、巨人の大海、砂時計の双子星、量子の月からスポイラー隔離を削除します。",
+      "zh": "Outer Wildsアルファデモモッドで、闇のイバラ、巨人の大海、砂時計の双子星、量子の月からスポイラー隔離を削除します。",
       "at": "2026-10-13T16:05:02.747244Z"
     },
     "latestReleaseDescription": {

@@ -11,7 +11,7 @@
 
 | 状态 | 原文 | 中文译名 | 日文官方译名(待填) |
 |---|---|---|---|
-| ✅ | Outer Wilds | 星际拓荒 | アウターワイルズ |
+| ✅ | Outer Wilds | 星际拓荒 | Outer Wilds |
 | ✅ | Outer Wilds Mod Loader | 星际拓荒模组加载器 | MODローダー |
 | ✅ | Nomai | 挪麦 | ノマイ |
 | ✅ | Hearthian | 哈斯人 | ハーシアン |

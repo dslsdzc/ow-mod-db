@@ -2121,7 +2121,7 @@
         "name": "v0.28.0",
         "date": "2025-07-21",
         "body": "0.28.0 (#61)\n\n- Fixed gravity on the cubes orbiting Timber Hearth\n- Added a standing vision torch in the Dreamworld\n- Repairable broken door example\n- Condition trigger volume example\n- Projection totem condition example\n- Interaction volumes example",
-        "bodyZh": "0.28.0 (#61)\n\n- アウターワイルズの木の炉辺を周る立方体の重力を修正\n- ドリームワールドに立ち見のビジョントーチを追加\n- 破損したドアの修復可能な例\n- 条件トリガーボリュームの例\n- 投影トーテムの条件の例\n- インタラクションボリュームの例",
+        "bodyZh": "0.28.0 (#61)\n\n- Outer Wildsの木の炉辺を周る立方体の重力を修正\n- ドリームワールドに立ち見のビジョントーチを追加\n- 破損したドアの修復可能な例\n- 条件トリガーボリュームの例\n- 投影トーテムの条件の例\n- インタラクションボリュームの例",
         "zipUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/download/v0.28.0/nh-examples.zip",
         "releaseUrl": "https://github.com/Outer-Wilds-New-Horizons/nh-examples/releases/tag/v0.28.0"
       },
@@ -3331,7 +3331,7 @@
         "name": "Version 1.0.4",
         "date": "2026-03-11",
         "body": "- Fixed a conflict with New Horizons where warping from another star system back to the Outer Wilds would cause an infinite loading screen (thank you Yub3l for reporting this).",
-        "bodyZh": "- New Horizonsとの互換性の問題を修正しました。他の恒星系からアウターワイルズにワープすると無限のロード画面が発生する問題（この問題を報告してくれたYub3lさん、ありがとう）。",
+        "bodyZh": "- New Horizonsとの互換性の問題を修正しました。他の恒星系からOuter Wildsにワープすると無限のロード画面が発生する問題（この問題を報告してくれたYub3lさん、ありがとう）。",
         "zipUrl": "https://github.com/xen-42/ow-decloaked/releases/download/v1.0.4/xen.Decloaked.zip",
         "releaseUrl": "https://github.com/xen-42/ow-decloaked/releases/tag/v1.0.4"
       },
@@ -6197,7 +6197,7 @@
         "name": "Shipinha v0.1.8",
         "date": "2022-11-23",
         "body": "* Adds Compatibility with owo using new shipyard networking interface system",
-        "bodyZh": "* アウターワイルズ用の新しい船台ネットワーキングインターフェースシステムを使用した互換性を追加します",
+        "bodyZh": "* Outer Wilds用の新しい船台ネットワーキングインターフェースシステムを使用した互換性を追加します",
         "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.8/Locochoco.Spaceshipinha.zip",
         "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.8"
       },
@@ -6215,7 +6215,7 @@
         "name": "Shipinha v0.1.6",
         "date": "2022-11-13",
         "body": "* Adds compatibility with OWO (needs pre-release version of Slate's Shipyard)",
-        "bodyZh": "* アウターワイルズ（OWO）との互換性を追加（スレイトのドックヤードのプレリリースバージョンが必要）",
+        "bodyZh": "* Outer Wilds（OWO）との互換性を追加（スレイトのドックヤードのプレリリースバージョンが必要）",
         "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.6/Locochoco.Spaceshipinha.zip",
         "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.6"
       },
@@ -6292,7 +6292,7 @@
         "name": "Car Example v0.1.4",
         "date": "2022-11-23",
         "body": "* Adds Compatibility with owo using new shipyard networking interface system",
-        "bodyZh": "* アウターワイルズ用の新しい造船所ネットワーキングインターフェースシステムを使用した互換性を追加",
+        "bodyZh": "* Outer Wilds用の新しい造船所ネットワーキングインターフェースシステムを使用した互換性を追加",
         "zipUrl": "https://github.com/loco-choco/CarExample/releases/download/v0.1.4/Locochoco.CarExample.zip",
         "releaseUrl": "https://github.com/loco-choco/CarExample/releases/tag/v0.1.4"
       },
@@ -6310,7 +6310,7 @@
         "name": "Car Example v0.1.2",
         "date": "2022-11-13",
         "body": "* Adds compatibility with OWO (needs pre-release version of Slate's Shipyard)",
-        "bodyZh": "* アウターワイルズ（OWO）との互換性を追加（スレイトのドックヤードのプレリリースバージョンが必要）",
+        "bodyZh": "* Outer Wilds（OWO）との互換性を追加（スレイトのドックヤードのプレリリースバージョンが必要）",
         "zipUrl": "https://github.com/loco-choco/CarExample/releases/download/v0.1.2/Locochoco.CarExample.zip",
         "releaseUrl": "https://github.com/loco-choco/CarExample/releases/tag/v0.1.2"
       },
@@ -6729,7 +6729,7 @@
         "name": "1.1.10",
         "date": "2024-06-12",
         "body": "Fixed another issue with Outer Wilds Patch 15, that affected mods using item lists with description field (this used a UI size setter introduced in Patch 14 but was removed, causing NREs). This fixes modes added by mods like (now working):\r\n- Archipelago Randomizer\r\n- The Hatchling's Journal\r\n- Ship Log Slide Reel Player Plus",
-        "bodyZh": "アウターワイルズパッチ15の別の問題を修正しました。これは、説明フィールドを使用するモードに影響し、NREが発生したものです（これはパッチ14で導入されたUIサイズ設定を使用していましたが、削除されました）。この修正により、以下のようなモードが正常に動作するようになりました：\n- Archipelago Randomizer\n- The Hatchling's Journal\n- Ship Log Slide Reel Player Plus",
+        "bodyZh": "Outer Wildsパッチ15の別の問題を修正しました。これは、説明フィールドを使用するモードに影響し、NREが発生したものです（これはパッチ14で導入されたUIサイズ設定を使用していましたが、削除されました）。この修正により、以下のようなモードが正常に動作するようになりました：\n- Archipelago Randomizer\n- The Hatchling's Journal\n- Ship Log Slide Reel Player Plus",
         "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.1.10/dgarro.CustomShipLogModes.zip",
         "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.1.10"
       },
@@ -6824,7 +6824,7 @@
         "name": "2.3.1",
         "date": "2023-09-27",
         "body": "The mod now works with Outer Wilds Patch 14. It used a method to set up some prompts that was removed in the last patch, making the mod fail. Now it works, but the prompts aren't visible because of a fix still pending for Custom Ship Log Modes.",
-        "bodyZh": "このMODは現在、アウターワイルズパッチ14と互換性があります。以前のパッチで削除された方法を使用してプロンプトを設定しようとしたため、MODが機能しなくなっていました。今は動作しますが、カスタムシップログモードの修正がまだ待っているため、プロンプトは表示されません。",
+        "bodyZh": "このMODは現在、Outer Wildsパッチ14と互換性があります。以前のパッチで削除された方法を使用してプロンプトを設定しようとしたため、MODが機能しなくなっていました。今は動作しますが、カスタムシップログモードの修正がまだ待っているため、プロンプトは表示されません。",
         "zipUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/download/2.3.1/dgarro.ShipLogSlideReelPlayer.zip",
         "releaseUrl": "https://github.com/dgarroDC/ShipLogSlideReelPlayer/releases/tag/2.3.1"
       },
@@ -7347,7 +7347,7 @@
         "name": "v0.1.0",
         "date": "2022-11-13",
         "body": "* Adds compatibility between Shipyard and Outer Wilds Online",
-        "bodyZh": "* 航空機工場とアウターワイルズ・オンラインとの互換性を追加します",
+        "bodyZh": "* 航空機工場とOuter Wilds・オンラインとの互換性を追加します",
         "zipUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/download/v0.1.0/Locochoco.ShipyardOWOAddon.zip",
         "releaseUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/tag/v0.1.0"
       }
@@ -7480,7 +7480,7 @@
         "name": "1.1.0",
         "date": "2023-01-07",
         "body": "- You can now warp to the STS2 system\r\n- Kamika has an updated shiplog",
-        "bodyZh": "- アウターワイルズにワープできるようになりました\r\n- Kamikaの船の航行記録が更新されました",
+        "bodyZh": "- Outer Wildsにワープできるようになりました\r\n- Kamikaの船の航行記録が更新されました",
         "zipUrl": "https://github.com/RealOrbital32/Solar-Systems-I-Made-as-a-Kid/releases/download/1.1.0/O32.ssimaak.zip",
         "releaseUrl": "https://github.com/RealOrbital32/Solar-Systems-I-Made-as-a-Kid/releases/tag/1.1.0"
       },
@@ -9371,7 +9371,7 @@
         "name": "1.1.1",
         "date": "2023-09-28",
         "body": "Fix bottom prompts not showing after Outer Wilds Patch 14 (upper right prompts are already visible after the last Custom Ship Log Modes update)",
-        "bodyZh": "アウターワイルズパッチ14以降、下部のプロンプトが表示されないのを修正（最後のカスタムシップログモード更新後、右上のプロンプトは既に表示されています）",
+        "bodyZh": "Outer Wildsパッチ14以降、下部のプロンプトが表示されないのを修正（最後のカスタムシップログモード更新後、右上のプロンプトは既に表示されています）",
         "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.1.1/dgarro.EpicasAlbum.zip",
         "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.1.1"
       },
@@ -9753,7 +9753,7 @@
         "name": "Version 0.1.1",
         "date": "2023-07-07",
         "body": "Outer Wilds Kazoo: Now with actual Kazoo sound files. Whoops.",
-        "bodyZh": "アウターワイルズ カズー: 本物のカズー音ファイル付き。あらやだ。",
+        "bodyZh": "Outer Wilds カズー: 本物のカズー音ファイル付き。あらやだ。",
         "zipUrl": "https://github.com/GoldenCrepe/OuterWildsKazoo/releases/download/v0.1.1/GoldenCrepe.OuterWildsKazoo.zip",
         "releaseUrl": "https://github.com/GoldenCrepe/OuterWildsKazoo/releases/tag/v0.1.1"
       },
@@ -9931,7 +9931,7 @@
         "name": "Version 1.0.6",
         "date": "2023-11-16",
         "body": "* Added Japanese translation by Orclecle\r\n* Implemented a Curiosity and colors in the Ship Log\r\n* Disabled the debug spam in the log",
-        "bodyZh": "* アウターワイルズの日本語翻訳をOrclecleが追加しました\n* 航行記録に好奇心と色を実装しました\n* ログのデバッグスパムを無効にしました",
+        "bodyZh": "* Outer Wildsの日本語翻訳をOrclecleが追加しました\n* 航行記録に好奇心と色を実装しました\n* ログのデバッグスパムを無効にしました",
         "zipUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/download/v1.0.6/GameWyrm.HearthsNeighbor.zip",
         "releaseUrl": "https://github.com/GameWyrm/HearthsNeighbor/releases/tag/v1.0.6"
       },
@@ -10429,7 +10429,7 @@
         "name": "Version 0.1.4",
         "date": "2024-06-06",
         "body": "Made Hourglass Twins' water exchange loop infinitely\r\nFixed a constant error caused by a shader on the HGT getting angry about the missing sand\r\nFixed the ice blocking the Interloper's entrance not being hidden + redundant gm notification volumes\r\nFixed a light in a module on the OPC being keeploaded, which looked weird from far away\r\nFixed some low gravity volumes on the Hanging City highways\r\nAdded a landing pad to the Sun Station and slapped the Hotshot achievement thing on there (disclaimer: no idea if it works!!)\r\n\r\nNOTE: This mod disables the supernova and the loop ending on its own. You will be free to explore as long as you wish, but you will need to find death yourself to save and restart the star system!",
-        "bodyZh": "アウターワイルズの水交換ループを無限にしました\nHGTのシェーダーが足場のない砂について怒ってしまっていた定常的なエラーを修正しました\nインターローパーの入り口を遮る氷が隠されておらず、余分なgm通知ボリュームがあったのを修正しました\nOPCのモジュールの光が遠くから見ておかしく見えるようにkeeploadedされていたのを修正しました\nハングイングシティハイウェイで低重力ボリュームをいくつか修正しました\nサンステーションに着陸パッドを追加し、そこにHotshotの達成事象を貼りました（免責事項：動作するかどうかはわかりません！！）\n\n注意：このMODは超新星とそれ自体でループが終了するのを無効にします。望む限り探索できますが、星系を保存し再開するには、自分で死ぬ必要があります！",
+        "bodyZh": "Outer Wildsの水交換ループを無限にしました\nHGTのシェーダーが足場のない砂について怒ってしまっていた定常的なエラーを修正しました\nインターローパーの入り口を遮る氷が隠されておらず、余分なgm通知ボリュームがあったのを修正しました\nOPCのモジュールの光が遠くから見ておかしく見えるようにkeeploadedされていたのを修正しました\nハングイングシティハイウェイで低重力ボリュームをいくつか修正しました\nサンステーションに着陸パッドを追加し、そこにHotshotの達成事象を貼りました（免責事項：動作するかどうかはわかりません！！）\n\n注意：このMODは超新星とそれ自体でループが終了するのを無効にします。望む限り探索できますが、星系を保存し再開するには、自分で死ぬ必要があります！",
         "zipUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/download/v0.1.4/SimplerTimes.zip",
         "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/v0.1.4"
       },
@@ -11018,7 +11018,7 @@
         "name": "Version 2.0.0",
         "date": "2025-09-15",
         "body": "- Made the jam hub work with the jam 3, jam 5, and base-game systems\r\n  - Due to this, also removed the jam 3 dependency\r\n- Added more modders to the party shack\r\n- Updated models and dialogue for many modders in the party shack\r\n- Added way more mods to the exhibits around the equator",
-        "bodyZh": "- アウターワイルズのジャムハブがジャム3、ジャム5、およびベースゲームシステムと互換性を持つようにしました\r\n  - これにより、ジャム3の依存関係も削除しました\r\n- パーティーシェックにさらにモダーマイヤーを追加しました\r\n- パーティーシェックの多くのモダーマイヤーのモデルと対話を更新しました\r\n- 赤道周辺の展示物に多くのMODを追加しました",
+        "bodyZh": "- Outer Wildsのジャムハブがジャム3、ジャム5、およびベースゲームシステムと互換性を持つようにしました\r\n  - これにより、ジャム3の依存関係も削除しました\r\n- パーティーシェックにさらにモダーマイヤーを追加しました\r\n- パーティーシェックの多くのモダーマイヤーのモデルと対話を更新しました\r\n- 赤道周辺の展示物に多くのMODを追加しました",
         "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v2.0.0/coderCleric.JamHub.zip",
         "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v2.0.0"
       },
@@ -11036,7 +11036,7 @@
         "name": "Version 1.1.1",
         "date": "2024-04-20",
         "body": "Orrery no longer explodes if NH mods unrelated to the jam are active.",
-        "bodyZh": "アウターワイルズのオーレリウムは、ジャムに関連しないNH modsがアクティブである場合、 longer explodes if NH mods unrelated to the jam are active.",
+        "bodyZh": "Outer Wildsのオーレリウムは、ジャムに関連しないNH modsがアクティブである場合、 longer explodes if NH mods unrelated to the jam are active.",
         "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v1.1.1/coderCleric.JamHub.zip",
         "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v1.1.1"
       },
@@ -11635,7 +11635,7 @@
         "name": "Tripping and Clumsiness",
         "date": "2024-04-06",
         "body": "Brings back the strange features from Hiker's Mod v1.6.5!\r\n\r\nFeatures:\r\n- Trip randomly\r\n- Get yeeted by the scout launcher\r\n- Have the jetpack booster pull an Uno reverse card on you\r\n- Trip when you get a boo-boo",
-        "bodyZh": "アウターワイルズ v1.6.5のHiker's Modの奇妙な機能を復活させます！\n\n機能：\n- 乱に行く\n- 探査ローラーで蹴飛ばされる\n- ジェットパックブースターがあなたにユーノ逆転カードを引かせる\n- 嬉しい時に行く",
+        "bodyZh": "Outer Wilds v1.6.5のHiker's Modの奇妙な機能を復活させます！\n\n機能：\n- 乱に行く\n- 探査ローラーで蹴飛ばされる\n- ジェットパックブースターがあなたにユーノ逆転カードを引かせる\n- 嬉しい時に行く",
         "zipUrl": "https://github.com/Owen013/TrippingAndClumsiness/releases/download/v1.0.0/Owen_013.TrippingAndClumsiness.zip",
         "releaseUrl": "https://github.com/Owen013/TrippingAndClumsiness/releases/tag/v1.0.0"
       }
@@ -12161,7 +12161,7 @@
         "name": "Version 1.0.0",
         "date": "2024-06-19",
         "body": "- Adds pause menu options to instantly go to and from the Eye of the Universe. Useful if you're making a mod set at the Eye.",
-        "bodyZh": "- アウターワイルズの宇宙の眼に瞬時に移動し、戻るための一時停止メニューのオプションを追加します。宇宙の眼を舞台にしたMODを作成している場合に便利です。",
+        "bodyZh": "- Outer Wildsの宇宙の眼に瞬時に移動し、戻るための一時停止メニューのオプションを追加します。宇宙の眼を舞台にしたMODを作成している場合に便利です。",
         "zipUrl": "https://github.com/xen-42/outer-wilds-eye-helper/releases/download/v1.0.0/xen.EyeHelper.zip",
         "releaseUrl": "https://github.com/xen-42/outer-wilds-eye-helper/releases/tag/v1.0.0"
       }
@@ -12993,7 +12993,7 @@
         "name": "PodracingTracker v0.1.0",
         "date": "2024-12-24",
         "body": "Podracing is a challenge in Outer Wilds revolving around flying around the Solar System and landing on specific locations. The more locations you land on, the higher your score. The Podracing Tracker modification is then a mod specifically designed to track the score and rules of Podracing.",
-        "bodyZh": "ポッドレースは、アウターワイルズにおける挑戦で、太陽系を飛び回って特定の場所に着陸することを中心に構成されています。着陸した場所が多いほど、スコアは高くなります。ポッドレーストラッカーMODは、そのスコアとルールを追跡するために特別に設計されたMODです。",
+        "bodyZh": "ポッドレースは、Outer Wildsにおける挑戦で、太陽系を飛び回って特定の場所に着陸することを中心に構成されています。着陸した場所が多いほど、スコアは高くなります。ポッドレーストラッカーMODは、そのスコアとルールを追跡するために特別に設計されたMODです。",
         "zipUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/download/0.1.0/TheIterator.PodracingTracker.zip",
         "releaseUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/tag/0.1.0"
       }
@@ -13376,7 +13376,7 @@
         "name": "1.0.0",
         "date": "2025-05-16",
         "body": "created the mod from the fabric of spacetime. what's the point of living, anyway? are we all just here for no reason, no, deeper meaning? or did someone create us for the sole purpose of making outer wilds mods screwing up what people were expecting?",
-        "bodyZh": "時空の布からこのMODを作り出しました。生きる意味は何だっただろう？私たちは全員、無意味にここにいるだけなのか？いいえ、深い意味があるはずだ。それとも、誰かがアウターワイルズのMODを作るためだけに私たちを作り出し、人々の期待を裏切るようにしたのか？",
+        "bodyZh": "時空の布からこのMODを作り出しました。生きる意味は何だっただろう？私たちは全員、無意味にここにいるだけなのか？いいえ、深い意味があるはずだ。それとも、誰かがOuter WildsのMODを作るためだけに私たちを作り出し、人々の期待を裏切るようにしたのか？",
         "zipUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/download/1.0.0/Solec.ScrewYouUnIcesYourDarkBramble.zip",
         "releaseUrl": "https://github.com/SolecAnimations/Ice-Consistency/releases/tag/1.0.0"
       }
@@ -15150,7 +15150,7 @@
         "name": "Version 1.0.0",
         "date": "2026-04-01",
         "body": "Outer Wilds is a game loosely based on real-world astronomy and orbital physics, but as anyone who has taken a high school physics class could tell you, the game is clearly not scientifically accurate at all. A black hole that doesn't spaghettify you? Trees that produce infinite oxygen? Sand passing back and forth between two planets? These are just a few of the many scientifically inaccurate things in the game. This mod removes all of the planets that are scientifically inaccurate, leaving only the ones that are scientifically accurate. The result is a much more realistic and scientifically accurate Outer Wilds experience.",
-        "bodyZh": "アウターワイルズは、現実世界の天文学と軌道物理学に弱く基づいたゲームですが、高校物理の授業を受けている誰でもわかるように、このゲームは全く科学的に正確ではありません。ブラックホールがあなたをスパゲッティ化しない？ 無限の酸素を生産する木？ 二つの惑星の間で砂が往復する？ これらは、このゲームに存在する科学的に不正確な多くの事柄のほんの数例です。このMODは、科学的に不正確なすべての惑星を削除し、科学的に正確なものだけを残します。結果は、もっと現実的で科学的に正確なアウターワイルズの体験になります。",
+        "bodyZh": "Outer Wildsは、現実世界の天文学と軌道物理学に弱く基づいたゲームですが、高校物理の授業を受けている誰でもわかるように、このゲームは全く科学的に正確ではありません。ブラックホールがあなたをスパゲッティ化しない？ 無限の酸素を生産する木？ 二つの惑星の間で砂が往復する？ これらは、このゲームに存在する科学的に不正確な多くの事柄のほんの数例です。このMODは、科学的に不正確なすべての惑星を削除し、科学的に正確なものだけを残します。結果は、もっと現実的で科学的に正確なOuter Wildsの体験になります。",
         "zipUrl": "https://github.com/Hawkbat/ow-mod-april-fools-2026/releases/download/v1.0.0/ow-mod-april-fools-2026.zip",
         "releaseUrl": "https://github.com/Hawkbat/ow-mod-april-fools-2026/releases/tag/v1.0.0"
       }
