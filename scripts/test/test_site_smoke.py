@@ -126,6 +126,15 @@ def test_detail_ux_markers():
     assert tmpl.exists()                                  # issue 模板
 
 
+def test_static_mod_page_markers():
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert 'href="mod/' in js                                # 卡片链接指向静态详情页
+    assert "\\/mod\\/" in js                                 # 静态页 URL 路径解析
+    for page in ("index.html", "mods.html", "mod.html", "jams.html"):
+        html = (REPO_ROOT / "site" / page).read_text(encoding="utf-8")
+        assert '"./mod/*"' in html                            # 预渲染覆盖静态页
+
+
 def test_official_mod_links_rewritten_markers():
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
     assert "rewriteOfficialModLinks" in js

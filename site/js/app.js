@@ -84,7 +84,7 @@ function cardHtml(m, idx) {
   const visual = thumb
     ? `<span class="thumb-box">${img}</span>`
     : `<span class="thumb-box ph-thumb" style="background-image:url('png/16to9.webp')"><span class="ph-text">${esc(m.name || m.uniqueName || "?")}</span></span>`;
-  return `<a class="mod-card" href="mod.html?uniqueName=${encodeURIComponent(m.uniqueName)}">
+  return `<a class="mod-card" href="mod/${encodeURIComponent(m.uniqueName)}.html">
     ${visual}
     <h3>${esc(m.name)}</h3>
     <div class="meta">${esc(m.authorDisplay)} · v${esc(m.version)} · ${window.t ? t("meta.downloads", { n: m.downloadCount }) : (m.downloadCount + " 次下载")}</div>
@@ -390,7 +390,7 @@ function rewriteOfficialModLinks(scope) {
     if (!m) return;
     const uid = slugMap[m[1]];
     if (uid) {
-      a.href = "mod.html?uniqueName=" + encodeURIComponent(uid);
+      a.href = "mod/" + encodeURIComponent(uid) + ".html";
       a.removeAttribute("target");
     }
   });
@@ -595,7 +595,7 @@ function initAddons(mod, allMods) {
     return m ? m[1] : t;
   };
   const card = (m, label) => `<a class="mod-card" href="${m.uniqueName && !/^https?:/.test(m.uniqueName)
-      ? "mod.html?uniqueName=" + encodeURIComponent(m.uniqueName)
+      ? "mod/" + encodeURIComponent(m.uniqueName) + ".html"
       : (esc(m.repoUrl || m.repo || "#"))}" target="${m.uniqueName && !/^https?:/.test(m.uniqueName) ? "" : "_blank"}" rel="noopener">
       <div><h3>${esc(label || m.name || shortLabel(m.repo || m.repoUrl || m.uniqueName) || m.uniqueName)}</h3>
       <div class="meta">${esc(shortLabel(m.repo || m.repoUrl || m.uniqueName) || "")}</div></div></a>`;
@@ -709,7 +709,8 @@ function initReadme(mod) {
 
 function renderDetail(mods) {
   const params = new URLSearchParams(location.search);
-  const uniqueName = params.get("uniqueName");
+  const pathHit = location.pathname.match(/\/mod\/([^/]+)\.html$/);
+  const uniqueName = pathHit ? decodeURIComponent(pathHit[1]) : params.get("uniqueName");
   const mod = mods.find((m) => m.uniqueName === uniqueName);
   const main = document.getElementById("detail");
   if (!main) return;
@@ -721,11 +722,11 @@ function renderDetail(mods) {
   document.title = mod.name + " — 星际拓荒 MOD 数据库";
   const thumb = thumbUrl(mod);
   const repoParts = (mod.repo || "").split("/");
-  const repoOwner = repoParts.length >= 2 ? (repoParts[repoParts.length - 2] || "") : "";
   const reportBody = `MOD: ${mod.name} (${mod.uniqueName})\n页面: ${location.href}\n\n## 问题描述\n\n(哪里的翻译有问题? 原文是什么?)\n\n## 建议译法\n\n(可选)\n`;
   const reportUrl = "https://github.com/dslsdzc/ow-mod-db/issues/new?template=translation.md&title="
     + encodeURIComponent(`[翻译] ${mod.name} (${mod.uniqueName})`)
     + "&body=" + encodeURIComponent(reportBody);
+  const repoOwner = repoParts.length >= 2 ? (repoParts[repoParts.length - 2] || "") : "";
   main.innerHTML = `
     <div class="detail">
       ${thumb

@@ -88,6 +88,41 @@ def test_site_data_has_exact_key_set():
         assert set(mod.keys()) == expected
 
 
+def test_build_mod_pages_generates_seo_pages(tmp_path):
+    template = (Path(__file__).resolve().parents[2] / "site" / "mod.html").read_text(encoding="utf-8")
+    count = build.build_mod_pages(template, _official()["releases"], _translations(), tmp_path)
+    assert count == 2
+    page = (tmp_path / "mod" / "Alek.OWML.html").read_text(encoding="utf-8")
+    assert '<base href="../">' in page
+    assert "OWML 的模组加载器" in page                     # 中文简介进静态正文
+    assert 'rel="canonical"' in page and "/mod/Alek.OWML.html" in page
+    assert "speculationrules" not in page                  # 静态页不放预渲染规则
+    assert "返回全部 MOD" in page
+    assert 'id="detail"' in page
+
+
+def test_build_mod_pages_skips_unsafe_filenames(tmp_path):
+    template = (Path(__file__).resolve().parents[2] / "site" / "mod.html").read_text(encoding="utf-8")
+    mods = [{"uniqueName": "a/b", "name": "x"}, {"uniqueName": "ok.Mod", "name": "y"}]
+    count = build.build_mod_pages(template, mods, {}, tmp_path)
+    assert count == 1
+    assert (tmp_path / "mod" / "ok.Mod.html").exists()
+
+
+def test_build_mod_pages_rejects_template_drift(tmp_path):
+    with pytest.raises(ValueError, match="模板缺少预期标记"):
+        build.build_mod_pages("<html><body>no markers</body></html>", [], {}, tmp_path)
+
+
+def test_build_seo_files_lists_pages(tmp_path):
+    build.build_seo_files(tmp_path, _official()["releases"], "2026-10-13T00:00:00Z")
+    sitemap = (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
+    assert "/mod/Alek.OWML.html" in sitemap and "/mods.html" in sitemap
+    assert "<lastmod>2026-10-13</lastmod>" in sitemap
+    robots = (tmp_path / "robots.txt").read_text(encoding="utf-8")
+    assert "Sitemap:" in robots and "/sitemap.xml" in robots
+
+
 def test_deploy_site_copies_files(tmp_path):
     site = tmp_path / "site"
     (site / "css").mkdir(parents=True)
