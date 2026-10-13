@@ -42,6 +42,10 @@ on:
         description: '忽略内容哈希全量重翻 README(翻译策略升级后使用)'
         type: boolean
         default: false
+      scan_licenses_full:
+        description: '全量重扫仓库许可(检测作者许可变更;平时增量只补新 mod)'
+        type: boolean
+        default: false
 
 concurrency:
   group: sync-translate
@@ -67,6 +71,12 @@ jobs:
 
       - name: Sync official database
         run: python scripts/sync.py --lang ${{ inputs.lang || 'zh_cn' }}
+
+      # 增量补扫新 mod 的许可(无缺失时零 API 调用); 手动 dispatch 可勾选全量重扫
+      - name: Scan licenses (GitHub API)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/licenses.py ${{ inputs.scan_licenses_full && '--full' || '' }}
 
       # 定时轮询专用: 官方库与快照一致且待翻译清单无变化 → 提前退出,不部署
       - name: Upstream change check

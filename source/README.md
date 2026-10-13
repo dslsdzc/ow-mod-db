@@ -37,6 +37,16 @@ AI 翻译必须遵守的术语对照,分两节:
 ["Some.AuthorMod"]
 ```
 
+### `source/license_overrides.json` —— 许可人工裁决(根目录,全部语言共享)
+
+格式 `{"uniqueName": "SPDX标识"}`,**优先级高于自动扫描**。用于修正 GitHub 无法识别但经人工确认的许可(`NOASSERTION`),或确认开放许可后开启对应翻译:
+
+```json
+{ "picalines.OuterScout": "MIT" }
+```
+
+**更新方式**: 修改后推送即生效——流水线每次同步都会重新合并本表(随翻译缓存一同提交)。
+
 ## 自动生成(勿手改)
 
 按语言目录 `source/<lang>/`,由对应脚本带 `--lang` 生成:
@@ -63,7 +73,7 @@ AI 翻译必须遵守的术语对照,分两节:
 | 文件 | 内容 | 何时重写 |
 |---|---|---|
 | `official.json` | 官方数据库快照 | 每次同步 |
-| `license_cache.json` | 各 mod 仓库许可扫描结果 | 新 mod 出现时 |
+| `license_cache.json` | 各 mod 仓库许可扫描结果(`scripts/licenses.py` 查 GitHub API;`license_overrides.json` 人工裁决优先) | 每次同步(增量补新 mod);`workflow_dispatch` 勾选 `scan_licenses_full` 可全量重扫检测许可变更 |
 
 ## 多语言
 
