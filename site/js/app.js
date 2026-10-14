@@ -511,11 +511,20 @@ function initReleases(mod) {
             btn.onclick = async () => {
               if (btn.classList.contains("busy")) return;
               if (btn.dataset.showing === "translation") {
+                // 译文 → 英文原文
                 renderMarkdownInto(bodyEl, r.body, "");
                 btn.dataset.showing = "original";
-                btn.textContent = r.bodyZh
+                btn.textContent = (r.bodyZh || msCache.has(gi))
                   ? (window.t ? t("releases.translation") : "中文译文")
                   : (window.t ? t("readme.msView") : "翻译");
+                return;
+              }
+              const cached = msCache.get(gi) || r.bodyZh;
+              if (cached) {
+                // 已有现成译文(预翻译或已即时翻译过) → 直接切回, 不重复请求机翻
+                renderMarkdownInto(bodyEl, cached, "");
+                btn.dataset.showing = "translation";
+                btn.textContent = window.t ? t("releases.original") : "原文";
                 return;
               }
               btn.classList.add("busy");

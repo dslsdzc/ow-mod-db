@@ -137,11 +137,16 @@ def test_detail_readme_toggle_between_translation_and_original(page, site_server
     assert "Hello Original" not in page.locator("#readme-content").inner_text()
 
 
-def _install_ms_mock(page, text="测试译文"):
-    """拦截微软 Edge 翻译端点, 按请求条数回等长译文(离线确定性测试)。"""
+def _install_ms_mock(page, text="测试译文", counter=None):
+    """拦截微软 Edge 翻译端点, 按请求条数回等长译文(离线确定性测试)。
+
+    counter: 传入 list 时, 每次请求追加 URL(用于断言"不该发请求"的场景)。
+    """
     import json as _json
 
     def handler(route):
+        if counter is not None:
+            counter.append(route.request.url)
         texts = _json.loads(route.request.post_data or "[]")
         body = _json.dumps([{"translations": [{"text": text}]} for _ in texts],
                            ensure_ascii=False)
@@ -188,3 +193,174 @@ def test_seo_files_served(page, site_server):
     assert sitemap.ok and "urlset" in sitemap.text()
     robots = page.request.get(site_server + "/robots.txt")
     assert robots.ok and "Sitemap:" in robots.text()
+
+
+def test_list_search_filter_empty_and_clear(page, site_server):
+    """列表页搜索闭环: 中文词过滤→无结果空状态→清空恢复全量。"""
+    page.goto(site_server + "/mods.html")
+    page.wait_for_selector(".mod-card")
+    n0 = page.locator(".mod-card").count()
+    assert n0 > 50
+    page.fill("#search", "新视野")
+    page.wait_for_timeout(700)
+    n1 = page.locator(".mod-card").count()
+    assert 0 < n1 < n0 and "新视野" in page.locator(".mod-card").first.inner_text()
+    page.fill("#search", "zzzqqq不存在")
+    page.wait_for_timeout(700)
+    assert page.locator(".mod-card").count() == 0
+    assert "没有匹配" in page.locator("main").inner_text()
+    page.fill("#search", "")
+    page.wait_for_timeout(700)
+    assert page.locator(".mod-card").count() == n0
+
+
+def test_list_sort_switches_reorder(page, site_server):
+    """排序四选项逐一切换: 卡片数不变, 不同排序给出不同首卡(排序真实生效)。"""
+    page.goto(site_server + "/mods.html")
+    page.wait_for_selector(".mod-card")
+    n0 = page.locator(".mod-card").count()
+    firsts = set()
+    for value in ("newest", "updated", "name", "installs"):
+        page.select_option("#sort", value)
+        page.wait_for_timeout(400)
+        assert page.locator(".mod-card").count() == n0
+        firsts.add(page.locator(".mod-card h3").first.inner_text())
+    assert len(firsts) >= 3
+
+
+def test_list_tag_chip_toggle(page, site_server):
+    """标签筛选: 点击筛选→再点取消→计数恢复。"""
+    page.goto(site_server + "/mods.html")
+    page.wait_for_selector(".mod-card")
+    n0 = page.locator(".mod-card").count()
+    page.click("#tag-chips .chip[data-tag='gameplay']")
+    page.wait_for_timeout(500)
+    ng = page.locator(".mod-card").count()
+    assert 0 < ng < n0
+    assert page.locator("#tag-chips .chip.active").inner_text().strip() == "gameplay"
+    page.click("#tag-chips .chip[data-tag='gameplay']")
+    page.wait_for_timeout(500)
+    assert page.locator(".mod-card").count() == n0
+
+
+def test_lang_switch_roundtrip(page, site_server):
+    """界面语言切换 zh→ja→zh 往返(切换器 reload 后文案正确)。"""
+    page.goto(site_server + "/mods.html")
+    page.wait_for_selector(".mod-card")
+    vals = page.locator(".lang-switch option").evaluate_all("o => o.map(x => x.value)")
+    ja = [v for v in vals if v != "zh-CN"][0]
+    page.select_option(".lang-switch", ja)
+    page.wait_for_selector(".mod-card")
+    page.wait_for_timeout(300)
+    assert page.locator("main h1").inner_text() == "すべてのMOD"
+    page.select_option(".lang-switch", "zh-CN")
+    page.wait_for_selector(".mod-card")
+    page.wait_for_timeout(300)
+    assert page.locator("main h1").inner_text() == "全部 MOD"
+
+
+def test_releases_zh_toggle_roundtrip(page, site_server):
+    """版本历史按钮状态机闭环:
+    有预翻译版本 原文↔译文 往返全程 0 次机翻请求;
+    无预翻译版本 机翻 1 次后, 往返复用缓存不重复请求(回归: 曾误走机翻)。"""
+    import json as _json
+
+    rels = {"releases": [
+        {"tag": "1.0.0", "name": "1.0.0", "date": "2026-01-01",
+         "body": "Fixed stuff", "bodyZh": "修复了东西"},
+        {"tag": "0.9.0", "name": "0.9.0", "date": "2025-12-01",
+         "body": "Initial release", "bodyZh": ""},
+    ]}
+    ms_calls = []
+    page.route("**/releases/xen.NewHorizons.json*", lambda route: route.fulfill(
+        status=200, content_type="application/json",
+        body=_json.dumps(rels, ensure_ascii=False)))
+    _install_ms_mock(page, text="机翻结果", counter=ms_calls)
+    page.goto(site_server + "/mod/xen.NewHorizons.html")
+    page.wait_for_selector("#detail h1")
+    page.locator("#releases-section").scroll_into_view_if_needed()
+    page.locator("#releases-section .rel-tr").first.wait_for(timeout=10000)
+    assert page.locator("#releases-translate-all").is_visible()   # 0.9.0 待翻
+
+    # ---- 有预翻译版本: 双向往返, 不得触发机翻 ----
+    first = page.locator("#releases-section .rel-item").first
+    assert "修复了东西" in first.inner_text()
+    assert first.locator(".rel-tr").inner_text().strip() == "原文"
+    first.locator(".rel-tr").click()                               # → 原文
+    assert "Fixed stuff" in first.inner_text()
+    assert first.locator(".rel-tr").inner_text().strip() == "中文译文"
+    first.locator(".rel-tr").click()                               # → 切回现成译文(同步)
+    assert "修复了东西" in first.inner_text()
+    assert first.locator(".rel-tr").inner_text().strip() == "原文"
+    assert ms_calls == []                                          # 关键: 全程 0 次机翻
+
+    # ---- 无预翻译版本: 机翻 1 次, 此后往返用缓存 ----
+    second = page.locator("#releases-section .rel-item").nth(1)
+    assert second.locator(".rel-tr").inner_text().strip() == "翻译"
+    second.locator(".rel-tr").click()                              # → 机翻
+    second.locator(".rel-tr", has_text="原文").wait_for(timeout=10000)
+    assert "机翻结果" in second.inner_text()
+    assert len(ms_calls) == 1
+    second.locator(".rel-tr").click()                              # → 原文
+    assert "Initial release" in second.inner_text()
+    assert second.locator(".rel-tr").inner_text().strip() == "中文译文"
+    second.locator(".rel-tr").click()                              # → 复用缓存切回
+    assert "机翻结果" in second.inner_text()
+    assert second.locator(".rel-tr").inner_text().strip() == "原文"
+    assert len(ms_calls) == 1                                      # 仍只有首次请求
+    assert page.locator("#releases-translate-all").is_hidden()     # 全部已翻 → 按钮隐藏
+
+
+def test_detail_share_button_feedback(page, site_server):
+    """分享按钮: 点击→"已复制链接"反馈→约 2 秒后自动恢复原文案。"""
+    page.add_init_script(
+        "Object.defineProperty(navigator, 'clipboard', "
+        "{value: {writeText: () => Promise.resolve()}, configurable: true});"
+        "Object.defineProperty(navigator, 'share', {value: undefined, configurable: true});")
+    page.goto(site_server + "/mod/xen.NewHorizons.html")
+    page.wait_for_selector("#share-btn")
+    label0 = page.locator("#share-btn").inner_text()
+    page.click("#share-btn")
+    page.wait_for_timeout(400)
+    assert "已复制" in page.locator("#share-btn").inner_text()
+    page.wait_for_timeout(2300)
+    assert page.locator("#share-btn").inner_text() == label0
+
+
+def test_to_top_button(page, site_server):
+    """滚动超过阈值后[回顶]出现, 点击回到顶部。"""
+    page.goto(site_server + "/mod/xen.NewHorizons.html")
+    page.wait_for_selector("#detail h1")
+    assert page.locator(".to-top.show").count() == 0
+    page.locator("#readme-section").scroll_into_view_if_needed()
+    page.wait_for_timeout(600)
+    assert page.locator(".to-top.show").count() == 1
+    page.click(".to-top")
+    page.wait_for_timeout(900)
+    assert page.evaluate("window.scrollY") < 10
+
+
+def test_detail_trend_chart_with_data_and_labels_inside(page, site_server):
+    """趋势图有数据态: 折线渲染, 且所有文本标签几何上不越出画布(防裁剪回归)。"""
+    import json as _json
+    import time as _time
+
+    now = int(_time.time())
+    rows = [{"DownloadCount": 50 * i * i, "UnixTimestamp": now - (60 - i) * 86400}
+            for i in range(1, 61)]
+    page.route(re.compile(r"outerwildsmods\.com"), lambda route: route.fulfill(
+        status=200, content_type="application/json", body=_json.dumps(rows)))
+    page.goto(site_server + "/mod/xen.NewHorizons.html")
+    page.wait_for_selector("#detail h1")
+    page.locator("#trend-section").scroll_into_view_if_needed()
+    page.wait_for_timeout(1200)
+    assert page.locator("#trend-section svg polyline").count() == 1
+    inside = page.evaluate("""() => {
+      const svg = document.querySelector('#trend-section svg');
+      const vb = svg.viewBox.baseVal;
+      return [...svg.querySelectorAll('text')].every(t => {
+        const b = t.getBBox();
+        return b.x >= 0 && b.y >= 0 && b.x + b.width <= vb.width && b.y + b.height <= vb.height;
+      });
+    }""")
+    assert inside is True
