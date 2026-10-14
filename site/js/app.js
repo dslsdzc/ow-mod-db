@@ -474,24 +474,39 @@ function initReleases(mod) {
       if (!rels.length) { section.remove(); return; }
       section.hidden = false;
       const SHOW = 5;
+      const msCache = new Map();     // 版本索引 -> 微软即时译文(仅本次阅读,不保存)
+      let currentItems = [];
+      const isTranslated = (i, r) => !!(r.bodyZh || msCache.has(i));
+
+      const allBtn = document.getElementById("releases-translate-all");
+      const updateTranslateAll = () => {
+        if (!allBtn) return;
+        allBtn.hidden = !rels.some((r, i) => r.body && !isTranslated(i, r));
+      };
 
       function renderItems(items) {
-        const itemHtml = (r) => `<div class="rel-item">
+        currentItems = items;
+        const itemHtml = (r) => {
+          const gi = rels.indexOf(r);
+          const done = isTranslated(gi, r);
+          return `<div class="rel-item">
           <div class="rel-head">
             <a class="rel-tag" href="${esc(r.zipUrl || r.releaseUrl || "#")}" target="_blank" rel="noopener">${esc(r.tag)}</a>
             <span class="rel-meta">${esc(r.name !== r.tag ? r.name : "")} · ${esc(r.date)}</span>
             ${r.zipUrl ? `<a class="rel-zip" href="${esc(r.zipUrl)}" target="_blank" rel="noopener">zip</a>` : ""}
-            ${r.body ? `<button class="chip rel-tr" data-showing="${r.bodyZh ? "translation" : "original"}">${r.bodyZh ? (window.t ? t("releases.original") : "原文") : (window.t ? t("readme.msView") : "微软翻译")}</button>` : ""}
+            ${r.body ? `<button class="chip rel-tr" data-showing="${done ? "translation" : "original"}">${done ? (window.t ? t("releases.original") : "原文") : (window.t ? t("readme.msView") : "翻译")}</button>` : ""}
           </div>
           ${r.body ? `<div class="readme rel-body"></div>` : ""}
         </div>`;
+        };
         list.innerHTML = items.map(itemHtml).join("");
         [...list.querySelectorAll(".rel-item")].forEach((el, i) => {
           const r = items[i];
+          const gi = rels.indexOf(r);
           const bodyEl = el.querySelector(".rel-body");
           const btn = el.querySelector(".rel-tr");
           if (!r || !r.body) return;
-          renderMarkdownInto(bodyEl, r.bodyZh || r.body, "");
+          renderMarkdownInto(bodyEl, msCache.get(gi) || r.bodyZh || r.body, "");
           if (btn) {
             btn.onclick = async () => {
               if (btn.classList.contains("busy")) return;
@@ -500,16 +515,18 @@ function initReleases(mod) {
                 btn.dataset.showing = "original";
                 btn.textContent = r.bodyZh
                   ? (window.t ? t("releases.translation") : "中文译文")
-                  : (window.t ? t("readme.msView") : "微软翻译");
+                  : (window.t ? t("readme.msView") : "翻译");
                 return;
               }
               btn.classList.add("busy");
               btn.textContent = window.t ? t("readme.msLoading") : "翻译中…";
               try {
                 const zh = await msTranslateTexts([r.body]);
+                msCache.set(gi, zh[0] || r.body);
                 renderMarkdownInto(bodyEl, zh[0] || r.body, "");
                 btn.dataset.showing = "translation";
                 btn.textContent = window.t ? t("releases.original") : "原文";
+                updateTranslateAll();
               } catch (e) {
                 btn.textContent = window.t ? t("readme.msFailed") : "翻译失败";
               } finally {
@@ -518,6 +535,49 @@ function initReleases(mod) {
             };
           }
         });
+      }
+
+      if (allBtn) {
+        allBtn.onclick = async () => {
+          if (allBtn.classList.contains("busy")) return;
+          allBtn.classList.add("busy");
+          const origin = window.t ? t("releases.translateAll") : "全部翻译";
+          allBtn.textContent = window.t ? t("readme.msLoading") : "翻译中…";
+          try {
+            const todo = rels.map((r, i) => ({ r, i })).filter(({ r, i }) => r.body && !isTranslated(i, r));
+            for (let s = 0; s < todo.length;) {
+              const group = [];
+              let glen = 0;
+              while (s < todo.length && group.length < 4 && (glen === 0 || glen + todo[s].r.body.length <= 4000)) {
+                group.push(todo[s]);
+                glen += todo[s].r.body.length;
+                s++;
+              }
+              const zhArr = await msTranslateTexts(group.map(({ r }) => r.body));
+              group.forEach(({ r, i }, k) => {
+                if (!zhArr[k]) return;
+                msCache.set(i, zhArr[k]);
+                const ci = currentItems.indexOf(r);
+                if (ci < 0) return;
+                const el = list.querySelectorAll(".rel-item")[ci];
+                const bodyEl = el && el.querySelector(".rel-body");
+                if (bodyEl) renderMarkdownInto(bodyEl, zhArr[k], "");
+                const btn = el && el.querySelector(".rel-tr");
+                if (btn) {
+                  btn.dataset.showing = "translation";
+                  btn.textContent = window.t ? t("releases.original") : "原文";
+                }
+              });
+            }
+            allBtn.textContent = origin;
+          } catch (e) {
+            allBtn.textContent = window.t ? t("readme.msFailed") : "翻译失败";
+            setTimeout(() => { allBtn.textContent = origin; }, 1500);
+          } finally {
+            allBtn.classList.remove("busy");
+            updateTranslateAll();
+          }
+        };
       }
 
       const more = rels.length > SHOW;
@@ -529,6 +589,7 @@ function initReleases(mod) {
         btn.onclick = () => { renderItems(rels); btn.remove(); };
         list.appendChild(btn);
       }
+      updateTranslateAll();
     })
     .catch(() => section.remove());
 }
@@ -692,26 +753,39 @@ function initReadme(mod) {
       const md = await fetchEn();
       const addMsButton = (hintBase) => {
         const btn = document.createElement("button");
-        btn.textContent = window.t ? t("readme.msView") : "微软翻译查看";
+        btn.dataset.showing = "original";
+        btn.textContent = window.t ? t("readme.msView") : "翻译";
         btn.onclick = async () => {
+          if (btn.classList.contains("busy")) return;
+          if (btn.dataset.showing === "translated") {
+            // 当前显示微软翻译 → 切回英文原文
+            showMd(md);
+            setHint(window.t ? t("readme.originalNote") : "英文原文 · 原文版权归作者所有");
+            btn.dataset.showing = "original";
+            btn.textContent = window.t ? t("readme.msView") : "翻译";
+            return;
+          }
           btn.classList.add("busy");
           btn.textContent = window.t ? t("readme.msLoading") : "翻译中…";
           try {
             // 先渲染英文 HTML(链接/图片/代码块保持原样),再只翻译可见文本
             showMd(md);
             await translateReadmeDom(content);
-            setHint(window.t ? t("readme.msResult", { base: hintBase }) : "微软翻译即时结果 · " + hintBase);
+            setHint(window.t ? t("readme.msResult", { base: hintBase }) : "即时翻译结果 · " + hintBase);
+            btn.dataset.showing = "translated";
+            btn.textContent = window.t ? t("readme.viewOriginal") : "查看英文原文";
           } catch (e) {
             setHint(window.t ? t("readme.msFailedMsg", { msg: e.message }) : "翻译失败:" + e.message + " (可换用浏览器自带翻译)");
+            btn.dataset.showing = "original";
+            btn.textContent = window.t ? t("readme.msView") : "翻译";
           } finally {
             btn.classList.remove("busy");
-            btn.textContent = window.t ? t("readme.msView") : "微软翻译查看";
           }
         };
         actions.prepend(btn);
       };
       if (permissive) {
-        setHint(window.t ? t("readme.msHint", { lic }) : lic + " 许可 · 译文生成中,可用「微软翻译查看」即时浏览(不保存)");
+        setHint(window.t ? t("readme.msHint", { lic }) : lic + " 许可 · 译文生成中,可用「翻译」即时浏览(不保存)");
         showMd(md);
         addMsButton(window.t ? t("readme.msOnlyOnce") : "仅本次查看,不保存");
       } else {
@@ -952,7 +1026,10 @@ function renderDetail(mods) {
         <div id="addons-list"></div>
       </div>
       <div class="section" id="releases-section" hidden>
-        <h3>${window.t ? t("detail.releaseHistory") : "版本历史"}</h3>
+        <div class="section-head">
+          <h3>${window.t ? t("detail.releaseHistory") : "版本历史"}</h3>
+          <button id="releases-translate-all" class="chip" hidden>${window.t ? t("releases.translateAll") : "全部翻译"}</button>
+        </div>
         <div id="releases-list"></div>
       </div>
       <div class="section" id="patch-section" hidden>

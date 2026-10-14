@@ -195,6 +195,9 @@ footer code { background: var(--md-surface-container-high); padding: .1rem .4rem
                    padding: 1rem 1.25rem; margin-top: 1.25rem;
                    background: var(--md-surface-container-low); }
 .detail .section h3 { margin: 0 0 .5rem; font-size: 1rem; font-weight: 600; }
+.section-head { display: flex; align-items: center; justify-content: space-between; gap: .6rem; }
+.section-head h3 { margin: 0; }
+.section-head + * { margin-top: .6rem; }
 .detail .section p { white-space: pre-line; }  /* 保留更新说明里的换行 */
 .tag { display: inline-block; padding: .2rem .65rem; border-radius: var(--md-corner-s);
        background: transparent; border: 1px solid var(--md-outline-variant);
