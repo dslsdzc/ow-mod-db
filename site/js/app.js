@@ -364,10 +364,26 @@ async function msTranslateTexts(texts, to) {
   return data.map((item) => (item.translations || []).map((t) => t.text).join(" "));
 }
 
-function renderMermaidBlocks(scope) {
-  if (!window.mermaid) return;
+let mermaidLoad = null;   // mermaid(~3MB) 按需加载: 仅页面真含图表时才拉取, 不拖慢所有详情页
+
+function ensureMermaid() {
+  if (window.mermaid) return Promise.resolve();
+  if (!mermaidLoad) {
+    mermaidLoad = new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js";
+      s.onload = resolve;
+      s.onerror = reject;
+      document.head.appendChild(s);
+    });
+  }
+  return mermaidLoad;
+}
+
+async function renderMermaidBlocks(scope) {
   const blocks = [...(scope || document).querySelectorAll("pre > code.language-mermaid")];
-  if (!blocks.length) return;
+  if (!blocks.length) return;                        // 无图表: 完全不加载
+  try { await ensureMermaid(); } catch (e) { return; }   // 加载失败: 保留代码块原文
   mermaid.initialize({ startOnLoad: false, theme: "dark" });
   blocks.forEach(async (code) => {
     try {

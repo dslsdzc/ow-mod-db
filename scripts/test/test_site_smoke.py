@@ -124,6 +124,23 @@ def test_home_cta_link_targets():
     assert "issues/new?template=translation.md" in html
 
 
+def test_detail_libs_local_and_mermaid_lazy():
+    """详情页渲染库本地化(vendor) + mermaid 只按需加载 + 脚本全 defer —— 防回退 CDN 阻塞。"""
+    for page in ("mod.html", "jams.html"):
+        html = (REPO_ROOT / "site" / page).read_text(encoding="utf-8")
+        assert "js/vendor/marked.min.js" in html and "js/vendor/purify.min.js" in html
+        assert "npm/marked" not in html and "npm/dompurify" not in html
+        assert "mermaid" not in html            # mermaid(~3MB) 禁止静态引入, 仅 app.js 按需动态注入
+        assert '<script defer src="js/app.js">' in html
+    for page in ("index.html", "mods.html", "mod.html", "jams.html"):
+        html = (REPO_ROOT / "site" / page).read_text(encoding="utf-8")
+        assert '<script defer src="js/i18n.js">' in html   # 脚本全 defer, 不阻塞渲染
+    js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
+    assert "ensureMermaid" in js                # 按需加载器存在
+    for f in ("marked.min.js", "purify.min.js", "LICENSE-marked.md", "LICENSE-dompurify.txt"):
+        assert (REPO_ROOT / "site" / "js" / "vendor" / f).exists()
+
+
 def test_detail_ux_markers():
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
     assert "issues/new?template=translation.md" in js    # 报告翻译问题入口

@@ -327,6 +327,34 @@ def test_detail_share_button_feedback(page, site_server):
     assert page.locator("#share-btn").inner_text() == label0
 
 
+def test_detail_mermaid_not_loaded_without_diagram(page, site_server):
+    """无图表的详情页不得加载 mermaid(~3MB) —— 按需加载器不得误触发(回归: 曾全站静态加载, DCL 4.2s)。"""
+    page.goto(site_server + "/mod/Tlya.OnlyTH.html")
+    page.wait_for_selector("#detail h1")
+    page.wait_for_timeout(2500)          # README 渲染流程完全结束
+    assert page.evaluate("typeof window.mermaid") == "undefined"
+
+
+def test_detail_mermaid_renders_when_needed(page, site_server):
+    """更新说明含 ```mermaid 代码块时: 动态拉取并渲染为 SVG(按需路径闭环)。"""
+    import json as _json
+
+    fake = ("window.mermaid = { initialize(){}, "
+            "render: async () => '<svg class=\"fake-mermaid\"></svg>' };")
+    page.route(re.compile(r"cdn\.jsdelivr\.net.*mermaid"), lambda route: route.fulfill(
+        status=200, content_type="application/javascript", body=fake))
+    rels = {"releases": [{"tag": "1.0.0", "name": "1.0.0", "date": "2026-01-01",
+                          "body": "```mermaid\ngraph TD; A-->B;\n```", "bodyZh": ""}]}
+    page.route("**/releases/xen.NewHorizons.json*", lambda route: route.fulfill(
+        status=200, content_type="application/json",
+        body=_json.dumps(rels, ensure_ascii=False)))
+    page.goto(site_server + "/mod/xen.NewHorizons.html")
+    page.wait_for_selector("#detail h1")
+    page.locator("#releases-section").scroll_into_view_if_needed()
+    page.locator("#releases-section .rel-body").first.wait_for(timeout=10000)
+    page.locator("#releases-section svg.fake-mermaid").wait_for(timeout=10000)
+
+
 def test_home_cta_buttons_no_overlap_and_contained(page, site_server):
     """首页/管理器页 CTA 按钮: 换行时不得互相重叠, 且不得溢出所在区块(防行高塌陷回归)。"""
     for path, sec_id in (("/index.html", "community"), ("/index.html", "contribute"),
