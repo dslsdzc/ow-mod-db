@@ -104,6 +104,9 @@ footer code { background: var(--md-surface-container-high); padding: .1rem .4rem
 .link:hover { text-decoration: underline; }
 
 /* ---- buttons: filled / tonal / outlined ---- */
+/* Turbo 无刷新导航进度条(MD3 主色) */
+.turbo-progress-bar { height: 3px; background: var(--md-primary); }
+
 .cta-row { display: flex; flex-wrap: wrap; gap: .5rem .6rem; align-items: flex-start; }
 .cta { padding: .5rem 1.2rem; border-radius: var(--md-corner-full); text-decoration: none;
        background: var(--md-secondary-container); color: var(--md-on-secondary-container);

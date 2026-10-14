@@ -382,6 +382,48 @@ def test_home_cta_buttons_no_overlap_and_contained(page, site_server):
             assert contained is True, f"#{sec_id} 按钮溢出区块边界"
 
 
+def test_turbo_navigates_without_full_reload(page, site_server):
+    """Turbo 无刷新导航: 列表↔详情切换不触发整页加载(导航条目始终为 1), 且零 JS 错误。"""
+    errors = []
+    page.on("pageerror", lambda e: errors.append(str(e)[:120]))
+    NAV = "performance.getEntriesByType('navigation').length"
+    page.goto(site_server + "/mods.html")
+    page.wait_for_selector(".mod-card")
+    assert page.evaluate(NAV) == 1
+    page.locator(".mod-card").first.click()
+    page.wait_for_selector("#detail h1")
+    page.wait_for_timeout(1800)
+    assert page.evaluate(NAV) == 1                     # 关键: 未发生真导航(否则 +1)
+    assert page.locator("#detail h1").first.inner_text()
+    page.click("nav a[href='mods.html']")
+    page.wait_for_selector(".mod-card")
+    page.wait_for_timeout(600)
+    assert page.evaluate(NAV) == 1
+    assert page.locator(".mod-card").count() > 50
+    assert errors == []
+
+
+def test_turbo_back_forward_restores_content(page, site_server):
+    """Turbo 后退/前进: 内容正确恢复, 且全程不发生整页加载。"""
+    NAV = "performance.getEntriesByType('navigation').length"
+    page.goto(site_server + "/mods.html")
+    page.wait_for_selector(".mod-card")
+    page.locator(".mod-card").first.click()
+    page.wait_for_selector("#detail h1")
+    page.wait_for_timeout(1500)
+    detail_url = page.url
+    page.go_back()
+    page.wait_for_selector(".mod-card")
+    page.wait_for_timeout(800)
+    assert "/mods.html" in page.url
+    assert page.locator(".mod-card").count() > 50
+    page.go_forward()
+    page.wait_for_selector("#detail h1")
+    page.wait_for_timeout(1500)
+    assert page.url == detail_url
+    assert page.evaluate(NAV) == 1
+
+
 def test_to_top_button(page, site_server):
     """滚动超过阈值后[回顶]出现, 点击回到顶部。"""
     page.goto(site_server + "/mod/xen.NewHorizons.html")

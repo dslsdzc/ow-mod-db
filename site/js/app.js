@@ -957,6 +957,8 @@ function setupTrendInteractions(box, pts, geo) {
   });
 }
 
+let trendIO = null;   // 趋势懒加载观察器单例: 导航重建时先断开旧的, 防累积
+
 function initTrend(mod) {
   const section = document.getElementById("trend-section");
   const box = document.getElementById("trend-chart");
@@ -989,14 +991,16 @@ function initTrend(mod) {
       fallback();
     }
   };
+  if (trendIO) { trendIO.disconnect(); trendIO = null; }
   if ("IntersectionObserver" in window) {
-    const io = new IntersectionObserver((entries) => {
+    trendIO = new IntersectionObserver((entries) => {
       if (entries.some((en) => en.isIntersecting)) {
-        io.disconnect();
+        trendIO.disconnect();
+        trendIO = null;
         load();
       }
     }, { rootMargin: "300px 0px" });
-    io.observe(section);
+    trendIO.observe(section);
   } else {
     load();
   }
@@ -1088,8 +1092,9 @@ function renderDetail(mods) {
   initTrend(mod);
 }
 
-(function initToTop() {
-  if (document.getElementById("to-top")) return;
+function initToTop(signal) {
+  const old = document.getElementById("to-top");
+  if (old) old.remove();   // Turbo 快照可能带旧按钮: 移除重建, 保证监听绑定到新节点
   const btn = document.createElement("button");
   btn.id = "to-top";
   btn.className = "to-top";
@@ -1110,9 +1115,9 @@ function renderDetail(mods) {
   };
   window.addEventListener("scroll", () => {
     if (!ticking) { ticking = true; requestAnimationFrame(update); }
-  }, { passive: true });
+  }, { passive: true, signal });
   document.body.appendChild(btn);
-})();
+}
 
 // ---- 缩略图本地缓存(Service Worker): 回访时图片秒出; 不支持或注册失败则静默跳过 ----
 if ("serviceWorker" in navigator) {
@@ -1121,8 +1126,22 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-loadMods()
-  .then((data) => {
+// ---- Turbo 生命周期: 首次加载与每次"无刷新导航"后, 都按当前页面重新初始化 ----
+// (turbo:load 首次也会派发, 所以无需另挂 DOMContentLoaded; Turbo 缺失时走兜底)
+let bootAbort = null;     // 清理上一页面挂在 window 上的监听
+let bootSeq = 0;          // 快速连续导航时放弃过期的初始化
+let modsDataCache = null; // 数据跨导航复用, 无刷新切页不再重复拉取
+
+async function boot() {
+  const seq = ++bootSeq;
+  if (bootAbort) bootAbort.abort();
+  bootAbort = new AbortController();
+  if (trendIO) { trendIO.disconnect(); trendIO = null; }
+  initToTop(bootAbort.signal);
+  try {
+    if (!modsDataCache) modsDataCache = await loadMods();
+    if (seq !== bootSeq) return;             // 期间又发生了新导航: 放弃本次初始化
+    const data = modsDataCache;
     const mods = data.mods || [];
     const meta = data.meta || {};
     initSlugMap(mods);
@@ -1137,10 +1156,21 @@ loadMods()
     else if (document.getElementById("jams")) renderJams(mods);
     else if (document.getElementById("mod-grid")) renderList(mods);
     else renderDetail(mods);
-  })
-  .catch((err) => {
+  } catch (err) {
     const target = document.getElementById("detail")
       || document.getElementById("mod-grid")
       || document.getElementById("featured");
     if (target) target.innerHTML = `<p class="placeholder">${window.t ? t("load.failed") : "加载失败:"}${esc(err.message)}</p>`;
-  });
+  }
+}
+
+document.addEventListener("turbo:load", boot);
+document.addEventListener("DOMContentLoaded", () => { if (!window.Turbo) boot(); });   // Turbo 缺席时保持传统加载
+
+// 快照清理: 动态注入的内容不进 Turbo 页面缓存, 避免返回时重复/残留
+document.addEventListener("turbo:before-cache", () => {
+  const tt = document.getElementById("to-top");
+  if (tt) tt.remove();
+  const g = document.getElementById("giscus");
+  if (g) g.innerHTML = "";
+});

@@ -329,4 +329,9 @@ window.I18N = {
     apply();
     addLangSwitcher();
   });
+  // Turbo 无刷新导航后: 新 body 需要重新应用语言与语言切换器
+  document.addEventListener("turbo:load", () => {
+    apply();
+    addLangSwitcher();
+  });
 })();

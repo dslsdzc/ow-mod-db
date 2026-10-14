@@ -137,8 +137,18 @@ def test_detail_libs_local_and_mermaid_lazy():
         assert '<script defer src="js/i18n.js">' in html   # 脚本全 defer, 不阻塞渲染
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
     assert "ensureMermaid" in js                # 按需加载器存在
-    for f in ("marked.min.js", "purify.min.js", "LICENSE-marked.md", "LICENSE-dompurify.txt"):
+    for f in ("marked.min.js", "purify.min.js", "turbo.es2017-umd.js",
+              "LICENSE-marked.md", "LICENSE-dompurify.txt", "LICENSE-turbo.txt"):
         assert (REPO_ROOT / "site" / "js" / "vendor" / f).exists()
+
+
+def test_scripts_in_head_for_turbo():
+    """Turbo 只对 head 脚本做执行去重: 站点脚本必须在 </head> 之前(防回退到 body, 否则每次导航重执行)。"""
+    for page in ("index.html", "mods.html", "mod.html", "jams.html", "mod-manager.html", "404.html"):
+        html = (REPO_ROOT / "site" / page).read_text(encoding="utf-8")
+        head, body = html.split("</head>", 1)
+        assert "js/vendor/turbo.es2017-umd.js" in head and "js/app.js" in head, page
+        assert 'src="js/' not in body, f"{page}: body 里不得再有站点脚本(会被 Turbo 每次导航重执行)"
 
 
 def test_detail_ux_markers():
