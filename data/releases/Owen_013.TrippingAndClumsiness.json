@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-02-03T06:33:13Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Tripping and Clumsiness",
+      "date": "2024-04-06",
+      "body": "Brings back the strange features from Hiker's Mod v1.6.5!\r\n\r\nFeatures:\r\n- Trip randomly\r\n- Get yeeted by the scout launcher\r\n- Have the jetpack booster pull an Uno reverse card on you\r\n- Trip when you get a boo-boo",
+      "zipUrl": "https://github.com/Owen013/TrippingAndClumsiness/releases/download/v1.0.0/Owen_013.TrippingAndClumsiness.zip",
+      "releaseUrl": "https://github.com/Owen013/TrippingAndClumsiness/releases/tag/v1.0.0",
+      "bodyZh": "恢复 Hiker's Mod v1.6.5 中的奇特功能！\r\n\r\n功能：\r\n- 随机触发踩坑\r\n- 被侦察发射器弹出\r\n- 喷气背包助推器给你来张 Uno 撤回卡\r\n- 受伤时触发踩坑"
+    }
+  ]
+}

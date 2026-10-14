@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-11-14T00:49:00Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-11-14",
+      "body": "A solar system made with love, from the heads of the folks over on the Modding Discord server.",
+      "zipUrl": "https://github.com/RealOrbital32/discord/releases/download/1.0.0/O32.Discord.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/discord/releases/tag/1.0.0",
+      "bodyZh": "一个充满爱意打造的星系，来自Modding Discord服务器上大家的智慧结晶。"
+    }
+  ]
+}

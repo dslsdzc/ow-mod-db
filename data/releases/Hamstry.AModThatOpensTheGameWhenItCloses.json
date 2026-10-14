@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-07-29T23:03:11Z",
+  "releases": [
+    {
+      "tag": "v2.0.0",
+      "name": "Version 2.0.0",
+      "date": "2026-07-29",
+      "body": "Second release - The Settings Update!\r\n(the first release was supposed to be 1.0.0, but i rushed to put it out lol)",
+      "zipUrl": "https://github.com/Hamstryk/AModThatOpensTheGameWhenItCloses/releases/download/v2.0.0/Hamstry.AModThatOpensTheGameWhenItCloses.zip",
+      "releaseUrl": "https://github.com/Hamstryk/AModThatOpensTheGameWhenItCloses/releases/tag/v2.0.0",
+      "bodyZh": "第二次发布 - 设置更新！\n（第一次发布本应是1.0.0，但我赶着发布了哈哈）"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-07-27",
+      "body": "First Release!",
+      "zipUrl": "https://github.com/Hamstryk/AModThatOpensTheGameWhenItCloses/releases/download/v0.1.0/Hamstry.AModThatOpensTheGameWhenItCloses.zip",
+      "releaseUrl": "https://github.com/Hamstryk/AModThatOpensTheGameWhenItCloses/releases/tag/v0.1.0",
+      "bodyZh": "首次发布！"
+    }
+  ]
+}

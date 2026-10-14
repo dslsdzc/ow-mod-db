@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2025-03-02T00:13:15Z",
+  "releases": [
+    {
+      "tag": "v1.0.5",
+      "name": "Version 1.0.5",
+      "date": "2025-03-02",
+      "body": "- Added Korean translation (thanks Barirn!)\r\n- Added more ambient light to room 1\r\n- Now using NH quantum objects instead of custom implementation (maybe this will lead to QSB compat if I'm not too lazy)",
+      "bodyZh": "- 한국어翻訳を追加 (Barirnさん、ありがとう！)\r\n- ルーム1により多くの環境光を追加\r\n- 今はNH量子オブジェクトを使用している代わりにカスタム実装 (QSB互換性がもたらるかもしれないが、あまり怠けない限り)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/download/v1.0.5/xenandWyrm.EscapeRoomJam4.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/tag/v1.0.5"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2024-11-20",
+      "body": "Hotfix to fix a shiplog entry that is now inaccurate due to changes from 1.0.3",
+      "bodyZh": "ホットフィックス：1.0.3の変更により現在不 chính xác な船記録エントリを修正する",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/download/v1.0.4/xenandWyrm.EscapeRoomJam4.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2024-11-16",
+      "body": "Edited a few hints to be more clear to the player\r\nModified a puzzle's secret solution to be a bit more intuitive",
+      "bodyZh": "編集したヒントをプレイヤーにとってより明確にしました\r\nパズルの秘密の解決策を少し直感的にしました",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/download/v1.0.3/xenandWyrm.EscapeRoomJam4.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2024-11-04",
+      "body": "Wyrm forgot to pull before manually making a release and left out a day worth of work 💀\r\n\r\n- Added credits\r\n- Fixed two softlocks\r\n- Stopped ignition sound effect playing when it shouldn't\r\n- Added game over state\r\n- Localized starting popup and item names\r\n- Changed some item names \r\n- Fixed a global positioning issue for a certain puzzle\r\n- Made a certain puzzle solution more obvious",
+      "bodyZh": "ワームは手動でリリースを作成する前に引き出すのを忘れて、1日分の作業を残してしまいました 💀\n\n- クレジットを追加\n- 2つのソフトロックを修正\n- 無効な時刻に点火サウンドエフェクトが再生されないようにしました\n- ゲームオーバー状態を追加\n- 開始ポップアップとアイテム名をローカライズ\n- 一部のアイテム名を変更\n- 特定のパズルのグローバル位置指定問題を修正\n- 特定のパズルの解決策をより明確にしました",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/download/v1.0.2/xenandWyrm.EscapeRoomJam4.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2024-11-04",
+      "body": "Actually includes the custom assets",
+      "bodyZh": "実際にカスタムアセットが含まれています",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/download/v1.0.1/xenandWyrm.EscapeRoomJam4.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-11-03",
+      "body": "Initial release made for the October 2024 modding jam.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/download/v1.0.0/xenandWyrm.EscapeRoomJam4.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-4/releases/tag/v1.0.0"
+    }
+  ]
+}

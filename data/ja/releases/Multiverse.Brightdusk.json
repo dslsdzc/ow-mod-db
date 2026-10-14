@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2023-01-22T01:25:02Z",
+  "releases": [
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2023-01-22",
+      "body": "- Changed some dialogue to make things sound slightly more physically plausible",
+      "bodyZh": "- 対話を少し変更して、物事が少し物理的に現実的に聞こえるようにしました",
+      "zipUrl": "https://github.com/TheMultiuniverse/Multiverse.Brightdusk/releases/download/v1.2.0/Multiverse.Brightdusk.zip",
+      "releaseUrl": "https://github.com/TheMultiuniverse/Multiverse.Brightdusk/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2023-01-21",
+      "body": "- Fixed some props so they properly load\r\n- Tweaked some planet targeting distances",
+      "bodyZh": "- プロップの一部を修正して適切に読み込むようにしました\r\n- 行星のターゲット距離の一部を調整しました",
+      "zipUrl": "https://github.com/TheMultiuniverse/Multiverse.Brightdusk/releases/download/v1.1.0/Multiverse.Brightdusk.zip",
+      "releaseUrl": "https://github.com/TheMultiuniverse/Multiverse.Brightdusk/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2023-01-21",
+      "body": "Release!",
+      "bodyZh": "リリース！",
+      "zipUrl": "https://github.com/TheMultiuniverse/Multiverse.Brightdusk/releases/download/v1.0.0/Multiverse.Brightdusk.zip",
+      "releaseUrl": "https://github.com/TheMultiuniverse/Multiverse.Brightdusk/releases/tag/v1.0.0"
+    }
+  ]
+}

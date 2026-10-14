@@ -1,0 +1,68 @@
+{
+  "repoUpdatedAt": "2026-02-11T07:09:19Z",
+  "releases": [
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2026-02-11",
+      "body": "# v0.3.0\r\n## Improvements\r\n\r\n* [Create chinese_simple.json #1](https://github.com/TRSasasusu/Guardian/pull/1) by @SanBaiMing ! Thank you!!",
+      "bodyZh": "# v0.3.0\r\n## 改善\r\n\r\n* [Create chinese_simple.json #1](https://github.com/TRSasasusu/Guardian/pull/1) by @SanBaiMing ! ありがとうございます!!",
+      "zipUrl": "https://github.com/TRSasasusu/Guardian/releases/download/v0.3.0/orclecle.Guardian.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Guardian/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.2",
+      "name": "Version 0.2.2",
+      "date": "2025-01-31",
+      "body": "# 0.2.2\r\n## Improvements\r\n* Complete Japanese translation\r\n* Change the position of the hidden hatch to avoid accidentally finding it when trying the hot shot\r\n## Fixes\r\n* Finally fix the physics of the working robot in space",
+      "bodyZh": "# 0.2.2\n## 改善\n* 完全に日本語訳\n* 隠しハッチの位置を変更して、ホットショットを試す際に誤って見つからないように\n## 修正\n* ついに宇宙での動作ロボットの物理を修正",
+      "zipUrl": "https://github.com/TRSasasusu/Guardian/releases/download/v0.2.2/orclecle.Guardian.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Guardian/releases/tag/v0.2.2"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "Version 0.2.1",
+      "date": "2024-11-24",
+      "body": "# v0.2.1\r\n## Fixes\r\n* Ship Logs are correctly revealed even if you start from a specific hatch accidentally discovered instead of a specific station near the sun.",
+      "bodyZh": "# v0.2.1\r\n## 修正\r\n* 航行記録は、太陽の近くの特定のステーションではなく、特定のハッチを誤って発見して開始した場合でも正しく表示されます。",
+      "zipUrl": "https://github.com/TRSasasusu/Guardian/releases/download/v0.2.1/orclecle.Guardian.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Guardian/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2024-11-17",
+      "body": "# v0.2.0\r\n\r\nFixes many things, especially a specific sphere thing.\r\n\r\n## Improvements\r\n* Make Closed Path to utilize a specific sphere thing.\r\n* Emphasize a characteristic of some memories.\r\n* Increase the number of fuels in some places.\r\n* Make a specific crush place good.\r\n## Fixes\r\n* Fix some ship logs revealed in wrong timing.\r\n* Stabilize a specific celestial body movement.",
+      "bodyZh": "# v0.2.0\r\n\r\n多くの問題を修正し、特に特定の球体に関する問題を修正しました。\n\n## 改善\n* 特定の球体を利用するための閉じたパスを作成しました。\n* 一部の記憶の特徴を強調しました。\n* 一部の場所の燃料の数を増やしました。\n* 特定の粉砕場所を良くしました。\n## 修正\n* 間違ったタイミングで表示される航行記録を修正しました。\n* 特定の天体の動きを安定させました。",
+      "zipUrl": "https://github.com/TRSasasusu/Guardian/releases/download/v0.2.0/orclecle.Guardian.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Guardian/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2024-11-12",
+      "body": "Some improvements for user experiences.\r\n\r\n# v0.1.2\r\n## Improvements\r\n* Add RFVolume to a certain hatch to lock it on.\r\n* Add a HUD marker to a certain robot.\r\n* Add a signal on a certain robot, even if it is virtual.\r\n* Separate Provider into Provider and Closed Path to directly go to the clue of a certain hatch.\r\n* Add a rumor about a certain huge structure.\r\n* Add a gravity to align you on a certain place.\r\n## Fixes\r\n* Fix a gravity around a specific station near the sun.",
+      "bodyZh": "ユーザーエクスペリエンスの改善。\n\n# v0.1.2\n## 改善\n* 特定のハッチにRFVolumeを追加してロックする機能を追加。\n* 特定のロボットにHUDマーカーを追加。\n* 虚構であっても特定のロボットにシグナルを追加。\n* プロバイダーをプロバイダーと閉じた経路に分離して、特定のハッチのヒントに直接行けるようにする。\n* 特定の巨大な構造に関する噂を追加。\n* 特定の場所に向かうために重力を追加。\n## 修正\n* 太陽の近くの特定のステーション周辺の重力を修正。",
+      "zipUrl": "https://github.com/TRSasasusu/Guardian/releases/download/v0.1.2/orclecle.Guardian.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Guardian/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2024-11-05",
+      "body": "# v0.1.1\r\n## Improvements\r\n* **Add Ernesto!**\r\n## Fixes\r\n* Map mode works correctly.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/TRSasasusu/Guardian/releases/download/v0.1.1/orclecle.Guardian.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Guardian/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-11-04",
+      "body": "The Initial release of Guardian!!\r\n\r\nThe end of point of this mod is described in the Ship Log now.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/TRSasasusu/Guardian/releases/download/v0.1.0/orclecle.Guardian.zip",
+      "releaseUrl": "https://github.com/TRSasasusu/Guardian/releases/tag/v0.1.0"
+    }
+  ]
+}

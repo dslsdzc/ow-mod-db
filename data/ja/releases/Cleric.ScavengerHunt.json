@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-03-28T00:02:59Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2023-03-28",
+      "body": "Fixed some warnings and made other small improvements.",
+      "bodyZh": "警告をいくつか修正し、他の小さな改善を行いました。",
+      "zipUrl": "https://github.com/coderCleric/Scavenger_Hunt/releases/download/v1.0.1/Scavenger_Hunt.zip",
+      "releaseUrl": "https://github.com/coderCleric/Scavenger_Hunt/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Scavenger Hunt v1.0.0",
+      "date": "2023-01-21",
+      "body": "The first release, as submitted for the mod jam.",
+      "bodyZh": "初回リリース、MODジャム用に提出されたもの。",
+      "zipUrl": "https://github.com/coderCleric/Scavenger_Hunt/releases/download/v1.0.0/Cleric.ScavengerHunt.zip",
+      "releaseUrl": "https://github.com/coderCleric/Scavenger_Hunt/releases/tag/v1.0.0"
+    }
+  ]
+}

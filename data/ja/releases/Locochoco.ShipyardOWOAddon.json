@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2022-11-23T01:43:40Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2022-11-23",
+      "body": "* Uses newer systems from shipyard",
+      "bodyZh": "* 船台から新しいシステムを使用",
+      "zipUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/download/v0.1.2/Locochoco.ShipyardOWOAddon.zip",
+      "releaseUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-11-15",
+      "body": "* Using new Shipyard prefab system (need to use version v.1.8 or higher)",
+      "bodyZh": "* 新しいShipyardプレハブシステムを使用（v.1.8以上のバージョンが必要）",
+      "zipUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/download/v0.1.1/Locochoco.ShipyardOWOAddon.zip",
+      "releaseUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-11-13",
+      "body": "* Adds compatibility between Shipyard and Outer Wilds Online",
+      "bodyZh": "* 航空機工場とOuter Wilds・オンラインとの互換性を追加します",
+      "zipUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/download/v0.1.0/Locochoco.ShipyardOWOAddon.zip",
+      "releaseUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/tag/v0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-01-07T16:29:14Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2023-01-07",
+      "body": "- You can now warp to the STS2 system\r\n- Kamika has an updated shiplog",
+      "bodyZh": "- Outer Wildsにワープできるようになりました\r\n- Kamikaの船の航行記録が更新されました",
+      "zipUrl": "https://github.com/RealOrbital32/Solar-Systems-I-Made-as-a-Kid/releases/download/1.1.0/O32.ssimaak.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Solar-Systems-I-Made-as-a-Kid/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-11-23",
+      "body": "release",
+      "bodyZh": "リリース",
+      "zipUrl": "https://github.com/RealOrbital32/Solar-Systems-I-Made-as-a-Kid/releases/download/1.0.0/O32.ssimaak.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Solar-Systems-I-Made-as-a-Kid/releases/tag/1.0.0"
+    }
+  ]
+}

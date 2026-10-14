@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-09-14T00:57:58Z",
+  "releases": [
+    {
+      "tag": "1.5.2",
+      "name": "1.5.2",
+      "date": "2026-09-14",
+      "body": "So uh... it's been 13 months since v1.5.0 (or maybe longer?), and somehow I didn't notice that a VERY important endgame recorder was BROKEN and MISPLACED.\r\nso yeah it's **FIXED** now. and sorry to the like ~1-2k individuals who did a playthrough without knowing they missed extremely important lore.\r\n\r\nAnyway! apart from that I also fixed the lighting of a certain interior space (thanks solec for pointing this out)\r\n\r\nkinda thinking about making a retro system pack for older UM versions ngl ~w~",
+      "bodyZh": "それではね… v1.5.0以来13ヶ月（もしかしたらそれ以上かも？）経つのに、どうしても非常に重要なエンドゲーム記録装置が壊れていて場所が間違っていたことに気づかなかったんだよね。\r\nまあ、いいけど今**修正**した。そして、~1-2k人の方々に、非常に重要なルールを逃したことに気づかずプレイを進めたことについてお詫びします。\n\nそれとは別に！ 特定のインテリア空間の照明も修正した（thanks solec for pointing this out）。\n\n少し古いUMバージョン用のレトロシステムパックを作るかもって思ってるんだよね ngl ~w~",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.5.2/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.5.2"
+    },
+    {
+      "tag": "1.5.1",
+      "name": "1.5.1",
+      "date": "2025-12-01",
+      "body": "yea! :3\r\n\r\n- slightly adjusted spawn location (after several months)\r\n- nudged planet orbit positions (hopefully electrum no longer eats things)\r\n\r\ndid I test this? absolutely not! bweh...",
+      "bodyZh": "はい！ :3\n\n- スポーン位置を少し調整しました（数ヶ月後）\n- 行星の軌道位置を少しだけずらしました（希望はエレクチュームが物を食わなくなったこと）\n\nこれはテストしましたか？全くしていません！ bweh...",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.5.1/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.5.1"
+    },
+    {
+      "tag": "1.5.0",
+      "name": "1.5.0",
+      "date": "2025-08-14",
+      "body": "**UNNAMED MYSTERY v1.5.0**\r\n\r\nThis isn't the DLC nor the remake. They are coming very soon.\r\nThis is a detail and QOL overhaul to aid with the original story.\r\nOverall, not much has changed.\r\n\r\nQuick rundown:\r\n- New textures for all planets\r\n- New ship log images\r\n- Shrunken solar system\r\n- Minor dialogue rewording\r\n- Something odd about an existing moon...",
+      "bodyZh": "**アンナンムアトリ v1.5.0**\r\n\r\nDLCでもリメイクでもありません。もうすぐ登場します。\r\nオリジナルストーリーを助けるための詳細とQOLのオーバーホールです。\r\n全体的にはあまり変わっていません。\r\n\r\n簡単なまとめ:\r\n- すべての惑星の新しいテクスチャー\r\n- 新しい船の航行記録画像\r\n- 縮小された太陽系\r\n- 小さな台詞の再文\r\n- 既存の月についての何か奇妙なこと...",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.5.0/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.5.0"
+    },
+    {
+      "tag": "1.5.0-BETA-0",
+      "name": "1.5.0-BETA-0",
+      "date": "2024-09-10",
+      "body": "A pre-release for the 2.0.0 beta. This is V0 of the beta.\r\n\r\nThis beta includes updates planet textures... and that's it. I don't know when I'll update this, life has been rather busy.",
+      "bodyZh": "2.0.0ベータ版の事前リリース。これはベータのV0です。\r\n\r\nこのベータ版には惑星のテクスチャーが更新されました…それだけです。いつ更新するか分かりません。生活がとても忙しくて。",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.5.0-BETA-0/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.5.0-BETA-0"
+    },
+    {
+      "tag": "1.2.3",
+      "name": "1.2.3",
+      "date": "2023-07-20",
+      "body": "General changes:\r\n- A \"coming soon\" for Helioraxia's core\r\n- Ship log changes. Some color switches too.\r\n\r\nVoice Mod changes:\r\n- Sound effects in places where they didn't exist\r\n- Nylox no longer stutters his words",
+      "bodyZh": "一般的な変更点:\r\n- Helioraxiaのコアの「Coming Soon」\r\n- 航行記録の変更。いくつかの色の切り替えも含む。\r\n\r\nボイスMODの変更点:\r\n- 存在しなかった場所にサウンドエフェクトの追加\r\n- Nyloxが言葉をはねることはなくなった",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.2.3/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.2.3"
+    },
+    {
+      "tag": "1.2.2",
+      "name": "1.2.0 Part B and a half",
+      "date": "2023-06-22",
+      "body": "**Part B...** and a half!\r\n\r\n- Now available in French and Simplified Chinese! Credits updated too.\r\n- Fixed every accidental occurrence of \"Helioplasmia\" \r\n\r\n😄👍",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.2.2/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.2.2"
+    },
+    {
+      "tag": "1.2.1",
+      "name": "1.2.0 Part B",
+      "date": "2023-06-18",
+      "body": "- Fixed some rough edges from Part A\r\n- Added scatter props to 2 planets",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.2.1/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.2.1"
+    },
+    {
+      "tag": "1.2.0",
+      "name": "1.2.0 Part A",
+      "date": "2023-06-15",
+      "body": "## This is PART A of 1.2.0! This is to be expanded. ##\r\n\r\n- Merged the Teraxia and Helioplasmia system, Taux content moved to Metallos, etc\r\n- Flipped a projection pool\r\n- Changed some text, but the lines are still the same :(",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.2.0/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.2.0"
+    },
+    {
+      "tag": "1.1.2",
+      "name": "1.1.2",
+      "date": "2023-06-05",
+      "body": "1. Fixed a typo in the shiplog\r\n2. Gave music track property to songs\r\n3. Changed a misplaced line (sorta fixed but not really)\r\n4. Made the final puzzle slightly easier",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.1.2/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.1.2"
+    },
+    {
+      "tag": "1.1.1",
+      "name": "1.1.1",
+      "date": "2023-06-05",
+      "body": "Fixed a certain place not having structures.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/download/1.1.1/O32.UnnamedMystery.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/Unnamed-Mystery/releases/tag/1.1.1"
+    }
+  ]
+}

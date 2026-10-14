@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-09-20T20:16:34Z",
+  "releases": [
+    {
+      "tag": "v1.2.7",
+      "name": "Version 1.2.7",
+      "date": "2026-09-20",
+      "body": "Added a French translation (thanks RondStone!)",
+      "bodyZh": "フランス語訳を追加しました（ロンドストーンさん、ありがとう！）",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.7/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.7"
+    },
+    {
+      "tag": "v1.2.6",
+      "name": "Version 1.2.6",
+      "date": "2026-09-13",
+      "body": "Added a Russian translation (thanks Bubalex01!)",
+      "bodyZh": "ロシア語の翻訳を追加しました（ありがとう Bubalex01！）",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.6/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.6"
+    },
+    {
+      "tag": "v1.2.5",
+      "name": "Version 1.2.5",
+      "date": "2026-04-03",
+      "body": "- Updated Portuguese translation.\r\n- Added simplified Chinese translation for achievements (thanks SheepCreator2!)",
+      "bodyZh": "- ポルトガル語訳を更新しました。\r\n- 成就の簡体中国語訳を追加しました（SheepCreator2！ありがとう！）。",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.5/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.5"
+    },
+    {
+      "tag": "v1.2.4",
+      "name": "Version 1.2.4",
+      "date": "2026-02-25",
+      "body": "- Added PT-BR translation (thanks ErriiickK!)\r\n- Actually remembered to update the in-game credits (sorry about that SanBaiMing!)",
+      "bodyZh": "- PT-BRの翻訳を追加 (ありがとう ErriiickK!)\n- 実際にゲーム内のクレジットを更新した (その件についてサンバイミング、ごめんなさい!)",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.4/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.4"
+    },
+    {
+      "tag": "v1.2.3",
+      "name": "Version 1.2.3",
+      "date": "2026-01-13",
+      "body": "Added Simplified Chinese translation (thanks SanBaiMing!)",
+      "bodyZh": "追加しました：簡体中国語訳（ありがとう SanBaiMing！）",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.3/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.3"
+    },
+    {
+      "tag": "v1.2.2",
+      "name": "Version 1.2.2",
+      "date": "2025-12-02",
+      "body": "Updated Japanese translation (thanks Nepyangi!)",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.2/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.2"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "Version 1.2.1",
+      "date": "2025-07-24",
+      "body": "Fixed a bug that made the xbox version not work.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.1/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2025-06-22",
+      "body": "- Made Ernesto easier to talk to.\r\n- Added a couple of custom endings (a third is planned but not currently implemented).\r\n- Added achievements using Achievements+ (a list of them can be found in the readme).",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.2.0/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.3",
+      "name": "Version 1.1.3",
+      "date": "2025-05-07",
+      "body": "- Added a Japanese translation (thanks nepyanagi!)\r\n- Updated Korean translation\r\n- Added a file to help translators with text that is not caught by NH's translation generation tool",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.1.3/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.1.3"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "Version 1.1.2",
+      "date": "2025-04-13",
+      "body": "- Prevented a certain seed from progressing states too early.\r\n- A sit sequence now lasts longer\r\n- Update Korean translation\r\n- Changed an end-of-mod song",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/DeepBramble/releases/download/v1.1.2/cleric.DeepBramble.zip",
+      "releaseUrl": "https://github.com/coderCleric/DeepBramble/releases/tag/v1.1.2"
+    }
+  ]
+}

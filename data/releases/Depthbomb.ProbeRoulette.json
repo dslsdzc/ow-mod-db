@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2026-09-25T19:04:28Z",
+  "releases": [
+    {
+      "tag": "0.3.0",
+      "name": "0.3.0",
+      "date": "2026-09-25",
+      "body": "- Added configurable shotgun mode\n- Fixed player hit detection in some cases",
+      "bodyZh": "- 添加了可配置的霰弹枪模式\n- 修复了某些情况下的玩家命中检测",
+      "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.3.0/ProbeRoulette-0.3.0.zip",
+      "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.3.0"
+    },
+    {
+      "tag": "0.2.3",
+      "name": "0.2.3",
+      "date": "2026-09-13",
+      "body": "- Don't check for player collision if aiming normally",
+      "bodyZh": "- 正常瞄准时不要检测玩家碰撞",
+      "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.3/ProbeRoulette-0.2.3.zip",
+      "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.3"
+    },
+    {
+      "tag": "0.2.2",
+      "name": "0.2.2",
+      "date": "2026-09-10",
+      "body": "- Removed \"(Beta)\" from the mod name.",
+      "bodyZh": "- 已从模组名称中移除\"(Beta)\"。",
+      "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.2/ProbeRoulette-0.2.2.zip",
+      "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.2"
+    },
+    {
+      "tag": "0.2.1",
+      "name": "0.2.1 Public Beta",
+      "date": "2026-09-10",
+      "body": "- Replaces the slider, which had no numeric readout and only allowed 10% steps",
+      "bodyZh": "- 替换了滑块，该滑块没有数字读数，并且仅允许以10%为步长调整",
+      "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.1/ProbeRoulette-0.2.1.zip",
+      "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.1"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "0.2.0 Public Beta",
+      "date": "2026-09-10",
+      "body": "First public beta of Probe Roulette.",
+      "bodyZh": "探头轮盘的第一个公开测试版。",
+      "zipUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/download/0.2.0/ProbeRoulette-0.2.0.zip",
+      "releaseUrl": "https://github.com/depthbomb/OuterWildsProbeRoulette/releases/tag/0.2.0"
+    }
+  ]
+}

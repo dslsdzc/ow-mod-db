@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-05-03T15:38:22Z",
+  "releases": [
+    {
+      "tag": "v0.0.2",
+      "name": "Version 0.0.2",
+      "date": "2025-05-03",
+      "body": "Added new voices lines from subnautica when : \r\n\r\n-Boarding the ship \r\n\r\n-Taking off \r\n\r\n-Approaching certain celestial bodies \r\n\r\nAdded options to desactivate the new voices lines",
+      "bodyZh": "サブノアティカから新しいボイスラインが追加されました。\r\n\r\n- 船に乗り込む時 \r\n- 着陸する時 \r\n- 特定の天体に接近する時 \r\n\r\n新しいボイスラインを無効にするオプションが追加されました。",
+      "zipUrl": "https://github.com/SpatialXX/ShipAlarm/releases/download/v0.0.2/SpatialXX.ShipAlarm.zip",
+      "releaseUrl": "https://github.com/SpatialXX/ShipAlarm/releases/tag/v0.0.2"
+    },
+    {
+      "tag": "v0.0.1",
+      "name": "Version 0.0.1",
+      "date": "2025-03-24",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/SpatialXX/ShipAlarm/releases/download/v0.0.1/SpatialXX.ShipAlarm.zip",
+      "releaseUrl": "https://github.com/SpatialXX/ShipAlarm/releases/tag/v0.0.1"
+    }
+  ]
+}

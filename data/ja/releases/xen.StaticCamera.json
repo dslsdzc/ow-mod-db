@@ -1,0 +1,86 @@
+{
+  "repoUpdatedAt": "2024-03-15T01:35:25Z",
+  "releases": [
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2024-01-02",
+      "body": "- You'll never guess what this update is",
+      "bodyZh": "- このアップデートとは一体何を思っているか、あなたは決して推測できません",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.4/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "v1.0.3",
+      "date": "2022-09-17",
+      "body": "- Update to patch 13\r\n- Update to use new Common Camera API",
+      "bodyZh": "- パッチ13への更新\n- 新しいCommon Camera APIを使用する更新",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.3/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "v1.0.2",
+      "date": "2022-05-26",
+      "body": "- Improved input handling (pre-emptive OWO recorder writing compatibility)",
+      "bodyZh": "- 入力処理の改善（予防的なOWOレコーダー書き込み互換性）",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.2/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-05-25",
+      "body": "- Prevent an issue where you'd get locked out of first person",
+      "bodyZh": "- 最初の一人称でロックアウトされる問題を防ぐ",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.1/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-05-25",
+      "body": "- Updated to use Common Camera Utility\r\n- Now has all the same third person effects as Third Person Camera\r\n- Fixes issue where camera always had the same FOV as at the start (issue #1)\r\n- Added button prompt\r\n- Hides HUD when using camera",
+      "bodyZh": "- Common Camera Utilityを使用するよう更新\n- Third Person Cameraと同じ第三人称エフェクトを追加\n- カメラが常に開始時と同じFOVを持っていた問題を修正 (問題 #1)\n- ボタン提示を追加\n- カメラを使用時にHUDを非表示にする",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v1.0.0/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "v0.1.3",
+      "date": "2021-12-05",
+      "body": "Improved controls and added in better 3rd person compatibility",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v0.1.3/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2021-11-28",
+      "body": "Daydream mod compatibility",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v0.1.2/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2021-11-26",
+      "body": "Improved initialization (now compatible with Outer Wilds Online).",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v0.1.1/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2021-11-26",
+      "body": "It just works.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/download/v0.1.0/xen.StaticCamera.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-static-camera/releases/tag/v0.1.0"
+    }
+  ]
+}

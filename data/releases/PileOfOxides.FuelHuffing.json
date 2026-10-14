@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2026-07-11T02:12:53Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Initial Release",
+      "date": "2026-07-11",
+      "body": "",
+      "zipUrl": "https://github.com/PileOfOxides/FuelHuffing/releases/download/v1.0.0/PileOfOxides.FuelHuffing.zip",
+      "releaseUrl": "https://github.com/PileOfOxides/FuelHuffing/releases/tag/v1.0.0"
+    }
+  ]
+}

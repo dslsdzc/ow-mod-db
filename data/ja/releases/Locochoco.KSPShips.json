@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-10-11T09:15:34Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Kerbal Space Ventures v0.1.1",
+      "date": "2023-02-11",
+      "body": "* Fixed the player not being able to leave the map screen after entering a pod\r\n\r\nThanks to QuantumBlur314 for reporting these issues!",
+      "bodyZh": "* プ podに入った後、地図画面から離れられない問題を修正しました\r\n\r\nQuantumBlur314 さん、これらの問題を報告してくれてありがとう！",
+      "zipUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/download/v0.1.1/Locochoco.KSPShips.zip",
+      "releaseUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Kerbal Space Ventures v0.1.0",
+      "date": "2022-11-23",
+      "body": "* Allows the creation of custom ships from `.craft` files from the game Kerbal Space Program.\r\n* For now only the small solid booster, the mk1 crew pod and the small decoupler exist.\r\n\r\n\r\n- 3d models for each part from FunkyShoeMan#0001!",
+      "bodyZh": "* ゲームKerbal Space Programの`.craft`ファイルからカスタム飞船の作成を可能にします。\r\n* 現在、小さな固体ブースター、mk1乗員ドーム、および小さな分離リングのみが存在します。\r\n\r\n\r\n- 各部品の3dモデルはFunkyShoeMan#0001から！",
+      "zipUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/download/v0.1.0/Locochoco.KSPShips.zip",
+      "releaseUrl": "https://github.com/loco-choco/Kerbal-Space-Ventures/releases/tag/v0.1.0"
+    }
+  ]
+}

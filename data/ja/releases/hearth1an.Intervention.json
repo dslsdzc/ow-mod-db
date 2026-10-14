@@ -1,0 +1,68 @@
+{
+  "repoUpdatedAt": "2024-11-04T16:35:08Z",
+  "releases": [
+    {
+      "tag": "v1.0.7",
+      "name": "hearth1an.Intervention",
+      "date": "2023-10-03",
+      "body": "- Russian localisation added by wantapples & hearth1an",
+      "bodyZh": "- ロシア語のローカライゼーションはwantapples & hearth1anによって追加されました",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.7/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.7"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "hearth1an.Intervention",
+      "date": "2023-08-27",
+      "body": "- All bugs fixed\r\n- Now you can't reach the end randomly\r\n- Typos fixed\r\n- Translation base added\r\n\r\nNow mod feels completed (thanks to wonderful NH features)",
+      "bodyZh": "- すべてのバグが修正されました\r\n- 無作為に終着点に到達できなくなりました\r\n- 誤字脱字が修正されました\r\n- 翻訳ベースが追加されました\r\n\r\n今、このMODは完成した感じです（素晴らしいNHの機能のおかげで）",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.5/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.5"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "v1.0.4",
+      "date": "2023-01-24",
+      "body": "Hotfix\n\n- Fixed credits trigger radius (thx Acamaeda)",
+      "bodyZh": "ホットフィックス\n\n- クレジットのトリガーリジッド半径を修正 (thx Acamaeda)",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.4/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "v1.0.3",
+      "date": "2023-01-24",
+      "body": "v1.0.3\n\n- Fixed randomly playing guitar\n- Credits added\n- Ending should be more obvious now\n- Destroying stock planets again (based)\n- Other minor fixes",
+      "bodyZh": "v1.0.3\n\n- ランダムにギターが再生される問題を修正\n- クレジットを追加\n- エンディングがより明確になった\n- ストック惑星を破壊できるようになった（ベース）\n- 他の小さな修正",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.3/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "hearth1an.Intervention",
+      "date": "2023-01-24",
+      "body": "- Loading faster!\r\n- Ending working in a proper way\r\n- Fixed some errors on loading",
+      "bodyZh": "- 載入がより速くなりました！\n- 正しく作業を終了するようにしました\n- 載入時のいくつかのエラーを修正しました",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.2/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "hearth1an.Intervention",
+      "date": "2023-01-23",
+      "body": "- Subtitle changed\r\n- Orbit fix",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.1/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Release",
+      "date": "2023-01-23",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/download/v1.0.0/hearth1an.Intervention.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.Intervention/releases/tag/v1.0.0"
+    }
+  ]
+}

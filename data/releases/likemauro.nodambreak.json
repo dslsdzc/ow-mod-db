@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-09-13T17:50:43Z",
+  "releases": [
+    {
+      "tag": "0.1.1",
+      "name": "No dam break",
+      "date": "2022-04-28",
+      "body": "Changed some of the code, the mod does the same as before",
+      "zipUrl": "https://github.com/LikeMauro/NoDamBreak-Mod/releases/download/0.1.1/likemauro.nodambreak.zip",
+      "releaseUrl": "https://github.com/LikeMauro/NoDamBreak-Mod/releases/tag/0.1.1",
+      "bodyZh": "修改了一些代码，模组和之前一样"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "No Dam Break Mod",
+      "date": "2022-04-23",
+      "body": "The dam won't break",
+      "zipUrl": "https://github.com/LikeMauro/NoDamBreak-Mod/releases/download/0.1.0/likemauro.nodambreak.zip",
+      "releaseUrl": "https://github.com/LikeMauro/NoDamBreak-Mod/releases/tag/0.1.0",
+      "bodyZh": "水坝不会崩塌"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-01-23T21:13:55Z",
+  "releases": [
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2026-01-23",
+      "body": "- Added simplified Chinese translation\r\n  - Thank you to SanBaiMing for making the translation, and xen 10 for helping with some code issues that were making it not work properly!\r\n- I have no idea why v1.0.2 was never released properly, so I'm just gonna leave it unreleased and move on to v1.0.3",
+      "bodyZh": "- 簡体中国語訳を追加しました\r\n  - 訳訳を担当したSanBaiMingに感謝します。また、正常に動作しない問題を解決するのを手伝ってくれたxen 10にも感謝します！\r\n- v1.0.2がなぜ正式リリースされなかったのかわからないので、未リリースのままv1.0.3に進みます",
+      "zipUrl": "https://github.com/coderCleric/Mindscapes/releases/download/v1.0.3/coderCleric.Mindscapes.zip",
+      "releaseUrl": "https://github.com/coderCleric/Mindscapes/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2023-07-16",
+      "body": "Added helpful popup guy.",
+      "bodyZh": "役立つポップアップの男を追加しました。",
+      "zipUrl": "https://github.com/coderCleric/Mindscapes/releases/download/v1.0.1/coderCleric.Mindscapes.zip",
+      "releaseUrl": "https://github.com/coderCleric/Mindscapes/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2023-07-15",
+      "body": "Initial release for the mod jam! Use a strange Nomai device to go into the minds of your fellow Hearthian, in hopes of convincing them to evacuate!",
+      "bodyZh": "MODジャムの初リリース！ 異常なノマイのデバイスを使って、仲間のハーシアンが避難するよう説得するための心に入り込む！",
+      "zipUrl": "https://github.com/coderCleric/Mindscapes/releases/download/v1.0.0/coderCleric.Mindscapes.zip",
+      "releaseUrl": "https://github.com/coderCleric/Mindscapes/releases/tag/v1.0.0"
+    }
+  ]
+}

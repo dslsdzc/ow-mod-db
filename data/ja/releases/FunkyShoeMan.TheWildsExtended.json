@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2022-11-03T02:33:23Z",
+  "releases": [
+    {
+      "tag": "v0.2.1",
+      "name": "v0.2.1",
+      "date": "2022-10-15",
+      "body": "Satorena path mistake\n\ni forgot to update texture paths since i put the textures in a another folder",
+      "bodyZh": "サトレナのパスの間違い\n\nテクスチャーパスを更新しなかったのを忘れていた。テクスチャーを別のフォルダに入れたから。",
+      "zipUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/download/v0.2.1/TheWildsExtended.zip",
+      "releaseUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2022-10-15",
+      "body": "Complete planet rework\n\nTextureTurtle is soooooo cool mega awsome cool making the Textures and 3d Models for this update",
+      "bodyZh": "惑星の完全なリワーク\n\nTextureTurtleは至極クールすぎるマガーすごいクール、このアップデートのテクスチャーと3Dモデルを作成している",
+      "zipUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/download/v0.2.0/TheWildsExtended.zip",
+      "releaseUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "v0.1.3",
+      "date": "2022-10-15",
+      "body": "acutally acutally fixxing assets\n\ni forgot to upload assets to github",
+      "bodyZh": "実際にアセットを修正中です\n\ngithubにアセットをアップロードするのを忘れていました",
+      "zipUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/download/v0.1.3/TheWildsExtended.zip",
+      "releaseUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2022-10-15",
+      "body": "~~I make asset path actually work?!??!?!?!?! amazing~~\r\n\r\ni forgot to even add the assets",
+      "bodyZh": "~~アセットパスが実際に動作するようにしたんだ？！？！？！？！？！？！すごい~~\r\n\r\nアセットを追加するのを忘れてた",
+      "zipUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/download/v0.1.2/TheWildsExtended.zip",
+      "releaseUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-10-15",
+      "body": "~~Fixed asset path~~\r\n\r\ni am dumb and didn't put assets in planets",
+      "bodyZh": "~~固定資産パス~~\r\n\r\n私、ばかで資産を惑星に置かなかった",
+      "zipUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/download/v0.1.1/TheWildsExtended.zip",
+      "releaseUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-10-15",
+      "body": "Release of The Wilds: Extended",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/download/v0.1.0/TheWildsExtended.zip",
+      "releaseUrl": "https://github.com/FunkyShoeMan/TheWildsExtended/releases/tag/v0.1.0"
+    }
+  ]
+}

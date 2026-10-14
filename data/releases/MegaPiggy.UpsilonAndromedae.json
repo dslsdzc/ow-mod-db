@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-05-24T23:14:36Z",
+  "releases": [
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-06-29",
+      "body": "Fix alignment axis for tidally locked stuff",
+      "zipUrl": "https://github.com/MegaPiggy/UpsilonAndromedae/releases/download/1.0.1/MegaPiggy.UpsilonAndromedae.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/UpsilonAndromedae/releases/tag/1.0.1",
+      "bodyZh": "修复潮汐锁定物体的对齐轴"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-06-25",
+      "body": "First release",
+      "zipUrl": "https://github.com/MegaPiggy/UpsilonAndromedae/releases/download/1.0.0/MegaPiggy.UpsilonAndromedae.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/UpsilonAndromedae/releases/tag/1.0.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

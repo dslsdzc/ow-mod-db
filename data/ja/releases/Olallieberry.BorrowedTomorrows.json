@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-09-03T05:23:12Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2026-08-19",
+      "body": "- Fixed an extremely bad bug that was caused by fixing a moderately bad bug in a rush.\r\n- Better progression\r\n- Placeholder map mode\r\n- Faster movement on two things\r\n- Added some fuel tanks\r\n- Made something smaller to not bump you as easily\r\n- Fix fact reveal volume\r\n- Fix broken trigger volume\r\n- Added a meter for something",
+      "bodyZh": "- 急いで修正した中途半端なバグの修正によって引き起こされた非常に悪いバグを修正しました。\r\n- より良い進行\r\n- プレースホルダーマップモード\r\n- 二つのものの移動がより速くなりました\r\n- 燃料タンクをいくつか追加しました\r\n- 何かを小さくして、ぶつかるのをより簡単にしないようにしました\r\n- ファクトの表示音量を修正しました\r\n- 崩れたトリガーボリュームを修正しました\r\n- 何かのためにメーターを追加しました",
+      "zipUrl": "https://github.com/Etherpod/Olallieberry/releases/download/1.1.0/Olallieberry.BorrowedTomorrows.zip",
+      "releaseUrl": "https://github.com/Etherpod/Olallieberry/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2026-08-18",
+      "body": "first release",
+      "bodyZh": "初回リリース",
+      "zipUrl": "https://github.com/Etherpod/Olallieberry/releases/download/1.0.0/Olallieberry.BorrowedTomorrows.zip",
+      "releaseUrl": "https://github.com/Etherpod/Olallieberry/releases/tag/1.0.0"
+    }
+  ]
+}

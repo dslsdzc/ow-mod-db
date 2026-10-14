@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2026-10-02T10:16:55Z",
+  "releases": [
+    {
+      "tag": "v0.9.6",
+      "name": "Version 0.9.6",
+      "date": "2026-10-01",
+      "body": "Fixes:\r\n- Small grammar fixes\r\n- Removed unnecessary files used for logging mod's behavior\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Μικρές γραμματικές διορθώσεις\r\n- Αφαίρεση αρχείων που χρησιμοποιούνταν για καταγραφή λειτουργίας του mod",
+      "bodyZh": "修正点:\n- 小さな文法的修正\n- modの挙動の記録に使用されていた不要なファイルの削除",
+      "zipUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/download/v0.9.6/Dimitrios.GreekTranslation.zip",
+      "releaseUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/tag/v0.9.6"
+    },
+    {
+      "tag": "v0.9.5",
+      "name": "Version 0.9.5",
+      "date": "2026-09-26",
+      "body": "Fixes:\r\n- Cockpit's signalscope texts previously appeared very small but their size was restored\r\n- More grammar fixes\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Τα κείμενα στο σηματοσκόπιο του σκάφους φαίνονταν πολύ μικρά αλλά τώρα το μέγεθός τους αποκαταστάθηκε\r\n- Περισσότερες γραμματικές διορθώσεις",
+      "bodyZh": "修正点:\n- ドライブのシグナルスコープテキストは以前とても小さかったが、そのサイズが復元されました\n- より多くの文法修正",
+      "zipUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/download/v0.9.5/Dimitrios.GreekTranslation.zip",
+      "releaseUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/tag/v0.9.5"
+    },
+    {
+      "tag": "v0.9.4",
+      "name": "Version 0.9.4",
+      "date": "2026-09-24",
+      "body": "Fixes:\r\n- Missing texts were restored\r\n- Grammar and spelling corrections\r\n- Mistranslations were corrected\r\n- Fixed naming inconsistencies\r\n- Changed UI wording to phrase the players' available interactions in a better way\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Αποκαταστάθηκαν κείμενα που έλειπαν\r\n- Γραμματικά και ορθογραφικά λάθη διορθώθηκαν\r\n- Αστοχίες στη μετάφραση αποκαταστάθηκαν\r\n- Διορθώθηκαν κάποιες ασυνέπειες στην ονοματοδοσία των χαρακτήρων\r\n- Αλλάχθηκαν εκφράσεις στο UI προκειμένου οι επιλογές των παιχτών να γίνουν πιο ξεκάθαρες",
+      "bodyZh": "修正:\n- 欠けていたテキストが復元されました\n- 文法と正字法の修正\n- 不正確な翻訳が修正されました\n- 名前の不一致が修正されました\n- UIの表現を変更して、プレイヤーの利用可能なインタラクションをより良い方法で表現しました",
+      "zipUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/download/v0.9.4/Dimitrios.GreekTranslation.zip",
+      "releaseUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/tag/v0.9.4"
+    },
+    {
+      "tag": "v0.9.3",
+      "name": "Version 0.9.3",
+      "date": "2026-09-14",
+      "body": "Fixes:\r\n- The cockpit console now renders Greek correctly\r\n- \"Time loop\" is now \"λούπα\" instead of \"βρόχος\" throughout\r\n- Grammar corrections\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Η οθόνη του υπολογιστή στο πιλοτήριο εμφανίζει πλέον σωστά τα ελληνικά\r\n- Ο «χρονικός βρόχος» έγινε «χρονική λούπα» σε όλο το παιχνίδι\r\n- Μικροδιορθώσεις γραμματικής",
+      "bodyZh": "修正点:\n- コックピットコンソールは現在、ギリシャ語を正しくレンダリングします\n- \"タイムループ\"は現在、全てで\"λούπα\"ではなく\"βρόχος\"ではありません\n- 文法の修正\n\n___\n修正点:\n- ピロットコンソールの画面は現在、ギリシャ語を正しく表示します\n- 「時間のループ」は現在、全ゲームで「時間のループ」ではなく「時間のループ」ではありません\n- 文法的な小さな修正",
+      "zipUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/download/v0.9.3/Dimitrios.GreekTranslation.zip",
+      "releaseUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/tag/v0.9.3"
+    },
+    {
+      "tag": "v0.9.2",
+      "name": "Version 0.9.2",
+      "date": "2026-09-13",
+      "body": "Fixes:\r\n- Some texts were not in the correct format, which left them untranslated\r\n- Corrected phrasing so actions make sense in Greek (Πιάσε, Τοποθέτησε, Άναψε φωτιά)\r\n- Some menu texts were shortened so they fit on screen\r\n- New font, closer to the game's original style\r\n\r\nKnown issues:\r\n- Text on the cockpit computer screen appears very small and is unreadable\r\n\r\n___\r\n\r\nΔιορθώσεις:\r\n- Κάποια κείμενα δεν είχαν τη σωστή διάταξη κι έτσι παρέμεναν στα αγγλικά — διορθώθηκε\r\n- Αλλαγή εκφράσεων σε προστακτική για να βγάζουν μεγαλύτερο νόημα οι ενέργειες μέσα στο παιχνίδι (Πιάσε, Τοποθέτησε, Άναψε φωτιά)\r\n- Συντομεύτηκαν κείμενα του μενού που δε χωρούσαν\r\n- Νέα γραμματοσειρά, πιο κοντά στην αρχική γραμματοσειρά του παιχνιδιού\r\n\r\nΓνωστά ζητήματα:\r\n- Το κείμενο στην οθόνη του υπολογιστή του σκάφους εμφανίζεται πολύ μικρό και δεν μπορεί να διαβαστεί",
+      "bodyZh": "修正点:\n- 一部のテキストが正しい形式ではなかったため、翻訳されていませんでした\n- 希腊語で行動が意味を成すように表現を修正しました（拾う、設置、火をつける）\n- メニューの一部のテキストが画面に収まるように短縮されました\n- ゲームのオリジナルスタイルに近い新しいフォントを使用\n\n既知の問題点:\n- 飛行船のコックピットコンピュータ画面のテキストが非常に小さく、読み取りが困難です\n\n___\n修正点:\n- 一部のテキストが正しい形式ではなかったため、英語のままだったが修正されました\n- 行動がゲーム内でより意味のある形になるよう、命令形の表現に変更されました（拾う、設置、火をつける）\n- 画面に収まらないメニューのテキストが短縮されました\n- ゲームの初期フォントに近い新しいフォントが導入されました\n\n既知の問題点:\n- 飛行船のコンピュータ画面に表示されるテキストが非常に小さく、読み取れない",
+      "zipUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/download/v0.9.2/Dimitrios.GreekTranslation.zip",
+      "releaseUrl": "https://github.com/DimitriosNossis/Outer-Wilds-Greek-Translation/releases/tag/v0.9.2"
+    }
+  ]
+}

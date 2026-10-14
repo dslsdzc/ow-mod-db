@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-02-03T06:33:13Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Tripping and Clumsiness",
+      "date": "2024-04-06",
+      "body": "Brings back the strange features from Hiker's Mod v1.6.5!\r\n\r\nFeatures:\r\n- Trip randomly\r\n- Get yeeted by the scout launcher\r\n- Have the jetpack booster pull an Uno reverse card on you\r\n- Trip when you get a boo-boo",
+      "bodyZh": "Outer Wilds v1.6.5のHiker's Modの奇妙な機能を復活させます！\n\n機能：\n- 乱に行く\n- 探査ローラーで蹴飛ばされる\n- ジェットパックブースターがあなたにユーノ逆転カードを引かせる\n- 嬉しい時に行く",
+      "zipUrl": "https://github.com/Owen013/TrippingAndClumsiness/releases/download/v1.0.0/Owen_013.TrippingAndClumsiness.zip",
+      "releaseUrl": "https://github.com/Owen013/TrippingAndClumsiness/releases/tag/v1.0.0"
+    }
+  ]
+}

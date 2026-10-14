@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-10-12T07:35:27Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2021-10-27",
+      "body": "Initial release. Sets the loop time to 1 hour.",
+      "bodyZh": "初回リリース。ループ時間を1時間に設定します。",
+      "zipUrl": "https://github.com/dwatson251/ow-slowtime/releases/download/v0.1.0/dnlwtsn.SlowTime.zip",
+      "releaseUrl": "https://github.com/dwatson251/ow-slowtime/releases/tag/v0.1.0"
+    }
+  ]
+}

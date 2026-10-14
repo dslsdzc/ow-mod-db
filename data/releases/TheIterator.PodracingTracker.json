@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-05-13T20:34:46Z",
+  "releases": [
+    {
+      "tag": "v0.2.0",
+      "name": "PodracingTracker v0.2.0",
+      "date": "2026-05-13",
+      "body": "## 0.2.0\r\n\r\n- Added support for LiveSplit.\r\n- Added overlay destination selector: Main HUD, Landing monitor, Space suit HUD (WIP).\r\n- Exposed **Content** folder next to the DLL (editable JSON/LSS data).\r\n- Overlay corners moved to **RuleGuiCorners.json** (removed in-menu per-rule corner options).\r\n- Refactored for maintainability.\r\n\r\nInstall: extract **TheIterator.PodracingTracker.zip** so PodracingTracker.dll, manifest.json, default-config.json, and **Content** sit in your mod folder (OWML mods directory for **TheIterator.PodracingTracker**).\r\n\r\nSee [CHANGELOG](https://github.com/5PIterator/Podracing-Tracker/blob/main/CHANGELOG.md) for LiveSplit setup steps.",
+      "zipUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/download/v0.2.0/TheIterator.PodracingTracker.zip",
+      "releaseUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/tag/v0.2.0",
+      "bodyZh": "## 0.2.0\n\n- 添加了对LiveSplit的支持。\n- 添加了覆盖层目标选择器：主HUD、着陆监视器、宇航服HUD（开发中）。\n- 暴露了DLL旁边的**内容**文件夹（可编辑的JSON/LSS数据）。\n- 覆盖层角落移动到**RuleGuiCorners.json**（移除了菜单中的每条规则角落选项）。\n- 为可维护性进行了重构。\n\n安装：解压**TheIterator.PodracingTracker.zip**，使PodracingTracker.dll、manifest.json、default-config.json和**内容**位于您的模组文件夹中（对于**TheIterator.PodracingTracker**的OWML模组目录）。\r\n\r\n参见[CHANGELOG](https://github.com/5PIterator/Podracing-Tracker/blob/main/CHANGELOG.md)了解LiveSplit设置步骤。"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "PodracingTracker v0.1.0",
+      "date": "2024-12-24",
+      "body": "Podracing is a challenge in Outer Wilds revolving around flying around the Solar System and landing on specific locations. The more locations you land on, the higher your score. The Podracing Tracker modification is then a mod specifically designed to track the score and rules of Podracing.",
+      "zipUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/download/0.1.0/TheIterator.PodracingTracker.zip",
+      "releaseUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/tag/0.1.0",
+      "bodyZh": "星际拓荒中的飞行竞速是一项挑战，围绕在飞行穿越太阳系并在特定位置着陆。你着陆的位置越多，你的得分就越高。因此，飞行竞速追踪器模组是一个专门设计用来追踪飞行竞速得分和规则的模组。"
+    }
+  ]
+}

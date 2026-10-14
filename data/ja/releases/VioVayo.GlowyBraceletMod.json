@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-08-09T01:09:55Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2024-04-24",
+      "body": "Fixed bracelet visibility not always matching arm visibility",
+      "bodyZh": "ブレスレットの可視性が必ずしも腕の可視性と一致しないのを修正しました",
+      "zipUrl": "https://github.com/VioVayo/OWGlowstickBracelets/releases/download/v0.1.1/VioVayo.GlowyBraceletMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWGlowstickBracelets/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-12-27",
+      "body": "First Release!",
+      "bodyZh": "初回リリース！",
+      "zipUrl": "https://github.com/VioVayo/OWGlowstickBracelets/releases/download/v0.1.0/VioVayo.GlowyBraceletMod.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWGlowstickBracelets/releases/tag/v0.1.0"
+    }
+  ]
+}

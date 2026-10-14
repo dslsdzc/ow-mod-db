@@ -1,0 +1,22 @@
+{
+  "repoUpdatedAt": "2022-11-17T03:47:47Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "0.1.1 - Updated Dependencies",
+      "date": "2022-11-17",
+      "body": "",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.DancinWildsVentures/releases/download/v0.1.1/CantAffordaName.DancinWildsVentures.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.DancinWildsVentures/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "0.1.0 - Initial Release",
+      "date": "2022-11-05",
+      "body": "First release of Dancin' Wilds Ventures.",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.DancinWildsVentures/releases/download/v0.1.0/CantAffordaName.DancinWildsVentures.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.DancinWildsVentures/releases/tag/v0.1.0",
+      "bodyZh": "Dancin' Wilds Ventures 的首次发布。"
+    }
+  ]
+}

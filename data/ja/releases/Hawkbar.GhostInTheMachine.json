@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-10-12T07:50:10Z",
+  "releases": [
+    {
+      "tag": "v1.1.12",
+      "name": "v1.1.12",
+      "date": "2026-10-04",
+      "body": "- Added Japanese translation (Thanks orclecle!)\r\n- Prevented the ship log from prematurely revealing certain entries\r\n- Blocked a certain vanilla achievement from triggering while following the normal mod progression\r\n- A certain weather phenomenon has been adjusted to be more reliable\r\n- Corrected the text for a ship log entry that referred to the wrong Hourglass Twin",
+      "bodyZh": "- 日本語訳を追加しました（orclecle！さん、ありがとう！）\r\n- 航行記録が特定のエントリを早めに公開しないように防止しました\n- 通常のMOD進行中に特定のベーシックアチーブメントがトリガーしないようにブロックしました\n- 特定の天候現象がより信頼性の高いものに調整されました\n- 航行記録のエントリで参照していたHourglass Twinが間違っていたのを修正しました",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.12/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.12"
+    },
+    {
+      "tag": "v1.1.11",
+      "name": "v1.1.11",
+      "date": "2026-09-18",
+      "body": "- Significantly reduced the size of dialogue triggers to prevent triggering them while mid-jump over black holes\r\n- Small tweaks to the Russian translation (Thanks HanSoloCh!)\r\n- one one one one",
+      "bodyZh": "- ディスプレイのサイズを大幅に削減して、ブラックホールの上を飛び越している間にトリガーを発動しないようにしました\r\n- ロシア語訳に小さな調整を加えました（Thanks HanSoloCh!）\r\n- one one one one",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.11/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.11"
+    },
+    {
+      "tag": "v1.1.10",
+      "name": "v1.1.10",
+      "date": "2026-09-01",
+      "body": "- Your ship now becomes entangled while at a certain location, making it easier to return to it\r\n- Added Russian translation (Thanks HanSoloCh!)\r\n- Small tweaks to the Chinese (Simplified) translation (Thanks SanBaiMing!)",
+      "bodyZh": "- 特定の場所にいる間、あなたの船がもつれになり、それに戻るのがより簡単になります\r\n- ロシア語訳が追加されました（Thanks HanSoloCh!）\r\n- 中国語（簡体字）訳に小さな調整が加えられました（Thanks SanBaiMing!）",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.10/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.10"
+    },
+    {
+      "tag": "v1.1.9",
+      "name": "v1.1.9",
+      "date": "2026-08-28",
+      "body": "- Fixed accidental misgendering of a vanilla character",
+      "bodyZh": "- ヴァニラキャラクターの性別を誤って変更するバグを修正",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.9/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.9"
+    },
+    {
+      "tag": "v1.1.8",
+      "name": "v1.1.8",
+      "date": "2026-08-24",
+      "body": "* Update Chinese (Simplified) translation to clarify an important character's name, among multiple other improvements (thanks SanBaiMing!)",
+      "bodyZh": "* 中国語（簡体字）の翻訳を、重要なキャラクターの名前を明確にするなど、他の多くの改善を含めて更新しました（サンバイミンさん、ありがとう！）",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.8/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.8"
+    },
+    {
+      "tag": "v1.1.7",
+      "name": "v1.1.7",
+      "date": "2026-08-18",
+      "body": "- By popular demand, added workarounds to get full compatibility with Pick Up Chert\r\n- Updated Chinese (Simplified) translation (Thanks SanBaiMing!)",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.7/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.7"
+    },
+    {
+      "tag": "v1.1.6",
+      "name": "v1.1.6",
+      "date": "2026-08-18",
+      "body": "- Added achievements! Install the Achievements+ mod to enable them.\r\n- Fixed the trigger for the bad ending persisting after reloading from credits",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.6/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.6"
+    },
+    {
+      "tag": "v1.1.5",
+      "name": "v1.1.5",
+      "date": "2026-08-17",
+      "body": "Final jam submission version (unless an urgent hotfix is needed).\r\n\r\n- Slightly extended a tight time limit in a later part of the mod\r\n- Reverted previous change that showed confusing \"does not fit\" messages in some circumstances\r\n- Fixed certain ship log facts being revealed prematurely when read\r\n- Item sockets on certain devices that are already visually occupied have been disabled\r\n- Various devices and characters now visually and textually reflect the current state of their linked devices\r\n- Tweaked some wording to gloss over a continuity issue",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.5/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.5"
+    },
+    {
+      "tag": "v1.1.4",
+      "name": "v1.1.4",
+      "date": "2026-08-16",
+      "body": "- Chinese (Simplified) translation (thanks SanBaiMing!)\r\n- Added new ship log entries describing the core progression mechanic\r\n- Improved visual clarity of an item in the starting area\r\n- Added on-screen messages for the player if they're missing an important item or holding the wrong item\r\n- Added a fallback if the player forgot the item while traveling to an early location\r\n- Fixed the physics on a tractor beam that was difficult to enter\r\n- Fixed certain objects rotating the wrong way when activated\r\n- Fixed some device-related sound effects not playing correctly\r\n- Minor tweaks and fixes",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.4/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.4"
+    },
+    {
+      "tag": "v1.1.3",
+      "name": "v1.1.3",
+      "date": "2026-08-15",
+      "body": "- Added Chinese (Simplified) translation (thanks SanBaiMing!)",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/download/v1.1.3/Hawkbar.GhostInTheMachine.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam6/releases/tag/v1.1.3"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2022-12-26T23:46:30Z",
+  "releases": [
+    {
+      "tag": "v1.0.3",
+      "name": "Chargeable Scout Launcher v.1.0.3",
+      "date": "2022-12-26",
+      "body": "Fixed a bug where the ship scout launcher could only be used after the suit launcher was used at least once.",
+      "bodyZh": "乗り物探査ロケットランチャーが、スーツランチャーを使用した後にのみ使用できるバグを修正しました。",
+      "zipUrl": "https://github.com/coderCleric/chargeable-scout/releases/download/v1.0.3/Cleric.ChargeableScout.zip",
+      "releaseUrl": "https://github.com/coderCleric/chargeable-scout/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Chargeable Scout Launcher v.1.0.2",
+      "date": "2022-10-22",
+      "body": "-Makes it so that the little arrow on the scout launcher moves with the charge level\r\n-Since the arrow adds another way to tell what the charge level is, I added an option to hide the charge popup",
+      "bodyZh": "- スカウトローダーに付いてる小さな矢印がチャージレベルに合わせて動くようにする\r\n- 矢印がチャージレベルを知る別の方法を加えるので、チャージポップアップを非表示にするオプションを追加",
+      "zipUrl": "https://github.com/coderCleric/chargeable-scout/releases/download/v1.0.2/Cleric.ChargeableScout.zip",
+      "releaseUrl": "https://github.com/coderCleric/chargeable-scout/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Chargeable Scout Launcher v1.0.1",
+      "date": "2022-09-05",
+      "body": "Fixed some divide-by-zero errors that could occur with certain settings.",
+      "bodyZh": "特定の設定で発生する割り算ゼロエラーを修正しました。",
+      "zipUrl": "https://github.com/coderCleric/chargeable-scout/releases/download/v1.0.1/Cleric.ChargeableScout.zip",
+      "releaseUrl": "https://github.com/coderCleric/chargeable-scout/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Chargeable Scout Launcher v.1.0.0",
+      "date": "2022-08-25",
+      "body": "The first release of the Chargeable Scout Launcher mod.",
+      "bodyZh": "Chargeable Scout Launcher modの最初のリリース。",
+      "zipUrl": "https://github.com/coderCleric/chargeable-scout/releases/download/v1.0.0/Cleric.ChargeableScout.zip",
+      "releaseUrl": "https://github.com/coderCleric/chargeable-scout/releases/tag/v1.0.0"
+    }
+  ]
+}

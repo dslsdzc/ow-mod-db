@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2022-08-29T22:06:45Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "Artifact Laser v.1.1.0",
+      "date": "2022-08-29",
+      "body": "-Fixes a bug where owlks would burn the whole time they held you.\r\n-Adds a sizzling sound when owlks are burning.\r\n-Owlks that are burning emit death particles.\r\n-A kill counter now appears once at least one owlk is killed.\r\n-Added a killfeed that shows the names of owlks who are killed, along with a funny little message.",
+      "bodyZh": "-owlksがあなたを持ち続けている間ずっと燃えてしまうバグを修正。\r\n-owlksが燃えている時にサニングサウンドを追加。\r\n-燃えているowlksは死亡粒子を放出する。\r\n-少なくとも1体のowlkが殺された後、キルカウンターが表示されるようになりました。\r\n-owlksが殺された時の名前と面白い小さなメッセージを表示するキルフィードを追加。",
+      "zipUrl": "https://github.com/coderCleric/artifact_laser/releases/download/v1.1.0/Cleric.ArtifactLaser.zip",
+      "releaseUrl": "https://github.com/coderCleric/artifact_laser/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Artifact Laser v.1.0.0",
+      "date": "2022-08-22",
+      "body": "The initial release for my mod! Allows the player to kill the Dreamworld inhabitants by focusing the artifact light on them.",
+      "bodyZh": "私のMODの最初のリリースです！プレイヤーが夢の世界の住民を殺すことができるように、アーティファクトの光を彼らに集中させることができます。",
+      "zipUrl": "https://github.com/coderCleric/artifact_laser/releases/download/v1.0.0/ArtifactLaser.1.0.0.zip",
+      "releaseUrl": "https://github.com/coderCleric/artifact_laser/releases/tag/v1.0.0"
+    }
+  ]
+}

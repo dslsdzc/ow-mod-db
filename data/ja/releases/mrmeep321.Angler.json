@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-06-02T04:40:07Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0",
+      "date": "2022-01-21",
+      "body": "Fixed an issue where the Mod Loader was pulling 2 audio files, one that exists, and one that is in the wrong directory.",
+      "bodyZh": "MODローダーが存在する音声ファイルと、間違ったディレクトリにある音声ファイルの2つを引き込んでいた問題を修正しました。",
+      "zipUrl": "https://github.com/mrmeep321/21stCenturyAnglerfish/releases/download/v1.1.0/21stCenturyAnglerfish.zip",
+      "releaseUrl": "https://github.com/mrmeep321/21stCenturyAnglerfish/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-01-20",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/mrmeep321/21stCenturyAnglerfish/releases/download/v1.0.0/21stCenturyAngler.zip",
+      "releaseUrl": "https://github.com/mrmeep321/21stCenturyAnglerfish/releases/tag/v1.0.0"
+    }
+  ]
+}

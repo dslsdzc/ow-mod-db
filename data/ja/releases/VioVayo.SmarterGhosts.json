@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-08-09T18:51:15Z",
+  "releases": [
+    {
+      "tag": "v0.2.2",
+      "name": "Version 0.2.2",
+      "date": "2025-08-09",
+      "body": "After being interrupted, movie night will no longer inexplicably resume without an audience.",
+      "bodyZh": "中断された後、映画の夜は観客なしに不思議と再開しなくなります。",
+      "zipUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/download/v0.2.2/VioVayo.SmarterGhosts.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/tag/v0.2.2"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "Version 0.2.1",
+      "date": "2023-04-22",
+      "body": "- More Ghosts will start hunting the player early if given reason to\r\n- Tweaks to noise radii",
+      "bodyZh": "- もっと幽霊が早い段階でプレイヤーを狩り始める（理由が与えられた場合）\n- ノイズ半径への調整",
+      "zipUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/download/v0.2.1/VioVayo.SmarterGhosts.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2023-04-10",
+      "body": "- Fixed several problems with the calling for help behaviour\r\n- Ghosts now react to sounds caused by the player moving around\r\n- Made tweaks to lists and arrays and restructured code for readability",
+      "bodyZh": "- 帮助を求める挙動に関するいくつかの問題を修正\n- 幽霊がプレイヤーの移動による音に反応するようになった\n- リストと配列への調整を行い、コードの可読性のために再構築",
+      "zipUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/download/v0.2.0/VioVayo.SmarterGhosts.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-03-26",
+      "body": "First Release!",
+      "bodyZh": "初回リリース！",
+      "zipUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/download/v0.1.0/VioVayo.SmarterGhosts.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWSmarterGhosts/releases/tag/v0.1.0"
+    }
+  ]
+}

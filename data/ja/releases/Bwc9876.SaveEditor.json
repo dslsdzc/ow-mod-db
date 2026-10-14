@@ -1,0 +1,68 @@
+{
+  "repoUpdatedAt": "2023-10-08T23:39:45Z",
+  "releases": [
+    {
+      "tag": "0.7.0",
+      "name": "Version 0.7.0",
+      "date": "2022-09-22",
+      "body": "- Improved checking for DLC\r\n- Made it so toggling \"warped to eye of the universe\" now updates buttons accordingly\r\n\r\nty @MegaPiggy for the changes!",
+      "bodyZh": "- DLCのチェックが改善されました\r\n- \"宇宙の眼にワープした\"を切り替えると、ボタンが適切に更新されるようにしました\r\n\r\n変更点に感謝します @MegaPiggy！",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.7.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.7.0"
+    },
+    {
+      "tag": "0.6.0",
+      "name": "Version 0.6.0",
+      "date": "2022-09-15",
+      "body": "- Added the paradox flag for easily talking to self",
+      "bodyZh": "- パラドックスフラグを追加して、簡単に自分と話すことができるようにしました",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.6.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.6.0"
+    },
+    {
+      "tag": "0.5.0",
+      "name": "Version 0.5.0",
+      "date": "2022-03-27",
+      "body": "- Added Earning All Achievements\r\n- Added options to ward off slate, the unholy",
+      "bodyZh": "- 全ての達成アイテムを獲得する機能を追加\r\n- スレートを祓うオプションを追加",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.5.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.5.0"
+    },
+    {
+      "tag": "0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2022-02-12",
+      "body": "Improved Ship Log and Signal Editing\r\n\r\n- You can now learn a specific ship log fact instead of all of them\r\n- You can now learn *only* base-game signals/frequencies\r\n- You can now learn *only* base-game ship log facts\r\n\r\n**Full Changelog**: https://github.com/Bwc9876/OW-SaveEditor/compare/0.3.0...0.4.0",
+      "bodyZh": "船の記録とシグナルの編集が改善されました\n\n- これで特定の船の記録の事実を学べるようになりました（それまで全てを学ぶ必要はありません）\n- これでベースゲームのシグナル/周波数のみを学べるようになりました\n- これでベースゲームの船の記録の事実のみを学べるようになりました\n\n**完全な変更履歴**: https://github.com/Bwc9876/OW-SaveEditor/compare/0.3.0...0.4.0",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.4.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.4.0"
+    },
+    {
+      "tag": "0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2022-01-07",
+      "body": "- Made the ship log actually work\r\n- Made the save and cancel buttons just a Close button now",
+      "bodyZh": "- 航行記録が実際に機能するようにしました\r\n- 保存とキャンセルのボタンが今は閉じるボタンだけになりました",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.3.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.3.0"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2022-01-05",
+      "body": "- Added The Ability To Update The Ship Log\r\n- Fixed Signal Scope Forget All Button\r\n- Added A Button To The Pause Menu\r\n- Close Menu On Scene Change\r\n- General Performance\r\n- Made The Cancel Button Actually Work",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.2.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2022-01-02",
+      "body": "Still want to add ship log, but since ShipLogManager isn't in the TitleScreen scene, I can't really do that.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/download/0.1.0/Bwc9876.SaveEditor.zip",
+      "releaseUrl": "https://github.com/Bwc9876/OW-SaveEditor/releases/tag/0.1.0"
+    }
+  ]
+}

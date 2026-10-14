@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2024-10-28T18:55:31Z",
+  "releases": [
+    {
+      "tag": "v0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2023-03-27",
+      "body": "**Includes: Distance (%) and Rainbow Lights.**\r\n\r\nAlso:\r\n* Reworked turn speed into a single multiplicative stat which affects turn speed (moving) and quick turn speed (in place).\r\n* Fixed incorrect default values for some anglerfish attributes (chase speed, acceleration, and turn speed). Previously, this mod would make anglerfish significantly slower on default settings; that should be restored to vanilla speed now.\r\n* Fixed muting looping sound even when Mute option was disabled.\r\n* Minor performance optimizations.",
+      "bodyZh": "**距離 (%) とレインボーライトを含む。**\r\n\r\nまた:\r\n* 回転速度を単一の乗算ステータスに再設計し、回転速度（移動）とクイック回転速度（場所で）に影響を与えます。\r\n* アンコウの一部の属性（追跡速度、加速度、回転速度）のデフォルト値が正しくないことを修正しました。以前、このMODはデフォルト設定でアンコウを大幅に遅くしましたが、今はベーカリックスピードに戻されるはずです。\n* Muteオプションが無効な場合でもループサウンドをミュートするのを修正しました。\n* 軽微なパフォーマンス最適化。",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.4.0/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.4.0"
+    },
+    {
+      "tag": "v0.3.1",
+      "name": "Version 0.3.1",
+      "date": "2023-03-27",
+      "body": "Reworked speed into a single multiplicative stat which affects chase speed, investigate speed, and acceleration speed.",
+      "bodyZh": "スピードを単一の乗算ステータスに再設計し、追跡速度、調査速度、および加速速度に影響を与えます。",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.3.1/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.3.1"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2023-03-27",
+      "body": "Includes: Size (%) and Afraid.",
+      "bodyZh": "サイズ (%) と Afraidを含む",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.3.0/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2023-03-25",
+      "body": "Includes: Spin Axis.\r\nFixed a bug that prevented meteor launching mod integration from working.",
+      "bodyZh": "Spin Axis を含む。\nメテオ発射 MOD統合が機能しないバグを修正。",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.2.0/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-03-25",
+      "body": "Includes: Chase Speed, Investigate Speed, Turn Speed, Quick Turn Speed, Deaf, Mute, and Meteor Launching Mod Integration.",
+      "bodyZh": "Chase Speed,調査速度,ターン速度,クイックターン速度,耳が聞こえない,喋れない,およびメテオ発射MOD統合を含む。",
+      "zipUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/download/v0.1.0/Anyar.CustomAnglerfishAI.zip",
+      "releaseUrl": "https://github.com/TwentyPorts/CustomAnglerfishAI/releases/tag/v0.1.0"
+    }
+  ]
+}

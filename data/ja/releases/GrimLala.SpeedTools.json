@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-12-27T22:00:46Z",
+  "releases": [
+    {
+      "tag": "1.2.1",
+      "name": "SpeedTools v1.2.1",
+      "date": "2025-12-27",
+      "body": "- Fix to angler fish locations when using save states (thanks to MDJ287)",
+      "bodyZh": "- 保存状態を使用時にアンコウの位置を修正 (MDJ287 さんに感謝)",
+      "zipUrl": "https://github.com/GrimLala/SpeedTools/releases/download/1.2.1/SpeedTools.zip",
+      "releaseUrl": "https://github.com/GrimLala/SpeedTools/releases/tag/1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "SpeedTools v1.2.0",
+      "date": "2023-04-29",
+      "body": "- New menu format that separates the basics from the more advanced settings\r\n- Better error reporting now outputs some frequent config issues to the console\r\n- Sate is reset on death so unlimited fuel and supernova freeze no longer persist\r\n- Tree locator updated to remove collision and disappear once forest goes dark\r\n- New **Experimental** Bramble Navigation state to practice outrunning anglers\r\n- Fixed float parsing to no longer be dependent on system settings",
+      "bodyZh": "- 新しいメニュー形式で、基本的な設定とより高度な設定を分離\n- エラーレポートが改善され、よく発生する設定問題をコンソールに出力\n- 死亡時に状態がリセットされるため、無限の燃料と超新星のフリーズはもはや継続しない\n- 树の位置特定器が更新され、森が暗くなったら衝突を除去し消滅する\n- 新しい **実験的** なイバラナビゲーション状態で、アンコウを追い越す練習をする\n- 浮動小数点数のパースが修正され、システム設定に依存しなくなった",
+      "zipUrl": "https://github.com/GrimLala/SpeedTools/releases/download/v1.2.0/GrimLala.SpeedTools.zip",
+      "releaseUrl": "https://github.com/GrimLala/SpeedTools/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "SpeedTools v1.1.0",
+      "date": "2022-12-27",
+      "body": "- Ship now reliably wedged in archway for Bramble Entry practice\r\n- Changed default keybind for Statue Skip so it doesn't use a key that is also used with the scout\r\n- Added experimental Stranger practice state",
+      "bodyZh": "- 船がアーチウェイに確実に挟まるようになり、イバラエントリープラクティスに対応\n- Statue Skipのデフォルトキーバインドを変更し、探検隊と同じキーを使用しないようにしました\n- 実験的なストレンジャープラクティス状態を追加",
+      "zipUrl": "https://github.com/GrimLala/SpeedTools/releases/download/v1.1.0/GrimLala.SpeedTools.zip",
+      "releaseUrl": "https://github.com/GrimLala/SpeedTools/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "SpeedTools v1.0.0",
+      "date": "2022-12-20",
+      "body": "The initial release of our speedrun helper mod ✨",
+      "bodyZh": "私たちのスピードランヘルパーモッドの最初のリリース ✨",
+      "zipUrl": "https://github.com/GrimLala/SpeedTools/releases/download/v1.0.0/GrimLala.SpeedTools.zip",
+      "releaseUrl": "https://github.com/GrimLala/SpeedTools/releases/tag/v1.0.0"
+    }
+  ]
+}

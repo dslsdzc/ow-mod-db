@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2024-10-27T22:51:56Z",
+  "releases": [
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2024-09-22",
+      "body": "Adds a Chinese translation by AstridOrange and NanF.",
+      "zipUrl": "https://github.com/2walker2/OWJam3ModProject/releases/download/v0.2.0/TeamErnesto.OWJam3ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam3ModProject/releases/tag/v0.2.0",
+      "bodyZh": "添加了AstridOrange和NanF提供的中文翻译"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Jam Release + Compatibility Fixes",
+      "date": "2024-03-27",
+      "body": "- Set manual ship log position for compatibility\r\n- Added Light Bramble as a conflict",
+      "zipUrl": "https://github.com/2walker2/OWJam3ModProject/releases/download/v0.1.1/TeamErnesto.OWJam3ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam3ModProject/releases/tag/v0.1.1",
+      "bodyZh": "- 设置手动飞船日志位置以兼容\n- 添加了Light Bramble作为冲突"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "First Release",
+      "date": "2024-03-26",
+      "body": "First release of the mod.",
+      "zipUrl": "https://github.com/2walker2/OWJam3ModProject/releases/download/v0.1.0/TeamErnesto.OWJam3ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam3ModProject/releases/tag/v0.1.0",
+      "bodyZh": "模组的首次发布。"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-08-04T11:30:12Z",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2025-08-04",
+      "body": "- Added Speedrun Mode (Thank you Vodblink for the idea)\r\n- Fixed typos (and added points in credits)\r\n- Reworded and added some dialogue.\r\n- Removed Herobrine.",
+      "bodyZh": "- スピードランモードを追加 (Vodblinkさん、アイデアありがとうございます)\n- 誤字脱字を修正 (クレジットにポイントを追加)\n- 文章を改稿し、一部の台詞を追加\n- Herobrineを削除",
+      "zipUrl": "https://github.com/Onbvb/catastrophe/releases/download/v1.1.0/Onbvb.catastrophe.zip",
+      "releaseUrl": "https://github.com/Onbvb/catastrophe/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-07-22",
+      "body": "Made the star not explode in one minute. This was the one thing I forgot I definitely won't realize more things.",
+      "bodyZh": "星が1分で爆発しないようにしました。これは私が決してもっとことを理解しないことを忘れていた唯一のことです。",
+      "zipUrl": "https://github.com/Onbvb/catastrophe/releases/download/v1.0.1/Onbvb.catastrophe.zip",
+      "releaseUrl": "https://github.com/Onbvb/catastrophe/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-07-22",
+      "body": "Initial release!",
+      "bodyZh": "初版リリース！",
+      "zipUrl": "https://github.com/Onbvb/catastrophe/releases/download/v1.0.0/Onbvb.catastrophe.zip",
+      "releaseUrl": "https://github.com/Onbvb/catastrophe/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-07-20",
+      "body": "Pre-release for playtesting",
+      "bodyZh": "プレリリース：テストプレイ用",
+      "zipUrl": "https://github.com/Onbvb/catastrophe/releases/download/v0.1.0/Onbvb.catastrophe.zip",
+      "releaseUrl": "https://github.com/Onbvb/catastrophe/releases/tag/v0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2023-08-16T07:13:00Z",
+  "releases": [
+    {
+      "tag": "1.2.1",
+      "name": "1.2.1",
+      "date": "2023-08-16",
+      "body": "5% chance of legal trouble --> 0% chance of legal trouble\r\n\r\nyea, I was bored",
+      "zipUrl": "https://github.com/RealOrbital32/funny-christmas/releases/download/1.2.1/O32.FunnyChristmas.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-christmas/releases/tag/1.2.1",
+      "bodyZh": "5% 的法律风险 --> 0% 的法律风险\r\n\r\n是的，我感到无聊"
+    },
+    {
+      "tag": "1.2.0",
+      "name": "1.2.0",
+      "date": "2023-01-22",
+      "body": "**A LONG AWAITED QOL UPDATE!**\r\n- Planets are closer together 🛒\r\n- Colored orbit lines 🎨",
+      "zipUrl": "https://github.com/RealOrbital32/funny-christmas/releases/download/1.2.0/O32.FunnyChristmas.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-christmas/releases/tag/1.2.0",
+      "bodyZh": "**一个期待已久的QOL更新！**\n- 行星靠得更近 🛒\n- 彩色轨道线 🎨"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2022-12-27",
+      "body": "fixed countless problems, mainly with the ship log",
+      "zipUrl": "https://github.com/RealOrbital32/funny-christmas/releases/download/1.1.0/O32.FunnyChristmas.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-christmas/releases/tag/1.1.0",
+      "bodyZh": "修复了无数问题，主要与飞船日志有关"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-12-25",
+      "body": "released on chrimgfnmuhs",
+      "zipUrl": "https://github.com/RealOrbital32/funny-christmas/releases/download/1.0.0/O32.FunnyChristmas.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/funny-christmas/releases/tag/1.0.0",
+      "bodyZh": "发布于chrimgfnmuhs"
+    }
+  ]
+}

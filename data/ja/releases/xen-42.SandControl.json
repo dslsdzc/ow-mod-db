@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2024-07-19T15:59:02Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2024-07-19",
+      "body": "- Fix logged sand level times being incorrect",
+      "bodyZh": "- ログに記録される砂のレベル時間が正しくないことを修正",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-sand-control/releases/download/v1.0.1/xen-42.SandControl.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-sand-control/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-07-17",
+      "body": "Change sand level in mod options or using Numpad +/-\r\n\r\nToggle sand funnel in mod options or by pressing 0",
+      "bodyZh": "MODオプションで砂のレベルを変更するか、Numpad +/-を使用して変更します\r\n\r\nMODオプションで砂の漏斗を切り替えるか、0キーを押して切り替えます",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-sand-control/releases/download/v1.0.0/xen-42.SandControl.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-sand-control/releases/tag/v1.0.0"
+    }
+  ]
+}

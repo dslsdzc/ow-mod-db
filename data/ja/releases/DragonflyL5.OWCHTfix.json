@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2026-08-07T13:14:42Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "OWCHTfix",
+      "date": "2025-09-06",
+      "body": "中文翻译优化mod正式版发布了~~  \r\n本体的所有文本翻译都已完成，dlc完成后会再更一个小版本。",
+      "bodyZh": "中国語訳最適化mod正式版がリリースされました~~  \n本体のすべてのテキストの翻訳が完了しており、DLCが完了したらもう少し小さなバージョンを追加します。",
+      "zipUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/download/v1.0.0/DragonflyL5.OWCHTfix.zip",
+      "releaseUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "OWCHTfix",
+      "date": "2025-08-29",
+      "body": "进度更新  \r\n完成了部分对话，以及所有告示牌类文本的翻译（木炉星蝾螈你们话太密了au😭）",
+      "bodyZh": "進捗更新  \n一部の会話とすべての看板類のテキストの翻訳を完了（木の炉辺のイバラ、お前らの話しすぎだau😭）",
+      "zipUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/download/v0.4.0/DragonflyL5.OWCHTfix.zip",
+      "releaseUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/tag/v0.4.0"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "OWCHTfix",
+      "date": "2025-08-24",
+      "body": "完成了飞船日志及全部UI的翻译",
+      "bodyZh": "飞船ログ及び全てのUIの翻訳が完了しました",
+      "zipUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/download/v0.3.0/DragonflyL5.OWCHTfix.zip",
+      "releaseUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "OWCHTfix",
+      "date": "2025-08-22",
+      "body": "对挪麦文本的查漏补缺（不包含1/6个朋友的对话",
+      "bodyZh": "ノマイテキストのチェックと修正（1/6の友達の会話は含まない）",
+      "zipUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/download/v0.2.1/DragonflyL5.OWCHTfix.zip",
+      "releaseUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "OWCHTfix",
+      "date": "2025-08-22",
+      "body": "完成了所有诺麦文本的翻译（部分人名未翻译）",
+      "bodyZh": "すべてのノマイテキストの翻訳が完了（一部の人名は翻訳されていません）",
+      "zipUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/download/v0.2.0/DragonflyL5.OWCHTfix.zip",
+      "releaseUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "OWCHTfix",
+      "date": "2025-08-18",
+      "body": "mod's first release.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/download/0.1.0/DragonflyL5.OWCHTfix.zip",
+      "releaseUrl": "https://github.com/dragonflyl5/OWCHTfix/releases/tag/0.1.0"
+    }
+  ]
+}

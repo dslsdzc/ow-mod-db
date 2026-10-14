@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-04-06T14:34:39Z",
+  "releases": [
+    {
+      "tag": "v1.1.3",
+      "name": "Version 1.1.3",
+      "date": "2026-04-06",
+      "body": "Fixed error span when [Immersion ](https://outerwildsmods.com/mods/immersion/)is enabled.",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.1.3/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.1.3",
+      "bodyZh": "修复了[Immersion ](https://outerwildsmods.com/mods/immersion/)启用时的错误跨度。"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "Version 1.1.2",
+      "date": "2026-01-13",
+      "body": "- **Added Chinese translation** (thanks SanBaiMing)\r\n- Fixed errors when loading without Achievements+ enabled",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.1.2/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.1.2",
+      "bodyZh": "- **新增中文翻译** (感谢 SanBaiMing)\n- 修复了在未启用 Achievements+ 时加载的错误"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2026-01-12",
+      "body": "Moved hardcoded string text to a translation key",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.1.1/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.1.1",
+      "bodyZh": "已将硬编码的字符串文本移动到翻译键中"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2025-08-25",
+      "body": "### Achievements Update\r\n- Added 6 achievements (for Achievements+)\r\n- Added Ernesto and Geswaldo\r\n    - Geswaldo has stuff for you to mess around with after beating the mod...",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.1.0/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.1.0",
+      "bodyZh": "### 成就更新\n- 添加了6个成就（用于成就+）\n- 添加了Ernesto和Geswaldo\n    - Geswaldo在击败模组后...有东西让你捣鼓"
+    },
+    {
+      "tag": "v1.0.8",
+      "name": "Version 1.0.8",
+      "date": "2025-08-10",
+      "body": "Update for compatibility with an upcoming update to Jam Hub\r\n(Adds a flag in save data for if you've beat Core Collapse. If you already have, just resume expedition once with this mod enabled to update the flag.)",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.0.8/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.0.8",
+      "bodyZh": "更新以兼容即将到来的 Jam Hub 更新\n（在存档数据中添加一个标记，用于显示你是否已经通关了核心坍缩。如果你已经通关了，只需启用此模组后重新开始一次探险即可更新该标记。）"
+    },
+    {
+      "tag": "v1.0.7",
+      "name": "Version 1.0.7",
+      "date": "2025-08-05",
+      "body": "- Campfires can hopefully no longer send you to space\r\n- Campfires can hopefully no longer burn you after sleeping for a long time",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.0.7/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.0.7"
+    },
+    {
+      "tag": "v1.0.6",
+      "name": "Version 1.0.6",
+      "date": "2025-07-31",
+      "body": "Made an object in the ship log map mode smaller",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.0.6/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.0.6"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "Version 1.0.5",
+      "date": "2025-07-28",
+      "body": "Further improved a puzzle",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.0.5/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.0.5"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2025-07-25",
+      "body": "Fixed typo",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.0.4/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2025-07-25",
+      "body": "Unbroke something I broke last release",
+      "zipUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/download/v1.0.3/TheLoweDown256.TLDJam5.zip",
+      "releaseUrl": "https://github.com/TheLoweDown256/TLDJam5/releases/tag/v1.0.3"
+    }
+  ]
+}

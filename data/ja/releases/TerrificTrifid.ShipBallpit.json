@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2024-01-14T12:48:49Z",
+  "releases": [
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2023-11-15",
+      "body": "Fixed the mod not working after NH 1.14.1",
+      "bodyZh": "NH 1.14.1以降でMODが動作しないのを修正しました",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-ballpit/releases/download/v0.1.1/TerrificTrifid.ShipBallpit.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-ballpit/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2023-04-01",
+      "body": "Turns your entire ship into a ball pit! Totally not a safety hazard!",
+      "bodyZh": "あなたの船全体を玉遊び場に変えます！全く安全上のリスクではありません！",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-ballpit/releases/download/v0.1.0/TerrificTrifid.ShipBallpit.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-ballpit/releases/tag/v0.1.0"
+    }
+  ]
+}

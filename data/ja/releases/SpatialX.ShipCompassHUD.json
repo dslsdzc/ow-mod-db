@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2026-07-12T15:58:06Z",
+  "releases": [
+    {
+      "tag": "v1.4.0",
+      "name": "Version 1.4.0",
+      "date": "2026-05-29",
+      "body": "Expanded the HUD with new informations :\r\n-Apoapsis : Highest point in the ship orbit\r\n-Periapsis : Lowest point in the ship orbit",
+      "bodyZh": "HUDを拡張し、新しい情報を追加しました：\n-Apoapsis : 船の軌道の最高点\n-Periapsis : 船の軌道の最低点",
+      "zipUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/download/v1.4.0/SpatialX.ShipCompassHUD.zip",
+      "releaseUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/tag/v1.4.0"
+    },
+    {
+      "tag": "v1.3.0",
+      "name": "Version 1.3.0",
+      "date": "2026-05-22",
+      "body": "Expanded the HUD with new informations :\r\n-Compass : display the ship rotation in relation to the north pole\r\n\r\n-Altimeter : display the altimer near the ship landing cam onto the screen\r\n\r\n-Allowed the Flight Path Vectors to work while no planet has been targeted\r\n\r\n-The HUD can now be disabled if some of the ship component get damaged.",
+      "bodyZh": "HUDを拡張し、新しい情報を表示しました：\n- コンパス：船の回転を北極に関連して表示\n- 標高計：船の着陸カメラの近くに標高計を画面に表示\n- ターゲットの惑星がない場合でも、フライトパスベクターが機能するようにしました\n- 船のコンポーネントの一部が損傷した場合、HUDを無効にできるようになりました",
+      "zipUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/download/v1.3.0/SpatialX.ShipCompassHUD.zip",
+      "releaseUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/tag/v1.3.0"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2026-05-15",
+      "body": "Added a new HUD that can show multiple new informations :\r\n- Speed parallel to the target surface\r\n- Closure rate to the target\r\n- True Speed (parallel speed + closure rate)\r\n- Acceleration of the ship in G or m/s\r\n- Speed required to orbit the target\r\n\r\nAdded new options to hide elements of the mod :\r\n- Trajectory markers\r\n- Trajectory console\r\n- new HUD\r\n\r\nFixed a bug where the cockpit could get closed off by a leftover collision",
+      "bodyZh": "新しいHUDが追加され、複数の新しい情報を表示できるようになりました：\n- ターゲット表面に対する平行速度\n- ターゲットへの接近率\n- 真の速度（平行速度 + 接近率）\n- 船の加速度（Gまたはm/s）\n- ターゲットを周回するのに必要な速度\n\nMODの要素を非表示にする新しいオプションが追加されました：\n- 軌道マーカー\n- 軌道コンソール\n- 新しいHUD\n\nコックピットが余剰衝突によって閉ざされるバグを修正しました",
+      "zipUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/download/v1.2.0/SpatialX.ShipCompassHUD.zip",
+      "releaseUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2025-05-03",
+      "body": "Fixed the Read me",
+      "bodyZh": "リードミーを修正しました",
+      "zipUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/download/v0.1.1/SpatialX.ShipCompassHUD.zip",
+      "releaseUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-04-30",
+      "body": "First Release",
+      "bodyZh": "初回リリース",
+      "zipUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/download/v0.1.0/SpatialX.ShipCompassHUD.zip",
+      "releaseUrl": "https://github.com/SpatialXX/ShipCompassHUD/releases/tag/v0.1.0"
+    }
+  ]
+}

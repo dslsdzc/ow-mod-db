@@ -1,0 +1,40 @@
+{
+  "repoUpdatedAt": "2025-02-16T17:23:51Z",
+  "releases": [
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2025-02-16",
+      "body": "Finally actually released the fix that I made for the mod on June 3rd 2024 that makes it not completely unplayable from you getting instantly killed on spawn but then clay didn't actually make a release even after merging the PR a year ago!!!! -xen",
+      "zipUrl": "https://github.com/FreezeDriedMangos/ow-daylight-savings/releases/download/v1.2.0/ow-daylight-savings.zip",
+      "releaseUrl": "https://github.com/FreezeDriedMangos/ow-daylight-savings/releases/tag/v1.2.0",
+      "bodyZh": "终于发布了我在2024年6月3日为模组制作的修复补丁，这个补丁使得游戏不会因为出生时立刻被杀死而完全无法玩，但即使一年前合并了PR，克莱伊（Clay）也没有实际发布版本！！！！ -xen"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2023-01-21",
+      "body": "Ernesto has arrived!",
+      "zipUrl": "https://github.com/FreezeDriedMangos/ow-daylight-savings/releases/download/v1.1.0/ow-daylight-savings.zip",
+      "releaseUrl": "https://github.com/FreezeDriedMangos/ow-daylight-savings/releases/tag/v1.1.0",
+      "bodyZh": "埃内斯托已到达！"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2023-01-21",
+      "body": "",
+      "zipUrl": "https://github.com/FreezeDriedMangos/ow-daylight-savings/releases/download/v1.0.0/ow-daylight-savings.zip",
+      "releaseUrl": "https://github.com/FreezeDriedMangos/ow-daylight-savings/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2023-01-20",
+      "body": "A beta version without the ship logs, to make sure I have something for the jam deadline",
+      "zipUrl": "https://github.com/FreezeDriedMangos/ow-daylight-savings/releases/download/v0.1.0/ow-daylight-savings.zip",
+      "releaseUrl": "https://github.com/FreezeDriedMangos/ow-daylight-savings/releases/tag/v0.1.0",
+      "bodyZh": "一个没有飞船日志的测试版本，以确保我能在活动截止日期前有所准备"
+    }
+  ]
+}

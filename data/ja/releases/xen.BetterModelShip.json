@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2024-01-02T22:01:37Z",
+  "releases": [
+    {
+      "tag": "v0.2.1",
+      "name": "Version 0.2.1",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "bodyZh": "- MODマネージャーにPatreon寄付リンクを追加",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-better-model-ship/releases/download/v0.2.1/xen.BetterModelShip.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-better-model-ship/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2023-09-27",
+      "body": "- Update to work on patch 14",
+      "bodyZh": "- パッチ14で動作するように更新",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-better-model-ship/releases/download/v0.2.0/xen.BetterModelShip.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-better-model-ship/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-09-17",
+      "body": "- Update to patch 13\r\n- Update to use new Common Camera API",
+      "bodyZh": "- パッチ13への更新\n- 新しいCommon Camera APIを使用する更新",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-better-model-ship/releases/download/v0.1.1/xen.BetterModelShip.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-better-model-ship/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-05-25",
+      "body": "- Adds a camera to the model ship so you can see where you're going\r\n- Makes the roll controls the same as the real ship\r\n- Adds a flashlight to the model ship",
+      "bodyZh": "- モデル船にカメラを追加して、どこへ行っているかを見ることができます\r\n- ロールコントロールを実際の船と同じにします\r\n- モデル船に電球を追加します",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-better-model-ship/releases/download/v0.1.0/xen.BetterModelShip.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-better-model-ship/releases/tag/v0.1.0"
+    }
+  ]
+}

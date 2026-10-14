@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-05-05T21:48:14Z",
+  "releases": [
+    {
+      "tag": "v2.1.0",
+      "name": "Version 2.1.0",
+      "date": "2024-09-30",
+      "body": "- Added API\r\n- Fixed camera and colliders",
+      "bodyZh": "- APIを追加しました\r\n- カメラとコライダーを修正しました",
+      "zipUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/download/v2.1.0/pikpik_carrot.SkinChanger.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/tag/v2.1.0"
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "Version 2.0.0",
+      "date": "2024-09-15",
+      "body": "- Added QSB compat (adapted from QSB Skins)\r\n- Added Common Camera Utility compat\r\n\r\nUpdate made by xen",
+      "bodyZh": "- QSB互換性を追加（QSB Skinsから適用）\r\n- 共通カメラユーティリティ互換性を追加\r\n\r\nxenによって行われた更新",
+      "zipUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/download/v2.0.0/pikpik_carrot.SkinChanger.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/tag/v2.0.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2024-09-14",
+      "body": "Removed NH and cleaned up code",
+      "bodyZh": "NHを削除し、コードを整理しました",
+      "zipUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/download/v1.1.0/pikpik_carrot.SkinChanger.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-09-14",
+      "body": "First version of the mod. You can play as 25 characters in total.",
+      "bodyZh": "初版のMODです。合計25人のキャラクターとしてプレイできます。",
+      "zipUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/download/v1.0.0/pikpik_carrot.SkinChanger.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/SkinChanger/releases/tag/v1.0.0"
+    }
+  ]
+}

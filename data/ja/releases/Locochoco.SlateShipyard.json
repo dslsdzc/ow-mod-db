@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2023-08-15T22:10:15Z",
+  "releases": [
+    {
+      "tag": "v0.2.1",
+      "name": "Slate's Shipyard v0.2.1",
+      "date": "2023-02-11",
+      "body": "* Fixed probe getting permanently destroyed and possible deletion of the player game object when resetting/removing a ship\r\n* Fixed the player not being able to leave the map screen after entering a vehicle using the `BasicWheelController`\r\n\r\nThanks to QuantumBlur314 for reporting these issues!",
+      "bodyZh": "* 探査機が恒久的に破壊され、船をリセット/削除時にプレイヤーゲームオブジェクトの削除が可能になる問題を修正しました\r\n* ビークルを使用して`BasicWheelController`で地図画面から離れられない問題を修正しました\r\n\r\nこれらの問題を報告してくれたQuantumBlur314に感謝します！",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.2.1/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Slate's Shipyard v0.2.0",
+      "date": "2022-11-23",
+      "body": "- Adds The basics for Networking Interfaces, specially with owo\r\n-  Adds buttons for deleting all spawned ships from a launch pad, and resetting the latest spawned ship\r\n- Makes Ships Spawn right on top of the launch pad\r\n- New 3d models for everything from FunkyShoeMan#0001",
+      "bodyZh": "- ネットワークインターフェースの基本的な設定を追加、特にowoと\n- 航空機離陸台から生成されたすべての航空機を削除し、最新に生成された航空機をリセットするためのボタンを追加\n- 航空機を航空機離陸台の上に直接生成する\n- すべてのものに新しい3dモデルを追加（FunkyShoeMan#0001）",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.2.0/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.9",
+      "name": "Slate's Shipyard v0.1.9",
+      "date": "2022-11-21",
+      "body": "* Fixed issue of launchpad not activating if the prefab started disabled\r\n* This is probabilly the last pre-release of this qsb-and-owo-integration, as once KSV is in better shape, this is be a full release",
+      "bodyZh": "* 起動台がプレハブが無効で始まるとアクティベートしない問題を修正しました\r\n* これはこのqsb-and-owo統合の最後のプレリリースで、KSVがより良くなったら、これが完全リリースになるでしょう",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.1.9/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.1.9"
+    },
+    {
+      "tag": "v0.1.8",
+      "name": "Slate's Shipyard v0.1.8",
+      "date": "2022-11-15",
+      "body": "* Changed system from using Func<GameObjects> to using actual prefabs",
+      "bodyZh": "* システムを Func<GameObjects> の使用から実際のプレハブの使用に変更しました",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.1.8/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.1.8"
+    },
+    {
+      "tag": "v0.1.7",
+      "name": "Slate's Shipyard v0.1.7",
+      "date": "2022-11-13",
+      "body": "* Adds multiple stuff for networking and compatibility with OWO and QSB\r\n* For now only OWO has a compatibility layer\r\n//TODO make this have all the new classes and system on final release",
+      "bodyZh": "* ネットワーク機能とOWO、QSBとの互換性のために複数の機能を追加\n* 現時点ではOWOのみ互換性レイヤーがある\n//TODO 最終リリースで新しいクラスとシステムをすべて含めるようにする",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.1.7/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.1.7"
+    },
+    {
+      "tag": "v0.1.6",
+      "name": "Slate's Shipyard v0.1.6",
+      "date": "2022-09-18",
+      "body": "* Added the class which inherits from `PlayerAttachPoint` `FreeLookablePlayerAttachPoint`. If the player is attached to a point which has this class, it will evaluate the function in AllowFreeLook, so you can use that to allow or disallow free looking.\r\n* Changed the position of the default shipyard on the launch pad on Timber Hearth (as requested by MegaPiggy).",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.1.6/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.1.6"
+    },
+    {
+      "tag": "v0.1.5",
+      "name": "Slate's Shipyard v0.1.5",
+      "date": "2022-09-15",
+      "body": "* Adds the wheels module, from it you can use the OWSingleRaycastWheel and BasicWheelController.\r\n* Adds 3 more ship spawners, one on timber hearth (close to the village), one on ember twin (close to the signal locator) and one on brittle hollow close to the observatory.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.1.5/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.1.5"
+    },
+    {
+      "tag": "v0.1.4",
+      "name": "Slate's Shipyard v0.1.4",
+      "date": "2022-09-11",
+      "body": "* Finally fixed the issue when a player tried to warp in a blackhole but didn't have a ship spawned or not a ship addon installed\r\n* Added API for spawning the default ship yard (can be used by nh addons to add it to their solar system and or planets",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.1.4/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.1.4"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "Slate's Shipyard v0.1.3",
+      "date": "2022-09-10",
+      "body": "* Added a new event method to ControlledVanishObject\r\n* Fixed SpawnImmediately printing a error message",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.1.3/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Slate's Shipyard v0.1.2",
+      "date": "2022-09-10",
+      "body": "* Fixed a source of NRE that could make warping impossible\r\nThanks MegaPiggy!",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/SlateShipyard/releases/download/v0.1.2/Locochoco.SlateShipyard.zip",
+      "releaseUrl": "https://github.com/loco-choco/SlateShipyard/releases/tag/v0.1.2"
+    }
+  ]
+}

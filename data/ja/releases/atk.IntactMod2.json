@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-06-15T18:01:07Z",
+  "releases": [
+    {
+      "tag": "v0.1.6",
+      "name": "Version 0.1.6",
+      "date": "2025-11-20",
+      "body": "* Added a DLC check so the mod no longer breaks without DLC!! (i'm so sorry)\r\n* Fixed starfield disappearing over time\r\n* Made Chert no longer panic over nonexistent supernovae\r\n\r\n* Reduced list of anglerfish errors on start\r\n* Removed incorrectly added parts on OPC barrel",
+      "bodyZh": "* DLCチェックを追加し、DLCがないとmodが壊れるのを防ぎました！！（すみません）\n* 星空が時間とともに消えるのを修正しました\n* Chertが存在しない超新星についてパニックにならないようにしました\n\n* 起動時のアンコウのエラーリストを減らしました\n* OPCバレルに誤って追加された部分を削除しました",
+      "zipUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/download/v0.1.6/SimplerTimes.zip",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/v0.1.6"
+    },
+    {
+      "tag": "v0.1.5b",
+      "name": "Version 0.1.5b",
+      "date": "2025-08-25",
+      "body": "- made Ringworld story slidereels not burned where possible\r\n- \r\n- removed dangerous rocks in the river rapids\r\n- \r\n- Feldspar's seed can now be entered (specifically the one on TH and by their camp)\r\n- \r\n- fixed broken rotating nomai door texture\r\n- \r\n- fixed an OPC projection pool not working\r\n- \r\n- made Hourglass Twins oceans less buoyant\r\n- \r\n- removed some ghost matter\r\n- \r\n- made Interloper's orbit inclined to lessen chances of intersecting with planet orbits during extended loop (thank u xen)",
+      "bodyZh": "- リングワールドのストーリースライドリーを可能な限り燃焼させないようにしました\r\n- \r\n- 河の滝の危険な岩を削除しました\r\n- \r\n- フェルスパーの種が現在入れることができます（特にTHと彼らのキャンプにあります）\r\n- \r\n- 崩れた回転ノマイドアのテクスチャを修正しました\r\n- \r\n- OPC投影プールが作動しないのを修正しました\r\n- \r\n- 砂時計の双子星の海をより浮きやすくしました\r\n- \r\n- 一些幽霊物質を削除しました\r\n- \r\n- 侵入者の軌道を傾斜させ、延長ループ中に惑星の軌道と交差する可能性を減らしました（ありがとう、ゼックス）",
+      "zipUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/download/v0.1.5b/SimplerTimes.zip",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/v0.1.5b"
+    },
+    {
+      "tag": "v0.1.5",
+      "name": "Patch 0.1.5",
+      "date": "2025-08-25",
+      "body": "* made Ringworld story slidereels not burned where possible\r\n* removed dangerous rocks in the river rapids\r\n* Feldspar's seed can now be entered (specifically the one on TH and by their camp)\r\n\r\n* fixed broken rotating nomai door texture\r\n* fixed an OPC projection pool not working\r\n* made Hourglass Twins oceans less buoyant\r\n* removed some ghost matter\r\n* made Interloper's orbit inclined to lessen chances of intersecting with planet orbits during extended loop (thank u xen)",
+      "bodyZh": "* リングワールドのストーリースライドリーを可能な限り燃焼させないようにしました\n* 河の滝の危険な岩を削除しました\n* フェルスパーの種は現在入れることができます（特にTHと彼らのキャンプにあります）\n\n* 割れていたノマイの回転ドアのテクスチャを修正しました\n* OPCのプロジェクションプールが作動しない問題を修正しました\n* 砂時計の双子星の海をより浮きやすいようにしました\n* 幽霊物質をいくつか削除しました\n* 侵入者の軌道を傾斜させ、延長ループ中に惑星の軌道と交差する可能性を減らしました（ありがとう、ゼックス）",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/v0.1.5"
+    },
+    {
+      "tag": "v0.1.4",
+      "name": "Version 0.1.4",
+      "date": "2024-06-06",
+      "body": "Made Hourglass Twins' water exchange loop infinitely\r\nFixed a constant error caused by a shader on the HGT getting angry about the missing sand\r\nFixed the ice blocking the Interloper's entrance not being hidden + redundant gm notification volumes\r\nFixed a light in a module on the OPC being keeploaded, which looked weird from far away\r\nFixed some low gravity volumes on the Hanging City highways\r\nAdded a landing pad to the Sun Station and slapped the Hotshot achievement thing on there (disclaimer: no idea if it works!!)\r\n\r\nNOTE: This mod disables the supernova and the loop ending on its own. You will be free to explore as long as you wish, but you will need to find death yourself to save and restart the star system!",
+      "bodyZh": "Outer Wildsの水交換ループを無限にしました\nHGTのシェーダーが足場のない砂について怒ってしまっていた定常的なエラーを修正しました\nインターローパーの入り口を遮る氷が隠されておらず、余分なgm通知ボリュームがあったのを修正しました\nOPCのモジュールの光が遠くから見ておかしく見えるようにkeeploadedされていたのを修正しました\nハングイングシティハイウェイで低重力ボリュームをいくつか修正しました\nサンステーションに着陸パッドを追加し、そこにHotshotの達成事象を貼りました（免責事項：動作するかどうかはわかりません！！）\n\n注意：このMODは超新星とそれ自体でループが終了するのを無効にします。望む限り探索できますが、星系を保存し再開するには、自分で死ぬ必要があります！",
+      "zipUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/download/v0.1.4/SimplerTimes.zip",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/v0.1.4"
+    },
+    {
+      "tag": "v0.1.21",
+      "name": "Roaming cyclones on GD removed , comet gm removed, anglerfish shrunken",
+      "date": "2024-05-31",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/download/v0.1.21/SimplerTimes.zip",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/v0.1.21"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "Version 0.1.3",
+      "date": "2024-05-31",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/download/v0.1.3/SimplerTimes.zip",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Roaming cyclones on GD removed, comet gm removed, anglerfish shrunken",
+      "date": "2024-05-31",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2023-12-31",
+      "body": "Post-update fix for several things:\r\nBH gravity highway pathway collider fix, fixed copper material of the BH beams, changed BHF symbol to be more visible - made sunoverride on Ash Twin ocean slightly smaller to make bobbing on the surface less jarring - and removed a weird dependency in the bundle",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/download/v0.1.1/SimplerTimes.zip",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "06C",
+      "name": "Update 1.063",
+      "date": "2023-12-30",
+      "body": "I am so sorry for rapid release updates\r\n\r\nBH highway collider fix, BHF logo change, made sunoverride on Ash Twin ocean slightly smaller so you don't see the ocean blip into darkness on surface, and removed a weird dependency in the bundle\r\n\r\n+ copper stuff on BH entrance used wrong material + fixed tiling",
+      "bodyZh": "",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/06C"
+    },
+    {
+      "tag": "06B",
+      "name": "1.062",
+      "date": "2023-12-30",
+      "body": "I am so sorry for rapid release updates\r\n\r\nBH highway collider fix, BHF logo change, made sunoverride on Ash Twin ocean slightly smaller so you don't see the ocean blip into darkness on surface, and removed a weird dependency in the bundle\r\n\r\n+ copper stuff on BH entrance used wrong material",
+      "bodyZh": "",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/bruvin-sky/SimplerTimes/releases/tag/06B"
+    }
+  ]
+}

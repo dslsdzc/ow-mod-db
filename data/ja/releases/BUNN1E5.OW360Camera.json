@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2023-03-04T10:44:09Z",
+  "releases": [
+    {
+      "tag": "1.0.5",
+      "name": "1.0.5",
+      "date": "2023-01-06",
+      "body": "Fixed a bug",
+      "bodyZh": "バグを修正しました",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.5/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.5"
+    },
+    {
+      "tag": "1.0.3",
+      "name": "v1.0.3",
+      "date": "2022-04-23",
+      "body": "360 Camera now follows look rotation",
+      "bodyZh": "360カメラは現在、視線の回転に追従します",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.3/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.3"
+    },
+    {
+      "tag": "1.0.2",
+      "name": "v1.0.2",
+      "date": "2022-04-22",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.2/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.2"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-04-22",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.1/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-04-22",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.0/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.0"
+    }
+  ]
+}

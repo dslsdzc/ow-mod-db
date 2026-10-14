@@ -1,0 +1,77 @@
+{
+  "repoUpdatedAt": "2025-08-09T01:08:23Z",
+  "releases": [
+    {
+      "tag": "v0.1.7",
+      "name": "Version 0.1.7",
+      "date": "2024-04-03",
+      "body": "Fixed menu breaking with newer versions of OWML",
+      "bodyZh": "MODローダーの新しいバージョンとの互換性の問題を修正しました",
+      "zipUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/download/v0.1.7/VioVayo.DWModAssist.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/tag/v0.1.7"
+    },
+    {
+      "tag": "v0.1.6",
+      "name": "Version 0.1.6",
+      "date": "2023-11-11",
+      "body": "- Subjectively nicer code\r\n- Mod now checks for DLC ownership",
+      "bodyZh": "- 主観的により良いコード\n- MODは現在DLCの所有を確認しています",
+      "zipUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/download/v0.1.6/VioVayo.DWModAssist.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/tag/v0.1.6"
+    },
+    {
+      "tag": "v0.1.5",
+      "name": "Version 0.1.5",
+      "date": "2023-06-25",
+      "body": "Friendship ended with Modhelper.Menus",
+      "bodyZh": "友情はModhelper.Menusで終わりました",
+      "zipUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/download/v0.1.5/VioVayo.DWModAssist.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/tag/v0.1.5"
+    },
+    {
+      "tag": "v0.1.4",
+      "name": "Version 0.1.4",
+      "date": "2023-04-30",
+      "body": "- Reparent warped items on arrival\r\n- Fixed some Prisoner Cell entryway trigger stuff",
+      "bodyZh": "- 到着時にワープアイテムの親子関係を再設定\n- 虐囚房の入り口トリガー関連の問題を修正",
+      "zipUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/download/v0.1.4/VioVayo.DWModAssist.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/tag/v0.1.4"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "Version 0.1.3",
+      "date": "2023-04-22",
+      "body": "- Fixed the sky\r\n- Menu should be useable with a controller now",
+      "bodyZh": "- 舞台を修正しました\r\n- メニューはコントローラーで使用できるようになりました",
+      "zipUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/download/v0.1.3/VioVayo.DWModAssist.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2023-04-20",
+      "body": "- Teleporting into Dream World now counts as entering the Stranger\r\n- Fixed several cases in which teleporting would cause the player to get stuck\r\n- Waking up after teleport no longer adds player to volumes they don't spawn inside of",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/download/v0.1.2/VioVayo.DWModAssist.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2023-04-17",
+      "body": "- Fixed issue with warping while player is attached somewhere\r\n- Added \"Enter by Death\" toggle option to the warp menu\r\n- Shortened location names to fit selectors better",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/download/v0.1.1/VioVayo.DWModAssist.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-04-16",
+      "body": "First release!",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/download/v0.1.0/VioVayo.DWModAssist.zip",
+      "releaseUrl": "https://github.com/VioVayo/OWDreamWorldModAssist/releases/tag/v0.1.0"
+    }
+  ]
+}

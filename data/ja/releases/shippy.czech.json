@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2026-04-25T06:56:40Z",
+  "releases": [
+    {
+      "tag": "0.4.1",
+      "name": "Furt rovně (0.4.1)",
+      "date": "2025-07-28",
+      "body": "- Fixed a misleading Quantum Moon translation (in #32 by @Kkobarii)",
+      "bodyZh": "- 量子の月の誤解を招く翻訳を修正 (in #32 by @Kkobarii)",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/shippy/outer-wilds-czech/releases/tag/0.4.1"
+    },
+    {
+      "tag": "0.4.0",
+      "name": "Ryzí zlato (0.4.0)",
+      "date": "2022-07-25",
+      "body": "- Migrate to the @xen-42's [Interplanetary Polyglot](https://github.com/xen-42/outer-wilds-localization-utility) for the mod guts (#25, #26).\r\n- Fix various typos surfaced by beta-testing\r\n- Translate \"Launch Module\" better (#7)",
+      "bodyZh": "- @xen-42の[Interplanetary Polyglot](https://github.com/xen-42/outer-wilds-localization-utility)にMODの本質を移行する (#25, #26)。\r\n- ベータテストで見つかった様々なタイプミスを修正\n- 「Launch Module」の翻訳を改善する (#7)",
+      "zipUrl": "https://github.com/shippy/outer-wilds-czech/releases/download/0.4.0/shippy.czech_0.4.0.zip",
+      "releaseUrl": "https://github.com/shippy/outer-wilds-czech/releases/tag/0.4.0"
+    },
+    {
+      "tag": "0.3.0",
+      "name": "Radost až na kost (0.3.0)",
+      "date": "2022-07-21",
+      "body": "První plně QA'd verze! Zahrnuje:\r\n\r\n- Korekce plného textu (#14)\r\n- Překlad lodních deníků z Echoes of the Eye (#13)\r\n- Konzistentní genderování pro Nomai i Domopecany (#9, #10)\r\n- \"Mluv s\" nyní se sedmým pádem (#19)\r\n- Domopec má nyní správné adjektivum (#18)",
+      "bodyZh": "初めて完全にQAテストされたバージョン！以下を含みます：\n\n- 全テキストの修正 (#14)\n- 「宇宙の眼の回声」からの船の日誌の翻訳 (#13)\n- ノマイとドモペカニのための一貫したジェンダー化 (#9, #10)\n- 「話す」が今や第七格 (#19)\n- ドモペカニは今正しい形容詞を持っています (#18)",
+      "zipUrl": "https://github.com/shippy/outer-wilds-czech/releases/download/0.3.0/shippy.czech_0.3.0.zip",
+      "releaseUrl": "https://github.com/shippy/outer-wilds-czech/releases/tag/0.3.0"
+    },
+    {
+      "tag": "0.2.3",
+      "name": "Co zbývá mi ještě?! (0.2.3)",
+      "date": "2022-07-20",
+      "body": "- Add initial round of beta-testing fixes\r\n- Add (un-proofed) Echoes of the Eye log translations (#13)\r\n- Proofread Chert + Esker + final bits of Gabbro (#14)",
+      "bodyZh": "- ベータテスト初期ラウンドの修正を追加\n- (未校正) 宇宙の眼の記録翻訳を追加 (#13)\n- Chert + Esker + Gabbroの最終部分を校正 (#14)",
+      "zipUrl": "https://github.com/shippy/outer-wilds-czech/releases/download/0.2.3/shippy.czech_0.2.3.zip",
+      "releaseUrl": "https://github.com/shippy/outer-wilds-czech/releases/tag/0.2.3"
+    },
+    {
+      "tag": "0.2.2",
+      "name": "I cesta může být cíl (v0.2.2)",
+      "date": "2022-07-18",
+      "body": "Větší část korektur pro verzi 0.2.0. Nezkorigované texty zahrnují hlavně Cherta, Eskera a Gabbra. Částečné fixy pro #6, #7, #9, #10, #14, #15, a #17.",
+      "bodyZh": "0.2.0バージョン向けの校正の大部分です。未校正のテキストには主にChert、Esker、Gabbroが含まれます。#6、#7、#9、#10、#14、#15、および#17向けの部分的な修正です。",
+      "zipUrl": "https://github.com/shippy/outer-wilds-czech/releases/download/0.2.2/shippy.czech_0.2.2.zip",
+      "releaseUrl": "https://github.com/shippy/outer-wilds-czech/releases/tag/0.2.2"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "Čeština pro Outer Wilds (v0.2.0)",
+      "date": "2022-07-11",
+      "body": "Tato verze obsahuje přeložený téměř veškerý text v Outer Wilds s následujícími výjimkami:\r\n\r\n- Lodní deník pro Echoes of the Eye\r\n- Některé ezoteričtější věci v UI\r\n\r\nNeprošla také kompletní korekturou.\r\n\r\nZnámé problémy jsou obsaženy v sekci [Issues](https://github.com/shippy/outer-wilds-czech/issues) v repozitáři na Github. Pokud naleznete další problém, nestyďte se pro něj vytvořit Issue.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/shippy/outer-wilds-czech/releases/download/0.2.0/shippy.czech_0.2.0.zip",
+      "releaseUrl": "https://github.com/shippy/outer-wilds-czech/releases/tag/0.2.0"
+    }
+  ]
+}

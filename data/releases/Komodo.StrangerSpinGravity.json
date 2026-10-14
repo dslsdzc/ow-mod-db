@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2023-01-27T04:28:15Z",
+  "releases": [
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2023-01-27",
+      "body": "This release adds centripetal buoyancy adjustments to additional fluid volumes in the Stranger, primarily the diving bell entrance.",
+      "zipUrl": "https://github.com/Komodo5197/StrangerSpinGravity/releases/download/v1.2.0/Komodo.StrangerSpinGravity.zip",
+      "releaseUrl": "https://github.com/Komodo5197/StrangerSpinGravity/releases/tag/v1.2.0",
+      "bodyZh": "本次更新为陌生人区域的额外流体体积添加了向心力浮力调整，主要针对潜水钟入口。"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2022-11-09",
+      "body": "This release fixes the raft docks, including the dam lift.  They may still fail after certain rough approaches or under extremely high gravity.",
+      "zipUrl": "https://github.com/Komodo5197/StrangerSpinGravity/releases/download/v1.1.0/Komodo.StrangerSpinGravity.zip",
+      "releaseUrl": "https://github.com/Komodo5197/StrangerSpinGravity/releases/tag/v1.1.0",
+      "bodyZh": "此次更新修复了筏子码头，包括大坝提升装置。在经过某些恶劣航程后或极端高重力环境下，仍有可能失效。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2022-11-08",
+      "body": "Initial release.",
+      "zipUrl": "https://github.com/Komodo5197/StrangerSpinGravity/releases/download/v1.0.0/Komodo.StrangerSpinGravity.zip",
+      "releaseUrl": "https://github.com/Komodo5197/StrangerSpinGravity/releases/tag/v1.0.0",
+      "bodyZh": "初始发布。"
+    }
+  ]
+}

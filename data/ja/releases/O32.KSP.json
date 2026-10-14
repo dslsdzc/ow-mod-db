@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-01-07T17:25:25Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2023-01-07",
+      "body": "- Increased resolution of bodies\r\n- Jool now has a core",
+      "bodyZh": "- 軀体の解像度を上げました\r\n- ジュールには核が追加されました",
+      "zipUrl": "https://github.com/RealOrbital32/KSP/releases/download/1.1.0/O32.KSP.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/KSP/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2023-01-05",
+      "body": "release",
+      "bodyZh": "リリース",
+      "zipUrl": "https://github.com/RealOrbital32/KSP/releases/download/1.0.0/O32.KSP.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/KSP/releases/tag/1.0.0"
+    }
+  ]
+}

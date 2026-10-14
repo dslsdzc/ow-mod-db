@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-04-01T18:39:16Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2026-04-01",
+      "body": "Outer Wilds is a game loosely based on real-world astronomy and orbital physics, but as anyone who has taken a high school physics class could tell you, the game is clearly not scientifically accurate at all. A black hole that doesn't spaghettify you? Trees that produce infinite oxygen? Sand passing back and forth between two planets? These are just a few of the many scientifically inaccurate things in the game. This mod removes all of the planets that are scientifically inaccurate, leaving only the ones that are scientifically accurate. The result is a much more realistic and scientifically accurate Outer Wilds experience.",
+      "bodyZh": "Outer Wildsは、現実世界の天文学と軌道物理学に弱く基づいたゲームですが、高校物理の授業を受けている誰でもわかるように、このゲームは全く科学的に正確ではありません。ブラックホールがあなたをスパゲッティ化しない？ 無限の酸素を生産する木？ 二つの惑星の間で砂が往復する？ これらは、このゲームに存在する科学的に不正確な多くの事柄のほんの数例です。このMODは、科学的に不正確なすべての惑星を削除し、科学的に正確なものだけを残します。結果は、もっと現実的で科学的に正確なOuter Wildsの体験になります。",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-april-fools-2026/releases/download/v1.0.0/ow-mod-april-fools-2026.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-april-fools-2026/releases/tag/v1.0.0"
+    }
+  ]
+}

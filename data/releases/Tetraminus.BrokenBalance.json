@@ -1,0 +1,37 @@
+{
+  "repoUpdatedAt": "2023-01-23T20:43:35Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2023-01-22",
+      "body": "ready i guess",
+      "zipUrl": "https://github.com/tetraminus/Tetraminus.BrokenBalance/releases/download/v0.1.0/Tetraminus.BrokenBalance.zip",
+      "releaseUrl": "https://github.com/tetraminus/Tetraminus.BrokenBalance/releases/tag/v0.1.0"
+    },
+    {
+      "tag": "v0.0.3",
+      "name": "v0.0.3",
+      "date": "2023-01-22",
+      "body": "Just about Jam ready",
+      "zipUrl": "https://github.com/tetraminus/Tetraminus.BrokenBalance/releases/download/v0.0.3/Tetraminus.BrokenBalance.zip",
+      "releaseUrl": "https://github.com/tetraminus/Tetraminus.BrokenBalance/releases/tag/v0.0.3"
+    },
+    {
+      "tag": "v0.0.2",
+      "name": "v0.0.2",
+      "date": "2023-01-21",
+      "body": "increment version\r\nadded The Mines, not finished... as with everything else",
+      "zipUrl": "https://github.com/tetraminus/Tetraminus.BrokenBalance/releases/download/v0.0.2/Tetraminus.BrokenBalance.zip",
+      "releaseUrl": "https://github.com/tetraminus/Tetraminus.BrokenBalance/releases/tag/v0.0.2"
+    },
+    {
+      "tag": "v0.0.1",
+      "name": "v0.0.1",
+      "date": "2023-01-19",
+      "body": "",
+      "zipUrl": "https://github.com/tetraminus/Tetraminus.BrokenBalance/releases/download/v0.0.1/Tetraminus.BrokenBalance.zip",
+      "releaseUrl": "https://github.com/tetraminus/Tetraminus.BrokenBalance/releases/tag/v0.0.1"
+    }
+  ]
+}

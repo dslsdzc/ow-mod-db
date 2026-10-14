@@ -1,0 +1,86 @@
+{
+  "repoUpdatedAt": "2026-08-14T15:22:35Z",
+  "releases": [
+    {
+      "tag": "2.1.0",
+      "name": "2.1.0",
+      "date": "2026-08-14",
+      "body": "More comet tail effects",
+      "bodyZh": "より多くの彗星の尾のエフェクト",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/2.1.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/2.1.0"
+    },
+    {
+      "tag": "2.0.1",
+      "name": "2.0.1",
+      "date": "2026-08-13",
+      "body": "Fixed Timber Hearth's rain",
+      "bodyZh": "木の炉辺の雨を修正しました",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/2.0.1/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/2.0.1"
+    },
+    {
+      "tag": "2.0.0",
+      "name": "2.0.0",
+      "date": "2026-08-13",
+      "body": "In total a more decor mod than content now, the game-changing aspects (i.e. clouds and wind) have been removed. Have fun.",
+      "bodyZh": "総じて、よりデコレーション重視のmodとなりました。ゲームを変える要素（つまり雲や風）は削除されました。楽しんでください。",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/2.0.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/2.0.0"
+    },
+    {
+      "tag": "1.3.1",
+      "name": "1.3.1",
+      "date": "2026-02-14",
+      "body": "added arourae to brittle hollow and timber hearth for REAL this time",
+      "bodyZh": "脆い空洞と木の炉辺にアウロラを追加しました、本当にですよ。",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.3.1/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.3.1"
+    },
+    {
+      "tag": "1.3.0",
+      "name": "1.3.0",
+      "date": "2026-02-14",
+      "body": "added arourae to timber hearth and brittle hollow\r\nthey suck\r\nbut they look cool",
+      "bodyZh": "木の炉辺と脆い空洞に極光を追加しました\r\nそれは吸収します\r\nしかし、それらはクールに見えます",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.3.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.3.0"
+    },
+    {
+      "tag": "1.2.0",
+      "name": "1.2.0",
+      "date": "2025-05-02",
+      "body": "ACTUALLY no more balls of doom on timber hearth\r\nno more tornadoes of death on the twins (now itty bitty storms)",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.2.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.2.0"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2025-05-01",
+      "body": "no more balls of doom on timber hearth\r\nno more mappability of said balls of doom on timber hearth\r\nno more mod-breaking atmosphere height on dark bramble",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.1.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2025-04-30",
+      "body": "damn you hands!!!!!!!!",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.0.1/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2025-03-04",
+      "body": "Adds weather as:\r\nSand tornados and sand clouds on the Hourglass Twins\r\nRain and water clouds on Timber Hearth\r\nWater clouds on Brittle Hollow\r\nSnowflakes and an atmosphere on Dark Bramble",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.0.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.0.0"
+    }
+  ]
+}

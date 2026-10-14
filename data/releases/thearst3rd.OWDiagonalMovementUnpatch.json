@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2025-06-02T23:45:57Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-06-02",
+      "body": "Initial release",
+      "zipUrl": "https://github.com/thearst3rd/OWDiagonalMovementUnpatch/releases/download/v0.1.0/thearst3rd.OWDiagonalMovementUnpatch.zip",
+      "releaseUrl": "https://github.com/thearst3rd/OWDiagonalMovementUnpatch/releases/tag/v0.1.0",
+      "bodyZh": "初始发布"
+    }
+  ]
+}

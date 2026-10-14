@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-05-13T20:34:46Z",
+  "releases": [
+    {
+      "tag": "v0.2.0",
+      "name": "PodracingTracker v0.2.0",
+      "date": "2026-05-13",
+      "body": "## 0.2.0\r\n\r\n- Added support for LiveSplit.\r\n- Added overlay destination selector: Main HUD, Landing monitor, Space suit HUD (WIP).\r\n- Exposed **Content** folder next to the DLL (editable JSON/LSS data).\r\n- Overlay corners moved to **RuleGuiCorners.json** (removed in-menu per-rule corner options).\r\n- Refactored for maintainability.\r\n\r\nInstall: extract **TheIterator.PodracingTracker.zip** so PodracingTracker.dll, manifest.json, default-config.json, and **Content** sit in your mod folder (OWML mods directory for **TheIterator.PodracingTracker**).\r\n\r\nSee [CHANGELOG](https://github.com/5PIterator/Podracing-Tracker/blob/main/CHANGELOG.md) for LiveSplit setup steps.",
+      "bodyZh": "## 0.2.0\r\n\r\n- LiveSplit のサポートを追加しました。\r\n- オーバーレイの宛先選択器を追加：メインHUD、着陸モニター、宇宙服HUD（WIP）。\r\n- **Content** フォルダをDLLの隣に公開（編集可能なJSON/LSSデータ）。\r\n- オーバーレイの隅が **RuleGuiCorners.json** に移動（メニュー内の各ルールごとの隅のオプションは削除）。\r\n- メンテナンスの容易さのために再構築。\n\nインストール：**TheIterator.PodracingTracker.zip** を展開して、PodracingTracker.dll、manifest.json、default-config.json、および **Content** があなたのmodフォルダ（**TheIterator.PodracingTracker** のOWML modsディレクトリ）に置かれるようにします。\r\n\r\nLiveSplitの設定手順については [CHANGELOG](https://github.com/5PIterator/Podracing-Tracker/blob/main/CHANGELOG.md) を参照してください。",
+      "zipUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/download/v0.2.0/TheIterator.PodracingTracker.zip",
+      "releaseUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "PodracingTracker v0.1.0",
+      "date": "2024-12-24",
+      "body": "Podracing is a challenge in Outer Wilds revolving around flying around the Solar System and landing on specific locations. The more locations you land on, the higher your score. The Podracing Tracker modification is then a mod specifically designed to track the score and rules of Podracing.",
+      "bodyZh": "ポッドレースは、Outer Wildsにおける挑戦で、太陽系を飛び回って特定の場所に着陸することを中心に構成されています。着陸した場所が多いほど、スコアは高くなります。ポッドレーストラッカーMODは、そのスコアとルールを追跡するために特別に設計されたMODです。",
+      "zipUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/download/0.1.0/TheIterator.PodracingTracker.zip",
+      "releaseUrl": "https://github.com/5PIterator/Podracing-Tracker/releases/tag/0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2024-08-08T03:41:48Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-05-28",
+      "body": "First Release",
+      "zipUrl": "https://github.com/MegaPiggy/PrimitiveLaunching/releases/download/1.0.0/MegaPiggy.PrimitiveLaunching.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/PrimitiveLaunching/releases/tag/1.0.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

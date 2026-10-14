@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2022-09-16T21:21:17Z",
+  "releases": [
+    {
+      "tag": "1.1.2",
+      "name": "1.1.2",
+      "date": "2022-09-16",
+      "body": "1.1.13 update\r\n- Fixed freeze on game over due to changes in the 1.1.13 update",
+      "bodyZh": "1.1.13のアップデート\n- 1.1.13のアップデートによるゲームオーバー時のフリーズを修正しました",
+      "zipUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/download/1.1.2/OuterWildsPermadeath.1.1.2.zip",
+      "releaseUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/tag/1.1.2"
+    },
+    {
+      "tag": "1.1.1",
+      "name": "1.1.1",
+      "date": "2022-08-22",
+      "body": "Bug fixes\r\n- Fixed game forgetting about permadeath being enabled on a save when mod is updated",
+      "bodyZh": "バグ修正\n- MODが更新された際に、ゲームがセーブデータで永続的な死亡が有効になっていることを忘れていたのを修正しました",
+      "zipUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/download/1.1.1/OuterWildsPermadeath.1.1.1.zip",
+      "releaseUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/tag/1.1.1"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2022-08-21",
+      "body": "Allowed for dying in a certain way in the DLC without having progress wiped.\r\n- <details><summary>DLC spoiler</summary>If the player dies for any reason in the simulation when they are dead in real life outside the simulation, their progress is not wiped</details>",
+      "bodyZh": "DLCの特定の方法での死亡時に進捗が消去されないようにする。\n- <details><summary>DLCのスパイラル</summary>プレイヤーがシミュレーション中に実際の人生でシミュレーション外に死亡した場合、何らかの理由で死亡した場合、その進捗は消去されない</details>",
+      "zipUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/download/1.1.0/OuterWildsPermadeath.1.1.0.zip",
+      "releaseUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2022-08-10",
+      "body": "Bug fixes\r\n- Fixed permadeath not being enabled when clicking on New Permadeath Expedition until the player quits to the title screen and resumes\r\n- Removed Meditate Until Next Loop prompt when permadeath is disabled",
+      "bodyZh": "バグ修正\r\n- 新しい永久死の探検をクリックしても、プレイヤーがタイトル画面に戻って再開するまで永久死が有効にされない問題を修正\r\n- 永久死が無効化されている場合、次のループまで瞑想するプロンプトを削除",
+      "zipUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/download/1.0.1/OuterWildsPermadeath.1.0.1.zip",
+      "releaseUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-08-01",
+      "body": "Initial release\r\n- Ship log progress percentage\r\n- Ship log cleared on death\r\n- Campfire meditation\r\n- Quit and Alt+F4 protection",
+      "bodyZh": "初期リリース\r\n- 航行記録の進捗パーセンテージ\r\n- 航行記録が死亡時にクリアされる\r\n- キャンプファイアでの瞑想\r\n- クイットとAlt+F4の保護",
+      "zipUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/download/1.0.0/OuterWildsPermadeath.1.0.0.zip",
+      "releaseUrl": "https://github.com/piggeywig2000/OuterWildsPermadeath/releases/tag/1.0.0"
+    }
+  ]
+}

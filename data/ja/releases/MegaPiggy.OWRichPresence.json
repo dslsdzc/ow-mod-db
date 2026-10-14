@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-05-28T12:50:54Z",
+  "releases": [
+    {
+      "tag": "1.8.1",
+      "name": "v1.8.1",
+      "date": "2026-03-12",
+      "body": "- Fix exception",
+      "bodyZh": "- 例外を修正",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.8.1/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.8.1"
+    },
+    {
+      "tag": "1.8.0",
+      "name": "v1.8.0",
+      "date": "2026-03-08",
+      "body": "- Added chinese translation (thanks @SheepCreater2)\r\n- Added custom icon support for\r\n  - [The Stranger They Are](https://outerwildsmods.com/mods/thestrangertheyare/)\r\n  - [Heliostudy](https://outerwildsmods.com/mods/heliostudy/)\r\n  - [The Cosmic Curators](https://outerwildsmods.com/mods/thecosmiccurators/)\r\n  - [Dreambound](https://outerwildsmods.com/mods/dreambound/)\r\n  - [Fret's Quest](https://outerwildsmods.com/mods/fretsquest/)\r\n  - [Guardian](https://outerwildsmods.com/mods/guardian/)\r\n  - [Project ARC](https://outerwildsmods.com/mods/projectarc/)\r\n  - [On A Rail](https://outerwildsmods.com/mods/onarail/)\r\n  - [Under a Radio Moon](https://outerwildsmods.com/mods/underaradiomoon/)\r\n  - [Core Collapse](https://outerwildsmods.com/mods/corecollapse/)\r\n  - [Diorama](https://outerwildsmods.com/mods/diorama/)\r\n  - [Powerfail](https://outerwildsmods.com/mods/powerfail/)",
+      "bodyZh": "- 中国語訳を追加 (thanks @SheepCreater2)\n- カスタムアイコンサポートを追加\n  - [The Stranger They Are](https://outerwildsmods.com/mods/thestrangertheyare/)\n  - [Heliostudy](https://outerwildsmods.com/mods/heliostudy/)\n  - [The Cosmic Curators](https://outerwildsmods.com/mods/thecosmiccurators/)\n  - [Dreambound](https://outerwildsmods.com/mods/dreambound/)\n  - [Fret's Quest](https://outerwildsmods.com/mods/fretsquest/)\n  - [Guardian](https://outerwildsmods.com/mods/guardian/)\n  - [Project ARC](https://outerwildsmods.com/mods/projectarc/)\n  - [On A Rail](https://outerwildsmods.com/mods/onarail/)\n  - [Under a Radio Moon](https://outerwildsmods.com/mods/underaradiomoon/)\n  - [Core Collapse](https://outerwildsmods.com/mods/corecollapse/)\n  - [Diorama](https://outerwildsmods.com/mods/diorama/)\n  - [Powerfail](https://outerwildsmods.com/mods/powerfail/)",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.8.0/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.8.0"
+    },
+    {
+      "tag": "1.7.3",
+      "name": "v1.7.3",
+      "date": "2024-11-02",
+      "body": "- Added a polish translation (thanks @Minecraft633)",
+      "bodyZh": "- ポリッシュ語訳を追加しました（ありがとう @Minecraft633）",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.7.3/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.7.3"
+    },
+    {
+      "tag": "1.7.2",
+      "name": "v1.7.2",
+      "date": "2024-11-02",
+      "body": "- Added a german translation (thanks @Derko8)\r\n- Fixed observatory error spam (resolves #7)",
+      "bodyZh": "- ドイツ語訳を追加 (ありがとう @Derko8)\r\n- 天文台のエラースパムを修正 (問題#7を解決)",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.7.2/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.7.2"
+    },
+    {
+      "tag": "1.7.1",
+      "name": "v1.7.1",
+      "date": "2024-07-20",
+      "body": "- Added a spanish translation (thanks @miguerubsk)",
+      "bodyZh": "- スペイン語訳を追加しました（ありがとう @miguerubsk）",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.7.1/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.7.1"
+    },
+    {
+      "tag": "1.7.0",
+      "name": "v1.7.0",
+      "date": "2024-07-08",
+      "body": "- Added some missing timber hearth places\r\n- Added custom icon support for [Solar Rangers](https://outerwildsmods.com/mods/solarrangers/) and [Symbiosis](https://outerwildsmods.com/mods/symbiosis/)\r\n- Added translations (#5) (thanks @LOUDO56)\r\n  - the french have invaded my mod",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.7.0/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.7.0"
+    },
+    {
+      "tag": "1.6.0",
+      "name": "v1.6.0",
+      "date": "2024-04-26",
+      "body": "- Added custom icon support for [Band Together](https://outerwildsmods.com/mods/bandtogether/)\r\n- Added handler callbacks to API (#4) by @qguv\r\n  - Allows any modders to hook into my system and use my rich presence stuff to make mods that update other services (like for example a [Home Assistant](https://github.com/qguv/OuterWildsAtHome) 😉)",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.6.0/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.6.0"
+    },
+    {
+      "tag": "1.5.1",
+      "name": "v1.5.1",
+      "date": "2024-03-28",
+      "body": "Added custom icon support for \r\n- [Mod Jam 3](https://outerwildsmods.com/mods/modjam3/)\r\n- [Axiom's Refuge](https://outerwildsmods.com/mods/axiomsrefuge/)\r\n- [Hearth's Neighbor 2: Magistarium](https://outerwildsmods.com/mods/hearthsneighbor2magistarium/)\r\n- [Granite's Invitation](https://outerwildsmods.com/mods/granitesinvitation/)\r\n- [Finis](https://outerwildsmods.com/mods/finis/)\r\n- [Callis's Thesis](https://outerwildsmods.com/mods/callissthesis/)\r\n- [Echo Hike](https://outerwildsmods.com/mods/echohike/)\r\n- [Jam Hub](https://outerwildsmods.com/mods/jamhub/)\r\n\r\nI would add the other mods but they don't have ship log icons so oh well.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.5.1/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.5.1"
+    },
+    {
+      "tag": "1.5.0",
+      "name": "v1.5.0",
+      "date": "2024-02-29",
+      "body": "- Added custom icon support for Hearth's Neighbor, Tesseract's Secret, Evacuation, and Unnamed Mystery\r\n- Updated dependencies",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.5.0/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.5.0"
+    },
+    {
+      "tag": "1.4.0",
+      "name": "v1.4.0",
+      "date": "2023-01-23",
+      "body": "- Support for The Outsider\r\n- Updated dependencies\r\n- Fixed some bugs",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/download/1.4.0/MegaPiggy.OWRichPresence.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/OWRichPresence/releases/tag/1.4.0"
+    }
+  ]
+}

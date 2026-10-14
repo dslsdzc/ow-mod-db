@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-10-08T23:39:54Z",
+  "releases": [
+    {
+      "tag": "0.1.1",
+      "name": "0.1.1",
+      "date": "2022-07-18",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-fact-log/releases/download/0.1.1/Hawkbar.FactLog.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-fact-log/releases/tag/0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-07-05",
+      "body": "- Initial Release\r\n\r\n**Full Changelog**: https://github.com/Hawkbat/ow-mod-fact-log/commits/0.1.0",
+      "bodyZh": "- 初回リリース\r\n\r\n**完全な変更履歴**: https://github.com/Hawkbat/ow-mod-fact-log/commits/0.1.0",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-fact-log/releases/download/0.1.0/Hawkbar.FactLog.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-fact-log/releases/tag/0.1.0"
+    }
+  ]
+}

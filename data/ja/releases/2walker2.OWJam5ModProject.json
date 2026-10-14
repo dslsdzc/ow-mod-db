@@ -1,0 +1,77 @@
+{
+  "repoUpdatedAt": "2025-12-02T23:32:47Z",
+  "releases": [
+    {
+      "tag": "v1.2.1",
+      "name": "Version 1.2.1",
+      "date": "2025-12-02",
+      "body": "Japanese translation by Nepyanagi",
+      "bodyZh": "日本語訳 by Nepyanagi",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.2.1/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2025-09-27",
+      "body": "Minor tweaks and several translations.\r\n- Chinese translation by Nan\r\n- Korean translation by Barirn\r\n- French translation by LaraNanuq\r\n- Russian translation by HanSoloCh\r\n- Minor ship log and text adjustments\r\n- Dropping a Nomai orb now drops it until you look away rather than re-selecting it after a delay\r\n- Other extremely minor gameplay and level design tweaks",
+      "bodyZh": "マイナーチェンジと複数の翻訳。\n- 中国語訳：Nan\n- 韓国語訳：Barirn\n- フランス語訳：LaraNanuq\n- ロシア語訳：HanSoloCh\n- 航行記録とテキストの小さな調整\n- ノマイのオーブを落とすと、見るのをやめるまで再選択するのではなく、それを落とし続ける\n- 他の非常に小さなゲームプレイとレベルデザインの調整",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.2.0/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2025-08-02",
+      "body": "Added developer commentary!\r\n- Commentary can be enabled from the options menu\r\n- Extensive commentary has been placed throughout most of the mod's points of interest\r\n- Use your signalscope to locate and warp to commentary\r\n- Some commentary includes demonstrations\r\n\r\nOne Single Minor Design Tweak:\r\n- The torches on a signal-related puzzle now change to a new color when the puzzle is solved",
+      "bodyZh": "開発者コメントを追加しました！\n- コメントはオプションメニューから有効にできます\n- 広範囲のコメントが、モードの多くの観光地に配置されています\n- シグナルスコープを使用してコメントの場所を特定し、ワープできます\n- 一部のコメントにはデモンストレーションが含まれています\n\n一つの小さなデザインの調整：\n- シグナルに関連するパズルの明かりは、パズルが解かれたときに新しい色に変わります",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.1.0/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2025-07-29",
+      "body": "Lots of minor design changes based on watching people play over the last week.\r\n- Prevented clipping into ice when warping under certain circumstances\r\n- Made a beacon taller so it's more visible from a greater distance\r\n- Minor structure edits to reduce clipping and make some texts harder to miss\r\n- The buried portion of a certain structure now includes an interior\r\n- A signal-related structure has been made more visually distinct and visible from a greater distance\r\n- Minor text and ship log updates\r\n- Scaled up a secret warp receiver to make it less likely to strand you in deep space\r\n- Moved a deadly dialog option to the end of the list\r\n- Daucus has been tinted redder to make it more easily distinguishable from The Big One\r\n- Certain Nomai text spirals have been re-positioned to be easier to target with the translator",
+      "bodyZh": "多くの小さなデザインの変更が、先週の人々がプレイしているのを見たことによる。\n- 特定の状況でワープ中に氷に当たるのを防ぐ\n- ビーコンを高くして、より遠くから見やすくする\n- クリッピングを減らし、一部のテキストを見つけにくくするための小さな構造の編集\n- 特定の構造の埋まった部分に内部が追加された\n- シグナルに関連する構造が、より視覚的に区別可能で、より遠くから見えるようにされた\n- 小さなテキストと船の航行記録の更新\n- 秘密のワープ受信機を拡大して、深宇宙に閉じ込められる可能性を減らす\n- 計画を終わりに致命的な対話オプションを移動\n- Daucusは赤みを帯びて、The Big Oneからより簡単に区別できるようにされた\n- 特定のNomaiテキストスピラルが、翻訳器でターゲットを容易にするように再配置された",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.4/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2025-07-23",
+      "body": "fix sun light range",
+      "bodyZh": "太陽光の範囲を修正",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.3/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2025-07-22",
+      "body": "audio and credit tweaks, no gameplay modified",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.2/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-07-21",
+      "body": "- fixed planet minimaps\r\n- fixed a missing model",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.1/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-07-20",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/2walker2/OWJam5ModProject/releases/download/v1.0.0/2walker2.OWJam5ModProject.zip",
+      "releaseUrl": "https://github.com/2walker2/OWJam5ModProject/releases/tag/v1.0.0"
+    }
+  ]
+}

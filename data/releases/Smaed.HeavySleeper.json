@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-10-08T23:40:35Z",
+  "releases": [
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2022-10-03",
+      "body": "Fixes a minor text-related bug, and makes non-light sleeper mode slightly more stable.",
+      "zipUrl": "https://github.com/Smaedd/OW_HeavySleeper/releases/download/v0.2.0/Smaed.HeavySleeper.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_HeavySleeper/releases/tag/v0.2.0",
+      "bodyZh": "修复了一个与文本相关的微小错误，并使非光睡眠模式稍微更稳定。"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2022-10-02",
+      "body": "Initial release",
+      "zipUrl": "https://github.com/Smaedd/OW_HeavySleeper/releases/download/v0.1.0/Smaed.HeavySleeper.zip",
+      "releaseUrl": "https://github.com/Smaedd/OW_HeavySleeper/releases/tag/v0.1.0",
+      "bodyZh": "初始发布"
+    }
+  ]
+}

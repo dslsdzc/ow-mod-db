@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-04-03T20:25:33Z",
+  "releases": [
+    {
+      "tag": "v2.0.2",
+      "name": "Version 2.0.2",
+      "date": "2026-04-03",
+      "body": "Added a simplified Chinese translation (thank you SanBaiMing!)",
+      "bodyZh": "追加しました。簡体中国語訳（サンバイミンさん、ありがとうございます！）",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v2.0.2/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v2.0.2"
+    },
+    {
+      "tag": "v2.0.1",
+      "name": "Version 2.0.1",
+      "date": "2025-09-23",
+      "body": "Numerous text/dialogue fixes.",
+      "bodyZh": "数多くのテキスト/ディスカッションの修正。",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v2.0.1/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v2.0.1"
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "Version 2.0.0",
+      "date": "2025-09-15",
+      "body": "- Made the jam hub work with the jam 3, jam 5, and base-game systems\r\n  - Due to this, also removed the jam 3 dependency\r\n- Added more modders to the party shack\r\n- Updated models and dialogue for many modders in the party shack\r\n- Added way more mods to the exhibits around the equator",
+      "bodyZh": "- Outer Wildsのジャムハブがジャム3、ジャム5、およびベースゲームシステムと互換性を持つようにしました\r\n  - これにより、ジャム3の依存関係も削除しました\r\n- パーティーシェックにさらにモダーマイヤーを追加しました\r\n- パーティーシェックの多くのモダーマイヤーのモデルと対話を更新しました\r\n- 赤道周辺の展示物に多くのMODを追加しました",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v2.0.0/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v2.0.0"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "Version 1.1.2",
+      "date": "2024-04-21",
+      "body": "Fixed an issue when trying to switch profiles.",
+      "bodyZh": "プロファイルを切り替えようとした際の問題を修正しました。",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v1.1.2/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v1.1.2"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2024-04-20",
+      "body": "Orrery no longer explodes if NH mods unrelated to the jam are active.",
+      "bodyZh": "Outer Wildsのオーレリウムは、ジャムに関連しないNH modsがアクティブである場合、 longer explodes if NH mods unrelated to the jam are active.",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v1.1.1/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v1.1.1"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2024-04-04",
+      "body": "- Corrected some modder names.\r\n- Added custom dialogue to some of the NPC's, written by the modders that they represent!",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v1.1.0/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.6",
+      "name": "Version 1.0.6",
+      "date": "2024-03-27",
+      "body": "- Fixed a compat issue with Echo Hike.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v1.0.6/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v1.0.6"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "Version 1.0.5",
+      "date": "2024-03-26",
+      "body": "- Fixed some janky text so it should look correct now.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v1.0.5/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v1.0.5"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2024-03-25",
+      "body": "- Accounted for the new spawn added by Jam3.\r\n- Orrery should fail gracefully if it sees an unexpected number of planets compared to mods.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v1.0.4/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2024-03-25",
+      "body": "Hotfix 3/morbillion\r\n- Added more mods to the \"upcoming mods\" showcase\r\n- Fixed a problem with warping to the base system\r\n- Tweaked the orrery scales",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/coderCleric/JamHub/releases/download/v1.0.3/coderCleric.JamHub.zip",
+      "releaseUrl": "https://github.com/coderCleric/JamHub/releases/tag/v1.0.3"
+    }
+  ]
+}

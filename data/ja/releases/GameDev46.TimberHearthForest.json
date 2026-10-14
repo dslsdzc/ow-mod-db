@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-09-12T19:55:27Z",
+  "releases": [
+    {
+      "tag": "v1.1.6",
+      "name": "Version 1.1.6",
+      "date": "2026-08-17",
+      "body": "# Updated and Patches\r\n\r\n## Dynamic Weather\r\n* When enabled the size, density and turbulence of the volumetric clouds will change over time\r\n* Added setting to enable or disable dynamic weather\r\n\r\n## Volumetric Clouds\r\n* Made volumetric cloud borders more defined hopefully making them look better\r\n* Volumetric clouds now rotate around Timber Hearth and slowly change shape\r\n* Added new dynamic weather setting\r\n* Fixed weird border effect that some clouds could have\r\n* Made clouds more white\r\n* Made clouds taller\r\n\r\n## New Landing Pad\r\n* Added a new dual platform landing pad on the side of Timber Hearth's largest geyser\r\n* Added setting to enabled or disable the new landing pad\r\n\r\n## Trees\r\n* Fixed tree textures not loading when spawning the trees (yes, finally)\r\n* Added bird song to some trees (volume can be controlled in the mod settings)",
+      "bodyZh": "# 更新とパッチ\r\n\r\n## 動的気象\r\n* 有効にすると、 volumetric clouds のサイズ、密度、乱れが時間とともに変化します\r\n* 動的気象を有効または無効にする設定を追加しました\r\n\r\n## Volumetric Clouds\r\n* volumetric cloud の境界をより明確にし、きっと見た目が良くなることを願っています\r\n* volumetric clouds は now Timber Hearth の周りを回転し、ゆっくりと形を変えます\r\n* 新しい動的気象設定を追加しました\r\n* 云の一部にあった奇妙な境界効果を修正しました\r\n* 云をより白くしました\r\n* 云をより高くしました\r\n\r\n## 新しい着陸パッド\r\n* Timber Hearth の最大の温泉の側に新しいダブルプラットフォーム着陸パッドを追加しました\r\n* 新しい着陸パッドを有効または無効にする設定を追加しました\r\n\r\n## 樹\r\n* 樹を生成する際に tree textures が読み込まれない問題を修正しました（はい、ついに）\r\n* 某些の樹に鳥の鳴き声を追加しました（音量は mod 設定で制御可能）",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.1.6/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.1.6"
+    },
+    {
+      "tag": "v1.1.5",
+      "name": "Version 1.1.5",
+      "date": "2026-06-17",
+      "body": "# Updates and Patches\r\n\r\n## Volumetric Clouds\r\n* Added turbulence to the volumetric clouds to create more interesting and realistic structures\r\n* Added god rays to the volumetric clouds (can be toggled on and adjusted in mod settings)\r\n* Added settings to change the turbulence and god ray strength\r\n* Optimised the volumetric cloud rendering shader to hopefully increase performance",
+      "bodyZh": "# 更新とパッチ\r\n\r\n## 立体構造雲\r\n* 立体構造雲に乱れを追加し、より興味深くリアルな構造を作成しました\r\n* 立体構造雲に神の光を追加しました（MOD設定で切り替えおよび調整可能）\r\n* 乱れと神の光の強度を変更する設定を追加しました\r\n* 立体構造雲レンダリングシェーダーを最適化し、性能の向上を期待します",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.1.5/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.1.5"
+    },
+    {
+      "tag": "v1.1.4",
+      "name": "Version 1.1.4",
+      "date": "2026-05-23",
+      "body": "# Updates and Patches\r\n\r\n## Volumetric Clouds\r\n* Added **raymarched shadows**! (Massive thanks to [JohnCorby](https://github.com/JohnCorby) again)\r\n* Added setting to toggle on / off the cloud shadows\r\n* Reduced the overall noise in the clouds for better visuals\r\n* Switched from using a set step count to a set step size for raymarching for better cloud consistency\r\n* Removed unnecessary calculations in the cloud shader to hopefully increase performance",
+      "bodyZh": "# 更新とパッチ\r\n\r\n## 立体雲\r\n* **レイマーチングシャドウ**を追加しました！(マッシブな感謝を[JohnCorby](https://github.com/JohnCorby)へ)\r\n* 雲のシャドウをオン/オフする設定を追加\r\n* 雲のノイズを減少させ、より良いビジュアル\r\n* レイマーチングでステップ数を使用していたのを、ステップサイズを使用するように変更し、雲の一貫性を向上\r\n* 雲のシェーダーで不要な計算を削除し、性能の向上を期待",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.1.4/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.1.4"
+    },
+    {
+      "tag": "v1.1.3",
+      "name": "Version 1.1.3",
+      "date": "2026-05-06",
+      "body": "# Updates and Patches\r\n\r\n## Volumetric Clouds\r\n- Added ambient light support, Timber Hearth shadow support and Attlerock eclipse support (huge thanks to [JohnCorby](https://github.com/JohnCorby))\r\n- Stylised clouds with dithering\r\n- Fixed an issue (mostly) where the clouds caused banding\r\n- Switched from using random noise to using blue noise",
+      "bodyZh": "# 更新とパッチ\r\n\r\n## 立体雲\r\n- 環境光のサポート、木の炉辺の影のサポート、アトルロックの食い込む日食のサポートを追加（大きな感謝を[JohnCorby](https://github.com/JohnCorby)に）)\r\n- ディザータリングを施したスタイリッシュな雲\r\n- 雲がバンドリングを引き起こす問題（主に）を修正\r\n- ランダムノイズを使用していたものをブルーノイズを使用するように切り替え",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.1.3/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.1.3"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "Version 1.1.2",
+      "date": "2026-05-01",
+      "body": "# Updates and Patches\r\n\r\n## New Volumetric Clouds\r\n- Added **Volumetric Clouds** to Timber Hearth! You can now fly your ship through dynamic, fully 3D clouds\r\n\r\n## Settings\r\n- Added setting to toggle between regular 2D clouds and volumetric clouds\r\n- Added settings to change the quality, size and sky coverage of the volumetric clouds",
+      "bodyZh": "# 更新とパッチ\r\n\r\n## 新しいボリュメトリッククラウド\r\n- **ボリュメトリッククラウド**を木の炉辺に追加しました！今や、ダイナミックで完全に3Dのクラウドを通り抜けることができます\r\n\r\n## 設定\r\n- 通常の2Dクラウドとボリュメトリッククラウドの間を切り替える設定を追加しました\r\n- ボリュメトリッククラウドの品質、サイズ、空の覆いを変更する設定を追加しました",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.1.2/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.1.2"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2026-04-16",
+      "body": "# Updates and Patches\r\n\r\n## Clouds\r\n\r\n* Fixed an asset bundle loading bug which caused errors when starting a new loop",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.1.1/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.1.1"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2026-04-15",
+      "body": "# Updates and Patches\r\n\r\n## Clouds\r\n\r\n* Switched to using a custom shader for cloud rendering instead of a default material\r\n* Clouds now have a slight fade towards the edges of Timber Hearth to help them blend better\r\n* Increased the cloud sphere's subdivisions to hopefully make them smoother\r\n* Spaced the 3 cloud layers apart to add more depth to the clouds (they still shift back together when the player leaves the atmosphere to prevent weird looking visuals)\r\n\r\n## Multi-Platform Support\r\n\r\n* Switched to using Path.Combine for file paths",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.1.0/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.9",
+      "name": "Version 1.0.9",
+      "date": "2026-03-23",
+      "body": "# Updates and Patches\r\n\r\n- Clouds which face towards the surface of Timber Hearth now fade when the player leaves the atmosphere (this will hopefully help to reduce cloud density at the edges of the atmosphere when Timber Hearth is viewed from space)",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.0.9/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.0.9"
+    },
+    {
+      "tag": "v1.0.8",
+      "name": "Version 1.0.8",
+      "date": "2026-03-22",
+      "body": "# Updates and Patches\r\n\r\n## Clouds\r\n\r\n- Added clouds to Timber Hearth\r\n- Added setting to control cloud density\r\n\r\n## Trees\r\n\r\n- Added setting to enable or disable the tree occlusion optimisation (When enabled tree groups which are out of the camera's view are hidden to hopefully increase performance)\r\n\r\n## Formatting\r\n\r\n- Fixed some mod settings having unclear or wrong tooltips\r\n- Cleaned up code by moving sections into their own internal classes\r\n- Rewrote README and repo description to include the new updates",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.0.8/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.0.8"
+    },
+    {
+      "tag": "v1.0.7",
+      "name": "Version 1.0.7",
+      "date": "2026-03-08",
+      "body": "# Updates and Patches\r\n\r\n- Fixed tree visibility not taking into account the scout view or Timber Hearth's little satellite",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/GameDev46/TimberHearthForest/releases/download/v1.0.7/GameDev46.TimberHearthForest.zip",
+      "releaseUrl": "https://github.com/GameDev46/TimberHearthForest/releases/tag/v1.0.7"
+    }
+  ]
+}

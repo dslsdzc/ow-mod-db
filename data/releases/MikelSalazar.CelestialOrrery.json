@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-01-23T19:08:20Z",
+  "releases": [
+    {
+      "tag": "post-jam",
+      "name": "Post-jam release",
+      "date": "2023-01-23",
+      "body": "A post-jam release with a few improvements.",
+      "zipUrl": "https://github.com/MikelSalazar/CelestialOrrery/releases/download/post-jam/MikelSalazar.CelestialOrrery.zip",
+      "releaseUrl": "https://github.com/MikelSalazar/CelestialOrrery/releases/tag/post-jam",
+      "bodyZh": "一个Jam发布后的更新，包含一些改进。"
+    },
+    {
+      "tag": "jam",
+      "name": "New Horizons Jam Version",
+      "date": "2023-01-23",
+      "body": "Submission for the New Horizons Jam (the themes are CLOCKWORK and LAYERS)\r\nhttps://outerwildsmods.com/jam/",
+      "zipUrl": "https://github.com/MikelSalazar/CelestialOrrery/releases/download/jam/MikelSalazar.CelestialOrrery.zip",
+      "releaseUrl": "https://github.com/MikelSalazar/CelestialOrrery/releases/tag/jam",
+      "bodyZh": "提交至新视野游戏节（主题是CLOCKWORK和LAYERS）\nhttps://outerwildsmods.com/jam/"
+    }
+  ]
+}

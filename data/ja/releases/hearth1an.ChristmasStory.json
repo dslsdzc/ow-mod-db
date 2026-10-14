@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2025-11-28T06:13:39Z",
+  "releases": [
+    {
+      "tag": "v1.1.2",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2025-03-07",
+      "body": "- fixed japanese translation\r\n- korean translation added by Barirn",
+      "bodyZh": "- 日本語の翻訳を修正\r\n- バイリンによって追加された韓国語の翻訳",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.1.2/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.1.2"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2024-09-02",
+      "body": "- Russian translation added by ShVanes\r\n- German, Italian, Japanese translation fixes",
+      "bodyZh": "- ロシア語訳はShVanesによって追加\r\n- ドイツ語、イタリア語、日本語訳の修正",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.1.1/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.1.1"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2023-12-20",
+      "body": "- Spanish translation added by Pabloherresp",
+      "bodyZh": "- スペイン語訳をPabloherrespが追加しました",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.1.0/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.9",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2023-09-14",
+      "body": "Added Italian and German localisations",
+      "bodyZh": "イタリア語とドイツ語のローカライゼーションを追加しました",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.0.9/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.0.9"
+    },
+    {
+      "tag": "v1.0.8",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2023-08-19",
+      "body": "- Fixed seed toy bug\r\n- Fixed lantern range",
+      "bodyZh": "- シードおもちゃのバグを修正\r\n- ランターン範囲を修正",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.0.8/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.0.8"
+    },
+    {
+      "tag": "v1.0.7",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2023-08-09",
+      "body": "- Japanese translation added by orclecle\r\n- Chinese translation fixes",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.0.7/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.0.7"
+    },
+    {
+      "tag": "v1.0.6",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2023-06-30",
+      "body": "- invisible Gabbrito solved\r\n- french translation typo fixed\r\n- some mods added as conflict",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.0.6/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.0.6"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2023-06-29",
+      "body": "- Feldspar spawn fixed\r\n- Ernesto pretty \r\n- Chinese translation fixed\r\n- French translation added by Balex",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.0.5/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.0.5"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2023-06-27",
+      "body": "- Meditation fix\r\n- Ernesto fix\r\n- Slides bug fix\r\n- Some typo fix\r\n- Chinese translation by @solitary-sails \r\n- Prison mesh fixes",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.0.4/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "hearth1an & xen - Christmas Story",
+      "date": "2023-06-25",
+      "body": "- Fixed Gabbro appearence\r\n- Fixed Feldspar signals, appearence\r\n- Now it's easier to find Feldspar :)\r\n- Meditation learning now fixed\r\n- It's easier to find the recorder now (giving more hints and more lights)",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/download/v1.0.3/hearth1an.ChristmasStory.zip",
+      "releaseUrl": "https://github.com/hearth1an/hearth1an.ChristmasStory/releases/tag/v1.0.3"
+    }
+  ]
+}

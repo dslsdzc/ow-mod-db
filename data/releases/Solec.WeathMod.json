@@ -1,0 +1,82 @@
+{
+  "repoUpdatedAt": "2026-08-14T15:22:35Z",
+  "releases": [
+    {
+      "tag": "2.1.0",
+      "name": "2.1.0",
+      "date": "2026-08-14",
+      "body": "More comet tail effects",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/2.1.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/2.1.0",
+      "bodyZh": "更多彗尾效果"
+    },
+    {
+      "tag": "2.0.1",
+      "name": "2.0.1",
+      "date": "2026-08-13",
+      "body": "Fixed Timber Hearth's rain",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/2.0.1/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/2.0.1",
+      "bodyZh": "修复木炉星的降雨"
+    },
+    {
+      "tag": "2.0.0",
+      "name": "2.0.0",
+      "date": "2026-08-13",
+      "body": "In total a more decor mod than content now, the game-changing aspects (i.e. clouds and wind) have been removed. Have fun.",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/2.0.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/2.0.0",
+      "bodyZh": "总共更像是一个装饰性模组而不是内容，改变游戏性的方面（即云和风）已经被移除。祝您玩得开心。"
+    },
+    {
+      "tag": "1.3.1",
+      "name": "1.3.1",
+      "date": "2026-02-14",
+      "body": "added arourae to brittle hollow and timber hearth for REAL this time",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.3.1/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.3.1",
+      "bodyZh": "为碎空星和木炉星添加了极光，这次是真的"
+    },
+    {
+      "tag": "1.3.0",
+      "name": "1.3.0",
+      "date": "2026-02-14",
+      "body": "added arourae to timber hearth and brittle hollow\r\nthey suck\r\nbut they look cool",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.3.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.3.0",
+      "bodyZh": "添加了极光到木炉星和碎空星\r\n它们会吸收能量\r\n但看起来很酷"
+    },
+    {
+      "tag": "1.2.0",
+      "name": "1.2.0",
+      "date": "2025-05-02",
+      "body": "ACTUALLY no more balls of doom on timber hearth\r\nno more tornadoes of death on the twins (now itty bitty storms)",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.2.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.2.0"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2025-05-01",
+      "body": "no more balls of doom on timber hearth\r\nno more mappability of said balls of doom on timber hearth\r\nno more mod-breaking atmosphere height on dark bramble",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.1.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2025-04-30",
+      "body": "damn you hands!!!!!!!!",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.0.1/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2025-03-04",
+      "body": "Adds weather as:\r\nSand tornados and sand clouds on the Hourglass Twins\r\nRain and water clouds on Timber Hearth\r\nWater clouds on Brittle Hollow\r\nSnowflakes and an atmosphere on Dark Bramble",
+      "zipUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/download/1.0.0/Solec.WeatherMod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Outer-Wilds-Weather-Mod/releases/tag/1.0.0"
+    }
+  ]
+}

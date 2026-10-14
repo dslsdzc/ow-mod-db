@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-07-24T01:55:13Z",
+  "releases": [
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2025-05-31",
+      "body": "Fixed manifest",
+      "zipUrl": "https://github.com/pikpik-carrot/EotUFly/releases/download/v1.0.2/pikpik_carrot.EotUFly.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/EotUFly/releases/tag/v1.0.2",
+      "bodyZh": "已修复清单文件"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-05-31",
+      "body": "Adds the Eye of the Universe to the solar system.",
+      "zipUrl": "https://github.com/pikpik-carrot/EotUFly/releases/download/v1.0.1/pikpik_carrot.EotUFly.zip",
+      "releaseUrl": "https://github.com/pikpik-carrot/EotUFly/releases/tag/v1.0.1",
+      "bodyZh": "为太阳系添加了宇宙之眼。"
+    }
+  ]
+}

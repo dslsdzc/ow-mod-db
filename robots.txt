@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dslsdzc.github.io/ow-mod-db/sitemap.xml

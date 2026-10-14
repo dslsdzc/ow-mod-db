@@ -1,0 +1,74 @@
+{
+  "repoUpdatedAt": "2026-07-31T16:09:14Z",
+  "releases": [
+    {
+      "tag": "v0.3.3",
+      "name": "Version 0.3.3",
+      "date": "2026-06-22",
+      "body": "- (Probably) fixed a bug where the game over screen breaks when using custom fonts, if this isn't true somebody tell me lol",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/download/v0.3.3/xen.LocalizationUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/tag/v0.3.3",
+      "bodyZh": "- （可能）修复了使用自定义字体时游戏结束画面崩溃的bug，如果这不是真的，请告诉我，哈哈"
+    },
+    {
+      "tag": "v0.3.2",
+      "name": "Version 0.3.2",
+      "date": "2024-03-11",
+      "body": "- Whitespace is now trimmed from translation keys, means the formatting of a Translation.xml file is more forgiving.",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/download/v0.3.2/xen.LocalizationUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/tag/v0.3.2",
+      "bodyZh": "- 现在翻译键中的空白字符会被修剪，这意味着 Translation.xml 文件的格式更加宽容。"
+    },
+    {
+      "tag": "v0.3.1",
+      "name": "Version 0.3.1",
+      "date": "2024-02-17",
+      "body": "- Fixed language \"fixers\" that were broken last update\r\n\r\nThis is why I never merged the PR!",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/download/v0.3.1/xen.LocalizationUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/tag/v0.3.1",
+      "bodyZh": "- 修复了上次更新中损坏的语言“修复器”\n\n这就是我从未合并PR的原因！"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2024-02-16",
+      "body": "- The mod now also handles adding new translations for custom and vanilla languages. Thanks Locochoco!\r\n- Improvements to how the utility works behind the scenes.\r\n- Can now get the added Font object for a language using the API.\r\n\r\nOnly took me uh over a year to merge the PR LOL",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/download/v0.3.0/xen.LocalizationUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/tag/v0.3.0",
+      "bodyZh": "- 该模组现在也处理添加自定义和原版语言的新翻译。感谢Locochoco！\n- 对工具后台工作方式的改进。\n- 现在可以使用API获取添加的语言的Font对象。\n\n合并这个PR花了我一年多时间，哈哈"
+    },
+    {
+      "tag": "v0.2.2",
+      "name": "Version 0.2.2",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/download/v0.2.2/xen.LocalizationUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/tag/v0.2.2",
+      "bodyZh": "- 在模组清单中添加Patreon捐赠链接"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "v0.2.1",
+      "date": "2022-11-11",
+      "body": "- New languages appear in the options slider\r\n- Can replace a language instead of just adding new ones\r\n- Added font size modifier and default font spacing options\r\n- Fixed some errors\r\n\r\nThanks MegaPiggy for contributing these things months ago and then I forgot to make a release haha (oops)",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/download/v0.2.1/xen.LocalizationUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0 Improved API",
+      "date": "2022-07-22",
+      "body": "- Split up the API into multiple methods so it'll be easier to extend in the future",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/download/v0.2.0/xen.LocalizationUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0 Initial release",
+      "date": "2022-07-22",
+      "body": "- A localization utility mod. Allows for easily replacing English with another language using an XML file.\r\n- Supports using a different font using a Unity asset bundle (required for non-Latin alphabet languages).\r\n- Supports using a \"fixer\" function to fix written characters in a string (required for right-to-left languages like Arabic).\r\n- Only allows one add-on at a time currently, will allow for language selection in the future",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/download/v0.1.0/xen.LocalizationUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-localization-utility/releases/tag/v0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-07-29T23:03:11Z",
+  "releases": [
+    {
+      "tag": "v2.0.0",
+      "name": "Version 2.0.0",
+      "date": "2026-07-29",
+      "body": "Second release - The Settings Update!\r\n(the first release was supposed to be 1.0.0, but i rushed to put it out lol)",
+      "bodyZh": "2回目のリリース - 設定更新！\n（最初のリリースは1.0.0になるはずだったけど、私は急いでリリースしたからlol）",
+      "zipUrl": "https://github.com/Hamstryk/AModThatOpensTheGameWhenItCloses/releases/download/v2.0.0/Hamstry.AModThatOpensTheGameWhenItCloses.zip",
+      "releaseUrl": "https://github.com/Hamstryk/AModThatOpensTheGameWhenItCloses/releases/tag/v2.0.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-07-27",
+      "body": "First Release!",
+      "bodyZh": "初回リリース！",
+      "zipUrl": "https://github.com/Hamstryk/AModThatOpensTheGameWhenItCloses/releases/download/v0.1.0/Hamstry.AModThatOpensTheGameWhenItCloses.zip",
+      "releaseUrl": "https://github.com/Hamstryk/AModThatOpensTheGameWhenItCloses/releases/tag/v0.1.0"
+    }
+  ]
+}

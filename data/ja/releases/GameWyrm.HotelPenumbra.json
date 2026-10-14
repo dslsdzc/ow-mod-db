@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-08-22T15:36:21Z",
+  "releases": [
+    {
+      "tag": "1.0.2",
+      "name": "1.0.2",
+      "date": "2026-08-21",
+      "body": "- Made some hints clearer\r\n- Made a certain puzzle harder as the solution kept being stumbled upon\r\n- You will no longer be stuck in the pit\r\n- A certain echo no longer spies on Feldspar\r\n- Text in the environment is now translatable\r\n- Interactables no longer require you to look away from them to reuse them\r\n- Once you start the mod, you no longer have to re-perform the sequence to start it on future sessions. This is unfortunately not retroactive and you will need to start the mod at least once with this update.\r\n- Added incompatibilities:\r\n  - Time Saver: Skips the very important splash and a certain cutscene\r\n  - Alter Time: Somehow causes a bug that causes the player to become giant\r\n  - Global Screen Space Reflections: Causes a shader issue\r\n- Marshmallows are now timeless",
+      "bodyZh": "- ヒントをより明確にしました\r\n- 特定のパズルを解決が頻繁に見つかるのを防ぐために難易度を上げました\r\n- 洞窟に閉じ込まれることはなくなりました\r\n- 特定のエコがハーシアンを監視することはなくなりました\r\n- 環境内のテキストは現在翻訳可能です\r\n- インタラクティブな要素は再利用するために目をそらす必要がなくなりました\r\n- モードを起動したら、今後のセッションで再実行する必要がなくなりました。残念ながらこれが過去のセッションに影響しませんので、この更新で少なくとも一度モードを起動する必要があります。\r\n- 不互換性が追加されました:\r\n  - Time Saver: 非常に重要なスプラッシュと特定のエピソードをスキップします\r\n  - Alter Time: どうやらプレイヤーが巨大化するバグを引き起こす\r\n  - Global Screen Space Reflections: シェーダー問題を引き起こします\r\n- マシュマロは時間に囚われなくなりました",
+      "zipUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/download/1.0.2/GameWyrm.HotelPenumbra.zip",
+      "releaseUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/tag/1.0.2"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2026-08-18",
+      "body": "Fixed certain ship logs becoming permanently missable.",
+      "bodyZh": "特定の航行記録が永続的に失われなくなる問題を修正しました。",
+      "zipUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/download/1.0.1/GameWyrm.HotelPenumbra.zip",
+      "releaseUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2026-08-18",
+      "body": "Initial Release",
+      "bodyZh": "初期リリース",
+      "zipUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/download/1.0.0/GameWyrm.HotelPenumbra.zip",
+      "releaseUrl": "https://github.com/GameWyrm/ow-mod-jam-6/releases/tag/1.0.0"
+    }
+  ]
+}

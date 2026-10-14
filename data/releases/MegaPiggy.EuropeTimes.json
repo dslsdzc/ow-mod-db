@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2025-05-24T22:12:42Z",
+  "releases": [
+    {
+      "tag": "0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-08-28",
+      "body": "First Release",
+      "zipUrl": "https://github.com/MegaPiggy/EuropeTimes/releases/download/0.1.0/EuropeTimes.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/EuropeTimes/releases/tag/0.1.0",
+      "bodyZh": "首次发布"
+    }
+  ]
+}

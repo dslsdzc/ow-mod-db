@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2026-08-20T20:45:19Z",
+  "releases": [
+    {
+      "tag": "9.0",
+      "name": "Powerfail",
+      "date": "2026-02-01",
+      "body": "my work is (probably) finished\r\nno this isn't the revamp this is the old powerfail that i completely wiped for some unbelievable reason\r\nmaybe a remake most likely not but in the meantime enjoyn't this amazing beautiful mod that i despise and everyone else loves\r\n\r\nkill me now\r\n- Solec",
+      "bodyZh": "私の仕事は（おそらく）終わった\nいいえ、これはリニューアルじゃない、古いパワーフェイルだ。なんと信じられない理由で完全に消したんだ\nおそらくリメイクはしないかもしれないが、一方で、私が嫌いだけど他の皆さんが愛しているこの素晴らしい美しいMODを楽しんでほしい\n\n殺してほしい\n- Solec",
+      "zipUrl": "https://github.com/SolecAnimations/Powerfail/releases/download/9.0/TeamGeswaldo.Jam5.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Powerfail/releases/tag/9.0"
+    },
+    {
+      "tag": "4.0",
+      "name": "Powerfail 4.0????",
+      "date": "2026-01-02",
+      "body": "mic check mic check\r\nthe uh version didn't version so i need to make a new version so it versions",
+      "bodyZh": "マイクチェックマイクチェック\r\nそのうえバージョンがバージョンしなかったので、新しいバージョンを作る必要があるので、それがバージョンする",
+      "zipUrl": "https://github.com/SolecAnimations/Powerfail/releases/download/4.0/TeamGeswaldo.Jam5Mod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Powerfail/releases/tag/4.0"
+    },
+    {
+      "tag": "3.0",
+      "name": "Powerfail 3.0",
+      "date": "2025-12-21",
+      "body": "killed story (it was horrid)",
+      "bodyZh": "ストーリーを殺した（それはひどかった）",
+      "zipUrl": "https://github.com/SolecAnimations/Powerfail/releases/download/3.0/TeamGeswaldo.Jam5Mod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Powerfail/releases/tag/3.0"
+    },
+    {
+      "tag": "2.x",
+      "name": "Powerfail 2.x",
+      "date": "2025-12-21",
+      "body": "added the story back (all the writing might be redone and it might not)",
+      "bodyZh": "ストーリーを戻しました（全ての文章はリニューアルされるかもしれませんし、されないかもしれません）",
+      "zipUrl": "https://github.com/SolecAnimations/Powerfail/releases/download/2.x/TeamGeswaldo.Jam5Mod.zip",
+      "releaseUrl": "https://github.com/SolecAnimations/Powerfail/releases/tag/2.x"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "repoUpdatedAt": "2024-10-08T21:13:13Z",
+  "releases": [
+    {
+      "tag": "v1.0.2",
+      "name": "Release v1.0.2",
+      "date": "2024-08-26",
+      "body": "- Added sound effects\r\n- Added 2 new animations\r\n- Changed loading extension setting to be more intuitive\r\n- Added compatibility with custom title screen options",
+      "zipUrl": "https://github.com/Etherpod/ExpeditionTakeoff/releases/download/v1.0.2/Etherpod.ExpeditionTakeoff.zip",
+      "releaseUrl": "https://github.com/Etherpod/ExpeditionTakeoff/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Release v1.0.1",
+      "date": "2024-05-18",
+      "body": "- Added an option to extend the loading time\r\n- Added compatibility with Auto Resume",
+      "zipUrl": "https://github.com/Etherpod/ExpeditionTakeoff/releases/download/v1.0.1/Etherpod.ExpeditionTakeoff.zip",
+      "releaseUrl": "https://github.com/Etherpod/ExpeditionTakeoff/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Release v1.0.0",
+      "date": "2024-05-13",
+      "body": "A simple mod that adds some extra animations to the title screen when loading into the game.",
+      "zipUrl": "https://github.com/Etherpod/ExpeditionTakeoff/releases/download/v1.0.0/Etherpod.ExpeditionTakeoff.zip",
+      "releaseUrl": "https://github.com/Etherpod/ExpeditionTakeoff/releases/tag/v1.0.0"
+    }
+  ]
+}

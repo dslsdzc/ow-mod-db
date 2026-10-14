@@ -1,0 +1,68 @@
+{
+  "repoUpdatedAt": "2025-08-31T15:06:46Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-03-05",
+      "body": "Removed MenuFramework to instead use OWML menuing system (thanks nebula!)",
+      "bodyZh": "メニューフレームワークを削除し、代わりにOWMLメニューシステムを使用するように変更しました（thanks nebula!）",
+      "zipUrl": "https://github.com/GameWyrm/OuterRelics/releases/download/v1.0.1/GameWyrm.OuterRelics.zip",
+      "releaseUrl": "https://github.com/GameWyrm/OuterRelics/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2023-08-09",
+      "body": "Outer Relics is now stable! In celebration, we've added multiplayer, implementing Quantum Space Buddies! View the Readme for more info.\r\n\r\n* Added multiplayer support via Quantum Space Buddies\r\n* Improved Spoiler Logs\r\n* Removed a couple of problematic spawn points",
+      "bodyZh": "アウターレリクスは現在安定しています！ 豊功のために、マルチプレイヤーを追加し、Quantum Space Buddiesを実装しました！ 詳細はReadmeを参照してください。\r\n\r\n* Quantum Space Buddiesを通じてマルチプレイヤーサポートを追加\r\n* Spoiler Logsを改善\r\n* 問題のあるスポーンポイントをいくつか削除",
+      "zipUrl": "https://github.com/GameWyrm/OuterRelics/releases/download/v1.0.0/GameWyrm.OuterRelics.zip",
+      "releaseUrl": "https://github.com/GameWyrm/OuterRelics/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.9.5",
+      "name": "Version 0.9.5",
+      "date": "2023-04-17",
+      "body": "- Fixed a bug where on initial randomization, would still try to place keys in DLC locations even when the DLC is not installed\r\n- Removed the Dark Bramble Escape Pod as a possible spawn location due to it not existing when randomization happens, and thus the game not being able to place any keys there",
+      "bodyZh": "- 初期ランダム化時にDLCがインストールされていない場合でも、鍵をDLCの場所に配置しようとするバグを修正しました\r\n- ランダム化時に存在しないため、ゲームがその場所に鍵を配置できないという理由で、闇のイバラの脱出ポッドを可能なスポーン場所から削除しました",
+      "zipUrl": "https://github.com/GameWyrm/OuterRelics/releases/download/v0.9.5/GameWyrm.OuterRelics.zip",
+      "releaseUrl": "https://github.com/GameWyrm/OuterRelics/releases/tag/v0.9.5"
+    },
+    {
+      "tag": "v0.9.4",
+      "name": "v0.9.4",
+      "date": "2023-02-23",
+      "body": "# 0.9.4\r\n\r\n-Fixed issue with \"All Vague\" and \"All Precise\" hint difficulties not working\r\n\r\nIgnore the fact that I never uploaded 0.9.3.",
+      "bodyZh": "# 0.9.4\r\n\r\n-「すべて曖昧」および「すべて正確」のヒント難易度が機能しない問題を修正しました\r\n\r\n0.9.3をアップロードしたことがないという事実を無視してください",
+      "zipUrl": "https://github.com/GameWyrm/OuterRelics/releases/download/v0.9.4/OuterRelics_0.9.4.zip",
+      "releaseUrl": "https://github.com/GameWyrm/OuterRelics/releases/tag/v0.9.4"
+    },
+    {
+      "tag": "0.9.2",
+      "name": "v0.9.2",
+      "date": "2023-02-18",
+      "body": "# 0.9.2\r\n\r\n* Fixed Save Data and Spoiler Log folders not being created for real this time\r\n* Added intro message so people know what to do",
+      "bodyZh": "# 0.9.2\r\n\r\n* セーブデータとスポイラーログフォルダが今度は本当に作成されないバグを修正\r\n* 人々が何をするべきか分かるように導入メッセージを追加",
+      "zipUrl": "https://github.com/GameWyrm/OuterRelics/releases/download/0.9.2/OuterRelics_0.9.2.zip",
+      "releaseUrl": "https://github.com/GameWyrm/OuterRelics/releases/tag/0.9.2"
+    },
+    {
+      "tag": "0.9.1",
+      "name": "v0.9.1",
+      "date": "2023-02-18",
+      "body": "# 0.9.1\r\n\r\n* Fixed save file not working (now manually creates folders for Save File and Spoiler Logs)\r\n* Improved quality of end song",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/GameWyrm/OuterRelics/releases/download/0.9.1/Outer.Relics.0.9.1.zip",
+      "releaseUrl": "https://github.com/GameWyrm/OuterRelics/releases/tag/0.9.1"
+    },
+    {
+      "tag": "0.9.0",
+      "name": "v0.9.0",
+      "date": "2023-02-18",
+      "body": "# 0.9.0 - Initial Release!\r\n\r\nAfter nearly a month of work, Outer Relics is finally in a release-able state! Check out the Readme for how to play! This isn't quite 1.0 as I'm not 100% sure it's bug-free, but you should be able to play a full run. If no issues are found, the release will be changed to 1.0.0.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/GameWyrm/OuterRelics/releases/download/0.9.0/0.9.0.zip",
+      "releaseUrl": "https://github.com/GameWyrm/OuterRelics/releases/tag/0.9.0"
+    }
+  ]
+}

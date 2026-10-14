@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2026-07-28T17:20:43Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0 Initial Release",
+      "date": "2026-07-24",
+      "body": "Initial Release",
+      "zipUrl": "https://github.com/SputnikSoyuz/modthatclosesthegamewhenitopens/releases/download/1.0.0/SputnikSoyuz.modthatclosesthegamewhenitopens.zip",
+      "releaseUrl": "https://github.com/SputnikSoyuz/modthatclosesthegamewhenitopens/releases/tag/1.0.0",
+      "bodyZh": "初始发布"
+    }
+  ]
+}

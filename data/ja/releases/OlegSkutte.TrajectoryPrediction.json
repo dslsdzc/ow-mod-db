@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2026-07-12T13:33:56Z",
+  "releases": [
+    {
+      "tag": "v0.6.5",
+      "name": "Version 0.6.5",
+      "date": "2023-02-08",
+      "body": "- Fixed issues caused by AstroObjects getting disabled (e.g. The Interloper getting absorbed by the sun)",
+      "bodyZh": "- アストロオブジェクトが無効化されることによる問題を修正 (例: 侵入者が太陽に吸収されること)",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/v0.6.5/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/v0.6.5"
+    },
+    {
+      "tag": "v0.6.4",
+      "name": "Version 0.6.4",
+      "date": "2022-11-21",
+      "body": "- Improved performance and accuracy when planet trajectories are enabled\r\n- Fixed error during certain ending",
+      "bodyZh": "- 行星軌道が有効な場合のパフォーマンスと精度を改善\r\n- 特定のエンディング中のエラーを修正",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/v0.6.4/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/v0.6.4"
+    },
+    {
+      "tag": "v0.6.3",
+      "name": "Version 0.6.3",
+      "date": "2022-11-20",
+      "body": "- Removed silly GC hack because OWML now has incremental GC setting",
+      "bodyZh": "- OWMLがインクリメンタルGC設定を持つようになったため、愚かなGCハックを削除しました",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/v0.6.3/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/v0.6.3"
+    },
+    {
+      "tag": "v0.6.2",
+      "name": "Version 0.6.2",
+      "date": "2022-11-18",
+      "body": "- Fixed issues when other mods remove orbit lines (makes it compatible with N Body Chaos mod)\r\n- Added an option to display future trajectories of planets",
+      "bodyZh": "- 他のMODが軌道線を削除する際の問題を修正 (N Body Chaos modとの互換性を向上)\n-惑星の未来軌道を表示するオプションを追加",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/v0.6.2/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/v0.6.2"
+    },
+    {
+      "tag": "0.6.0",
+      "name": "0.6.0",
+      "date": "2022-11-16",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/0.6.0/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/0.6.0"
+    }
+  ]
+}

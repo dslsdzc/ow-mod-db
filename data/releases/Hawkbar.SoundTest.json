@@ -1,0 +1,30 @@
+{
+  "repoUpdatedAt": "2023-05-02T16:03:57Z",
+  "releases": [
+    {
+      "tag": "0.2.0",
+      "name": "v0.2.0",
+      "date": "2023-05-02",
+      "body": "Sounds can now be stopped at any point and will no longer overlap with each other.",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-sound-test/releases/download/0.2.0/Hawkbar.SoundTest.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-sound-test/releases/tag/0.2.0",
+      "bodyZh": "声音现在可以在任何时间点停止，并且将不再相互重叠。"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "0.1.1",
+      "date": "2022-07-17",
+      "body": "",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-sound-test/releases/download/0.1.1/Hawkbar.SoundTest.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-sound-test/releases/tag/0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "0.1.0",
+      "date": "2022-07-17",
+      "body": "",
+      "zipUrl": "https://github.com/Hawkbat/ow-mod-sound-test/releases/download/0.1.0/Hawkbar.SoundTest.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-mod-sound-test/releases/tag/0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2023-01-07T20:47:13Z",
+  "releases": [
+    {
+      "tag": "2.0.0",
+      "name": "2.0.0",
+      "date": "2023-01-07",
+      "body": "**Now classified as the universe's smallest galaxy!**\r\n\r\n- a cool looking black hole\r\n- two new systems\r\n- very high quality textures\r\n- funny names",
+      "bodyZh": "**宇宙で最も小さな銀河に分類されています！**\r\n\r\n- かっこいいブラックホール\r\n- 2つの新しいシステム\r\n-非常に高い品質のテクスチャー\r\n-面白い名前",
+      "zipUrl": "https://github.com/RealOrbital32/smallest/releases/download/2.0.0/O32.Smallest.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/smallest/releases/tag/2.0.0"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2022-10-08",
+      "body": "- changed color of Anungs\r\n- added thumbnail to ship log warp",
+      "bodyZh": "- Anungsの色を変更\r\n- 航行記録のワープにサムネイルを追加",
+      "zipUrl": "https://github.com/RealOrbital32/smallest/releases/download/1.1.0/O32.Smallest.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/smallest/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-10-03",
+      "body": "First and only release of this",
+      "bodyZh": "初回のみのリリースです",
+      "zipUrl": "https://github.com/RealOrbital32/smallest/releases/download/1.0.0/O32.Smallest.zip",
+      "releaseUrl": "https://github.com/RealOrbital32/smallest/releases/tag/1.0.0"
+    }
+  ]
+}

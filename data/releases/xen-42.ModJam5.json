@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2026-03-24T02:13:56Z",
+  "releases": [
+    {
+      "tag": "v1.1.3",
+      "name": "Version 1.1.3",
+      "date": "2026-03-24",
+      "body": "- Added Chinese translation (thank you SanBaiMing!)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.1.3/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.1.3",
+      "bodyZh": "- 添加了中文翻译（感谢三百万！）"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "Version 1.1.2",
+      "date": "2025-11-18",
+      "body": "- Changed a persistent condition to a normal one to avoid a possible bug when changing profiles",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.1.2/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.1.2",
+      "bodyZh": "- 将一个持久条件更改为普通条件，以避免在切换配置文件时可能出现的错误"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2025-09-29",
+      "body": "- Updated text in Ping's ship to list the winners",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.1.1/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.1.1",
+      "bodyZh": "- 更新了平的飞船中的文字，列出了获奖者"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2025-09-08",
+      "body": "- Small compatibility update by coderCleric to support the Mod Jam Hub update for jam 5. \r\n- Adds new dialogue to Ping when that mod is installed.",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.1.0/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.1.0",
+      "bodyZh": "- 由coderCleric进行的兼容性小更新，以支持Mod Jam Hub的5号活动更新。 \n- 当该模组安装时，为Ping添加了新的对话。"
+    },
+    {
+      "tag": "v1.0.7",
+      "name": "Version 1.0.7",
+      "date": "2025-07-27",
+      "body": "- Added a custom title screen (thanks MegaPiggy)\r\n- Updated some text to say the jam is over (thanks for reminding me Streetlights)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.0.7/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.0.7",
+      "bodyZh": "- 添加了自定义标题画面（感谢 MegaPiggy）\n- 更新了一些文字，说明活动结束（感谢提醒我 Streetlights）"
+    },
+    {
+      "tag": "v1.0.6",
+      "name": "Version 1.0.6",
+      "date": "2025-07-25",
+      "body": "Systems will be closer to the station (8km instead of 12km) if there are 8 or less mods installed. Primarily for jam packs.",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.0.6/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.0.6"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "Version 1.0.5",
+      "date": "2025-07-23",
+      "body": "Sun light range fixer will only apply if the light range is bigger than the max (currently 10k)",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.0.5/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.0.5"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2025-07-23",
+      "body": "- Changed Central Station glass type to not hide certain effects.\r\n- Adjusted ranges for stars in entries to lessen light bleeding between entries.\r\n- Hardcoded order of entries to avoid overlaps.\r\n- Removed the example platform, moved its props to the center to make room.\r\n- Removed minimaps from platforms (bug that affected Central Station).\r\n- Added space music (thanks Lezzlebit).\r\n- Added ship log map markers for the Central Station and Starship Community.\r\n- Adjusted the model of the Central Station (thanks Streetlights).\r\n- Moved systems and platforms out slightly to make more room.\r\n\r\nAll entries should now fit in the same system! If this update breaks anything about your entry please fix it and let the judges know, we will use the fixed version of your mod for judging since this breaking wasn't your fault but ours (try to get this done quickly though).",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.0.4/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2025-07-09",
+      "body": "Added a jetpack refuel spot and a tractor beam to take you to the ship platform.",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.0.3/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2025-07-07",
+      "body": "- Remove debug sphere from starting location",
+      "zipUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/download/v1.0.2/xen-42.ModJam5.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-mod-jam-5-base/releases/tag/v1.0.2"
+    }
+  ]
+}

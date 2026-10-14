@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2026-03-14T02:25:31Z",
+  "releases": [
+    {
+      "tag": "v0.3.2",
+      "name": "v0.3.2",
+      "date": "2026-03-14",
+      "body": "- Added Chinese translation (thanks SanBaiMing!)",
+      "bodyZh": "- 中国語訳を追加しました（サンバイミングさんありがとうございます！）",
+      "zipUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/download/v0.3.2/Hawkbar.ArcanumAdrift.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/tag/v0.3.2"
+    },
+    {
+      "tag": "0.3.1",
+      "name": "v0.3.1",
+      "date": "2023-07-04",
+      "body": "## What's Changed\r\n* First post-jam update\r\n* Japanese translation by @TRSasasusu\r\n* Put the floor back on in later parts of the mod\r\n* Minor animation tweaks\r\n\r\n**Full Changelog**: https://github.com/Hawkbat/ow-wrong-warp-nh-jam/compare/0.3.0...0.3.1",
+      "bodyZh": "## 変更点\n* 初回のjam後の更新\n* @TRSasasusuによる日本語訳\n* モードの後半部分に床を戻す\n* 小さなアニメーション調整\n\n**完全な変更履歴**: https://github.com/Hawkbat/ow-wrong-warp-nh-jam/compare/0.3.0...0.3.1",
+      "zipUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/download/0.3.1/Hawkbar.ArcanumAdrift.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/tag/0.3.1"
+    },
+    {
+      "tag": "0.3.0",
+      "name": "v0.3.0",
+      "date": "2023-01-23",
+      "body": "- Added animations to the various gears\r\n- Added a ceiling window to the entry corridor\r\n- Fixed a geometry collision issue",
+      "bodyZh": "- さまざまなギアにアニメーションを追加\r\n- 入口廊下に天井窓を追加\r\n- 几何学的衝突問題を修正",
+      "zipUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/download/0.3.0/Hawkbar.ArcanumAdrift.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/tag/0.3.0"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "v0.2.0",
+      "date": "2023-01-22",
+      "body": "- Made black holes 93% less deadly, to avoid repeating long load times\r\n- Added fuel canisters in certain locations\r\n- Minor tweaks and graphical fixes",
+      "bodyZh": "- ブラックホールを93%弱体化させ、長いロード時間の繰り返しを回避\n- 特定の場所に燃料カニスターを追加\n- 小規模な調整とグラフィック修正",
+      "zipUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/download/0.2.0/Hawkbar.ArcanumAdrift.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "v0.1.0",
+      "date": "2023-01-22",
+      "body": "Initial testing release.",
+      "bodyZh": "初期テストリリース。",
+      "zipUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/download/0.1.0/Hawkbar.ArcanumAdrift.zip",
+      "releaseUrl": "https://github.com/Hawkbat/ow-wrong-warp-nh-jam/releases/tag/0.1.0"
+    }
+  ]
+}

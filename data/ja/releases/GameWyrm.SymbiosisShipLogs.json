@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-01-30T02:14:08Z",
+  "releases": [
+    {
+      "tag": "1.0.2",
+      "name": "1.0.2",
+      "date": "2026-01-30",
+      "body": "Added Chinese translation by (you'll never guess) SanBaiMing",
+      "bodyZh": "中国語訳を追加しました（あなたが推測できるはずがない）SanBaiMing",
+      "zipUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/download/1.0.2/GameWyrm.SymbiosisShipLogs.zip",
+      "releaseUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/tag/1.0.2"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2024-06-03",
+      "body": "nvm I lied, turns out there were tweaks to make\r\n* Slightly adjusted the color of the ship log cards to be more visible (by xen)\r\n* Bird's unskippable crime has been pardoned and he will no longer be sent to unskippable hell (credits can now be skipped)\r\n* Added credits",
+      "bodyZh": "nvm だが、嘘をついた、調整が必要だったことが判明した\r\n* 航行記録カードの色を少し調整して、より目立つようにしました（xenによる変更）\r\n* Birdのスキップ不可能な犯罪は赦免され、彼はもはやスキップ不可能な地獄に送られなくなります（クレジットは今やスキップ可能です）\r\n* クレジットを追加しました",
+      "zipUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/download/1.0.1/GameWyrm.SymbiosisShipLogs.zip",
+      "releaseUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-06-02",
+      "body": "First release. Probably only release unless Bird updates their mod.",
+      "bodyZh": "初回リリース。おそらくこれが最後のリリースで、Birdが彼らのMODを更新する場合以外はそうだ。",
+      "zipUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/download/1.0.0/GameWyrm.SymbiosisShipLogs.zip",
+      "releaseUrl": "https://github.com/GameWyrm/SymbiosisShipLogs/releases/tag/1.0.0"
+    }
+  ]
+}

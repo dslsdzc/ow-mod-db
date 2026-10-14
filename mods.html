@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>window.DATA_V = "20261014T200336Z6";</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!-- OG:START -->
+<meta property="og:site_name" content="星际拓荒 MOD 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="全部 MOD — 星际拓荒 MOD 数据库">
+<meta property="og:description" content="浏览全部星际拓荒 MOD:热度与更新时间排序,支持中英文名称搜索与标签筛选。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dslsdzc.github.io/ow-mod-db/mods.html">
+<meta property="og:image" content="https://dslsdzc.github.io/ow-mod-db/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="星际拓荒 MOD 数据库">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="全部 MOD — 星际拓荒 MOD 数据库">
+<meta name="twitter:description" content="浏览全部星际拓荒 MOD:热度与更新时间排序,支持中英文名称搜索与标签筛选。">
+<meta name="twitter:image" content="https://dslsdzc.github.io/ow-mod-db/og.png">
+<link rel="canonical" href="https://dslsdzc.github.io/ow-mod-db/mods.html">
+<!-- OG:END -->
+<title data-i18n="page.title.mods">全部 MOD — 星际拓荒 MOD 数据库</title>
+<script type="speculationrules">
+{"prerender":[{"where":{"href_matches":["./mod.html*","./mod/*"]},"eagerness":"moderate"}]}
+</script>
+<link rel="preconnect" href="https://ow-mods.github.io">
+<link rel="stylesheet" href="css/style.css?v=20261014T200336Z6">
+<script defer src="js/vendor/turbo.es2017-umd.js"></script>
+<script defer src="js/i18n.js"></script>
+<script defer src="js/app.js?v=20261014T200336Z6"></script>
+</head>
+<body>
+<a class="skip-link" href="#content" data-i18n="a11y.skip">跳到主要内容</a>
+<header class="site-header">
+  <nav data-i18n-aria-label="a11y.nav">
+    <a class="brand" href="index.html" data-i18n="brand">星际拓荒 MOD</a>
+    <a href="mods.html" data-i18n="nav.mods">全部 MOD</a>
+    <a href="jams.html" data-i18n="nav.jams">历届 Jam</a>
+    <a href="mod-manager.html" data-i18n="nav.manager">Mod Manager</a>
+  </nav>
+</header>
+<main id="content">
+  <h1 data-i18n="mods.title">全部 MOD</h1>
+  <div class="controls">
+    <label class="sr-only" for="search" data-i18n="mods.searchLabel">搜索 MOD</label>
+    <input id="search" type="search" data-i18n-placeholder="mods.search" placeholder="搜索 MOD 名称 / 简介…（支持英文原名）">
+    <label class="sr-only" for="sort" data-i18n="mods.sortLabel">排序方式</label>
+    <select id="sort">
+      <option value="installs" data-i18n="mods.sort.installs">按热门排序</option>
+      <option value="newest" data-i18n="mods.sort.newest">按最新发布</option>
+      <option value="updated" data-i18n="mods.sort.updated">按最近更新</option>
+      <option value="name" data-i18n="mods.sort.name">按名称</option>
+    </select>
+    <span id="count" aria-live="polite"></span>
+  </div>
+  <div id="tag-chips" class="chips"></div>
+  <div id="mod-grid" class="grid"></div>
+</main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2024-04-30T22:29:44Z",
+  "releases": [
+    {
+      "tag": "v0.5.1",
+      "name": "Version 0.5.1",
+      "date": "2024-04-05",
+      "body": "- Some internal cleanup (cleaner localization, hopefully not introducing bugs)\r\n- A number of small QoL updates (oxygen, dialogues, shiplogs, minor guidance)",
+      "bodyZh": "- 内部のクリーンアップ（よりクリーンなローカライズ、バグを導入しないことを願っています）\r\n- 数多くの小さなQoL更新（酸素、ダイアログ、船の記録、軽微なガイド）",
+      "zipUrl": "https://github.com/Echatsum/Echatsum.CallisThesis/releases/download/v0.5.1/Echatsum.CallisThesis.zip",
+      "releaseUrl": "https://github.com/Echatsum/Echatsum.CallisThesis/releases/tag/v0.5.1"
+    },
+    {
+      "tag": "v0.4.2",
+      "name": "Version 0.4.2",
+      "date": "2024-03-26",
+      "body": "- Minorly edited a clue to avoid unwanted confusion (wanted confusion remains though!)\r\n- Tweaked dialogues for a more pleasant navigation",
+      "bodyZh": "- 警告を回避するためにヒントを少し編集しました（意図的な警告は残っています！）\r\n- より快適なナビゲーションのため会話を調整しました",
+      "zipUrl": "https://github.com/Echatsum/Echatsum.CallisThesis/releases/download/v0.4.2/Echatsum.CallisThesis.zip",
+      "releaseUrl": "https://github.com/Echatsum/Echatsum.CallisThesis/releases/tag/v0.4.2"
+    },
+    {
+      "tag": "v0.4.1",
+      "name": "Version 0.4.1",
+      "date": "2024-03-26",
+      "body": "manifest bump",
+      "bodyZh": "manifest bump",
+      "zipUrl": "https://github.com/Echatsum/Echatsum.CallisThesis/releases/download/v0.4.1/Echatsum.CallisThesis.zip",
+      "releaseUrl": "https://github.com/Echatsum/Echatsum.CallisThesis/releases/tag/v0.4.1"
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "First published version of the mod",
+      "date": "2024-03-25",
+      "body": "Entry for the March 2024 Mod Jam",
+      "bodyZh": "2024年3月のMODジャムへのエントリー",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/Echatsum/Echatsum.CallisThesis/releases/tag/v0.4.0"
+    }
+  ]
+}

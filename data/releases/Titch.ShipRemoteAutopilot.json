@@ -1,0 +1,31 @@
+{
+  "repoUpdatedAt": "2024-02-21T09:51:22Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2024-02-21",
+      "body": "- Did some clean up to the code, comments and efficiency (i think...)\r\n- Added clearer notification support for the process of Remote Autopilot.\r\n- Added alternative keys options in the settings, If options are on, the Numpad will be replaced with the main keyboard layout of the same options.\r\n\r\nEnjoy! :)",
+      "zipUrl": "https://github.com/sherwoodw28/remoteautopilot/releases/download/1.1.0/Titch.ShipRemoteAutopilot.zip",
+      "releaseUrl": "https://github.com/TitchMW/remoteautopilot/releases/tag/1.1.0",
+      "bodyZh": "- 对代码、注释和效率进行了一些清理（我认为...）\n- 为远程自动驾驶过程添加了更清晰的提示支持。\n- 在设置中添加了替代按键选项，如果选项开启，数字键盘将被替换为相同选项的主键盘布局。\n\n享受吧！:)"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2024-02-19",
+      "body": "Added notification system so that you know which location is currently selected.\r\nMade it so the ship will not collide with the sun (Do NOT be inside during transit now...)\r\n\r\nEnjoy!",
+      "zipUrl": "https://github.com/sherwoodw28/remoteautopilot/releases/download/1.0.0/Titch.ShipRemoteAutopilot.zip",
+      "releaseUrl": "https://github.com/TitchMW/remoteautopilot/releases/tag/1.0.0",
+      "bodyZh": "添加了通知系统，以便您知道当前选择的是哪个位置。\n使其不会与太阳发生碰撞（现在...不要在过渡期间进入里面...）\n\n享受吧！"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "0.1.0",
+      "date": "2022-07-09",
+      "body": "",
+      "zipUrl": "https://github.com/sherwoodw28/remoteautopilot/releases/download/v0.1.0/Titch.ShipRemoteAutopilot.zip",
+      "releaseUrl": "https://github.com/TitchMW/remoteautopilot/releases/tag/v0.1.0"
+    }
+  ]
+}

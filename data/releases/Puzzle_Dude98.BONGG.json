@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2025-06-10T05:27:13Z",
+  "releases": [
+    {
+      "tag": "v0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2025-06-10",
+      "body": "audio now actually plays at the thruster instead of inside your own head",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.4.0/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.4.0",
+      "bodyZh": "音频现在实际上在推进器中播放，而不是在你的头里"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2025-06-10",
+      "body": "more critical bugfix, this one actually seems to work",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.3.0/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.3.0",
+      "bodyZh": "更多关键性BUG修复，这次似乎真的有效"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "Version 0.2.1",
+      "date": "2025-06-10",
+      "body": "critical bugfix",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.2.1/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.2.1",
+      "bodyZh": "关键错误修复"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2025-06-08",
+      "body": "Removed debug option from config\r\nRemoved \"enabled\" option from config\r\ndelete an entire useless class I forgot about",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.2.0/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.2.0",
+      "bodyZh": "从配置中移除了调试选项\n从配置中移除了\"启用\"选项\n删除了一个我忘记的整个无用类"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-06-06",
+      "body": "First release of the BONGG mod!\r\nThis one is really beta, it still has development tools and a lot of messy extra code.\r\nIt does still have all the core functionality though, so it should be fine to use.\r\n\r\nConfig includes option to turn sound off as well as change its volume. I'll probably remove one or both of those at some point.",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.1.0/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.1.0",
+      "bodyZh": "BONGG模组的首次发布！\n这个确实还是beta版本，仍然包含开发工具和很多杂乱的额外代码。\n不过它仍然具备所有核心功能，所以应该可以正常使用。\n\n配置选项包括关闭声音以及调整音量。我可能会在某个时候移除其中一个或两个。"
+    }
+  ]
+}

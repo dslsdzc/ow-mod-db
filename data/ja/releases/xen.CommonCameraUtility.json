@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2025-02-18T03:10:10Z",
+  "releases": [
+    {
+      "tag": "v1.4.1",
+      "name": "Version 1.4.1",
+      "date": "2025-02-18",
+      "body": "- Disabled some API methods if VR is installed (Solar Rangers VR fix) (hopefully)",
+      "bodyZh": "- VRがインストールされている場合、一部のAPIメソッドを無効にしました（Solar Rangers VR fix）（望む限り）",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.4.1/xen.CommonCameraUtil.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.4.1"
+    },
+    {
+      "tag": "v1.4.0",
+      "name": "Version 1.4.0",
+      "date": "2024-09-15",
+      "body": "- Fixed some Ultimate Skin Changer compat issues\r\n- Added HeadVisibilityChanged api event\r\n- Fixed Hatchling Outfitter and First Person Presence compat issues (thanks Owen!) (Only took me 9 months to merge)",
+      "bodyZh": "- アルティメットスキンチェンジャーの互換性の問題を修正しました\n- HeadVisibilityChanged apiイベントを追加しました\n- Hatchling OutfitterとFirst Person Presenceの互換性の問題を修正しました（感謝、Owen！）（マージに9ヶ月かかりました）",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.4.0/xen.CommonCameraUtil.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.4.0"
+    },
+    {
+      "tag": "v1.3.2",
+      "name": "Version 1.3.2",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "bodyZh": "- MODマネージャーにPatreon寄付リンクを追加",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.3.2/xen.CommonCameraUtil.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.3.2"
+    },
+    {
+      "tag": "v1.3.1",
+      "name": "Version 1.3.1",
+      "date": "2023-12-04",
+      "body": "- Implements some compatibility fixes with the Hatchling Outfitter mod (thanks Owen_013!)",
+      "bodyZh": "- Hatchling Outfitter mod (thanks Owen_013!)との互換性の修正をいくつか実装",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.3.1/xen.CommonCameraUtil.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.3.1"
+    },
+    {
+      "tag": "v1.3.0",
+      "name": "Version 1.3.0",
+      "date": "2023-09-27",
+      "body": "- Updated to OW patch 14\r\n- Fixed decapitation by landing camera",
+      "bodyZh": "- OWパッチ14に更新\r\n- 落下カメラによる頭部切断を修正",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.3.0/xen.CommonCameraUtil.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.3.0"
+    },
+    {
+      "tag": "v1.2.2",
+      "name": "v1.2.2",
+      "date": "2022-10-22",
+      "body": "- Fixes player head showing when in first person\r\n- Disables mod functionality if [NomaiVR](https://outerwildsmods.com/mods/nomaivr/) is installed\r\n- Fixed cameras not working properly with [DayDream](https://github.com/xen-42/outer-wilds-day-dream)",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.2.2/xen.CommonCameraUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.2.2"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "v1.2.1",
+      "date": "2022-10-04",
+      "body": "- Fixed a bug with projection pool cameras in New Horizons\r\n- Updated OWML version",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.2.1/xen.CommonCameraUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "v1.2.0",
+      "date": "2022-09-17",
+      "body": "- Update to patch 13\r\n- Improve compatibility between camera mods",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.2.0/xen.CommonCameraUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0",
+      "date": "2022-09-14",
+      "body": "- Player's head now rotates to reflect where they're looking\r\n- Fix tool material changes when using any registered camera\r\n- Some code improvements",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.1.0/xen.CommonCameraUtility.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-06-16",
+      "body": "- Fixed an issue where the position and rotation of cameras was overwritten when they're first switched to",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/ow-common-camera-util/releases/download/v1.0.1/xen.CommonCameraUtil.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-common-camera-util/releases/tag/v1.0.1"
+    }
+  ]
+}

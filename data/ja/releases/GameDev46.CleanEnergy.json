@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2026-04-23T18:14:43Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2026-04-23",
+      "body": "# Updates and Patches\r\n\r\n## General\r\n\r\n* Added support for New Horizons systems! (Some planets may misbehave with the occlusion calculations, but it shouldn't cause any noticeable issues)\r\n* The solar panel models should now load correctly\r\n* Decreased the max charging speed to make close sun passes less overpowered\r\n\r\n## Settings\r\n\r\n* Added new setting to toggle between using fuel or using solar power",
+      "bodyZh": "# 更新とパッチ\r\n\r\n## 一般\r\n\r\n* New Horizonsシステムのサポートを追加しました！(一部の惑星は遮蔽計算で問題を起こす可能性がありますが、目に見える問題は発生しないはずです)\r\n* 太陽光パネルのモデルが正しく読み込まれるようになりました\r\n* 最大充電速度を減少させ、太陽に近づく際のオーバーポワーレンスタイムを軽減しました\r\n\r\n## 設定\r\n\r\n* 燃料を使用するか太陽光を使用するかを切り替える新しい設定を追加しました",
+      "zipUrl": "https://github.com/GameDev46/CleanEnergy/releases/download/v1.0.1/GameDev46.CleanEnergy.zip",
+      "releaseUrl": "https://github.com/GameDev46/CleanEnergy/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2026-04-18",
+      "body": "Initial Release",
+      "bodyZh": "初期リリース",
+      "zipUrl": "https://github.com/GameDev46/CleanEnergy/releases/download/v1.0.0/GameDev46.CleanEnergy.zip",
+      "releaseUrl": "https://github.com/GameDev46/CleanEnergy/releases/tag/v1.0.0"
+    }
+  ]
+}

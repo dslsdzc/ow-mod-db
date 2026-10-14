@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2023-03-04T23:24:58Z",
+  "releases": [
+    {
+      "tag": "0.2.1",
+      "name": "Quantum moon effects",
+      "date": "2022-09-10",
+      "body": "Added ambient effects while on the quantum moon",
+      "bodyZh": "量子の月にいる間に環境エフェクトを追加しました",
+      "zipUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/download/0.2.1/LivingFray.RGBIntegration.zip",
+      "releaseUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/tag/0.2.1"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "Razer Chroma SDK Support",
+      "date": "2022-09-10",
+      "body": "Added support for the razer chroma sdk\r\n(Tested on a huntsman keyboard, others should work)\r\n\r\nFixed a bug where the flashlight flickered on steelseries mice.\r\n(Let me know if this accidently broke any other zoned devices, I don't have any to test it on but as far as I can tell it should be fine)",
+      "bodyZh": "razor chroma sdk のサポートを追加しました\n（ハンターマンキーボードでテスト済み、他のキーボードも動作するはずです）\n\nsteelseriesマウスでフラッシュライトが点滅するバグを修正しました。\n（他のゾーンデバイスに意図せず影響を与えた場合に教えてください、テスト用デバイスがないためですが、私の知る限り問題ないはずです）",
+      "zipUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/download/0.2.0/LivingFray.RGBIntegration.zip",
+      "releaseUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "Potential fix for non-per-key keyboards",
+      "date": "2022-08-30",
+      "body": "Added some default event bindings for zoned devices to hopefully display the ambient effects for certain keyboards (e.g. Apex 3).\r\n\r\nFun fact: Steelseries has an rgb zone called \"all\" that apparently means \"all, but only if your keyboard can illuminate each key individually, otherwise none\"",
+      "bodyZh": "ゾーンデバイスのデフォルトイベントバインディングを追加し、特定のキーボード（例：Apex 3）で環境効果を表示できるようにすることを願っています。\r\n\r\n面白い事実：Steelseriesには「all」というRGBゾーンがあり、明らかに「すべて、ただしキーボードが各キーを個別に点灯できる場合のみ、そうでない場合はなし」と意味するものです。",
+      "zipUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/download/0.1.1/LivingFray.RGBIntegration.zip",
+      "releaseUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/tag/0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Initial release",
+      "date": "2022-08-27",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/download/0.1.0/LivingFray.RGBIntegration.zip",
+      "releaseUrl": "https://github.com/LivingFray/OW-RGB-Integration/releases/tag/0.1.0"
+    }
+  ]
+}

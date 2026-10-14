@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2026-08-28T12:53:52Z",
+  "releases": [
+    {
+      "tag": "v2.1.0",
+      "name": "Version 2.1.0",
+      "date": "2026-06-23",
+      "body": "## v2.1.0 — 翻譯校訂 & ship log 字型截字修復\n\n### 主要修正\n\n- **修復 ship log 文字會被截斷／隨游標跳動的問題**\n- **術語修訂**：飛船→方舟、白灰子星計劃→灰子星計劃、紅燼子星→燼子星、對齊目標→校準目標、挪麥人族→挪麥族\n- **角色名修訂**：柯里烏斯→珂琉斯、伊黛雅→伊戴亞\n- **文字潤飾**：逃生艙編號統一為國字、多處語句調整\n\n**Full Changelog**: https://github.com/seacucu/OWCHT-Refined/compare/v2.0.1...v2.1.0",
+      "bodyZh": "## v2.1.0 — 翻訳校訂 & 航行記録 字型截字修復\n\n### 主要修正\n\n- **修復 航行記録 文字が切り詰められ／カーソルの動きに伴って跳動する問題**\n- **用語修訂**：飛船→方舟、白灰子星計画→灰子星計画、紅燼子星→燼子星、対齐目標→校準目標、挪麥人族→挪麥族\n- **キャラクター名修訂**：コリウス→珂琉斯、イデア→伊戴亞\n- **文字潤飾**：脱出ポッド番号を統一し国字に、複数箇所の文句調整\n\n**Full Changelog**: https://github.com/seacucu/OWCHT-Refined/compare/v2.0.1...v2.1.0",
+      "zipUrl": "https://github.com/seacucu/OWCHT-Refined/releases/download/v2.1.0/Seacucu.OWCHTRefined.zip",
+      "releaseUrl": "https://github.com/seacucu/OWCHT-Refined/releases/tag/v2.1.0"
+    },
+    {
+      "tag": "v2.0.1",
+      "name": "Version 2.0.1",
+      "date": "2026-06-19",
+      "body": "## 術語修訂：白灰子星計劃\n\n修訂「Ash Twin Project」的中文譯名：「灰燼雙星計劃」→「白灰子星計劃」，與「Ash Twin（白灰子星）」的星體譯名一致。\n\n影響範圍：對話（entry）及星際日誌（shipLog）共 50 處，全文統一。",
+      "bodyZh": "## ゴlossary修正：「白灰子星計画」\n\n修正「Ash Twin Project」の中国語訳名：「灰燼雙星計劃」→「白灰子星計画」，「Ash Twin（白灰子星）」の天体訳名と一致。\n\n影響範囲：対話（entry）および星間日誌（shipLog）を合わせて50箇所、全文統一。",
+      "zipUrl": "https://github.com/seacucu/OWCHT-Refined/releases/download/v2.0.1/Seacucu.OWCHTRefined.zip",
+      "releaseUrl": "https://github.com/seacucu/OWCHT-Refined/releases/tag/v2.0.1"
+    },
+    {
+      "tag": "v2.0.0",
+      "name": "Version 2.0.0",
+      "date": "2026-06-12",
+      "body": "## 2.0.0 — 全新架構\r\n\r\n- 改基於 [Interplanetary Polyglot](https://outerwildsmods.com/mods/interplanetarypolyglot/) 框架，於語言選單新增獨立的「正體中文」選項，不再佔用簡體中文語言槽\r\n- 翻譯自英文原文全文重譯，並與遊戲 1.1.16 現行文本完全同步（含DLC）\r\n- 修正先前部分 UI 選項顯示數字 key、新增條目遺漏的問題\r\n- 動態字型解決缺字問題\r\n\r\n**安裝需求**：需要前置模組 Interplanetary Polyglot（透過 Mod Manager 安裝會自動帶入）。\r\n\r\n---\r\n\r\n- Now built on [Interplanetary Polyglot](https://outerwildsmods.com/mods/interplanetarypolyglot/): adds Traditional Chinese as a standalone language option instead of replacing Simplified Chinese\r\n- Fully retranslated from the English original, synchronized with game version 1.1.16 (incl. *Echoes of the Eye* DLC)\r\n- Fixed UI options showing numeric keys (6 entries added in later game updates)\r\n- Dynamic font eliminates missing characters\r\n\r\n**Requires** Interplanetary Polyglot (auto-installed via Mod Manager).",
+      "bodyZh": "## 2.0.0 — 全新架構\r\n\r\n- 改基於 [Interplanetary Polyglot](https://outerwildsmods.com/mods/interplanetarypolyglot/) 框架，於言語選單新增獨立的「繁體中文」選項，不再佔用簡體中文言語槓\r\n- 翻譯自英文原文全文重譯，並與遊戲 1.1.16 現行文本完全同步（含DLC）\r\n- 修正先前部分 UI 選項顯示數字 key、新增條目遺漏的問題\r\n- 動態字型解決缺字問題\r\n\r\n**安裝需求**：需要前置模組 Interplanetary Polyglot（透過 MODローダー 安裝會自動帶入）。\r\n\r\n---\r\n\r\n- Now built on [Interplanetary Polyglot](https://outerwildsmods.com/mods/interplanetarypolyglot/): adds Traditional Chinese as a standalone language option instead of replacing Simplified Chinese\r\n- Fully retranslated from the English original, synchronized with game version 1.1.16 (incl. *Echoes of the Eye* DLC)\r\n- Fixed UI options showing numeric keys (6 entries added in later game updates)\r\n- Dynamic font eliminates missing characters\r\n\r\n**Requires** Interplanetary Polyglot (auto-installed via MODローダー).",
+      "zipUrl": "https://github.com/seacucu/OWCHT-Refined/releases/download/v2.0.0/Seacucu.OWCHTRefined.zip",
+      "releaseUrl": "https://github.com/seacucu/OWCHT-Refined/releases/tag/v2.0.0"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2026-06-05",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/seacucu/OWCHT-Refined/releases/download/v1.0.3/Seacucu.OWCHTRefined.zip",
+      "releaseUrl": "https://github.com/seacucu/OWCHT-Refined/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2026-06-05",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/seacucu/OWCHT-Refined/releases/download/v1.0.2/Seacucu.OWCHTRefined.zip",
+      "releaseUrl": "https://github.com/seacucu/OWCHT-Refined/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2026-06-05",
+      "body": "**初始發布版本（基於 puffbro/outer-wilds-traditional-chinese-translation v1.1.2）**\r\n\r\n**修正內容：**\r\n- 改用動態字型，修正部分繁體漢字無法顯示的問題（如「螢」、「採」等）\r\n- 以繁化姬進行全文簡繁轉換，並逐句人工校正\r\n- 修正字形：`麽→麼`、`里→裡`、`恒→恆`、`余→餘`、`炮→砲`、`巖→岩`、`卷→捲` 等\r\n- 修正用語：`估計→恐怕/我想`、`咱們→我們`、`制作→製作` 等\r\n- 部分角色名依英文原文重新音譯\r\n\r\n**新功能：**\r\n- 支援從 mod 資料夾的外部 `Translation.txt` 讀取翻譯，修改後重啟遊戲即生效",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/seacucu/OWCHT-Refined/releases/download/v1.0.0/Seacucu.OWCHTRefined.zip",
+      "releaseUrl": "https://github.com/seacucu/OWCHT-Refined/releases/tag/v1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2025-01-21T14:57:27Z",
+  "releases": [
+    {
+      "tag": "1.1.3",
+      "name": "1.1.3",
+      "date": "2024-06-12",
+      "body": "Fixed to work with Outer Wilds Patch 15 (updated game libs).",
+      "bodyZh": "Outer Wilds Patch 15（更新されたゲームライブラリ）との互換性を修正しました。",
+      "zipUrl": "https://github.com/dgarroDC/Journal/releases/download/1.1.3/dgarro.Journal.zip",
+      "releaseUrl": "https://github.com/dgarroDC/Journal/releases/tag/1.1.3"
+    },
+    {
+      "tag": "1.1.2",
+      "name": "1.1.2",
+      "date": "2023-12-14",
+      "body": "Fix issues with shutdown situations (ship electrical systems damaged) in unexpected states. Particularly, it prevents a softlock when editing an entry name or description (it also saves the changes made on them).\r\n\r\nThank you @QuantumBlur314 for reporting this bug!",
+      "bodyZh": "シャットダウン状況（船の電気システムが損傷している）での問題を修正（予期せぬ状態で）。特に、エントリ名や説明を編集している際のソフトロックを防ぎます（変更された内容も保存されます）。\r\n\r\nこのバグを報告してくれた @QuantumBlur314 に感謝します！",
+      "zipUrl": "https://github.com/dgarroDC/Journal/releases/download/1.1.2/dgarro.Journal.zip",
+      "releaseUrl": "https://github.com/dgarroDC/Journal/releases/tag/1.1.2"
+    },
+    {
+      "tag": "1.1.1",
+      "name": "1.1.1",
+      "date": "2023-09-28",
+      "body": "Fix middle prompts not showing after Outer Wilds Patch 14 (upper right prompts are already visible after the last Custom Ship Log Modes update)",
+      "bodyZh": "Outer Wilds Patch 14以降の中央プロンプトが表示されない問題を修正（最後のCustom Ship Log Modes更新以降は右上のプロンプトは表示されています）",
+      "zipUrl": "https://github.com/dgarroDC/Journal/releases/download/1.1.1/dgarro.Journal.zip",
+      "releaseUrl": "https://github.com/dgarroDC/Journal/releases/tag/1.1.1"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2023-06-29",
+      "body": "- Added an orange cursor with a \"+\" shape controllable with the mouse when editing input fields (entry names and descriptions) that can be used to select text or change the caret position.\r\n- Added the option to discard the changes made to an input field (pressing esc while holding shift)., which restores the entry name/description to the value it was before editing the text.",
+      "bodyZh": "- 入力フィールド（エントリーネームと説明）を編集する際、マウスで操作可能な\"+\"形のオレンジ色カーソルが追加されました。テキストを選択したり、カーソル位置を変更したりするために使用できます。\r\n- 入力フィールドに加えた変更を破棄するオプションが追加されました（シフトキーを押しながらESCキーを押す）。これにより、テキストを編集する前にエントリーネーム/説明が元の値に戻ります。",
+      "zipUrl": "https://github.com/dgarroDC/Journal/releases/download/1.1.0/dgarro.Journal.zip",
+      "releaseUrl": "https://github.com/dgarroDC/Journal/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2023-06-24",
+      "body": "Shows an error item in the description field and a red \"X\" in the photo square if the image of the selected entry isn't found in Épicas Album (because it was deleted). Before this, it just displayed a white image. The error message includes the name of the missing snapshot.",
+      "bodyZh": "選択されたエントリーの画像がÉpicas Albumに見つからない場合（削除されたため）、説明フィールドにエラー項目を表示し、写真の四角に赤い\"X\"を表示します。これ以前は白い画像を表示していました。エラーメッセージには、見つからないスナップショットの名前が含まれます。",
+      "zipUrl": "https://github.com/dgarroDC/Journal/releases/download/1.0.1/dgarro.Journal.zip",
+      "releaseUrl": "https://github.com/dgarroDC/Journal/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2023-06-06",
+      "body": "Initial release!",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/dgarroDC/Journal/releases/download/1.0.0/dgarro.Journal.zip",
+      "releaseUrl": "https://github.com/dgarroDC/Journal/releases/tag/1.0.0"
+    }
+  ]
+}

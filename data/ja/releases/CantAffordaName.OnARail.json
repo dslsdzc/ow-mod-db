@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-08-29T09:24:33Z",
+  "releases": [
+    {
+      "tag": "v1.1.2",
+      "name": "On A Rail v1.1.2",
+      "date": "2025-08-29",
+      "body": "Fixes spelling errors in translations/english.json",
+      "bodyZh": "翻訳ファイルの英語.json内のスペルエラーを修正します",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/download/v1.1.2/CantAffordaName.OnARail.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/tag/v1.1.2"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "On A Rail v1.1.1",
+      "date": "2025-08-22",
+      "body": "A QoL update based on feedback.\r\n- All text has been moved to translation .json files\r\n- Added Simplified Chinese translation by @NanFyn\r\n- Additional ship logs & adjustments to ship log layout\r\n- The geometry of Hollow Pillar on Spruce Caboose has been adjusted for ease of access\r\n- The water on Spruce Caboose is now less murky\r\n- It's now possible to escape the water on Spruce Caboose if the player runs out of jetpack fuel\r\n- Hearthian fuel canisters have been replaced by Nomaian fuel canisters\r\n- A fact that previously required identifying a signal to display alternative text now only requires entering a specific location\r\n- Ghost Matter volumes have been tweaked\r\n- Certain SectorCullGroups will no longer cause geometry to fade into existence when interacted with\r\n- Time Slicing no longer applies to certain gravity volumes connected by warp pads\r\n- The radius of sectors have been adjusted per planet\r\n- Notification volumes created with New Horizons have been replaced with ones from the base game\r\n- An item that was hard to find is now slightly easier to find (and has an entry location once it has been found)\r\n- If the player reaches an end game location without a certain ship log, a rumor will be learned instead of a fact\r\n- The whistle has its volume boosted during the ending\r\n- If the player has a certain ship log, a screen prompt will be shown on screen during the ending\r\n- Controllers with rumble support will no longer continuously vibrate during the ending after fading to black\r\n- Geswaldo has been added (You will _never_ find him)",
+      "bodyZh": "フィードバックに基づくQoL更新。\n- すべてのテキストが翻訳.jsonファイルに移動\n- @NanFynによる簡体中国語翻訳を追加\n- 航行記録の追加と航行記録レイアウトの調整\n- スプルースキャブオーの空洞柱の幾何学がアクセスしやすくなるように調整\n- スプルースキャブオーの水がよりはっきりする\n- プレイヤーがジェットパック燃料を使い切った場合、スプルースキャブオーの水から逃れることができる\n- ハーシアン燃料カートリッジがノマイ燃料カートリッジに置き換えられました\n- 以前は信号を特定して代替テキストを表示する必要がありましたが、現在は特定の場所に入るだけで必要です\n- 幽霊物質の量が調整されました\n- 特定のSectorCullGroupsは、インタラクション時に幾何学が存在に溶け込むのを引き起こさなくなりました\n- ワープパッドで接続されている特定の重力領域にはタイムスライシングが適用されなくなりました\n- セクターの半径は惑星ごとに調整されました\n- New Horizonsで作成された通知領域がベースゲームのものに置き換えられました\n- 見つけにくいアイテムが少し見つけやすくなった（見つかった後は場所が記録されます）\n- プレイヤーが特定の航行記録なしでゲームの終わりの場所に到達した場合、事実ではなく噂が学習されます\n- エンディング中にホイッスルの音量が上げられます\n- プレイヤーが特定の航行記録を持っている場合、エンディング中にスクリーン上にプロンプトが表示されます\n- 振動サポート付きコントローラーは、ブラックアウト後にエンディング中に連続して振動しなくなりました\n- Geswaldoが追加されました（あなたは決して彼を見つけることはありません）",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/download/v1.1.1/CantAffordaName.OnARail.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/tag/v1.1.1"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "On A Rail v1.1.0",
+      "date": "2025-07-26",
+      "body": "A major patch that completely revamps almost everything!\r\n\r\n-A certain planet has been made spookier to deal with there being multiple suns in the system\r\n-The Ernesto family tree has been trimmed significantly to make navigation easier\r\n-Fish will do a better job at trying to avoid the ship (Give them a break, they didn't go to college)\r\n-Fish will no longer destroy the ship\r\n-Ship logs are fully implemented! Entry Locations, Rumors, Alt Text, etc.\r\n-Hints are now more descriptive about how to proceed and more clearly state what they intend to teach.\r\n-The ending is now less vague.\r\n-Fixes for various stretched or misaligned textures\r\n-The local sun will forcibly have its light radius set to 2500m (Someone else fixed it because it wasn't my fault? Too bad! Band-aid solution stays!)",
+      "bodyZh": "大きなパッチでほぼすべてを完全にリニューアルしました！\n\n- ある惑星は、システム内に複数の太陽があることを考慮して、より不気味になりました\n- エルネスト家の系図は、ナビゲーションを容易にするために大幅に削減されました\n- 魚は船を避けることに更好的な仕事をします（少し休んでください、彼らは大学に行かなかったんです）\n- 魚はもはや船を破壊しなくなりました\n- 航行記録は完全に実装されました！エントリーロケーション、噂、代替テキストなど\n- ヒントは、進行方法についてより記述的で、何を教えようとしているかをより明確に述べています。\n- エンディングは今や曖昧ではありません。\n- さまざまな引き伸ばされたまたはずれたテクスチャーの修正\n- 地球の太陽は強制的にその光の半径を2500mに設定されます（他の誰かが修正したのを？私のせいではなかったんです？残念！バンドエイドの解決策はそのままです！）",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/download/v1.1.0/CantAffordaName.OnARail.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "On A Rail v1.0.0",
+      "date": "2025-07-23",
+      "body": "First Release.",
+      "bodyZh": "初回リリース。",
+      "zipUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/download/v1.0.0/CantAffordaName.OnARail.zip",
+      "releaseUrl": "https://github.com/CantAffordaName/CantAffordaName.OnARail/releases/tag/v1.0.0"
+    }
+  ]
+}

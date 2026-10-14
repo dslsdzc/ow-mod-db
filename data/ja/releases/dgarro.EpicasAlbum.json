@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2024-06-12T03:26:33Z",
+  "releases": [
+    {
+      "tag": "1.1.3",
+      "name": "1.1.3",
+      "date": "2024-06-12",
+      "body": "Fixed to work with Outer Wilds Patch 15 (updated game libs).",
+      "bodyZh": "Outer Wilds Patch 15（更新されたゲームライブラリ）との互換性を修正しました。",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.1.3/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.1.3"
+    },
+    {
+      "tag": "1.1.2",
+      "name": "1.1.2",
+      "date": "2023-12-14",
+      "body": "Fix issues with shutdown situations (ship electrical systems damaged) when the snapshot deletion confirmation is open (it's now closed canceling the deletion) or the snapshot chooser dialog is open (it's now closed without making a selection).",
+      "bodyZh": "シャットダウン状況（船の電気システムが損傷している）での問題を修正（スナップショット削除の確認が開かれている場合（削除をキャンセルして閉じる）、またはスナップショット選択ダイアログが開かれている場合（選択せずに閉じる））。",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.1.2/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.1.2"
+    },
+    {
+      "tag": "1.1.1",
+      "name": "1.1.1",
+      "date": "2023-09-28",
+      "body": "Fix bottom prompts not showing after Outer Wilds Patch 14 (upper right prompts are already visible after the last Custom Ship Log Modes update)",
+      "bodyZh": "Outer Wildsパッチ14以降、下部のプロンプトが表示されないのを修正（最後のカスタムシップログモード更新後、右上のプロンプトは既に表示されています）",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.1.1/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.1.1"
+    },
+    {
+      "tag": "1.1.0",
+      "name": "1.1.0",
+      "date": "2023-06-03",
+      "body": "Adds an API with tho methods: `OpenSnapshotChooserDialog` and `GetSnapshotSprite`, more info about them in the [README](https://github.com/dgarroDC/EpicasAlbum#the-api).",
+      "bodyZh": "APIを追加し、`OpenSnapshotChooserDialog`と`GetSnapshotSprite`の2つのメソッドが含まれます。詳細については、[README](https://github.com/dgarroDC/EpicasAlbum#the-api)を参照してください。",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.1.0/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "1.0.1",
+      "date": "2023-05-17",
+      "body": "Adds a vertical scrollbar to the UI for better visual feedback when navigating the photos. Also a slight color adjustment.",
+      "bodyZh": "UIに垂直スクロールバーを追加し、フォトをナビゲートする際の視覚的なフィードバックを向上させます。また、わずかな色調整も行います。",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.0.1/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2023-05-15",
+      "body": "Initial release!",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/download/1.0.0/dgarro.EpicasAlbum.zip",
+      "releaseUrl": "https://github.com/dgarroDC/EpicasAlbum/releases/tag/1.0.0"
+    }
+  ]
+}

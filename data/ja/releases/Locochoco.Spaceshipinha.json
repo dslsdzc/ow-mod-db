@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2023-08-15T22:27:28Z",
+  "releases": [
+    {
+      "tag": "v0.1.9",
+      "name": "Shipinha v0.1.9",
+      "date": "2023-02-11",
+      "body": "* Fixed player not being able to exit map after entering the ship\r\n* Removed no longer needed `AstroObject` component from the prefab",
+      "bodyZh": "* プレイヤーが船に入った後、地図から退出できないのを修正\r\n* 不要になった`AstroObject`コンポーネントをプレハブから削除",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.9/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.9"
+    },
+    {
+      "tag": "v0.1.8",
+      "name": "Shipinha v0.1.8",
+      "date": "2022-11-23",
+      "body": "* Adds Compatibility with owo using new shipyard networking interface system",
+      "bodyZh": "* Outer Wilds用の新しい船台ネットワーキングインターフェースシステムを使用した互換性を追加します",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.8/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.8"
+    },
+    {
+      "tag": "v0.1.7",
+      "name": "Shipinha v0.1.7",
+      "date": "2022-11-15",
+      "body": "* Using new Shipyard prefab system (need to use version v.0.1.8 or higher)\r\n* Fixed wrong particle sync",
+      "bodyZh": "* 新しいShipyardプレハブシステムを使用（v.0.1.8以上のバージョンが必要です）\r\n* 適切なパーティクル同期を修正",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.7/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.7"
+    },
+    {
+      "tag": "v0.1.6",
+      "name": "Shipinha v0.1.6",
+      "date": "2022-11-13",
+      "body": "* Adds compatibility with OWO (needs pre-release version of Slate's Shipyard)",
+      "bodyZh": "* Outer Wilds（OWO）との互換性を追加（スレイトのドックヤードのプレリリースバージョンが必要）",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.6/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.6"
+    },
+    {
+      "tag": "v0.1.5",
+      "name": "Shipinha v0.1.5",
+      "date": "2022-09-18",
+      "body": "* Added Free Look",
+      "bodyZh": "* フリーレイクを追加しました",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.5/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.5"
+    },
+    {
+      "tag": "v0.1.4",
+      "name": "Shipinha v0.1.4",
+      "date": "2022-09-10",
+      "body": "* Implemented new OnWhiteholeSpawnImmediatly",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.4/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.4"
+    },
+    {
+      "tag": "v0.1.3",
+      "name": "Shipinha v0.1.3",
+      "date": "2022-09-10",
+      "body": "* Fixed NRE issue that could happen after a ship got destroyed\r\n\r\nThanks MegaPiggy!",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.3/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.3"
+    },
+    {
+      "tag": "v0.1.2",
+      "name": "Shipinha v0.1.2",
+      "date": "2022-09-09",
+      "body": "* Changed the proxy colliders to make bumping into stuff fell better\r\n* Added a setting to change the dead zone of the input for controllers\r\n* Added a setting to change the control schema to one that better fit controllers",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.2/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Shipinha v0.1.1",
+      "date": "2022-09-09",
+      "body": "* Added \"fire\" particles\r\n* Fixed interaction prompt appearing even after sitting",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.1/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Shipinha v0.1.0",
+      "date": "2022-09-08",
+      "body": "- Adds a custom ship that works just like the one in the alpha mod Navinha",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/loco-choco/Spaceshipinha/releases/download/v0.1.0/Locochoco.Spaceshipinha.zip",
+      "releaseUrl": "https://github.com/loco-choco/Spaceshipinha/releases/tag/v0.1.0"
+    }
+  ]
+}

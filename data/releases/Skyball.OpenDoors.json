@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-06-26T11:41:57Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2022-04-19",
+      "body": "This is the first version of this mod!\r\nSee the readme for how to use it.",
+      "zipUrl": "https://github.com/YanWittmann/OpenDoors/releases/download/1.0.0/OpenDoors.zip",
+      "releaseUrl": "https://github.com/YanWittmann/OpenDoors/releases/tag/1.0.0",
+      "bodyZh": "这是该模组的第一个版本！\n请查看readme了解如何使用它。"
+    }
+  ]
+}

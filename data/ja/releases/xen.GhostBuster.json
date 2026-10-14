@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2024-05-22T18:40:29Z",
+  "releases": [
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2024-05-22",
+      "body": "- Adds a GlobalMessenger event for mod compatibility",
+      "bodyZh": "- MODマネージャーとの互換性のために GlobalMessenger イベントを追加します",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/v1.0.2/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "bodyZh": "- MODマニフェストにPatreon寄付リンクを追加",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/v1.0.1/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2023-07-19",
+      "body": "- Fixed a bug where there were interact receivers for extinguished lanterns\r\n- Added a \"debug logs\" option\r\n- Added a \"show names\" option that let's you know whose life you're snuffing out. You monster.",
+      "bodyZh": "- 消えたランタンに対するインタラクティブリシーバーが存在するバグを修正しました\r\n- \"デバッグログ\"オプションを追加しました\r\n- \"名前を表示\"オプションを追加しました。あなたが誰の命を消しているか分かりますよ。おかしい人。",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/v1.0.0/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-04-19",
+      "body": "I ain't afraid of no null reference exception.",
+      "bodyZh": "私はnull参照例外を恐れない。",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/0.1.1/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-04-19",
+      "body": "I ain't afraid of no ghosts.",
+      "bodyZh": "私は幽霊に恐れるものはいない。",
+      "zipUrl": "https://github.com/xen-42/ow-ghostbuster/releases/download/0.1.0/xen.GhostBuster.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-ghostbuster/releases/tag/0.1.0"
+    }
+  ]
+}

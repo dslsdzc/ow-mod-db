@@ -1,0 +1,37 @@
+{
+  "repoUpdatedAt": "2024-07-09T12:18:46Z",
+  "releases": [
+    {
+      "tag": "0.3.1",
+      "name": "Added Russian Translation",
+      "date": "2022-04-16",
+      "body": "What do you think this means?",
+      "zipUrl": "https://github.com/sherwoodw28/OWAtropos/releases/download/0.3.1/Titch.OWAtropos.zip",
+      "releaseUrl": "https://github.com/TitchMW/OWAtropos/releases/tag/0.3.1"
+    },
+    {
+      "tag": "0.3.0",
+      "name": "v0.3.0",
+      "date": "2021-12-21",
+      "body": "- Added better cap cloud for the top of the planet Atropos\r\n- Changed the color of the planet Atropos\r\n- Reduced the strength of Atropos Gravity field",
+      "zipUrl": "https://github.com/sherwoodw28/OWAtropos/releases/download/0.3.0/Titch.OWAtropos.zip",
+      "releaseUrl": "https://github.com/TitchMW/OWAtropos/releases/tag/0.3.0"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "v0.2.0",
+      "date": "2021-12-21",
+      "body": "Added Atroposes Gravity and improved graphics on the inside.",
+      "zipUrl": "https://github.com/sherwoodw28/OWAtropos/releases/download/0.2.0/Titch.OWAtropos.zip",
+      "releaseUrl": "https://github.com/TitchMW/OWAtropos/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "First Release!",
+      "date": "2021-12-19",
+      "body": "First Version of the Planet Atropos :\r\n\r\nAdded Atropos\r\nAdded Asteroid Field",
+      "zipUrl": "https://github.com/sherwoodw28/OWAtropos/releases/download/0.1.0/Titch.OWAtropos.zip",
+      "releaseUrl": "https://github.com/TitchMW/OWAtropos/releases/tag/0.1.0"
+    }
+  ]
+}

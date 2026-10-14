@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2026-03-25T13:20:22Z",
+  "releases": [
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2026-03-25",
+      "body": "Fix more translation!",
+      "bodyZh": "もっと翻訳を修正！",
+      "zipUrl": "https://github.com/thunni-noi/OuterWilds-ThaiTranslation/releases/download/v1.0.3/thuninoi.ThaiTranslation.zip",
+      "releaseUrl": "https://github.com/thunni-noi/OuterWilds-ThaiTranslation/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2026-03-21",
+      "body": "Fix translation, some misspell",
+      "bodyZh": "翻訳を修正、いくつかのスペルミス",
+      "zipUrl": "https://github.com/thunni-noi/OuterWilds-ThaiTranslation/releases/download/v1.0.2/thuninoi.ThaiTranslation.zip",
+      "releaseUrl": "https://github.com/thunni-noi/OuterWilds-ThaiTranslation/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2025-12-25",
+      "body": "- Workaround to ensure Quantum Space Buddies is loaded first to prevent error  \r\n(Cannot load language file)\r\n- Edited minor mistranslation",
+      "bodyZh": "- 量子空間フレンドリーが最初に読み込まれるようにするための回避策（言語ファイルの読み込みができません）\n- 軽微な誤訳を修正",
+      "zipUrl": "https://github.com/thunni-noi/OuterWilds-ThaiTranslation/releases/download/v1.0.1/thuninoi.ThaiTranslation.zip",
+      "releaseUrl": "https://github.com/thunni-noi/OuterWilds-ThaiTranslation/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2025-12-04",
+      "body": "First (kinda) release!\r\nHopefully everything does works now!",
+      "bodyZh": "初めて（少しは）リリース！\n Надеюсь, теперь все работает!",
+      "zipUrl": "https://github.com/thunni-noi/OuterWilds-ThaiTranslation/releases/download/v1.0.0/thuninoi.ThaiTranslation.zip",
+      "releaseUrl": "https://github.com/thunni-noi/OuterWilds-ThaiTranslation/releases/tag/v1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2025-07-23T00:44:38Z",
+  "releases": [
+    {
+      "tag": "0.2.4",
+      "name": "v0.2.4",
+      "date": "2025-07-22",
+      "body": "- Added icons to various interactable objects to make them easier to tell apart visually.",
+      "bodyZh": "- さまざまなインタラクティブなオブジェクトにアイコンを追加し、視覚的に区別しやすくしました。",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.4/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.4"
+    },
+    {
+      "tag": "0.2.3",
+      "name": "v0.2.3",
+      "date": "2025-07-21",
+      "body": "- Fixed blurry textures from latest New Horizons update\r\n- Fixed gravity from an invisible body affecting the player intermittently",
+      "bodyZh": "- 最新のNew Horizonsアップデートによるぼやけたテクスチャを修正\r\n- 見えない体による重力がプレイヤーに一時的に影響するのを修正",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.3/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.3"
+    },
+    {
+      "tag": "0.2.2",
+      "name": "v0.2.2",
+      "date": "2025-07-21",
+      "body": "- Re-enabled the scout launcher but patched out the scout boost velocity bonus while in certain mod locations.\r\n- Fixed some warp devices not activating in some circumstances.",
+      "bodyZh": "- 探索ロケットを再有効化しましたが、特定のMODの場所では探索ブースト速度ボーナスをパッチングしました。\r\n- 特定の状況でワープデバイスが作動しない問題を修正しました。",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.2/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.2"
+    },
+    {
+      "tag": "0.2.1",
+      "name": "v0.2.1",
+      "date": "2025-07-21",
+      "body": "- Hotfix to disable the scout launcher in most locations to prevent sequence breaking via scout boosting\r\n- Minor visual improvements to certain props in a central location",
+      "bodyZh": "- 最もの地点で斥候ローラーを無効化するホットフィックスを適用し、斥候強化による順序破壊を防ぐ\r\n- 中央の地点にある特定のプロップの小さなビジュアル改善",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.1/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.1"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "v0.2.0",
+      "date": "2025-07-20",
+      "body": "Official jam submission release candidate.",
+      "bodyZh": "公式ジャム提出のリリース候補。",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.2.0/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "v0.1.0",
+      "date": "2025-07-18",
+      "body": "- Initial jam release candidate",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/download/0.1.0/Hawkbar.Terrarium.zip",
+      "releaseUrl": "https://github.com/Hawkbat/OuterWildsModJam5/releases/tag/0.1.0"
+    }
+  ]
+}

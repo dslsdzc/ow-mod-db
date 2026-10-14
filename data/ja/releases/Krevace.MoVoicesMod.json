@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2025-04-19T08:14:43Z",
+  "releases": [
+    {
+      "tag": "0.1.3",
+      "name": "OW Alternate Voices Addon v0.1.3 - Asset Naming Fix",
+      "date": "2025-04-19",
+      "body": "The asset file conjoining feature was removed from the main mod, so some voice lines weren't loading properly.\r\n\r\n**Changelog:** [`0.1.2...0.1.3`](https://github.com/Krevace/ow-alt-voices-mod/compare/0.1.2...0.1.3)",
+      "bodyZh": "アセットファイルの連結機能がメインのMODから削除されたため、一部の音声ラインが正しく読み込まれませんでした。\n\n**変更履歴:** [⟦0⟧](https://github.com/Krevace/ow-alt-voices-mod/compare/0.1.2...0.1.3)",
+      "zipUrl": "https://github.com/Krevace/ow-alt-voices-mod/releases/download/0.1.3/Krevace.MoVoicesMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-alt-voices-mod/releases/tag/0.1.3"
+    },
+    {
+      "tag": "0.1.2",
+      "name": "OW Alternate Voices Addon v0.1.2 - Rebranding",
+      "date": "2023-01-04",
+      "body": "Some suggested that renaming the title of the addon from \"Mo' Voices\" to \"Alternate Voices\" would make it more clear that the addon revoiced characters rather than adding more voices. I agree. \r\n\r\n**Changelog:** [`0.1.1...0.1.2`](https://github.com/Krevace/ow-alt-voices-mod/compare/0.1.1...0.1.2)",
+      "bodyZh": "一部の人々は、アドオンのタイトルを「Mo' Voices」から「Alternate Voices」に変更することで、アドオンがキャラクターの声を替えたのではなく、より多くの声を追加したことをより明確にすると言いました。私は同意します。\r\n\r\n**変更履歴:** [⟦0⟧](https://github.com/Krevace/ow-alt-voices-mod/compare/0.1.1...0.1.2)",
+      "zipUrl": "https://github.com/Krevace/ow-alt-voices-mod/releases/download/0.1.2/Krevace.MoVoicesMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-alt-voices-mod/releases/tag/0.1.2"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "OW Alternate Voices Addon v0.1.1 - Quick Fix",
+      "date": "2022-12-08",
+      "body": "Fixed two mislabeled files. \r\n\r\n**Changelog:** [`0.1.0...0.1.1`](https://github.com/Krevace/ow-alt-voices-mod/compare/0.1.0...0.1.1)",
+      "bodyZh": "二つの誤ったラベルのファイルを修正しました。\r\n\r\n**変更履歴:** [⟦0⟧](https://github.com/Krevace/ow-alt-voices-mod/compare/0.1.0...0.1.1)",
+      "zipUrl": "https://github.com/Krevace/ow-alt-voices-mod/releases/download/0.1.1/Krevace.MoVoicesMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-alt-voices-mod/releases/tag/0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "OW Alternate Voices Addon v0.1.0 - Premix",
+      "date": "2022-10-14",
+      "body": "All unedited audio files are included in this version, normalized and converted to ogg.",
+      "bodyZh": "すべての未編集のオーディオファイルがこのバージョンに含まれており、正規化され、ogg形式に変換されています。",
+      "zipUrl": "https://github.com/Krevace/ow-alt-voices-mod/releases/download/0.1.0/Krevace.MoVoicesMod.zip",
+      "releaseUrl": "https://github.com/Krevace/ow-alt-voices-mod/releases/tag/0.1.0"
+    }
+  ]
+}

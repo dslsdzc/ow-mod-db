@@ -1,0 +1,53 @@
+{
+  "repoUpdatedAt": "2026-01-17T20:23:59Z",
+  "releases": [
+    {
+      "tag": "v1.2.2",
+      "name": "v1.2.2",
+      "date": "2024-11-11",
+      "body": "누락된 번역 추가",
+      "zipUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/download/v1.2.2/OWKT.zip",
+      "releaseUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/tag/v1.2.2"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "v1.2.1",
+      "date": "2024-06-27",
+      "body": "잘못된 폰트가 사용되던 버그를 수정\r\n\r\nFixed a bug where incorrect font was being used.",
+      "zipUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/download/v1.2.1/OWKT.zip",
+      "releaseUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/tag/v1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "v1.2.0",
+      "date": "2024-06-23",
+      "body": "Outer Wilds 1.1.15, OWML 2.13.0과 호환",
+      "zipUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/download/v1.2.0/OWKT.zip",
+      "releaseUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "v1.1.1",
+      "date": "2022-09-24",
+      "body": "Outer Wilds 1.1.13, OWML 2.7.0과 호환\r\n\r\n아이템을 이용한 상호작용 시 잘못된 메시지가 표시되던 버그를 수정함",
+      "zipUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/download/v1.1.1/OWKT.zip",
+      "releaseUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/tag/v1.1.1"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0",
+      "date": "2022-09-17",
+      "body": "Outer Wilds 1.1.13과 호환",
+      "zipUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/download/v1.1.0/OWKT.zip",
+      "releaseUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-01-09",
+      "body": "Outer Wilds 1.1.12, OWML 2.3.0과 호환",
+      "zipUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/download/v1.0.0/OWKT.zip",
+      "releaseUrl": "https://github.com/milesand/outer-wilds-korean-translation/releases/tag/v1.0.0"
+    }
+  ]
+}

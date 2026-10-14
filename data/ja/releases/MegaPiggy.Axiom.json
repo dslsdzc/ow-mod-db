@@ -1,0 +1,41 @@
+{
+  "repoUpdatedAt": "2024-07-06T03:32:38Z",
+  "releases": [
+    {
+      "tag": "1.1.0",
+      "name": "v1.1.0",
+      "date": "2024-03-28",
+      "body": "- Fixed ship log position compat with other mods\r\n- Included the system folder this time cause apparently in every other release I did, the build didn't have it\r\n- Disabled alpha SFX by default to not impact other jam mods",
+      "bodyZh": "- 航行記録の位置を修正し、他のMODとの互換性を確保\r\n- 今回はシステムフォルダを含めることにしました。なぜなら、これまでの他のリリースでは、ビルドにそれが含まれていなかったからです\r\n- アルファSFXをデフォルトで無効化して、他のジャムMODに影響を与えないように",
+      "zipUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/download/1.1.0/MegaPiggy.Axiom.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/tag/1.1.0"
+    },
+    {
+      "tag": "1.0.2",
+      "name": "v1.0.2",
+      "date": "2024-03-27",
+      "body": "- Fix moon warden softlock. Who knew writing dialogue would be so complicated. Sometimes I just forget to add a \"goodbye\" to a character.",
+      "bodyZh": "- 月の守護者によるソフトロックの修正。会話を書くのがこんなに複雑なんて誰も知らなかった。時々、キャラクターに「さようなら」を追加するのを忘れるんだ。",
+      "zipUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/download/1.0.2/MegaPiggy.Axiom.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/tag/1.0.2"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2024-03-27",
+      "body": "- New config to disable alpha SFX (you're welcome xen)\r\n- Added some culling\r\n- Removed some details to keep it less laggy\r\n- Finished ship logs\r\n- No more dialogue softlocking (as far as I know lol)\r\n- Some more dialogue\r\n- New subtitle\r\n- File size is only a little bit smaller. I'll optimize in future.\r\n\r\nEverything in this mod is just as non-critical as before but actually works",
+      "bodyZh": "- アルファSFXを無効にする新しい設定（xenさん、お役立てください）\n- カリングが追加されました\n- 詳細をいくつか削除して、ラグが少ないようにしました\n- 航行記録が完成しました\n- ドイラジがソフトロックする問題は解消しました（私の知る限り、lol）\n- もっとドイラジが追加されました\n- 新しいサブタイトル\n- ファイルサイズは少し小さくなっただけ。今後最適化します。\n\nこのMOD内のすべては以前と同じように非重要ですが、実際に動作します",
+      "zipUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/download/1.0.1/MegaPiggy.Axiom.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-03-27",
+      "body": "Jam release",
+      "bodyZh": "ジャムリリース",
+      "zipUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/download/1.0.0/MegaPiggy.Axiom.zip",
+      "releaseUrl": "https://github.com/MegaPiggy/axiom-and-aicale/releases/tag/1.0.0"
+    }
+  ]
+}

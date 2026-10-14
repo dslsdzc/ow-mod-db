@@ -1,0 +1,90 @@
+{
+  "repoUpdatedAt": "2025-11-28T06:19:03Z",
+  "releases": [
+    {
+      "tag": "1.2.1",
+      "name": "1.2.1",
+      "date": "2025-08-12",
+      "body": "- Added Japanese translation by @TRSasasusu \r\n- Added Simplified Chinese translation by @NanFyn",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.2.1/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.2.1",
+      "bodyZh": "- 添加了日语翻译，由 @TRSasasusu 提供\n- 添加了简体中文翻译，由 @NanFyn 提供"
+    },
+    {
+      "tag": "1.2.0",
+      "name": "1.2.0",
+      "date": "2025-08-10",
+      "body": "- Added translation support\r\n- Added Spanish translations",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.2.0/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.2.0",
+      "bodyZh": "- 添加了翻译支持\r\n- 添加了西班牙语翻译"
+    },
+    {
+      "tag": "1.1.10",
+      "name": "1.1.10",
+      "date": "2024-06-12",
+      "body": "Fixed another issue with Outer Wilds Patch 15, that affected mods using item lists with description field (this used a UI size setter introduced in Patch 14 but was removed, causing NREs). This fixes modes added by mods like (now working):\r\n- Archipelago Randomizer\r\n- The Hatchling's Journal\r\n- Ship Log Slide Reel Player Plus",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.1.10/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.1.10",
+      "bodyZh": "修复了星际拓荒补丁15中的另一个问题，该问题影响了使用带描述字段的物品列表的模组（这个使用了在补丁14中引入的UI尺寸设置器，但后来被移除，导致NRE）。这修复了由模组添加的模式，例如（现在可以正常工作）：\n- Archipelago Randomizer(阿奇帕洛格随机器)\n- The Hatchling's Journal(幼崽日记)\n- Ship Log Slide Reel Player Plus(船志滑动轮播放器增强版)"
+    },
+    {
+      "tag": "1.1.9",
+      "name": "1.1.9",
+      "date": "2024-06-10",
+      "body": "Fixed to work with Outer Wilds Patch 15 (updated game libs). Thank you @xen-42 !",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.1.9/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.1.9",
+      "bodyZh": "修复以支持星际拓荒补丁15（更新了游戏库）。感谢 @xen-42 ！"
+    },
+    {
+      "tag": "1.1.8",
+      "name": "1.1.8",
+      "date": "2024-03-03",
+      "body": "- For item lists without the description field, now they start scrolling later when navigating down, the selection arrow can now go down to the displayed 12th UI item instead of the 5th, which was wasting a lot of free vertical space. It is still consistent with vanilla, but counting from the bottom of the list instead of the top.\r\n- Vanilla modes now are displayed at the top of the mode selection list instead of at the bottom.\r\n- Item lists are no longer displayed over the Ship Log's exterior border (the item lists's root object is now the sibling following the description field in the objects hierarchy). Because of this, The Hatchling's Journal cursor no longer renders over that border anymore, making it more look consistent with the vanilla modes.",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.1.8/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.1.8",
+      "bodyZh": "- 对于没有描述字段的项目列表，在向下导航时现在开始滚动得更晚，选择箭头现在可以向下滚动到显示的第12个UI项目，而不是第5个，这样就浪费了很多免费的垂直空间。它仍然与原版保持一致，但计数是从列表的底部而不是顶部开始的。\n- 原版模式现在显示在模式选择列表的顶部，而不是底部。\n- 项目列表不再显示在船志的外部边界之上（项目列表的根对象现在是对象层次结构中描述字段后面的同级对象）。由于这个原因，雏鸟的日记光标不再渲染在那条边界上，使其看起来更与原版模式一致。"
+    },
+    {
+      "tag": "1.1.7",
+      "name": "1.1.7",
+      "date": "2024-02-12",
+      "body": "Fix more issues from Outer Wilds Patch 14 (I'm done waiting for the hotfix!) related to the photo in item lists: the rectangle is a square again (if the description field is enabled), the image now properly fits inside it, and fixed a NRE error that was logged every loop related to the photo mask.",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.1.7/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.1.7"
+    },
+    {
+      "tag": "1.1.6",
+      "name": "1.1.6",
+      "date": "2023-09-28",
+      "body": "Fix most remaining identified issues of Outer Wilds Patch 14:\r\n- There is now a new upper right prompt list used for custom modes instead of the Map Mode one, so now they are visible again!\r\n- The selection arrow is now properly horizontally placed on item lists without the photo area (including mode selector)\r\n- Item lists without the description field (including mode selector) are expanded vertically again\r\n- For now, item lists will be forcibly set their UI sizes to regular (so they would look like the Map Mode item list with regular size), and this includes the description field (since this is shared with vanilla modes, this size is restored when closing the item list), but this could be made configurable in the future\r\n- The new mask for the photo now has graphics disabled for item lists, avoiding undesirable effects like a white image covering the question mark. Mobius might disable this graphic in the Map Mode on the next hotfix, making this change unnecessary (but shouldn't cause any issues)\r\n\r\nThere are still minor issues. For example, some item lists (for example, in Journal) don't have the photo properly placed (related to mask?), the upper right prompts in Map Mode look bad when using large UI (because of the extra prompt and the fact that in large UI these are placed vertically), and also some error logs related to the mask. However, I want to wait for the Outer Wilds hotfix before tackling these issues (unless the hotfix takes a lot of time to be released or isn't released at all).",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.1.6/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.1.6"
+    },
+    {
+      "tag": "1.1.5",
+      "name": "1.1.5",
+      "date": "2023-09-25",
+      "body": "This is a dirty hotfix after Outer Wilds Patch 14 issues to prevent other mods from exploding. There are still issues to be fixed: the selection arrow in the mode selector mode is wrongly placed, item lists without a description field aren't expanded vertically (including the mode selector mode) and upper right prompts aren't visible for custom modes (now map mode and rumor mode have their own list that is visible only when the corresponding mode is active, instead of a global one like before, and with this hotfix custom modes are using the map mode one). Probably a lot more issues!\r\n\r\nNew Horizons should work now, but the upper right prompts in Interstellar Mode (change mode, exit ship log...) are currently invisible.",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.1.5/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.1.5"
+    },
+    {
+      "tag": "1.1.4",
+      "name": "1.1.4",
+      "date": "2023-06-14",
+      "body": "Adds 3 more \"Item List\" API methods: `ItemListUpdateListUI`, `ItemListGetItemsUI` and `ItemListGetIndexUI`, more info about them in the [README](https://github.com/dgarroDC/CustomShipLogModes#creating-ui-item-lists).\r\n\r\n**Important notice:** This update is actually required for [The Hatchling's Journal](https://outerwildsmods.com/mods/thehatchlingsjournal/) (the mod doesn't work without it), but I forgot to release this patch before releasing the mod, sorry for the inconvenience!",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.1.4/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.1.4"
+    },
+    {
+      "tag": "1.1.3",
+      "name": "1.1.3",
+      "date": "2023-05-22",
+      "body": "Now when the \"Select Mode\" menu is opened, the selected item in the list will be the last active mode (the active mode when the menu was opened).",
+      "zipUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/download/1.1.3/dgarro.CustomShipLogModes.zip",
+      "releaseUrl": "https://github.com/dgarroDC/CustomShipLogModes/releases/tag/1.1.3"
+    }
+  ]
+}

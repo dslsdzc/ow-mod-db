@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-09-27T13:35:55Z",
+  "releases": [
+    {
+      "tag": "v1.3.2",
+      "name": "Version 1.3.2",
+      "date": "2026-09-06",
+      "body": "Added Russian translation by @HanSoloCh",
+      "bodyZh": "ロシア語訳を追加しました @HanSoloCh",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.3.2/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.3.2"
+    },
+    {
+      "tag": "v1.3.1",
+      "name": "Version 1.3.1",
+      "date": "2026-08-22",
+      "body": "* Achievements now have Chinese translations by @SanBaiMing in https://github.com/LeeSpork/Bruce-Saves-the-Worlds/pull/10",
+      "bodyZh": "* 成就には現在、@SanBaiMingによる中国語訳があります https://github.com/LeeSpork/Bruce-Saves-the-Worlds/pull/10",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.3.1/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.3.1"
+    },
+    {
+      "tag": "v1.3.0",
+      "name": "Version 1.3.0",
+      "date": "2026-08-18",
+      "body": "- Modelled the radio communications and raised Corey.\r\n- Fixed the gravity inside a location.\r\n- Fixed a misplaced word (Thanks Fenna!)\r\n- Almost certainly the last update before the jam deadline.",
+      "bodyZh": "- ラジオ通信をモデル化し、Coreyを救出した。\n- ある場所内の重力を修正した。\n- 適切でない単語を修正（Fennaさん、ありがとう！）\n- ジャムの締め切り直前の最後のアップデートであることがほぼ確実。",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.3.0/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.3.0"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2026-08-18",
+      "body": "- Added another Easter egg\r\n- Added achievements\r\n- Shiplog entries can now have their locations marked on your HUD\r\n- HUD and ship notifications should now be translated\r\n- Edited a line of dialogue\r\n\r\nMod also has a thumbnail now.",
+      "bodyZh": "- 追加のイースター Eggが追加されました\r\n- 成就が追加されました\r\n- 航行記録のエントリには、現在位置がHUDに表示されるようになりました\r\n- HUDおよび船の通知は現在翻訳されています\r\n- 台詞の1行が編集されました\r\n\r\nMODには現在サムネイルがあります。",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.2.0/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.3",
+      "name": "Version 1.1.3",
+      "date": "2026-08-18",
+      "body": "- Removed an unobtainable ship log fact\r\n- Black hole swallows the player more reliably\r\n- Ship now gets black hole warnings too\r\n- Minor wording changes in ship log",
+      "bodyZh": "- 手に入らない航行記録の事実を削除\r\n- ブラックホールがプレイヤーをより確実に飲み込む\r\n- 船もブラックホールの警告を受け取るようになりました\r\n- 航行記録の表現を少し変更",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.1.3/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.1.3"
+    },
+    {
+      "tag": "v1.1.2",
+      "name": "Version 1.1.2",
+      "date": "2026-08-18",
+      "body": "- The player can no longer oversleep the destruction of the planet and get trapped in a coma forever.\r\n- Fixed a mistake that caused an audio cue to be spammed.\r\n- Righted a wrong that could cause certain notifications to be activated when they are no longer relevant.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.1.2/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.1.2"
+    },
+    {
+      "tag": "v1.1.1",
+      "name": "Version 1.1.1",
+      "date": "2026-08-17",
+      "body": "`chinese_simple` translation by @SanBaiMing has been updated",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.1.1/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.1.1"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2026-08-17",
+      "body": "## Additions\r\n- Bruce now has new dialogue after you complete the main objective of the mod, better wrapping up the story.\r\n- Gave certain epilogue objects giant light beams to make them more obvious.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.1.0/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2026-08-17",
+      "body": "- Did Ship Log Rumor Mode properly\r\n- Marked the \"Lore Tracker\" mod as incompatible",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.0.2/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2026-08-16",
+      "body": "## Additions\r\n* Added `chinese_simple` translation by @SanBaiMing\r\n\r\n## Hotfixes\r\n* Bruce will no longer take you hostage if you talk to the second version of him a second time\r\n* You can no longer win by doing nothing but dying in extreme circumstances",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/download/v1.0.1/LeeSpork.Jam6.zip",
+      "releaseUrl": "https://github.com/LeeSpork/Bruce-Saves-the-Worlds/releases/tag/v1.0.1"
+    }
+  ]
+}

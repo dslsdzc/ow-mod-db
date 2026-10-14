@@ -1,0 +1,13 @@
+{
+  "repoUpdatedAt": "2025-08-02T04:24:18Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-08-02",
+      "body": "",
+      "zipUrl": "https://github.com/xen-42/talk-to-prisoner/releases/download/v0.1.0/xen.TalkToPrisoner.zip",
+      "releaseUrl": "https://github.com/xen-42/talk-to-prisoner/releases/tag/v0.1.0"
+    }
+  ]
+}

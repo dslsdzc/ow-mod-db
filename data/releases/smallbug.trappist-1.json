@@ -1,0 +1,45 @@
+{
+  "repoUpdatedAt": "2023-01-23T10:13:15Z",
+  "releases": [
+    {
+      "tag": "v1.1.1",
+      "name": "v1.1.1",
+      "date": "2022-02-23",
+      "body": "- Gave planets nicknames",
+      "zipUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/download/v1.1.1/TRAPPIST-1.zip",
+      "releaseUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/tag/v1.1.1"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "v1.1.0",
+      "date": "2022-02-23",
+      "body": "- Added Ships Log stuff!",
+      "zipUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/download/v1.1.0/TRAPPIST-1.zip",
+      "releaseUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "v1.0.2",
+      "date": "2022-02-22",
+      "body": "- Added interstellar view icon",
+      "zipUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/download/v1.0.2/TRAPPIST-1.zip",
+      "releaseUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-02-16",
+      "body": "- Moved spawn point\r\n- Made rovers easier to detect\r\n- Fixed a type",
+      "zipUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/download/v1.0.1/TRAPPIST-1.zip",
+      "releaseUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-02-16",
+      "body": "",
+      "zipUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/download/v1.0.0/TRAPPIST-1.zip",
+      "releaseUrl": "https://github.com/Leopard501/TRAPPIST-1/releases/tag/v1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "repoUpdatedAt": "2026-03-11T22:52:02Z",
+  "releases": [
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2026-03-11",
+      "body": "- Fixed a conflict with New Horizons where warping from another star system back to the Outer Wilds would cause an infinite loading screen (thank you Yub3l for reporting this).",
+      "zipUrl": "https://github.com/xen-42/ow-decloaked/releases/download/v1.0.4/xen.Decloaked.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-decloaked/releases/tag/v1.0.4",
+      "bodyZh": "- 修复了与《新视野》的冲突，从另一个星系传送回星际拓荒会导致无限加载屏幕（感谢 Yub3l 报告此问题）。"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2024-08-07",
+      "body": "- Fixed ship log HUD markers vanishing with NH installed",
+      "zipUrl": "https://github.com/xen-42/ow-decloaked/releases/download/v1.0.3/xen.Decloaked.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-decloaked/releases/tag/v1.0.3",
+      "bodyZh": "- 修复了在安装NH后飞船日志HUD标记消失的问题"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "zipUrl": "https://github.com/xen-42/ow-decloaked/releases/download/v1.0.2/xen.Decloaked.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-decloaked/releases/tag/v1.0.2",
+      "bodyZh": "- 在模组清单中添加Patreon捐赠链接"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-04-20",
+      "body": "- Fixes a bug where Slate wouldn't shut up.",
+      "zipUrl": "https://github.com/xen-42/ow-decloaked/releases/download/v1.0.1/xen.Decloaked.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-decloaked/releases/tag/v1.0.1",
+      "bodyZh": "- 修复了斯莱特不停唠叨的bug。"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-03-20",
+      "body": "",
+      "zipUrl": "https://github.com/xen-42/ow-decloaked/releases/download/v1.0.0/xen.Decloaked.zip",
+      "releaseUrl": "https://github.com/xen-42/ow-decloaked/releases/tag/v1.0.0"
+    }
+  ]
+}

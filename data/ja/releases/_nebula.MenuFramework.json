@@ -1,0 +1,68 @@
+{
+  "repoUpdatedAt": "2026-05-04T06:15:05Z",
+  "releases": [
+    {
+      "tag": "5.0.0",
+      "name": "5.0.0",
+      "date": "2024-03-20",
+      "body": "- Now using OWML's starting popup system.",
+      "bodyZh": "- OWMLの起動ポップアップシステムを使用中です。",
+      "zipUrl": "https://github.com/misternebula/MenuFramework/releases/download/5.0.0/MenuFramework.zip",
+      "releaseUrl": "https://github.com/misternebula/MenuFramework/releases/tag/5.0.0"
+    },
+    {
+      "tag": "4.0.0",
+      "name": "4.0.0",
+      "date": "2023-09-25",
+      "body": "- Fixed errors with new OW update.\r\n- Fixed spacing on title screen buttons.\r\n- Updated OWML.",
+      "bodyZh": "- 新しいOWアップデートのエラーを修正。\r\n- タイトルスクリーンのボタンの間隔を修正。\n- OWMLを更新。",
+      "zipUrl": "https://github.com/misternebula/MenuFramework/releases/download/4.0.0/MenuFramework.zip",
+      "releaseUrl": "https://github.com/misternebula/MenuFramework/releases/tag/4.0.0"
+    },
+    {
+      "tag": "3.0.0",
+      "name": "3.0.0",
+      "date": "2022-05-04",
+      "body": "Added functionality to add custom startup popups.",
+      "bodyZh": "カスタム起動ポップアップを追加する機能を追加しました。",
+      "zipUrl": "https://github.com/misternebula/MenuFramework/releases/download/3.0.0/MenuFramework.zip",
+      "releaseUrl": "https://github.com/misternebula/MenuFramework/releases/tag/3.0.0"
+    },
+    {
+      "tag": "v2.1.1",
+      "name": "2.1.1",
+      "date": "2021-12-20",
+      "body": "Added arguments for specifying the order index of elements.",
+      "bodyZh": "要素の順序インデックスを指定するための引数を追加しました。",
+      "zipUrl": "https://github.com/misternebula/MenuFramework/releases/download/v2.1.1/MenuFramework.zip",
+      "releaseUrl": "https://github.com/misternebula/MenuFramework/releases/tag/v2.1.1"
+    },
+    {
+      "tag": "v2.0.1",
+      "name": "2.0.1",
+      "date": "2021-10-20",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/misternebula/MenuFramework/releases/download/v2.0.1/MenuFramework.zip",
+      "releaseUrl": "https://github.com/misternebula/MenuFramework/releases/tag/v2.0.1"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "v1.0.1",
+      "date": "2021-08-27",
+      "body": "Fix some issues with the pause list.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/misternebula/MenuFramework/releases/download/v1.0.1/MenuFramework.zip",
+      "releaseUrl": "https://github.com/misternebula/MenuFramework/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2021-08-27",
+      "body": "Initial release for mod manager.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/misternebula/MenuFramework/releases/download/v1.0.0/MenuFramework.zip",
+      "releaseUrl": "https://github.com/misternebula/MenuFramework/releases/tag/v1.0.0"
+    }
+  ]
+}

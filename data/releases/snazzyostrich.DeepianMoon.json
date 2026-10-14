@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-02-11T15:40:03Z",
+  "releases": [
+    {
+      "tag": "v0.1.0",
+      "name": "Publish",
+      "date": "2023-02-11",
+      "body": "my singig monster",
+      "zipUrl": "https://github.com/snazzyostrich/snazzyostrich.DeepianMoon/releases/download/v0.1.0/snazzyostrich.DeepianMoon.zip",
+      "releaseUrl": "https://github.com/snazzyostrich/snazzyostrich.DeepianMoon/releases/tag/v0.1.0",
+      "bodyZh": "我的唱歌怪兽"
+    }
+  ]
+}

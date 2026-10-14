@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-01-22T23:34:45Z",
+  "releases": [
+    {
+      "tag": "v1.0.0",
+      "name": "Wacky Rotations 1.0.0",
+      "date": "2023-01-22",
+      "body": "-Fixed that bug about quaternion rotations not being unit length (I think).\r\n-Massive setting overhaul, reorganized the setting page & added general settings.",
+      "bodyZh": "- 量子回転が単位長でないバグを修正しました（おそらく）。\r\n- 設定の大規模なオーバーホール、設定ページを再編成し、一般設定を追加しました。",
+      "zipUrl": "https://github.com/coderCleric/WackyRotations/releases/download/v1.0.0/Cleric.WackyRotations.zip",
+      "releaseUrl": "https://github.com/coderCleric/WackyRotations/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Wacky Rotations 0.1.0",
+      "date": "2022-09-03",
+      "body": "First release of Wacky Rotations. Kinda buggy, not too pretty, but it's fun!",
+      "bodyZh": "Wacky Rotationsの最初のリリース。ちょっとバグが多いけど、それなりに楽しい！",
+      "zipUrl": "https://github.com/coderCleric/WackyRotations/releases/download/v0.1.0/Cleric.WackyRotations.zip",
+      "releaseUrl": "https://github.com/coderCleric/WackyRotations/releases/tag/v0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2022-06-20T08:28:37Z",
+  "releases": [
+    {
+      "tag": "0.1.1",
+      "name": "Solar system departure",
+      "date": "2022-06-14",
+      "body": "The feature to start the solar system departure when ever you want has been added",
+      "zipUrl": "https://github.com/LikeMauro/Controllable-Stranger/releases/download/0.1.1/likemauro.controllablestranger.zip",
+      "releaseUrl": "https://github.com/LikeMauro/Controllable-Stranger/releases/tag/0.1.1",
+      "bodyZh": "添加了您想何时开始太阳系出发的功能"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Dam break and tower collapse",
+      "date": "2022-06-12",
+      "body": "This release included the function to detroy the dam and collapse the cinder tower",
+      "zipUrl": "https://github.com/LikeMauro/Controllable-Stranger/releases/download/0.1.0/likemauro.controllablestranger.zip",
+      "releaseUrl": "https://github.com/LikeMauro/Controllable-Stranger/releases/tag/0.1.0",
+      "bodyZh": "本次更新包含破坏大坝和坍塌灰烬之塔的功能"
+    }
+  ]
+}

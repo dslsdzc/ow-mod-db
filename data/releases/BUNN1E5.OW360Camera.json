@@ -1,0 +1,47 @@
+{
+  "repoUpdatedAt": "2023-03-04T10:44:09Z",
+  "releases": [
+    {
+      "tag": "1.0.5",
+      "name": "1.0.5",
+      "date": "2023-01-06",
+      "body": "Fixed a bug",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.5/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.5",
+      "bodyZh": "修复了一个错误"
+    },
+    {
+      "tag": "1.0.3",
+      "name": "v1.0.3",
+      "date": "2022-04-23",
+      "body": "360 Camera now follows look rotation",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.3/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.3",
+      "bodyZh": "360相机现在跟随视角旋转"
+    },
+    {
+      "tag": "1.0.2",
+      "name": "v1.0.2",
+      "date": "2022-04-22",
+      "body": "",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.2/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.2"
+    },
+    {
+      "tag": "1.0.1",
+      "name": "v1.0.1",
+      "date": "2022-04-22",
+      "body": "",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.1/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.1"
+    },
+    {
+      "tag": "1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-04-22",
+      "body": "",
+      "zipUrl": "https://github.com/BUNN1E5/OW360Camera/releases/download/1.0.0/BUNN1E5.OW360Camera.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/OW360Camera/releases/tag/1.0.0"
+    }
+  ]
+}

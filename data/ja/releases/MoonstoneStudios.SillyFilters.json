@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2023-10-21T16:53:52Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2023-10-09",
+      "body": "Version bump due to change in manifest. A mod conflict has been added.",
+      "bodyZh": "バージョンアップ：マニフェストの変更により。MODのコンフリクトが追加されました。",
+      "zipUrl": "https://github.com/MoonstoneStudios/SillyFilters/releases/download/v1.0.1/MoonstoneStudios.SillyFilters.zip",
+      "releaseUrl": "https://github.com/MoonstoneStudios/SillyFilters/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2023-10-09",
+      "body": "Initial Release :)",
+      "bodyZh": "初期リリース :)",
+      "zipUrl": "https://github.com/MoonstoneStudios/SillyFilters/releases/download/v1.0.0/MoonstoneStudios.SillyFilters.zip",
+      "releaseUrl": "https://github.com/MoonstoneStudios/SillyFilters/releases/tag/v1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2024-08-09T13:00:26Z",
+  "releases": [
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2024-08-09",
+      "body": "- Added more decoration to the Clubhouse, including new dialogue.\r\n- Adjusted the achievements to be more consistent and added a new one.\r\n- Adjusted some white hole positions.\r\n- Other small tweaks.",
+      "zipUrl": "https://github.com/Samster68OW/hearthian-golf/releases/download/v0.2.0/hearthian-golf.zip",
+      "releaseUrl": "https://github.com/Samster68OW/hearthian-golf/releases/tag/v0.2.0",
+      "bodyZh": "- 为俱乐部屋添加了更多装饰，包括新的对话。\r\n- 调整了成就，使其更加一致并添加了一个新的成就。\r\n- 调整了一些白洞的位置。\r\n- 其他一些小修改。"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2024-08-06",
+      "body": "- Updated README\r\n- Owes many apologies",
+      "zipUrl": "https://github.com/Samster68OW/hearthian-golf/releases/download/v0.1.1/hearthian-golf.zip",
+      "releaseUrl": "https://github.com/Samster68OW/hearthian-golf/releases/tag/v0.1.1",
+      "bodyZh": "- 更新了README\n- 非常抱歉"
+    }
+  ]
+}

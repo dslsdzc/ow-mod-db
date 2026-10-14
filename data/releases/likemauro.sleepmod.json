@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2022-04-21T22:21:28Z",
+  "releases": [
+    {
+      "tag": "0.1.1",
+      "name": "SleepMod",
+      "date": "2022-04-21",
+      "body": "Renamed all files to SleepMod instead of ModTemplate",
+      "zipUrl": "https://github.com/LikeMauro/SleepMod/releases/download/0.1.1/likemauro.sleepmod.zip",
+      "releaseUrl": "https://github.com/LikeMauro/SleepMod/releases/tag/0.1.1",
+      "bodyZh": "已将所有文件重命名为 SleepMod 而不是 ModTemplate"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Sleep Mod",
+      "date": "2022-04-21",
+      "body": "Mod that alows you to meditate without having the option unlocked (like suicide mod but more family friendly) also good if you wanna enter the sim from far away from the fire or something",
+      "zipUrl": "https://github.com/LikeMauro/SleepMod/releases/download/0.1.0/Sleep.Mod.zip",
+      "releaseUrl": "https://github.com/LikeMauro/SleepMod/releases/tag/0.1.0",
+      "bodyZh": "允许你在选项未解锁的情况下进行冥想（类似于自杀模组，但更适合家庭）的模组，如果你想从远离篝火或类似的地方进入模拟器，也很好用。"
+    }
+  ]
+}

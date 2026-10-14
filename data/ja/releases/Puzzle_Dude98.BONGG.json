@@ -1,0 +1,50 @@
+{
+  "repoUpdatedAt": "2025-06-10T05:27:13Z",
+  "releases": [
+    {
+      "tag": "v0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2025-06-10",
+      "body": "audio now actually plays at the thruster instead of inside your own head",
+      "bodyZh": "オーディオは今、推進器で実際に再生され、あなたの頭の中ではなく再生されます",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.4.0/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.4.0"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2025-06-10",
+      "body": "more critical bugfix, this one actually seems to work",
+      "bodyZh": "より重要なバグ修正、これは実際に動くようです",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.3.0/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "Version 0.2.1",
+      "date": "2025-06-10",
+      "body": "critical bugfix",
+      "bodyZh": "重要なバグ修正",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.2.1/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2025-06-08",
+      "body": "Removed debug option from config\r\nRemoved \"enabled\" option from config\r\ndelete an entire useless class I forgot about",
+      "bodyZh": "configからデバッグオプションを削除しました\nconfigから\"enabled\"オプションを削除しました\n忘れていた無駄なクラスを完全に削除しました",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.2.0/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2025-06-06",
+      "body": "First release of the BONGG mod!\r\nThis one is really beta, it still has development tools and a lot of messy extra code.\r\nIt does still have all the core functionality though, so it should be fine to use.\r\n\r\nConfig includes option to turn sound off as well as change its volume. I'll probably remove one or both of those at some point.",
+      "bodyZh": "BONGG modの最初のリリース！  \nこれは本当にベータ版で、まだ開発ツールと多くの乱雑な追加コードがあります。  \nそれでも、すべての核心的な機能は備えているので、問題なく使用できるはずです。  \n\n設定には、サウンドをオフにするオプションや音量を変更するオプションが含まれています。おそらく、これらのうち一つか両方をいつか削除するかもしれません。",
+      "zipUrl": "https://github.com/PuzzleDude98/BONGG/releases/download/v0.1.0/Puzzle_Dude98.BONGG.zip",
+      "releaseUrl": "https://github.com/PuzzleDude98/BONGG/releases/tag/v0.1.0"
+    }
+  ]
+}

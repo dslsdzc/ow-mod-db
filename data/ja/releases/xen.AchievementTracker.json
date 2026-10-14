@@ -1,0 +1,95 @@
+{
+  "repoUpdatedAt": "2026-08-20T15:32:43Z",
+  "releases": [
+    {
+      "tag": "v1.0.1",
+      "name": "Version 1.0.1",
+      "date": "2026-01-31",
+      "body": "- Added Chinese translation (thanks SheepCreater2)\r\n- Fixed it being impossible to 100% achievements on a profile (Beginner's Luck was always reset)\r\n- Adds semi-hidden achievements. These are achievements that devs can set up a \"before earned\" description to give a hint to players explicitly stating what needs to be done. (I've updated the tutorial in readme and example project if you want an easier explanation)\r\n- Makes it so that the \"X hidden achievement\" box for fully secret achievements is translatable, rather than always English\r\n- Fixes the queue on the in-game achievement popup\r\n\r\nThank you Stache for creating most of this update!",
+      "bodyZh": "- 中国語訳を追加しました（SheepCreater2 さん、ありがとう）\n- プロファイルで100%の達成をできない問題を修正（初心者の幸運は常にリセットされていました）\n- 半隠しの達成を追加します。これらは開発者が「獲得前」の説明を設定して、プレイヤーに明確に何をしなければならないかを示すヒントを与えることができる達成です。（readmeと例プロジェクトのチュートリアルを更新しましたので、より簡単な説明が必要な場合は参照してください）\n- 完全に秘密の達成のための「X隠し達成」ボックスを、常に英語ではなく翻訳可能にしました\n- インゲーム達成ポップアップのキューを修正\n\nこのアップデートの大部分を作成してくれたStacheさん、ありがとう！",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v1.0.1/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v1.0.1"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "Version 1.0.0",
+      "date": "2024-10-15",
+      "body": "- Add sfx on achievement unlock (thanks pikpik)\r\n- Add option for enabling debug logs (off by default)\r\n- Make saving more reliable\r\n- Got rid of popup queue because it looked bad\r\n- Popups don't stick around when the game is paused\r\n- Fixed some button highlights, only show page buttons when relevant\r\n- Cleaned up stuff",
+      "bodyZh": "- 成就解放時にSFXを追加（ありがとう pikpik）\n- デバッグログを有効にするオプションを追加（初期設定では無効）\n- セーブをより信頼性の高いものにする\n- ポップアップキューを削除した（見た目が悪かったため）\n- ゲームが一時停止している間、ポップアップが残りなくなった\n- ボタンハイライトのいくつかを修正、関連するページボタンのみ表示\n- 処理を整理した",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v1.0.0/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v1.0.0"
+    },
+    {
+      "tag": "v0.4.1",
+      "name": "Version 0.4.1",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "bodyZh": "- MODマニフェストにPatreon寄付リンクを追加",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.4.1/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.4.1"
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "v0.4.0",
+      "date": "2022-08-23",
+      "body": "- Added progress tracking to pop-ups (displays each time you complete one out of however many objectives)\r\n- Fixed greyscale image quality\r\n- Some code improvements\r\n\r\nThanks nebula",
+      "bodyZh": "- ポップアップに進捗トラッキングを追加（各目標を完了するたびに表示）\r\n- グレースケール画像の品質を修正\n- 一部のコード改善\n\nthanks nebula",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.4.0/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.4.0"
+    },
+    {
+      "tag": "v0.3.1",
+      "name": "v0.3.1",
+      "date": "2022-06-19",
+      "body": "- Stop icons getting blurry at low texture quality (don't generate mipmaps)\r\n- Updated OWML and OWGL versions",
+      "bodyZh": "- 低いテクスチャー品質時にアイコンがぼやけないように（ミップマップを生成しない）\r\n- OWMLとOWGLのバージョンを更新",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.3.1/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.3.1"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "v0.3.0",
+      "date": "2022-06-19",
+      "body": "- Add `HasAchievement` method to the API.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.3.0/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.3",
+      "name": "v0.2.3",
+      "date": "2022-04-28",
+      "body": "- Fixes menu achievement button disappearing when changing language.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.2.3/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.2.3"
+    },
+    {
+      "tag": "v0.2.2",
+      "name": "v0.2.2",
+      "date": "2022-04-27",
+      "body": "- Show pop-up only if they didn't have the achievement (togglable in options) thanks dgarroDC\r\n- Fix achievements not refreshing when switching profiles",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.2.2/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.2.2"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "v0.2.1",
+      "date": "2022-04-27",
+      "body": "- Support png for icons",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.2.1/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.2.1"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "v0.2.0",
+      "date": "2022-04-27",
+      "body": "- Add Russian, French, Spanish, and German translations of vanilla achievements and UI.",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/download/v0.2.0/xen.AchievementTracker.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-achievement-tracker/releases/tag/v0.2.0"
+    }
+  ]
+}

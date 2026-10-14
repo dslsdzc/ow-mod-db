@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2026-04-16T20:24:18Z",
+  "releases": [
+    {
+      "tag": "v1.0.6",
+      "name": "Version 1.0.6",
+      "date": "2026-04-16",
+      "body": "# Updates and Patches\r\n\r\n* Displayed planet atmospheres now render correctly\r\n* Fixed an issue where the Ash Twin model was not correctly oriented\r\n* Fixed an issue where some fragments of Brittle Hollow would not reflect the actual real world position of their counterparts\r\n* Fixed an issue where some lists contained null values when starting a new loop",
+      "bodyZh": "# 更新とパッチ\r\n\r\n* 表示される惑星の大気が正しくレンダリングされるようになりました\r\n* アッシュ・ツインのモデルが正しく向きが向いていない問題を修正しました\r\n* ブリットル・ホールの一部の断片が、実際のリアルワールドの位置を正しく反映しない問題を修正しました\r\n* 新しいループを開始する際に、一部のリストにnull値が含まれている問題を修正しました",
+      "zipUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/download/v1.0.6/GameDev46.ShipPlanetProjector.zip",
+      "releaseUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/tag/v1.0.6"
+    },
+    {
+      "tag": "v1.0.5",
+      "name": "Version 1.0.5",
+      "date": "2026-03-03",
+      "body": "# Updates and Patches\r\n\r\n- Added support for New Horizons planets and solar systems! 🪐\r\n\r\n- Fixed a bug where the mini ship model would become invisible\r\n\r\n- Fixed a bug where the mini ship model wouldn't work in New Horizon solar systems\r\n\r\n- Reworked and reorganised most of the code to be more efficient and cleaner",
+      "bodyZh": "# 更新とパッチ\r\n\r\n- New Horizonsの惑星と惑星系へのサポートを追加しました！ 🪐\r\n\r\n- ミニ船モデルが見えなくなるバグを修正しました\r\n\r\n- New Horizonsの惑星系でミニ船モデルが作動しないバグを修正しました\r\n\r\n- 大部分のコードを再設計し、より効率的でクリーンにしました",
+      "zipUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/download/v1.0.5/GameDev46.ShipPlanetProjector.zip",
+      "releaseUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/tag/v1.0.5"
+    },
+    {
+      "tag": "v1.0.4",
+      "name": "Version 1.0.4",
+      "date": "2026-02-26",
+      "body": "## Updates and Patches\r\n\r\n- Giant's Deep and The Interloper's trail effects are now both visible on the HoloMap\r\n\r\n- Planet atmospheres are now enabled by default\r\n\r\n- Added 2 new settings for toggling on/off the planet atmospheres and Interloper's trail effects",
+      "bodyZh": "## 更新とパッチ\r\n\r\n- 巨人の大海とThe Interloperのトレイルエフェクトは、現在HoloMap上で両方とも表示されるようになりました\r\n\r\n- 行星の大気は既定で有効になりました\r\n\r\n- 行星の大気とInterloperのトレイルエフェクトをオン/オフにするための新しい設定が2つ追加されました",
+      "zipUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/download/v1.0.4/GameDev46.ShipPlanetProjector.zip",
+      "releaseUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/tag/v1.0.4"
+    },
+    {
+      "tag": "v1.0.3",
+      "name": "Version 1.0.3",
+      "date": "2026-02-22",
+      "body": "Fixed language bug which prevented non-English users to be unable to view different planets",
+      "bodyZh": "言語バグを修正しました。これにより、非英語ユーザーが異なる惑星を表示できなくなった問題が解決しました。",
+      "zipUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/download/v1.0.3/GameDev46.ShipPlanetProjector.zip",
+      "releaseUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/tag/v1.0.3"
+    },
+    {
+      "tag": "v1.0.2",
+      "name": "Version 1.0.2",
+      "date": "2026-02-22",
+      "body": "Release with actual built mod",
+      "bodyZh": "実際に構築したMODでリリース",
+      "zipUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/download/v1.0.2/GameDev46.ShipPlanetProjector.zip",
+      "releaseUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/tag/v1.0.2"
+    },
+    {
+      "tag": "v1.0.1",
+      "name": "Release V1.0.1",
+      "date": "2026-02-19",
+      "body": "The first release of the ship planet projector mod for Outer Wilds",
+      "bodyZh": "",
+      "zipUrl": "",
+      "releaseUrl": "https://github.com/GameDev46/ShipPlanetProjector/releases/tag/v1.0.1"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "repoUpdatedAt": "2026-04-28T07:15:37Z",
+  "releases": [
+    {
+      "tag": "v1.2.2",
+      "name": "Version 1.2.2",
+      "date": "2026-03-12",
+      "body": "- Added Chinese translation by SanBaiMing",
+      "bodyZh": "- SanBaiMingによる中国語訳を追加しました",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.2.2/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.2.2"
+    },
+    {
+      "tag": "v1.2.1",
+      "name": "Version 1.2.1",
+      "date": "2026-01-21",
+      "body": "- Fixed death not working when holding the threader",
+      "bodyZh": "- 持ち込んでいる場合の死亡しない問題を修正しました",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.2.1/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "Version 1.2.0",
+      "date": "2026-01-20",
+      "body": "- Threader improvements!\r\n  - Reeling is a lot stronger and snappier\r\n  - Dragging objects is more responsive and stable\r\n  - The beam visually flexes with tension\r\n  - Fixed some issues with using your personal tools while holding it\r\n- Added french translation by Omega Fallon\r\n- Adjusted the music volume\r\n- Added snow and fog particles\r\n- Added a lantern next to the easter egg ;3",
+      "bodyZh": "- スレッダー改善！\n  - 捕まえることはより強くて反応が良くなった\n  - 物体を引っ張ることはより反応が速くて安定した\n  - レーザーが張力で視覚的に曲がる\n  - 持っている間に個人のツールを使用する際の問題を修正\n- Omega Fallonによるフランス語翻訳を追加\n- ミュージックの音量を調整\n- 雪と霧の粒子を追加\n- イースター eggの隣にランタンを追加 ;3",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.2.0/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Version 1.1.0",
+      "date": "2024-04-05",
+      "body": "- Improved VR compatibility\r\n- Somewhat fixed dragging objects\r\n- Reverted April Fools ending to an option",
+      "bodyZh": "- VR互換性の改善\r\n- 物体のドラッグが少し修正された\r\n- 4月1日のエンディングをオプションに戻す",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.1.0/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.1.A",
+      "name": "Version 1.1.A",
+      "date": "2024-04-01",
+      "body": "Tis that time of year :3",
+      "bodyZh": "その時期だよ：3",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.1.A/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.1.A"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2024-03-26",
+      "body": "Find solace in a forgotten cavern, with a device left behind.\r\n\r\nAn entry for the [third mod jam](https://outerwildsmods.com/mods/modjam3/), created by Trifid and composed by chatti. (and epic playtested by Wonky Panda the epic playtester)",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/download/v1.0.0/Trifid.TrifidJam3.zip",
+      "releaseUrl": "https://github.com/TerrificTrifid/ow-nh-trifidjam3/releases/tag/v1.0.0"
+    }
+  ]
+}

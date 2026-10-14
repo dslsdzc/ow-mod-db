@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-07-15T14:33:01Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2026-07-15",
+      "body": "Third release, featuring even more small fixes and forgotten pieces of text.",
+      "zipUrl": "https://github.com/435THz/MrsNebula.OWItalianTranslationFix/releases/download/v0.1.2/MistressNebula.OWItalianLocalFix.zip",
+      "releaseUrl": "https://github.com/435THz/MrsNebula.OWItalianTranslationFix/releases/tag/v0.1.2",
+      "bodyZh": "第三次发布，包含更多小修复和被遗忘的文本片段。"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2026-06-19",
+      "body": "Second release, featuring many small fixes and forgotten pieces of text.",
+      "zipUrl": "https://github.com/435THz/MrsNebula.OWItalianTranslationFix/releases/download/v0.1.1/MistressNebula.OWItalianLocalFix.zip",
+      "releaseUrl": "https://github.com/435THz/MrsNebula.OWItalianTranslationFix/releases/tag/v0.1.1",
+      "bodyZh": "第二次发布，包含许多小修复和被遗忘的文本片段。"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2026-05-03",
+      "body": "First release! The translation is still subject to change as one of the reviewers runs through the localization file. Version will become 1.0 when they're done.",
+      "zipUrl": "https://github.com/435THz/MrsNebula.OWItalianTranslationFix/releases/download/v0.1.0/MistressNebula.OWItalianLocalFix.zip",
+      "releaseUrl": "https://github.com/435THz/MrsNebula.OWItalianTranslationFix/releases/tag/v0.1.0",
+      "bodyZh": "首次发布！随着其中一个审阅者检查本地化文件，翻译仍可能发生变化。当他们完成后，版本将成为1.0。"
+    }
+  ]
+}

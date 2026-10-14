@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2025-02-20T16:43:20Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "Version 0.1.2",
+      "date": "2024-01-29",
+      "body": "Translation and bugfix patch provided by @TRSasasusu \r\n- Added Japanese translation\r\n- Fixed score not updating on game over (without standing up and sitting down again)",
+      "bodyZh": "翻訳とバグ修正パッチを@TRSasasusuが提供しました\n- 日本語の翻訳を追加しました\n- ゲームオーバー時にスコアが更新されない問題を修正しました（立ち上がって座るのを待たずに）",
+      "zipUrl": "https://github.com/codelazarus14/InhabitantChess/releases/download/v0.1.2/codelazarus14.InhabitantChess.zip",
+      "releaseUrl": "https://github.com/codelazarus14/InhabitantChess/releases/tag/v0.1.2"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "Version 0.1.1",
+      "date": "2024-01-14",
+      "body": "Note: if the game is generating errors related to missing config settings, you might need to delete `config.json` in the mod folder to generate a fresh one. \r\n\r\n- Added sound effects on game win/loss\r\n- Added score prompt to HUD\r\n- Removed shortcut unlock requirement, can be toggled like any other mod option\r\n- Fixed some sounds interrupting each other\r\n- Fixed vision torch/torch socket changing interactable at the wrong times\r\n- Fixed bug where the player's turn could be skipped after previously losing an adjacent piece\r\n- Updated README",
+      "bodyZh": "注意：ゲームが欠落した設定に関するエラーを生成している場合、モジュールフォルダ内の`config.json`を削除して新たなものを生成する必要があるかもしれません。\r\n\r\n- ゲーム勝利/敗北時にサウンドエフェクトを追加\r\n- HUDにスコアプロンプトを追加\r\n- ショートカットのロック解除要件を削除、他のMODオプションと同様に切り替え可能に\r\n- 重複して再生されるサウンドのいくつかを修正\r\n- 視覚用ローチ/ローチソケットが誤ったタイミングで操作可能なものを変更する問題を修正\r\n- 相隣のピースを失った後にプレイヤーのターンがスキップされるバグを修正\r\n- READMEを更新",
+      "zipUrl": "https://github.com/codelazarus14/InhabitantChess/releases/download/v0.1.1/codelazarus14.InhabitantChess.zip",
+      "releaseUrl": "https://github.com/codelazarus14/InhabitantChess/releases/tag/v0.1.1"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2023-06-07",
+      "body": "First release, still missing a few features and error-prone but it's stable enough :/",
+      "bodyZh": "初回リリース、まだいくつかの機能が足りずバグが多いが、十分安定している:/",
+      "zipUrl": "https://github.com/codelazarus14/InhabitantChess/releases/download/v0.1.0/codelazarus14.InhabitantChess.zip",
+      "releaseUrl": "https://github.com/codelazarus14/InhabitantChess/releases/tag/v0.1.0"
+    }
+  ]
+}

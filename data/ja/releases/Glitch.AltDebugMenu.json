@@ -1,0 +1,77 @@
+{
+  "repoUpdatedAt": "2023-07-15T17:00:40Z",
+  "releases": [
+    {
+      "tag": "0.5.3",
+      "name": "0.5.3",
+      "date": "2021-10-25",
+      "body": "## [0.5.3]\r\n\r\n### Other\r\n- renamed mod to Cheat and Debug Menu from Alt Debug Menu\r\n\r\n## [0.5.2]\r\n\r\n### Other\r\n- version number omitted",
+      "bodyZh": "## [0.5.3]\r\n\r\n### 他\r\n- MOD名をAlt Debug MenuからCheat and Debug Menuに変更しました\r\n\r\n## [0.5.2]\r\n\r\n### 他\r\n- バージョン番号を省略しました",
+      "zipUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/download/0.5.3/Glitch.CheatAndDebugMenu.zip",
+      "releaseUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/tag/0.5.3"
+    },
+    {
+      "tag": "0.5.1",
+      "name": "0.5.1",
+      "date": "2021-10-22",
+      "body": "## [0.5.1]\r\n\r\n### Fixed\r\n- removed ability to lower boost multiplier to or below zero (to avoid crashing the game",
+      "bodyZh": "## [0.5.1]\r\n\r\n### 修正\r\n- ボースト倍率を0以下に下げる能力を削除（ゲームクラッシュを回避するため）",
+      "zipUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/download/0.5.1/Glitch.AltDebugMenu.zip",
+      "releaseUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/tag/0.5.1"
+    },
+    {
+      "tag": "0.5.0",
+      "name": "0.5.0",
+      "date": "2021-10-22",
+      "body": "[0.5.0] brighten up update\r\n\r\nNew features:\r\n- added option to change ship and jetpack's thruster power\r\n- added option to power up player's flashlight\r\n- added option to force flashlight on\r\n\r\nOther:\r\n- some refactoring but code quality is still shit",
+      "bodyZh": "[0.5.0] 明るくするアップデート\r\n\r\n新機能:\r\n- 船とジェットパックのスラスター出力を変更するオプションを追加\r\n- プレイヤーのフラッシュライトを強化するオプションを追加\r\n- フラッシュライトを強制的にオンにするオプションを追加\r\n\r\nその他:\r\n- 一部の再構築を行いましたが、コード品質はまだ悪いです",
+      "zipUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/download/0.5.0/Glitch.AltDebugMenu.zip",
+      "releaseUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/tag/0.5.0"
+    },
+    {
+      "tag": "0.4.0",
+      "name": "0.4.0",
+      "date": "2021-10-18",
+      "body": "**[0.4.0] minor update**\r\n\r\nNew features:\r\n- added option to turn on/off Stranger lights\r\n\r\nFixes:\r\n- added warp modifier A/B (so you need to hold one of those to warp, otherwise they overlap with tool keybinds)\r\n\r\nOther:\r\n- rewritten readme.txt so it's more understandable\r\n- added changelog.txt (hopefully I'll remember to keep this up to date)",
+      "bodyZh": "**[0.4.0] 小更新**\r\n\r\n新機能:\r\n- ストレンジャーライトをオン/オフするオプションを追加\r\n\r\n修正:\r\n- ワープ修飾子A/Bを追加（これらのうち一方を押し続けることでワープし、それ以外はツールキーボインドと重複する）\n\nその他:\n- readme.txtを書き直し、より理解しやすくなった\n- changelog.txtを追加（これからは更新を忘れないようにする予定）",
+      "zipUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/download/0.4.0/Glitch.AltDebugMenu.zip",
+      "releaseUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/tag/0.4.0"
+    },
+    {
+      "tag": "0.3.0",
+      "name": "0.3.0",
+      "date": "2021-10-14",
+      "body": "Added options from original Debug Menu:\r\n- learn launch codes\r\n- refill resources\r\n- fast forwarding\r\n\r\nAdded new functionality:\r\n- toggle clipping (both ship and player, depends if you're at ship console or not)",
+      "bodyZh": "オリジナルのデバッグメニューから追加のオプション:\n- 起動コードの学習\n- リソースの補充\n- ファストフォワード\n\n新しい機能の追加:\n- クリッピングの切り替え（船とプレイヤー両方、船のコンソールにいるかどうかによって異なる）",
+      "zipUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/download/0.3.0/Glitch.AltDebugMenu.zip",
+      "releaseUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/tag/0.3.0"
+    },
+    {
+      "tag": "0.2.0",
+      "name": "getting closer to final form",
+      "date": "2021-10-13",
+      "body": "",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/download/0.2.0/Glitch.AltDebugMenu.zip",
+      "releaseUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/tag/0.2.0"
+    },
+    {
+      "tag": "0.1.2",
+      "name": "0.1.2",
+      "date": "2021-10-12",
+      "body": "fixed naming inconsistencies",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/download/0.1.2/Glitch.AltDebugMenu.zip",
+      "releaseUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/tag/0.1.2"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "0.1.1",
+      "date": "2021-10-12",
+      "body": "Initial release",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/download/0.1.1/Glitch.AltDebugMenu.zip",
+      "releaseUrl": "https://github.com/glitchewski/OWML.Glitch.CheatAndDebugMenu/releases/tag/0.1.1"
+    }
+  ]
+}

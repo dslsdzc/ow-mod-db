@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2026-04-25T07:04:45Z",
+  "releases": [
+    {
+      "tag": "0.1.2",
+      "name": "Proud Hearthians V 0.1.2",
+      "date": "2023-01-13",
+      "body": "Added Aro and Ace flags",
+      "bodyZh": "アロとエースのフラグを追加しました",
+      "zipUrl": "https://github.com/Fusion-Flux/Proud-Hearthians/releases/download/0.1.2/FusionFlux.ProudHearthians.zip",
+      "releaseUrl": "https://github.com/Fusion-Flux/Proud-Hearthians/releases/tag/0.1.2"
+    },
+    {
+      "tag": "0.1.1",
+      "name": "Proud Hearthians V 0.1.1",
+      "date": "2023-01-13",
+      "body": "Fixed some textures",
+      "bodyZh": "テクスチャーをいくつか修正しました",
+      "zipUrl": "https://github.com/Fusion-Flux/Proud-Hearthians/releases/download/0.1.1/FusionFlux.ProudHearthians.zip",
+      "releaseUrl": "https://github.com/Fusion-Flux/Proud-Hearthians/releases/tag/0.1.1"
+    },
+    {
+      "tag": "0.1.0",
+      "name": "Proud Hearthians V 0.1.0",
+      "date": "2023-01-13",
+      "body": "Initial (Queer) Release!",
+      "bodyZh": "初期版（クエア）リリース！",
+      "zipUrl": "https://github.com/Fusion-Flux/Proud-Hearthians/releases/download/0.1.0/FusionFlux.ProudHearthians.zip",
+      "releaseUrl": "https://github.com/Fusion-Flux/Proud-Hearthians/releases/tag/0.1.0"
+    }
+  ]
+}

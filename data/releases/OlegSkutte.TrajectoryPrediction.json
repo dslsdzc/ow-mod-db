@@ -1,0 +1,49 @@
+{
+  "repoUpdatedAt": "2026-07-12T13:33:56Z",
+  "releases": [
+    {
+      "tag": "v0.6.5",
+      "name": "Version 0.6.5",
+      "date": "2023-02-08",
+      "body": "- Fixed issues caused by AstroObjects getting disabled (e.g. The Interloper getting absorbed by the sun)",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/v0.6.5/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/v0.6.5",
+      "bodyZh": "- 修复了由 AstroObjects 被禁用引起的问题（例如 闯入者 被太阳吞噬）"
+    },
+    {
+      "tag": "v0.6.4",
+      "name": "Version 0.6.4",
+      "date": "2022-11-21",
+      "body": "- Improved performance and accuracy when planet trajectories are enabled\r\n- Fixed error during certain ending",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/v0.6.4/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/v0.6.4",
+      "bodyZh": "- 启用行星轨迹时提升了性能和准确性\r\n- 修复了特定结局期间出现的错误"
+    },
+    {
+      "tag": "v0.6.3",
+      "name": "Version 0.6.3",
+      "date": "2022-11-20",
+      "body": "- Removed silly GC hack because OWML now has incremental GC setting",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/v0.6.3/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/v0.6.3",
+      "bodyZh": "- 移除了愚蠢的GC黑客，因为OWML现在有增量GC设置"
+    },
+    {
+      "tag": "v0.6.2",
+      "name": "Version 0.6.2",
+      "date": "2022-11-18",
+      "body": "- Fixed issues when other mods remove orbit lines (makes it compatible with N Body Chaos mod)\r\n- Added an option to display future trajectories of planets",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/v0.6.2/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/v0.6.2",
+      "bodyZh": "- 修复了其他模组移除轨道线时的问题（使其兼容N Body Chaos模组）\n- 添加了一个显示行星未来轨迹的选项"
+    },
+    {
+      "tag": "0.6.0",
+      "name": "0.6.0",
+      "date": "2022-11-16",
+      "body": "",
+      "zipUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/download/0.6.0/OlegSkutte.TrajectoryPrediction.zip",
+      "releaseUrl": "https://github.com/SkutteOleg/TrajectoryPrediction/releases/tag/0.6.0"
+    }
+  ]
+}

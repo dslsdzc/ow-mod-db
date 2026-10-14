@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2023-10-08T23:40:18Z",
+  "releases": [
+    {
+      "tag": "1.0.0",
+      "name": "1.0.0",
+      "date": "2022-09-17",
+      "body": "### Clear Glass Mod\r\n\r\n- Replaces all Hearthian gold glass with plain clear glass\r\n- Replaces all Nomaiian opaque glass with standard clear bumpy Nomai glass",
+      "bodyZh": "### クリアガラスMOD\r\n\r\n- ハーシアン金ガラスをすべて平らなクリアガラスに置き換えます\r\n- ノマイ金ガラスをすべて標準のクリアな凹凸のあるノマイガラスに置き換えます",
+      "zipUrl": "https://github.com/FreezeDriedMangos/ow-clear-glass/releases/download/1.0.0/clay.ClearGlass.zip",
+      "releaseUrl": "https://github.com/FreezeDriedMangos/ow-clear-glass/releases/tag/1.0.0"
+    }
+  ]
+}

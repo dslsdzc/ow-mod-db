@@ -1,0 +1,37 @@
+{
+  "repoUpdatedAt": "2025-05-10T22:19:19Z",
+  "releases": [
+    {
+      "tag": "v1.2.1",
+      "name": "v1.2.1",
+      "date": "2024-01-02",
+      "body": "- Add Patreon donation link to mod manifest",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-signals-plus/releases/download/v1.2.1/outer-wilds-signals-plus.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-signals-plus/releases/tag/v1.2.1"
+    },
+    {
+      "tag": "v1.2.0",
+      "name": "v1.2.0",
+      "date": "2022-07-02",
+      "body": "Added an achievement (needs Achievements+)",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-signals-plus/releases/download/v1.2.0/outer-wilds-signals-plus.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-signals-plus/releases/tag/v1.2.0"
+    },
+    {
+      "tag": "v1.1.0",
+      "name": "Ship logs",
+      "date": "2022-02-22",
+      "body": "",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-signals-plus/releases/download/v1.1.0/xen.SignalsPlus.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-signals-plus/releases/tag/v1.1.0"
+    },
+    {
+      "tag": "v1.0.0",
+      "name": "v1.0.0",
+      "date": "2022-01-02",
+      "body": "Initial release!",
+      "zipUrl": "https://github.com/xen-42/outer-wilds-signals-plus/releases/download/v1.0.0/xen.SignalsPlus.zip",
+      "releaseUrl": "https://github.com/xen-42/outer-wilds-signals-plus/releases/tag/v1.0.0"
+    }
+  ]
+}

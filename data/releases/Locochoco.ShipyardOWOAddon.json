@@ -1,0 +1,32 @@
+{
+  "repoUpdatedAt": "2022-11-23T01:43:40Z",
+  "releases": [
+    {
+      "tag": "v0.1.2",
+      "name": "v0.1.2",
+      "date": "2022-11-23",
+      "body": "* Uses newer systems from shipyard",
+      "zipUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/download/v0.1.2/Locochoco.ShipyardOWOAddon.zip",
+      "releaseUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/tag/v0.1.2",
+      "bodyZh": "* 使用造船厂的新系统"
+    },
+    {
+      "tag": "v0.1.1",
+      "name": "v0.1.1",
+      "date": "2022-11-15",
+      "body": "* Using new Shipyard prefab system (need to use version v.1.8 or higher)",
+      "zipUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/download/v0.1.1/Locochoco.ShipyardOWOAddon.zip",
+      "releaseUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/tag/v0.1.1",
+      "bodyZh": "* 使用新的造船厂预制件系统（需要使用 v.1.8 或更高版本）"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "v0.1.0",
+      "date": "2022-11-13",
+      "body": "* Adds compatibility between Shipyard and Outer Wilds Online",
+      "zipUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/download/v0.1.0/Locochoco.ShipyardOWOAddon.zip",
+      "releaseUrl": "https://github.com/loco-choco/ShipyardOWOCompat/releases/tag/v0.1.0",
+      "bodyZh": "* 增加船坞与星际拓荒在线版的兼容性"
+    }
+  ]
+}

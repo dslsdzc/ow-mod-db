@@ -1,0 +1,68 @@
+{
+  "repoUpdatedAt": "2024-05-29T17:50:28Z",
+  "releases": [
+    {
+      "tag": "v0.7.0",
+      "name": "Version 0.7.0",
+      "date": "2024-05-29",
+      "body": "Testu konponketak",
+      "bodyZh": "テストコンポーネットック",
+      "zipUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/download/v0.7.0/Eztainu.OW_Euskaraz_Mod.zip",
+      "releaseUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/tag/v0.7.0"
+    },
+    {
+      "tag": "v0.6.0",
+      "name": "Version 0.6.0",
+      "date": "2024-05-25",
+      "body": "itzulpen konponketak",
+      "bodyZh": "itzulpen konponketak",
+      "zipUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/download/v0.6.0/Eztainu.OW_Euskaraz_Mod.zip",
+      "releaseUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/tag/v0.6.0"
+    },
+    {
+      "tag": "v0.5.0",
+      "name": "Version 0.5.0",
+      "date": "2024-05-21",
+      "body": "Itzulpen gehiago zuzenduak",
+      "bodyZh": "より多くの翻訳を修正する",
+      "zipUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/download/v0.5.0/Eztainu.OW_Euskaraz_Mod.zip",
+      "releaseUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/tag/v0.5.0"
+    },
+    {
+      "tag": "v0.4.0",
+      "name": "Version 0.4.0",
+      "date": "2024-05-19",
+      "body": "Itzulpena hobetuak",
+      "bodyZh": "翻訳が向上しました",
+      "zipUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/download/v0.4.0/Eztainu.OW_Euskaraz_Mod.zip",
+      "releaseUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/tag/v0.4.0"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "Version 0.3.0",
+      "date": "2024-05-18",
+      "body": "Some translation errors corrected.\r\n\r\nItzulpen akats batzuk zuzenduta.",
+      "bodyZh": "一部の翻訳エラーが修正されました。",
+      "zipUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/download/v0.3.0/Eztainu.OW_Euskaraz_Mod.zip",
+      "releaseUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.0",
+      "name": "Version 0.2.0",
+      "date": "2024-05-17",
+      "body": "Dependency corrected",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/download/v0.2.0/Eztainu.OW_Euskaraz_Mod.zip",
+      "releaseUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/tag/v0.2.0"
+    },
+    {
+      "tag": "v0.1.0",
+      "name": "Version 0.1.0",
+      "date": "2024-05-16",
+      "body": "Lehen bertsioa!!",
+      "bodyZh": "",
+      "zipUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/download/v0.1.0/Eztainu.OW_Euskaraz_Mod.zip",
+      "releaseUrl": "https://github.com/Eztainu/OW_Euskaraz_Mod/releases/tag/v0.1.0"
+    }
+  ]
+}

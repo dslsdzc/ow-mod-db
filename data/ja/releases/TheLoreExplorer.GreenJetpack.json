@@ -1,0 +1,14 @@
+{
+  "repoUpdatedAt": "2022-10-21T05:07:39Z",
+  "releases": [
+    {
+      "tag": "0.2.0",
+      "name": "Green Jetpack",
+      "date": "2022-10-21",
+      "body": "Updates the flame color back to orange when the jetpack \"runs of of the dlc fuel\"!",
+      "bodyZh": "MODローダーで「ジェットパックのDLC燃料がなくなった」時に、火の色をオレンジに戻します！",
+      "zipUrl": "https://github.com/TheLoreExplorer/GreenJetpack3/releases/download/0.2.0/TheLoreExplorer.GreenJetpack.zip",
+      "releaseUrl": "https://github.com/TheLoreExplorer/GreenJetpack3/releases/tag/0.2.0"
+    }
+  ]
+}

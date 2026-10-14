@@ -1,0 +1,23 @@
+{
+  "repoUpdatedAt": "2025-03-19T00:55:53Z",
+  "releases": [
+    {
+      "tag": "v0.0.2",
+      "name": "QSBGameModes v0.0.2",
+      "date": "2025-03-19",
+      "body": "- Fixes for the pause menu based ready up UI. https://github.com/BUNN1E5/QSBGameModes/pull/13\r\n> Thanks [jerejoensuu](https://github.com/jerejoensuu) for the fixes!",
+      "bodyZh": "- 暗示メニューの準備UIの修正。https://github.com/BUNN1E5/QSBGameModes/pull/13\r\n> [jerejoensuu](https://github.com/jerejoensuu)さん、修正ありがとうございます！",
+      "zipUrl": "https://github.com/BUNN1E5/QSBGameModes/releases/download/v0.0.2/BUNN1E5.QSBGameModes.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/QSBGameModes/releases/tag/v0.0.2"
+    },
+    {
+      "tag": "v0.0.1",
+      "name": "QSBGameModes v0.0.1",
+      "date": "2023-03-30",
+      "body": "First Release of QSBGameModes! 🥳 \r\n\r\nThis mod is an addon for QSB, which adds the ability for the host to start and end different kinds of game modes, with them having specific settings in the mod settings menu. Currently the most complete game mode is the *Infection* game mode, which plays like a hide and seek.",
+      "bodyZh": "QSBGameModesの初リリース！ 🥳\r\n\r\nこのMODはQSBの追加パックで、ホストが様々な種類のゲームモードを開始・終了できる機能を追加します。これらのゲームモードは、MODの設定メニューで特定の設定を持っています。現在、最も完全なゲームモードは*Infection*ゲームモードで、隠しと探しのゲームのようにプレイします。",
+      "zipUrl": "https://github.com/BUNN1E5/QSBGameModes/releases/download/v0.0.1/BUNN1E5.QSBGameModes.zip",
+      "releaseUrl": "https://github.com/BUNN1E5/QSBGameModes/releases/tag/v0.0.1"
+    }
+  ]
+}
