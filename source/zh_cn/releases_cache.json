@@ -3575,14 +3575,14 @@
     ]
   },
   "Krevace.VoiceMod": {
-    "repoUpdatedAt": "2026-10-12T09:06:42Z",
+    "repoUpdatedAt": "2026-10-13T21:42:18Z",
     "releases": [
       {
         "tag": "1.0.0",
         "name": "OW Voice Acting Mod v1.0.0 - Full Release",
         "date": "2023-12-31",
         "body": "WOOOOOO YEAH BABY\r\n\r\nall lines are mixed!!!!!! trailer should be up soon on evalka's youtube channel!\r\n\r\n**Changelog:** [`0.4.2...1.0.0`](https://github.com/Krevace/ow-voice-mod/compare/0.4.2...1.0.0)",
-        "bodyZh": "WOOOOOO 太棒了宝贝\n\n所有行都混合了!!!!!! 预告片很快就会在evalka的YouTube频道上发布！\n\n**更新日志：** [⟦0⟧](https://github.com/Krevace/ow-voice-mod/compare/0.4.2...1.0.0)",
+        "bodyZh": "WOOOOOO 太棒了宝贝\n\n所有行都混合了!!!!!! 预告片很快就会在evalka的youtube频道上发布！\n\n**更新日志：** [⟦0⟧](https://github.com/Krevace/ow-voice-mod/compare/0.4.2...1.0.0)",
         "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/1.0.0/Krevace.VoiceMod.zip",
         "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/1.0.0"
       },
@@ -3609,7 +3609,7 @@
         "name": "OW Voice Acting Mod v0.4.0 - Premix",
         "date": "2022-08-17",
         "body": "All unedited audio files are included in this version, normalized and converted to mono.\r\n\r\nOutstanding Issues:\r\n- Museum-chorus only uses Lexi's voice. The other's are there, they just aren't all mixed together yet.\r\n- Some of the new-computer lines don't play because they're organized wrong. That'll be fixed with the actual release.\r\n\r\n**Changelog:** [`0.3.12...0.4.0`](https://github.com/Krevace/ow-voice-mod/compare/0.3.12...0.4.0)",
-        "bodyZh": "所有未编辑的音频文件均包含在此版本中，已进行标准化并转换为单声道。\n\n**待解决问题：**\n- 博物馆合唱部分仅使用了莱克西(莱克西)的声音。其他的音轨都在那里，只是尚未全部混合在一起。\n- 部分新电脑相关语音片段无法播放，因为它们组织方式有误。这将在正式发布时修复。\n\n**更新日志：** [⟦0⟧](https://github.com/Krevace/ow-voice-mod/compare/0.3.12...0.4.0)",
+        "bodyZh": "所有未编辑的音频文件均包含在此版本中，已进行标准化并转换为单声道。\n\n**待解决问题：**\n- 博物馆合唱部分仅使用了莱克西(莱克西)的声音。其他的音轨都在那里，只是尚未全部混合在一起。\n- 部分新电脑相关语音片段无法播放，因为它们组织方式不正确。这将在正式发布时修复。\n\n**更新日志：** [⟦0⟧](https://github.com/Krevace/ow-voice-mod/compare/0.3.12...0.4.0)",
         "zipUrl": "https://github.com/Krevace/ow-voice-mod/releases/download/0.4.0/Krevace.VoiceMod.zip",
         "releaseUrl": "https://github.com/Krevace/ow-voice-mod/releases/tag/0.4.0"
       },
@@ -5961,58 +5961,59 @@
     ]
   },
   "hearth1an.TheVision": {
-    "repoUpdatedAt": "2026-06-27T20:27:12Z",
+    "repoUpdatedAt": "2026-10-13T21:44:04Z",
     "releases": [
       {
         "tag": "v1.2.0",
         "name": "hearth1an.TheVision",
         "date": "2025-03-07",
         "body": "- fixed Ember Twin spawn bug\r\n- korean translation added by [Barirn](https://github.com/Barirn)",
+        "bodyZh": "- 修复了余烬双星生成错误\r\n- 韩语翻译由[Barirn](https://github.com/Barirn)添加",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.2.0/hearth1an.TheVision.zip",
-        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.2.0",
-        "bodyZh": "- 修复了余烬双星生成错误\r\n- 韩语翻译由[Barirn](https://github.com/Barirn)添加"
+        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.2.0"
       },
       {
         "tag": "v1.1.9",
         "name": "hearth1an.TheVision",
         "date": "2024-06-16",
         "body": "- soft log fix and infinite loading fix (thx MegaPiggy)",
+        "bodyZh": "- 软日志修复和无限加载修复 (感谢 MegaPiggy)",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.9/hearth1an.TheVision.zip",
-        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.9",
-        "bodyZh": "- 软日志修复和无限加载修复（感谢MegaPiggy）"
+        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.9"
       },
       {
         "tag": "v1.1.8",
         "name": "hearth1an.TheVision",
         "date": "2023-10-03",
         "body": "- Japanese translation fixes\r\n- French translation fixes",
+        "bodyZh": "- 日文翻译修复\n- 法文翻译修复",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.8/hearth1an.TheVision.zip",
-        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.8",
-        "bodyZh": "- 日文翻译修复\n- 法文翻译修复"
+        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.8"
       },
       {
         "tag": "v1.1.7",
         "name": "hearth1an.TheVision",
         "date": "2023-08-14",
         "body": "- fixed infinite loadig bug\r\n- fixed ATP error",
+        "bodyZh": "- 修复了无限加载的bug\r\n- 修复了ATP错误",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.7/hearth1an.TheVision.zip",
-        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.7",
-        "bodyZh": "- 修复了无限加载的bug\r\n- 修复了ATP错误"
+        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.7"
       },
       {
         "tag": "v1.1.6",
         "name": "hearth1an.TheVision",
         "date": "2023-06-24",
         "body": "- fixed MenuFramework dependency",
+        "bodyZh": "- 修复了MenuFramework依赖问题",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.6/hearth1an.TheVision.zip",
-        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.6",
-        "bodyZh": "- 修复了MenuFramework依赖问题"
+        "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.6"
       },
       {
         "tag": "v1.1.5",
         "name": "hearth1an.TheVision",
         "date": "2023-06-05",
         "body": "- Italian translation fixes",
+        "bodyZh": "",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.5/hearth1an.TheVision.zip",
         "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.5"
       },
@@ -6021,6 +6022,7 @@
         "name": "hearth1an.TheVision",
         "date": "2023-04-10",
         "body": "- Bug fixes for last New Horizons update\r\n- Dialogue fixes\r\n- More Ernesto\r\n- Italian localisation added by ilyNerY",
+        "bodyZh": "",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.4/hearth1an.TheVision.zip",
         "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.4"
       },
@@ -6029,6 +6031,7 @@
         "name": "hearth1an.TheVision",
         "date": "2023-03-25",
         "body": "Last New Horizons update compability fix",
+        "bodyZh": "",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.3/hearth1an.TheVision.zip",
         "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.3"
       },
@@ -6037,6 +6040,7 @@
         "name": "hearth1an.TheVision",
         "date": "2022-12-14",
         "body": "- Last New Horizons update fix (white hole colors)\r\n- You will never skip the most important quest now",
+        "bodyZh": "",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.2/hearth1an.TheVision.zip",
         "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.2"
       },
@@ -6045,6 +6049,7 @@
         "name": "hearth1an.TheVision",
         "date": "2022-10-25",
         "body": "Minor fixes",
+        "bodyZh": "",
         "zipUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/download/v1.1.1/hearth1an.TheVision.zip",
         "releaseUrl": "https://github.com/hearth1an/hearthian.TheVision/releases/tag/v1.1.1"
       }
@@ -8017,58 +8022,59 @@
     ]
   },
   "SBtT.TheOutsider": {
-    "repoUpdatedAt": "2026-05-29T16:55:52Z",
+    "repoUpdatedAt": "2026-10-13T21:43:48Z",
     "releases": [
       {
         "tag": "v1.1.11",
         "name": "Version 1.1.11",
         "date": "2026-01-24",
         "body": "* [Fixed minor syntax/wording issues in the french translation #31](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/31) by @LaraNanuq",
+        "bodyZh": "* [Fixed minor syntax/wording issues in the french translation #31](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/31) by @LaraNanuq",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.11/SBtT.TheOutsider.zip",
-        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.11",
-        "bodyZh": "* [Fixed minor syntax/wording issues in the french translation #31](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/31) by @LaraNanuq"
+        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.11"
       },
       {
         "tag": "v1.1.10",
         "name": "Version 1.1.10",
         "date": "2025-07-24",
         "body": "* [Reworked french translation #28](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/28) by @LaraNanuq",
+        "bodyZh": "* [Reworked french translation #28](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/28) by @LaraNanuq",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.10/SBtT.TheOutsider.zip",
-        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.10",
-        "bodyZh": "* [Reworked french translation #28](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/28) by @LaraNanuq"
+        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.10"
       },
       {
         "tag": "v1.1.9",
         "name": "Version 1.1.9",
         "date": "2025-07-03",
         "body": "* [Fix the duplicated elevator in Endless Canyon when enabling New Horizons #27](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/27)",
+        "bodyZh": "* [Fix the duplicated elevator in Endless Canyon when enabling New Horizons #27](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/27)",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.9/SBtT.TheOutsider.zip",
-        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.9",
-        "bodyZh": "* [Fix the duplicated elevator in Endless Canyon when enabling New Horizons #27](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/27)"
+        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.9"
       },
       {
         "tag": "v1.1.8",
         "name": "Version 1.1.8",
         "date": "2025-04-30",
         "body": "* [Spanish translation #24](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/24) by @marcosrullan",
+        "bodyZh": "* [Spanish translation #24](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/24) by @marcosrullan",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.8/SBtT.TheOutsider.zip",
-        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.8",
-        "bodyZh": "* [Spanish translation #24](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/24) by @marcosrullan"
+        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.8"
       },
       {
         "tag": "v1.1.7",
         "name": "Version 1.1.7",
         "date": "2025-01-09",
         "body": "* [smol correction for german.xml #21](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/21) by @Derko8",
+        "bodyZh": "* [smol correction for german.xml #21](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/21) by @Derko8",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.7/SBtT.TheOutsider.zip",
-        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.7",
-        "bodyZh": "* [smol correction for german.xml #21](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/21) by @Derko8"
+        "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.7"
       },
       {
         "tag": "v1.1.6",
         "name": "Version 1.1.6",
         "date": "2024-12-18",
         "body": "1.1.6 by @xen-42 \r\nThis fixes Outsider ship logs appearing in New Horizons custom systems (#19) and neck dislocation caused by Daydream (#16)",
+        "bodyZh": "",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.6/SBtT.TheOutsider.zip",
         "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.6"
       },
@@ -8077,6 +8083,7 @@
         "name": "Version 1.1.5",
         "date": "2024-07-21",
         "body": "* [1.1.5 #18](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/18) by @xen-42 \r\n    * This resolves [Flickering light that pushes you away in space - The outsider](https://www.reddit.com/r/outerwilds/comments/1e7wtg0/flickering_light_that_pushes_you_away_in_space/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)",
+        "bodyZh": "",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.5/SBtT.TheOutsider.zip",
         "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.5"
       },
@@ -8085,6 +8092,7 @@
         "name": "Version 1.1.4",
         "date": "2024-06-14",
         "body": "* [Italian translation correction. #17](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/issues/17) by @NerYtheLonesomeHearthian",
+        "bodyZh": "",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.4/SBtT.TheOutsider.zip",
         "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.4"
       },
@@ -8093,6 +8101,7 @@
         "name": "Version 1.1.3",
         "date": "2024-05-11",
         "body": "* [Fix translation typo #15](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/15) by @solitary-sails",
+        "bodyZh": "",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.3/SBtT.TheOutsider.zip",
         "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.3"
       },
@@ -8101,6 +8110,7 @@
         "name": "Version 1.1.2",
         "date": "2024-04-21",
         "body": "* [Update chinese_simple.xml #14](https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/pull/14)\r\n* Update some translations",
+        "bodyZh": "",
         "zipUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/download/v1.1.2/SBtT.TheOutsider.zip",
         "releaseUrl": "https://github.com/StreetlightsBehindTheTrees/Outer-Wilds-The-Outsider/releases/tag/v1.1.2"
       }
@@ -10855,13 +10865,14 @@
     ]
   },
   "Walker.AstralCodex": {
-    "repoUpdatedAt": "2026-08-02T22:16:10Z",
+    "repoUpdatedAt": "2026-10-13T21:42:24Z",
     "releases": [
       {
         "tag": "1.9.1",
         "name": "Patch 9.1",
         "date": "2025-07-29",
         "body": "- French translation updates by LaraNanuq\r\n- Russian translation update by Groove619",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.9.1/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.9.1"
       },
@@ -10870,6 +10881,7 @@
         "name": "Patch 9",
         "date": "2025-05-21",
         "body": "- Added Italian translation by simozmp\r\n- Updated Russian translation by Carol",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.9.0/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.9.0"
       },
@@ -10878,6 +10890,7 @@
         "name": "Patch 8",
         "date": "2025-03-17",
         "body": "Added Korean translation by Barirn.",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.8.0/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.8.0"
       },
@@ -10886,6 +10899,7 @@
         "name": "Patch 7.0",
         "date": "2024-09-05",
         "body": "A translation update.\r\n- Added French translation (courtesy of Yokuen)\r\n- Updated Russian translation (courtesy of Carol)\r\n- Added Yokuen to credits for assistance with the Japanese translation\r\n- The languages the mod is translated into are now listed in the description (EN,JP,CH,RU,FR)\r\n\r\nI'm amazed at how many languages the mod has been translated into at this point. Thank you so much to all the translators.",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.7.0/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.7.0"
       },
@@ -10894,6 +10908,7 @@
         "name": "Patch 6.0",
         "date": "2024-08-17",
         "body": "A small patch mostly focusing on translations.\r\n\r\n- Added a Russian translation (thanks Carol!)\r\n- Updated Chinese translation (thanks NanF and AstridOrange!)\r\n- Added several Scholars of Ernesto\r\n- Some rocks now look more like the rock they're supposed to look like\r\n- An arc of text has been moved to be easier to translate",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.6.0/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.6.0"
       },
@@ -10902,6 +10917,7 @@
         "name": "Patch 5.2",
         "date": "2024-06-18",
         "body": "- Japanese translation brought up to date with new text (thanks orclecle!)\r\n- A certain hearthian is no longer named after their love of grabbing things",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.5.2/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.5.2"
       },
@@ -10910,6 +10926,7 @@
         "name": "Patch 5.1",
         "date": "2024-06-18",
         "body": "A minor patch to fix an invalid parentPath and move one text change into english.json.",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.5.1/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.5.1"
       },
@@ -10918,6 +10935,7 @@
         "name": "Patch 5.0",
         "date": "2024-06-17",
         "body": "Still got more fixes planned but I wanted to get the main change from this patch out early.\r\n\r\n- An early puzzle now has a simpler alternate solution\r\n- Various text tweaks to clarify some common points of confusion with the story",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.5.0/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.5.0"
       },
@@ -10926,6 +10944,7 @@
         "name": "Patch 4.0",
         "date": "2024-06-04",
         "body": "A few fixes and something new. I'm still working on more fixes but there's no real reason to wait to release this one.\r\n\r\n- A certain quantum Nomai now has more to say (not translated yet but hopefully soon)\r\n- Minor text tweaks\r\n- A certain ending instrument is now in sync\r\n- Paradox can no longer occur at the Eye when the stabilizer is active (also fixes paradox after uninstalling mod)\r\n- Re-calibrated some tractor beams to appropriate strengths (yes the skip is still possible)\r\n- Dozing off with an egg-shaped friend no longer brings the game to a crawl\r\n- A certain probe is no longer present in a certain ending sequence\r\n- Nomai shuttles now have a lower chance of bouncing off a certain planet\r\n- You can now lock on to a central area in the mod as soon as you've arrived\r\n- A certain white hole now renders its interior properly\r\n- A miniature cannon is no longer completely silent",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.4.0/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.4.0"
       },
@@ -10934,6 +10953,7 @@
         "name": "Patch 3.0",
         "date": "2024-04-23",
         "body": "- Chinese translation added courtesy of Nan and OrangeAstrid\r\n- Added orclecle to the credits (sorry for forgetting that last patch)\r\n- Fixed error spam in other star systems\r\n- Fixed the final ship log image appearing early",
+        "bodyZh": "",
         "zipUrl": "https://github.com/2walker2/Astral-Codex/releases/download/1.3.0/Walker.AstralCodex.zip",
         "releaseUrl": "https://github.com/2walker2/Astral-Codex/releases/tag/1.3.0"
       }
@@ -16240,14 +16260,14 @@
     ]
   },
   "orclecle.EyeWitness": {
-    "repoUpdatedAt": "2026-10-13T17:17:07Z",
+    "repoUpdatedAt": "2026-10-13T23:37:18Z",
     "releases": [
       {
         "tag": "v1.5.0",
         "name": "Version 1.5.0",
         "date": "2026-10-13",
         "body": "* Added developer commentary; Ernesto provides the narration (available only after completing this mod once).\r\n* *Ernesto loves facing each other atop the two pairs of jagged stumps near the waterfall.*\r\n* Added new dialogue for Gabbro, Chert, Esker, Riebeck, and Feldspar.\r\n* Adjusted the rendering order so that HUD markers remain visible even when inside clouds.\r\n* Fixed an issue where the \"unidentified signal\" notification would disappear upon acquiring Gabbro's signal when starting a new save file.\r\n* Adjusted the content of several ship log entries.",
-        "bodyZh": "* 添加了开发者评论；Ernesto(埃列尔托)提供旁白（仅完成此模组一次后可用）。\r\n* *Ernesto(埃列尔托)喜欢面对彼此，位于瀑布附近的两对尖锐树桩顶端。*\n* 为加布罗(加布罗)、切特(切特)、埃斯科(埃斯科)、瑞拜克(瑞拜克)和费尔德斯巴(费尔德斯巴)添加了新的对话。\n* 调整了渲染顺序，以便HUD标记即使在云层内部也能保持可见。\n* 修复了在新保存文件中获取加布罗(加布罗)信号时，“未知信号”通知会消失的问题。\n* 调整了几个飞船日志条目的内容。",
+        "bodyZh": "* 添加了开发者评论；Ernesto(埃列尔托)提供旁白（仅完成此模组一次后可用）。\r\n* *Ernesto(埃列尔托)喜欢面对彼此，位于瀑布附近的两对尖锐树桩顶端。*\r\n* 为加布罗(加布罗)、切特(切特)、埃斯科(埃斯科)、瑞拜克(瑞拜克)和费尔德斯巴(费尔德斯巴)添加了新的对话。\r\n* 调整了渲染顺序，以便HUD标记即使在云层内部也能保持可见。\r\n* 修复了在新保存文件中获取加布罗(加布罗)信号时，“未知信号”通知会消失的问题。\r\n* 调整了几个飞船日志条目的内容。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.5.0/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.5.0"
       },
@@ -16256,7 +16276,7 @@
         "name": "Version 1.4.6",
         "date": "2026-09-23",
         "body": "* Ship Log map mode no longer reveals the location of a certain entity too early. (Once you understand the location, Ship Log map mode will also display the correct location.)",
-        "bodyZh": "* 飞船日志地图模式不再过早揭示某个实体的位置。(一旦你理解了位置，飞船日志地图模式也会显示正确的位置。)",
+        "bodyZh": "* 飞船日志地图模式不再过早地揭示某个实体的位置。(一旦你理解了位置，飞船日志地图模式也会显示正确的位置。)",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.6/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.6"
       },
@@ -16265,7 +16285,7 @@
         "name": "Version 1.4.5",
         "date": "2026-09-22",
         "body": "* Fix #7 by setting hideProxy as true.\r\n* If a certain object is stuck in a certain laboratory, the door is designed to break to prevent entry.",
-        "bodyZh": "* 通过设置 hideProxy 为 true 修复 #7。\n* 如果某个物体卡在某个实验室里，门的设计是为了打破以阻止进入。",
+        "bodyZh": "* 通过设置 hideProxy 为 true 修复 #7。\n* 如果某个物体卡在某个实验室里，门的设计会破裂以阻止进入。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.5/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.5"
       },
@@ -16274,7 +16294,7 @@
         "name": "Version 1.4.4",
         "date": "2026-09-12",
         "body": "* Disable the item if the player heads straight to the cannon without filling in the initial ship log.\r\n* Fixed an issue where the player could get trapped inside a specific building in the final sequence at the specific place (though doing so required a deliberate effort).\r\n* Fixed a missing character of Japanese translation.",
-        "bodyZh": "* 如果玩家没有填写初始飞船日志就直奔炮台，则禁用该物品。\n* 修复了一个问题，玩家在最终序列的特定地点可能会被困在特定建筑内（尽管这需要刻意为之）。\n* 修复了日语翻译中缺失的字符。",
+        "bodyZh": "* 如果玩家没有填写初始飞船日志就直奔炮台，则禁用该物品。\n* 修复了玩家在最终序列的特定地点被困在特定建筑物内的问题（尽管这需要刻意为之）。\n* 修复了日语翻译中缺失的字符。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.4/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.4"
       },
@@ -16283,7 +16303,7 @@
         "name": "Version 1.4.3",
         "date": "2026-09-05",
         "body": "* Fix unidentified signal notification in the final sequence in the specific place.\r\n* Fix the latest building collision in the final sequence in the specific place.",
-        "bodyZh": "* 修复最终序列中特定位置的未识别信号通知。\n* 修复最终序列中特定位置的最新建筑碰撞。",
+        "bodyZh": "* 修复最终序列中特定位置的未识别信号提示。\n* 修复最终序列中特定位置的最新建筑碰撞。",
         "zipUrl": "https://github.com/TRSasasusu/EyeWitness/releases/download/v1.4.3/orclecle.EyeWitness.zip",
         "releaseUrl": "https://github.com/TRSasasusu/EyeWitness/releases/tag/v1.4.3"
       },

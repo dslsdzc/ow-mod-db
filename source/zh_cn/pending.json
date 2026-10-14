@@ -1,7 +1,1 @@
-[
-  {
-    "unique_name": "orclecle.EyeWitness",
-    "field": "latestReleaseDescription",
-    "en": "* Added developer commentary; Ernesto provides the narration (available only after completing this mod once).\r\n* *Ernesto loves facing each other atop the two pairs of jagged stumps near the waterfall.*\r\n* Added new dialogue for Gabbro, Chert, Esker, Riebeck, and Feldspar.\r\n* Adjusted the rendering order so that HUD markers remain visible even when inside clouds.\r\n* Fixed an issue where the \"unidentified signal\" notification would disappear upon acquiring Gabbro's signal when starting a new save file.\r\n* Adjusted the content of several ship log entries."
-  }
-]
+[]
