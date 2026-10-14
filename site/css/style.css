@@ -76,10 +76,14 @@ body { font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
 .site-header .brand { font-weight: 600; font-size: 1rem; color: var(--md-on-surface);
                       padding-left: .2rem; }
 .site-header .brand:hover { background: transparent; }
-.lang-switch { margin-left: auto; padding: .3rem .85rem; border-radius: var(--md-corner-full);
+.lang-switch { margin-left: auto; padding: .3rem 1.9rem .3rem .85rem; border-radius: var(--md-corner-full);
                border: 1px solid var(--md-outline-variant);
                background: var(--md-surface-container-high); color: var(--md-on-surface);
-               font-size: .8rem; cursor: pointer; }
+               font-size: .8rem; cursor: pointer;
+               appearance: none; -webkit-appearance: none;
+               background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d8c2bd'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+               background-repeat: no-repeat; background-position: right .55rem center;
+               background-size: 1.1rem; }
 .lang-switch:hover { border-color: var(--md-outline); }
 
 main { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
@@ -155,13 +159,17 @@ footer code { background: var(--md-surface-container-high); padding: .1rem .4rem
                                     border: 1px solid transparent;
                                     background: var(--md-surface-container-high); color: var(--md-on-surface);
                                     font-size: .9rem; font-family: inherit;
+                                    appearance: none; -webkit-appearance: none;
                                     transition: border-color var(--md-dur-short) var(--md-ease),
                                                 background-color var(--md-dur-short) var(--md-ease); }
 .controls input::placeholder { color: var(--md-on-surface-variant); opacity: .85; }
 .controls input:focus, .controls select:focus { outline: none;
                                     border-color: var(--md-primary);
                                     background: var(--md-surface-container-highest); }
-.controls select { border-radius: var(--md-corner-full); padding-right: 2rem; }
+.controls select { border-radius: var(--md-corner-full); padding-right: 2.75rem;
+                   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d8c2bd'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+                   background-repeat: no-repeat; background-position: right .85rem center;
+                   background-size: 1.25rem; }
 #search { flex: 1; min-width: 200px; }
 #count { align-self: center; color: var(--md-on-surface-variant); font-size: .875rem; }
 
