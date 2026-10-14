@@ -45,12 +45,16 @@ def fetch_readme(url: str) -> str:
 
 
 def chunk_markdown(text: str, max_chars: int = CHUNK_CHARS) -> list[str]:
-    """按段落边界把长文本切成 ≤max_chars 的块."""
-    paragraphs = [p.strip() for p in text.split("\n") if p.strip()]
+    """按空行段落边界把长文本切成 ≤max_chars 的块(段内换行结构原样保留)."""
+    paragraphs = [p for p in re.split(r"\n{2,}", text) if p.strip()]
     chunks: list[str] = []
     current = ""
     for p in paragraphs:
-        if len(p) > max_chars:  # 单段超长:硬切
+        p = p.strip("\n")
+        if len(p) > max_chars:  # 单段超长: 硬切
+            if current:
+                chunks.append(current)
+                current = ""
             for i in range(0, len(p), max_chars):
                 chunks.append(p[i:i + max_chars])
             continue
@@ -63,6 +67,25 @@ def chunk_markdown(text: str, max_chars: int = CHUNK_CHARS) -> list[str]:
     if current:
         chunks.append(current)
     return chunks
+
+
+_IMG_LINE = re.compile(r"^!\[[^\n]*\]\((?:[^()]|\([^()]*\))*\)\s*$")
+
+
+def squeeze_image_blank_lines(md: str) -> str:
+    """图片行之间的空行压缩回单换行(还原徽章 inline 排列; AI 偶发加空行的兜底)."""
+    lines = md.split("\n")
+    out = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if (line.strip() == "" and 0 < i < len(lines) - 1
+                and _IMG_LINE.match(lines[i - 1]) and _IMG_LINE.match(lines[i + 1])):
+            i += 1  # 跳过该空行
+            continue
+        out.append(line)
+        i += 1
+    return "\n".join(out)
 
 
 def sha256_text(text: str) -> str:
@@ -183,6 +206,7 @@ def translate_readmes(official: dict, licenses: dict, cache: dict, denylist: lis
                         return
                     sleep(2 * (2 ** attempt))
         zh = restore_markdown("\n\n".join(translated), holders)
+        zh = squeeze_image_blank_lines(zh)   # 兜底: 图片行间意外空行压缩回单换行
         with lock:
             cache[un] = {"sha": digest, "zh": zh, "at": at}
             state["new"] += 1

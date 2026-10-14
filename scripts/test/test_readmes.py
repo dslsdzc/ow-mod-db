@@ -1,7 +1,7 @@
 import pytest
 
 import readmes
-from readmes import PERMISSIVE_LICENSES, chunk_markdown, is_translatable, sha256_text
+from readmes import PERMISSIVE_LICENSES, chunk_markdown, is_translatable, sha256_text, squeeze_image_blank_lines
 
 
 class FakeAI:
@@ -35,6 +35,22 @@ def test_chunk_markdown_paragraph_boundaries():
     assert all(len(c) <= 1000 for c in chunks)
     assert "".join(chunks).replace("\n\n", "") == text.replace("\n\n", "")  # 内容不丢
     assert len(chunks) >= 4
+
+
+def test_chunk_markdown_preserves_single_line_breaks():
+    """段内单换行必须原样保留(曾按行切块+空行拼接, 把徽章等单换行结构强转成双换行)."""
+    text = "徽章A\n徽章B\n徽章C\n\n段落二\n第二行"
+    assert chunk_markdown(text, max_chars=1000) == [text]
+    text2 = "\n\n".join(("line1\nline2" + "字" * 400) for _ in range(5))
+    chunks2 = chunk_markdown(text2, max_chars=1000)
+    assert "\n\n".join(chunks2) == text2            # 块内/块间结构完全保真
+
+
+def test_squeeze_image_blank_lines():
+    md = "![a](1.png)\n\n![b](2.png)\n\n![c](3.png)\n\n文字段落\n\n![d](4.png)"
+    assert squeeze_image_blank_lines(md) == \
+        "![a](1.png)\n![b](2.png)\n![c](3.png)\n\n文字段落\n\n![d](4.png)"
+    assert squeeze_image_blank_lines("段落1\n\n段落2") == "段落1\n\n段落2"   # 非图片行不受影响
 
 
 def test_chunk_oversized_single_paragraph_hard_split():
