@@ -327,6 +327,33 @@ def test_detail_share_button_feedback(page, site_server):
     assert page.locator("#share-btn").inner_text() == label0
 
 
+def test_home_cta_buttons_no_overlap_and_contained(page, site_server):
+    """首页/管理器页 CTA 按钮: 换行时不得互相重叠, 且不得溢出所在区块(防行高塌陷回归)。"""
+    for path, sec_id in (("/index.html", "community"), ("/index.html", "contribute"),
+                         ("/mod-manager.html", None)):
+        page.goto(site_server + path)
+        page.wait_for_timeout(600)
+        scope = f"#{sec_id} " if sec_id else ""
+        rects = page.locator(f"{scope}.cta-row .cta").evaluate_all("""els => els.map(e => {
+            const r = e.getBoundingClientRect();
+            return [r.x, r.y, r.right, r.bottom];
+        })""")
+        assert len(rects) >= 2, f"{path}{scope} 按钮数异常"
+        for i in range(len(rects)):
+            for j in range(i + 1, len(rects)):
+                a, b = rects[i], rects[j]
+                assert not (a[0] < b[2] and b[0] < a[2] and a[1] < b[3] and b[1] < a[3]), \
+                    f"{path} 按钮 {i} 与 {j} 重叠: {a} {b}"
+        if sec_id:
+            contained = page.evaluate(f"""() => {{
+                const s = document.getElementById('{sec_id}');
+                const sr = s.getBoundingClientRect();
+                return [...s.querySelectorAll('.cta')].every(
+                    e => e.getBoundingClientRect().bottom <= sr.bottom + 0.5);
+            }}""")
+            assert contained is True, f"#{sec_id} 按钮溢出区块边界"
+
+
 def test_to_top_button(page, site_server):
     """滚动超过阈值后[回顶]出现, 点击回到顶部。"""
     page.goto(site_server + "/mod/xen.NewHorizons.html")

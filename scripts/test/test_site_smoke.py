@@ -118,6 +118,12 @@ def test_speculation_rules_markers():
         assert "speculationrules" in html and "mod.html*" in html
 
 
+def test_home_cta_link_targets():
+    """首页「提交翻译问题」直达 GitHub 新建 issue(带翻译模板), 而非 issues 列表页。"""
+    html = (REPO_ROOT / "site" / "index.html").read_text(encoding="utf-8")
+    assert "issues/new?template=translation.md" in html
+
+
 def test_detail_ux_markers():
     js = (REPO_ROOT / "site" / "js" / "app.js").read_text(encoding="utf-8")
     assert "issues/new?template=translation.md" in js    # 报告翻译问题入口
