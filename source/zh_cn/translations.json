@@ -7060,5 +7060,22 @@
       "zh": "初始发布",
       "at": "2026-09-29T02:14:22.981068Z"
     }
+  },
+  "Zra.QuantumBlinkVR": {
+    "name": {
+      "en": "Quantum Blink VR",
+      "zh": "量子闪烁VR",
+      "at": "2026-10-14T20:02:59.396110Z"
+    },
+    "description": {
+      "en": "Interact with quantum objects by blinking, using PSVR2 eye tracking with NomaiVR.",
+      "zh": "通过闪烁与量子物体互动，使用NomaiVR的PSVR2眼动追踪。",
+      "at": "2026-10-14T20:02:59.396110Z"
+    },
+    "latestReleaseDescription": {
+      "en": "Quantum Blink VR's first release.",
+      "zh": "量子闪烁VR的首个发布。",
+      "at": "2026-10-14T20:02:59.396110Z"
+    }
   }
 }

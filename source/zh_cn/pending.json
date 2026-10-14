@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "unique_name": "Zra.QuantumBlinkVR",
+    "field": "name",
+    "en": "Quantum Blink VR"
+  },
+  {
+    "unique_name": "Zra.QuantumBlinkVR",
+    "field": "description",
+    "en": "Interact with quantum objects by blinking, using PSVR2 eye tracking with NomaiVR."
+  },
+  {
+    "unique_name": "Zra.QuantumBlinkVR",
+    "field": "latestReleaseDescription",
+    "en": "Quantum Blink VR's first release."
+  }
+]
