@@ -137,6 +137,52 @@ def test_detail_readme_toggle_between_translation_and_original(page, site_server
     assert "Hello Original" not in page.locator("#readme-content").inner_text()
 
 
+def _install_ms_mock(page, text="测试译文"):
+    """拦截微软 Edge 翻译端点, 按请求条数回等长译文(离线确定性测试)。"""
+    import json as _json
+
+    def handler(route):
+        texts = _json.loads(route.request.post_data or "[]")
+        body = _json.dumps([{"translations": [{"text": text}]} for _ in texts],
+                           ensure_ascii=False)
+        route.fulfill(status=200, content_type="application/json", body=body)
+
+    page.route(re.compile(r"edge\.microsoft\.com"), handler)
+
+
+def test_readme_ms_translate_button_toggles_between_translation_and_original(page, site_server):
+    """README 翻译按钮: 翻译完成后应变为"查看英文原文", 再点切回原文(而非重复翻译)。"""
+    _install_ms_mock(page)
+    page.goto(site_server + "/mod/Tlya.OnlyTH.html")
+    page.wait_for_selector("#detail h1")
+    page.locator("#readme-section").scroll_into_view_if_needed()
+    ms_btn = page.locator("#readme-actions button", has_text="翻译")
+    ms_btn.wait_for(timeout=10000)
+    assert ms_btn.inner_text().strip() == "翻译"                 # 按钮文案仅"翻译"两字
+    ms_btn.click()
+    back = page.locator("#readme-actions button", has_text="查看英文原文")
+    back.wait_for(timeout=15000)                                 # 翻译后按钮切换为"查看英文原文"
+    back.click()
+    page.locator("#readme-actions button", has_text="翻译").wait_for(timeout=5000)
+    assert "测试译文" not in page.locator("#readme-content").inner_text()
+
+
+def test_releases_translate_all_bulk_translates_and_hides(page, site_server):
+    """版本历史"全部翻译": 一键翻译所有待翻版本, 完成后按钮隐藏、各版本可切回原文。"""
+    _install_ms_mock(page)
+    page.goto(site_server + "/mod/Tlya.OnlyTH.html")
+    page.wait_for_selector("#detail h1")
+    page.locator("#releases-section").scroll_into_view_if_needed()
+    all_btn = page.locator("#releases-translate-all")
+    all_btn.wait_for(state="visible", timeout=10000)
+    assert page.locator("#releases-section .rel-tr").first.inner_text().strip() == "翻译"
+    all_btn.click()
+    all_btn.wait_for(state="hidden", timeout=15000)              # 全部翻完 → 按钮隐藏
+    assert "测试译文" in page.locator("#releases-section .rel-body").first.inner_text()
+    for btn in page.locator("#releases-section .rel-tr").all():
+        assert btn.inner_text().strip() == "原文"                # 各版本按钮切为"原文"
+
+
 def test_seo_files_served(page, site_server):
     sitemap = page.request.get(site_server + "/sitemap.xml")
     assert sitemap.ok and "urlset" in sitemap.text()

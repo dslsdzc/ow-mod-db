@@ -23,12 +23,18 @@ def _free_port() -> int:
 
 @pytest.fixture(scope="session")
 def site_server():
-    """dist/ 静态服务; 未构建时跳过(提示先跑 scripts/build.py)。"""
+    """dist/ 静态服务(多线程, 避免浏览器并行请求排队超时); 未构建时跳过。"""
     if not (DIST / "index.html").exists():
         pytest.skip("dist/ 不存在,请先运行 python scripts/build.py")
     port = _free_port()
+    # 注意: 必须线程化——单线程 http.server 会让浏览器并行资源请求排队, 造成随机超时
+    snippet = (
+        "import functools, http.server, sys; "
+        "h = functools.partial(http.server.SimpleHTTPRequestHandler, directory=sys.argv[2]); "
+        "httpd = http.server.ThreadingHTTPServer(('127.0.0.1', int(sys.argv[1])), h); "
+        "httpd.serve_forever()")
     proc = subprocess.Popen(
-        [sys.executable, "-m", "http.server", str(port), "--directory", str(DIST)],
+        [sys.executable, "-c", snippet, str(port), str(DIST)],
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     base = f"http://127.0.0.1:{port}"
     for _ in range(50):
